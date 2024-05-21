@@ -4,6 +4,8 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/schema/**/*.{js,ts,jsx,tsx,mdx}",  // Corrected pattern
+    "./src/utils/**/*.{js,ts,jsx,tsx,mdx}", 
   ],
   theme: {
     extend: {
