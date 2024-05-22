@@ -15,7 +15,7 @@ import value3 from "/public/assets/aboutUs/value3.jpg"
 function page() {
   return (
     <main id='mission' className='pt-16'>
-       {/* <section className="relative bg-white">
+       <section className="relative bg-white">
       <img
         src="https://images.pexels.com/photos/3228766/pexels-photo-3228766.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
         className="absolute inset-0 object-cover w-full h-full"
@@ -56,7 +56,7 @@ function page() {
           </div>
         </div>
       </div>
-    </section> */}
+    </section>
 
     <section className=''>
      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
