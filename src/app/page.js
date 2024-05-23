@@ -6,7 +6,7 @@ const Landing = dynamic(() => import("./ui/home/Landing.jsx")
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-x-hidden">
      <Landing/>
     </main>
   );
