@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'next/link';
+import Model from '@/app/ui/career/model';
 
 const ApplyCard = () => {
   const cards=[
@@ -76,21 +76,24 @@ const ApplyCard = () => {
   ]
 
   return (
-    <div className='py-20'>
-      <div className='flex items-center justify-center'>
-        <div className='w-[90%] grid grid-col-1 md:grid-cols-2 items-center justify-center gap-6'>
+    <div className='py-4 md:py-10'>
+      <div className='flex flex-col items-center justify-center'>
+        <div>
+          <h2 className='text-center text-MainHeading-sm md:text-MainHeading font-bold py-2 md:py-6'>Job Opportunities For You</h2>
+        </div>
+        <div className='w-[90%] grid grid-col-1 md:grid-cols-2 items-center justify-center gap-2 md:gap-6'>
           {cards.map((feat)=>{
             return(
               <div key={feat.id} className='p-4 border border-black rounded-xl'>
-                <div className='flex flex-col gap-2 h-[54vh]'>
-                  <h2 className='text-2xl font-bold py-4'>{feat.title}</h2>
-                  <p className='text-md'>{feat.responsibility}</p>
-                  <div className='text-xl'><span className='font-bold'>Department</span>{feat.department}</div>
-                  <div className='text-xl'><span className='font-bold'>Education</span>{feat.Education}</div>
-                  <div className='text-xl'><span className='font-bold'>Location</span>{feat.location}</div>
+                <div className='flex flex-col gap-2 h-full md:h-[87vh] lg:h-[73vh] xl:h-[52vh]'>
+                  <h2 className='text-CardHeading-sm md:text-CardHeading font-bold md:py-4'>{feat.title}</h2>
+                  <p className='text-Para-sm md:text-Para'>{feat.responsibility}</p>
+                  <div className='text-SubHeading-sm md:text-SubHeading'><span className='font-bold'>Department</span>{feat.department}</div>
+                  <div className='text-SubHeading-sm md:text-SubHeading'><span className='font-bold'>Education</span>{feat.Education}</div>
+                  <div className='text-SubHeading-sm md:text-SubHeading'><span className='font-bold'>Location</span>{feat.location}</div>
                 </div>
-                <div className='flex items-center justify-center'>
-                    Apply
+                <div className='flex items-center justify-center mt-2'>
+                  <Model/>
                 </div>
               </div>
             );
