@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <nav
       className={`py-4 px-6 fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
-        isScrolled ? "bg-white shadow-lg text-black" : "bg-black bg-opacity-80 text-white"
+        isScrolled ? "bg-white shadow-lg text-black" : "bg-black bg-opacity-55 text-white"
       }`}
     >
       <div className="flex items-center justify-between">
