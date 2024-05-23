@@ -1,13 +1,17 @@
 import React from 'react'
 import Link from 'next/link';
+import Image from 'next/image';
+import Aboutsec2 from '/public/assets/aboutUs/aboutsec2.jpg'
 // import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 
 const Footer = () => {
   return (
-    <footer className="bg-violet-950 w-full text-white pt-8">
-      
-    <div className="flex flex-wrap items-start justify-evenly gap-8">
+    <footer className="bg-violet-950 w-full  text-white ">
+      {/* <Image
+      className='absolute h-auto object-contain z-0 w-full'
+       src={Aboutsec2}/> */}
+    <div className="flex flex-wrap relative z-20 px-4 pt-8 items-start justify-evenly gap-8">
       
       <div className='md:w-72 w-auto'>
         <h2 className="text-lg font-semibold mb-4">About Us</h2>
@@ -85,7 +89,7 @@ const Footer = () => {
       
     </div>
   
-    <div className="text-sm h-20 flex items-center justify-center">
+    <div className="text-sm h-20 relative z-20 flex items-center justify-center">
       &copy; NAS INFOTECH PRIVATE LIMITED. All rights reserved.
     </div>
   </footer>
