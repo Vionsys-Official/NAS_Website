@@ -16,17 +16,17 @@ const ChooseUs = () => {
         {
             id: 3,
             title: 'Cutting-Edge Technologies',
-            para: 'We leverage the latest technologies like AI, machine learning, blockchain, and cloud computing to build innovative and efficient solutions.',
+            para: 'We leverage the latest technologies like AI, machine learning, blockchain and cloud computing to build innovative and efficient solutions.',
         },
         {
             id: 4,
             title: 'Agile Development Methodology',
-            para: 'Our agile process promotes flexibility, transparency, and collaboration, delivering high-quality software on time and within budget.',
+            para: 'Our agile process promotes flexibility, transparency and collaboration, delivering high-quality software on time and within budget.',
         },
         {
             id: 5,
             title: 'Rigorous Quality Assurance',
-            para: ' We employ comprehensive testing and QA processes to ensure reliable, secure, and seamless software performance.',
+            para: ' We employ comprehensive testing and QA processes to ensure reliable, secure and seamless software performance.',
         },
         {
             id: 6,
