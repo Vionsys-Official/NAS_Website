@@ -9,48 +9,57 @@ const Page = () => {
       title: "Custom Software Development",
       imagesrc: "https://images.unsplash.com/photo-1583508915901-b5f84c1dcde1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?",
+      href1: "services/softwareDevelopment",
     },
     {
       title: "Salesforce Services",
       imagesrc: "https://ethosolucoes.com/wp-content/uploads/2023/08/salesforce-blog_capa-2.png.webp",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing or itaque doloribus quam accusantium eum ",
+      href1: "services/softwareDevelopment",
     },
     {
       title: "Cybersecurity Solutions",
       imagesrc: "https://www.skillreactor.io/blog/wp-content/uploads/2024/04/Cybersecurity-Projects.jpeg",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?",
+      href1: "services/softwareDevelopment",
     },
     {
       title: "Software Testing and Quality Assurance",
       imagesrc: "https://qualizeal.com/wp-content/uploads/2022/05/Software-Testing-Trends-for-the-Next-Decade-1.jpg",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?",
+      href1: "services/softwareDevelopment",
     },
     {
       title: "Cloud Computing",
       imagesrc: "https://www.device42.com/blog/wp-content/uploads/2023/03/14_01edge-cloud-computing.jpg",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?",
+      href1: "services/softwareDevelopment",
     },
     {
       title: "Web Site Development",
       imagesrc: "https://everythinginclick.com/wp-content/uploads/2021/04/Why-Do-You-Need-to-Hire-a-Skilled-Web-Developer.png",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?",
+      href1: "services/softwareDevelopment",
     },
     {
       title: "Customer Relationship Management",
       imagesrc: "https://www.blink-it.pt/wp-content/uploads/2022/03/103_CRM.jpg",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?",
+      href1: "services/softwareDevelopment",
     },
     {
       title: "IT Staffing",
       imagesrc: "https://media.licdn.com/dms/image/C4D12AQER1LQYCjtCCA/article-cover_image-shrink_720_1280/0/1643372583060?e=2147483647&v=beta&t=lpCkmPFHR4_-ki2urA68bYVvDc-qFHEfJlfnYBz7zms",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?",
+      href1: "services/softwareDevelopment",
+
     },
   ];
 
 
   return (
     <main>
-      <section id="mission2" className="px-4 sm:px-6 lg:px-8">
+      <section id="mission2" className="p-5 sm:px-6 lg:px-8">
         <div className="mt-10 mx-auto max-w-6xl px-4 sm:px-6 p-5 flex gap-3 lg:flex-justify lg:flex flex-col lg:flex-row">
           <div className="sm:text-center mx-6 my-7 lg:text-left">
             <h1 className="text-2xl tracking-tight font-extrabold text-gray-800 sm:text-3xl md:text-3xl">
@@ -61,7 +70,7 @@ const Page = () => {
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
             </p>
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-              <button className="inline-flex text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded text-lg">Contact Us</button>
+              <button className="inline-flex text-white bg-orange-500 border-0  py-2 px-6 focus:outline-none hover:bg-orange-600 rounded text-lg">Contact Us</button>
             </div>
           </div>
           <div className="lg:inset-y-0 lg:right-0 lg:w-1/2 my-4">
@@ -95,14 +104,14 @@ const Page = () => {
                   </p>
                 </div>
               </div>
-              <Link href="/">
-                <button
-                  type="button"
-                  className="mt-4 rounded-sm bg-indigo-800 px-2.5 py-1 text-[12px] font-semibold text-white shadow-sm hover:bg-indigo-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-                >
-                  Read more
-                </button>
-              </Link>
+              <Link href={service.href1}>
+            <button
+              type="button"
+              className="mt-4 rounded-sm bg-indigo-800 px-2.5 py-1 text-[12px] font-semibold text-white shadow-sm hover:bg-indigo-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+            >
+              Read more
+            </button>
+          </Link>
             </div>
           ))}
         </div>
