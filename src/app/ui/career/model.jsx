@@ -1,62 +1,48 @@
+"use client"
 import React from 'react'
 import { useState } from 'react';
 import { Modal, message } from 'antd';
 
+const model=() =>{
 
+    const[name,setName]=useState('');
+    const[email,setEmail]=useState('');
+    const[phone,setPhone]=useState('');
+    const[job,setJob]=useState('');
+    const[experience,setExperience]=useState('');
+    const[resume,setResume]=useState('');
 
-function Apply() {
-
-    useEffect(()=>{
-        AOS.init({offset: 200,
-          duration: 1000,
-          delay: 100,});
-      },[])
-    
-      const [formData, setFormData] = useState({
-        fullName: "",
-        phoneNumber: "",
-        email: "",
-        position: "",
-        workExperience: "",
-        cv: null,
-      });
-    
-      const handleChange = (e: any) => {
-        const { name, value, type, checked } = e.target;
-        setFormData((prevFormData) => ({
-          ...prevFormData,
-          [name]: type === "checkbox" ? checked : value,
-        }));
-      };
-    
-      const handleSubmit = (e: any) => {
-        e.preventDefault();
-        console.log(formData);
-        message.success("Your Application Submitted successfully");
+    const logInputValue = () => {
+        const data={name,email,phone,job,experience,resume}
+        console.log(data);
+        message.success("Applied Successfully!");
         handleCancel();
-    
-        setFormData({
-          fullName: "",
-          phoneNumber: "",
-          email: "",
-          position: "",
-          workExperience: "",
-          cv: null,
-        });
-      };
-    
-      const [isModalOpen, setIsModalOpen] = useState(false);
-      const showModal = () => {
+        setName("");
+        setEmail("");
+        setPhone("");
+        setJob("");
+        setExperience("");
+        setResume("");
+    };
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const showModal = () => {
         setIsModalOpen(true);
-      };
-      const handleCancel = () => {
+    };
+
+    const handleOk = () => {
         setIsModalOpen(false);
-      };
+    };
+
+    const handleCancel = () => {
+        setIsModalOpen(false);
+    };
 
   return (
-    <div className='flex items-center justify-center'>
+    <div className='backdrop-blur-xl flex items-center justify-center'>
         <button onClick={showModal} className="block w-20 max-w-xs mx-au to bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 border border-black text-white rounded-lg px-1 py-1 font-semibold">Apply</button>
-        <Modal footer={null} open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+        <Modal className='backdrop-blur-xl' footer={null} open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
         <h2 className='flex items-center justify-center font-bold text-xl pb-10 pt-2'>Application form</h2>
         <div className="flex -mx-3">
           <div className="w-full px-3 mb-5">
@@ -108,26 +94,18 @@ function Apply() {
           <div className="w-full px-3 mb-5">
             <label className="text-xs md:text-sm font-semibold px-1">Resume<span className='text-red-700'> *</span></label>
             <div className="flex">
-              <input type="file"
-                  name="cv"
-                  onChange={handleChange} className="w-full bg-gray-100 -ml-15 pl-2 md:pl-6 pr-1 py-1 sm:pr-3 sm:py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500" placeholder="Upload resume"></input>
+              <input type="file" className="w-full bg-gray-100 -ml-15 pl-2 md:pl-6 pr-1 py-1 sm:pr-3 sm:py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500" placeholder="Upload resume" value={resume} onChange={(e) => setResume(e.target.value)} ></input>
             </div>
           </div>
         </div>  
         <div className="flex -mx-3">
           <div className="w-full px-3 mb-5">
-          <button
-                type="submit"
-                onClick={handleSubmit}
-                className="bg-green-400 px-6 py-2 mt-3  rounded font-semibold text-white hover:bg-green-500 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300"
-              >
-                Submit
-            </button>
+            <button className="block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-1 py-1 sm:px-3 sm:py-3 font-semibold" onClick={logInputValue}>Apply</button>
           </div>
         </div>                   
         </Modal>
     </div>
-  )
-}
+  );
+};
 
-export default Apply
+export default model;

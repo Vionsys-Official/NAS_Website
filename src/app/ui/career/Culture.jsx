@@ -13,14 +13,14 @@ const Culture = () => {
         {id:4,icon:growth,title:"Growth", desc:"We’re dedicated to your professional and personal development. With continuous learning opportunities, you’ll grow and evolve in your career."},
     ]
   return (
-    <div>
+    <div className='flex flex-col items-center justify-center'>
         <div className='flex items-center justify-center'>
             <div className='w-[90%] flex flex-col items-center justify-center'>
-            <h2 className='text-4xl font-bold pt-10'>Our Culture</h2>
-            <h3 className='text-xl font-medium p-4'>Our culture is built on a foundation of creativity, collaboration, and a commitment to excellence. We foster an environment where innovation thrives, teamwork is paramount, and every team member's contributions are valued. Here’s what makes our culture unique</h3>
+            <h2 className='text-MainHeading-sm md:text-MainHeading font-bold pt-6 md:pt-10'>Our Culture</h2>
+            <h3 className='text-Para-sm md:text-Para font-medium p-2 md:p-4'>Our culture is built on a foundation of creativity, collaboration, and a commitment to excellence. We foster an environment where innovation thrives, teamwork is paramount, and every team member's contributions are valued. Here’s what makes our culture unique</h3>
             </div>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-10">
+        <div class="w-[90%] grid grid-cols-1 sm:grid-cols-2 gap-4 py-2 md:py-6">
             {culture.map((feat)=>{
                 return(
                     <div key={feat.id} class="block rounded-xl border border-gray-800 p-4">
@@ -30,10 +30,10 @@ const Culture = () => {
                         </div>
                         </span>
 
-                        <h2 class="mt-2 font-semibold text-base sm:text-lg">
+                        <h2 class="mt-2 font-semibold text-CardHeading-sm md:text-CardHeading">
                             {feat.title}
                         </h2>
-                        <p class="sm:mt-1 block text-sm sm:text-base"> 
+                        <p class="sm:mt-1 block text-Para-sm md:text-Para"> 
                             {feat.desc}
                         </p>
                     </div>
