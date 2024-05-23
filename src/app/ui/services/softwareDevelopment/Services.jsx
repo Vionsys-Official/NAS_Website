@@ -6,12 +6,12 @@ const serve = [
     {
         id: 1,
         title: "Custom Software Development",
-        para: "Tailored solutions meeting unique business requirements with a focus on robustness, scalability, and security.",
+        para: "Tailored solutions meeting unique business requirements with a focus on robustness, scalability and security.",
     },
     {
         id: 2,
         title: "Mobile App Development",
-        para: "Covering iOS, Android, and cross-platform development to reach a wide audience.",
+        para: "Covering iOS, Android and cross-platform development to reach a wide audience.",
     },
     {
         id: 3,
@@ -21,12 +21,12 @@ const serve = [
     {
         id: 5,
         title: "Enterprise Software Solutions",
-        para: "Enhancing business operations through ERP, CRM, supply chain management, and business intelligence systems.",
+        para: "Enhancing business operations through ERP, CRM, supply chain management and business intelligence systems.",
     },
     {
         id: 8,
         title: "Emerging Technologies",
-        para: "Staying ahead with AI, ML, blockchain, IoT, AR, and VR applications for various industries.",
+        para: "Staying ahead with AI, ML, blockchain, IoT, AR and VR applications for various industries.",
     },
 ]
 

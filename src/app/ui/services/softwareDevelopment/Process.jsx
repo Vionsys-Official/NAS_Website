@@ -25,7 +25,7 @@ const Process = () => {
             id: 4,
             title: "Testing and QA",
             para: "4",
-            description: "Rigorous testing ensures the software is reliable, secure, and performs optimally."
+            description: "Rigorous testing ensures the software is reliable, secure and performs optimally."
         },
         {
             id: 5,
