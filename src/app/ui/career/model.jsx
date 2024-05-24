@@ -6,14 +6,14 @@ import { Formik, Field, ErrorMessage } from 'formik';
 import { JobSchema } from '@/utils/CardSchema';
 
 const model = () => {
-  const [visible, setVisible] = useState(false);
+  const [open, setOpen] = useState(false);
 
   const showModal = () => {
-    setVisible(true);
+    setOpen(true);
   };
 
   const handleCancel = () => {
-    setVisible(false);
+    setOpen(false);
   };
 
   const initialValues = {
@@ -26,14 +26,12 @@ const model = () => {
 
   const handleSubmit = (values) => {
     console.log('Form data', values);
-    setVisible(false); // Close the modal on form submission
+    setOpen(false); // Close the modal on form submission
   };
 
-  const handleFileChange = (setFieldValue, file) => {
-    if (file.file.status === 'done') {
-      setFieldValue('resume', file.file.originFileObj);
-    } else if (file.file.status === 'removed') {
-      setFieldValue('resume', null);
+  const handleFileChange = (setFieldValue, info) => {
+    if (info.file.status === 'done' || info.file.status === 'removed') {
+      setFieldValue('resume', info.fileList.length ? info.fileList[0].originFileObj : null);
     }
   };
 
@@ -44,7 +42,7 @@ const model = () => {
       </Button>
       <Modal
         title="Register"
-        visible={visible}
+        open={open}
         onCancel={handleCancel}
         footer={null}
       >
@@ -55,39 +53,47 @@ const model = () => {
         >
           {({ handleSubmit, setFieldValue }) => (
             <Form onFinish={handleSubmit}>
-              <Form.Item name="username" label="Username">
-                <Field name="username" as={Input} />
-                <ErrorMessage name="username" component="div" className="error-message" />
-              </Form.Item>
-              <Form.Item name="email" label="Email">
-                <Field name="email" as={Input} type="email" />
-                <ErrorMessage name="email" component="div" className="error-message" />
-              </Form.Item>
-              <Form.Item name="phone" label="Phone">
-                <Field name="phone" as={Input} />
-                <ErrorMessage name="phone" component="div" className="error-message" />
-              </Form.Item>
-              <Form.Item name="jobProfile" label="Job Profile">
-                <Field name="jobProfile" as={Input} />
-                <ErrorMessage name="jobProfile" component="div" className="error-message" />
-              </Form.Item>
-              <Form.Item name="resume" label="Resume">
-                <Upload
-                  name="resume"
-                  accept=".pdf,.doc,.docx"
-                  beforeUpload={() => false}
-                  onChange={(info) => handleFileChange(setFieldValue, info)}
-                >
-                  <Button icon={<UploadOutlined />}>Click to Upload</Button>
-                </Upload>
-                <ErrorMessage name="resume" component="div" className="error-message" />
-              </Form.Item>
-              <Form.Item>
-                <Button type="primary" htmlType="submit">
-                  Register
-                </Button>
-              </Form.Item>
-            </Form>
+            <Form.Item label="Username">
+              <Field name="username">
+                {({ field }) => <Input {...field} />}
+              </Field>
+              <ErrorMessage name="username" component="div" className="error-message" />
+            </Form.Item>
+            <Form.Item label="Email">
+              <Field name="email">
+                {({ field }) => <Input {...field} type="email" />}
+              </Field>
+              <ErrorMessage name="email" component="div" className="error-message" />
+            </Form.Item>
+            <Form.Item label="Phone">
+              <Field name="phone">
+                {({ field }) => <Input {...field} />}
+              </Field>
+              <ErrorMessage name="phone" component="div" className="error-message" />
+            </Form.Item>
+            <Form.Item label="Job Profile">
+              <Field name="jobProfile">
+                {({ field }) => <Input {...field} />}
+              </Field>
+              <ErrorMessage name="jobProfile" component="div" className="error-message" />
+            </Form.Item>
+            <Form.Item label="Resume">
+              <Upload
+                name="resume"
+                accept=".pdf,.doc,.docx"
+                beforeUpload={() => false}
+                onChange={(info) => handleFileChange(setFieldValue, info)}
+              >
+                <Button icon={<UploadOutlined />}>Click to Upload</Button>
+              </Upload>
+              <ErrorMessage name="resume" component="div" className="error-message" />
+            </Form.Item>
+            <Form.Item>
+              <Button type="primary" htmlType="submit">
+                Register
+              </Button>
+            </Form.Item>
+          </Form>
           )}
         </Formik>
       </Modal>
