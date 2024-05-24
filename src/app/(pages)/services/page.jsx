@@ -1,122 +1,150 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import Button from '@/components/ui/Button';
 
 const Page = () => {
 
   const ourServices = [
     {
-      title: "Custom Software Development",
-      imagesrc: "https://images.unsplash.com/photo-1583508915901-b5f84c1dcde1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?",
+      title: "Software Development",
+      imagesrc: "/assets/services/SoftwareDev.jpg",
+      description: "We deliver innovative software tailored to your business needs. Trust us for reliable, high-quality development that ensures your success.",
+      href1: "services/softwareDevelopment",
+    },
+    {
+      title: "Artificial Intelligence and Machine Learning",
+      imagesrc: "/assets/services/Ai.jpg",
+      description: "Harness the power of AI and ML to transform your business operations. Our advanced solutions drive innovation and efficiency, setting you ahead of the competition.",
       href1: "services/softwareDevelopment",
     },
     {
       title: "Salesforce Services",
-      imagesrc: "https://ethosolucoes.com/wp-content/uploads/2023/08/salesforce-blog_capa-2.png.webp",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing or itaque doloribus quam accusantium eum ",
+      imagesrc: "/assets/services/SSalesforce.jpg",
+      description: "Optimize your customer relationship management with our expert Salesforce services. We provide tailored solutions to streamline your processes and boost your business efficiency.s",
       href1: "services/softwareDevelopment",
     },
-    {
-      title: "Cybersecurity Solutions",
-      imagesrc: "https://www.skillreactor.io/blog/wp-content/uploads/2024/04/Cybersecurity-Projects.jpeg",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?",
-      href1: "services/softwareDevelopment",
-    },
+    
+    
     {
       title: "Software Testing and Quality Assurance",
-      imagesrc: "https://qualizeal.com/wp-content/uploads/2022/05/Software-Testing-Trends-for-the-Next-Decade-1.jpg",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?",
+      imagesrc: "/assets/services/testing.jpg",
+      description: "We guarantee flawless software performance with our rigorous testing and quality assurance services, ensuring a seamless launch for your product.",
+      href1: "services/softwareDevelopment",
+    },
+    {
+      title: "Devops",
+      imagesrc: "/assets/services/devops1.jpg",
+      description: "Streamline your development and operations with our DevOps expertise. We optimize workflows, automate processes, and ensure seamless collaboration for faster, more efficient software delivery.",
       href1: "services/softwareDevelopment",
     },
     {
       title: "Cloud Computing",
-      imagesrc: "https://www.device42.com/blog/wp-content/uploads/2023/03/14_01edge-cloud-computing.jpg",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?",
+      imagesrc: "/assets/services/cloudcomputing.jpg",
+      description: "Unlock the power of scalable, flexible infrastructure with our cloud computing solutions. Seamlessly transition to the cloud for enhanced reliability, security, and efficiency in your operations.",
       href1: "services/softwareDevelopment",
     },
     {
       title: "Web Site Development",
-      imagesrc: "https://everythinginclick.com/wp-content/uploads/2021/04/Why-Do-You-Need-to-Hire-a-Skilled-Web-Developer.png",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?",
+      imagesrc: "/assets/services/webdev.jpg",
+      description: "Craft captivating online experiences tailored to your brand with our expert website development services. From sleek designs to seamless functionality, we bring your digital vision to life with precision and creativity.",
       href1: "services/softwareDevelopment",
     },
     {
+      title: "Digital Marketing",
+      imagesrc: "/assets/services/digitalMarket.jpg",
+      description: "Boost your online presence with our strategic solutions. From SEO to social media, we optimize your digital strategy for maximum impact and growth.",
+      href1: "services/softwareDevelopment",
+
+    },
+    {
+      title: "BI and Analytics",
+      imagesrc: "/assets/services/BIAnalytics.jpg",
+      description: "Empower data-driven decisions with our advanced BI and analytics solutions. Gain valuable insights to drive your business forward with confidence and precision.",
+      href1: "services/softwareDevelopment",
+
+    },
+    {
       title: "Customer Relationship Management",
-      imagesrc: "https://www.blink-it.pt/wp-content/uploads/2022/03/103_CRM.jpg",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?",
+      imagesrc: "/assets/services/CRM.jpg",
+      description: "Optimize interactions and enhance customer satisfaction with our tailored CRM solutions. Streamline processes and nurture relationships for sustained business growth.",
       href1: "services/softwareDevelopment",
     },
     {
       title: "IT Staffing",
-      imagesrc: "https://media.licdn.com/dms/image/C4D12AQER1LQYCjtCCA/article-cover_image-shrink_720_1280/0/1643372583060?e=2147483647&v=beta&t=lpCkmPFHR4_-ki2urA68bYVvDc-qFHEfJlfnYBz7zms",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?",
+      imagesrc: "/assets/services/ItStaff.jpg",
+      description: "Unlock your team's full potential with our specialized IT staffing solutions. From top-tier talent acquisition to seamless onboarding, we ensure a perfect fit for your organization's success.",
+      href1: "services/softwareDevelopment",
+
+    },
+    {
+      title: "IT Service Support",
+      imagesrc: "/assets/services/IT-Suppjpg.jpg",
+      description: "Rely on our expert IT support for seamless operations. From troubleshooting to proactive maintenance, we keep your systems running smoothly, so you can focus on your business.",
       href1: "services/softwareDevelopment",
 
     },
   ];
 
-
   return (
     <main>
-      <section id="mission2" className="p-5 sm:px-6 lg:px-8">
-        <div className="mt-10 mx-auto max-w-6xl px-4 sm:px-6 p-5 flex gap-3 lg:flex-justify lg:flex flex-col lg:flex-row">
+
+      {/* Heading Section */}
+      <section id="mission2" className="p-5">
+        <div className="m-14 mx-auto max-w-6xl  flex gap-3 lg:flex-justify lg:flex flex-col lg:flex-row">
           <div className="sm:text-center mx-6 my-7 lg:text-left">
-            <h1 className="text-2xl tracking-tight font-extrabold text-gray-800 sm:text-3xl md:text-3xl">
+            <h1 className="text-3xl tracking-tight font-extrabold text-gray-800">
               <span className="block xl:inline">Top-Quality Software Services</span>
-              <span className="block text-indigo-600 xl:block">Tailored for You</span>
+              <span className="block text-violet-900 xl:block">Tailored for You</span>
             </h1>
-            <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+            <p className="mt-5 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
             </p>
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-              <button className="inline-flex text-white bg-orange-500 border-0  py-2 px-6 focus:outline-none hover:bg-orange-600 rounded text-lg">Contact Us</button>
+            <Button />
             </div>
           </div>
-          <div className="lg:inset-y-0 lg:right-0 lg:w-1/2 my-4">
-            <Image width={500} height={500} className="object-cover" src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="" />
+          <div className="lg:inset-y-0 lg:right-0 shadow-md lg:w-1/2 ">
+            <Image width={550} height={500} className="object-cover" src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="" />
           </div>
         </div>
       </section>
 
-      <section className="bg-white p-2">
-        <div className="max-w-[77rem] mx-auto mt-10">
-          <h1 className="text-3xl text-center font-bold text-gray-900 leading-tight mb-2 border-t-2 border-b-2 border-indigo-600 py-2">
+      {/* cards section */}
+      <section className="bg-white p-2 ">
+        <div className="max-w-[77rem] mx-auto">
+          <h1 className="text-3xl text-center font-semibold text-gray-900 leading-tight mb-2  border-b-2 border-violet-900 py-2 relative">
             Our <span className='text-orange-600'>Services</span>
           </h1>
+        
         </div>
-
-        <div className="flex flex-wrap justify-center gap-6 pt-5 px-4">
-          {ourServices.map((service, index) => (
-            <div key={index} className=" hover:bg-gray-200 hover:border-gray-400 w-[270px] rounded-md p-4 mx-2 bg-white border shadow-sm hover:shadow-lg transition overflow-hidden flex flex-col justify-between">
-              <div>
-                <Image
-                  width={500}
-                  height={500}
-                  src={service.imagesrc}
-                  alt={service.title}
-                  className="h-[170px] w-full rounded-md object-cover"
-                />
-                <div className="pt-2 px-1">
-                  <h1 className="text-lg font-semibold">{service.title}</h1>
-                  <p className="mt-3 text-sm text-gray-600">
-                    {service.description}
-                  </p>
-                </div>
-              </div>
-              <Link href={service.href1}>
-            <button
-              type="button"
-              className="mt-4 rounded-sm bg-indigo-800 px-2.5 py-1 text-[12px] font-semibold text-white shadow-sm hover:bg-indigo-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-            >
-              Read more
-            </button>
-          </Link>
-            </div>
+  <div className="flex flex-wrap justify-center gap-6 p-5">
+  {ourServices.map((service, index) => (
+    <div key={index} className="group hover:bg-gray-100 hover:border-gray-300 w-[270px] rounded-md p-4 mx-2 bg-white border shadow-sm hover:shadow-lg transition overflow-hidden flex flex-col justify-between">
+      <div>
+        <Image
+          width={500}
+          height={500}
+          src={service.imagesrc}
+          alt={service.title}
+          className="h-[170px] w-full rounded-md object-cover transition-transform duration-300 ease-in-out transform group-hover:scale-105"/>
+        <div className="pt-2 px-1">
+          <h1 className="text-lg font-semibold">{service.title}</h1>
+          <p className="mt-3 text-sm text-gray-600">
+            {service.description}
+          </p>
+        </div>
+      </div>
+      <Link href={service.href1}>
+      <button class="smky-btn3 p-[2px] relative hover:text-gray-100  after:absolute after:h-1 after:hover:h-[250%] after:hover:border-2 after:border-red-600 
+              transition-all duration-500 hover:transition-all hover:duration-500 after:transition-all after:duration-500 
+              after:hover:transition-all after:hover:duration-500 overflow-hidden z-20 after:z-[-20] after:bg-violet-900 
+              after:rounded-t-full after:w-full after:bottom-0 after:left-0 text-gray-800">Read more</button>
+      </Link>
+    </div>
           ))}
         </div>
       </section>
-
 
     </main>
   );
