@@ -1,5 +1,5 @@
 import ChooseUs from '@/app/ui/services/softwareDevelopment/ChooseUs'
-import GetStart from '@/app/ui/services/softwareDevelopment/GetStart'
+import SoftStart from '@/app/ui/services/softwareDevelopment/SoftStart' 
 import Hero from '@/app/ui/services/softwareDevelopment/Hero'
 import Process from '@/app/ui/services/softwareDevelopment/Process'
 import Services from '@/app/ui/services/softwareDevelopment/Services'
@@ -14,7 +14,7 @@ const page = () => {
         <Services/>
         <ChooseUs/>
         <FaqSoftDev/>
-        <GetStart/>
+        <SoftStart/>
     </div>
   )
 }
