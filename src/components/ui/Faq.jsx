@@ -13,7 +13,7 @@ const Faq = ({faq}) => {
                     </h3>
                 </div>
 
-                <div className="mt-20">
+                <div className="mt-14">
                     <ul className="">
                         {faq.map((item) =>(
                             <li key={item.id} className="text-left mb-10">
