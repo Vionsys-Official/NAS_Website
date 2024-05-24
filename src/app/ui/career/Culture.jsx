@@ -16,24 +16,24 @@ const Culture = () => {
     <div className='flex flex-col items-center justify-center'>
         <div className='flex items-center justify-center'>
             <div className='w-[90%] flex flex-col items-center justify-center'>
-            <h2 className='text-MainHeading-sm md:text-MainHeading font-bold pt-6 md:pt-10'>Our Culture</h2>
-            <h3 className='text-Para-sm md:text-Para font-medium p-2 md:p-4'>Our culture is built on a foundation of creativity, collaboration, and a commitment to excellence. We foster an environment where innovation thrives, teamwork is paramount, and every team member's contributions are valued. Here’s what makes our culture unique</h3>
+            <h2 className='text-MainHeading-sm md:text-MainHeading font-semibold pt-6 md:pt-10 cursor-pointer'>Our Culture</h2>
+            <h3 className='text-Para-sm md:text-Para font-medium p-2 md:p-4 cursor-pointer'>Our culture is built on a foundation of creativity, collaboration, and a commitment to excellence. We foster an environment where innovation thrives, teamwork is paramount, and every team member's contributions are valued. Here’s what makes our culture unique</h3>
             </div>
         </div>
-        <div class="w-[90%] grid grid-cols-1 sm:grid-cols-2 gap-4 py-2 md:py-6">
+        <div className="w-[90%] grid grid-cols-1 sm:grid-cols-2 gap-4 py-2 md:py-6">
             {culture.map((feat)=>{
                 return(
-                    <div key={feat.id} class="block rounded-xl border border-gray-800 p-4">
-                        <span class="inline-block rounded-lg">
-                        <div class="inline-flex align-middle justify-center items-center select-none">
+                    <div key={feat.id} className="block rounded-xl border border-gray-700 hover:border-2 p-4 cursor-pointer">
+                        <span className="inline-block rounded-lg">
+                        <div className="inline-flex align-middle justify-center items-center select-none">
                             <Image src={feat.icon} alt="icon" height={100} width={100}></Image>
                         </div>
                         </span>
 
-                        <h2 class="mt-2 font-semibold text-CardHeading-sm md:text-CardHeading">
+                        <h2 className="mt-2 font-semibold text-CardHeading-sm md:text-CardHeading">
                             {feat.title}
                         </h2>
-                        <p class="sm:mt-1 block text-Para-sm md:text-Para"> 
+                        <p className="sm:mt-1 block text-Para-sm md:text-Para font-light"> 
                             {feat.desc}
                         </p>
                     </div>
