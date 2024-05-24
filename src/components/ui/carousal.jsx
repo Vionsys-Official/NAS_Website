@@ -31,11 +31,11 @@ export default function EmblaCarousel() {
           </div>
           <div className="absolute flex justify-center flex-col pl-4 md:w-[200vh]">
             
-            <h2 className="text-6xl font-extrabold uppercase tracking-tighter text-stone-400">
+            <h2 className="md:text-6xl text-3xl font-extrabold uppercase tracking-tighter text-stone-400">
               <span className="text-green-500">N</span>extgen <span className="text-green-500">A</span>dvanced <br />
               <span className="text-green-500">S</span>olutions
             </h2>
-            <p className="text-3xl font-thin text-white">
+            <p className="md:text-3xl text-lg font-thin text-white">
               Comprehensive IT Solutions for Today's Challenges
             </p>
           </div>
@@ -52,11 +52,11 @@ export default function EmblaCarousel() {
             />
           </div>
           <div className="absolute flex justify-start flex-col md:w-[215vh]">
-            <h2 className="text-6xl font-extrabold uppercase tracking-tighter text-stone-400">
+            <h2 className="md:text-6xl text-3xl font-extrabold uppercase tracking-tighter text-stone-400">
               Technology That
               <br /> <span className="text-green-500">Drives Success</span>
             </h2>
-            <p className="text-3xl font-thin text-white">
+            <p className="md:text-3xl text-lg font-thin text-white">
               Empowering Businesses with Advanced IT Solutions
             </p>
           </div>
@@ -74,10 +74,10 @@ export default function EmblaCarousel() {
           </div>
           <div className="absolute flex justify-start flex-col md:w-[215vh]">
             
-            <h2 className="text-6xl font-extrabold uppercase tracking-tighter text-stone-400">
+            <h2 className="md:text-6xl text-3xl font-extrabold uppercase tracking-tighter text-stone-400">
              <span className="text-green-500">Your Partner in</span><br /> Technology Excellence
             </h2>
-            <p className="text-3xl font-thin text-white">
+            <p className="md:text-3xl text-lg font-thin text-white">
               Delivering Reliable IT Solutions Tailored to Your Needs
             </p>
           </div>
