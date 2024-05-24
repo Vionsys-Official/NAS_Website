@@ -1,4 +1,6 @@
 import inclusion from '/public/assets/career/inclusion.jpg';
+import AboutUs from '/public/assets/aboutUs/about.jpg'
+import Hero from '/public/assets/contact/Hero.jpg';
 
 export const careerData = 
   {
@@ -12,20 +14,19 @@ export const careerData =
 export const aboutData = 
   {
     content: {
-        image:inclusion,
-        heading: "Shape the Future with Us",
+        image:AboutUs,
+        heading: "Transform Your Ideas Into Reality",
         title:
-          "Join Our Innovative Team at NAS Infotech",
+          "Ready to take your IT solutions to the next level?",
     },
 };
 export const contactData = 
-  {
-    content: {
-        image:inclusion,
-        heading: "Shape the Future with Us",
-        title:
-          "Join Our Innovative Team at NAS Infotech",
-    },
+{
+  content: {
+    image: Hero,
+    heading: "Shape the Future with Us",
+    title: "Join Our Innovative Team at NAS Infotech",
+  },
 };
 export const industriesData = 
   {

@@ -7,7 +7,7 @@ import mission3 from "/public/assets/aboutUs/mission3.jpg"
 const mission = () => {
   return (
     <section>
-        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div className="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       <div className="grid gap-10 lg:grid-cols-2">
       <div className="flex items-center justify-center -mx-4 lg:pl-8">
           
@@ -33,9 +33,9 @@ const mission = () => {
         </div>
 
 
-        <div className="flex flex-col pl-10 justify-center">
+        <div className="flex backdrop-blur-sm flex-col md:px-10 justify-center">
           <div className="mb-6">
-            <h2 className="mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+            <h2 className="mb-6 font-sans text-3xl font-bold tracking-tight text-blue-900 sm:text-4xl sm:leading-none">
             Our Mission
             </h2>
             <p className="text-base text-gray-700 md:text-lg">
