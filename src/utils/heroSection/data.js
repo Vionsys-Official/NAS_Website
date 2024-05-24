@@ -1,11 +1,12 @@
 import inclusion from '/public/assets/career/inclusion.jpg';
 import AboutUs from '/public/assets/aboutUs/about.jpg'
 import Hero from '/public/assets/contact/Hero.jpg';
+import head from '/public/assets/career/head.jpg';
 
 export const careerData = 
   {
     content: {
-        image:inclusion,
+        image:head,
         heading: "Shape the Future with Us",
         title:
           "Join Our Innovative Team at NAS Infotech",
