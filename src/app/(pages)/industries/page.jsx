@@ -1,77 +1,89 @@
 import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
-import industres1 from "/public/assets/Industries/industres1.jpg"
+import industres1 from "/public/assets/Industries/industres1.jpg";
+import HeroSection from '@/utils/heroSection/HeroSection';
+
+
+
 const page = () => {
   const ourServices = [
+    
     {
       title: "Banking",
-      imagesrc: "https://images.unsplash.com/photo-1583508915901-b5f84c1dcde1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?",
+      imagesrc: "/assets/industries/banking.jpg",
+      description: "Empower your financial institution with our tailored solutions. From secure transactions to regulatory compliance, we support your banking operations for optimal performance and customer satisfaction.",
     },
     {
       title: "E-commerce",
-      imagesrc: "https://ethosolucoes.com/wp-content/uploads/2023/08/salesforce-blog_capa-2.png.webp",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing or itaque doloribus quam accusantium eum ",
+      imagesrc: "/assets/industries/E-commerce.jpg",
+      description: "Drive online success with our customized solutions. From seamless shopping experiences to secure payment processing, we help you navigate the digital marketplace with ease and efficiency.",
     },
     {
       title: "Healthcare",
-      imagesrc: "https://www.skillreactor.io/blog/wp-content/uploads/2024/04/Cybersecurity-Projects.jpeg",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?",
+      imagesrc: "/assets/industries/Madical.jpg",
+      description: "Transform patient care with our innovative solutions. From electronic health records to telemedicine platforms, we empower healthcare providers to deliver quality services with efficiency and precision.",
     },
     {
       title: "Education",
-      imagesrc: "https://qualizeal.com/wp-content/uploads/2022/05/Software-Testing-Trends-for-the-Next-Decade-1.jpg",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?",
+      imagesrc: "/assets/industries/Education.jpg",
+      description: "Enhance learning experiences with our innovative solutions. From personalized platforms to administrative tools, we support educational institutions for success.",
     },
     {
       title: "Telicommunication",
-      imagesrc: "https://www.device42.com/blog/wp-content/uploads/2023/03/14_01edge-cloud-computing.jpg",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?",
+      imagesrc: "/assets/industries/telicon.jpg",
+      description: "Elevate connectivity with our advanced solutions. From network optimization to customer engagement tools, we empower telecom companies for seamless communication experiences.",
     },
     {
       title: "Manufacturing",
-      imagesrc: "https://everythinginclick.com/wp-content/uploads/2021/04/Why-Do-You-Need-to-Hire-a-Skilled-Web-Developer.png",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?",
+      imagesrc: "/assets/industries/manufacturer.jpg",
+      description: "Drive efficiency with our customized solutions. From process optimization to supply chain management, we empower manufacturers for streamlined operations.",
     },
     {
       title: "Real Estate",
-      imagesrc: "https://www.blink-it.pt/wp-content/uploads/2022/03/103_CRM.jpg",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?",
+      imagesrc:"/assets/industries/realEstate.jpg",
+      description: "Transform property management with our innovative solutions. From listings management to client portals, we empower real estate professionals for success in a competitive market.",
     },
     {
       title: "Logistics and Transportation",
-      imagesrc: "https://media.licdn.com/dms/image/C4D12AQER1LQYCjtCCA/article-cover_image-shrink_720_1280/0/1643372583060?e=2147483647&v=beta&t=lpCkmPFHR4_-ki2urA68bYVvDc-qFHEfJlfnYBz7zms",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?",
+      imagesrc: "/assets/industries/transport.jpg",
+      description: "Optimize logistics with our tailored solutions. From route optimization to fleet management, we empower transportation companies for efficient and reliable operations.",
     },
   ];
+
+  const heroSectionContent = {
+    content: {
+      image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      heading: 'Your Heading',
+      title: 'Your Title',
+    }
+  };
+
   return (
+    
     <main>
-
-      <div className="p-10 pt-14 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-10 lg:pt-24">
-        <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
-
+      {/* Hading Section*/}
+      <HeroSection obj={heroSectionContent} />
+      <section id="mission3" className="p-10 mx-auto">
+        <div className=" mt-10 grid gap-5 row-gap-8 lg:grid-cols-2">
           <div>
             <Image
               width={600}
               height={600}
-              className="m-5 pr-5 object-cover"
+              className=" p-5 object-cover"
               src={industres1}
-              alt=""
-            />
+              alt=""/>
           </div>
 
-          <div className=" ml-5 flex flex-col justify-center">
-            <div className="max-w-xl mb-6">
+          <div className="flex flex-col justify-center">
+            <div className="max-w-xl">
+              
               <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
                 Empowering Industries with
-                <br className="hidden md:block" />
-                Cutting-Edge {' '}
-                <span className="relative inline-block text-blue-700">
-                  <div className="absolute inset-x-0 bottom-0 h-2 transform -skew-x-12 bg-orange-500" />
-                  <span className="relative inline-flex whitespace-nowrap">
+                <br className="hidden md:block"/>
+                Cutting-Edge
+                <span className="relative inline-block text-violet-900">
                     Software Solutions
-                  </span>
                 </span>
               </h2>
 
@@ -82,8 +94,8 @@ const page = () => {
               </p>
             </div>
             <div className="grid gap-5 row-gap-8 sm:grid-cols-2">
-              <div className="bg-white border-l-4 shadow-sm border-blue-700">
-                <div className="h-full p-5 border border-l-0 rounded-r">
+              <div className=" border-l-4 shadow-sm border-violet-900">
+                <div className="h-full p-5  border-l-0 rounded-r">
                   <h6 className="mb-2 font-semibold leading-5">
                     I'll be sure to note that in my log
                   </h6>
@@ -93,8 +105,8 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              <div className="bg-white border-l-4 shadow-sm border-blue-700">
-                <div className="h-full p-5 border border-l-0 rounded-r">
+              <div className=" border-l-4 shadow-sm border-violet-900">
+                <div className="h-full p-5  border-l-0 rounded-r">
                   <h6 className="mb-2 font-semibold leading-5">
                     A business big enough that it could be listed
                   </h6>
@@ -106,27 +118,27 @@ const page = () => {
               </div>
             </div>
           </div>
-
         </div>
-      </div>
+      </section>
 
-      <section className="bg-white p-2">
-      <div class="max-w-3xl mx-auto text-center mt-16">
-    <h1 class="text-4xl font-bold text-gray-900 leading-tight mb-2 pb-4 relative">
-        <span class="bg-clip-text text-transparent bg-gradient-to-r to-orange-700 from-blue-700">Industries</span>
-        <span class="absolute bottom-0 left-0 w-full h-[3px] bg-gradient-to-r to-orange-700 from-blue-700"></span>
-    </h1>
-</div>
+      {/* Cards Section */}
+      <section className="bg-white p-5 ">
+        <div class="max-w-3xl mx-auto text-center">
+          <h1 class="text-4xl font-bold text-gray-900 leading-tight mb-2 pb-2 relative">
+            <span class="bg-clip-text text-transparent bg-orange-600">Industries</span>
+            <span class="absolute bottom-0 left-0 w-full h-[2px] bg-violet-950"></span>
+          </h1>
+        </div>
         <div className="flex flex-wrap justify-center gap-6 pt-5 px-4">
           {ourServices.map((service, index) => (
-            <div key={index} className=" hover:bg-gray-200 hover:border-gray-400 w-[270px] rounded-md p-4 mx-2 bg-white border shadow-sm hover:shadow-lg transition overflow-hidden flex flex-col justify-between">
+            <div key={index} className="group hover:bg-gray-100 hover:border-gray-400 w-[270px] rounded-md p-4 mx-2 bg-white border shadow-sm hover:shadow-lg transition overflow-hidden flex flex-col justify-between">
               <div>
                 <Image
                   width={500}
                   height={500}
                   src={service.imagesrc}
                   alt={service.title}
-                  className="h-[170px] w-full rounded-md object-cover"
+                  className="h-[170px] w-full rounded-md object-cover transition-transform duration-300 ease-in-out transform group-hover:scale-105"
                 />
                 <div className="pt-2 px-1">
                   <h1 className="text-lg font-semibold">{service.title}</h1>
@@ -135,22 +147,20 @@ const page = () => {
                   </p>
                 </div>
               </div>
+              <div className='p-1'>
               <Link href="/">
-                <button
-                  type="button"
-                  className="mt-4 rounded-sm bg-indigo-800 px-2.5 py-1 text-[12px] font-semibold text-white shadow-sm hover:bg-indigo-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-                >
-                  Read more
-                </button>
+              <button class="smky-btn3 p-[2px] relative hover:text-gray-100  after:absolute after:h-1 after:hover:h-[250%] after:hover:border-2 after:border-red-600 
+              transition-all duration-500 hover:transition-all hover:duration-500 after:transition-all after:duration-500 
+              after:hover:transition-all after:hover:duration-500 overflow-hidden z-20 after:z-[-20] after:bg-violet-900 
+              after:rounded-t-full after:w-full after:bottom-0 after:left-0 text-gray-800">Read more</button>
               </Link>
+            </div>
             </div>
           ))}
         </div>
       </section>
-
-
     </main>
   )
 }
 
-export default page
+export default page;
