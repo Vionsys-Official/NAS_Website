@@ -11,6 +11,31 @@ const value = () => {
       <div className="grid gap-10 lg:grid-cols-2">
 
         <div className="flex backdrop-blur-sm flex-col justify-center md:pl-16 xl:pr-0 ">
+        <span className="relative inline-block">
+            <svg
+              viewBox="0 0 52 24"
+              fill="currentColor"
+              className="absolute right-0 bottom-0 z-0 w-32 text-blue-gray-100 lg:w-32"
+            >
+              <defs>
+                <pattern
+                  id="ea469ae8-e6ec-4aca-8875-fc402da4d16e"
+                  x="0"
+                  y="0"
+                  width=".135"
+                  height=".30"
+                >
+                  <circle cx="1" cy="1" r=".7" />
+                </pattern>
+              </defs>
+              <rect
+                fill="url(#ea469ae8-e6ec-4aca-8875-fc402da4d16e)"
+                width="52"
+                height="24"
+              />
+            </svg>
+            
+          </span>
            <div className="max-w-xl mb-6">
             <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-blue-900 sm:text-4xl sm:leading-none">
             Our Values
