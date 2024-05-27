@@ -23,7 +23,7 @@ const Culture = () => {
         <div className="w-[90%] grid grid-cols-1 sm:grid-cols-2 gap-4 py-2 md:py-6">
             {culture.map((feat)=>{
                 return(
-                    <div key={feat.id} className="block rounded-xl border border-gray-700 hover:border-2 p-4 cursor-pointer">
+                    <div key={feat.id} className="block bg-white rounded-xl border shadow-lg shadow-gray-400 border-gray-300 hover:border-2 p-4 cursor-pointer">
                         <span className="inline-block rounded-lg">
                         <div className="inline-flex align-middle justify-center items-center select-none">
                             <Image src={feat.icon} alt="icon" height={100} width={100}></Image>

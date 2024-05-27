@@ -1,21 +1,14 @@
-import * as Yup from "yup";
+import { z } from 'zod';
 
-const JobSchema = Yup.object().shape({
-  username: Yup.string()
-    .required('Username is required')
-    .min(2, 'Username is too short'),
-  email: Yup.string()
-    .email('Invalid email')
-    .required('Email is required'),
-  phone: Yup.string()
-    .required('Phone number is required')
-    .matches(/^[0-9]{10}$/, 'Phone number is not valid'), // Assuming a 10-digit phone number
-  jobProfile: Yup.string()
-    .required('Job profile is required'),
-  resume: Yup.mixed()
-    .required('Resume is required')
-    .test('fileSize', 'File too large', value => !value || (value && value.size <= FILE_SIZE))
-    .test('fileFormat', 'Unsupported Format', value => !value || (value && SUPPORTED_FORMATS.includes(value.type)))
-  });
+const JobSchema = z.object({
+  name: z.string().min(2, { message: 'Name must be at least 2 characters long' }),
+  email: z.string().email({ message: 'Invalid email address' }),
+  phone: z.string().min(10, { message: 'Phone number must be at least 10 characters long' }),
+  job: z.string().min(2, { message: 'Job position must be at least 2 characters long' }),
+  experience: z.string().min(1, { message: 'Please select years of experience' }),
+  resume: z.instanceof(File).refine(file => file.size <= 1 * 1024 * 1024, { message: 'File size must be less than 1MB' })
+                .refine(file => ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'].includes(file.type), { message: 'File type must be PDF or DOC' }),
+
+});
 
 export { JobSchema };
