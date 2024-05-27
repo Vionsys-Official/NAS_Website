@@ -12,35 +12,45 @@ const landing = () => {
         <EmblaCarousel />
         <section className="h-full w-full">
           <div className="flex justify-center items-center h-full w-screen">
-            <div className="md:h-full md:h-[20vh] w-screen flex px-4">
-              <div className="md:text-4xl text-xl mx-auto p-4 font-thin text-black ">
-                Empower
+            <div className=" md:h-[20vh] w-screen flex px-4">
+              <div className="md:text-4xl text-xl mx-auto py-4 md:font-thin text-black ">
+                Build
                 <FlipWords words={words} /> <br />
-                Your Business Online with Nas Infotech Pvt. Ltd.'s Expertise.
+                 Business Online with Nas Infotech Pvt. Ltd.'s Expertise.
               </div>
             </div>
           </div>
-          <div className="h-full w-full p-4">
-            <div className="flex justify-center z-auto bg-slate-200 shadow-md md:w-[150vh] w-auto mx-auto items-center flex-col border">
-              <p className="p-5 font-semibold h-auto">
-                Organizations worldwide are committed to enhancing the consumer
-                experience, fortifying brand reputation, and enhancing
-                operational efficiency. This journey towards achieving these
-                goals reveals three key innovations: a cohesive
-                interaction-focused platform, integration of diverse Ml
-                functionalities, and AI tailored specifically for enhancing
-                customer experiences.
-              </p>
-              <div className="md:text-hyperlinks text-blue-400 hover:text-blue-600 font-medium py-">
-                  Learn more about us
+          <div className="px-4 md:py-2 py-6 mx-auto sm:max-w-xl md:max-w-full lg:w-[90vw] md:px-24 lg:px-4">
+            <div className=" rounded shadow-2xl sm:p-16">
+              <div className="flex flex-col lg:flex-row">
+                <div className=" lg:mb-0 lg:w-[30vw] ">
+                  <h2 className=" md:py-10 text-blue-900 font-sans text-3xl text-center font-bold tracking-normal  sm:text-4xl sm:leading-none">
+                    Explore our legacy of
+                    <br className="hidden md:block" />
+                     innovation {" "}
+                    <span className="inline-block text-deep-purple-accent-400">
+                    And Excellence
+                    </span>
+                  </h2>
+                </div>
+                <div className="lg:w-1/2 px-2">
+                  <p className=" text-black font-medium p-2 leading-6">
+                    we are dedicated to transforming your IT challenges into
+                    success stories. Our expert team provides innovative and
+                    reliable IT solutions tailored to your business needs. With
+                    a strong focus on customer satisfaction, we offer
+                    unparalleled support and cutting-edge technology to help
+                    your business thrive in the digital age. Partner with us and
+                    experience the difference that expertise and commitment can
+                    make.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </section>
       </main>
     </>
-
-    
   );
 };
 export default landing;

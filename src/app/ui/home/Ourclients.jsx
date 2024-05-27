@@ -1,65 +1,67 @@
-'use client'
-import Client1 from './images/client-1.png';
-import Client2 from './images/client-2.png';
-import Client3 from './images/client-3.png';
-import Client4 from './images/client-4.png';
-import Client6 from './images/client-6.png';
-import Client7 from './images/client-7.png';
-import Client8 from './images/client-8.png';
-import  { useEffect, useState } from "react";
-import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
-import { motion } from "framer-motion";
+'use client';
+import React, { useEffect, useRef, useState } from 'react';
+import { Card } from 'antd';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
 
-export function InfiniteMovingCardsDemo() {
-}
-  import React from 'react'
+import ClientImage1 from './images/client-1.png'
+import ClientImage2 from './images/client-2.png'
+import ClientImage3 from './images/client-3.png';
+import ClientImage4 from './images/client-4.png';
+import ClientImage6 from './images/client-6.png';
+import ClientImage7 from './images/client-7.png';
+import ClientImage8 from './images/client-8.png';
 
-  export const Ourclients = () => {
+const OurClients = () => {
+    const [width, setWidth] = useState(0);
+    const sliderWrapperRef = useRef(null);
+
+    useEffect(() => {
+        if (sliderWrapperRef.current) {
+            setWidth(sliderWrapperRef.current.scrollWidth - sliderWrapperRef.current.offsetWidth);
+        }
+    }, []);
+
+    const clients = [
+        { id: 1, logo: ClientImage1 },
+        { id: 2, logo: ClientImage2 },
+        { id: 3, logo: ClientImage3 },
+        { id: 4, logo: ClientImage4 },
+        { id: 6, logo: ClientImage6 },
+        { id: 7, logo: ClientImage7 },
+        { id: 8, logo: ClientImage8 }
+    ];
+
     return (
-      <div>
-        <div className="p-6">
-          <motion.h1 className="md:text-MainHeading text-MainHeading-sm font-extrabold text-center">Our Clients</motion.h1>
-          <div className="h-auto md:py-4 py-2 rounded-md flex flex-col antialiased dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-            <InfiniteMovingCards
-              items={testimonials}
-              direction="right"
-              speed="slow"
-            />
-          </div>
-        </div>
+        <div className=' shadow-xl'>
+            <h1 className='text-4xl text-blue-900 font-bold text-center py-2'>Our Clients</h1>
+        <section className="backdrop-blur-md w-[100vw] overflow-x-hidden flex justify-center items-center px-6 py-5">
+          <motion.div
+            ref={sliderWrapperRef}
+            className='w-[100%] cursor-grab overflow-hidden'
+            initial={{ x: width }}
+            animate={{ x: 0 }}
+            transition={{ duration: Infinity, repeat: Infinity, ease: "linear" }}
+          >
+            <motion.div
+              drag="x"
+              dragConstraints={{ right: 0, left: -width }}
+              className="flex items-center gap-4"
+            >
+              {clients.map(client => (
+                <Card
+                  key={client.id}
+                  data-aos="zoom-in"
+                  className="min-w-40 md:min-w-60 h-40 flex justify-center items-center bg-[rgba(255,255,255,0.5)]"
+                >
+                  <Image src={client.logo} className="pointer-events-none" priority alt={`Client ${client.id}`} />
+                </Card>
+              ))}
+            </motion.div>
+          </motion.div>
+        </section>
       </div>
-    )
+    );
+  };
   
-  }
-
-export default Ourclients
-const testimonials = [
-  {
-      id: 1,
-      img: Client1,
-  },
-  {
-      id: 2,
-      img: Client2,
-  },
-  {
-      id: 3,
-      img: Client3,
-  },
-  {
-      id: 4,
-      img: Client4,
-  },
-  {
-      id: 6,
-      img: Client6,
-  },
-  {
-      id: 7,
-      img: Client7,
-  },
-  {
-      id: 8,
-      img: Client8,
-  },
-];
+  export default OurClients;

@@ -1,162 +1,153 @@
 import React from "react";
+import Image from "next/image";
+import customcentric from "./images/customcentric.jpg";
+import development from './images/development.jpg';
+import delivery from './images/delivery.jpg';
+import solutions from './images/solutions.jpg';
+import agile from './images/agile.jpg';
+import team from './images/team.jpg';
 const Grid = () => {
   return (
     <>
       <section className="h-full w-full">
-        <section className="w-full h-full">
-          <div className="md:grid gap-6 bg-slate-100 items-center">
-            <div className="flex flex-col justify-center  space-y-8 text-center p-5">
-              <div className="space-y-2 ">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-green-500">
-                  Discover Our Unique Features
-                </h1>
-                <p className="max-w-[600px]  md:text-xl mx-auto">
-                  Our features are designed to enhance your productivity and
-                  streamline your workflow.
-                </p>
-              </div>
-              <div className="w-full max-w-full space-y-4 mx-auto">
-                <div className="grid md:grid-cols-3 gap-8">
-                  <div className="flex flex-col items-center space-y-2  border-b-4 border-[#A0D6B4] p-4 rounded-lg">
-                    <div className="p-2 bg-black bg-opacity-50 rounded-full">
-                      <InboxIcon className="h-6 w-6 mb-2 opacity-75" />
-                    </div>
-                    <h2 className="text-xl font-bold ">Smart AI</h2>
-                    <p className="">
-                      Our Smart AI feature helps you manage your Tasks
-                      efficiently by prioritizing important Task.
-                    </p>
-                  </div>
-                  <div className="flex flex-col items-center space-y-2 border-b-4 border-[#A0D6B4] p-4 rounded-lg">
-                    <div className="p-2 bg-black bg-opacity-50 rounded-full">
-                      <MergeIcon className=" h-6 w-6 mb-2 opacity-75" />
-                    </div>
-                    <h2 className="text-xl font-bold ">Seamless Integration</h2>
-                    <p className="">
-                      Seamless Integration allows you to connect with your
-                      favorite apps and services without leaving your inbox.
-                    </p>
-                  </div>
-                  <div className="flex flex-col items-center space-y-2 border-b-4 border-[#A0D6B4] p-4 rounded-lg">
-                    <div className="p-2 bg-black bg-opacity-50 rounded-full">
-                      <SettingsIcon className="text-white h-6 w-6 mb-2 opacity-75" />
-                    </div>
-                    <h2 className="text-xl font-bold ">
-                      Advanced Customization
-                    </h2>
-                    <p className="">
-                      With Advanced Customization, you can personalize your
-                      email client to suit your preferences and work style.
-                    </p>
-                  </div>
+        {/* discover our unique features */}
+        <div className="px-4 md:py-16 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
+          <div className="flex flex-col mb-6 lg:justify-evenly lg:flex-row ">
+            <h2 className="max-w-lg mb-5 text-blue-900 font-sans text-3xl font-bold tracking-tight  sm:text-4xl sm:leading-none md:mb-6 group text-center">
+              <span className="inline-block mb-1 sm:mb-4">
+                Discover Our Unique Features
+                <br className="hidden md:block" />
+                Our features are designed to enhance your productivity and
+                streamline your workflow.
+              </span>
+              <div className="h-1 ml-auto duration-300 origin-left transform bg-deep-purple-accent-400 scale-x-30 group-hover:scale-x-100" />
+            </h2>
+            <p className="text-gray-700 lg:text-md lg:max-w-xl border-l-4 pl-8 border-green-400">
+              Explore the innovative features that set us apart. Our advanced IT
+              solutions are designed to optimize your operations and enhance
+              productivity. With cutting-edge technology, seamless integration,
+              and robust security measures, our features ensure your business
+              stays ahead in a competitive market. Discover how our
+              user-friendly interfaces, customizable options, and dedicated
+              support can transform your IT experience.
+            </p>
+          </div>
+          {/* first row */}
+          <div className="grid gap-6 row-gap-5  lg:grid-cols-3 sm:row-gap-6 sm:grid-cols-2">
+            
+            <a href="/" aria-label="View Item">
+            <h1 className="text-center py-2 text-xl text-blue-700 font-extrabold">Client-centric approach</h1>
+              <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+              
+                 <Image
+                  className="object-cover w-full h-56 md:h-64 xl:h-80"
+                  src={customcentric}
+                /> 
+                <div className="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100 text-center">
+                  <p className="mb-4 text-lg font-bold text-gray-100">
+                    Client-centric approach
+                  </p>
+                  <p className="text-sm tracking-wide text-gray-300">
+                   Our company prioritizes a customer-centric approach, ensuring that every solution we develop is tailored to meet the unique needs and preferences of our clients. By actively engaging with customers, gathering their feedback, and adapting to their evolving requirements, we deliver personalized, high-value technology solutions.
+                  </p>
                 </div>
               </div>
-            </div>
+            </a>
+            <a href="/" aria-label="View Item">
+            <h1 className="text-center py-2 text-xl text-blue-700 font-extrabold">Iterative Development</h1>
+              <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl text-center">
+                <Image
+                  className="object-cover w-full h-56 md:h-64 xl:h-80"
+                 src={development}
+                />
+                <div className="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+                  <p className="mb-4 text-lg font-bold text-gray-100">
+                    Iterative Development
+                  </p>
+                  <p className="text-sm tracking-wide text-gray-300">
+                  We excel in iterative development, breaking projects into manageable iterations to deliver frequent, high-quality updates. This approach allows us to adapt quickly to feedback, refine our solutions continuously, and ensure that the final product perfectly aligns with our clients' needs.By embracing iterative development, we foster agility, innovation, and a commitment to delivering exceptional value every step of the way.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="/" aria-label="View Item">
+            <h1 className="text-center py-2 text-xl text-blue-700 font-extrabold">Incremental Delivery</h1>
+              <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl text-center">
+                <Image
+                  className="object-cover w-full h-56 md:h-64 xl:h-80"
+                  src={delivery}
+                />
+                <div className="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+                  <p className="mb-4 text-lg font-bold text-gray-100">
+                    Incremental delivery
+                  </p>
+                  <p className="text-sm tracking-wide text-gray-300">
+                  We championed incremental delivery, consistently providing small, functional increments of the product to ensure ongoing value and adaptability. This method allows for continuous feedback, enabling us to make timely improvements and adjustments. By embracing incremental delivery, we ensure our solutions evolve with our clients' needs, maintaining high quality and relevance throughout the development process.
+                  </p>
+                </div>
+              </div>
+            </a>
           </div>
-        </section>
+          {/* second row */}
+          <div className="grid gap-6 row-gap-5  lg:grid-cols-3 sm:row-gap-6 sm:grid-cols-2 md:pt-10">
+            
+            <a href="/" aria-label="View Item">
+            <h1 className="text-center py-2 text-xl text-blue-700 font-extrabold">Innovative Solutions</h1>
+              <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl text-center">
+              
+                 <Image
+                  className="object-cover w-full h-56 md:h-64 xl:h-80"
+                  src={solutions}
+                /> 
+                <div className="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+                  <p className="mb-4 text-lg font-bold text-gray-100">
+                  Innovative Solutions
+                  </p>
+                  <p className="text-sm tracking-wide text-gray-300">
+                  Company is dedicated to delivering innovative solutions that drive transformation and success for our clients. By leveraging the latest technologies and creative thinking, we develop cutting-edge products tailored to meet unique challenges and opportunities. Our commitment to innovation ensures that we provide exceptional value, helping our clients stay ahead in a rapidly evolving digital landscape.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="/" aria-label="View Item">
+            <h1 className="text-center py-2 text-xl text-blue-700 font-extrabold">Agile Methodology</h1>
+              <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl text-center">
+                <Image
+                  className="object-cover w-full h-56 md:h-64 xl:h-80"
+                 src={agile}
+                />
+                <div className="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100 text-center">
+                  <p className="mb-4 text-lg font-bold text-gray-100">
+                    Agile Methodology
+                  </p>
+                  <p className="text-sm tracking-wide text-gray-300">
+                  Our company thrives on Agile methodology, ensuring flexibility, collaboration, and rapid delivery of high-quality solutions. By embracing iterative cycles, frequent feedback, and adaptive planning, we continuously refine our processes and products to meet our clients' evolving needs. This commitment to Agile principles empowers us to deliver exceptional value efficiently and effectively, fostering innovation and customer satisfaction.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="/" aria-label="View Item">
+            <h1 className="text-center py-2 text-xl text-blue-700 font-extrabold">Cross-functional teams</h1>
+              <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+                <Image
+                  className="object-cover w-full h-56 md:h-64 xl:h-80"
+                  src={team}
+                />
+                <div className="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100 text-center">
+                  <p className="mb-4 text-lg font-bold text-gray-100">
+                  Cross-functional teams
+                  </p>
+                  <p className="text-sm tracking-wide text-gray-300">
+                 We are bringing together diverse expertise to foster collaboration and innovation. By integrating developers, designers, testers, and business analysts, we ensure a holistic approach to problem-solving and solution development. This synergy of skills and perspectives allows us to deliver comprehensive, high-quality products that meet our clients' complex needs efficiently and effectively.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
       </section>
     </>
   );
 };
 
 export default Grid;
-function InboxIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <polyline points="22 12 16 12 14 15 10 15 8 12 2 12" />
-      <path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z" />
-    </svg>
-  );
-}
-
-function LockIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
-      <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-    </svg>
-  );
-}
-
-function MergeIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="m8 6 4-4 4 4" />
-      <path d="M12 2v10.3a4 4 0 0 1-1.172 2.872L4 22" />
-      <path d="m20 22-5-5" />
-    </svg>
-  );
-}
-
-function SearchIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <circle cx="11" cy="11" r="8" />
-      <path d="m21 21-4.3-4.3" />
-    </svg>
-  );
-}
-
-function SettingsIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
-      <circle cx="12" cy="12" r="3" />
-    </svg>
-  );
-}
