@@ -63,15 +63,15 @@ function Hero() {
   ];
 
   return (
-    <section className="bg-white">
+    <section className="">
       {/* section1 */}
-      <div className="relative w-full">
+      <div className="relative w-full pt-16 ">
         <Image
           src={CyberSecurity}
           alt=""
           className="w-full h-auto object-cover"
         />
-        <div className="absolute inset-0 flex pt-40 w-1/2">
+        <div className="absolute inset-0 flex pt-52 w-1/2">
           <div>
             <span>
               <h1 className="text-white md:text-5xl text-xl font-extrabold   pl-6 py-4">
