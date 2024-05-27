@@ -1,16 +1,12 @@
 import React from 'react'
 import Link from 'next/link';
-import Image from 'next/image';
-import Aboutsec2 from '/public/assets/aboutUs/aboutsec2.jpg'
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebook, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 
 const Footer = () => {
   return (
     <footer className="bg-violet-950 w-full  text-white ">
-      {/* <Image
-      className='absolute h-auto object-contain z-0 w-full'
-       src={Aboutsec2}/> */}
     <div className="flex flex-wrap relative z-20 px-4 pt-8 items-start justify-evenly gap-8">
       
       <div className='md:w-72 w-auto'>
@@ -28,7 +24,7 @@ const Footer = () => {
           </Link>
           <Link href="https://twitter.com">
             <button className="text-white hover:text-blue-400" aria-label="Twitter">
-              <FaTwitter size={24} />
+              <FaXTwitter size={24} />
             </button>
           </Link>
           <Link href="https://linkedin.com">
@@ -47,7 +43,7 @@ const Footer = () => {
       <div className='md:w-fit w-full'>
         <h2 className="text-lg font-semibold mb-4">Services</h2>
         <ul className="text-sm space-y-2">
-          <li><Link href={""}>Software Development</Link></li>
+          <li><Link href={"services/softwareDevelopment"}>Software Development</Link></li>
           <li><Link href={""}>Testing and Quality Analysis</Link></li>
           <li><Link href={""}>Cloud Computing</Link></li>
           <li><Link href={""}>Customer Relationship Management</Link></li>
@@ -78,10 +74,10 @@ const Footer = () => {
       <div className='md:w-fit w-full'>
       <h2 className="text-lg font-semibold mb-4">Get to Know Us</h2>
         <div className='flex flex-col text-sm'>
-        <Link href={""}>About Us</Link>
-        <Link href={""}>Career</Link>
-        <Link href={""}>Home</Link>
-        <Link href={""}>Contact Us</Link>
+        <Link href={"/about"}>About Us</Link>
+        <Link href={"/careers"}>Career</Link>
+        <Link href={"/"}>Home</Link>
+        <Link href={"/contact"}>Contact Us</Link>
         </div>
 
         
