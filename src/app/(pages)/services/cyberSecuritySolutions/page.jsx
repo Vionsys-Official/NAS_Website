@@ -1,12 +1,12 @@
+import FaqCyber from "@/app/ui/services/cyberSecuritySolutions/FaqCyber";
 import Hero from "@/app/ui/services/cyberSecuritySolutions/Hero";
 import React from "react";
-import FAQList from "@/components/ui/Faq2";
 
 const page = () => {
   return (
     <div>
       <Hero />
-      <FAQList />
+      <FaqCyber />
     </div>
   );
 };
