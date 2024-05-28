@@ -1,9 +1,9 @@
-import GetSatrt2 from '@/components/ui/GetSatrt2'
+import GetStart2 from '@/components/ui/GetStart2'
 import React from 'react'
 
 const CloudStart = () => {
   return (
-    <div><GetSatrt2/></div>
+    <div><GetStart2/></div>
   )
 }
 
