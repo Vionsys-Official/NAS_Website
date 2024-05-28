@@ -21,15 +21,16 @@ export const ourServices = [
       title: "BI and Analytics",
       imagesrc: "/assets/services/ChardsPhoto/BIAnalytics.jpg",
       description: "We provide comprehensive BI and analytics solutions tailored to your business needs, empowering data-driven decision-making for growth and efficiency.",
-      href1: "",
+      href1: "services/BIandAnalytics",
     },
-
+    
     {
       title: "Software Testing and Quality Assurance",
       imagesrc: "/assets/services/ChardsPhoto/testing.jpg",
       description: "We guarantee flawless software performance with our rigorous testing and quality assurance services, ensuring a seamless launch for your product.",
-      href1: "",
+      href1: "services/TestingandQA",
     },
+  
     {
       title: "Devops",
       imagesrc: "/assets/services/ChardsPhoto/devops1.jpg",
@@ -52,7 +53,7 @@ export const ourServices = [
       title: "Digital Marketing",
       imagesrc: "/assets/services/ChardsPhoto/digitalMarket.jpg",
       description: "Boost your online presence with our strategic solutions. From SEO to social media, we optimize your digital strategy for maximum impact and growth.",
-      href1: "",
+      href1: "services/digitalMarketing",
 
     },
     {
@@ -64,7 +65,7 @@ export const ourServices = [
     },
     {
       title: "BI data Analytics",
-      imagesrc: "https://media.istockphoto.com/id/1485546309/photo/abstract-image-of-businessman-walking-in-vr-environment.webp?b=1&s=170667a&w=0&k=20&c=fD1lD14kCTB3egYDhyPYv-OGPlMJc28zbQST2nd_0AU=",
+      imagesrc: "/assets/services/ChardsPhoto/BiV.jpg",
       description: "Empower data-driven decisions with our advanced BI and analytics solutions. Gain valuable insights to drive your business forward with confidence and precision.",
       href1: "services/BigDataAnalytics",
 
@@ -93,7 +94,6 @@ export const ourServices = [
       title: "IT Service Support",
       imagesrc: "/assets/services/ChardsPhoto/IT-Suppjpg.jpg",
       description: "Rely on our expert IT support for seamless operations. From troubleshooting to proactive maintenance, we keep your systems running smoothly, so you can focus on your business.",
-      href1: "",
-
+      href1: "services/ITServiceSupport",
     },
   ];

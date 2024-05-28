@@ -34,7 +34,7 @@ export const servicesData =
   {
     content: {
         image:serverseHero,
-        heading: "Shape the Future with Us",
+        heading: "Innovative Software Services for Modern Enterprises",
         title:
           "Explore our services",
     },
@@ -43,8 +43,8 @@ export const industriesData =
   {
     content: {
         image:indystresHero,
-        heading: "Shape the Future with Us",
+        heading: "Innovating Across Sectors: Transforming Industries with Technology",
         title:
-          "Explore of best Industries",
+          "Explore Our Industry-Specific Expertise",
     },
 };
