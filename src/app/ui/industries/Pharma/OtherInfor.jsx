@@ -1,4 +1,8 @@
 import React from 'react'
+import Customization from '/public/assets/industries/Pharma/Customization.png'
+import Innovation from '/public/assets/industries/Pharma/Innovation.jpeg'
+import Regular from '/public/assets/industries/Pharma/Regular.jpg'
+import Image from 'next/image'
 
 const OtherInfor = () => {
     return (
@@ -9,8 +13,8 @@ const OtherInfor = () => {
             <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-6">
                 <div className="grid gap-5 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
                     <div className="overflow-hidden transition-shadow duration-300 bg-white rounded">
-                            <img
-                                src="https://images.pexels.com/photos/932638/pexels-photo-932638.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+                            <Image
+                                src={Innovation}
                                 className="object-cover w-full h-64 rounded"
                                 alt=""
                             />
@@ -22,8 +26,8 @@ const OtherInfor = () => {
                         </div>
                     </div>
                     <div className="overflow-hidden transition-shadow duration-300 bg-white rounded">
-                            <img
-                                src="https://images.pexels.com/photos/1576937/pexels-photo-1576937.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
+                            <Image
+                                src={Regular}
                                 className="object-cover w-full h-64 rounded"
                                 alt=""
                             />
@@ -35,8 +39,8 @@ const OtherInfor = () => {
                         </div>
                     </div>
                     <div className="overflow-hidden transition-shadow duration-300 bg-white rounded">
-                            <img
-                                src="https://images.pexels.com/photos/2123755/pexels-photo-2123755.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                            <Image
+                                src={Customization}
                                 className="object-cover w-full h-64 rounded"
                                 alt=""
                             />
