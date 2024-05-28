@@ -1,5 +1,11 @@
 import React from "react";
-
+import HelpDeskSupport from "/public/assets/services/ITServiceSupport/helpdesksupport.jpg";
+import networkManagement from "/public/assets/services/ITServiceSupport/NetworkManagement.jpg";
+import ITConsulting from "/public/assets/services/ITServiceSupport/ITConsulting.jpg";
+import ComplianceSupport from "/public/assets/services/ITServiceSupport/Compliance.jpg";
+import RemoteWorkSolutions from "/public/assets/services/ITServiceSupport/RemoteWork.jpg";
+import SoftwareSupport from "/public/assets/services/ITServiceSupport/SoftwareSupport.jpg";
+import Image from "next/image";
 const Services = () => {
   return (
     <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10 flex ">
@@ -9,10 +15,10 @@ const Services = () => {
         </div>
         <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
           <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
-            <img
-              src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
-              className="object-cover w-full h-64"
+            <Image
+              src={HelpDeskSupport}
               alt=""
+              className="object-cover w-full h-64"
             />
             <div className="p-5 border border-t-0">
               <p className="mb-3 text-xl font-bold tracking-wide ">
@@ -27,11 +33,12 @@ const Services = () => {
             </div>
           </div>
           <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
-            <img
-              src="https://images.pexels.com/photos/447592/pexels-photo-447592.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-              className="object-cover w-full h-64"
+            <Image
+              src={networkManagement}
               alt=""
+              className="object-cover w-full h-64"
             />
+
             <div className="p-5 border border-t-0">
               <p className="mb-3 text-xl font-bold tracking-wide ">
                 Network Management
@@ -45,10 +52,10 @@ const Services = () => {
             </div>
           </div>
           <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
-            <img
-              src="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-              className="object-cover w-full h-64"
+            <Image
+              src={ITConsulting}
               alt=""
+              className="object-cover w-full h-64"
             />
             <div className="p-5 border border-t-0">
               <p className="mb-3 text-xl font-bold tracking-wide">
@@ -65,11 +72,12 @@ const Services = () => {
         </div>
         <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
           <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
-            <img
-              src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
-              className="object-cover w-full h-64"
+            <Image
+              src={RemoteWorkSolutions}
               alt=""
+              className="object-cover w-full h-64"
             />
+
             <div className="p-5 border border-t-0">
               <p className="mb-3 text-xl font-bold tracking-wide ">
                 Remote Workforce Solutions
@@ -84,8 +92,8 @@ const Services = () => {
             </div>
           </div>
           <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
-            <img
-              src="https://images.pexels.com/photos/447592/pexels-photo-447592.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+            <Image
+              src={SoftwareSupport}
               className="object-cover w-full h-64"
               alt=""
             />
@@ -103,10 +111,10 @@ const Services = () => {
             </div>
           </div>
           <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
-            <img
-              src="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-              className="object-cover w-full h-64"
+            <Image
+              src={ComplianceSupport}
               alt=""
+              className="object-cover w-full h-64"
             />
             <div className="p-5 border border-t-0">
               <p className="mb-3 text-xl font-bold tracking-wide ">
