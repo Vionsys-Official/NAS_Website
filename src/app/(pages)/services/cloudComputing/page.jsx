@@ -1,14 +1,18 @@
+import Choose from '@/app/ui/services/cloudComputing/Choose'
 import CloudFaq from '@/app/ui/services/cloudComputing/CloudFaq'
 import CloudStart from '@/app/ui/services/cloudComputing/CloudStart'
 import Hero from '@/app/ui/services/cloudComputing/Hero'
+import Industries from '@/app/ui/services/cloudComputing/Industries'
 import OurService from '@/app/ui/services/cloudComputing/OurService'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>
+    <div id='mission'>
         <Hero/>
         <OurService/>
+        <Industries/>
+        <Choose/>
         <CloudFaq/>
         <CloudStart/>
     </div>

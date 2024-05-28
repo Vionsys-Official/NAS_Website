@@ -1,54 +1,89 @@
 import React from 'react'
 
 const OurService = () => {
+
+    const service = [
+        {
+            id: 1,
+            title: "Cloud Infrastructure as a Service (IaaS)",
+            t1: "Scalable Resources:",
+            para1: " Access a range of computing resources on-demand, including virtual machines, storage, and networks.",
+            t2: "Cost-Efficiency:",
+            para2: " Pay only for what you use with our flexible pricing models.",
+            t3: "High Availability:",
+            para3: " Ensure business continuity with our reliable and redundant infrastructure.",
+        },
+        {
+            id: 2,
+            title: "Platform as a Service (PaaS)",
+            t1: "Development Tools:",
+            para1: " Utilize our integrated development environment to streamline your application development.",
+            t2: "Support for Multiple Languages:",
+            para2: " Develop and deploy applications in various programming languages.",
+            t3: "Automated Updates:",
+            para3: " Focus on innovation while we handle software updates and patches.",
+        },
+        {
+            id: 3,
+            title: "Software as a Service (SaaS)",
+            t1: "Wide Range of Applications:",
+            para1: " From CRM to ERP, access a variety of software applications hosted on our cloud.",
+            t2: "Subscription-Based Model:",
+            para2: " Benefit from a predictable expense with our subscription-based pricing.",
+            t3: "Seamless Access:",
+            para3: " Use our applications from any device with internet connectivity.",
+            para1: "Wide Range of Applications: From CRM to ERP, access a variety of software application",
+        },
+        {
+            id: 4,
+            title: "Hybrid Cloud Solutions",
+            t1: "Custom Integration:",
+            para1: " Combine private and public cloud solutions tailored to your business needs.",
+            t2: "Optimized Workloads:",
+            para2: " Balance your workloads between on-premise and cloud environments for optimal performance.",
+            t3: "Enhanced Security:",
+            para3: " Protect sensitive data with robust security measures across both environments.",
+        },
+        {
+            id: 5,
+            title: "Cloud Migration Services",
+            t1: "Strategic Planning:",
+            para1: " Work with our experts to develop a migration strategy that minimizes disruption.",
+            t2: "Data Transfer:",
+            para2: " Ensure safe and efficient data transfer to the cloud.",
+            t3: "Post-Migration Support:",
+            para3: " Receive continuous support and optimization after migration.",
+        },
+        {
+            id: 6,
+            title: "Cloud Security Services",
+            t1: "Data Encryption:",
+            para1: " Protect your data with advanced encryption both at rest and in transit.",
+            t2: "Threat Detection:",
+            para2: " Utilize our state-of-the-art threat detection systems to safeguard your cloud environment.",
+            t3: "Compliance:",
+            para3: " Ensure your cloud infrastructure meets industry standards and regulatory requirements.",
+        },
+    ]
+
   return (
     <section className="m-4 md:m-8 text-gray-800">
-	<div className="container p-4 mx-auto my-6 space-y-1 text-center">
-		<span className="text-xs font-semibold tracking-wider uppercase text-violet-400 dark:text-violet-600">shortcut to your dream ui</span>
-		<h2 className="pb-3 text-3xl font-bold md:text-4xl">Create a stylish website in minutes</h2>
-		<p>Get a jumpstart to creating your new webpage! With our fully responsive and carefully styled components you can get the structure of your website done with just a couple of clicks.</p>
+	<div className="p-4 mx-auto my-6 space-y-1 text-center">
+		<span className="text-xs font-semibold tracking-wider uppercase text-violet-400 dark:text-violet-600">NAS Infotech Pvt. Ltd.</span>
+		<h2 className="pb-3 text-3xl font-bold md:text-4xl">Our Cloud Computing Services</h2>
+		<p>We transform your business operations with cutting-edge cloud computing solutions. Our comprehensive cloud services are designed to meet the diverse needs of modern enterprises, enhancing flexibility, scalability and efficiency.</p>
 	</div>
-	<div className="container grid justify-center gap-4 mx-auto lg:grid-cols-2 xl:grid-cols-4">
-		<div className="flex flex-col px-8 py-6">
-			<h2 className="mb-2 text-lg font-semibold sm:text-xl title-font text-gray-800 dark:text-gray-800">Components</h2>
-			<p className="flex-1 mb-4 text-base leading-relaxed text-gray-400 dark:text-gray-600">Individual components that can be re-used multiple times in your designs.</p>
-			<a className="inline-flex items-center space-x-2 text-sm text-violet-400 dark:text-violet-600" href="/components">
-				<span>Learn More</span>
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
-					<path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
-				</svg>
-			</a>
+	<div className="container grid justify-center gap-4 mx-auto lg:grid-cols-2 xl:grid-cols-3">
+        {service.map ((item) => (
+            <div key={item.key} className="flex flex-col px-8 py-6 border-2 border-purple-500 p-2 rounded-xl">
+			<h2 className="mb-2 text-lg font-semibold sm:text-xl title-font text-gray-800 dark:text-gray-800">{item.title}</h2>
+            <ul className="flex-1 mb-4 text-base leading-relaxed text-gray-400">
+                <li><span className='text-gray-900'>{item.t1}</span>{item.para1}</li>
+                <li><span className='text-gray-900'>{item.t2}</span>{item.para2}</li>
+                <li><span className='text-gray-900'>{item.t3}</span>{item.para3}</li>
+            </ul>
 		</div>
-		<div className="flex flex-col px-8 py-6 lg:border-none xl:border-solid">
-			<h2 className="mb-2 text-lg font-semibold sm:text-xl title-font text-gray-800 dark:text-gray-800">Sections</h2>
-			<p className="flex-1 mb-4 text-base leading-relaxed text-gray-400 dark:text-gray-600">Pre-made building blocks that you can stack on top of each other like Legos to build a website of your own in minutes.</p>
-			<a className="inline-flex items-center space-x-2 text-sm text-violet-400 dark:text-violet-600" href="/sections">
-				<span>Learn More</span>
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
-					<path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
-				</svg>
-			</a>
-		</div>
-		<div className="flex flex-col px-8 py-6">
-			<h2 className="mb-2 text-lg font-semibold sm:text-xl title-font text-gray-800 dark:text-gray-800">Templates</h2>
-			<p className="flex-1 mb-4 text-base leading-relaxed text-gray-400 dark:text-gray-600">Full pages that showcase pieces of what you can achieve with the building blocks that are in this UI kit.</p>
-			<a className="inline-flex items-center space-x-2 text-sm text-violet-400 dark:text-violet-600" href="/templates">
-				<span>Learn More</span>
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
-					<path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
-				</svg>
-			</a>
-		</div>
-		<div className="flex flex-col px-8 py-6">
-			<h2 className="mb-2 text-lg font-semibold sm:text-xl title-font text-gray-800 dark:text-gray-800">Customization</h2>
-			<p className="flex-1 mb-4 text-base leading-relaxed text-gray-400 dark:text-gray-600">Choose your primary color from any of the Tailwind CSS 2.0 colors. You can also view all of the components in our light and dark themes.</p>
-			<a className="inline-flex items-center space-x-2 text-sm text-violet-400 dark:text-violet-600" href="/docs">
-				<span>Learn More</span>
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
-					<path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
-				</svg>
-			</a>
-		</div>
+        ))}
 	</div>
 </section>
   )
