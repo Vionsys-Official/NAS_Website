@@ -22,7 +22,7 @@ const sectionOne = () => {
           </p>
           <div className="text-center">
             <Link
-              href="/"
+              href={"#faqs"}
               className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-blue-900 hover:text-white hover:bg-blue-900 transition duration-200 hover:scale-110 ease-out rounded shadow-md border md:w-auto focus:shadow-outline focus:outline-none"
             >
               Know more
