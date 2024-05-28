@@ -1,12 +1,19 @@
-/** @type {import('next').NextConfig} */
+import withVideos from 'next-videos';
+
+
 const nextConfig = {
-    images: {
-        remotePatterns:[{
-        protocol:"https",
-        hostname:"**",
-    },
-],
-},
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**",
+      },
+    ],
+  },
 };
 
-export default nextConfig;
+
+const combinedConfig = withVideos(nextConfig);
+
+
+export default combinedConfig;
