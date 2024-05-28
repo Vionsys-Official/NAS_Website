@@ -21,7 +21,7 @@ const Chooseus = () => {
               <polygon points="18.3036738 5.68434189e-14 20 5.68434189e-14 20 104 0.824555778 101" />
             </svg>
           </div>
-          <div className=" h-[70vh] flex flex-col justify-center p-8 bg-white lg:p-16 lg:pl-10 lg:w-[50vw]">
+          <div className=" md:h-[70vh] h-auto flex flex-col justify-center  bg-white lg:p-16 lg:pl-10 lg:w-[50vw]">
             <div>
               <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
                 Why Choose Us

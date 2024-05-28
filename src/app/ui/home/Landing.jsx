@@ -36,7 +36,7 @@ const landing = () => {
                   </h2>
                 </div>
                 <div className="lg:w-2/3 w-full px-4 lg:px-0">
-                  <p className="text-black text-xl tracking-wide">
+                  <p className="text-black text-lg md:text-xl tracking-wide leading-relaxed">
                     We are dedicated to transforming your IT challenges into
                     success stories. Our expert team provides innovative and
                     reliable IT solutions tailored to your business needs. With
