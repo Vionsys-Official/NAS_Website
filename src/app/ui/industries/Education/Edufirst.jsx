@@ -1,18 +1,18 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import edu1 from "/public/assets/industries/Education/edu1.jpg";
+import edu from "/public/assets/industries/Education/edu.jpg";
 const Edufirst = () => {
   return (
-    <div id="mission">
+  
       <section className="h-full w-full">
-        <section className="w-full pt-24 ">
-          <div className="container grid items-center gap-8 px-4 md:px-6 lg:grid-cols-2 lg:gap-12">
-            <div className="space-y-4">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl bg-gradient-to-l from-green-400 to-blue-900 bg-clip-text text-transparent">
+        <section className=" pt-24">
+          <div className="container grid items-center justify-center gap-8 px-4  lg:grid-cols-2 lg:gap-12">
+            <div className="space-y-4 text-center">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tighter bg-gradient-to-l from-green-400 to-blue-900 bg-clip-text text-transparent">
                 Elevate Your Learning Experience
               </h1>
-              <p className="max-w-[600px] text-gray-600 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <p className="max-w-[600px] mx-auto text-center text-gray-600 rounded-md bg-blue-200 dark:text-gray-400 md:p-5">
                 Our education service provider offers a comprehensive suite of
                 programs and resources to help you achieve your academic and
                 professional goals.
@@ -24,16 +24,16 @@ const Edufirst = () => {
                 Contact Us
               </Link>
             </div>
-            <Image
-              alt="Education Hero"
-              className="mx-auto aspect-[3/2] overflow-hidden rounded-xl object-cover object-center sm:w-full"
-              height="500"
-              src={edu1}
-            />
+            <div className="flex justify-center w-auto">
+              <Image
+                alt="Education Hero"
+                className="w-full md:max-w-lg lg:max-w-none rounded-xl object-cover object-center"
+                src={edu}
+              />
+            </div>
           </div>
         </section>
       </section>
-    </div>
   );
 };
 
