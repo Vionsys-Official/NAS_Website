@@ -18,7 +18,7 @@ const Hero = () => {
         <Image src={SoftDev} alt=''/>
       </div>
       <div className="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
-        <div className="md:mb-16 py-4 lg:my-40 lg:max-w-lg lg:pr-5">
+        <div className="md:mb-16 py-4 lg:py-40 lg:max-w-lg lg:pr-5">
           <p className="inline-block mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">Welcome to
           </p>
           <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none leading-10">
