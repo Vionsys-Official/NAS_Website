@@ -7,7 +7,7 @@ const page = () => {
   return (
     <div className="overflow-x-hidden">
       <Hero />
-      <WhatWeProvide />
+      <WhatWeProvide /> 
       <WhyChooseUs />
     </div>
   );
