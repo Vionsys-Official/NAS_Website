@@ -20,7 +20,7 @@ const page = () => {
             <Image
               width={600}
               height={600}
-              className=" p-5 object-cover"
+              className=" p-5 mt-10 object-cover"
               src={industres1}
               alt="" />
           </div>
@@ -37,32 +37,28 @@ const page = () => {
                 </span>
               </h2>
 
-              <p className="text-base text-gray-700 md:text-lg">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae. explicabo.
+              <p className="text-base text-gray-700 md:text-lg py-2">
+              Welcome to NAS Infotech, where we revolutionize industries through innovative software solutions. Our team is dedicated to delivering unparalleled quality and reliability, tailored to meet your unique needs. Let us collaborate with you to bring your vision to life and drive your business forward. Contact us today to embark on your journey to success.
               </p>
             </div>
             <div className="grid gap-5 row-gap-8 sm:grid-cols-2">
               <div className=" border-l-4 shadow-sm border-violet-900">
                 <div className="h-full p-5  border-l-0 rounded-r">
                   <h6 className="mb-2 font-semibold leading-5">
-                    I'll be sure to note that in my log
+                  We're ready to tackle any challenge.
                   </h6>
                   <p className="text-sm text-gray-900">
-                    Lookout flogging bilge rat main sheet bilge water nipper fluke
-                    to go on account heave down.
+                  We stand ready to navigate the complexities of your industry and overcome any obstacle in our pursuit of excellence
                   </p>
                 </div>
               </div>
               <div className=" border-l-4 shadow-sm border-violet-900">
                 <div className="h-full p-5  border-l-0 rounded-r">
                   <h6 className="mb-2 font-semibold leading-5">
-                    A business big enough that it could be listed
+                  We have Strong Technical Expertise.
                   </h6>
                   <p className="text-sm text-gray-900">
-                    Those options are already baked in with this model shoot me an
-                    email clear.
+                  Harnessing our unparalleled mastery of technology, we engineer groundbreaking solutions that redefine entire industries.
                   </p>
                 </div>
               </div>

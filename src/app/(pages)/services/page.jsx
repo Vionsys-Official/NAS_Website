@@ -22,7 +22,7 @@ const Page = () => {
               <span className="block text-violet-900 xl:block">Tailored for You</span>
             </h1>
             <p className="mt-5 text-base text-gray-700 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus soluta aperiam ad expedita provident at autem sunt veniam cupiditate quibusdam.
+            Unlock your business's potential with our tailored software solutions. Experience innovation, reliability, and excellence with NAS Infotech. Let us bring your ideas to life and propel your success forward. Contact us today to discover how we can transform your software experience.
             </p>
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <Button />
