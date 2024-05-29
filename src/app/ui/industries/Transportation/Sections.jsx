@@ -8,10 +8,10 @@ const Sections = () => {
         <div className="container px-4 md:px-6">
           <div className="space-y-6">
             <div className="space-y-2 text-center">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              <h2 className="text-Heading-sm  font-bold tracking-tighter md:text-Heading">
                 How we can Help?
               </h2>
-              <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              <p className="mx-auto max-w-[700px] text-gray-500 text-SubHeading-sm md:text-SubHeading">
                 Explore how transportation technologies are transforming the IT
                 industry, from fleet management and logistics optimization to
                 autonomous vehicles.
@@ -80,7 +80,7 @@ const Sections = () => {
                 Just do it
               </p>
             </div>
-            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+            <h2 className="max-w-lg mb-6 font-sans text-Heading-sm font-bold text-gray-900 md:text-Heading md:mx-auto">
               <span className="relative inline-block">
                 <svg
                   viewBox="0 0 52 24"
@@ -107,7 +107,7 @@ const Sections = () => {
                 <span className="relative">Key</span>
               </span>{" "} Offerings
             </h2>
-            <p className="text-base text-gray-700 md:text-lg">
+            <p className="text-SubHeading-sm text-gray-700 md:text-SubHeading">
               Technology plays a pivotal role in addressing the challenges faced
               by the logistics sector, driving transformation through innovative
               IT solutions.
@@ -282,10 +282,10 @@ const Sections = () => {
       <section className="max-w-full pt-4 pb-8 px-10 flex justify-center">
         <div className="bg-violet-950 text-white md:w-[70%] flex flex-col  justify-between py-4 px-8">
           <div>
-            <h2 className="font-bold text-xl py-2 text-center">
+            <h2 className="font-bold text-Heading-sm py-2 md:text-Heading text-center">
               Discover what we can do for you.
             </h2>
-            <p className="py-3 text-lg text-center">
+            <p className="py-3 text-Para-sm md:text-Para text-center">
               Contact us today to discuss how we can help you to achieve your
               business goals.
             </p>
