@@ -2,13 +2,13 @@ import React from "react";
 
 const Faq2 = ({ faq }) => {
   return (
-    <div className=" w-full py-6 ">
+    <div className=" w-full py-6 md:px-0 px-2">
       <div className="flex justify-center items-center">
-        <h1 className="md:text-3xl text-base font-bold text-black ">
+        <h1 className="md:text-Heading text-Heading-sm font-bold text-black ">
           Frequently Asked Questions
         </h1>
       </div>
-      <ul className="max-w-3xl mx-auto my-10 divide-y shadow shadow-blue-600 rounded-xl ">
+      <ul className="max-w-3xl mx-auto my-5 divide-y shadow shadow-blue-600 rounded-xl ">
         {faq.map((item) => (
           <li key={item.id}>
             <details className="group">
@@ -26,10 +26,10 @@ const Faq2 = ({ faq }) => {
                     d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
                   />
                 </svg>
-                <span>{item.ques}</span>
+                <span className="md:text-lg text-base">{item.ques}</span>
               </summary>
               <article className="px-12 pb-4">
-                <p>{item.ans}</p>
+                <p className="md:text-base text-sm">{item.ans}</p>
               </article>
             </details>
           </li>

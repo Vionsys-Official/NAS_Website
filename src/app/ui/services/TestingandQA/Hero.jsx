@@ -16,15 +16,14 @@ function Hero() {
       </div>
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="relative max-w-2xl sm:mx-auto sm:max-w-xl md:max-w-3xl sm:text-center">
-          <h2 className="mb-6 font-bold tracking-tight text-white text-5xl sm:leading-none">
-            <br className="hidden md:block" />
-            Testing and{" "}
+          <h2 className="mb-6 font-bold tracking-tight text-white md:text-5xl text-HMain-sm sm:leading-none">
+            <br className="hidden md:block" />{" "}
             <span className="relative inline-block">
-              Quality Assurance{" "}
+              Testing and Quality Assurance{" "}
               <div className="w-full h-3 -mt-3 bg-deep-purple-accent-400" />
             </span>
           </h2>
-          <p className="mb-6 text-base font-thin tracking-wide text-gray-300 md:text-lg">
+          <p className="mb-6 md:text-Para text-Para-sm font-thin tracking-wide text-gray-300 ">
             We transform software testing and quality assurance through a
             customized approach that blends cutting-edge innovation with deep
             expertise. Driven by a commitment to excellence, we rigorously

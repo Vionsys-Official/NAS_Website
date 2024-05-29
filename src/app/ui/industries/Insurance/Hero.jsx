@@ -1,6 +1,8 @@
+"use client";
 import Image from "next/image";
 import Insurance from "/public/assets/industries/Insurance/Insurance.jpg";
 import React from "react";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -11,18 +13,23 @@ const Hero = () => {
       </div>
       <div className="relative w-full -top-16 h-full flex justify-center items-center  ">
         <div className="w-[50%] h-32  flex justify-center items-center bg-white  rounded shadow">
-          <p className=" text-5xl font-extrabold text-black">Insurance</p>
+          <motion.p
+            animate={{ x: [100, 0] }}
+            className=" md:text-HeroHeading text-HMain-sm sm:p-4 font-bold text-black"
+          >
+            Insurance
+          </motion.p>
         </div>
       </div>
 
       {/* section2 */}
-      <div className="w-full py-3">
+      <div className="w-full">
         <div className="flex flex-col gap-5 justify-center items-center">
-          <h1 className="text-4xl w-[50%] text-center font-bold text-blue-500">
+          <h1 className="md:text-Heading text-Heading-sm w-[50%] text-center font-bold text-blue-500">
             Revolutionizing The Insurance Industry With Cutting-Edge Software
             Solutions
           </h1>
-          <p className="w-[50%] text-center text-lg font-normal text-gray-800">
+          <p className="w-[50%] text-center md:text-Para  text-Para-sm font-normal text-gray-800">
             Understanding the unique challenges and opportunities within the
             insurance industry is our specialty. Our suite of software solutions
             is designed to streamline operations, enhance customer experiences,

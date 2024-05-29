@@ -3,14 +3,14 @@ import Experties from "/public/assets/services/ProductDevelopment/expertise.jpg"
 import Image from "next/image";
 const Experts = () => {
   return (
-    <div className="w-full py-4 px-4">
+    <div className="w-full  px-4">
       <div className="flex justify-center items-center py-6">
-        <h1 className="text-4xl font-extrabold text-gray-700 ">
+        <h1 className="md:text-Heading text-Heading-sm font-bold text-gray-700 ">
           Our Expertise
         </h1>
       </div>
       <div className="w-full flex md:flex-row flex-col md:gap-4 gap-8">
-        <div className="w-[50%] ">
+        <div className="md:w-[50%] w-full">
           <Image
             src={Experties}
             alt=""
@@ -35,10 +35,10 @@ const Experts = () => {
                 ></path>
               </svg>
               <div className="space-y-2">
-                <p className="text-lg font-bold leading-snug">
+                <p className="md:text-CardHeading text-CardHeading-sm font-semibold leading-snug">
                   Mobile Application Development:
                 </p>
-                <p className="leading-snug">
+                <p className="leading-snug md:text-Para text-Para-sm">
                   Building native and cross-platform mobile apps.
                 </p>
               </div>
@@ -59,10 +59,10 @@ const Experts = () => {
                 ></path>
               </svg>
               <div className="space-y-2">
-                <p className="text-lg font-bold leading-snug">
+                <p className="md:text-CardHeading text-CardHeading-sm font-semibold leading-snug">
                   Web Application Development:
                 </p>
-                <p className="leading-snug">
+                <p className="leading-snug md:text-Para text-Para-sm">
                   Creating responsive and robust web applications.
                 </p>
               </div>
@@ -83,10 +83,10 @@ const Experts = () => {
                 ></path>
               </svg>
               <div className="space-y-2">
-                <p className="text-lg font-bold leading-snug">
+                <p className="md:text-CardHeading text-CardHeading-sm font-semibold leading-snug">
                   Cloud Solutions:
                 </p>
-                <p className="leading-snug">
+                <p className="leading-snug md:text-Para text-Para-sm">
                   Leveraging cloud technologies for scalable and secure
                   solutions.
                 </p>
@@ -108,10 +108,10 @@ const Experts = () => {
                 ></path>
               </svg>
               <div className="space-y-2">
-                <p className="text-lg font-bold leading-snug">
+                <p className="md:text-CardHeading text-CardHeading-sm font-semibold leading-snug">
                   AI and Machine Learning:
                 </p>
-                <p className="leading-snug">
+                <p className="leading-snug md:text-Para text-Para-sm">
                   Integrating advanced AI and ML capabilities to enhance your
                   product.
                 </p>
@@ -133,10 +133,10 @@ const Experts = () => {
                 ></path>
               </svg>
               <div className="space-y-2">
-                <p className="text-lg font-bold leading-snug">
+                <p className="md:text-CardHeading text-CardHeading-sm font-semibold leading-snug">
                   IoT Development:
                 </p>
-                <p className="leading-snug">
+                <p className="leading-snug md:text-Para text-Para-sm">
                   Developing smart solutions for connected devices and the
                   Internet of Things.
                 </p>
