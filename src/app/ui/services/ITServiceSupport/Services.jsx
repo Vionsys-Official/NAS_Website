@@ -8,10 +8,12 @@ import SoftwareSupport from "/public/assets/services/ITServiceSupport/SoftwareSu
 import Image from "next/image";
 const Services = () => {
   return (
-    <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10 flex ">
+    <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-4 py-4 flex ">
       <div className="w-full flex flex-col gap-10">
         <div className="w-full flex items-center justify-center">
-          <h1 className="text-4xl font-bold text-slate-700">Our Services</h1>
+          <h1 className="md:text-Heading text-Heading-sm font-bold text-slate-700">
+            Our Services
+          </h1>
         </div>
         <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
           <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
@@ -21,10 +23,10 @@ const Services = () => {
               className="object-cover w-full h-64"
             />
             <div className="p-5 border border-t-0">
-              <p className="mb-3 text-xl font-bold tracking-wide ">
+              <p className="mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
                 24/7 Help Desk Support
               </p>
-              <p className="mb-2 text-gray-700">
+              <p className="mb-2 md:text-Para text-Para-sm text-gray-700">
                 Our 24/7 help desk offers immediate assistance for software
                 glitches, hardware malfunctions, and connectivity issues. Our
                 experienced technicians swiftly resolve problems to ensure
@@ -40,10 +42,10 @@ const Services = () => {
             />
 
             <div className="p-5 border border-t-0">
-              <p className="mb-3 text-xl font-bold tracking-wide ">
+              <p className="mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
                 Network Management
               </p>
-              <p className="mb-2 text-gray-700">
+              <p className="mb-2 md:text-Para text-Para-sm text-gray-700">
                 We offer comprehensive network management with real-time
                 monitoring, performance optimization, and security enhancements.
                 Our proactive approach ensures your IT infrastructure remains
@@ -58,10 +60,10 @@ const Services = () => {
               className="object-cover w-full h-64"
             />
             <div className="p-5 border border-t-0">
-              <p className="mb-3 text-xl font-bold tracking-wide">
+              <p className="mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide">
                 IT Consulting
               </p>
-              <p className="mb-2 text-gray-700">
+              <p className="mb-2  md:text-Para text-Para-sm text-gray-700">
                 Transform your IT strategy with our expert consulting services.
                 We provide in-depth assessments, strategic planning, and
                 technology roadmaps to align your IT initiatives with your
@@ -79,10 +81,10 @@ const Services = () => {
             />
 
             <div className="p-5 border border-t-0">
-              <p className="mb-3 text-xl font-bold tracking-wide ">
+              <p className="mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
                 Remote Workforce Solutions
               </p>
-              <p className="mb-2 text-gray-700">
+              <p className="mb-2 md:text-Para text-Para-sm text-gray-700">
                 Empower your remote workforce with our specialized support
                 services. We offer secure remote access solutions, advanced
                 collaboration tools, and comprehensive remote IT support. Our
@@ -98,11 +100,11 @@ const Services = () => {
               alt=""
             />
             <div className="p-5 border border-t-0">
-              <p className="mb-3 text-xl font-bold tracking-wide">
+              <p className="mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide">
                 {" "}
                 Software Support and Maintenance
               </p>
-              <p className="mb-2 text-gray-700">
+              <p className="mb-2 md:text-Para text-Para-sm text-gray-700">
                 Keep your software applications running at peak performance with
                 our support and maintenance services. We provide regular
                 updates, patches, and performance tuning to ensure your software
@@ -117,10 +119,10 @@ const Services = () => {
               className="object-cover w-full h-64"
             />
             <div className="p-5 border border-t-0">
-              <p className="mb-3 text-xl font-bold tracking-wide ">
+              <p className="mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
                 Compliance and Regulatory Support
               </p>
-              <p className="mb-2 text-gray-700">
+              <p className="mb-2 md:text-Para text-Para-sm text-gray-700">
                 Navigate the complexities of IT compliance with our specialized
                 support. We help you adhere to industry regulations and
                 standards, conduct compliance audits, and implement necessary

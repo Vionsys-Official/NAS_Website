@@ -1,8 +1,8 @@
 import AboutUs from '/public/assets/aboutUs/about.jpg';
 import Hero from '/public/assets/contact/Hero.jpg';
 import head from '/public/assets/career/career.jpg';
-import serverseHero from '/public/assets/services/servesseHero.jpg'
-import indystresHero from '/public/assets/industries/myIndustriesHero.jpg'
+import ServiceHero from '/public/assets/services/ServiceHero.jpg';
+import indystresHero from '/public/assets/industries/myIndustriesHero.jpg';
 
 export const careerData = 
   {
@@ -33,7 +33,7 @@ export const contactData =
 export const servicesData = 
   {
     content: {
-        image:serverseHero,
+        image:ServiceHero,
         heading: "Innovative Software Services for Modern Enterprises",
         title:
           "Explore our services",

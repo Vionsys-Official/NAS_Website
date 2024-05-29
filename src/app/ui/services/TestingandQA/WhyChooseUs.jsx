@@ -5,21 +5,22 @@ import CustomizedSolutions from "/public/assets/services/TestingandQA/customized
 import Image from "next/image";
 const WhyChooseUs = () => {
   return (
-    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div className="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
       <div className="flex flex-col mb-6 lg:justify-between lg:flex-row md:mb-8">
-        <h2 className="max-w-lg mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none md:mb-6 group">
+        <h2 className="max-w-lg mb-5  font-bold tracking-tight text-gray-900 md:text-Heading  text-Heading-sm sm:leading-none md:mb-6 group">
           <span className="inline-block mb-1 sm:mb-4">
             Why Choose Us for Quality Assurance?
           </span>
           <div className="h-1 ml-auto duration-300 origin-left transform bg-deep-purple-accent-400 scale-x-30 group-hover:scale-x-100" />
         </h2>
-        <p className="text-gray-700 lg:text-sm lg:max-w-lg">
-          Our dedicated team of QA experts meticulously evaluates every aspect
-          of your software, ensuring it's not just error-free, but also
-          optimized for performance, security, and user experience. With a focus
-          on continuous improvement and innovation, we guarantee that your
-          software will not only meet your expectations but also elevate your
-          business to new heights of success in today's competitive landscape.
+        <p className="text-gray-700 md:text-Para text-Para-sm md:max-w-xl">
+          Our dedicated team of QA experts thoroughly examines every detail to
+          ensure top-notch quality of your software, ensuring it's not just
+          error-free, but also optimized for performance, security, and user
+          experience. With a focus on continuous improvement and innovation, we
+          guarantee that your software will not only meet your expectations but
+          also elevate your business to new heights of success in today's
+          competitive landscape.
         </p>
       </div>
       <div className="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2">
@@ -31,7 +32,9 @@ const WhyChooseUs = () => {
               alt=""
             />
             <div className="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
-              <p className="mb-4 text-lg font-bold text-gray-100">Expertise</p>
+              <p className="mb-4 md:text-CardHeading text-CardHeading-sm font-semibold text-gray-100">
+                Expertise
+              </p>
               <p className="text-sm tracking-wide text-gray-300">
                 Our team comprises seasoned professionals with extensive
                 experience in testing methodologies, tools, and technologies. We

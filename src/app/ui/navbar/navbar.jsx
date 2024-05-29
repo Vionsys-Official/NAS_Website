@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { BiSolidPhoneCall } from "react-icons/bi";
 
-
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
@@ -25,13 +24,14 @@ const Navbar = () => {
       className={`py-2 px-6 fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
         isScrolled
           ? "bg-white shadow-lg text-black"
-          : "bg-black bg-opacity-30 text-white"
+          : "bg-black bg-opacity-40 text-white"
       }`}
     >
       <div className="flex items-center justify-between gap-8">
         <Link className="flex items-center gap-2" href="/">
           <span className="text-xl font-bold">NAS Logo</span>
         </Link>
+
         <div className="hidden md:flex items-center gap-10 p-2">
           <NavLink href="/" isScrolled={isScrolled} pathname={pathname}>
             Home
@@ -53,19 +53,19 @@ const Navbar = () => {
             Careers
           </NavLink>
         </div>
-        <div>
-          <NavLink href="/contact" isScrolled={isScrolled} pathname={pathname}>
-            <button className="group relative flex items-center justify-start w-9 h-9 bg-green-600 rounded-full cursor-pointer overflow-hidden transition-all duration-200 shadow-lg hover:w-20 hover:rounded-lg active:translate-x-1 active:translate-y-1">
-              
-              <div className="absolute right-4 transform translate-x-full opacity-0 group-hover:text-sm text-white group-hover:font-semibold text-sm transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100">
-                Call us
-              </div>
-              <div className="flex items-center justify-center text-xl w-full text-white transition-all duration-300 group-hover:justify-start group-hover:px-1">
-                <BiSolidPhoneCall className=" text-white text-xl" />
-              </div>
+
+        <div className="hidden md:block"> {/* Hide for mobile view */}
+          <Link href="/contact" isScrolled={isScrolled} pathname={pathname}>
+            <button className="cursor-pointer font-semibold relative z-10 border overflow-hidden border-green-500 group px-3 rounded-xl py-2">
+              <span className="relative z-10 hidden text-green-500 group-hover:text-white text-sm duration-500 md:flex md:items-center">
+                Contact us <BiSolidPhoneCall className="ml-1 text-green-500 text-lg font-semibold group-hover:text-white" />
+              </span>
+              <span className="absolute w-full h-full bg-green-500 -left-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:left-0 duration-500"></span>
+              <span className="absolute w-full h-full bg-green-500 -right-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:right-0 duration-500"></span>
             </button>
-          </NavLink>
+          </Link>
         </div>
+
         <div className="md:hidden">
           <MobileMenu isScrolled={isScrolled} pathname={pathname} />
         </div>
@@ -118,10 +118,10 @@ const MobileMenu = ({ isScrolled, pathname }) => {
       </button>
       {isOpen && (
         <div
-          className={`absolute top-14 left-0 right-0 p-4 transition-colors duration-300 ${
+          className={`absolute top-11 left-0 right-0 p-4 transition-colors duration-300 ${
             isScrolled
               ? "bg-white text-black"
-              : "bg-black bg-opacity-75 text-white"
+              : "bg-black bg-opacity-40 text-white"
           }`}
         >
           <div className="flex flex-col items-center space-y-4">
@@ -171,7 +171,7 @@ const MobileMenu = ({ isScrolled, pathname }) => {
               pathname={pathname}
               onClick={() => setIsOpen(false)}
             >
-              Contact Us
+              Contact us
             </MobileNavLink>
           </div>
         </div>

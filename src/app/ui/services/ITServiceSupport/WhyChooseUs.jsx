@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
     <section className="dark:bg-gray-100 dark:text-gray-800">
       <div className="container max-w-xl p-6 py-6 mx-auto space-y-10 lg:px-8 lg:max-w-7xl">
         <div>
-          <h2 className="text-3xl font-bold tracking-tight text-center sm:text-5xl dark:text-gray-900">
+          <h2 className="md:text-Heading text-Heading-sm font-bold tracking-tight text-center sm:text-5xl dark:text-gray-900">
             Why Choose Us?
           </h2>
         </div>
@@ -35,14 +35,14 @@ const WhyChooseUs = () => {
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h4 className="text-lg font-medium leading-6 dark:text-gray-900">
+                  <h4 className="md:text-CardHeading text-CardHeading-sm font-semibold leading-6 dark:text-gray-900">
                     Innovative Solutions:
                   </h4>
-                  <p className="mt-2 dark:text-gray-600">
+                  <p className="mt-2 md:text-Para text-Para-sm dark:text-gray-600">
                     We're not just followers; we're innovators. We embrace
                     cutting-edge technologies and develop creative solutions
-                    tailored to your business needs, ensuring you stay ahead of
-                    the curve in today's ever-evolving digital landscape.
+                    tailored to your business needs to ensure you stay ahead of
+                    change in today's ever-evolving digital landscape.
                   </p>
                 </div>
               </div>
@@ -66,10 +66,10 @@ const WhyChooseUs = () => {
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h4 className="text-lg font-medium leading-6 dark:text-gray-900">
+                  <h4 className="md:text-CardHeading text-CardHeading-sm font-semibold leading-6 dark:text-gray-900">
                     Personalized Approach :
                   </h4>
-                  <p className="mt-2 dark:text-gray-600">
+                  <p className="mt-2 md:text-Para text-Para-sm dark:text-gray-600">
                     We prioritize your individual needs, providing tailored
                     attention and bespoke solutions that address your specific
                     challenges and propel your business towards its goals.
@@ -96,13 +96,13 @@ const WhyChooseUs = () => {
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h4 className="text-lg font-medium leading-6 dark:text-gray-900">
+                  <h4 className="md:text-CardHeading text-CardHeading-sm font-semibold leading-6 dark:text-gray-900">
                     Continuous Evolution :
                   </h4>
-                  <p className="mt-2 dark:text-gray-600">
+                  <p className="mt-2 md:text-Para text-Para-sm dark:text-gray-600">
                     We're dedicated to perpetual growth and advancement. Through
                     ongoing education and adaptation to industry trends, we
-                    ensure our solutions are always at the forefront of
+                    ensuring your solutions are always at the forefront of
                     innovation.
                   </p>
                 </div>
@@ -141,10 +141,10 @@ const WhyChooseUs = () => {
                     </div>
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-lg font-medium leading-6 dark:text-gray-900">
+                    <h4 className="md:text-CardHeading text-CardHeading-sm font-semibold leading-6 dark:text-gray-900">
                       Culture of Excellence :
                     </h4>
-                    <p className="mt-2 dark:text-gray-600">
+                    <p className="mt-2 md:text-Para text-Para-sm dark:text-gray-600">
                       We cultivate a culture of exceptional service, going the
                       extra mile to provide prompt, courteous, and proactive
                       support that consistently exceeds expectations.
@@ -171,10 +171,10 @@ const WhyChooseUs = () => {
                     </div>
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-lg font-medium leading-6 dark:text-gray-900">
+                    <h4 className="md:text-CardHeading text-CardHeading-sm font-semibold leading-6 dark:text-gray-900">
                       Collaborative Partnership :
                     </h4>
-                    <p className="mt-2 dark:text-gray-600">
+                    <p className="mt-2 md:text-Para text-Para-sm dark:text-gray-600">
                       We don't just serve clients; we form partnerships. We work
                       closely with you, leveraging our expertise to empower your
                       success and achieve mutual growth and prosperity.
@@ -201,10 +201,10 @@ const WhyChooseUs = () => {
                     </div>
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-lg font-medium leading-6 dark:text-gray-900">
+                    <h4 className="md:text-CardHeading text-CardHeading-sm font-semibold leading-6 dark:text-gray-900">
                       Commitment to Value :
                     </h4>
-                    <p className="mt-2 dark:text-gray-600">
+                    <p className="mt-2 md:text-Para text-Para-sm dark:text-gray-600">
                       We deliver unparalleled value by combining expertise with
                       efficiency, ensuring you receive the most cost-effective
                       solutions that maximize your return on investment.

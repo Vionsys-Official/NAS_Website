@@ -7,7 +7,7 @@ import Experts from "@/app/ui/services/ProductDevelopment/Experts";
 import GetStart2 from "@/components/ui/GetStart2";
 const page = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Hero />
       <Steps />
       <Tools />
