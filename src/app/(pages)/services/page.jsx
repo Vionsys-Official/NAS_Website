@@ -2,10 +2,9 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Button from '@/components/ui/Button';
-
+import MyServise1 from '/public/assets/services/MyServise1.jpg'
 import HeroSection from '@/utils/heroSection/HeroSection';
 import { servicesData } from '@/utils/heroSection/data';
-//my page servese- salesforce and ai amd ml
 import { ourServices } from '@/app/(pages)/services/servicesD'
 
 const Page = () => {
@@ -21,7 +20,7 @@ const Page = () => {
               <span className="block xl:inline">Top-Quality Software Services</span>
               <span className="block text-violet-900 xl:block">Tailored for You</span>
             </h1>
-            <p className="mt-5 text-base text-gray-700 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+            <p className="mt-5 text-gray-700 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
             Unlock your business's potential with our tailored software solutions. Experience innovation, reliability, and excellence with NAS Infotech. Let us bring your ideas to life and propel your success forward. Contact us today to discover how we can transform your software experience.
             </p>
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
@@ -29,7 +28,7 @@ const Page = () => {
             </div>
           </div>
           <div className="lg:inset-y-0 lg:right-0 shadow-md lg:w-1/2 ">
-            <Image width={550} height={500} className="object-cover" src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="" />
+            <Image width={550} height={500} className="object-cover" src={MyServise1} alt="" />
           </div>
         </div>
       </section>

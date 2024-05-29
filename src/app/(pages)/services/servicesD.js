@@ -64,7 +64,7 @@ export const ourServices = [
 
     },
     {
-      title: "BI data Analytics",
+      title: "Big Data Analytics",
       imagesrc: "/assets/services/ChardsPhoto/BiV.jpg",
       description: "Empower data-driven decisions with our advanced BI and analytics solutions. Gain valuable insights to drive your business forward with confidence and precision.",
       href1: "services/BigDataAnalytics",
