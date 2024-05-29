@@ -5,7 +5,6 @@ import React from "react";
 const Hero = () => {
   return (
     <section className=" w-[100vw]">
-
       {/* section1 */}
       <div className="w-full ">
         <Image src={Insurance} alt="" className="w-full" />
@@ -19,7 +18,10 @@ const Hero = () => {
       {/* section2 */}
       <div className="w-full py-3">
         <div className="flex flex-col gap-5 justify-center items-center">
-          <h1 className="text-4xl font-bold text-blue-500">Overview</h1>
+          <h1 className="text-4xl w-[50%] text-center font-bold text-blue-500">
+            Revolutionizing The Insurance Industry With Cutting-Edge Software
+            Solutions
+          </h1>
           <p className="w-[50%] text-center text-lg font-normal text-gray-800">
             Understanding the unique challenges and opportunities within the
             insurance industry is our specialty. Our suite of software solutions
@@ -30,9 +32,6 @@ const Hero = () => {
           </p>
         </div>
       </div>
-
-      
-
     </section>
   );
 };
