@@ -1,6 +1,6 @@
 import AboutUs from '/public/assets/aboutUs/about.jpg';
 import Hero from '/public/assets/contact/Hero.jpg';
-import head from '/public/assets/career/head.jpg';
+import head from '/public/assets/career/team.jpg';
 import serverseHero from '/public/assets/services/servesseHero.jpg'
 import indystresHero from '/public/assets/industries/myIndustriesHero.jpg'
 
@@ -8,9 +8,9 @@ export const careerData =
   {
     content: {
         image:head,
-        heading: "Shape the Future with Us",
+        heading: "Unlock Your Talent",
         title:
-          "Join Our Innovative Team at NAS Infotech",
+          "Diverse Software Careers Await",
     },
 };
 export const aboutData = 
