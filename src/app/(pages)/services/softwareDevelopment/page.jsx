@@ -5,6 +5,7 @@ import Process from '@/app/ui/services/softwareDevelopment/Process'
 import Services from '@/app/ui/services/softwareDevelopment/Services'
 import FaqSoftDev from '@/app/ui/services/softwareDevelopment/faq'
 import React from 'react'
+import SoftFaq1 from '@/app/ui/services/softwareDevelopment/SoftFaq1'
 
 const page = () => {
   return (
@@ -13,7 +14,7 @@ const page = () => {
         <Process/>
         <Services/>
         <ChooseUs/>
-        <FaqSoftDev/>
+        <SoftFaq1/>
         <SoftStart/>
     </div>
   )

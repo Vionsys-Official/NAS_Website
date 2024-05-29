@@ -6,9 +6,9 @@ const Imag = () => {
   return (
     <div>
         <div className='relative'>
-            <Image src={CrmImage} alt='' className='w-full h-[80vh] object-cover'/>
-            <div className='w-1/2 inset-0 absolute'>
-                <p className='text-white text-3xl font-semibold py-32 leading-10'>Elevate your business with our tailored CRM solutions, seamlessly integrating, streamlining operations and empowering growth through unparalleled support and cutting-edge technology.</p>
+            <Image src={CrmImage} alt='' className='w-full md:h-[80vh] h-[50vh] object-cover'/>
+            <div className='md:w-1/2 w-full inset-0 absolute'>
+                <p className='text-white md:text-SubHeading text-SubHeading-sm font-semibold md:py-32 md:px-20 p-3 leading-10'>Elevate your business with our tailored CRM solutions, seamlessly integrating, streamlining operations and empowering growth through unparalleled support and cutting-edge technology.</p>
             </div>
         </div>
     </div>

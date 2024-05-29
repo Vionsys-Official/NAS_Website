@@ -32,12 +32,12 @@ const serve = [
 
 const Services = () => {
   return (
-    <section className="bg-white py-6">
+    <section className="py-6">
             <div className="px-6 mx-auto">
                 <div className="lg:flex lg:items-center">
                     <div className="w-full space-y-6 lg:w-1/2 ">
                         <div>
-                            <h1 className="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl">Our Software Development Services</h1>
+                            <h1 className="md:text-Heading text-Heading-sm font-bold text-black capitalize">Our Software Development Services</h1>
                         
                             <div className="">
                                 <span className="inline-block w-40 h-1 rounded-full bg-blue-500"></span>
@@ -55,9 +55,9 @@ const Services = () => {
                             </span>
 
                             <div className="">
-                                <h1 className="text-base font-semibold text-gray-700 capitalize">{item.title}</h1>
+                                <h1 className="md:text-lg text-base font-semibold text-black capitalize">{item.title}</h1>
 
-                                <p className="text-gray-500 text-sm">
+                                <p className="text-gray-800 md:text-para text-Para-sm">
                                     {item.para}
                                 </p>
                             </div>

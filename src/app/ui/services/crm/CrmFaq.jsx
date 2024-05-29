@@ -1,4 +1,4 @@
-import Faq from '@/components/ui/Faq'
+import Faq3 from '@/components/ui/Faq3'
 import React from 'react'
 
 const CrmFaq = () => {
@@ -31,7 +31,7 @@ const CrmFaq = () => {
       },
     ]
   return (
-    <div><Faq faq={faq}/></div>
+    <div><Faq3 faq={faq}/></div>
   )
 }
 export default CrmFaq
