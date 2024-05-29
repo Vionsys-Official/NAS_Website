@@ -1,15 +1,22 @@
 import React from 'react'
+import h1 from '/public/assets/industries/Banking/h1.jpg'
+import Image from 'next/image'
+import Link from 'next/link'
+import dataanalytics from '/public/assets/industries/Banking/DataAnalytics.jpg'
+import cyber from '/public/assets/industries/Banking/cybersec.jpg'
+import custexp from '/public/assets/industries/Banking/customerexp.jpg'
+
 
 function BankingS1() {
   return (
-    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+    <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
+      <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 sm:h-[20vh]">
         <div>
-          <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
+          <p className="inline-block px-5 py-px mb-4 sm:text-Para-sm md:text-Para font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
             Services
           </p>
         </div>
-        <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+        <h2 className="max-w-lg mb-6 font-sans md:text-MainHeading sm:text-MainHeading-sm font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
           <span className="relative inline-block">
             <svg
               viewBox="0 0 52 24"
@@ -33,78 +40,78 @@ function BankingS1() {
                 height="24"
               />
             </svg>
-            <span className="relative">WHAT</span>
+            <span className="relative">What</span>
           </span>{' '}
-          DO WE OFFER?
+          Do We Offer?
         </h2>
-        <p className="text-base text-gray-700 md:text-lg">
+        <p className="text-base text-gray-700 md:text-Para sm:text-Para-sm">
           Below mentioned are few services offered by us!!
         </p>
       </div>
     
     <div className="grid gap-5 row-gap-5 mb-8 lg:grid-cols-4 sm:grid-cols-2">
-        <a
+        <Link
           href="/"
           aria-label="View Item"
           className="inline-block overflow-hidden duration-300 transform bg-white rounded shadow-sm hover:-translate-y-2"
         >
           <div className="flex flex-col h-full">
-            <img
-              src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+            <Image
+              src={h1}
               className="object-cover w-full h-48"
               alt=""
             />
             <div className="flex-grow border border-t-0 rounded-b">
               <div className="p-5">
-                <h6 className="mb-2 font-semibold leading-5">
+                <h6 className="mb-2 font-semibold leading-5 sm:text-CardHeading-sm md:text-CardHeading">
                 Digital Transformation
                 </h6>
-                <p className="text-sm text-gray-900">
+                <p className="md:text-Para sm:text-Para-sm text-gray-900 ">
                 Implementing automation to streamline operations and reduce errors.
                
                 </p>
               </div>
             </div>
           </div>
-        </a>
-        <a
+        </Link>
+        <Link
           href="/"
           aria-label="View Item"
           className="inline-block overflow-hidden duration-300 transform bg-white rounded shadow-sm hover:-translate-y-2"
         >
           <div className="flex flex-col h-full">
-            <img
-              src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+            <Image
+              src={dataanalytics}
               className="object-cover w-full h-48"
               alt=""
             />
             <div className="flex-grow border border-t-0 rounded-b">
               <div className="p-5">
-                <h6 className="mb-2 font-semibold leading-5">
+                <h6 className="mb-2 font-semibold leading-5 sm:text-CardHeading-sm md:text-CardHeading">
                 Data Analytics
                 </h6>
-                <p className="text-sm text-gray-900">
+                <p className="md:text-Para sm:text-Para-sm text-gray-900 ">
                 Providing insights into customer behavior for personalized services and targeted marketing.
                 </p>
               </div>
             </div>
           </div>
-        </a>
-        <a
+        </Link>
+        <Link
           href="/"
           aria-label="View Item"
           className="inline-block overflow-hidden duration-300 transform bg-white rounded shadow-sm hover:-translate-y-2"
         >
           <div className="flex flex-col h-full">
-            <img
-              src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+            <Image
+              src={cyber}
               className="object-cover w-full h-48"
               alt=""
             />
             <div className="flex-grow border border-t-0 rounded-b">
               <div className="p-5">
-                <h6 className="mb-2 font-semibold leading-5">Cybersecurity</h6>
-                <p className="text-sm text-gray-900">
+                <h6 className="mb-2 font-semibold leading-5 sm:text-CardHeading-sm md:text-CardHeading">Cybersecurity</h6>
+                <p className=" text-gray-900 sm:text-Para-sm lg:text-Para ">
                 Employing advanced measures to protect sensitive data and systems from cyber threats.
                
     
@@ -112,30 +119,30 @@ function BankingS1() {
               </div>
             </div>
           </div>
-        </a>
-        <a
+        </Link>
+        <Link
           href="/"
           aria-label="View Item"
           className="inline-block overflow-hidden duration-300 transform bg-white rounded shadow-sm hover:-translate-y-2"
         >
           <div className="flex flex-col h-full">
-            <img
-              src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+            <Image
+              src={custexp}
               className="object-cover w-full h-48"
               alt=""
             />
             <div className="flex-grow border border-t-0 rounded-b">
               <div className="p-5">
-                <h6 className="mb-2 font-semibold leading-5">
+                <h6 className="mb-2 font-semibold leading-5 sm:text-CardHeading-sm md:text-CardHeading">
                 Customer Experience
                 </h6>
-                <p className="text-sm text-gray-900">
+                <p className="text-sm text-gray-900 sm:text-Para-sm lg:text-Para ">
                 Developing AI-driven chatbots for instant customer support.
                 </p>
               </div>
             </div>
           </div>
-        </a>
+        </Link>
       </div>
       </div>
   )
