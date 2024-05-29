@@ -26,8 +26,8 @@ const page = () => {
         </div>
     <div className='flex flex-wrap'>
             <div className='mt-10 w-full md:w-1/2 pr-5 pl-5'>
-                <h3 className='md:text-6xl mt-10 font-medium sm:font-bold text-center sm:w-full sm:text-6xl text-green-600 '>What is BI and Analytics?</h3>
-                <p className='md:text-2xl mb-10 ml-30 mt-3 mr-30 text-center sm:text-sm'>Business Intelligence refers to the technologies, processes, and practices used to collect, integrate, analyze, and present an organization’s raw data to create insightful and actionable business information.</p>
+                <h3 className='md:text-Heading mt-10 font-medium sm:font-bold text-center sm:w-full sm:text-Heading-sm text-green-600 '>What is BI and Analytics?</h3>
+                <p className='md:text-Para mb-10 ml-30 mt-3 mr-30 text-center sm:text-Para-sm'>Business Intelligence refers to the technologies, processes, and practices used to collect, integrate, analyze, and present an organization’s raw data to create insightful and actionable business information.</p>
                 </div>
                 <div >
                     <Image
@@ -87,7 +87,7 @@ const page = () => {
     <section3 id="features" class="container mx-auto px-4 py-8 md:py-12 lg:py-20 ">
                <div className="mx-auto mb-10 flex max-w-full flex-col items-center space-y-4 text-center  ">
                     <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-4xl ">Features</h2>
-                    <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+                    <p className="max-w-[85%] md:text-Para sm:text-Para-sm leading-normal text-muted-foreground sm:text-lg sm:leading-7">
                     Business Intelligence (BI) and Analytics encompass a range of features designed to help organizations make data-driven decisions. Here are the key features typically found in BI and Analytics platforms:
                     </p>
                 </div>
@@ -100,7 +100,7 @@ const page = () => {
                 <LuDatabaseBackup size={40}/>
                     <div className="space-y-2">
                         <h3 className="font-bold">Data Integration</h3>
-                        <p className="text-sm text-muted-foreground">Tools to extract data from various sources, transform and load .</p>
+                        <p className="md:text-Para sm:text-Para-sm text-muted-foreground">Tools to extract data from various sources, transform and load .</p>
                     </div>
                 </div>
             </div>
@@ -111,7 +111,7 @@ const page = () => {
                 <BsDatabaseGear size={40}/>
                     <div className="space-y-2">
                         <h3 className="font-bold">Data Management</h3>
-                        <p className="text-sm">Tools to ensure the accuracy, completeness, and consistency of data.</p>
+                        <p className="md:text-Para sm:text-Para-sm">Tools to ensure the accuracy, completeness, and consistency of data.</p>
                     </div>
                 </div>
             </div>
@@ -122,7 +122,7 @@ const page = () => {
                 <BsClipboard2Data size={40}/>
                     <div className="space-y-2">
                         <h3 className="font-bold">Data Modeling</h3>
-                        <p className="text-sm text-muted-foreground">Structuring databases in a way that supports efficient querying and analysis.</p>
+                        <p className="md:text-Para sm:text-Para-sm text-muted-foreground">Structuring databases in a way that supports efficient querying and analysis.</p>
                     </div>
                 </div>
             </div>
@@ -133,7 +133,7 @@ const page = () => {
                 <VscGraph size={40}/>
                     <div className="space-y-2">
                         <h3 className="font-bold">Data Visualization</h3>
-                        <p className="text-sm text-muted-foreground"> Interactive displays of key metrics and KPIs.</p>
+                        <p className="md:text-Para sm:text-Para-sm text-muted-foreground"> Interactive displays of key metrics and KPIs.</p>
                     </div>
                 </div>
             </div>
@@ -144,7 +144,7 @@ const page = () => {
                 <BiAnalyse size={40}/>
                     <div className="space-y-2">
                         <h3 className="font-bold">Advanced Analytics</h3>
-                        <p className="text-sm text-muted-foreground"> Using statistical algorithms and machine learning to predict future outcomes.</p>
+                        <p className="md:text-Para sm:text-Para-sm text-muted-foreground"> Using statistical algorithms and machine learning to predict future outcomes.</p>
                     </div>
                 </div>
             </div>
@@ -155,7 +155,7 @@ const page = () => {
                 <GrShieldSecurity size={40}/>
                     <div className="space-y-2">
                         <h3 className="font-bold">Security and Compliance</h3>
-                        <p className="text-sm text-muted-foreground">Ensuring that only authorized users can access sensitive data.
+                        <p className="md:text-Para sm:text-Para-sm text-muted-foreground">Ensuring that only authorized users can access sensitive data.
 </p>
                     </div>
                 </div>
@@ -174,7 +174,7 @@ const page = () => {
             <div
                 class="relative p-4 my-6 text-gray-800 bg-green-400 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
                 <h3 class="text-lg font-semibold lg:text-xl">Expert Team</h3>
-                <p class="mt-2 leading-6">Benefit from our certified BI and Data Analytics professionals who bring extensive experience and knowledge to the table..</p>
+                <p class="mt-2 md:text-Para sm:text-Para-sm leading-6">Benefit from our certified BI and Data Analytics professionals who bring extensive experience and knowledge to the table..</p>
             </div>
             <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
                 <div class="flex items-center justify-center w-6 h-full">
@@ -194,7 +194,7 @@ const page = () => {
             </div>
             <div class="relative p-4 my-6 text-gray-800  bg-green-400 rounded-xl col-start-6 col-end-10 mr-auto">
                 <h3 class="text-lg font-semibold lg:text-xl">Tailored Solutions</h3>
-                <p class="mt-2 leading-6">Enjoy customized Business solutions designed to meet the specific needs of your business, ensuring optimal performance and efficiency.</p>
+                <p class="mt-2 md:text-Para sm:text-Para-sm leading-6">Enjoy customized Business solutions designed to meet the specific needs of your business, ensuring optimal performance and efficiency.</p>
             </div>
         </div>
 
@@ -202,7 +202,7 @@ const page = () => {
             <div
                 class="relative p-4 my-6 text-gray-800  bg-green-400 border-red-500 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
                 <h3 class="text-lg font-semibold lg:text-xl">24/7 Support</h3>
-                <p class="mt-2 leading-6">Rest assured with our dedicated support team available round the clock to assist you whenever you need it, ensuring minimal downtime and maximum productivity.</p>
+                <p class="mt-2 md:text-Para sm:text-Para-sm leading-6">Rest assured with our dedicated support team available round the clock to assist you whenever you need it, ensuring minimal downtime and maximum productivity.</p>
               </div>
             <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
                 <div class="flex items-center justify-center w-6 h-full">
@@ -222,7 +222,7 @@ const page = () => {
             </div>
             <div class="relative p-4 my-6 text-gray-800  bg-green-400 rounded-xl col-start-6 col-end-10 mr-auto">
                 <h3 class="text-lg font-semibold lg:text-xl">Innovative Technology</h3>
-                <p class="mt-2 leading-6">Stay ahead of the curve with our utilization of the latest cloud technologies, guaranteeing that your business remains competitive and adaptable in the ever-evolving digital landscape.</p>
+                <p class="mt-2 md:text-Para sm:text-Para-sm leading-6">Stay ahead of the curve with our utilization of the latest cloud technologies, guaranteeing that your business remains competitive and adaptable in the ever-evolving digital landscape.</p>
                
             </div>
         </div>
@@ -241,7 +241,7 @@ const page = () => {
  
 
     <section6>
-        <div >
+        <div className='sm:pl-6' >
             <Bistart/>
         </div>
     </section6>

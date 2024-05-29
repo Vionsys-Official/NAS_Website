@@ -2,9 +2,9 @@ import React from 'react'
 
 function Bankingchoose() {
   return (
-    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-    <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-      <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+    <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8  sm:py-10">
+    <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 sm:py-2">
+      <h2 className="max-w-lg mb-6 font-sans sm:text-MainHeading md:text-MainHeading font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
         <span className="relative inline-block">
           <svg
             viewBox="0 0 52 24"
@@ -25,14 +25,14 @@ function Bankingchoose() {
             <rect
               fill="url(#07690130-d013-42bc-83f4-90de7ac68f76)"
               width="52"
-              height="24"
+              height="15"
             />
           </svg>
           <span className="relative">Why</span>
         </span>{' '}
-        Choose us?
+        Choose Us?
       </h2>
-      <p className="text-base text-gray-700 md:text-lg">
+      <p className="text-base text-gray-700 md:text-Para sm:text-Para-sm">
         Our major priority is your satisfaction.
       </p>
     </div>
@@ -57,10 +57,10 @@ function Bankingchoose() {
             </div>
           </div>
           <div>
-            <h6 className="mb-3 text-xl font-bold leading-5">
+            <h6 className="mb-3 text-xl font-bold leading-5 sm:text-CardHeading-sm md:text-CardHeading">
             Expertise and Experience
             </h6>
-            <p className="text-sm text-gray-900">
+            <p className=" text-md:text-Para sm:text-Para-smgray-900 ">
             The company should have extensive experience in the financial and banking sectors, understanding the unique challenges and requirements of these industries.
 
             </p>
@@ -85,10 +85,10 @@ function Bankingchoose() {
             </div>
           </div>
           <div>
-            <h6 className="mb-3 text-xl font-bold leading-5">
+            <h6 className="mb-3 text-xl font-bold leading-5 sm:text-CardHeading-sm md:text-CardHeading">
             Innovative Solutions
             </h6>
-            <p className="text-sm text-gray-900">
+            <p className="md:text-Para sm:text-Para-sm text-gray-900">
             The ability to leverage the latest technological advancements, such as AI, blockchain, and cloud computing, to provide innovative and future-proof solutions.
             </p>
           </div>
@@ -112,10 +112,10 @@ function Bankingchoose() {
             </div>
           </div>
           <div>
-            <h6 className="mb-3 text-xl font-bold leading-5">
+            <h6 className="mb-3 text-xl font-bold leading-5 sm:text-CardHeading-sm md:text-CardHeading">
             Customer-Centric Focus
             </h6>
-            <p className="text-sm text-gray-900">
+            <p className="md:text-Para sm:text-Para-sm text-gray-900">
             Offering dedicated, responsive customer support to address issues and provide assistance promptly.
             </p>
           </div>
@@ -141,10 +141,10 @@ function Bankingchoose() {
             </div>
           </div>
           <div>
-            <h6 className="mb-3 text-xl font-bold leading-5">
+            <h6 className="mb-3 text-xl font-bold leading-5 sm:text-CardHeading-sm md:text-CardHeading">
             Reliability and Trustworthiness
             </h6>
-            <p className="text-sm text-gray-900">
+            <p className="md:text-Para sm:text-Para-sm text-gray-900">
             Consistently delivering high-quality services and maintaining reliable system performance.
             Clear and honest communication regarding project timelines, costs, and potential challenges.
 
@@ -170,10 +170,10 @@ function Bankingchoose() {
             </div>
           </div>
           <div>
-            <h6 className="mb-3 text-xl font-bold leading-5">
+            <h6 className="mb-3 text-xl font-bold leading-5 sm:text-CardHeading-sm md:text-CardHeading">
             Cost-Effective Solutions
             </h6>
-            <p className="text-sm text-gray-900">
+            <p className=" text-gray-900 md:text-Para sm:text-Para-sm">
             Delivering high-quality services and solutions that provide excellent value for your investment. Implementing efficient processes that reduce costs and enhance operational efficiency.
             </p>
           </div>
@@ -197,10 +197,10 @@ function Bankingchoose() {
             </div>
           </div>
           <div>
-            <h6 className="mb-3 text-xl font-bold leading-5">
+            <h6 className="mb-3 text-xl font-bold leading-5 sm:text-CardHeading-sm md:text-CardHeading">
             Commitment to Continuous Improvement
             </h6>
-            <p className="text-sm text-gray-900">
+            <p className=" text-gray-900 md:text-Para sm:text-Para-sm">
             Keeping up with technological advancements and industry trends to ensure that solutions remain relevant and effective.
             </p>
           </div>
