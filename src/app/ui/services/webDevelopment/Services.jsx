@@ -37,18 +37,18 @@ const Services = () => {
     ]
 
   return (
-    <div className='py-10'>
+    <div className='py-4'>
         <div className='flex flex-col items-center justify-center'>
-            <h1 className='text-MainHeading-sm md:text-MainHeading pb-2 md:pb-10 font-semibold cursor-pointer'>Our Offerings</h1>
+            <h1 className='text-MainHeading-sm md:text-MainHeading md:p-6 font-semibold cursor-pointer'>Our Offerings</h1>
             <div className='w-[100%] md:pl-20 flex flex-wrap gap-4 md:gap-10 items-center justify-center'>
                 {items.map((feat)=>{
                     return(
-                        <div key={feat.id} className='w-full md:w-1/4 h-[24rem] sm:h-[18rem] flex flex-row items-start justify-center shadow-md shadow-gray-300 p-2 cursor-pointer'>
-                            <span className='text-MainHeading-sm md:text-MainHeading font-semibold pr-2 h-[5rem]'><feat.icon/></span>
-                            <div>
-                                <h2 className='text-CardHeading-sm md:text-CardHeading pb-2 h-[5rem]'>{feat.title}</h2>
-                                <p className='flex items-center justify-center'>{feat.desc}</p>
+                        <div key={feat.id} className='w-[90%] lg:w-1/4 h-[24rem] sm:h-[12rem] lg:h-[30rem] xl:h-[22rem] flex flex-col items-center justify-center shadow-md shadow-gray-300 p-2 hover:bg-green-100 cursor-pointer'>
+                            <div className='flex flex-row items-start justify-start'>
+                                <span className='text-MainHeading-sm md:text-MainHeading font-semibold pr-2'><feat.icon/></span>
+                                <h2 className='text-CardHeading-sm md:text-CardHeading pb-2 font-semibold'>{feat.title}</h2>
                             </div>
+                            <p className='flex items-center justify-center'>{feat.desc}</p>
                         </div>
                     );
                 })}

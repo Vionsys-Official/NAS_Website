@@ -4,12 +4,12 @@ const Faq4 = ({obj}) => {
 
   return (
     <div className='flex items-center justify-center'>
-        <div className="w-[96%] md:w-[70%] my-6 md:my-20 flex flex-col items-center justify-center">
-            <h1 className='text-MainHeading-sm md:text-MainHeading pb-4 font-semibold cursor-pointer'>Frequently Asked Questions</h1>
+        <div className="w-[96%] md:w-[70%] my-6 md:my-14 flex flex-col items-center justify-center">
+            <h1 className='text-SubHeading-sm md:text-SubHeading pb-4 font-semibold cursor-pointer'>Frequently Asked Questions</h1>
             <div className="flex flex-col gap-2 md:gap-4">
                 {obj.map((feat)=>{
                     return(
-                        <div key={feat.id} className='hover:bg-blue-50'>
+                        <div key={feat.id} className='hover:bg-green-100 rounded-xl'>
                         <details className=" group px-2 md:px-6 rounded-xl border-y border-blue-400" close>
                             <summary
                                 className="flex cursor-pointer list-none items-center justify-between py-2 text-SubHeading-sm md:text-SubHeading font-medium text-secondary-900 group-open:text-primary-500">

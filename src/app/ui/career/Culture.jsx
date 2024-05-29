@@ -15,12 +15,12 @@ const Culture = () => {
   return (
     <div className='flex flex-col items-center justify-center'>
         <div className='flex items-center justify-center'>
-            <div className='w-[90%] flex flex-col items-center justify-center'>
+            <div className='w-[90%] md:w-[70%] flex flex-col items-center justify-center'>
             <h2 className='text-MainHeading-sm md:text-MainHeading font-semibold pt-6 md:pt-10 cursor-pointer'>Our Culture</h2>
             <h3 className='text-Para-sm md:text-Para font-medium p-2 md:p-4 cursor-pointer'>Our culture is built on a foundation of creativity, collaboration, and a commitment to excellence. We foster an environment where innovation thrives, teamwork is paramount, and every team member's contributions are valued. Here’s what makes our culture unique</h3>
             </div>
         </div>
-        <div className="w-[90%] grid grid-cols-1 sm:grid-cols-2 gap-4 py-2 md:py-6">
+        <div className="w-[90%] md:w-[70%] grid grid-cols-1 sm:grid-cols-2 gap-4 py-2 md:py-6">
             {culture.map((feat)=>{
                 return(
                     <div key={feat.id} className="block bg-white rounded-xl border shadow-lg shadow-gray-400 border-gray-300 hover:border-2 p-4 cursor-pointer">
