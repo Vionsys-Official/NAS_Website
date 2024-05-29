@@ -28,31 +28,55 @@ module.exports = {
       fontSize: {
         HeroHeading: "48px",
         MainHeading: "36px",
-        SubHeading: "20px",
+
+        Heading: "30px",
+        SubHeading: "24px",
+
         Para: "16px",
         CardHeading: "24px",
-        hyperlinks: "18px",
+
+        HMain: "36px",
+        HSub: "24px",
+
+
         "MainHeading-sm": "30px",
         "HeroHeading-sm": "30px",
-        "SubHeading-sm": "16px",
+
+        "Heading-sm": "24px",
+        "SubHeading-sm": "18px",
+
+
         "Para-sm": "14px",
         "CardHeading-sm": "18px",
-        "hyperlinks-sm": "14px",
+        
+        "HMain-sm": "24px",
+        "HSub-sm": "18px",
       },
 
       lineHeight: {
         HeroHeading: "56px",
         MainHeading: "40px",
-        SubHeading: "28px",
+        
+        Heading: "36px",
+        SubHeading: "32px",
+
         Para: "24px",
         CardHeading: "32px",
-        hyperlinks: "20px",
+        
+        HMain: "40px",
+        HSub: "32px",
+
         "MainHeading-sm": "36px",
         "TopHeading-sm": "32px",
-        "SubHeading-sm": "24px",
+        
+        "Heading-sm": "32px",
+        "SubHeading-sm": "28px",
+
         "Paragraph-sm": "20px",
         "CardHeading-sm": "28px",
-        "hyperlinks-sm": "24px",
+        
+        "HMain-sm": "32px",
+        "HSub-sm": "28px",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
