@@ -3,6 +3,9 @@ import { contactData } from "@/utils/heroSection/data";
 import HeroSection from "@/utils/heroSection/HeroSection";
 import Image from "next/image";
 import Header  from "@/../public/assets/contact/Header.jpg";
+import { FaMobileAlt } from "react-icons/fa";
+import { ImLocation2 } from "react-icons/im";
+import { MdOutlineEmail } from "react-icons/md";
 
 import Forms from "./Forms";
 
@@ -28,7 +31,7 @@ function page() {
                 </h1>
                 <blockquote className="text-lg text-center font-normal text-gray-500 lg:text-lg dark:text-gray-400">
                   <svg
-                    className="w-4 h-4 text-gray-400 dark:text-green-500"
+                    className="w-8 h-8 text-gray-400 dark:text-green-500"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -36,7 +39,7 @@ function page() {
                   >
                     <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
                   </svg>
-                  <p className="first-letter:text-2xl">
+                  <p className="first-letter:text-2xl text-Para">
                     At NAS Infotech Pvt.Ltd, we value your inquiries and feedback.
                     Whether you need support, have questions about our services,
                     or want to start a project, our team is here to help. We are
@@ -99,19 +102,7 @@ function page() {
             <div className="p-8 border-b sm:border-r">
               <div className="max-w-md text-center">
                 <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full sm:w-16 sm:h-16">
-                  <svg
-                    className="w-8 h-8 text-deep-purple-accent-400 sm:w-12 sm:h-12"
-                    stroke="currentColor"
-                    viewBox="0 0 52 52"
-                  >
-                    <polygon
-                      strokeWidth="3"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      fill="none"
-                      points="29 13 14 29 25 29 23 39 38 23 27 23"
-                    />
-                  </svg>
+                  <ImLocation2 className="text-black text-3xl"/>
                 </div>
                 <h6 className="mb-2 font-semibold leading-5">Address</h6>
                 <p className="mb-3 text-sm text-gray-900">
@@ -123,19 +114,7 @@ function page() {
             <div className="p-8 border-b lg:border-r">
               <div className="max-w-md text-center">
                 <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full sm:w-16 sm:h-16">
-                  <svg
-                    className="w-8 h-8 text-deep-purple-accent-400 sm:w-12 sm:h-12"
-                    stroke="currentColor"
-                    viewBox="0 0 52 52"
-                  >
-                    <polygon
-                      strokeWidth="3"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      fill="none"
-                      points="29 13 14 29 25 29 23 39 38 23 27 23"
-                    />
-                  </svg>
+                  <FaMobileAlt className="text-3xl text-black"/>
                 </div>
                 <h6 className="mb-2 font-semibold leading-5">Phone</h6>
                 <p className=" text-sm text-gray-900">+(91) 9172 077273</p>
@@ -145,19 +124,7 @@ function page() {
             <div className="p-8 border-b sm:border-r lg:border-r-0">
               <div className="max-w-md text-center">
                 <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full sm:w-16 sm:h-16">
-                  <svg
-                    className="w-8 h-8 text-deep-purple-accent-400 sm:w-12 sm:h-12"
-                    stroke="currentColor"
-                    viewBox="0 0 52 52"
-                  >
-                    <polygon
-                      strokeWidth="3"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      fill="none"
-                      points="29 13 14 29 25 29 23 39 38 23 27 23"
-                    />
-                  </svg>
+                  < MdOutlineEmail className="text-black text-3xl font-bold"/>
                 </div>
                 <h6 className="mb-2 font-semibold leading-5">Email</h6>
                 <p className="mb-3 text-sm text-gray-900">hr@nasinfotech.com</p>
@@ -171,10 +138,10 @@ function page() {
       <section>
         <div className="px-4 py-2 flex items-center mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div className="max-w-screen-sm sm:text-center sm:mx-auto">
-            <h2 className="mb-4 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+            <h2 className="mb-4 font-sans text-Heading font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
               Navigate to Us with Ease
             </h2>
-            <p className="text-base text-gray-700 md:text-lg sm:px-4">
+            <p className="text-base text-gray-700 md:text-SubHeading sm:px-4">
               Use our interactive map to effortlessly find your way to our
               location. We’re just a few clicks away!
             </p>
