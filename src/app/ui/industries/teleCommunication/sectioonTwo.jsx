@@ -3,10 +3,12 @@ import React from 'react'
 import Hero1 from '/public/assets/industries/teleCommunication/sec2.jpg';
 import Hero2 from '/public/assets/industries/teleCommunication/sec21.jpg';
 import Hero3 from '/public/assets/industries/teleCommunication/sec22.jpg';
+import { Service } from './data';
+
 
 const sectioonTwo = () => {
   return (
-    <section>
+    <section id='data'>
     <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
       <div className="max-w-full bg-gray-100 p-5 shadow-xl rounded-xl mb-10 md:mx-auto sm:text-center md:mb-12">
         <div>
@@ -44,8 +46,8 @@ const sectioonTwo = () => {
             alt=""
           />
         </div>
-
-        <div className="flex flex-col justify-center">
+ 
+        {Service.map((data , index) => (<div key={index} className="flex flex-col justify-center">
           <div className="flex">
             <div className="mr-4">
               <div className="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-indigo-50">
@@ -66,150 +68,24 @@ const sectioonTwo = () => {
             </div>
             <div>
               <h6 className="py-3 font-semibold text-3xl text-blue-900">
-              Network Optimization and Management
+              {data.heading}
               </h6>
               <p className="text-lg mb-2 text-gray-900">
-              Our advanced network solutions ensure your infrastructure is optimized for maximum efficiency and reliability. <br />
-               We provide:
+              {data.description}
               </p>
               <p className="text-md p-2 mb-2 text-gray-900 rounded-2xl border border-gray-800">
-              Network Design and Implementation
-              : Customized network architecture that meets your specific needs.
+             {data.point1}
               </p>
               <p className="text-md p-2 mb-2 text-gray-900 rounded-2xl border border-gray-800">
-              Performance Monitoring and Optimization
-              : Real-time monitoring and analytics to enhance network performance.
+              {data.point2}
               </p>
               <p className="text-md p-2 text-gray-900 rounded-2xl border border-gray-800">
-              Maintenance and Support
-              : Proactive maintenance and 24/7 support to minimize downtime and resolve issues swiftly.
-              </p>
-              <hr className="w-full my-6 border-gray-300" />
-            </div>
-          </div>
-
-          <div className="flex">
-            <div className="mr-4">
-              <div className="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-indigo-50">
-                <svg
-                  className="w-8 h-8 text-deep-purple-accent-400"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div>
-            <h6 className="py-3 font-semibold text-3xl text-blue-900">
-             Cloud Solutions
-              </h6>
-              <p className="text-lg mb-2 text-gray-900">
-              Leverage the power of the cloud to enhance scalability and flexibility in your operations. Our cloud services include:
-              </p>
-              <p className="text-md p-2 mb-2 text-gray-900 rounded-2xl border border-gray-800">
-              Cloud Migration
-              : Seamless transition of your data and applications to the cloud.
-              </p>
-              <p className="text-md p-2 mb-2 text-gray-900 rounded-2xl border border-gray-800">
-              Cloud Infrastructure Management
-              : Comprehensive management of your cloud environment to ensure optimal performance.
-              </p>
-              <p className="text-md p-2 text-gray-900 rounded-2xl border border-gray-800">
-              Disaster Recovery Solutions
-              : Reliable backup and recovery services to protect your data against unforeseen events.
-              </p>
-              <hr className="w-full my-6 border-gray-300" />
-            </div>
-          </div>
-
-          <div className="flex">
-            <div className="mr-4">
-              <div className="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-indigo-50">
-                <svg
-                  className="w-8 h-8 text-deep-purple-accent-400"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div>
-            <h6 className="py-3 font-semibold text-3xl text-blue-900">
-             IoT and Automation
-              </h6>
-              <p className="text-md mb-2 text-gray-900">
-              Stay at the forefront of technology with our IoT and automation solutions:
-              </p>
-              <p className="text-lg p-2 mb-2 text-gray-900 rounded-2xl border border-gray-800">
-              IoT Integration
-              : Connecting devices and systems for improved operational efficiency.
-              </p>
-              <p className="text-md p-2 mb-2 text-gray-900 rounded-2xl border border-gray-800">
-              Automation Services
-              : Automating routine tasks to free up resources and enhance productivity.
-              </p>
-              <p className="text-md p-2 text-gray-900 rounded-2xl border border-gray-800">
-              Smart Solutions
-              : Implementing smart technologies to offer innovative services to your customers.
-              </p>
-              <hr className="w-full my-6 border-gray-300" />
-            </div>
-          </div>
-
-          <div className="flex">
-            <div className="mr-4">
-              <div className="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-indigo-50">
-                <svg
-                  className="w-8 h-8 text-deep-purple-accent-400"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div>
-            <h6 className="py-3 font-semibold text-3xl text-blue-900">
-             Cybersecurity
-              </h6>
-              <p className="text-lg mb-2 text-gray-900">
-              Protect your network and customer data with our robust cybersecurity solutions:
-              </p>
-              <p className="text-md p-2 mb-2 text-gray-900 rounded-2xl border border-gray-800">
-              Threat Detection and Prevention
-              : Advanced security measures to identify and mitigate potential threats.
-              </p>
-              <p className="text-md p-2 mb-2 text-gray-900 rounded-2xl border border-gray-800">
-              Data Encryption: Ensuring your sensitive data is securely encrypted both in transit and at rest.
-              </p>
-              <p className="text-md p-2 text-gray-900 rounded-2xl border border-gray-800">
-              Compliance Management
-              : Helping you adhere to industry regulations and standards to safeguard your operations.
+             {data.point3}
               </p>
               
             </div>
-          </div>
-        </div>
+            </div>
+          </div>))}
         
       </div>
     </div>

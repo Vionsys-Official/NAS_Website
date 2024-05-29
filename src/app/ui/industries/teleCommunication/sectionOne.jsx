@@ -24,8 +24,7 @@ const sectionOne = () => {
               In the fast-paced world of telecommunications, staying ahead of technological advancements is crucial. At NAS Infotech Pvt Ltd, we offer comprehensive telecommunication solutions designed to enhance connectivity, streamline operations, and drive innovation for businesses of all sizes. Our expertise in the telecommunications industry ensures that we deliver robust, reliable, and scalable solutions tailored to meet your unique needs.
               </p>
               <Link
-                href="/"
-                aria-label=""
+                href={"#data"}
                 className="inline-flex pl-2 md:px-6 items-center font-semibold tracking-wider transition-colors duration-200 text-emerald-400 hover:text-emerald-700"
               >
                 Know more
