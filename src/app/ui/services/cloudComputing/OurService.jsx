@@ -66,27 +66,27 @@ const OurService = () => {
         },
     ]
 
-  return (
-    <section className="m-4 md:m-8 text-gray-800">
-	<div className="p-4 mx-auto my-6 space-y-1 text-center">
-		<span className="text-xs font-semibold tracking-wider uppercase text-violet-400 dark:text-violet-600">NAS Infotech Pvt. Ltd.</span>
-		<h2 className="pb-3 text-3xl font-bold md:text-4xl">Our Cloud Computing Services</h2>
-		<p>We transform your business operations with cutting-edge cloud computing solutions. Our comprehensive cloud services are designed to meet the diverse needs of modern enterprises, enhancing flexibility, scalability and efficiency.</p>
-	</div>
-	<div className="container grid justify-center gap-4 mx-auto lg:grid-cols-2 xl:grid-cols-3">
-        {service.map ((item) => (
-            <div key={item.key} className="flex flex-col px-8 py-6 border-2 border-purple-500 p-2 rounded-xl">
-			<h2 className="mb-2 text-lg font-semibold sm:text-xl title-font text-gray-800 dark:text-gray-800">{item.title}</h2>
-            <ul className="flex-1 mb-4 text-base leading-relaxed text-gray-400">
-                <li><span className='text-gray-900'>{item.t1}</span>{item.para1}</li>
-                <li><span className='text-gray-900'>{item.t2}</span>{item.para2}</li>
-                <li><span className='text-gray-900'>{item.t3}</span>{item.para3}</li>
-            </ul>
-		</div>
-        ))}
-	</div>
-</section>
-  )
+    return (
+        <section className="m-4 md:m-8 text-gray-800">
+            <div className="md:p-4 p-1 mx-auto my-6 space-y-1 text-center">
+                <span className="text-xs font-semibold tracking-wider uppercase text-violet-400 dark:text-violet-600">NAS Infotech Pvt. Ltd.</span>
+                <h2 className="pb-3 text-Heading-sm font-bold md:text-Heading">Our Cloud Computing Services</h2>
+                <p>We transform your business operations with cutting-edge cloud computing solutions. Our comprehensive cloud services are designed to meet the diverse needs of modern enterprises, enhancing flexibility, scalability and efficiency.</p>
+            </div>
+            <div className="container grid justify-center gap-4 mx-auto lg:grid-cols-2 xl:grid-cols-3">
+                {service.map((item) => (
+                    <div key={item.key} className="flex flex-col md:px-8 p-2 md:py-6 border-2 border-purple-500 rounded-xl">
+                        <h2 className="mb-2 md:text-CardHeading text-CardHeading-sm font-semibold sm:text-xl text-gray-800">{item.title}</h2>
+                        <ul className="flex-1 md:mb-4 text-Para md:text-Para-sm leading-relaxed text-gray-400">
+                            <li className='text-gray-600'><span className='text-black'>{item.t1}</span>{item.para1}</li>
+                            <li className='text-gray-600'><span className='text-black'>{item.t2}</span>{item.para2}</li>
+                            <li className='text-gray-600'><span className='text-black'>{item.t3}</span>{item.para3}</li>
+                        </ul>
+                    </div>
+                ))}
+            </div>
+        </section>
+    )
 }
 
 export default OurService

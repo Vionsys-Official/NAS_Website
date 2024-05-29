@@ -26,13 +26,13 @@ const Needs = () => {
 
     return (
         <div className="px-4 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-14">
-            <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-10">
+            <div className="max-w-xl mb-7 md:mx-auto sm:text-center lg:max-w-2xl md:mb-10">
                 <div>
-                    <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
+                    <p className="inline-block px-3 mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
                         Discover DevOps
                     </p>
                 </div>
-                <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+                <h2 className="max-w-lg md:mb-6 mb-3 md:text-Heading text-Heading-sm font-bold leading-none tracking-tight text-gray-900 md:mx-auto">
                     <span className="relative inline-block">
                         <svg
                             viewBox="0 0 52 24"
@@ -60,7 +60,7 @@ const Needs = () => {
                     </span>{' '}
                     with our tailored solutions and support.
                 </h2>
-                <p className="text-base text-gray-700 md:text-lg">
+                <p className="text-base text-gray-800 md:text-lg">
                     DevOps integrates development and operations teams to enhance collaboration, automate processes and accelerate software delivery, essential for staying competitive in today's fast-paced market. It enables your business to:
                 </p>
             </div>

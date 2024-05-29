@@ -33,7 +33,7 @@ module.exports = {
         SubHeading: "24px",
 
         Para: "16px",
-        CardHeading: "24px",
+        CardHeading: "20px",
 
         HMain: "36px",
         HSub: "24px",

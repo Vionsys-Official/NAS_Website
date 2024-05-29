@@ -4,22 +4,22 @@ const Faq = ({faq}) => {
 
    
     return (
-        <div className="py-4 bg-white">
-            <div className="max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-between">
+        <div className="py-4">
+            <div className="max-w-screen-md mx-auto px-4 md:px-6 lg:px-8 flex flex-col justify-between">
 
                 <div className="text-center">
-                    <h3 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900">
+                    <h3 className="md:text-Heading text-Heading-sm leading-normal font-extrabold tracking-tight text-gray-900">
                         Frequently Asked <span className="text-indigo-600">Questions</span>
                     </h3>
                 </div>
 
-                <div className="mt-14">
+                <div className="md:mt-14 mt-10">
                     <ul className="">
                         {faq.map((item) =>(
-                            <li key={item.id} className="text-left mb-10">
-                            <div className="flex flex-row items-start mb-5">
+                            <li key={item.id} className="text-left md:mb-10 mb-4">
+                            <div className="flex flex-row items-start md:mb-5 mb-2">
                                 <div
-                                    className="hidden sm:flex items-center justify-center p-3 mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-semibold">
+                                    className="hidden sm:flex items-center justify-center md:p-3 md:mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-semibold">
                                     <svg width="30px" fill="white" height="30px" viewBox="0 0 24 24"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g data-name="Layer 2">
@@ -33,13 +33,13 @@ const Faq = ({faq}) => {
                                         </g>
                                     </svg>
                                 </div>
-                                <div className="bg-gray-100 p-5 px-10 w-full flex items-center">
+                                <div className="bg-gray-100 md:p-5 p-3 md:px-10 w-full flex items-center">
                                     <h4 className="text-md leading-6 font-medium text-gray-900">{item.ques}</h4>
                                 </div>
                             </div>
 
                             <div className="flex flex-row items-start">
-                                <div className="bg-indigo-100 p-5 px-10 w-full flex items-center">
+                                <div className="bg-indigo-100 md:p-5 p-3 md:px-10 w-full flex items-center">
                                     <p className="text-gray-700 text-sm">{item.ans}
                                     </p>
                                 </div>

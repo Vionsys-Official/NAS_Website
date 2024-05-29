@@ -4,9 +4,9 @@ import React from 'react'
 const Hero = () => {
     return (
         <div className='w-full h-full'>
-                <div className="mx-auto lg:pt-40 flex flex-col mb-16 sm:text-center sm:mb-0">
-                    <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-                        <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-5xl md:mx-auto">
+                <div className="mx-auto lg:pt-40 pt-20 flex flex-col mb-16 sm:text-center sm:mb-0">
+                    <div className="max-w-xl mb-10 md:mx-auto text-center lg:max-w-2xl md:mb-12">
+                        <h2 className="max-w-lg mb-6 md:text-HMain text-HMain-sm font-bold leading-none tracking-tight text-gray-900 sm:text-5xl md:mx-auto">
                             <span className="relative inline-block">
                                 <svg
                                     viewBox="0 0 52 24"
@@ -35,12 +35,12 @@ const Hero = () => {
                             to Our IT Digital Transformation Services
                         </h2>
                         <p className="text-base text-gray-700 md:text-xl">
-                        We drive innovation and help businesses thrive digitally. Our IT transformation services empower organizations to harness technology, optimize operations, and deliver exceptional customer value.
+                        We drive innovation and help businesses thrive digitally. Our IT transformation services empower organizations to harness technology, optimize operations and deliver exceptional customer value.
                         </p>
                     </div>
-                    <div>
+                    <div className='flex flex-col items-center'>
                         <Link
-                            href="/"
+                            href="/contact"
                             className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-purple-400 hover:bg-purple-700 focus:shadow-outline"
                         >
                             Contact Us

@@ -4,8 +4,8 @@ import React from 'react'
 const GetStart2 = () => {
   return (
     <div>
-            <div className="max-w-xl md:mx-auto sm:text-center lg:max-w-2xl py-8">
-                <h1 className='font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none leading-10 text-center'>Begin Your Transformation Today!</h1>
+            <div className="max-w-xl md:mx-auto text-center lg:max-w-2xl md:py-8 p-3">
+                <h1 className='md:text-Heading text-Heading-sm font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none leading-10 text-center'>Begin Your Transformation Today!</h1>
                 <p className="text-base text-gray-700 md:text-lg py-4">Take the first step towards transforming your business operations. Contact us for a complimentary consultation. Learn how our solutions can revolutionize your approach and drive your business forward.</p>
                 <Link
                     href="/"

@@ -6,10 +6,10 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <div className="relative">
+    <div className="relative bg-black">
       <Image
         src={CRM}
-        className="absolute inset-0 object-cover w-full h-full"
+        className="absolute inset-0 object-cover w-full h-full opacity-65"
         alt=""
       />
       <div className="relative">
@@ -24,23 +24,28 @@ const Hero = () => {
         </svg>
         <div className="relative px-4 py-16 mx-auto overflow-hidden sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
           <div className="flex flex-col items-center justify-between xl:flex-row">
-            <div className="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
-              <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
-              Comprehensive CRM Services <br className="hidden md:block" />
-              for Your Business
+            <div className="w-full max-w-xl md:mb-12 mb-6 xl:mb-0 xl:pr-16 xl:w-7/12">
+              <h2 className="max-w-lg mb-6 md:text-HMain text-HMain-sm font-bold tracking-tight text-white sm:leading-none">
+                Comprehensive CRM Services <br className="hidden md:block" />
+                for Your Business
               </h2>
-              <p className="max-w-xl mb-4 text-base text-gray-200 md:text-lg">
-              We offer robust Customer Relationship Management (CRM) services designed to help you manage your customer interactions more effectively, streamline your operations and drive business growth.
+              <p className="max-w-xl md:mb-4 md:text-HSub text-HSub-sm text-gray-200">
+                We offer robust Customer Relationship Management (CRM) services designed to help you manage your customer interactions more effectively, streamline your operations and drive business growth.
               </p>
             </div>
             <div className="w-full max-w-xl xl:px-8 xl:w-5/12">
-              <div className="bg-white rounded shadow-2xl p-7 sm:p-10">
-              <div className="max-w-xl md:mx-auto sm:text-center lg:max-w-2xl">
-                <h1 className='font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none leading-10 text-center'>CRM</h1>
-                <p className="text-base text-gray-700 md:text-lg py-4 text-justify">CRM (Customer Relationship Management) is a technology for managing all your company’s relationships and interactions with current and potential customers. </p>
-                <p className="text-base text-gray-700 md:text-lg py-4 text-justify">The goal is simple: to improve business relationships to grow your business. A CRM system helps companies stay connected to customers, streamline processes and improve profitability.</p>
-                <Link href=''><Button/></Link>
-            </div>
+              <div className="bg-white rounded shadow-2xl md:p-10 p-2">
+                <div className="max-w-xl md:mx-auto sm:text-center lg:max-w-2xl">
+                  <h1 className='md:text-HMain text-HMain-sm font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none leading-10 text-center'>CRM</h1>
+                  <p className="text-base text-gray-800 md:text-lg md:py-4 py-2 md:text-justify text-start">CRM (Customer Relationship Management) is a technology for managing all your company’s relationships and interactions with current and potential customers. </p>
+                  <p className="text-base text-gray-800 md:text-lg md:py-4 py-2 md:text-justify text-start">The goal is simple: to improve business relationships to grow your business. A CRM system helps companies stay connected to customers, streamline processes and improve profitability.</p>
+                  <Link
+                    href="/contact"
+                    className="inline-flex items-center justify-center text-lg h-12 px-6 mr-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-purple-400 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
+                  >
+                    Get started
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

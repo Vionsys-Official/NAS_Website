@@ -55,7 +55,7 @@ const CrmWork = () => {
             NAS Infotech Pvt. Ltd.
           </p>
         </div>
-        <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+        <h2 className="max-w-lg md:mb-6 mb-3 md:text-Heading text-Heading-sm font-bold leading-none tracking-tight text-black md:mx-auto">
           <span className="relative inline-block">
             <svg
               viewBox="0 0 52 24"
@@ -83,13 +83,13 @@ const CrmWork = () => {
           </span>{' '}
           Our CRM Solutions Work
         </h2>
-        <p className="text-base text-gray-700 md:text-lg">
+        <p className="md:text-Para text-Para-sm text-gray-800 md:text-lg">
         Implementing a CRM system with us is a straightforward and seamless process designed to optimize your customer relationship management and drive business growth. Here’s how it works:
         </p>
       </div>
-      <div className="grid gap-8 row-gap-5 md:row-gap-8 lg:grid-cols-3">
+      <div className="grid md:gap-8 gap-4 row-gap-5 md:row-gap-8 lg:grid-cols-3">
         {work.map ((item) => (
-            <div key={item.id} className="p-5 duration-300 transform bg-white border-2 border-dashed rounded shadow-sm border-purple-600  hover:-translate-y-2">
+            <div key={item.id} className="md:p-5 p-2 duration-300 transform bg-white border-2 border-dashed rounded shadow-sm border-purple-600  hover:-translate-y-2">
             <div className="flex items-center mb-2">
               <p className="flex items-center justify-center w-10 h-10 mr-2 text-lg font-bold text-white rounded-full bg-purple-400">
               {item.num}
@@ -102,7 +102,7 @@ const CrmWork = () => {
           </div>
         ))}
 
-        <div className="relative p-5 duration-300 transform bg-white border-2 rounded shadow-sm border-purple-400 hover:-translate-y-2">
+        <div className="relative md:p-5 p-2 duration-300 transform bg-white border-2 rounded shadow-sm border-purple-400 hover:-translate-y-2">
           <div className="flex items-center mb-2">
             <p className="flex items-center justify-center w-10 h-10 mr-2 text-lg font-bold text-white rounded-full bg-purple-400">
               8
