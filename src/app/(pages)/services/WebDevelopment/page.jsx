@@ -9,7 +9,7 @@ import Cta from '@/app/ui/services/webDevelopment/cta'
 
 const page = () => {
   return (
-    <div id='mission' className='overflow-hidden'>
+    <div id='mission' className='overflow-hidden font-light'>
         <Intro/>
         <Services/>
         <Whychooseus/>

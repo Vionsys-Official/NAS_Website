@@ -1,8 +1,8 @@
 import AboutUs from '/public/assets/aboutUs/about.jpg';
 import Hero from '/public/assets/contact/Hero.jpg';
-import head from '/public/assets/career/team.jpg';
-import ServiceHero from '/public/assets/services/ServiceHero.jpg'
-import indystresHero from '/public/assets/industries/myIndustriesHero.jpg'
+import head from '/public/assets/career/career.jpg';
+import ServiceHero from '/public/assets/services/ServiceHero.jpg';
+import indystresHero from '/public/assets/industries/myIndustriesHero.jpg';
 
 export const careerData = 
   {
