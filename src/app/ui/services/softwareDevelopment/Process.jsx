@@ -44,8 +44,8 @@ const Process = () => {
     return (
         <div className='py-4'>
             <div className="max-w-xl md:mx-auto sm:text-center lg:max-w-2xl">
-                <h1 className='font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none leading-10 text-center'>Our Process</h1>
-                <p className="text-base text-gray-700 md:text-lg py-4">We ensure seamless software development from start to finish, guaranteeing your success at every stage.</p>
+                <h1 className='md:text-Heading text-Heading-sm font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none leading-10 text-center'>Our Process</h1>
+                <p className="text-base text-gray-800 md:text-lg py-4">We ensure seamless software development from start to finish, guaranteeing your success at every stage.</p>
             </div>
 
             <div className="relative grid gap-8 row-gap-5 mb-8 md:row-gap-8 lg:grid-cols-3 sm:grid-cols-2 py-4 px-16">
