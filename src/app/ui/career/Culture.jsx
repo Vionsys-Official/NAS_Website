@@ -13,10 +13,10 @@ const Culture = () => {
         {id:4,icon:growth,title:"Growth", desc:"We’re dedicated to your professional and personal development. With continuous learning opportunities, you’ll grow and evolve in your career."},
     ]
   return (
-    <div className='flex flex-col items-center justify-center'>
+    <div className='flex flex-col items-center justify-center font-light'>
         <div className='flex items-center justify-center'>
             <div className='w-[90%] md:w-[70%] flex flex-col items-center justify-center'>
-            <h2 className='text-MainHeading-sm md:text-MainHeading font-semibold pt-6 md:pt-10 cursor-pointer'>Our Culture</h2>
+            <h2 className='text-MainHeading-sm md:text-MainHeading font-semibold pt-6 md:pt-10 cursor-pointer font-sans'>Our Culture</h2>
             <h3 className='text-Para-sm md:text-Para font-medium p-2 md:p-4 cursor-pointer'>Our culture is built on a foundation of creativity, collaboration, and a commitment to excellence. We foster an environment where innovation thrives, teamwork is paramount, and every team member's contributions are valued. Here’s what makes our culture unique</h3>
             </div>
         </div>
@@ -30,7 +30,7 @@ const Culture = () => {
                         </div>
                         </span>
 
-                        <h2 className="mt-2 font-semibold text-CardHeading-sm md:text-CardHeading">
+                        <h2 className="mt-2 font-semibold text-CardHeading-sm md:text-CardHeading font-sans">
                             {feat.title}
                         </h2>
                         <p className="sm:mt-1 block text-Para-sm md:text-Para font-light"> 

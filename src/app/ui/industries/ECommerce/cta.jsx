@@ -3,9 +3,9 @@ import Link from 'next/link';
 
 const cta = () => {
   return (
-    <div className='flex items-center justify-center py-20'>
+    <div className='flex items-center justify-center py-4 sm:py-10 md:py-20'>
         <div className='w-[80%] flex flex-col items-center justify-center'>
-            <h2 className="mb-6 font-sans text-MainHeading-sm md:text-MainHeading leading-none tracking-tight text-gray-900 ">
+            <h2 className="mb-6 font-sans text-MainHeading-sm md:text-MainHeading leading-none tracking-tight text-gray-900 cursor-pointer font-semibold">
             <span className="relative inline-block">
                 <svg
                 viewBox="0 0 52 24"
@@ -33,9 +33,9 @@ const cta = () => {
             </span>{' '}
              to Take Your E-Commerce Business to the Next Level?
             </h2>
-            <p className='text-Para-sm md:text-Para'>Get in touch with us today to learn more about how our software solutions can help you grow your online store.</p>
+            <p className='text-Para-sm md:text-Para cursor-pointer'>Get in touch with us today to learn more about how our software solutions can help you grow your online store.</p>
             <Link href="#" className=''>
-            <button className=' block w-full relative p-1 text-white  rounded-md bg-indigo-500  isolation-auto z-10 border-2 border-blue-300
+            <button className='cursor-pointer block w-full relative p-1 text-white  rounded-md bg-indigo-500  isolation-auto z-10 border-2 border-blue-300
         before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-indigo-600 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700'>Contact Us</button>
             </Link>
         </div>

@@ -1,6 +1,6 @@
 import AboutUs from '/public/assets/aboutUs/about.jpg';
 import Hero from '/public/assets/contact/Hero.jpg';
-import head from '/public/assets/career/team.jpg';
+import head from '/public/assets/career/career.jpg';
 import serverseHero from '/public/assets/services/servesseHero.jpg'
 import indystresHero from '/public/assets/industries/myIndustriesHero.jpg'
 

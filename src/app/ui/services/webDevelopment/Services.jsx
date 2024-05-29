@@ -39,15 +39,40 @@ const Services = () => {
   return (
     <div className='py-4'>
         <div className='flex flex-col items-center justify-center'>
-            <h1 className='text-MainHeading-sm md:text-MainHeading md:p-6 font-semibold cursor-pointer'>Our Offerings</h1>
+            <h2 className="mb-6 font-sans text-MainHeading-sm md:text-MainHeading md:p-6 font-semibold leading-none tracking-tight text-gray-900 cursor-pointer">
+            <span className="relative inline-block">
+                <svg
+                viewBox="0 0 52 24"
+                fill="currentColor"
+                className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-50 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
+                >
+                <defs>
+                    <pattern
+                    id="fdca20a0-aeb4-4caf-ba1b-4351eee42363"
+                    x="0"
+                    y="0"
+                    width=".135"
+                    height=".30"
+                    >
+                    <circle cx="1" cy="1" r=".7" />
+                    </pattern>
+                </defs>
+                <rect
+                    fill="url(#fdca20a0-aeb4-4caf-ba1b-4351eee42363)"
+                    width="52"
+                    height="24"
+                />
+                </svg>
+                <span className="relative">Our</span>
+            </span>{' '}
+            Offerings
+            </h2>
             <div className='w-[100%] md:pl-20 flex flex-wrap gap-4 md:gap-10 items-center justify-center'>
                 {items.map((feat)=>{
                     return(
-                        <div key={feat.id} className='w-[90%] lg:w-1/4 h-[24rem] sm:h-[12rem] lg:h-[30rem] xl:h-[22rem] flex flex-col items-center justify-center shadow-md shadow-gray-300 p-2 hover:bg-green-100 cursor-pointer'>
-                            <div className='flex flex-row items-start justify-start'>
-                                <span className='text-MainHeading-sm md:text-MainHeading font-semibold pr-2'><feat.icon/></span>
-                                <h2 className='text-CardHeading-sm md:text-CardHeading pb-2 font-semibold'>{feat.title}</h2>
-                            </div>
+                        <div key={feat.id} className='w-[90%] rounded-lg md:w-2/5 lg:w-1/4 h-full md:h-[27rem] lg:h-[32rem] xl:h-[26rem] flex flex-col items-center justify-start shadow-md shadow-gray-300 p-2 hover:bg-green-50 cursor-pointer'>
+                            <span className='text-MainHeading-sm md:text-MainHeading font-semibold p-4 rounded-full bg-green-300'><feat.icon/></span>
+                            <h2 className='text-CardHeading-sm md:text-CardHeading pb-2 font-semibold'>{feat.title}</h2>
                             <p className='flex items-center justify-center'>{feat.desc}</p>
                         </div>
                     );

@@ -6,7 +6,7 @@ import Cta from '@/app/ui/industries/ECommerce/cta';
 
 const page = () => {
   return (
-    <div id="mission">
+    <div id="mission" className='overflow-hidden font-light'>
         <Hero/>
         <Service/>
         <Whychooseus/>

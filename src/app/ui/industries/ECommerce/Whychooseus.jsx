@@ -5,13 +5,13 @@ import Image from 'next/image';
 const Whychooseus = () => {
   return (
     <div>
-        <div className='relative flex items-center justify-start h-[60vh] overflow-hidden'>
-            <div className='w-3/5'>
+        <div className='relative flex flex-col items-start justify-center md:h-[50vh] lg:h-[60vh] overflow-hidden'>
+            <div className='w-full md:w-3/5 cursor-pointer'>
                 <Image className='object-cover h-full w-full' src={EcomWCU} alt=''></Image>
             </div>
-            <div className='absolute inset-0 flex items-center justify-center w-2/5 bg-white h-[60vh] -rotate-45 translate-x-[110%] rounded-full'></div>
-            <div className='absolute inset-0 flex flex-col items-end justify-center -translate-x-20'>
-                <h2 className="w-2/5 pb-4 font-sans text-MainHeading-sm md:text-MainHeading leading-none tracking-tight text-gray-900 ">
+            <div className='absolute inset-0 hidden md:flex items-center justify-center w-2/5 bg-white h-[60vh] -rotate-45 translate-x-[110%] rounded-full'></div>
+            <div className='md:absolute inset-0 flex flex-col items-end justify-center p-4 md:p-0 sm:pt-12 md:pt-0 md:-translate-x-14 lg:-translate-x-20 cursor-pointer'>
+                <h2 className="w-full md:w-2/5 pb-4 font-sans text-MainHeading-sm md:text-MainHeading leading-none tracking-tight text-gray-900 font-semibold">
                 Why Choose
                 <span className="relative inline-block">
                     <svg
@@ -40,7 +40,7 @@ const Whychooseus = () => {
                 </span>{' '}
                  
                 </h2>
-                <p className='w-2/5'>At [Your Company Name], we bring years of e-commerce expertise and a commitment to your success. With innovative, tailored solutions and scalable support, we'll help your business grow and thrive. Trust us for transparent communication, dedicated service, and a long-term partnership focused on your success.</p>
+                <p className='w-full md:w-2/5'>At [Your Company Name], we bring years of e-commerce expertise and a commitment to your success. With innovative, tailored solutions and scalable support, we'll help your business grow and thrive. Trust us for transparent communication, dedicated service, and a long-term partnership focused on your success.</p>
             </div>
         </div>
     </div>

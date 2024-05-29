@@ -1,5 +1,4 @@
 import React from 'react'
-import { HiLightningBolt } from "react-icons/hi";
 import Simplify from'/public/assets/industries/Ecommerce/simplify.jpg';
 import dellight from'/public/assets/industries/Ecommerce/delight.jpg';
 import audience from'/public/assets/industries/Ecommerce/audience.jpg';
@@ -64,9 +63,9 @@ const Service = () => {
     ]
 
   return (
-    <div className='flex flex-col items-center justify-center ml-24 py-16'>
+    <div className='flex flex-col items-center justify-center md:ml-8 lg:ml-20 py-2 md:py-16'>
         <div className='w-[80%] flex flex-col items-center justify-center text-center py-6'>
-        <h2 className="mb-6 font-sans text-MainHeading-sm md:text-MainHeading leading-none tracking-tight text-gray-900 ">
+        <h2 className="mb-6 font-sans text-MainHeading-sm md:text-MainHeading leading-none tracking-tight text-gray-900 cursor-pointer font-semibold">
             <span className="relative inline-block">
                 <svg
                 viewBox="0 0 52 24"
@@ -94,19 +93,19 @@ const Service = () => {
             </span>{' '}
             how we can help
             </h2>
-            <h2 className='text-CardHeading-sm md:text-CardHeading'>Welcome to our e-commerce hub, where technology meets success. Our software solutions are designed to make running an online business simpler, smoother, and more profitable. </h2>
+            <h2 className='text-CardHeading-sm md:text-CardHeading cursor-pointer'>Welcome to our e-commerce hub, where technology meets success. Our software solutions are designed to make running an online business simpler, smoother, and more profitable. </h2>
         </div>
         <div className='w-[80%]'>
-            <div className='grid grid-cols-3 gap-4 items-start justify-center'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:gap-4 items-start justify-center'>
                 
                 {service.map((feat)=>{
                     return(
-                        <div key={feat.id} className='flex flex-col p-4 '>
-                            <div className='w-full h-[10rem] '>
-                                <Image className='object-cover w-full h-full rounded-xl' src={feat.image} alt=''></Image>
+                        <div key={feat.id} className='flex flex-col p-4 group cursor-pointer'>
+                            <div className='w-full h-[10rem] overflow-hidden'>
+                                <Image className='object-cover w-full h-full rounded-xl group-hover:scale-105 ease-linear' src={feat.image} alt=''></Image>
                             </div>
                             {/* <div className='flex items-start justify-center text-CardHeading-sm md:text-CardHeading pt-1'><HiLightningBolt/></div> */}
-                            <div className='flex flex-col'>
+                            <div className='flex flex-col mt-2'>
                                 <h2 className='text-CardHeading-sm md:text-CardHeading font-bold'>{feat.title}</h2>
                                 <p className='text-Para-sm md:text-Para'>{feat.desc}</p>
                             </div>
