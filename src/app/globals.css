@@ -28,6 +28,5 @@
      }
 
 #bg{
-  background-image: repeating-linear-gradient(135deg, hsla(307,70%,63%,0.05) 0px, hsla(307,70%,63%,0.05) 1px,transparent 1px, transparent 11px,hsla(307,70%,63%,0.05) 11px, hsla(307,70%,63%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(90deg, hsla(307,70%,63%,0.05) 0px, hsla(307,70%,63%,0.05) 1px,transparent 1px, transparent 11px,hsla(307,70%,63%,0.05) 11px, hsla(307,70%,63%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(135deg, hsla(307,70%,63%,0.05) 0px, hsla(307,70%,63%,0.05) 1px,transparent 1px, transparent 11px,hsla(307,70%,63%,0.05) 11px, hsla(307,70%,63%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(90deg, hsla(307,70%,63%,0.05) 0px, hsla(307,70%,63%,0.05) 1px,transparent 1px, transparent 11px,hsla(307,70%,63%,0.05) 11px, hsla(307,70%,63%,0.05) 12px,transparent 12px, transparent 32px),linear-gradient(90deg, rgb(197, 1, 191),rgb(96, 73, 231));
+  background-image: repeating-linear-gradient(112.5deg, rgba(2,11,24, 0.45) 0px, rgba(2,11,24, 0.45) 14px,transparent 14px, transparent 15px),repeating-linear-gradient(22.5deg, rgba(2,11,24, 0.45) 0px, rgba(2,11,24, 0.45) 14px,transparent 14px, transparent 15px),linear-gradient(90deg, rgba(52,173,104, 0.72),rgba(52,96,173, 0.66),rgba(153,52,173, 0.73),rgba(173,56,52, 0.57),rgba(145,173,52, 0.76));
 }
-

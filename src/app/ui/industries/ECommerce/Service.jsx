@@ -5,6 +5,9 @@ import dellight from'/public/assets/industries/Ecommerce/delight.jpg';
 import audience from'/public/assets/industries/Ecommerce/audience.jpg';
 import safe from'/public/assets/industries/Ecommerce/safe.jpg';
 import grow from'/public/assets/industries/Ecommerce/grow.jpg';
+import integrated from'/public/assets/industries/Ecommerce/intigrated.jpg';
+import tailoured from'/public/assets/industries/Ecommerce/tailoured.jpg';
+import clock from'/public/assets/industries/Ecommerce/clock.jpg';
 import Image from 'next/image';
 
 const Service = () => {
@@ -42,19 +45,19 @@ const Service = () => {
         },
         {
             id:6,
-            image:Simplify,
+            image:integrated,
             title:"Seamlessly Integrated",
             desc:"No need to start from scratch. Our software seamlessly integrates with popular e-commerce platforms, making implementation a breeze."
         },
         {
             id:7,
-            image:Simplify,
+            image:tailoured,
             title:"Tailored Just for You",
             desc:"We understand that every business is different. That's why we offer personalized solutions that cater to your unique needs and goals."
         },
         {
             id:8,
-            image:Simplify,
+            image:clock,
             title:"Support Around the Clock",
             desc:"Your business doesn't sleep, and neither do we. Our dedicated support team is here 24/7 to help you with any issues or questions you may have."
         },
