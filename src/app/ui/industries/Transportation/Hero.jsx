@@ -9,10 +9,10 @@ const Hero = () => {
       <div className="relative px-4 pt-16 mx-auto lg:py-32 md:px-8 xl:px-20 sm:max-w-xl md:max-w-full">
         <div className="max-w-xl mx-auto lg:max-w-screen-xl">
           <div className="mb-16 lg:max-w-lg lg:mb-0">
-            <div className="max-w-xl mb-6">
-              <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+            <div className="max-w-xl mb-6 overflow-x-hidden ">
+              <h2 className="max-w-lg mb-6 flex flex-col items-center justify-center gap-1 md:flex-row font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
                 Logistics And{" "}
-                <span className="inline-block  p-2 bg-green-500 rounded-xl text-white ">
+                <span className=" p-2 bg-green-500 rounded-xl text-white ">
                   Transportation
                 </span>
               </h2>
@@ -25,6 +25,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
+
         <div className="flex justify-center h-full overflow-hidden lg:w-2/3 xl:w-1/2 lg:absolute lg:justify-start lg:bottom-0 lg:right-0 lg:items-end">
           <Image
             src={TransportHero}
