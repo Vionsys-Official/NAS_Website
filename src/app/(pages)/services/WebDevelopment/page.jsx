@@ -4,6 +4,8 @@ import Services from '@/app/ui/services/webDevelopment/Services'
 import Whychooseus from '@/app/ui/services/webDevelopment/Whychooseus'
 import Process from '@/app/ui/services/webDevelopment/process'
 import Faq from '@/app/ui/services/webDevelopment/faq'
+import Hero from '@/app/ui/services/webDevelopment/hero'
+import Cta from '@/app/ui/services/webDevelopment/cta'
 
 const page = () => {
   return (
@@ -13,6 +15,7 @@ const page = () => {
         <Whychooseus/>
         <Process/>
         <Faq/>
+        <Cta/>
     </div>
   )
 }

@@ -52,10 +52,10 @@ const Process = () => {
     <div className='flex items-center justify-center'>
         <div className='w-[80%] flex flex-col items-center justify-center'>
             <h1 className='text-MainHeading-sm md:text-MainHeading pb-6 font-semibold cursor-pointer'>Our Process</h1>
-            <div className='grid grid-cols-3 gap-6'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
                 {steps.map((feat)=>{
                     return(
-                        <div key={feat.id} className='flex flex-row p-2 border border-gray hover:scale-105 hover:bg-gray-100 ease-out cursor-pointer'>
+                        <div key={feat.id} className='flex flex-row p-2 border border-gray hover:scale-105 hover:bg-green-50 ease-out cursor-pointer'>
                             <div className='text-CardHeading-sm md:text-CardHeading font-bold pr-4'><feat.icon/></div>
                             <div>
                                 <h2 className='text-CardHeading-sm md:text-CardHeading font-bold'>{feat.title}</h2>
