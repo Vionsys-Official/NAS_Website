@@ -1,3 +1,6 @@
+'use client'
+import { fadein } from '@/components/ui/variants';
+import { motion } from 'framer-motion';
 import React from "react";
 import { SiSololearn, SiZend } from "react-icons/si";
 import { FaBookBookmark } from "react-icons/fa6";
@@ -50,10 +53,20 @@ const Edusecond = () => {
               aria-label="View"
               className="inline-block mb-5 rounded-full sm:mx-auto"
             ></Link>
-            <h2 className="text-center text-2xl md:text-4xl lg:text-5xl font-bold tracking-tight text-blue-900 sm:leading-tight">
+            <motion.h2
+              variants={fadein("right", 0.1)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.5, delay: 8000 }}
+              className="text-center text-2xl md:text-4xl lg:text-5xl font-bold tracking-tight text-blue-900 sm:leading-tight">
               Our Expertise in Education
-            </h2>
-            <p className="text-base text-gray-700  text-center md:text-lg p-4 sm:px-6 md:px-8">
+            </motion.h2>
+            <motion.p
+            variants={fadein("left  ", 0.1)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.5, delay: 8000 }}
+              className="text-base text-gray-700  text-center md:text-lg p-4 sm:px-6 md:px-8">
               We leverage the latest pedagogical research and cutting-edge
               technology to foster an engaging and inclusive environment,
               ensuring every student achieves their fullest potential. Our
@@ -61,7 +74,7 @@ const Edusecond = () => {
               personalized tutoring and professional development to
               comprehensive academic programs, all designed to inspire a
               lifelong love of learning.
-            </p>
+            </motion.p>
             <hr className="w-full border-gray-300" />
           </div>
         </div>
@@ -76,8 +89,8 @@ const Edusecond = () => {
               </h3>
             </div>
           </div>
-          <div className="relative   py-5">
-            <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 bg-[rgba(101,227,131,0.5)] p-8 shadow-2xl text-center">
+          <div className="relative py-5">
+            <ul  className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 bg-[rgba(101,227,131,0.5)] p-8 shadow-2xl text-center">
               {features.map((item, idx) => (
                 <li
                   key={idx}

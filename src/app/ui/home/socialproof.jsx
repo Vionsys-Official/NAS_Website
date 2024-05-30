@@ -78,7 +78,7 @@ const SocialProofCounter = () => {
   return (
     <div className="backdrop-blur-sm shadow-md">
       <section
-        className="w-full md:px-16 px-4 py-10 flex justify-center items-center backdrop-blur-sm"
+        className="w-full md:px-16 px-4 md:py-10 flex justify-center items-center backdrop-blur-sm"
         ref={sectionRef}
       >
         <div className="w-full grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 justify-center items-center">
@@ -96,7 +96,7 @@ const SocialProofCounter = () => {
           >
             <div className="md:w-72 w-full md:h-48 h-20 bg-golden4 flex justify-center items-center rounded-md">
               <h3 className="text-MainHeading font-bold text-blue-900 uppercase md:px-8">
-                Highlights
+              Significant
               </h3>
             </div>
           </motion.div>
@@ -115,7 +115,7 @@ const SocialProofCounter = () => {
                     ease: "easeInOut",
                   }}
                   key={item.id}
-                  className="relative bg-white flex flex-col gap-4 justify-center items-center border py-4 rounded-xl shadow-md shadow-gray2 overflow-hidden group cursor-pointer md:w-60 w-full h-48 align-content-center"
+                  className="relative bg-white flex flex-col gap-4 justify-center items-center border py-4 rounded-xl shadow-md shadow-gray2 overflow-hidden group cursor-pointer md:w-52 lg:w-60 w-full h-48 align-content-center"
                 >
                   <div className="relative z-10 bg-golden3 text-black p-3 rounded-full transition-all duration-500 group-hover:text-black">
                     {item.icon}
@@ -137,7 +137,7 @@ const SocialProofCounter = () => {
                       {item.heading}
                     </p>
                   </div>
-                  <div className="absolute inset-0 bg-blue-900 transition-transform duration-500 transform translate-y-full group-hover:translate-y-0"></div>
+                  <div className="absolute inset-0 bg-green-400 transition-transform duration-500 transform translate-y-full group-hover:translate-y-0"></div>
                 </motion.div>
               ))}
             </div>
