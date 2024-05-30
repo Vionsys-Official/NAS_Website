@@ -13,7 +13,6 @@ import Image from 'next/image';
 import Bifaq from '@/app/ui/services/BIandAnalytics/Bifaq';
 import Bistart from '@/app/ui/services/BIandAnalytics/Bistart';
 import Qlikq from '/public/assets/services/BIdataAnalytics/Qlikq.jpg'
-import pythonBi from '/public/assets/services/BIdataAnalytics/PythonBi.jpg'
 import BiHero from '@/app/ui/services/BIandAnalytics/BiHero';
 
 
@@ -24,9 +23,9 @@ const page = () => {
         <div>
         <BiHero/>
         </div>
-    <div className='flex flex-wrap'>
-            <div className='mt-10 w-full md:w-1/2 pr-5 pl-5'>
-                <h3 className='md:text-Heading mt-10 font-medium sm:font-bold text-center sm:w-full sm:text-Heading-sm text-green-600 '>What is BI and Analytics?</h3>
+    <div className='flex flex-col md:flex-row'>
+            <div className='mt-10 flex flex-col items-center w-full h-full md:w-1/2 pr-3 pl-3'>
+                <h3 className='md:text-Heading md:mt-10 mt-5 md:pt-20 pt-2 font-medium sm:font-bold text-center sm:w-full text-Heading-sm text-green-600 '>What is BI and Analytics?</h3>
                 <p className='md:text-Para mb-10 ml-30 mt-3 mr-30 text-center sm:text-Para-sm'>Business Intelligence refers to the technologies, processes, and practices used to collect, integrate, analyze, and present an organization’s raw data to create insightful and actionable business information.</p>
                 </div>
                 <div >
@@ -43,42 +42,41 @@ const page = () => {
                 </section1>
 
     <section2 >
-                <div className=' text-center mt-10'>
+                <div className=' text-center md:mt-10 mt-5'>
                     <h6 className='text-3xl font-bold mt-3'>Business Intelligence TOOLS</h6>
                 <p className='mb-10 text-xl mt-3'>Below mentioned are few and many more to learn!!!</p></div>
-                <div className='flex mb-5' >
+                <div className='flex mb-5 sm:p-4 flex-col md:flex-row p-2 ' >
                     
                 <Image
+                className='p-2 '
                         src={image}
                         alt=""
                         height={300}
-                        width={300}
+                        width={350}
                     />
                     
                      <Image
+                     className='p-2'
                         src={Tableau}
                         alt=""
                         height={300}
-                        width={300}
+                        width={350}
                     />
                      <Image
+                     className='p-2'
                         src={PowerBI}
                         alt=""
                         height={300}
-                        width={300}
+                        width={350}
                     />
                      <Image
+                     className='p-2'
                         src={Qlikq}
                         alt=""
                         height={300}
-                        width={300}
+                        width={350}
                     />
-                    <Image
-                        src={pythonBi}
-                        alt=""
-                        height={300}
-                        width={300}
-                    />
+                    
                    
                 </div>
    
@@ -142,7 +140,7 @@ const page = () => {
                 className="relative overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2">
                 <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
                 <BiAnalyse size={40}/>
-                    <div className="space-y-2">
+                    <div className="md:space-y-2 space-y-0 ">
                         <h3 className="font-bold">Advanced Analytics</h3>
                         <p className="md:text-Para sm:text-Para-sm text-muted-foreground"> Using statistical algorithms and machine learning to predict future outcomes.</p>
                     </div>
@@ -172,27 +170,27 @@ const page = () => {
     <div class="flex flex-col grid-cols-9 p-2 mx-auto md:grid">
         <div class="flex md:contents flex-row-reverse">
             <div
-                class="relative p-4 my-6 text-gray-800 bg-green-400 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
+                class="relative p-4 my-6 text-gray-800 bg-green-200 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
                 <h3 class="text-lg font-semibold lg:text-xl">Expert Team</h3>
                 <p class="mt-2 md:text-Para sm:text-Para-sm leading-6">Benefit from our certified BI and Data Analytics professionals who bring extensive experience and knowledge to the table..</p>
             </div>
             <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
                 <div class="flex items-center justify-center w-6 h-full">
-                    <div class="w-1 h-full bg-red-300 rounded-t-full bg-gradient-to-b from- to-red-300">
+                    <div class="w-1 h-full bg-green-300 rounded-t-full bg-gradient-to-r from- to-red-300">
                     </div>
                 </div>
-                <div class="absolute w-6 h-6 -mt-3 bg-green-400 border-4 border-red-500 rounded-full top-1/2"></div>
+                <div class="absolute w-6 h-6 -mt-3 bg-green-400 border-4 border-green-500 rounded-full top-1/2"></div>
             </div>
         </div>
 
         <div class="flex md:contents">
             <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
                 <div class="flex items-center justify-center w-6 h-full">
-                    <div class="w-1 h-full bg-red-300"></div>
+                    <div class="w-1 h-full bg-green-300"></div>
                 </div>
-                <div class="absolute w-6 h-6 -mt-3   bg-green-400 border-4 border-red-500 rounded-full top-1/2"></div>
+                <div class="absolute w-6 h-6 -mt-3   bg-green-400 border-4 border-green-500 rounded-full top-1/2"></div>
             </div>
-            <div class="relative p-4 my-6 text-gray-800  bg-green-400 rounded-xl col-start-6 col-end-10 mr-auto">
+            <div class="relative p-4 my-6 text-gray-800  bg-green-200 rounded-xl col-start-6 col-end-10 mr-auto">
                 <h3 class="text-lg font-semibold lg:text-xl">Tailored Solutions</h3>
                 <p class="mt-2 md:text-Para sm:text-Para-sm leading-6">Enjoy customized Business solutions designed to meet the specific needs of your business, ensuring optimal performance and efficiency.</p>
             </div>
@@ -200,29 +198,29 @@ const page = () => {
 
         <div class="flex md:contents flex-row-reverse">
             <div
-                class="relative p-4 my-6 text-gray-800  bg-green-400 border-red-500 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
+                class="relative p-4 my-6 text-gray-800  bg-green-200 border-green-500 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
                 <h3 class="text-lg font-semibold lg:text-xl">24/7 Support</h3>
                 <p class="mt-2 md:text-Para sm:text-Para-sm leading-6">Rest assured with our dedicated support team available round the clock to assist you whenever you need it, ensuring minimal downtime and maximum productivity.</p>
               </div>
             <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
                 <div class="flex items-center justify-center w-6 h-full">
-                    <div class="w-1 h-full bg-red-300 rounded-t-full bg-gradient-to-b from-red-400 to-red-300">
+                    <div class="w-1 h-full bg-green-300 rounded-t-full bg-gradient-to-b from-green-400 to-green-300">
                     </div>
                 </div>
-                <div class="absolute w-6 h-6 -mt-3  bg-green-400 border-4 border-red-500 rounded-full top-1/2"></div>
+                <div class="absolute w-6 h-6 -mt-3  bg-green-400 border-4 border-green-500 rounded-full top-1/2"></div>
             </div>
         </div>
 
         <div class="flex md:contents">
             <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
                 <div class="flex items-center justify-center w-6 h-full">
-                    <div class="w-1 h-full bg-red-300"></div>
+                    <div class="w-1 h-full bg-green-300"></div>
                 </div>
-                <div class="absolute w-6 h-6 -mt-3  bg-green-400 border-4 border-red-500 rounded-full top-1/2"></div>
+                <div class="absolute w-6 h-6 -mt-3  bg-green-400 border-4 border-green-500 rounded-full top-1/2"></div>
             </div>
-            <div class="relative p-4 my-6 text-gray-800  bg-green-400 rounded-xl col-start-6 col-end-10 mr-auto">
+            <div class="relative p-4 my-6 text-gray-800  bg-green-200 rounded-xl col-start-6 col-end-10 mr-auto">
                 <h3 class="text-lg font-semibold lg:text-xl">Innovative Technology</h3>
-                <p class="mt-2 md:text-Para sm:text-Para-sm leading-6">Stay ahead of the curve with our utilization of the latest cloud technologies, guaranteeing that your business remains competitive and adaptable in the ever-evolving digital landscape.</p>
+                <p class="mt-2 md:text-Para sm:text-Para-sm leading-6">Stay ahead of the curve with our utilization of the latest cloud technologies, guaranteeing that your business remains competitive and adaptable. </p>
                
             </div>
         </div>
