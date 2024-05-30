@@ -10,19 +10,19 @@ const salesforcesec4 = () => {
 
             <div className="lg:text-center">
 
-              <p className="font-heading mt-2   text-3xl leading-8 font-semibold tracking-tight text-gray-900 sm:text-4xl">
+              <p className="font-heading mt-2  text-Heading leading-8 font-medium tracking-tight text-gray-900 sm:text-4xl">
                 Transform Your Business with Salesforce Cloud
               </p>
 
             </div>
 
-            <div className="mt-10">
+            <div className="mt-16">
               <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
 
-                <div className="relative duration-300 transform bg-white  hover:-translate-y-2 cursor-pointer">
+                <div className="relative duration-300  transform bg-white  hover:-translate-y-2 cursor-pointer">
                   <dt>
                     <FaCloud className="absolute top-0 left-0 mt-1 ml-1 text-2xl text-blue-600" />
-                    <p className="font-heading ml-16 text-lg leading-6 font-bold text-gray-700">Sales Cloud</p>
+                    <p className="font-heading ml-16 text-SubHeading leading-6 font-bold text-gray-700">Sales Cloud</p>
                   </dt>
                   <dd className="mt-2 ml-16 text-base text-gray-800">
                     Transform your sales process with Sales Cloud, a comprehensive sales CRM platform that empowers your team to sell smarter and faster. From lead management to pipeline forecasting, Sales Cloud provides the tools you need to close deals and drive revenue.
@@ -32,7 +32,7 @@ const salesforcesec4 = () => {
                 <div className="relative duration-300 transform bg-white hover:-translate-y-2 cursor-pointer">
                   <dt>
                     <FaCloud className="absolute top-0 left-0 mt-1 ml-1 text-2xl text-blue-600" />
-                    <p className="font-heading ml-16 text-lg leading-6 font-bold text-gray-700">Marketing Cloud
+                    <p className="font-heading ml-16 text-SubHeading leading-6 font-bold text-gray-700">Marketing Cloud
 
                     </p>
                   </dt>
@@ -42,7 +42,7 @@ const salesforcesec4 = () => {
                 <div className="relative duration-300 transform bg-white hover:-translate-y-2 cursor-pointer">
                   <dt>
                     <FaCloud className="absolute top-0 left-0 mt-1 ml-1 text-2xl text-blue-600" />
-                    <p className="font-heading ml-16 text-lg leading-6 font-bold text-gray-700">Platform and App Cloud
+                    <p className="font-heading ml-16 text-SubHeading leading-6 font-bold text-gray-700">Platform and App Cloud
 
                     </p>
                   </dt>
@@ -52,7 +52,7 @@ const salesforcesec4 = () => {
                 <div className="relative duration-300 transform bg-white hover:-translate-y-2 cursor-pointer">
                   <dt>
                     <FaCloud className="absolute top-0 left-0 mt-1 ml-1 text-2xl text-blue-600" />
-                    <p className="font-heading ml-16 text-lg leading-6 font-bold text-gray-700">Service Cloud
+                    <p className="font-heading ml-16 text-SubHeading leading-6 font-bold text-gray-700">Service Cloud
 
                     </p>
                   </dt>

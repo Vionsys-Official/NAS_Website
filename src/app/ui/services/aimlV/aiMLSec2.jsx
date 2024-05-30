@@ -54,9 +54,9 @@ const aiMlSec2 = () => {
     {/* section 2 */}
     <div className="mx-auto py-10 flex max-w-[58rem] flex-col items-center space-y-4 text-center">
 
-      <h2 className="font-bold text-2xl leading-[1.1] sm:text-2xl md:text-4xl">Features</h2>
+      <h2 className="font-bold text-SubHeading leading-[1.1] md:text-MainHeading">Features</h2>
 
-      <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+      <p className="max-w-[85%] leading-normal text-Para sm:leading-7">
         Discover the amazing features offered by us to enhance your online presence.
       </p>
 
@@ -70,7 +70,7 @@ const aiMlSec2 = () => {
             className="border-2 border-gray-400 relative hover:cursor-pointer hover:scale-105 transition-all overflow-hidden rounded-lg bg-background p-2"
           >
             <div className="flex flex-col justify-center items-center rounded-md p-1">
-              <div className='text-4xl p-2 rounded-full bg-gray-200 text-red-600'><feat.icon /></div>
+              <div className='text-Heading p-2 rounded-full bg-gray-200 text-red-600'><feat.icon /></div>
               <div className="md:space-y-2 flex flex-col items-center justify-center w-[16rem] sm:w-full">
                 <h3 className="text-xl md:text-2xl text-blue-800 font-semibold">{feat.title}</h3>
                 <p className="text-sm md:text-md text-muted-foreground">

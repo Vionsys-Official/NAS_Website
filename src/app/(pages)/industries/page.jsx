@@ -1,11 +1,10 @@
 import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
-import industres1 from "/public/assets/industries/CardsIphoto/industres1.jpg";
 import HeroSection from '@/utils/heroSection/HeroSection';
 import {industriesData} from '@/utils/heroSection/data';
 import { ourIndustries } from '@/app/(pages)/industries/industriesD';
-
+import MainPageHeading1 from '@/app/ui/industries/mainPageHeading1';
 
 const page = () => {
 
@@ -14,69 +13,18 @@ const page = () => {
       <HeroSection obj={industriesData} />
       {/* Hading Section*/}
 
-      <section id="industreBg" className="p-10 mx-auto">
-        <div className="mt-10 grid gap-5 row-gap-8 lg:grid-cols-2 ">
-          <div>
-            <Image
-              width={600}
-              height={600}
-              className=" p-5 mt-10 object-cover"
-              src={industres1}
-              alt="" />
-          </div>
-
-          <div className="flex flex-col justify-center">
-            <div className="max-w-xl">
-
-              <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-                Empowering Industries with
-                <br className="hidden md:block" />
-                Cutting-Edge
-                <span className="relative inline-block text-violet-900">
-                  Software Solutions
-                </span>
-              </h2>
-
-              <p className="text-base text-gray-700 md:text-lg py-2">
-              Welcome to NAS Infotech, where we revolutionize industries through innovative software solutions. Our team is dedicated to delivering unparalleled quality and reliability, tailored to meet your unique needs. Let us collaborate with you to bring your vision to life and drive your business forward. Contact us today to embark on your journey to success.
-              </p>
-            </div>
-            <div className="grid gap-5 row-gap-8 sm:grid-cols-2">
-              <div className=" border-l-4 shadow-sm border-violet-900">
-                <div className="h-full p-5  border-l-0 rounded-r">
-                  <h6 className="mb-2 font-semibold leading-5">
-                  We're ready to tackle any challenge.
-                  </h6>
-                  <p className="text-sm text-gray-900">
-                  We stand ready to navigate the complexities of your industry and overcome any obstacle in our pursuit of excellence
-                  </p>
-                </div>
-              </div>
-              <div className=" border-l-4 shadow-sm border-violet-900">
-                <div className="h-full p-5  border-l-0 rounded-r">
-                  <h6 className="mb-2 font-semibold leading-5">
-                  We have Strong Technical Expertise.
-                  </h6>
-                  <p className="text-sm text-gray-900">
-                  Harnessing our unparalleled mastery of technology, we engineer groundbreaking solutions that redefine entire industries.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <MainPageHeading1/>
 
       {/* Cards Section */}
       <section className='p-5 bg-white'>
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-4xl text-center font-bold text-gray-900 leading-tight mb-2 pb-2 relative">
+          <h1 className="text-MainHeading text-center font-bold text-gray-900 leading-tight mb-2 pb-2 relative">
             <span className="bg-clip-text text-transparent bg-orange-600">Industries</span>
             <span className="absolute bottom-0 left-0 w-full h-[2px] bg-violet-950"></span>
           </h1>
         </div>
 
-        <div className="container mx-auto lg:p-10">
+        <div className="container mx-auto p-5 mt-10">
           <div className="flex flex-wrap gap-10">
             {ourIndustries.map((industres, index) => (
               <Link
@@ -94,10 +42,10 @@ const page = () => {
                   />
                 </div>
                 <div className="p-4 flex-grow">
-                  <h5 className="mb-2 block font-sans leading-snug text-black tracking-normal text-lg font-semibold antialiased">
+                  <h5 className="mb-2 block font-sans leading-snug text-black tracking-normal text-CardHeading-sm font-semibold antialiased">
                     {industres.title}
                   </h5>
-                  <p className="text-sm text-gray-600">{industres.description}</p>
+                  <p className="text-Para-sm text-gray-600">{industres.description}</p>
                 </div>
                 <div className="p-4 pt-0 mt-auto">
                   <button

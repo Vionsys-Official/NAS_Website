@@ -14,10 +14,13 @@ const aiMLSec1 = () => {
       ></video>
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-20 z-10"></div>
     </div>
-    <div className="video-content space-y-2 z-20">
-      <h1 class="text-5xl font-extrabold text-gray-100">Discover the Potential of AI and Machine Learning for Your Business</h1>
-      
-      </div>
+    <div className="video-content space-y-2 z-20 mx-auto lg:mx-0 lg:max-w-[75%]">
+  <h1 className="text-HeroHeading font-extrabold">
+    <span className="block text-gray-100">Discover the Potential of AI and Machine Learning for Your Business</span>
+  </h1>
+  <p className='block text-gray-300 mt-5 font-semibold'>We harness cutting-edge algorithms to optimize decision-making and unlock fresh opportunities. With a steadfast commitment to excellence, we serve as trusted guides in navigating the digital frontier.</p>
+</div>
+
   </section>
   )
 }
