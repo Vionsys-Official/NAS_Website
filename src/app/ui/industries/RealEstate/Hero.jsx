@@ -24,10 +24,10 @@ const Hero = () => {
             d="M-164 13L-104 39.7C-44 66 76 120 196 141C316 162 436 152 556 119.7C676 88 796 34 916 13C1036 -8 1156 2 1216 7.7L1276 13V162.5H1216C1156 162.5 1036 162.5 916 162.5C796 162.5 676 162.5 556 162.5C436 162.5 316 162.5 196 162.5C76 162.5 -44 162.5 -104 162.5H-164V13Z"
           />
         </svg>
-        <div className="relative px-4 py-16 mx-auto overflow-hidden sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div className="relative px-2 py-16 mx-auto overflow-hidden sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
           <div className="flex flex-col items-center justify-between xl:flex-row">
-            <div className="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
-              <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
+            <div className="w-full max-w-xl md:mb-12 mb-6 xl:mb-0 xl:pr-16 xl:w-7/12">
+              <h2 className="max-w-lg md:mb-6 mb-2 md:text-Heading text-Heading-sm font-bold tracking-tight text-white">
               Revolutionize Your Real Estate   <br className="hidden md:block" />
               Business with Cutting-Edge IT Solutions
               </h2>
@@ -36,12 +36,12 @@ const Hero = () => {
               </p>
             </div>
             <div className="w-full max-w-xl xl:px-8 xl:w-5/12">
-              <div className="bg-white rounded shadow-2xl p-7 sm:p-10">
+              <div className="bg-white rounded shadow-2xl p-2 md:p-10">
               <div className="max-w-xl md:mx-auto sm:text-center lg:max-w-2xl">
-                <h1 className='font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none leading-10 text-center'>Real Estate</h1>
-                <p className="text-base text-gray-700 md:text-lg py-4 text-justify">We empower real estate professionals with innovative IT solutions tailored to the unique demands of the industry. From advanced property management systems and immersive virtual tours to robust customer relationship management and comprehensive cybersecurity, our services are designed to streamline operations, enhance client interactions and boost business growth.  </p>
-                <p className="text-base text-gray-700 md:text-lg py-4 text-justify">Partner with us to transform your real estate business and stay ahead in a competitive market.</p>
-                <Link href=''><Button/></Link>
+                <h1 className='md:text-Heading text-Heading-sm font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none leading-10 text-center'>Real Estate</h1>
+                <p className="text-base text-gray-700 md:text-Para md:py-4 py-2 md:text-justify">We empower real estate professionals with innovative IT solutions tailored to the unique demands of the industry. From advanced property management systems and immersive virtual tours to robust customer relationship management and comprehensive cybersecurity, our services are designed to streamline operations, enhance client interactions and boost business growth.  </p>
+                <p className="text-base text-gray-700 md:text-lg md:py-4 py-2 md:text-justify">Partner with us to transform your real estate business and stay ahead in a competitive market.</p>
+                <Link href='' className='flex flex-col items-center justify-center'><Button/></Link>
             </div>
               </div>
             </div>
