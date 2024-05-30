@@ -1,11 +1,18 @@
+"use client"
 import React from 'react'
+import { fadein } from "@/components/ui/variants";
+import { motion } from 'framer-motion';
 
 const Faq4 = ({obj}) => {
 
   return (
     <div className='flex items-center justify-center'>
         <div className="w-[96%] md:w-[70%] my-6 sm:mt-14 flex flex-col items-center justify-center">
-        <h2 className="mb-6 font-sans text-MainHeading-sm md:text-MainHeading md:p-6 font-semibold leading-none tracking-tight text-gray-900 cursor-pointer">
+        <motion.h2
+            variants={fadein("left", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.8 }} className="mb-6 font-sans text-MainHeading-sm md:text-MainHeading md:p-6 font-semibold leading-none tracking-tight text-gray-900 cursor-pointer">
             <span className="relative inline-block">
                 <svg
                 viewBox="0 0 52 24"
@@ -31,11 +38,15 @@ const Faq4 = ({obj}) => {
                 </svg>
                 <span className="relative">FAQ's </span>
             </span>{' '}
-            </h2>
+            </motion.h2>
             <div className="flex flex-col gap-2 md:gap-4">
                 {obj.map((feat)=>{
                     return(
-                        <div key={feat.id} className='hover:bg-green-100 rounded-xl'>
+                        <motion.div
+                        variants={fadein("down2", 0.2)}
+                        initial="hidden"
+                        whileInView={"show"}
+                        viewport={{ once: true, amount: 0.8 }} key={feat.id} className='hover:bg-green-100 rounded-xl'>
                         <details className=" group px-2 md:px-6 rounded-xl border-y border-blue-400" close>
                             <summary
                                 className="flex cursor-pointer list-none items-center justify-between py-2 text-Para-sm md:text-Para font-semibold">
@@ -53,7 +64,7 @@ const Faq4 = ({obj}) => {
                             </summary>
                             <div className="pb-4 text-Para-sm md:text-Para">{feat.ans}</div>
                         </details>
-                        </div>
+                        </motion.div>
                     );
                 })}
                 

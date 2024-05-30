@@ -1,10 +1,19 @@
+"use client"
+import { fadein } from "@/components/ui/variants";
+import { motion } from 'framer-motion';
 import React from 'react'
 import Link from 'next/link';
 
 const cta = () => {
   return (
-    <div className='flex items-center justify-center py-4 sm:py-10 md:py-20'>
-        <div className='w-[80%] flex flex-col items-center justify-center'>
+    <div className='flex items-center justify-center'>
+    <div className='w-[80%] flex items-center justify-center py-4 sm:py-10 md:py-20'>
+        <motion.div
+            variants={fadein("up", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.8 }}  
+            className=' flex flex-col items-center justify-center'>
             <h2 className="mb-6 font-sans text-MainHeading-sm md:text-MainHeading leading-none tracking-tight text-gray-900 cursor-pointer font-semibold">
             <span className="relative inline-block">
                 <svg
@@ -38,7 +47,8 @@ const cta = () => {
             <button className='cursor-pointer block w-full relative p-1 text-white  rounded-md bg-indigo-500  isolation-auto z-10 border-2 border-blue-300
         before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-indigo-600 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700'>Contact Us</button>
             </Link>
-        </div>
+        </motion.div>
+    </div>
     </div>
   );
 };

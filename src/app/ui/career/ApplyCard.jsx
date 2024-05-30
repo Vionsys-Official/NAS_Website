@@ -3,38 +3,31 @@ import React, { useState } from 'react'
 import Model from '@/app/ui/career/model';
 import { CardData } from '@/utils/CardData';
 import { PiDotOutlineBold } from "react-icons/pi";
-import { TbPointFilled } from "react-icons/tb";
 import { motion } from 'framer-motion';
 import { fadein } from "@/components/ui/variants";
-import ScrollTrigger from 'react-scroll-trigger';
 
 const ApplyCard = () => {
-
-  const [motionOn, setMotionOn]= useState(false);
   
   return (
-    <ScrollTrigger onEnter={()=>setMotionOn(true)} onExit={()=>setMotionOn(false)}>
-    <div id="card" className='py-4 md:py-10'>
+    <div id="card" className='py-4 md:py-10 overflow-hidden'>
       <div className=' flex flex-col items-center justify-center'>
         <div className='flex items-start justify-start'>
           <motion.h2 
           variants={fadein("left", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.8 }} 
+          viewport={{ once: true, amount: 0.8 }} 
           className='text-MainHeading-sm md:text-MainHeading font-semibold py-2 md:py-6 cursor-pointer  font-sans px-6 text-center'>
           Job Opportunities For You</motion.h2>
         </div>
-        {motionOn && <div className='w-[90%] md:w-[86%] grid grid-col-1 md:grid-cols-2 xl:grid-cols-3 items-center justify-center gap-2 md:gap-6'>
+        <div className='w-[90%] md:w-[86%] grid grid-col-1 md:grid-cols-2 xl:grid-cols-3 items-center justify-center gap-2 md:gap-6'>
           {CardData.map((feat)=>{
             return(
-              <motion.div 
-              animate={{
-                x: ['-20%', '0%'],
-                transition: {
-                  duration: 1,
-                }
-              }}
+              <motion.div
+              variants={fadein("down2", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true, amount: 0.8 }}
               key={feat.id} className='bg-opacity-70 overflow-hidden flex flex-col items-center justify-center shadow-lg shadow-gray-400 bg-slate-50 group border border-gray-800 rounded-xl hover:border-2 hover:border-gray-300 cursor-pointer transition-all hover:scale-[101%] ease-out'>
                 <h2 
                   className='flex justify-center items-center text-blue-950 rounded-xl tracking-wide text-CardHeading-sm md:text-CardHeading font-extrabold md:py-4 h-[3rem] xl:h-full text-center group-hover:scale-105 ease-linear'>
@@ -67,10 +60,10 @@ const ApplyCard = () => {
               </motion.div>
             );
           })}
-        </div>}
+        </div>
       </div>
     </div>
-    </ScrollTrigger>
+    
   );
 };
 

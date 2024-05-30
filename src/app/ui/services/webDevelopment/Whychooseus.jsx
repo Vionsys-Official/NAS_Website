@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import { RiLightbulbFlashFill } from "react-icons/ri";
 import { RiUserStarLine } from "react-icons/ri";
@@ -5,6 +6,8 @@ import { FaHandshakeSimple } from "react-icons/fa6";
 import { HiShieldCheck } from "react-icons/hi";
 import Image from 'next/image';
 import wcu from '/public/assets/services/webDev/wcs3.jpg';
+import { fadein } from "@/components/ui/variants";
+import { motion } from 'framer-motion';
 
 const Whychooseus = () => {
 
@@ -38,11 +41,20 @@ const Whychooseus = () => {
   return (
     <div className='flex items-center justify-center'>
     <div className='w-[90%] flex flex-col md:flex-row items-center justify-center py-10 md:py-14 my-4 md:my-8 bg-gradient-to-l from-green-200 to-transparent '>
-        <div className='w-full md:w-1/2 shadow-lg shadow-gray-600 md:scale-105'>
+        <motion.div
+            variants={fadein("left", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.8 }} className='w-full md:w-1/2 shadow-lg shadow-gray-600 md:scale-105'>
             <Image src={wcu} alt=''></Image>
-        </div>
+        </motion.div>
         <div className='w-full md:w-1/2 pl-4 mt-6 flex flex-col items-center justify-center'>
-        <h2 className="mb-6 font-sans text-MainHeading-sm md:text-MainHeading md:p-6 font-semibold leading-none tracking-tight text-gray-900 cursor-pointer">
+        <motion.h2
+            variants={fadein("right", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.8 }}
+             className="mb-6 font-sans text-MainHeading-sm md:text-MainHeading md:p-6 font-semibold leading-none tracking-tight text-gray-900 cursor-pointer">
             <span className="relative inline-block">
                 <svg
                 viewBox="0 0 52 24"
@@ -69,11 +81,16 @@ const Whychooseus = () => {
                 <span className="relative">Why </span>
             </span>{' '}
             Choose Us?
-            </h2>
+            </motion.h2>
             <div className='flex flex-col gap-2 md:pl-6'>
                 {items.map((feat)=>{
                     return(
-                        <div key={feat.id} className='flex flex-col items-start justify-center cursor-pointer'>
+                        <motion.div
+                        variants={fadein("right", 0.2)}
+                        initial="hidden"
+                        whileInView={"show"}
+                        viewport={{ once: true, amount: 0.8 }}
+                        key={feat.id} className='flex flex-col items-start justify-center cursor-pointer'>
                             <div className='flex flex-row gap-2 md:gap-6 items-start justify-center py-2'>
                                 <div className='text-MainHeading-sm md:text-MainHeading'><feat.icon/></div>
                                 <div>
@@ -83,7 +100,7 @@ const Whychooseus = () => {
                             </div>
                             
                             
-                        </div>
+                        </motion.div>
                     );
                 })}
             </div>
