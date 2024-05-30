@@ -1,20 +1,35 @@
+"use client";
 import React from "react";
+import { fadein } from "@/components/ui/variants";
+import { motion } from "framer-motion";
 
 const OurApproach = () => {
   return (
-    <div className="w-full bg-white pt-6">
-      <div className="w-full flex flex-col justify-center items-center gap-6">
-        <h1 className="md:text-Heading text-Heading-sm font-bold ">
+    <div className="w-full bg-white md:pt-6 pt-2">
+      <div className="w-full flex flex-col justify-center items-center md:gap-6 gap-3">
+        <motion.h1
+          variants={fadein("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.8 }}
+          className="md:text-Heading text-Heading-sm font-bold "
+        >
           Our Approach
-        </h1>
-        <p className="md:text-Para text-Para-sm md:w-1/3 w-full text-center">
+        </motion.h1>
+        <motion.p
+          variants={fadein("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.8 }}
+          className="md:text-Para text-Para-sm md:w-1/3 w-full text-center"
+        >
           We implement a robust QA strategy designed to identify and mitigate
           potential issues at every phase of development.
-        </p>
+        </motion.p>
       </div>
-      <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-12">
+      <div className="px-4 py-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 md:py-12">
         <div className="grid row-gap-8 sm:row-gap-0 sm:grid-cols-2 lg:grid-cols-3">
-          <div className="p-8 border-b sm:border-r">
+          <div className="md:p-8 p-2 border-b sm:border-r">
             <div className="max-w-md text-center">
               <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-16 sm:h-16">
                 <h1 className="font-bold text-xl ">1</h1>
@@ -28,7 +43,7 @@ const OurApproach = () => {
               </p>
             </div>
           </div>
-          <div className="p-8 border-b lg:border-r">
+          <div className="md:p-8 p-2 border-b lg:border-r">
             <div className="max-w-md text-center">
               <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-16 sm:h-16">
                 <h1 className="font-bold text-xl">2</h1>
@@ -42,7 +57,7 @@ const OurApproach = () => {
               </p>
             </div>
           </div>
-          <div className="p-8 border-b sm:border-r lg:border-r-0">
+          <div className="md:p-8 p-2 border-b sm:border-r lg:border-r-0">
             <div className="max-w-md text-center">
               <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-16 sm:h-16">
                 <h1 className="font-bold text-xl">3</h1>
@@ -56,7 +71,7 @@ const OurApproach = () => {
               </p>
             </div>
           </div>
-          <div className="p-8 border-b lg:border-b-0 lg:border-r">
+          <div className="md:p-8 p-2 border-b lg:border-b-0 lg:border-r">
             <div className="max-w-md text-center">
               <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-16 sm:h-16">
                 <h1 className="font-bold text-xl">4</h1>
@@ -70,7 +85,7 @@ const OurApproach = () => {
               </p>
             </div>
           </div>
-          <div className="p-8 border-b sm:border-b-0 sm:border-r">
+          <div className="md:p-8 p-2 border-b sm:border-b-0 sm:border-r">
             <div className="max-w-md text-center">
               <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-16 sm:h-16">
                 <h1 className="font-bold text-xl">5</h1>
@@ -84,7 +99,7 @@ const OurApproach = () => {
               </p>
             </div>
           </div>
-          <div className="p-8">
+          <div className="md:p-8 p-2">
             <div className="max-w-md text-center">
               <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-16 sm:h-16">
                 <h1 className="font-bold text-xl">6</h1>

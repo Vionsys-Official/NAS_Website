@@ -1,16 +1,31 @@
+"use client";
 import React from "react";
+import { fadein } from "@/components/ui/variants";
+import { motion } from "framer-motion";
 
 const Steps = () => {
   return (
     <section className="pt-8  dark:bg-gray-100 dark:text-gray-800">
       <div className="container mx-auto">
         <div className="p-4 mx-auto text-center md:px-10 lg:px-32 ">
-          <h2 className="md:text-Heading font-bold leading-none text-Heading-sm ">
+          <motion.h2
+            variants={fadein("up", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.8 }}
+            className="md:text-Heading font-bold leading-none text-Heading-sm "
+          >
             Product Development Stages
-          </h2>
+          </motion.h2>
         </div>
         <div className="grid grid-cols-5 p-4 md:p-8">
-          <div className="flex justify-center px-4 col-span-fullx md:col-span-1 md:flex-col  md:justify-start md:items-start">
+          <motion.div
+            variants={fadein("left", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.8 }}
+            className="flex justify-center px-4 col-span-fullx md:col-span-1 md:flex-col  md:justify-start md:items-start"
+          >
             <button className="p-2 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-700 dark:text-gray-600">
               Idea & Concept
             </button>
@@ -29,7 +44,7 @@ const Steps = () => {
             <button className="px-2 py-1 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-700 dark:text-gray-600">
               Launch and Scale
             </button>
-          </div>
+          </motion.div>
           <div className="grid gap-6 py-4 text-center sm:grid-cols-2 col-span-full md:col-span-4 md:text-left">
             <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
               <svg
