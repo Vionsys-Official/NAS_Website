@@ -1,16 +1,25 @@
+"use client"
 import Image from 'next/image'
 import React from 'react'
 import Hero1 from '/public/assets/industries/teleCommunication/sec2.jpg';
 import Hero2 from '/public/assets/industries/teleCommunication/sec21.jpg';
 import Hero3 from '/public/assets/industries/teleCommunication/sec22.jpg';
 import { Service } from './data';
+import { motion } from 'framer-motion';
+import { fadein } from '@/components/ui/variants';
+
 
 
 const sectioonTwo = () => {
   return (
-    <section id='data'>
+    <section id='data' className='overflow-x-hidden'>
     <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
-      <div className="max-w-full bg-gray-100 p-5 shadow-xl rounded-xl mb-10 md:mx-auto sm:text-center md:mb-12">
+      <motion.div
+        variants={fadein("up", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true, amount: 0.8 }}
+       className="max-w-full bg-gray-100 p-5 shadow-xl rounded-xl mb-10 md:mx-auto sm:text-center md:mb-12">
         <div>
           <p className="inline-block w-full px-3 mb-4 text-md font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
            Our Services
@@ -25,23 +34,23 @@ const sectioonTwo = () => {
         <p className="text-base text-gray-700 md:text-lg">
         Our expertise in IT solutions is tailored to elevate your business operations, ensuring seamless communication, enhanced customer experiences, and robust network management. Discover how we can transform your telecommunication services and help you stay ahead in a rapidly evolving industry.
         </p>
-      </div>
+      </motion.div>
 
       <div className="grid max-w-screen-lg md:p-10 border border-gray-400 shadow-sm shadow-blue-600 rounded-3xl backdrop-blur-3xl gap-8 sm:mx-auto">
        
       <div className="grid grid-cols-2 gap-5">
           <Image
-            className="object-cover w-full h-56 col-span-2 rounded shadow-lg"
+            className="object-cover w-full h-56 col-span-2 rounded shadow-gray-500 shadow-lg"
             src={Hero2}
             alt=""
           />
           <Image
-            className="object-cover w-full h-48 rounded shadow-lg"
+            className="object-cover w-full h-48 rounded shadow-gray-500 shadow-lg"
             src={Hero1}
             alt=""
           />
           <Image
-            className="object-cover w-full h-48 rounded shadow-lg"
+            className="object-cover w-full h-48 rounded shadow-gray-500 shadow-lg"
             src={Hero3}
             alt=""
           />
@@ -49,7 +58,7 @@ const sectioonTwo = () => {
  
         {Service.map((data , index) => (<div key={index} className="flex flex-col justify-center">
           <div className="flex">
-            <div className="mr-4">
+            <div className="mr-4 py-3 hidden md:block ">
               <div className="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-indigo-50">
                 <svg
                   className="w-8 h-8 text-deep-purple-accent-400"
@@ -66,22 +75,39 @@ const sectioonTwo = () => {
                 </svg>
               </div>
             </div>
-            <div>
-              <h6 className="py-3 font-semibold text-3xl text-blue-900">
+            <div className='p-2 md:p-0'>
+              <h6 className="py-3 font-semibold text-Heading text-blue-900">
               {data.heading}
               </h6>
-              <p className="text-lg mb-2 text-gray-900">
+              <p className="text-SubHeading-sm mb-2 text-gray-900">
               {data.description}
               </p>
-              <p className="text-md p-2 mb-2 text-gray-900 rounded-2xl border border-gray-800">
+              <motion.p
+                variants={fadein("left", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: true, amount: 0.8 }}
+               className="text-Para p-2 mb-2 text-gray-900 rounded-2xl border border-gray-800">
              {data.point1}
-              </p>
-              <p className="text-md p-2 mb-2 text-gray-900 rounded-2xl border border-gray-800">
+              </motion.p>
+
+              <motion.p
+               variants={fadein("right", 0.2)}
+               initial="hidden"
+               whileInView={"show"}
+               viewport={{ once: true, amount: 0.8 }}
+               className="text-Para p-2 mb-2 text-gray-900 rounded-2xl border border-gray-800">
               {data.point2}
-              </p>
-              <p className="text-md p-2 text-gray-900 rounded-2xl border border-gray-800">
+              </motion.p>
+
+              <motion.p
+               variants={fadein("left", 0.2)}
+               initial="hidden"
+               whileInView={"show"}
+               viewport={{ once: true, amount: 0.8 }}
+               className="text-Para p-2 text-gray-900 rounded-2xl border border-gray-800">
              {data.point3}
-              </p>
+              </motion.p>
               
             </div>
             </div>

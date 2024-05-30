@@ -1,5 +1,8 @@
+"use client"
 import React from 'react'
 import { Cards } from './data'
+import { motion } from 'framer-motion';
+import { fadein } from '@/components/ui/variants';
 
 
 const sectionThree = () => {
@@ -7,8 +10,13 @@ const sectionThree = () => {
     <section>
 
      <div className="px-4 pb-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-16 lg:px-8 ">
-        <h2 className='text-blue-900 font-bold md:text-4xl text-2xl pb-8'>Why Choose Us ?</h2>
-      <div className="grid gap-8 row-gap-5 lg:grid-cols-3">
+        <h2 className='text-blue-900 font-bold md:text-MainHeading text-MainHeading-sm pb-8'>Why Choose Us ?</h2>
+      <motion.div
+        variants={fadein("up", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true, amount: 0.8 }}
+       className="grid gap-8 row-gap-5 lg:grid-cols-3">
 
         {Cards.map((data,index)=>(<div key={index} className="relative p-px overflow-hidden transition duration-300 transform border rounded shadow-sm hover:scale-105 group hover:shadow-xl">
           <div className="relative p-5 h-full bg-white rounded-sm">
@@ -28,15 +36,15 @@ const sectionThree = () => {
                   />
                 </svg>
               </div>
-              <h6 className="font-semibold text-lg">{data.heading}</h6>
+              <h6 className="font-semibold text-CardHeading">{data.heading}</h6>
             </div>
-            <p className="mb-2 text-md text-gray-900">
+            <p className="mb-2 text-Para text-gray-900">
               {data.description}
             </p>
            </div>
         </div>
     ))}
-       </div>
+       </motion.div>
       </div>
 
      </section>
