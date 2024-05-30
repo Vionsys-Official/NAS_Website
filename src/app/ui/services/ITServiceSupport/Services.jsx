@@ -1,4 +1,7 @@
+"use client";
 import React from "react";
+import { fadein } from "@/components/ui/variants";
+import { motion } from "framer-motion";
 import HelpDeskSupport from "/public/assets/services/ITServiceSupport/helpdesksupport.jpg";
 import networkManagement from "/public/assets/services/ITServiceSupport/NetworkManagement.jpg";
 import ITConsulting from "/public/assets/services/ITServiceSupport/ITConsulting.jpg";
@@ -8,15 +11,27 @@ import SoftwareSupport from "/public/assets/services/ITServiceSupport/SoftwareSu
 import Image from "next/image";
 const Services = () => {
   return (
-    <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-4 py-4 flex ">
-      <div className="w-full flex flex-col gap-10">
-        <div className="w-full flex items-center justify-center">
+    <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-16 md:py-4 py-4 flex ">
+      <div className="w-full flex flex-col md:gap-10 gap-6">
+        <motion.div
+          variants={fadein("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.8 }}
+          className="w-full flex items-center justify-center"
+        >
           <h1 className="md:text-Heading text-Heading-sm font-bold text-slate-700">
             Our Services
           </h1>
-        </div>
+        </motion.div>
         <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
-          <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+          <div
+            variants={fadein("up", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.8 }}
+            className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm"
+          >
             <Image
               src={HelpDeskSupport}
               alt=""
@@ -34,7 +49,13 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+          <div
+            variants={fadein("up", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.8 }}
+            className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm"
+          >
             <Image
               src={networkManagement}
               alt=""
@@ -53,7 +74,13 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+          <div
+            variants={fadein("up", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.8 }}
+            className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm"
+          >
             <Image
               src={ITConsulting}
               alt=""

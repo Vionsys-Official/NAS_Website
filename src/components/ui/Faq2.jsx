@@ -1,12 +1,21 @@
+"use client";
 import React from "react";
+import { fadein } from "@/components/ui/variants";
+import { motion } from "framer-motion";
 
 const Faq2 = ({ faq }) => {
   return (
     <div className=" w-full py-6 md:px-0 px-2">
       <div className="flex justify-center items-center">
-        <h1 className="md:text-Heading text-Heading-sm font-bold text-black ">
+        <motion.h1
+          variants={fadein("down", 0.1)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.8 }}
+          className="md:text-Heading text-Heading-sm font-bold text-black "
+        >
           Frequently Asked Questions
-        </h1>
+        </motion.h1>
       </div>
       <ul className="max-w-3xl mx-auto my-5 divide-y shadow shadow-blue-600 rounded-xl ">
         {faq.map((item) => (

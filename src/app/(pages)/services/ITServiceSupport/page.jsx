@@ -8,7 +8,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Hero />
       <Services />
       <WhyChooseUs />

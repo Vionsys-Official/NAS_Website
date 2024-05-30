@@ -1,13 +1,23 @@
+"use client";
 import React from "react";
+import { fadein } from "@/components/ui/variants";
+import { motion } from "framer-motion";
+
 import Experties from "/public/assets/services/ProductDevelopment/expertise.jpg";
 import Image from "next/image";
 const Experts = () => {
   return (
     <div className="w-full  px-4">
       <div className="flex justify-center items-center py-6">
-        <h1 className="md:text-Heading text-Heading-sm font-bold text-gray-700 ">
+        <motion.h1
+          variants={fadein("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.8 }}
+          className="md:text-Heading text-Heading-sm font-bold text-gray-700 "
+        >
           Our Expertise
-        </h1>
+        </motion.h1>
       </div>
       <div className="w-full flex md:flex-row flex-col md:gap-4 gap-8">
         <div className="md:w-[50%] w-full">
