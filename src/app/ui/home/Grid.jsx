@@ -1,4 +1,7 @@
+'use client'
 import React from "react";
+import { fadein } from '@/components/ui/variants';
+import { motion } from 'framer-motion';
 import Image from "next/image";
 import customcentric from "./images/customcentric.jpg";
 import development from "./images/development.jpg";
@@ -14,7 +17,7 @@ const Grid = () => {
         <div className="px-4 md:py-20 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-14">
           {/* discover our unique features */}
           <div className="flex flex-col mb-6 lg:justify-evenly lg:flex-row  ">
-            <h2 className="max-w-lg mb-5 text-blue-900 font-sans text-2xl font-bold tracking-tight  sm:text-4xl sm:leading-none md:mb-6 group text-center">
+            <h2 className="max-w-lg mb-5 text-blue-900 font-sans text-SubHeading font-bold tracking-tight  sm:text-4xl sm:leading-none md:mb-6 group text-center">
               <span className="inline-block mb-1 sm:mb-4">
                 Discover Our Unique Features
                 <br className="hidden md:block" />
@@ -23,7 +26,7 @@ const Grid = () => {
               </span>
               <div className="h-1 ml-auto duration-300 origin-left transform bg-deep-purple-accent-400 scale-x-30 group-hover:scale-x-100" />
             </h2>
-            <p className="tracking-wide lg:text-xl lg:max-w-xl text-center md:border-l-4 md:pl-8 border-green-400 p-2 text-black ">
+            <p className="tracking-wide lg:text-Para lg:max-w-xl text-center md:border-l-4 md:pl-8 border-green-400 p-2 text-black ">
               Explore the innovative features that set us apart. Our advanced IT
               solutions are designed to optimize your operations and enhance
               productivity. With cutting-edge technology, seamless integration,
@@ -36,7 +39,7 @@ const Grid = () => {
           <div className="grid gap-6 row-gap-5  lg:grid-cols-3 sm:row-gap-6 sm:grid-cols-2 md:py-10">
             {/* first */}
             <Link href="/" aria-label="View Item">
-              <h1 className="text-center py-2 text-xl border-t-2 border-blue-600 rounded-md text-blue-700 font-extrabold">
+              <h1 className="text-center py-2 text-CardHeading border-t-2 border-blue-600 rounded-md text-blue-700 font-extrabold">
                 Client-centric approach
               </h1>
               <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
@@ -49,20 +52,26 @@ const Grid = () => {
                   <p className="mb-4 text-lg font-bold text-gray-100 ">
                     Client-centric approach
                   </p>
-                  <p className="text-sm tracking-wide text-gray-300  ">
+                  <motion.p
+                    variants={fadein("right", 0.1)}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true, amount: 0.5 }}
+                    className="text-sm tracking-wide text-gray-300 "
+                  >
                     Our company prioritizes a customer-centric approach,
                     ensuring that every solution we develop is tailored to meet
                     the unique needs and preferences of our clients. By actively
                     engaging with customers, gathering their feedback, and
                     adapting to their evolving requirements, we deliver
                     personalized, high-value technology solutions.
-                  </p>
+                  </motion.p>
                 </div>
               </div>
             </Link>
             {/* second */}
             <Link href="/" aria-label="View Item">
-              <h1 className="text-center py-2 text-xl border-t-2 border-blue-600 rounded-md text-blue-700 font-extrabold">
+              <h1 className="text-center py-2 text-CardHeading border-t-2 border-blue-600 rounded-md text-blue-700 font-extrabold">
                 Iterative Development
               </h1>
               <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl text-center ">
@@ -90,7 +99,7 @@ const Grid = () => {
             </Link>
             {/* third */}
             <Link href="/" aria-label="View Item">
-              <h1 className="text-center py-2 text-xl border-t-2 border-blue-600 rounded-md text-blue-700 font-extrabold">
+              <h1 className="text-center py-2 text-CardHeading border-t-2 border-blue-600 rounded-md text-blue-700 font-extrabold">
                 Incremental Delivery
               </h1>
               <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl text-center">
@@ -121,7 +130,7 @@ const Grid = () => {
           <div className="grid gap-6 row-gap-5  lg:grid-cols-3 sm:row-gap-6 sm:grid-cols-2 ">
             {/* first */}
             <Link href="/" aria-label="View Item">
-              <h1 className="text-center py-2 text-xl border-t-2 border-blue-600 rounded-md text-blue-700 font-extrabold">
+              <h1 className="text-center py-2 text-CardHeading border-t-2 border-blue-600 rounded-md text-blue-700 font-extrabold">
                 Innovative Solutions
               </h1>
               <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl text-center">
@@ -148,7 +157,7 @@ const Grid = () => {
             </Link>
             {/* second */}
             <Link href="/" aria-label="View Item">
-              <h1 className="text-center py-2 text-xl border-t-2 border-blue-600 rounded-md text-blue-700 font-extrabold">
+              <h1 className="text-center py-2 text-CardHeading border-t-2 border-blue-600 rounded-md text-blue-700 font-extrabold">
                 Agile Methodology
               </h1>
               <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl text-center">
@@ -176,7 +185,7 @@ const Grid = () => {
             </Link>
             {/* third */}
             <Link href="/" aria-label="View Item">
-              <h1 className="text-center py-2 text-xl border-t-2 border-blue-600 rounded-md text-blue-700 font-extrabold">
+              <h1 className="text-center py-2 text-CardHeading border-t-2 border-blue-600 rounded-md text-blue-700 font-extrabold">
                 Cross-functional teams
               </h1>
               <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
