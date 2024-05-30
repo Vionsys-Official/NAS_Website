@@ -77,7 +77,7 @@ const page = () => {
         </div>
 
         <div className="container mx-auto lg:p-10">
-          <div className="flex flex-wrap justify-center gap-10">
+          <div className="flex flex-wrap gap-10">
             {ourIndustries.map((industres, index) => (
               <Link
                 key={index}
