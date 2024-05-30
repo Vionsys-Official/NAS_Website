@@ -1,94 +1,189 @@
-import React from 'react'
+"use client";
+import React, { useState } from "react";
 import { Button } from "@/components/ui/Button.jsx";
 import Form from "@/../public/assets/contact/Form.jpg";
-import Image from 'next/image';
+import Image from "next/image";
+import { ContactSchema } from "../../../schema/ContactUsSchema"; // Importing the Yup schema
+import axios from "axios";
+import { Toaster, toast } from 'react-hot-toast'; // Importing Toaster and toast
+
 const Forms = () => {
+  const initialFormData = {
+    fname: "",
+    lname: "",
+    number: "",
+    email: "",
+    subject: "",
+    questions: "",
+    message: "",
+  };
+
+  const [formData, setFormData] = useState(initialFormData);
+  const [errors, setErrors] = useState({}); // State to hold validation errors
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      // Validate form data against Yup schema
+      await ContactSchema.validate(formData, { abortEarly: false });
+
+      // If validation succeeds, proceed with form submission
+      axios
+        .post("/api/sendEmail", formData)
+        .then((res) => {
+          toast.success("Form submitted successfully!");
+          setFormData(initialFormData); // Reset form data
+        })
+        .catch((err) => {
+          toast.error("Something went wrong!");
+        });
+    } catch (validationErrors) {
+      // If validation fails, set the validation errors state
+      const errors = {};
+      validationErrors.inner.forEach((error) => {
+        errors[error.path] = error.message;
+      });
+      setErrors(errors);
+      toast.error("Please fix the errors in the form.");
+    }
+  };
+
   return (
     <>
+      <Toaster /> {/* Toaster component to display notifications */}
       <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="flex items-center justify-center px-4 py-10 sm:px-6 sm:py-16 lg:px-8">
-            <div className="xl:mx-auto lg:w-[50vw] w-full ">
-              <h2 className="text-3xl font-bold text-center leading-tight text-black sm:text-4xl py-6">
-                Get In Touch
-              </h2>
+        <div className="flex items-center justify-center px-4 py-10 sm:px-6 sm:py-16 lg:px-8">
+          <div className="xl:mx-auto lg:w-[50vw] w-full ">
+            <h2 className="text-3xl font-bold text-center leading-tight text-black sm:text-4xl py-6">
+              Get In Touch
+            </h2>
 
-              <form className="max-w-[90%] mx-auto">
-                <div className="grid md:grid-cols-2 md:gap-6">
-                  <div className="relative z-0 w-full group pb-4 md:py-0">
-                    <input
-                      type="text"
-                      name="floating_first_name"
-                      id="floating_first_name"
-                      className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                      placeholder=" "
-                      required
-                    />
-                    <label
-                      htmlFor="floating_first_name"
-                      className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                    >
-                      First name
-                    </label>
-                  </div>
-                  <div className="relative z-0 w-full  pb-4 md:py-0  group">
-                    <input
-                      type="text"
-                      name="floating_last_name"
-                      id="floating_last_name"
-                      className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                      placeholder=" "
-                      required
-                    />
-                    <label
-                      htmlFor="floating_last_name"
-                      className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                    >
-                      Last name
-                    </label>
-                  </div>
-
-                  <div className="relative z-0 w-full mb-5 group">
-                    <input
-                      type="tel"
-                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                      name="floating_phone"
-                      id="floating_phone"
-                      className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                      placeholder=" "
-                      required
-                    />
-                    <label
-                      htmlFor="floating_phone"
-                      className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                    >
-                      Phone number
-                    </label>
-                  </div>
-
-                  <div className="relative z-0 w-full mb-5 group">
-                    <input
-                      type="email"
-                      name="floating_email"
-                      id="floating_email"
-                      className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                      placeholder=" "
-                      required
-                    />
-                    <label
-                      htmlFor="floating_email"
-                      className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                    >
-                      Email Address
-                    </label>
-                  </div>
+            <form className="max-w-[90%] mx-auto" onSubmit={handleSubmit}>
+              {/* FirstName, LastName, Email, Contact No */}
+              <div className="grid md:grid-cols-2 md:gap-6">
+                {/* First Name */}
+                <div className="relative z-0 w-full group pb-4 md:py-0">
+                  <input
+                    type="text"
+                    name="fname"
+                    id="floating_first_name"
+                    value={formData.fname}
+                    onChange={handleChange}
+                    className={`block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer ${
+                      errors.fname ? "border-red-500" : "" // Add red border for validation error
+                    }`}
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    htmlFor="floating_first_name"
+                    className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  >
+                    First name
+                  </label>
+                  {/* Display validation error message */}
+                  {errors.fname && (
+                    <p className="text-red-500 text-xs mt-1">{errors.fname}</p>
+                  )}
+                </div>
+                {/* Last Name */}
+                <div className="relative z-0 w-full  pb-4 md:py-0  group">
+                  <input
+                    type="text"
+                    name="lname"
+                    id="floating_last_name"
+                    value={formData.lname}
+                    onChange={handleChange}
+                    className={`block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer ${
+                      errors.lname ? "border-red-500" : "" // Add red border for validation error
+                    }`}
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    htmlFor="floating_last_name"
+                    className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  >
+                    Last name
+                  </label>
+                  {/* Display validation error message */}
+                  {errors.lname && (
+                    <p className="text-red-500 text-xs mt-1">{errors.lname}</p>
+                  )}
                 </div>
 
+                {/* Phone Number */}
+                <div className="relative z-0 w-full mb-5 group">
+                  <input
+                    type="tel"
+                    name="number"
+                    id="floating_phone"
+                    value={formData.number}
+                    onChange={handleChange}
+                    className={`block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer ${
+                      errors.number ? "border-red-500" : "" // Add red border for validation error
+                    }`}
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    htmlFor="floating_phone"
+                    className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  >
+                    Phone number
+                  </label>
+                  {/* Display validation error message */}
+                  {errors.number && (
+                    <p className="text-red-500 text-xs mt-1">{errors.number}</p>
+                  )}
+                </div>
+
+                {/* Email */}
+                <div className="relative z-0 w-full mb-5 group">
+                  <input
+                    type="email"
+                    name="email"
+                    id="floating_email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className={`block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer ${
+                      errors.email ? "border-red-500" : "" // Add red border for validation error
+                    }`}
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    htmlFor="floating_email"
+                    className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  >
+                    Email Address
+                  </label>
+                  {/* Display validation error message */}
+                  {errors.email && (
+                    <p className="text-red-500 text-xs mt-1">{errors.email}</p>
+                  )}
+                </div>
+              </div>
+
+              {/* subject, questions,message */}
+              <div className="grid grid-cols-1">
+                {/* Subject */}
                 <div className="relative z-0 w-full mb-5 group">
                   <input
                     type="text"
-                    name="floating_subject"
+                    name="subject"
                     id="floating_subject"
-                    className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    className={`block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer ${
+                      errors.subject ? "border-red-500" : "" // Add red border for validation error
+                    }`}
                     placeholder=""
                     required
                   />
@@ -98,59 +193,87 @@ const Forms = () => {
                   >
                     Subject
                   </label>
+                  {/* Display validation error message */}
+                  {errors.subject && (
+                    <p className="text-red-500 text-xs mt-1">
+                      {errors.subject}
+                    </p>
+                  )}
                 </div>
 
-                <label
-                  htmlFor="questions"
-                  className="block text-sm font-medium dark:text-gray-900"
-                >
-                  Questions?
-                </label>
-                <select
-                  id="questions"
-                  className="  border-gray-300 outline-none text-gray-900 border-2 rounded-xl appearance-none text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                >
-                  <option>About Service</option>
-                  <option>Technical Quesstion</option>
-                  <option>Career</option>
-                  <option>Other Querries</option>
-                </select>
+                {/* Questions */}
+                <div className="relative z-0 w-full mb-5 group">
+                  <select
+                    id="questions"
+                    name="questions"
+                    value={formData.questions}
+                    onChange={handleChange}
+                    className="border-gray-300 outline-none text-gray-900 border-2 rounded-xl appearance-none text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  >
+                    <option value="">Select a question type</option>
+                    <option value="About Service">About Service</option>
+                    <option value="Technical Question">
+                      Technical Question
+                    </option>
+                    <option value="Career">Career</option>
+                    <option value="Other Queries">Other Queries</option>
+                  </select>
+                  {/* Display validation error message */}
+                  {errors.questions && (
+                    <p className="text-red-500 text-xs mt-1">
+                      {errors.questions}
+                    </p>
+                  )}
+                </div>
 
-                <div className="py-4">
+                {/* Message */}
+                <div className="pb-4">
                   <label
                     htmlFor="message"
-                    className="block mb-2 text-sm font-medium text-gray-900  dark:text-gray-900"
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-900"
                   >
                     Your message
                   </label>
                   <textarea
                     id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
                     rows="4"
-                    className="block p-2.5 w-full text-sm dark:border-gray-600 text-gray-900 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    className={`block p-2.5 w-full text-sm dark:border-gray-600 text-gray-900 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500 ${
+                      errors.message ? "border-red-500" : "" // Add red border for validation error
+                    }`}
                     placeholder="Leave a comment..."
+                    required
                   ></textarea>
+                  {/* Display validation error message */}
+                  {errors.message && (
+                    <p className="text-red-500 text-xs mt-1">
+                      {errors.message}
+                    </p>
+                  )}
                 </div>
+              </div>
 
-                <div className="flex justify-center items-center">
-                  <Button />
-                </div>
-              </form>
-
-              <div className="mt-3 space-y-3"></div>
-            </div>
-          </div>
-          <div className="h-full w-full flex justify-center object-cover bg-cover items-center overflow-x-hidden">
-            <Image
-              src={Form}
-              height={3000}
-              width={3000}
-              className="max-w-full object-cover lg:max-w-lg lg:h-[90vh] lg:w-[30vw] transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
-              alt="Image not found"
-            />
+              {/* button */}
+              <div className="flex justify-center items-center">
+                <Button />
+              </div>
+            </form>
           </div>
         </div>
+        <div className="h-full w-full flex justify-center object-cover bg-cover items-center overflow-x-hidden">
+          <Image
+            src={Form}
+            height={3000}
+            width={3000}
+            className="max-w-full object-cover lg:max-w-lg lg:h-[90vh] lg:w-[30vw] transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
+            alt="Image not found"
+          />
+        </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Forms
+export default Forms;
