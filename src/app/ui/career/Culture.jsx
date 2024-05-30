@@ -1,9 +1,12 @@
+"use client"
 import React from 'react';
 import Image from 'next/image';
 import innovation from '/public/assets/career/innovation.gif';
 import colaboration from '/public/assets/career/colaboration.gif';
 import impact from '/public/assets/career/impact.gif';
 import growth from '/public/assets/career/growth.gif';
+import { motion } from 'framer-motion';
+import { fadein } from "@/components/ui/variants";
 
 const Culture = () => {
     const culture=[
@@ -16,11 +19,21 @@ const Culture = () => {
     <div className='flex flex-col items-center justify-center font-light'>
         <div className='flex items-center justify-center'>
             <div className='w-[90%] md:w-[70%] flex flex-col items-center justify-center'>
-            <h2 className='text-MainHeading-sm md:text-MainHeading font-semibold pt-6 md:pt-10 cursor-pointer font-sans'>Our Culture</h2>
-            <h3 className='text-Para-sm md:text-Para font-medium p-2 md:p-4 cursor-pointer'>Our culture is built on a foundation of creativity, collaboration, and a commitment to excellence. We foster an environment where innovation thrives, teamwork is paramount, and every team member's contributions are valued. Here’s what makes our culture unique</h3>
+            <motion.h2
+            variants={fadein("left", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.8 }}
+             className='text-MainHeading-sm md:text-MainHeading font-semibold pt-6 md:pt-10 cursor-pointer font-sans'>Our Culture</motion.h2>
+            <motion.h3 
+            variants={fadein("left", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.8 }}
+            className='text-Para-sm md:text-Para text-center font-medium p-2 md:p-4 cursor-pointer'>Our culture is built on a foundation of creativity, collaboration, and a commitment to excellence. We foster an environment where innovation thrives, teamwork is paramount, and every team member's contributions are valued. Here’s what makes our culture unique</motion.h3>
             </div>
         </div>
-        <div className="w-[90%] md:w-[70%] grid grid-cols-1 sm:grid-cols-2 gap-4 py-2 md:py-6">
+        <div className="w-[90%] md:w-[84%] grid grid-cols-1 sm:grid-cols-2 gap-4 py-2 md:py-6">
             {culture.map((feat)=>{
                 return(
                     <div key={feat.id} className="block bg-white rounded-xl border shadow-lg shadow-gray-400 border-gray-300 hover:border-2 p-4 cursor-pointer">

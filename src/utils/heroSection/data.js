@@ -3,6 +3,8 @@ import Hero from '/public/assets/contact/Hero.jpg';
 import head from '/public/assets/career/career.jpg';
 import ServiceHero from '/public/assets/services/ServiceHero.jpg';
 import indystresHero from '/public/assets/industries/myIndustriesHero.jpg';
+import Button from '@/components/ui/Button';
+import Linkbutton from '@/components/ui/Linkbutton';
 
 export const careerData = 
   {
@@ -11,6 +13,7 @@ export const careerData =
         heading: "Unlock Your Talent",
         title:
           "Diverse Software Careers Await",
+          button:<Linkbutton/>,
     },
 };
 export const aboutData = 
@@ -20,6 +23,7 @@ export const aboutData =
         heading: "Transform Your Ideas Into Reality",
         title:
           "Ready to take your IT solutions to the next level?",
+        button:<Button/>,
     },
 };
 export const contactData = 
@@ -28,6 +32,7 @@ export const contactData =
     image: Hero,
     heading: "Shape the Future with Us",
     title: "Join Our Innovative Team at NAS Infotech",
+    
   },
 };
 export const servicesData = 
@@ -37,6 +42,7 @@ export const servicesData =
         heading: "Innovative Software Services for Modern Enterprises",
         title:
           "Explore our services",
+          button:<Button/>,
     },
 };
 export const industriesData = 
@@ -46,5 +52,6 @@ export const industriesData =
         heading: "Innovating Across Sectors: Transforming Industries with Technology",
         title:
           "Explore Our Industry-Specific Expertise",
+          button:<Button/>,
     },
 };
