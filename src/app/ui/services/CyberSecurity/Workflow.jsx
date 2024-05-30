@@ -67,12 +67,12 @@ const Workflow = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.8 }}
-          className="flex max-w-lg mb-6 font-sans md:text-Heading text-Heading-sm font-bold leading-none tracking-tight text-gray-900 "
+          className="flex max-w-lg mb-6 font-sans md:text-Heading text-Heading-sm font-bold leading-none tracking-tight text-blue950 "
         >
           <span className="relative inline-block"></span> Workflow of Cyber
           Security
         </motion.h2>
-        <p className=" text-gray-700 md:text-Para text-Para-sm">
+        <p className=" text-gray-800 md:text-Para text-Para-sm">
           Discover comprehensive Cyber Security Solutions tailored to your
           needs, fortifying your defenses and shielding your organization from
           evolving threats
@@ -92,7 +92,7 @@ const Workflow = () => {
                 {item.title}
               </p>
             </div>
-            <p className="md:text-Para text-Para-sm text-gray-900">
+            <p className="md:text-Para text-Para-sm text-gray-800">
               {item.description}
             </p>
           </div>

@@ -14,7 +14,7 @@ const TestingStrategies = () => {
           className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto"
         >
           <span className="relative inline-block">
-            <span className="relative md:text-Heading text-Heading-sm">
+            <span className="relative md:text-Heading text-Heading-sm text-blue950">
               Testing and Quality Assurance Strategies
             </span>
           </span>{" "}

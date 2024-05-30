@@ -9,10 +9,10 @@ import { BsQuestionSquareFill } from "react-icons/bs";
 
 const Hero = () => {
   return (
-    <div className="md:mb-16 mb-5">
-      <div className="bg-gray-100">
+    <div className="md:mb-16 mb-5 ">
+      <div className="bg-blue5">
         <div className="px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-          <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 pt-16">
+          <div className="max-w-xl md:mx-auto sm:text-center lg:max-w-2xl pt-16">
             <motion.h2
               variants={fadein("right", 0.2)}
               initial="hidden"
@@ -34,7 +34,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="relative px-4 sm:px-0">
-        <div className="absolute inset-0 bg-gray-100 h-1/2" />
+        <div className="absolute inset-0  h-1/2" />
         <div className="relative grid mx-auto overflow-hidden bg-white divide-y rounded shadow sm:divide-y-0 sm:divide-x sm:max-w-screen-sm sm:grid-cols-3 lg:max-w-screen-md">
           <div className="inline-block md:p-8 p-4 text-center">
             <div className="flex items-center justify-center  mx-auto mb-4">

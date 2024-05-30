@@ -14,7 +14,7 @@ const WhatWeDo = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.8 }}
-          className=" md:text-Heading text-Heading-sm text-black font-extrabold text-center "
+          className=" md:text-Heading text-Heading-sm text-blue950 font-extrabold text-center "
         >
           This is 24/7 Cyber Security Operation Center for your problem solution
         </motion.p>
@@ -34,7 +34,7 @@ const WhatWeDo = () => {
                       Identifying Threats
                     </div>
                   </div>
-                  <p className="text-black md:text-Para text-Para-sm">
+                  <p className="text-gray-800 md:text-Para text-Para-sm">
                     Our company specializes in identifying threats by employing
                     advanced monitoring techniques and proactive security
                     measures, ensuring comprehensive protection for our clients'
@@ -50,7 +50,7 @@ const WhatWeDo = () => {
                       Security Management
                     </div>
                   </div>
-                  <p className="text-black md:text-Para text-Para-sm">
+                  <p className="text-gray-800 md:text-Para text-Para-sm">
                     Our company specializes in Security Management, offering
                     comprehensive solutions for safeguarding digital assets
                     through proactive monitoring and strategic security measures
@@ -67,7 +67,7 @@ const WhatWeDo = () => {
                       Security Services
                     </div>
                   </div>
-                  <p className="text-black md:text-Para text-Para-sm">
+                  <p className="text-gray-800 md:text-Para text-Para-sm">
                     Our company specializes in Security Management, offering
                     comprehensive solutions for safeguarding digital assets
                     through proactive monitoring and strategic security measures
@@ -82,7 +82,7 @@ const WhatWeDo = () => {
                       Industry Certified
                     </div>
                   </div>
-                  <p className="text-black md:text-Para text-Para-sm">
+                  <p className="text-gray-800 md:text-Para text-Para-sm">
                     Our company specializes in Security Management, offering
                     comprehensive solutions for safeguarding digital assets
                     through proactive monitoring and strategic security measures
