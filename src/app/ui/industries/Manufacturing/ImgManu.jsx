@@ -11,7 +11,7 @@ const ImgManu = () => {
             <Image src={Manufacturing} alt='' className='w-full opacity-55'/>
             </div>
             <div className='inset-0 absolute flex flex-col justify-center items-center'>
-                <p className='text-white text-5xl font-semibold py-32 leading-10'>Driving Efficiency and Innovation in Manufacturing</p>
+                <p className='text-white md:text-4xl text-xl p-2 font-semibold md:py-32 md:leading-10 leading-none'>Driving Efficiency and Innovation in Manufacturing</p>
             </div>
         </div>
     </div>

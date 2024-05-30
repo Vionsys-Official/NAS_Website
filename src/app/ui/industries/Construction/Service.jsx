@@ -6,7 +6,7 @@ const Service = () => {
         {
             id: 1,
             title: "Project Management Software:",
-            para1: "Streamline project planning, scheduling, and execution.",
+            para1: "Streamline project planning, scheduling and execution.",
             para2: "Enhance resource allocation and tracking.",
             para3: "Integrate seamlessly with existing tools and workflows.",
         },
@@ -21,7 +21,7 @@ const Service = () => {
             id: 3,
             title: "Cloud-Based Collaboration Tools:",
             para1: "Enable real-time collaboration between on-site and off-site teams.",
-            para2: "Securely share documents, plans, and updates.",
+            para2: "Securely share documents, plans and updates.",
             para3: "Ensure everyone has access to the latest project information.",
         },
         {
@@ -35,7 +35,7 @@ const Service = () => {
             id: 5,
             title: "Mobile Solutions:",
             para1: "Equip your workforce with mobile apps for on-the-go access to project data.",
-            para2: "Simplify field reporting and inspections.",
+            para2: "Simplify the field reporting and inspections.",
             para3: "Improve communication and reduce delays.",
         },
         {
@@ -58,15 +58,15 @@ const Service = () => {
         <>
             <section className="m-4 md:m-8 text-gray-800">
                 <div className="mx-auto my-6 space-y-1 text-center">
-                    <h2 className="text-3xl font-bold md:text-4xl">Our IT Solutions for Construction</h2>
+                    <h2 className="text-Heading-sm font-bold md:text-Heading">Our IT Solutions for Construction</h2>
                 </div>
                 <div className="grid justify-center gap-4 mx-auto lg:grid-cols-2 xl:grid-cols-4">
                     {service.map((item) => (
-                        <div key={item.id} className="flex flex-col px-5 py-3 border-2 border-purple-600 rounded-bl-3xl rounded-tr-3xl">
-                        <h2 className="mb-2 text-lg font-semibold sm:text-xl title-font text-gray-800">{item.title}</h2>
-                        <p className="flex-1 mb-1 text-base leading-relaxed text-gray-600">{item.para1}</p>
-                        <p className="flex-1 mb-1 text-base leading-relaxed text-gray-600">{item.para2}</p>
-                        <p className="flex-1 mb-1 text-base leading-relaxed text-gray-600">{item.para3}</p>
+                        <div key={item.id} className="flex flex-col md:px-5 md:py-3 p-2 border-2 border-purple-600 rounded-bl-3xl rounded-tr-3xl">
+                        <h2 className="mb-2 text-CardHeading-sm font-semibold md:text-CardHeading title-font text-gray-800">{item.title}</h2>
+                        <p className="flex-1 mb-1 md:text-Para text-Para-sm leading-relaxed text-gray-600">{item.para1}</p>
+                        <p className="flex-1 mb-1 md:text-Para text-Para-sm leading-relaxed text-gray-600">{item.para2}</p>
+                        <p className="flex-1 mb-1 md:text-Para text-Para-sm leading-relaxed text-gray-600">{item.para3}</p>
                     </div>
                     ))}
                     

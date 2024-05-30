@@ -6,15 +6,15 @@ const Service = () => {
         {
             id: 1,
             title: "Property Management Systems",
-            para: "Efficiently manage property listings, tenants, and maintenance with our streamlined software, reducing manual work and keeping data at your fingertips.",
+            para: "Efficiently manage property listings, tenants and maintenance with our streamlined software, reducing manual work and keeping data at your fingertips.",
             point1: "Automated Listings: Keep property listings up-to-date across all platforms with minimal effort.",
-            point2: "Tenant Portals: Provide tenants easy access to their accounts, payments, and maintenance requests.",
+            point2: "Tenant Portals: Provide tenants easy access to their accounts, payments and maintenance requests.",
             point3: "Maintenance Tracking: Stay on top of maintenance with automated reminders and tracking features.",
         },
         {
             id: 2,
             title: "Customer Relationship Management (CRM)",
-            para: "Enhance client interactions with our real estate CRM systems. It helps you to manage leads, track interactions, and maintain detailed client histories.",
+            para: "Enhance client interactions with our real estate CRM systems. It helps you to manage leads, track interactions and maintain detailed client histories.",
             point1: "Lead Management: Capture and nurture leads with automated follow-ups and personalized communication.",
             point2: "Client Interaction Logs: Maintain detailed records of client communications.",
             point3: "Analytics & Reporting: Gain insights into customer behavior and sales trends.",
@@ -22,7 +22,7 @@ const Service = () => {
         {
             id: 3,
             title: "Virtual Tours and Augmented Reality",
-            para: "Offer immersive experiences with virtual tours and augmented reality (AR), allowing clients to explore properties remotely.",
+            para: "Offer immersive experiences with virtual tours and augmented reality (AR) allowing clients to explore properties remotely.",
             point1: "3D Virtual Tours: Create realistic, interactive property tours accessible online.",
             point2: "AR Property Staging: Visualize furniture and decor in vacant properties using smartphones or tablets.",
             point3: "Enhanced Online Listings: Stand out with dynamic and engaging property listings.",
@@ -30,7 +30,7 @@ const Service = () => {
         {
             id: 4,
             title: "Data Analytics and Business Intelligence",
-            para: "Leverage data analytics and business intelligence to make informed decisions, understand market trends, and optimize strategies.",
+            para: "Leverage data analytics and business intelligence to make informed decisions, understand market trends and optimize strategies.",
             point1: "Market Analysis: Gain insights into local market conditions and trends.",
             point2: "Pricing Optimization: Set competitive and profitable pricing strategies using data.",
             point3: "Operational Metrics: Monitor key performance indicators to improve efficiency and service quality.",
@@ -39,8 +39,8 @@ const Service = () => {
             id: 5,
             title: "Mobile Applications",
             para: "Stay connected and manage your business on-the-go with custom mobile apps designed for real estate professionals.",
-            point1: "Agent Apps: Access property information, client details, and scheduling tools anytime, anywhere.",
-            point2: "Client Apps: Provide with a convenient way to browse listings, schedule viewings, and communicate with agents.",
+            point1: "Agent Apps: Access property information, client details and scheduling tools anytime, anywhere.",
+            point2: "Client Apps: Provide with a convenient way to browse listings, schedule viewings and communicate with agents.",
             point3: "Integration with CRM and PMS: Ensure seamless data synchronization across all devices and platforms.",
         },
         {
@@ -54,9 +54,9 @@ const Service = () => {
     ]
 
     return (
-        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-            <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-                <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+        <div className="px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+            <div className="max-w-xl mb-4 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+                <h2 className="max-w-lg md:mb-6 mb-3 text-center font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
                     <span className="relative inline-block">
                         <svg
                             viewBox="0 0 52 24"
@@ -80,7 +80,7 @@ const Service = () => {
                                 height="24"
                             />
                         </svg>
-                        <span className="relative">Services Provided</span>
+                        <span className="relative md:text-Heading text-Heading-sm">Services Provided</span>
                     </span>
                 </h2>
                 <p className="text-base text-gray-700 md:text-lg">
@@ -89,14 +89,14 @@ const Service = () => {
             </div>
             <div className="grid max-w-sm gap-5 mb-8 lg:grid-cols-3 sm:mx-auto lg:max-w-full">
                 {service.map((item) => (
-                    <div key={item.id} className="p-5 text-center border-2 rounded-2xl">
-                        <h1 className="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200 hover:text-purple-400">
+                    <div key={item.id} className="md:p-5 p-1 text-center border-2 rounded-2xl">
+                        <h1 className="inline-block max-w-xs mx-auto mb-3 md:text-CardHeading text-CardHeading-sm font-extrabold leading-7 transition-colors duration-200 hover:text-purple-400">
                         {item.title}
                         </h1>
-                        <h3 className="inline-flex items-center font-semibold transition-colors duration-200 mb-2">{item.para}</h3>
-                        <p className="max-w-xs mx-auto mb-2 text-gray-700">{item.point1}</p>
-                        <p className="max-w-xs mx-auto mb-2 text-gray-700">{item.point2}</p>
-                        <p className="max-w-xs mx-auto mb-2 text-gray-700">{item.point3}</p>
+                        <h3 className="inline-flex items-center md:text-Para text-Para-sm font-semibold transition-colors duration-200 mb-2">{item.para}</h3>
+                        <p className="max-w-xs mx-auto md:text-Para text-Para-sm mb-2 text-gray-700">{item.point1}</p>
+                        <p className="max-w-xs mx-auto md:text-Para text-Para-sm mb-2 text-gray-700">{item.point2}</p>
+                        <p className="max-w-xs mx-auto md:text-Para text-Para-sm mb-2 text-gray-700">{item.point3}</p>
                     </div>
                 ))}
             </div>
