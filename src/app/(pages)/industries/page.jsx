@@ -16,7 +16,7 @@ const page = () => {
     <MainPageHeading1/>
 
       {/* Cards Section */}
-      <section className='p-5 bg-white'>
+      <section className='p-5 '>
         <div className="max-w-3xl mx-auto">
           <h1 className="text-MainHeading text-center font-bold text-gray-900 leading-tight mb-2 pb-2 relative">
             <span className="bg-clip-text text-transparent bg-orange-600">Industries</span>
@@ -30,7 +30,7 @@ const page = () => {
               <Link
                 key={index}
                 href={industres.href1}
-                className="relative shadow-lg flex flex-col rounded-xl hover:bg-gray-200 border-[1px] border-gray-600 backdrop-blur-sm bg-clip-border text-gray-700 no-underline w-full sm:w-[calc(50%-2.5rem)] md:w-[calc(33.3333%-2.5rem)] lg:w-[calc(25%-2.5rem)]"
+                className="relative shadow-xl flex flex-col rounded-xl bg-white hover:bg-gray-100 hover:border backdrop-blur-sm bg-clip-border text-gray-700 no-underline w-full sm:w-[calc(50%-2.5rem)] md:w-[calc(33.3333%-2.5rem)] lg:w-[calc(25%-2.5rem)]"
               >
                 <div className='relative mx-4 -mt-6 h-40 overflow-hidden'>
                   <Image
