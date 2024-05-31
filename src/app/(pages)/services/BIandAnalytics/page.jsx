@@ -18,6 +18,10 @@ import BiHero from '@/app/ui/services/BIandAnalytics/BiHero';
 import { motion } from 'framer-motion';
 import { fadein } from '@/components/ui/variants';
 
+export const metadata = {
+    title: "BI & Analytics Solutions",
+  };
+
 
 const page = () => {
   return (

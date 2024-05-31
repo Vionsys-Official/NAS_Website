@@ -6,6 +6,11 @@ import OurService from '@/app/ui/services/devOps/OurService'
 import Process from '@/app/ui/services/devOps/Process'
 import React from 'react'
 
+export const metadata = {
+  title: "DevOps Consulting and Solutions",
+};
+
+
 const page = () => {
   return (
     <div id='mission'>

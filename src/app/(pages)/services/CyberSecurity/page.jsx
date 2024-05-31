@@ -5,6 +5,11 @@ import Workflow from "@/app/ui/services/CyberSecurity/Workflow";
 import GetStart2 from "@/components/ui/GetStart2";
 import React from "react";
 
+export const metadata = {
+  title: "Cyber Security Services",
+};
+
+
 const page = () => {
   return (
     <div className="overflow-x-hidden">

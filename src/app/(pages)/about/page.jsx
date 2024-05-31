@@ -8,6 +8,9 @@ import Sectiontwo from '@/app/ui/about/sectiontwo'
 import  Sectionlast  from '@/app/ui/about/sectionlast'
 import Sectionthree from '@/app/ui/about/sectionthree'
 
+export const metadata = {
+  title: "About Us",
+};
 
 function page() {
   return (

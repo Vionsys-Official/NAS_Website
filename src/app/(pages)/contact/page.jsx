@@ -9,6 +9,10 @@ import { MdOutlineEmail } from "react-icons/md";
 
 import Forms from "./Forms";
 
+export const metadata = {
+  title: "Contact Us",
+};
+
 function page() {
   return (
     <main id="mission">

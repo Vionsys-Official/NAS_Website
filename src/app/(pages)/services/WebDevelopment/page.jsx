@@ -7,6 +7,11 @@ import Faq from '@/app/ui/services/webDevelopment/faq'
 import Hero from '@/app/ui/services/webDevelopment/hero'
 import Cta from '@/app/ui/services/webDevelopment/cta'
 
+export const metadata = {
+  title: "Web Development Services",
+};
+
+
 const page = () => {
   return (
     <div id='mission' className='overflow-hidden font-light'>

@@ -6,6 +6,10 @@ import {industriesData} from '@/utils/heroSection/data';
 import { ourIndustries } from '@/app/(pages)/industries/industriesD';
 import MainPageHeading1 from '@/app/ui/industries/mainPageHeading1';
 
+export const metadata = {
+  title: "Industries",
+};
+
 const page = () => {
 
   return (

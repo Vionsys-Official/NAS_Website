@@ -5,6 +5,10 @@ import SalesForceSec3 from '@/app/ui/services/salesforce/salesforcesec3'
 import SalesForceSec4 from '@/app/ui/services/salesforce/salesforcesec4'
 import SalesForceSec5 from '@/app/ui/services/salesforce/salesforcesec5'
 
+export const metadata = {
+  title: "Salesforce Consulting and IT Solutions",
+};
+
 
 const Salesforce = () => {
   return (

@@ -9,6 +9,10 @@ import WhatGain from "@/app/ui/services/BigDataAnalytics/WhatGain";
 import HowWeBuild from "@/app/ui/services/BigDataAnalytics/HowWeBuild";
 import WhyUs from "@/app/ui/services/BigDataAnalytics/WhyUs";
 
+export const metadata = {
+  title: "Big Data Analytics Services",
+};
+
 function page() {
   return (
     <div className="overflow-x-hidden">

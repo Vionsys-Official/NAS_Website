@@ -5,6 +5,10 @@ import AiMLSec3 from '@/app/ui/services/aimlV/aiMLSec3';
 import AiMLSec4 from '@/app/ui/services/aimlV/aiMLSec4';
 import FaqAIV from '@/app/ui/services/aimlV/faqV';
 
+export const metadata = {
+  title: "Al and ML Solutions",
+};
+
 
 const aiAndml = () => {
   return (

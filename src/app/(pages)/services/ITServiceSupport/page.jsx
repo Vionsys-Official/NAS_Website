@@ -6,6 +6,11 @@ import GetStart2 from "@/components/ui/GetStart2";
 
 import React from "react";
 
+export const metadata = {
+  title: "It Service Support",
+};
+
+
 const page = () => {
   return (
     <div className="overflow-x-hidden">

@@ -7,6 +7,11 @@ import CrmFaq from '@/app/ui/services/crm/CrmFaq'
 import CrmStart from '@/app/ui/services/crm/crmStart'
 import Imag from '@/app/ui/services/crm/Imag'
 
+export const metadata = {
+  title: "CRM IT Solutions",
+};
+
+
 const page = () => {
   return (
     <div id='mission'>
