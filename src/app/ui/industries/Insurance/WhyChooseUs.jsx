@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const WhyChooseUs = () => {
   return (
     <div className="text-center overflow-x-hidden">
-      <h6 className="md:text-HMain text-HMain-sm font-bold mt-5 pt-4 ">
+      <h6 className="md:text-HMain text-HMain-sm font-bold mt-5 pt-4 text-blue950">
         Why choose us ???
       </h6>
 
@@ -17,7 +17,7 @@ const WhyChooseUs = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.8 }}
-            className="relative p-4 my-6 text-gray-800 bg-blue3 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto"
+            className="relative p-4 my-6 text-gray-800 bg-blue6 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto"
           >
             <h3 class="md:text-HSub text-HSub-sm font-semibold lg:text-xl">
               Industry Expertise
@@ -31,7 +31,7 @@ const WhyChooseUs = () => {
             <div className="flex items-center justify-center w-6 h-full">
               <div className="w-1 h-full bg-red-300 rounded-t-full bg-gradient-to-b from- to-red-300"></div>
             </div>
-            <div class="absolute w-6 h-6 -mt-3 bg-blue3 border-4 border-red-500 rounded-full top-1/2"></div>
+            <div class="absolute w-6 h-6 -mt-3 bg-blue6 border-4 border-red-500 rounded-full top-1/2"></div>
           </div>
         </div>
 
@@ -40,14 +40,14 @@ const WhyChooseUs = () => {
             <div className="flex items-center justify-center w-6 h-full">
               <div className="w-1 h-full bg-red-300"></div>
             </div>
-            <div className="absolute w-6 h-6 -mt-3   bg-blue3 border-4 border-red-500 rounded-full top-1/2"></div>
+            <div className="absolute w-6 h-6 -mt-3   bg-blue6 border-4 border-red-500 rounded-full top-1/2"></div>
           </div>
           <motion.div
             variants={fadein("right", 0.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.8 }}
-            className="relative p-4 my-6 text-gray-800  bg-blue3 rounded-xl col-start-6 col-end-10 mr-auto"
+            className="relative p-4 my-6 text-gray-800  bg-blue6 rounded-xl col-start-6 col-end-10 mr-auto"
           >
             <h3 className="md:text-HSub text-HSub-sm font-semibold lg:text-xl">
               Innovative Technology
@@ -65,7 +65,7 @@ const WhyChooseUs = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.8 }}
-            className="relative p-4 my-6 text-gray-800  bg-blue3 border-red-500 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto"
+            className="relative p-4 my-6 text-gray-800  bg-blue6 border-red-500 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto"
           >
             <h3 className="md:text-HSub text-HSub-sm font-semibold lg:text-xl">
               Customer-Centric Approach
@@ -79,7 +79,7 @@ const WhyChooseUs = () => {
             <div className="flex items-center justify-center w-6 h-full">
               <div className="w-1 h-full bg-red-300 rounded-t-full bg-gradient-to-b from-red-400 to-red-300"></div>
             </div>
-            <div className="absolute w-6 h-6 -mt-3  bg-blue3 border-4 border-red-500 rounded-full top-1/2"></div>
+            <div className="absolute w-6 h-6 -mt-3  bg-blue6 border-4 border-red-500 rounded-full top-1/2"></div>
           </div>
         </div>
 
@@ -88,14 +88,14 @@ const WhyChooseUs = () => {
             <div className="flex items-center justify-center w-6 h-full">
               <div className="w-1 h-full bg-red-300"></div>
             </div>
-            <div className="absolute w-6 h-6 -mt-3  bg-blue3 border-4 border-red-500 rounded-full top-1/2"></div>
+            <div className="absolute w-6 h-6 -mt-3  bg-blue6 border-4 border-red-500 rounded-full top-1/2"></div>
           </div>
           <motion.div
             variants={fadein("right", 0.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.8 }}
-            className="relative p-4 my-6 text-gray-800  bg-blue3 rounded-xl col-start-6 col-end-10 mr-auto"
+            className="relative p-4 my-6 text-gray-800  bg-blue6 rounded-xl col-start-6 col-end-10 mr-auto"
           >
             <h3 className="md:text-HSub text-HSub-sm font-semibold lg:text-xl">
               Exceptional Support

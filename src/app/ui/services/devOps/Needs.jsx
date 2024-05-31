@@ -1,4 +1,7 @@
+'use client'
 import React from 'react'
+import { fadein } from '@/components/ui/variants';
+import { motion } from 'framer-motion';
 import need1 from '/public/assets/services/DevOps/need1.jpg'
 import need2 from '/public/assets/services/DevOps/need2.jpg'
 import need3 from '/public/assets/services/DevOps/need3.jpg'
@@ -26,13 +29,18 @@ const Needs = () => {
 
     return (
         <div className="px-4 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-14">
-            <div className="max-w-xl mb-7 md:mx-auto sm:text-center lg:max-w-2xl md:mb-10">
+            <motion.div
+                variants={fadein("up", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.8 }}
+                className="max-w-xl mb-7 md:mx-auto sm:text-center lg:max-w-2xl md:mb-10">
                 <div>
-                    <p className="inline-block px-3 mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
+                    <p className="inline-block px-3 mb-4 text-xs font-semibold tracking-wider text-blue2 uppercase rounded-full bg-teal-accent-400">
                         Discover DevOps
                     </p>
                 </div>
-                <h2 className="max-w-lg md:mb-6 mb-3 md:text-Heading text-Heading-sm font-bold leading-none tracking-tight text-gray-900 md:mx-auto">
+                <h2 className="max-w-lg md:mb-6 mb-3 md:text-Heading text-Heading-sm font-bold leading-none tracking-tight text-blue950 md:mx-auto">
                     <span className="relative inline-block">
                         <svg
                             viewBox="0 0 52 24"
@@ -63,7 +71,7 @@ const Needs = () => {
                 <p className="text-base text-gray-800 md:text-lg">
                     DevOps integrates development and operations teams to enhance collaboration, automate processes and accelerate software delivery, essential for staying competitive in today's fast-paced market. It enables your business to:
                 </p>
-            </div>
+            </motion.div>
             <div className="grid max-w-screen-lg gap-8 lg:grid-cols-2 sm:mx-auto">
                 <div className="grid grid-cols-2 gap-5">
                     <Image
@@ -84,10 +92,16 @@ const Needs = () => {
                 </div>
                 <div className="flex flex-col justify-center">
                     {need.map((item) => (
-                        <div key={item.id} className="pb-4 mb-4 border-b">
+                        <motion.div
+                            variants={fadein("up", 0.2)}
+                            initial="hidden"
+                            whileInView={"show"}
+                            viewport={{ once: false, amount: 0.8 }}
+                            key={item.id}
+                            className="pb-4 mb-4 border-b">
                             <h6 className="mb-2 font-semibold leading-5">{item.title}</h6>
                             <p className="text-sm text-gray-900">{item.para}</p>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>

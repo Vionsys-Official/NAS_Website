@@ -16,7 +16,15 @@ const Tools = () => {
           Product Development Tools
         </motion.h2>
       </div>
-      <div className="grid gap-3 mb-8 md:grid-cols-2 lg:grid-cols-3">
+      <motion.div
+              initial={{ opacity: 0, scale: 0.7 }} //X:100
+              whileInView={{ opacity: 1, scale: 1 }} //y:100
+              transition={{
+                delay: 0.2,
+                scale: { type: "spring", stiffness: 30 },
+                opacity: { duration: 0.6 },
+                ease: "easeInOut",
+              }} className="grid gap-3 mb-8 md:grid-cols-2 lg:grid-cols-3">
         <div className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2 flex flex-col gap-2">
           <h6 className="mb-2 font-semibold leading-5 md:text-CardHeading text-CardHeading-sm">
             Project Management & Collaboration
@@ -107,7 +115,7 @@ const Tools = () => {
             3. Jest
           </h2>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

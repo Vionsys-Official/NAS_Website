@@ -1,7 +1,9 @@
-import React from 'react';
+'use client'
+import React from 'react'
+import { motion } from 'framer-motion';
 import SoftDev from '/public/assets/services/SoftDev/SoftDev1.jpg';
 import Image from 'next/image';
-import Link from 'next/link';
+import Button2 from '@/components/ui/Button2';
 
 const Hero = () => {
   return (
@@ -17,31 +19,35 @@ const Hero = () => {
         </svg>
         <Image src={SoftDev} alt=''/>
       </div>
-      <div className="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
+      <motion.div
+              initial={{ opacity: 0, scale: 0.7 }} //X:100
+              whileInView={{ opacity: 1, scale: 1 }} //y:100
+              transition={{
+                delay: 0.2,
+                scale: { type: "spring", stiffness: 30 },
+                opacity: { duration: 0.6 },
+                ease: "easeInOut",
+              }} 
+              className="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
         <div className="md:mb-16 md:py-4 py-2 lg:py-32 lg:max-w-lg lg:pr-5">
-          <p className="inline-block md:mb-4 mb-2 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">Welcome to
+          <p className="inline-block md:mb-4 mb-2 text-xs font-semibold tracking-wider text-blue2 uppercase rounded-full bg-teal-accent-400">Welcome to
           </p>
-          <h2 className="mb-5 md:text-HMain text-HMain-sm font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none leading-10">
+          <h2 className="mb-5 md:text-HMain text-HMain-sm font-bold tracking-tight text-blue950 sm:text-4xl sm:leading-none leading-10">
             NAS Software{' '}
             <br className="hidden md:block" />
              Development{' '}
-            <span className="inline-block text-purple-400">
+            <span className="inline-block text-blue2">
               Solutions
             </span>
           </h2>
-          <p className="pr-5 mb-5 md:text-para text-para-sm text-gray-800 md:text-lg">
+          <p className="pr-5 mb-7 md:text-para text-para-sm text-gray-800 md:text-lg">
           We transform your ideas into reality. Our team of expert developers, designers and project managers is dedicated to delivering cutting-edge software solutions tailored to your unique business needs.
           </p>
           <div className="flex items-center">
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center text-lg h-12 px-6 mr-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-purple-400 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
-            >
-              Get started
-            </Link>
+            <Button2/>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   )
 }

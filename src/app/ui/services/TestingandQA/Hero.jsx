@@ -1,7 +1,5 @@
 "use client";
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
 import { fadein } from "@/components/ui/variants";
 import { motion } from "framer-motion";
 function Hero() {
@@ -37,7 +35,7 @@ function Hero() {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.8 }}
-            className="mb-6 md:text-Para text-Para-sm font-thin tracking-wide text-gray-300 "
+            className="mb-6 md:text-xl text-Para-sm font-thin tracking-wide text-gray-300 "
           >
             We transform software testing and quality assurance through a
             customized approach that blends cutting-edge innovation with deep

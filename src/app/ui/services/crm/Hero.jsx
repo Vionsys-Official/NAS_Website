@@ -1,8 +1,10 @@
+'use client'
 import React from 'react'
-import Button from '@/components/ui/Button';
+import { fadein } from '@/components/ui/variants';
+import { motion } from 'framer-motion';
 import CRM from '/public/assets/services/Crm/CRM.jpg'
-import Link from 'next/link';
 import Image from 'next/image';
+import Button2 from '@/components/ui/Button2';
 
 const Hero = () => {
   return (
@@ -24,7 +26,11 @@ const Hero = () => {
         </svg>
         <div className="relative px-4 py-16 mx-auto overflow-hidden sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
           <div className="flex flex-col items-center justify-between xl:flex-row">
-            <div className="w-full max-w-xl md:mb-12 mb-6 xl:mb-0 xl:pr-16 xl:w-7/12">
+            <motion.div
+              variants={fadein("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.8 }} className="w-full max-w-xl md:mb-12 mb-6 xl:mb-0 xl:pr-16 xl:w-7/12">
               <h2 className="max-w-lg mb-6 md:text-HMain text-HMain-sm font-bold tracking-tight text-white sm:leading-none">
                 Comprehensive CRM Services <br className="hidden md:block" />
                 for Your Business
@@ -32,22 +38,27 @@ const Hero = () => {
               <p className="max-w-xl md:mb-4 md:text-HSub text-HSub-sm text-gray-200">
                 We offer robust Customer Relationship Management (CRM) services designed to help you manage your customer interactions more effectively, streamline your operations and drive business growth.
               </p>
-            </div>
-            <div className="w-full max-w-xl xl:px-8 xl:w-5/12">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.7 }} //X:100
+              whileInView={{ opacity: 1, scale: 1 }} //y:100
+              transition={{
+                delay: 0.2,
+                scale: { type: "spring", stiffness: 30 },
+                opacity: { duration: 0.6 },
+                ease: "easeInOut",
+              }} className="w-full max-w-xl xl:px-8 xl:w-5/12">
               <div className="bg-white rounded shadow-2xl md:p-10 p-2">
                 <div className="max-w-xl md:mx-auto sm:text-center lg:max-w-2xl">
-                  <h1 className='md:text-HMain text-HMain-sm font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none leading-10 text-center'>CRM</h1>
+                  <h1 className='md:text-HMain text-HMain-sm font-bold tracking-tight text-blue950 sm:text-4xl sm:leading-none leading-10 text-center'>CRM</h1>
                   <p className="text-base text-gray-800 md:text-lg md:py-4 py-2 md:text-justify text-start">CRM (Customer Relationship Management) is a technology for managing all your company’s relationships and interactions with current and potential customers. </p>
                   <p className="text-base text-gray-800 md:text-lg md:py-4 py-2 md:text-justify text-start">The goal is simple: to improve business relationships to grow your business. A CRM system helps companies stay connected to customers, streamline processes and improve profitability.</p>
-                  <Link
-                    href="/contact"
-                    className="inline-flex items-center justify-center text-lg h-12 px-6 mr-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-purple-400 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
-                  >
-                    Get started
-                  </Link>
+                  <div className='flex flex-col justify-center items-center'>
+                    <Button2/>
+                  </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

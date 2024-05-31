@@ -46,7 +46,11 @@ const Steps = () => {
             </button>
           </motion.div>
           <div className="grid gap-6 py-4 text-center sm:grid-cols-2 col-span-full md:col-span-4 md:text-left">
-            <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
+            <motion.div
+              variants={fadein("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.8 }} className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -70,8 +74,12 @@ const Steps = () => {
                 into concrete concepts, ensuring they address market needs and
                 have potential for development.
               </p>
-            </div>
-            <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
+            </motion.div>
+            <motion.div
+              variants={fadein("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.8 }} className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -95,8 +103,12 @@ const Steps = () => {
                 through market research, surveys, and validation with target
                 customers.
               </p>
-            </div>
-            <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
+            </motion.div>
+            <motion.div
+              variants={fadein("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.8 }} className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -120,8 +132,12 @@ const Steps = () => {
                 preferences to refine the product concept and identify market
                 opportunities.
               </p>
-            </div>
-            <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
+            </motion.div>
+            <motion.div
+              variants={fadein("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.8 }} className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -144,8 +160,12 @@ const Steps = () => {
                 Creating prototypes of the product to test functionality,
                 usability, and gather feedback for iterative improvements.
               </p>
-            </div>
-            <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
+            </motion.div>
+            <motion.div
+              variants={fadein("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.8 }} className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -168,8 +188,12 @@ const Steps = () => {
                 Planning the production process, supply chain logistics, and
                 marketing strategy for the launch of the product.
               </p>
-            </div>
-            <div className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
+            </motion.div>
+            <motion.div
+              variants={fadein("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.8 }} className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -194,7 +218,7 @@ const Steps = () => {
                 demand while monitoring and adjusting strategies for optimal
                 growth.
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

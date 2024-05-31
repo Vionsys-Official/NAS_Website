@@ -16,7 +16,7 @@ const Hero = () => {
       <div className="relative w-full -top-16 h-full flex justify-center items-center  ">
         <div className="w-[50%] h-32  flex justify-center items-center bg-white  rounded shadow">
           <motion.p
-            variants={fadein("left", 0.2)}
+            variants={fadein("up", 0.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.8 }}

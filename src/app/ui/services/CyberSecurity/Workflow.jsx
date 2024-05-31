@@ -3,6 +3,7 @@ import React from "react";
 import { fadein } from "@/components/ui/variants";
 import { motion } from "framer-motion";
 const Workflow = () => {
+
   const sections = [
     {
       id: 1,
@@ -59,31 +60,36 @@ const Workflow = () => {
       description: "Meet relevant laws, regulations, and standards.",
     },
   ];
+
   return (
     <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
-      <div className="max-w-xl mb-10 md:mx-auto flex flex-col justify-center items-center text-center lg:max-w-2xl md:mb-6">
-        <motion.h2
-          variants={fadein("up", 0.1)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.8 }}
+      <motion.div
+        variants={fadein("up", 0.1)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.8 }} className="max-w-xl mb-10 md:mx-auto flex flex-col justify-center items-center text-center lg:max-w-2xl md:mb-6">
+        <h2
           className="flex max-w-lg mb-6 font-sans md:text-Heading text-Heading-sm font-bold leading-none tracking-tight text-blue950 "
         >
           <span className="relative inline-block"></span> Workflow of Cyber
           Security
-        </motion.h2>
+        </h2>
         <p className=" text-gray-800 md:text-Para text-Para-sm">
           Discover comprehensive Cyber Security Solutions tailored to your
           needs, fortifying your defenses and shielding your organization from
           evolving threats
         </p>
-      </div>
+      </motion.div>
       <div className="relative grid gap-8 row-gap-5 mb-8 md:row-gap-8 md:grid-cols-4 sm:grid-cols-2 py-4 px-6">
         <div className="absolute inset-0 flex items-center justify-center sm:hidden lg:flex">
           <div className="w-px h-full bg-gray-300 lg:w-full lg:h-px" />
         </div>
         {sections.map((item) => (
-          <div
+          <motion.div
+            variants={fadein("up", 0.1)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.8 }}
             key={item.id}
             className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2"
           >
@@ -95,7 +101,7 @@ const Workflow = () => {
             <p className="md:text-Para text-Para-sm text-gray-800">
               {item.description}
             </p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

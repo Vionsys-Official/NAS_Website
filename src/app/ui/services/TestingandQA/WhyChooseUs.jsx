@@ -4,8 +4,11 @@ import { fadein } from "@/components/ui/variants";
 import { motion } from "framer-motion";
 import Expertise from "/public/assets/services/TestingandQA/expertise.jpg";
 import CustomizedSolutions from "/public/assets/services/TestingandQA/customizedsolutions.jpg";
+import Quality from "/public/assets/services/TestingandQA/Quality.jpeg";
+import Approach from "/public/assets/services/TestingandQA/Approach.jpeg";
 
 import Image from "next/image";
+import Link from "next/link";
 const WhyChooseUs = () => {
   return (
     <div className="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
@@ -39,7 +42,7 @@ const WhyChooseUs = () => {
         </motion.p>
       </div>
       <div className="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2">
-        <a href="/" aria-label="View Item">
+        <Link href="/" aria-label="View Item">
           <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
             <Image
               src={Expertise}
@@ -59,12 +62,12 @@ const WhyChooseUs = () => {
               </p>
             </div>
           </div>
-        </a>
-        <a href="/" aria-label="View Item">
+        </Link>
+        <Link href="/" aria-label="View Item">
           <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
-            <img
+            <Image
               className="object-cover w-full h-56 md:h-64 xl:h-80"
-              src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+              src={Approach}
               alt=""
             />
             <div className="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
@@ -80,8 +83,8 @@ const WhyChooseUs = () => {
               </p>
             </div>
           </div>
-        </a>
-        <a href="/" aria-label="View Item">
+        </Link>
+        <Link href="/" aria-label="View Item">
           <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
             <Image
               className="object-cover w-full h-56 md:h-64 xl:h-80"
@@ -102,12 +105,12 @@ const WhyChooseUs = () => {
               </p>
             </div>
           </div>
-        </a>
-        <a href="/" aria-label="View Item">
+        </Link>
+        <Link href="/" aria-label="View Item">
           <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
-            <img
+            <Image
               className="object-cover w-full h-56 md:h-64 xl:h-80"
-              src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+              src={Quality}
               alt=""
             />
             <div className="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
@@ -124,7 +127,7 @@ const WhyChooseUs = () => {
               </p>
             </div>
           </div>
-        </a>
+        </Link>
       </div>
     </div>
   );

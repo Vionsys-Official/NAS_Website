@@ -1,4 +1,7 @@
-import React from 'react';
+'use client'
+import React from 'react'
+import { fadein } from '@/components/ui/variants';
+import { motion } from 'framer-motion';
 import Expert from "/public/assets/services/CloudComputing/Expert.jpg";
 import Innovation from "/public/assets/services/CloudComputing/Innovation.jpg";
 import Solution from "/public/assets/services/CloudComputing/Solution.jpeg";
@@ -8,8 +11,12 @@ import Image from 'next/image';
 const Choose = () => {
     return (
         <div className="px-4 md:py-12 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-            <div className="flex flex-col mb-4 lg:justify-between lg:flex-row md:mb-6">
-                <h2 className="max-w-lg mb-5 md:text-Heading text-Heading-sm font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none md:mb-6 group">
+            <motion.div
+                variants={fadein("up", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.8 }} className="flex flex-col mb-4 lg:justify-between lg:flex-row md:mb-6">
+                <h2 className="max-w-lg mb-5 md:text-Heading text-Heading-sm font-bold tracking-tight text-blue950 sm:text-4xl sm:leading-none md:mb-6 group">
                     <span className="inline-block mb-1 sm:mb-4">
                         Why to Choose NAS
                     </span>
@@ -18,8 +25,12 @@ const Choose = () => {
                 <p className="text-gray-800 md:text-lg text-base lg:max-w-xl">
                     We pride ourselves on delivering exceptional cloud computing services tailored to your business needs. With a focus on expertise, support, innovation and proven success, here's why you should choose us:
                 </p>
-            </div>
-            <div className="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2">
+            </motion.div>
+            <motion.div
+                variants={fadein("up", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.8 }} className="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2">
                 <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
                     <Image src={Expert} alt='' className='object-cover w-full h-56 md:h-64 xl:h-80' />
                     <div className="absolute inset-0 flex flex-col items-center justify-center px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
@@ -72,7 +83,7 @@ const Choose = () => {
                         </p>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }

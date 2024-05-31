@@ -7,27 +7,32 @@ import { motion } from "framer-motion";
 const WhatWeDo = () => {
   return (
     <div className="w-full flex flex-col">
-      <div className="flex flex-col w-full text-center justify-center py-4">
-        <h1 className="md:text-Heading text-Heading-sm text-blue950  font-bold ">
-          What Do We Do?
-        </h1>
-      </div>
-      <div className=" flex text-center justify-center ">
-        <div className="flex flex-col gap-4 text-center justify-center md:w-2/3 w-full md:px-0 px-2">
-          <p className="md:text-SubHeading text-SubHeading-sm font-semibold   ">
-            In today’s digital world, data is rapidly growing. Big Data
-            Analytics is changing business practices and technology, which in
-            turn impacts the way companies do business.
-          </p>
-          <p className="md:text-Para text-Para-sm text-gray-800">
-            We help you establish a strategy and define the right technologies
-            according to your requirements and budget. Our experienced analytics
-            ensure that your technology fits with your investments in data
-            warehouse and BI.
-          </p>
+      <motion.div
+      variants={fadein("down", 0.2)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{ once: false, amount: 0.8 }}>
+        <div className="flex flex-col w-full text-center justify-center py-4">
+          <h1 className="md:text-Heading text-Heading-sm text-blue950  font-bold ">
+            What Do We Do?
+          </h1>
         </div>
-        <div></div>
-      </div>
+        <div className=" flex text-center justify-center ">
+          <div className="flex flex-col gap-4 text-center justify-center md:w-2/3 w-full md:px-0 px-2">
+            <p className="md:text-SubHeading text-SubHeading-sm font-semibold   ">
+              In today’s digital world, data is rapidly growing. Big Data
+              Analytics is changing business practices and technology, which in
+              turn impacts the way companies do business.
+            </p>
+            <p className="md:text-Para text-Para-sm text-gray-800">
+              We help you establish a strategy and define the right technologies
+              according to your requirements and budget. Our experienced analytics
+              ensure that your technology fits with your investments in data
+              warehouse and BI.
+            </p>
+          </div>
+        </div>
+      </motion.div>
       <div className="flex justify-center items-center md:py-8 py-6">
         <div className="md:w-24 md:h-24 w-12 h-12 rounded-full bg-blue3 flex items-center justify-center">
           <FaArrowDownLong className="h-20 w-6" />

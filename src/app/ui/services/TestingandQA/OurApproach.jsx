@@ -27,7 +27,15 @@ const OurApproach = () => {
           potential issues at every phase of development.
         </motion.p>
       </div>
-      <div className="px-4 py-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 md:py-12">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.7 }} //X:100
+        whileInView={{ opacity: 1, scale: 1 }} //y:100
+        transition={{
+          delay: 0.2,
+          scale: { type: "spring", stiffness: 30 },
+          opacity: { duration: 0.6 },
+          ease: "easeInOut",
+        }} className="px-4 py-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 md:py-12">
         <div className="grid row-gap-8 sm:row-gap-0 grid-cols-2 md:grid-cols-3">
           <div className="md:p-8 p-2 border-b sm:border-r">
             <div className="max-w-md text-center">
@@ -114,7 +122,7 @@ const OurApproach = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
