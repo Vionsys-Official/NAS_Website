@@ -1,11 +1,12 @@
 "use client";
 import React, { useState } from "react";
-import { Button } from "@/components/ui/Button.jsx";
 import Form from "@/../public/assets/contact/Form.jpg";
 import Image from "next/image";
 import { ContactSchema } from "../../../schema/ContactUsSchema"; // Importing the Yup schema
 import axios from "axios";
-import { Toaster, toast } from 'react-hot-toast'; // Importing Toaster and toast
+import { Toaster, toast } from "react-hot-toast"; // Importing Toaster and toast
+import { fadein } from '@/components/ui/variants';
+import { motion } from 'framer-motion';
 
 const Forms = () => {
   const initialFormData = {
@@ -60,9 +61,14 @@ const Forms = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2">
         <div className="flex items-center justify-center px-4 py-10 sm:px-6 sm:py-16 lg:px-8">
           <div className="xl:mx-auto lg:w-[50vw] w-full ">
-            <h2 className="text-3xl font-bold text-center leading-tight text-black sm:text-4xl py-6">
+            <motion.h2
+            variants={fadein("down", 0.1)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.5 }}
+            className="text-3xl font-bold text-center leading-tight text-black sm:text-4xl py-6">
               Get In Touch
-            </h2>
+            </motion.h2>
 
             <form className="max-w-[90%] mx-auto" onSubmit={handleSubmit}>
               {/* FirstName, LastName, Email, Contact No */}
@@ -257,7 +263,12 @@ const Forms = () => {
 
               {/* button */}
               <div className="flex justify-center items-center">
-                <Button />
+                <button
+                  className="relative px-6 py-2 text-white hover:border-white hover:border  rounded-lg bg-green-500  isolation-auto z-10
+        before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-blue-950 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-500"
+                >
+                  Submit
+                </button>
               </div>
             </form>
           </div>
