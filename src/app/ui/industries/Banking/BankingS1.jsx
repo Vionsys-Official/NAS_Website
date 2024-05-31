@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import h1 from '/public/assets/industries/Banking/h1.jpg'
 import Image from 'next/image'
@@ -5,6 +6,9 @@ import Link from 'next/link'
 import dataanalytics from '/public/assets/industries/Banking/DataAnalytics.jpg'
 import cyber from '/public/assets/industries/Banking/cybersec.jpg'
 import custexp from '/public/assets/industries/Banking/customerexp.jpg'
+import { fadein } from '@/components/ui/variants'
+import { motion } from 'framer-motion'
+
 
 
 function BankingS1() {
@@ -50,7 +54,7 @@ function BankingS1() {
       </div>
     
     <div className="grid gap-5 row-gap-5 mb-8 lg:grid-cols-4 sm:grid-cols-2">
-        <Link
+    <Link
           href="/"
           aria-label="View Item"
           className="inline-block overflow-hidden duration-300 transform bg-white rounded shadow-sm hover:-translate-y-2"
