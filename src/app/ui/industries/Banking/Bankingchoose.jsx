@@ -1,4 +1,8 @@
+"use client"
+import { fadein } from '@/components/ui/variants'
+import { motion } from 'framer-motion'
 import React from 'react'
+
 
 function Bankingchoose() {
   return (
@@ -56,7 +60,11 @@ function Bankingchoose() {
               </svg>
             </div>
           </div>
-          <div>
+          <motion.div
+           variants={fadein("left", 0.2)}
+           initial="hidden"
+           whileInView={"show"}
+           viewport={{ once: false, amount: 0.8 }}>
             <h6 className="mb-3 text-xl font-bold leading-5 sm:text-CardHeading-sm md:text-CardHeading">
             Expertise and Experience
             </h6>
@@ -64,7 +72,7 @@ function Bankingchoose() {
             The company should have extensive experience in the financial and banking sectors, understanding the unique challenges and requirements of these industries.
 
             </p>
-          </div>
+          </motion.div>
         </div>
         <div className="flex flex-col max-w-md sm:flex-row">
           <div className="mb-4 mr-4">
@@ -84,14 +92,18 @@ function Bankingchoose() {
               </svg>
             </div>
           </div>
-          <div>
+          <motion.div
+           variants={fadein("left", 0.2)}
+           initial="hidden"
+           whileInView={"show"}
+           viewport={{ once: false, amount: 0.8 }}>
             <h6 className="mb-3 text-xl font-bold leading-5 sm:text-CardHeading-sm md:text-CardHeading">
             Innovative Solutions
             </h6>
             <p className="md:text-Para sm:text-Para-sm text-gray-900">
             The ability to leverage the latest technological advancements, such as AI, blockchain, and cloud computing, to provide innovative and future-proof solutions.
             </p>
-          </div>
+          </motion.div>
         </div>
         <div className="flex flex-col max-w-md sm:flex-row">
           <div className="mb-4 mr-4">
@@ -111,14 +123,18 @@ function Bankingchoose() {
               </svg>
             </div>
           </div>
-          <div>
+          <motion.div
+           variants={fadein("left", 0.2)}
+           initial="hidden"
+           whileInView={"show"}
+           viewport={{ once: false, amount: 0.8 }}>
             <h6 className="mb-3 text-xl font-bold leading-5 sm:text-CardHeading-sm md:text-CardHeading">
             Customer-Centric Focus
             </h6>
             <p className="md:text-Para sm:text-Para-sm text-gray-900">
             Offering dedicated, responsive customer support to address issues and provide assistance promptly.
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className="space-y-6 sm:px-16">
@@ -140,7 +156,11 @@ function Bankingchoose() {
               </svg>
             </div>
           </div>
-          <div>
+          <motion.div
+           variants={fadein("left", 0.2)}
+           initial="hidden"
+           whileInView={"show"}
+           viewport={{ once: false, amount: 0.8 }}>
             <h6 className="mb-3 text-xl font-bold leading-5 sm:text-CardHeading-sm md:text-CardHeading">
             Reliability and Trustworthiness
             </h6>
@@ -149,7 +169,7 @@ function Bankingchoose() {
             Clear and honest communication regarding project timelines, costs, and potential challenges.
 
             </p>
-          </div>
+          </motion.div>
         </div>
         <div className="flex flex-col max-w-md sm:flex-row">
           <div className="mb-4 mr-4">
@@ -169,14 +189,18 @@ function Bankingchoose() {
               </svg>
             </div>
           </div>
-          <div>
+          <motion.div
+           variants={fadein("left", 0.2)}
+           initial="hidden"
+           whileInView={"show"}
+           viewport={{ once: false, amount: 0.8 }}>
             <h6 className="mb-3 text-xl font-bold leading-5 sm:text-CardHeading-sm md:text-CardHeading">
             Cost-Effective Solutions
             </h6>
             <p className=" text-gray-900 md:text-Para sm:text-Para-sm">
             Delivering high-quality services and solutions that provide excellent value for your investment. Implementing efficient processes that reduce costs and enhance operational efficiency.
             </p>
-          </div>
+          </motion.div>
         </div>
         <div className="flex flex-col max-w-md sm:flex-row">
           <div className="mb-4 mr-4">
@@ -196,14 +220,18 @@ function Bankingchoose() {
               </svg>
             </div>
           </div>
-          <div>
+          <motion.div
+           variants={fadein("left", 0.2)}
+           initial="hidden"
+           whileInView={"show"}
+           viewport={{ once: false, amount: 0.8 }}>
             <h6 className="mb-3 text-xl font-bold leading-5 sm:text-CardHeading-sm md:text-CardHeading">
             Commitment to Continuous Improvement
             </h6>
             <p className=" text-gray-900 md:text-Para sm:text-Para-sm">
             Keeping up with technological advancements and industry trends to ensure that solutions remain relevant and effective.
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
