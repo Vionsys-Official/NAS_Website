@@ -8,7 +8,7 @@ function Bankingchoose() {
   return (
     <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8  sm:py-10">
     <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 sm:py-2">
-      <h2 className="max-w-lg mb-6 font-sans sm:text-MainHeading md:text-MainHeading font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+      <h2 className="max-w-lg mb-6 font-sans sm:text-MainHeading md:text-MainHeading font-bold leading-none tracking-tight text-blue950 sm:text-4xl md:mx-auto">
         <span className="relative inline-block">
           <svg
             viewBox="0 0 52 24"
@@ -61,7 +61,7 @@ function Bankingchoose() {
             </div>
           </div>
           <motion.div
-           variants={fadein("left", 0.2)}
+           variants={fadein("right", 0.2)}
            initial="hidden"
            whileInView={"show"}
            viewport={{ once: false, amount: 0.8 }}>
@@ -93,10 +93,11 @@ function Bankingchoose() {
             </div>
           </div>
           <motion.div
-           variants={fadein("left", 0.2)}
+           variants={fadein("right", 0.2)}
            initial="hidden"
            whileInView={"show"}
-           viewport={{ once: false, amount: 0.8 }}>
+           viewport={{ once: false, amount: 0.8 }}
+          >
             <h6 className="mb-3 text-xl font-bold leading-5 sm:text-CardHeading-sm md:text-CardHeading">
             Innovative Solutions
             </h6>
@@ -124,7 +125,7 @@ function Bankingchoose() {
             </div>
           </div>
           <motion.div
-           variants={fadein("left", 0.2)}
+           variants={fadein("right", 0.2)}
            initial="hidden"
            whileInView={"show"}
            viewport={{ once: false, amount: 0.8 }}>
@@ -157,7 +158,7 @@ function Bankingchoose() {
             </div>
           </div>
           <motion.div
-           variants={fadein("left", 0.2)}
+           variants={fadein("right", 0.2)}
            initial="hidden"
            whileInView={"show"}
            viewport={{ once: false, amount: 0.8 }}>
@@ -171,7 +172,12 @@ function Bankingchoose() {
             </p>
           </motion.div>
         </div>
-        <div className="flex flex-col max-w-md sm:flex-row">
+        <motion.div
+        variants={fadein("right", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.8 }}
+         className="flex flex-col max-w-md sm:flex-row">
           <div className="mb-4 mr-4">
             <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
               <svg
@@ -190,7 +196,7 @@ function Bankingchoose() {
             </div>
           </div>
           <motion.div
-           variants={fadein("left", 0.2)}
+           variants={fadein("right", 0.2)}
            initial="hidden"
            whileInView={"show"}
            viewport={{ once: false, amount: 0.8 }}>
@@ -201,7 +207,7 @@ function Bankingchoose() {
             Delivering high-quality services and solutions that provide excellent value for your investment. Implementing efficient processes that reduce costs and enhance operational efficiency.
             </p>
           </motion.div>
-        </div>
+        </motion.div>
         <div className="flex flex-col max-w-md sm:flex-row">
           <div className="mb-4 mr-4">
             <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
@@ -221,7 +227,7 @@ function Bankingchoose() {
             </div>
           </div>
           <motion.div
-           variants={fadein("left", 0.2)}
+           variants={fadein("right", 0.2)}
            initial="hidden"
            whileInView={"show"}
            viewport={{ once: false, amount: 0.8 }}>
