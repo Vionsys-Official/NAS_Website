@@ -1,5 +1,9 @@
+"use client";
 import React from "react";
-import {Button} from "@/components/ui/Button";
+import { Button } from "@/components/ui/Button";
+import { fadein } from "@/components/ui/variants";
+import { motion } from "framer-motion";
+
 const Sections = () => {
   return (
     <>
@@ -8,14 +12,26 @@ const Sections = () => {
         <div className="container px-4 md:px-6">
           <div className="space-y-6">
             <div className="space-y-2 text-center">
-              <h2 className="text-Heading-sm  font-bold tracking-tighter md:text-Heading">
+              <motion.h2
+                variants={fadein("right", 0.1)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                className="text-Heading-sm  font-bold tracking-tighter md:text-Heading"
+              >
                 How we can Help?
-              </h2>
-              <p className="mx-auto max-w-[700px] text-gray-500 text-SubHeading-sm md:text-SubHeading">
+              </motion.h2>
+              <motion.p
+                variants={fadein("left", 0.1)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                className="mx-auto max-w-[700px] text-gray-500 text-SubHeading-sm md:text-SubHeading"
+              >
                 Explore how transportation technologies are transforming the IT
                 industry, from fleet management and logistics optimization to
                 autonomous vehicles.
-              </p>
+              </motion.p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="rounded-lg bg-white p-6 shadow-lg dark:bg-gray-950">
@@ -29,6 +45,7 @@ const Sections = () => {
                   technologies.
                 </p>
               </div>
+
               <div className="rounded-lg bg-white p-6 shadow-lg dark:bg-gray-950">
                 <div className="flex items-center justify-center mb-4">
                   <ShipIcon className="h-8 w-8 text-gray-500 dark:text-gray-400" />
@@ -41,6 +58,7 @@ const Sections = () => {
                   delivery times with advanced logistics optimization tools.
                 </p>
               </div>
+
               <div className="rounded-lg bg-white p-6 shadow-lg dark:bg-gray-950">
                 <div className="flex items-center justify-center mb-4">
                   <CarIcon className="h-8 w-8 text-gray-500 dark:text-gray-400" />
@@ -53,6 +71,7 @@ const Sections = () => {
                   technology and its potential impact on the IT industry.
                 </p>
               </div>
+
               <div className="rounded-lg bg-white p-6 shadow-lg dark:bg-gray-950">
                 <div className="flex items-center justify-center mb-4">
                   <MapIcon className="h-8 w-8 text-gray-500 dark:text-gray-400" />
@@ -80,7 +99,13 @@ const Sections = () => {
                 Just do it
               </p>
             </div>
-            <h2 className="max-w-lg mb-6 font-sans text-Heading-sm font-bold text-gray-900 md:text-Heading md:mx-auto">
+            <motion.h2
+              variants={fadein("right", 0.1)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.5 }}
+              className="max-w-lg mb-6 font-sans text-Heading-sm font-bold text-gray-900 md:text-Heading md:mx-auto"
+            >
               <span className="relative inline-block">
                 <svg
                   viewBox="0 0 52 24"
@@ -105,18 +130,55 @@ const Sections = () => {
                   />
                 </svg>
                 <span className="relative">Key</span>
-              </span>{" "} Offerings
-            </h2>
-            <p className="text-SubHeading-sm text-gray-700 md:text-SubHeading">
+              </span>{" "}
+              Offerings
+            </motion.h2>
+            <motion.p
+              variants={fadein("up", 0.1)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.5 }}
+              className="text-SubHeading-sm text-gray-700 md:text-SubHeading"
+            >
               Technology plays a pivotal role in addressing the challenges faced
               by the logistics sector, driving transformation through innovative
               IT solutions.
-            </p>
+            </motion.p>
           </div>
 
           {/* List */}
           <div className="max-w-lg space-y-3 sm:mx-auto lg:max-w-xl">
-            <div className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
+            <motion.div
+              variants={fadein("left", 0.1)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.5 }}
+              className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110"
+            >
+              <div className="mr-2">
+                <svg
+                  className="w-6 h-6 text-deep-purple-accent-400 sm:w-8 sm:h-8"
+                  stroke="currentColor"
+                  viewBox="0 0 52 52"
+                >
+                  <polygon
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    fill="none"
+                    points="29 13 14 29 25 29 23 39 38 23 27 23"
+                  />
+                </svg>
+              </div>
+              <span className="text-gray-800">Advanced Route Optimization</span>
+            </motion.div>
+            <motion.div
+              variants={fadein("left", 0.1)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.5 }}
+              className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110"
+            >
               <div className="mr-2">
                 <svg
                   className="w-6 h-6 text-deep-purple-accent-400 sm:w-8 sm:h-8"
@@ -133,30 +195,16 @@ const Sections = () => {
                 </svg>
               </div>
               <span className="text-gray-800">
-              Advanced Route Optimization
+                Real-Time Tracking and Monitoring
               </span>
-            </div>
-            <div className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
-              <div className="mr-2">
-                <svg
-                  className="w-6 h-6 text-deep-purple-accent-400 sm:w-8 sm:h-8"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </div>
-              <span className="text-gray-800">
-              Real-Time Tracking and Monitoring
-              </span>
-            </div>
-            <div className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
+            </motion.div>
+            <motion.div
+              variants={fadein("left", 0.1)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.5 }}
+              className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110"
+            >
               <div className="mr-2">
                 <svg
                   className="w-6 h-6 text-deep-purple-accent-400 sm:w-8 sm:h-8"
@@ -173,8 +221,14 @@ const Sections = () => {
                 </svg>
               </div>
               <span className="text-gray-800">What we think, we become.</span>
-            </div>
-            <div className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
+            </motion.div>
+            <motion.div
+              variants={fadein("left", 0.1)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.5 }}
+              className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110"
+            >
               <div className="mr-2">
                 <svg
                   className="w-6 h-6 text-deep-purple-accent-400 sm:w-8 sm:h-8"
@@ -191,10 +245,16 @@ const Sections = () => {
                 </svg>
               </div>
               <span className="text-gray-800">
-              Inventory and Warehouse Management
+                Inventory and Warehouse Management
               </span>
-            </div>
-            <div className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
+            </motion.div>
+            <motion.div
+              variants={fadein("left", 0.1)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.5 }}
+              className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110"
+            >
               <div className="mr-2">
                 <svg
                   className="w-6 h-6 text-deep-purple-accent-400 sm:w-8 sm:h-8"
@@ -211,10 +271,16 @@ const Sections = () => {
                 </svg>
               </div>
               <span className="text-gray-800">
-              Predictive Analytics and Data Insights
+                Predictive Analytics and Data Insights
               </span>
-            </div>
-            <div className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
+            </motion.div>
+            <motion.div
+              variants={fadein("left", 0.1)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.5 }}
+              className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110"
+            >
               <div className="mr-2">
                 <svg
                   className="w-6 h-6 text-deep-purple-accent-400 sm:w-8 sm:h-8"
@@ -231,10 +297,16 @@ const Sections = () => {
                 </svg>
               </div>
               <span className="text-gray-800">
-              Supply Chain Visibility and Collaboration
+                Supply Chain Visibility and Collaboration
               </span>
-            </div>
-            <div className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
+            </motion.div>
+            <motion.div
+              variants={fadein("left", 0.1)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.5 }}
+              className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110"
+            >
               <div className="mr-2">
                 <svg
                   className="w-6 h-6 text-deep-purple-accent-400 sm:w-8 sm:h-8"
@@ -251,10 +323,16 @@ const Sections = () => {
                 </svg>
               </div>
               <span className="text-gray-800">
-              IoT and Telematics Solutions
+                IoT and Telematics Solutions
               </span>
-            </div>
-            <div className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
+            </motion.div>
+            <motion.div
+              variants={fadein("left", 0.1)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.5 }}
+              className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110"
+            >
               <div className="mr-2">
                 <svg
                   className="w-6 h-6 text-deep-purple-accent-400 sm:w-8 sm:h-8"
@@ -270,10 +348,8 @@ const Sections = () => {
                   />
                 </svg>
               </div>
-              <span className="text-gray-800">
-              Automation and Robotics
-              </span>
-            </div>
+              <span className="text-gray-800">Automation and Robotics</span>
+            </motion.div>
           </div>
         </div>
       </section>
