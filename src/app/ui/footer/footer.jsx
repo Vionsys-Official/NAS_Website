@@ -7,7 +7,7 @@ import { ourServices } from '@/app/(pages)/services/servicesD';
 
 const Footer = () => {
   return (
-    <footer className="bg-violet-950 w-full  text-white overflow-x-hidden">
+    <footer className="bg-blue950 w-full  text-white overflow-x-hidden">
     <div className="flex flex-wrap relative z-20 px-4 pt-8 items-start justify-evenly gap-8">
       
       <div className='md:w-72 w-auto'>

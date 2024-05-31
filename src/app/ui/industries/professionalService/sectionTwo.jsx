@@ -13,14 +13,14 @@ const sectionTwo = () => {
   return (
     <section>
           
-      <div className="text-center py-8 px-2 md:p-8">
+      <div className="text-center py-4 px-2 md:p-8">
     <div className="font-bold flex justify-center text-2xl sm:text-4xl">
     <motion.h2 
      variants={fadein("up", 0.2)}
      initial="hidden"
      whileInView={"show"}
-     viewport={{ once: false, amount: 0.8 }}
-    className='w-full md:w-fit p-4 shadow-xl'>
+     viewport={{ once: true, amount: 0.8 }}
+    className='w-full md:w-fit p-4 text-blue-900 shadow-xl'>
       Our Professional Services</motion.h2>
 
     </div>
@@ -32,7 +32,7 @@ const sectionTwo = () => {
         <div className="w-full p-4 md:w-2/5 lg:w-1/2 text-left">
 
             <h3
-             className="font-bold mt-8 text-xl md:mt-0 sm:text-2xl">
+             className="font-bold text-xl sm:text-2xl">
             IT Consulting and Strategy
             </h3>
             <ul className="sm:text-lg mt-6 px-4 list-disc">
@@ -63,7 +63,7 @@ const sectionTwo = () => {
             <Image src={Sec2} alt="" className="inline-block shadow-lg rounded-3xl border border-merino-400"/>
         </div>
         <div className="w-full p-4 md:w-2/5 lg:w-1/2 md:order-first text-left ">
-            <h3 className="font-bold mt-8 text-xl md:mt-0 sm:text-2xl">
+            <h3 className="font-bold text-xl sm:text-2xl">
             Project Management
             </h3>
             <ul className="sm:text-lg mt-6 px-4 list-disc">
@@ -88,7 +88,7 @@ const sectionTwo = () => {
             <Image src={Sec3} alt="" className="inline-block rounded-3xl shadow-lg border border-merino-400"/>
         </div>
         <div className="w-full p-4 md:w-2/5 lg:w-1/2 text-left">
-            <h3 className="font-bold mt-8 text-xl md:mt-0 sm:text-2xl">
+            <h3 className="font-bold text-xl sm:text-2xl">
             Business Process Optimization
             </h3>
             <ul className="sm:text-lg mt-6 px-4 list-disc">
@@ -113,7 +113,7 @@ const sectionTwo = () => {
             <Image src={Sec4} alt="" className="inline-block shadow-lg border rounded-3xl border-merino-400"/>
         </div>
         <div className="w-full p-4 md:w-2/5 lg:w-1/2 md:order-first text-left">
-            <h3 className="font-bold mt-8 text-xl md:mt-0 sm:text-2xl">
+            <h3 className="font-bold text-xl sm:text-2xl">
             Data Analytics and Business Intelligence
             </h3>
             <ul className="sm:text-lg mt-6 px-4 list-disc">

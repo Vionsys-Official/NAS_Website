@@ -7,7 +7,7 @@ export const Cards=[
     },
     {
         heading:"Customization",
-        description:"We understand that every business is unique. Our solutions are tailored to meet your specific needs."
+        description:"We understand that every business is unique. Our solutions are tailored to meet your with specific needs."
     },
     {
         heading:"Reliability",
@@ -34,7 +34,7 @@ export const Service=[
     {
         heading:"Cloud Solutions",
         description:"Leverage the power of the cloud to enhance scalability and flexibility in your operations. Our cloud services include:",
-            point1:"Cloud Migration : Seamless transition of your data and applications to the cloud.",
+            point1:"Cloud Migration : Seamless transition of a data and applications to the cloud.",
             point2:"Cloud Infrastructure Management : Comprehensive management of your cloud environment to ensure optimal performance.",
             point3:"Disaster Recovery Solutions : Reliable backup and recovery services to protect your data against unforeseen events."
     },
