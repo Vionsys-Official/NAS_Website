@@ -1,8 +1,11 @@
+"use client"
 import React from 'react'
 import value1 from "/public/assets/aboutUs/value1.jpg"
 import value2 from "/public/assets/aboutUs/value2.jpg"
 import value3 from "/public/assets/aboutUs/value3.jpg"
 import Image from 'next/image'
+import { fadein } from '@/components/ui/variants';
+import { motion } from 'framer-motion';
 
 const value = () => {
   return (
@@ -40,12 +43,17 @@ const value = () => {
             <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-blue-900 sm:text-4xl sm:leading-none">
             Our Values
             </h2>
-            <p className="text-base text-gray-700 md:text-lg">
+            <motion.p
+             variants={fadein("left", 0.2)}
+             initial="hidden"
+             whileInView={"show"}
+             viewport={{ once: true, amount: 0.8 }}
+             className="text-base text-gray-700 md:text-lg">
            At our company, we uphold a commitment to honesty, integrity and ethics 
            in everything we do. We foster innovation through teamwork, valuing diverse 
            perspectives and treating everyone with respect. These core values guide our 
            actions and inspire us to create a positive impact in our work and communities.
-            </p>
+            </motion.p>
           </div>
         </div>
 

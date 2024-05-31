@@ -2,11 +2,10 @@ import React from 'react'
 import Mission from '@/app/ui/about/mission'
 import Value from '@/app/ui/about/value'
 import Vision from '@/app/ui/about/vision'
-import HeroSection from '@/utils/heroSection/HeroSection'
-import { aboutData } from '@/utils/heroSection/data'
 import Sectiontwo from '@/app/ui/about/sectiontwo'
 import  Sectionlast  from '@/app/ui/about/sectionlast'
 import Sectionthree from '@/app/ui/about/sectionthree'
+import HeroSection from '@/app/ui/about/heroSection'
 
 export const metadata = {
   title: "About Us",
@@ -14,9 +13,9 @@ export const metadata = {
 
 function page() {
   return (
-    <main id='mission'>
+    <main id='mission' className='overflow-x-hidden'>
 
-    <HeroSection obj={aboutData}/>
+    <HeroSection/>
 
     <Sectiontwo/>
 
