@@ -7,7 +7,7 @@ function BiHero() {
       <div className="relative w-full ">
         <Image src={Hero3} className="w-full h-[100vh] object-cover  " />
 
-        <div className="absolute w-full inset-y-0 flex flex-col justify-center bg-slate-500 bg-opacity-50 items-center p-4 md:pl-20 md:pr-20 sm:pl-20 sm:pr-20 ">
+        <div className="absolute w-full inset-y-0 flex flex-col justify-center bg-gray-800 bg-opacity-50 items-center p-4 md:pl-20 md:pr-20 sm:pl-20 sm:pr-20 ">
           <div>
             <span>
               <h1 className="text-white md:text-HeroHeading text-HeroHeading-sm font-extrabold py-4 s:w-72 ">
