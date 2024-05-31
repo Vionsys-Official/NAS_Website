@@ -1,4 +1,5 @@
 "use client";
+import Button from "@/components/ui/Button";
 import { fadein } from "@/components/ui/variants";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -247,12 +248,7 @@ const Healthird = () => {
                 </p>
               </div>
               <div className="mt-4">
-                <Link
-                  href="/contact"
-                  className="inline-block py-2 px-4 text-white font-medium bg-gray-800 duration-150 hover:bg-gray-700 active:bg-gray-900 rounded-lg shadow-md hover:shadow-none"
-                >
-                  Get started
-                </Link>
+                <Button/>
               </div>
             </div>
           </section>

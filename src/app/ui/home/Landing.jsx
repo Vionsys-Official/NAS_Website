@@ -28,7 +28,7 @@ const landing = () => {
             </div>
           </div>
           {/* legacy of innovation */}
-          <div className="px-4 md:py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+          <div className="px-4 md:py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
             <div className="grid md:gap-10 lg:grid-cols-2">
               <div className="lg:pr-10 p-4">
                 <h5 className="mb-4 text-4xl text-blue-900 text-center font-extrabold leading-none">
@@ -50,9 +50,9 @@ const landing = () => {
                 </p>
                 <hr className="md:border-green-300 border-2" />
               </div>
-              <div className="shadow-xl py-2">
+              <div className="">
                 <Image
-                  className="object-cover w-full h-56 rounded-xl  sm:h-96"
+                  className="object-cover shadow-xl w-full h-56 rounded-xl  sm:h-96"
                   src={home1}
                   alt="img"
                 />

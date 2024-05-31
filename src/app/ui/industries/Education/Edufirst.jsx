@@ -25,12 +25,7 @@ const Edufirst = () => {
                 programs and resources to help you achieve your academic and
                 professional goals.
               </p>
-              <Link
-                className="inline-flex h-10 items-center justify-center rounded-md bg-black px-8 text-sm font-medium text-white shadow transition-colors hover:bg-[#0056b3] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#007bff] disabled:pointer-events-none disabled:opacity-50 dark:bg-[#007bff] dark:text-white dark:hover:bg-[#0056b3] dark:focus-visible:ring-[#007bff]"
-                href="/contact"
-              >
-                Contact Us
-              </Link>
+              
             </div>
             <div className="flex justify-center w-auto">
               <Image
