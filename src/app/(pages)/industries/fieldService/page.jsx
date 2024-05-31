@@ -4,8 +4,9 @@ import FieldSec3 from '@/app/ui/industries/fieldService/fieldSec3';
 import FieldSec4 from '@/app/ui/industries/fieldService/fieldSec4';
 import FieldSec1 from '@/app/ui/industries/fieldService/fieldSec1';
 
-
-
+export const metadata = {
+    title: "Field Service",
+  };
 
 
 const fildService = () => {

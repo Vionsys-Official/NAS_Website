@@ -8,6 +8,11 @@ import StaffingFaq from '@/app/ui/services/staffing/StaffingFaq'
 import StaffingStart from '@/app/ui/services/staffing/StaffingStart'
 import React from 'react'
 
+export const metadata = {
+  title: "IT Staffing Services",
+};
+
+
 const page = () => {
   return (
     <div id='mission'>

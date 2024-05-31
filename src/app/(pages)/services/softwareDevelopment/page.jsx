@@ -6,6 +6,11 @@ import Services from '@/app/ui/services/softwareDevelopment/Services'
 import React from 'react'
 import SoftFaq1 from '@/app/ui/services/softwareDevelopment/SoftFaq1'
 
+export const metadata = {
+  title: "Software Development IT Solutions",
+};
+
+
 const page = () => {
   return (
     <div id='mission'>

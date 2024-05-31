@@ -6,6 +6,10 @@ import HeroSection from '@/utils/heroSection/HeroSection';
 import { servicesData } from '@/utils/heroSection/data';
 import { ourServices } from '@/app/(pages)/services/servicesD'
 
+export const metadata = {
+  title: "Services",
+};
+
 
 const Page = () => {
   return (

@@ -6,6 +6,11 @@ import Industries from '@/app/ui/services/cloudComputing/Industries'
 import OurService from '@/app/ui/services/cloudComputing/OurService'
 import React from 'react'
 
+export const metadata = {
+  title: "Cloud Computing Services",
+};
+
+
 const page = () => {
   return (
     <div id='mission'>

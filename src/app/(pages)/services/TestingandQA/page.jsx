@@ -6,6 +6,11 @@ import WhyChooseUs from "@/app/ui/services/TestingandQA/WhyChooseUs";
 import GetStart2 from "@/components/ui/GetStart2";
 import React from "react";
 
+export const metadata = {
+  title: "Testing and QA Services",
+};
+
+
 const page = () => {
   return (
     <div className="overflow-x-hidden">
