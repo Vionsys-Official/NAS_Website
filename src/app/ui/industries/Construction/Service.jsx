@@ -1,4 +1,7 @@
+'use client'
 import React from 'react'
+import { fadein } from '@/components/ui/variants';
+import { motion } from 'framer-motion';
 
 const Service = () => {
 
@@ -57,17 +60,33 @@ const Service = () => {
     return (
         <>
             <section className="m-4 md:m-8 text-gray-800">
-                <div className="mx-auto my-6 space-y-1 text-center">
-                    <h2 className="text-Heading-sm font-bold md:text-Heading">Our IT Solutions for Construction</h2>
-                </div>
+                <motion.div
+                initial={{ opacity: 0, y: -100 }} //X:100
+                whileInView={{ opacity: 1, y: 0 }} //y:100
+                transition={{
+                    delay: 0.4,
+                    scale: { type: "spring", stiffness: 30 },
+                    opacity: { duration: 0.6 },
+                    ease: "easeInOut",
+                }}  className="mx-auto my-6 space-y-1 text-center">
+                    <h2 className="text-Heading-sm font-bold md:text-Heading text-blue950">Our IT Solutions for Construction</h2>
+                </motion.div>
                 <div className="grid justify-center gap-4 mx-auto lg:grid-cols-2 xl:grid-cols-4">
                     {service.map((item) => (
-                        <div key={item.id} className="flex flex-col md:px-5 md:py-3 p-2 border-2 border-purple-600 rounded-bl-3xl rounded-tr-3xl">
-                        <h2 className="mb-2 text-CardHeading-sm font-semibold md:text-CardHeading title-font text-gray-800">{item.title}</h2>
-                        <p className="flex-1 mb-1 md:text-Para text-Para-sm leading-relaxed text-gray-600">{item.para1}</p>
-                        <p className="flex-1 mb-1 md:text-Para text-Para-sm leading-relaxed text-gray-600">{item.para2}</p>
-                        <p className="flex-1 mb-1 md:text-Para text-Para-sm leading-relaxed text-gray-600">{item.para3}</p>
-                    </div>
+                        <motion.div
+                        initial={{ opacity: 0, scale: 0.7 }} //X:100
+                        whileInView={{ opacity: 1, scale: 1 }} //y:100
+                        transition={{
+                            delay: 0.2,
+                            scale: { type: "spring", stiffness: 30 },
+                            opacity: { duration: 0.6 },
+                            ease: "easeInOut",
+                        }} key={item.id} className="flex flex-col md:px-5 md:py-3 p-2 border-2 border-blue2 rounded-bl-3xl rounded-tr-3xl">
+                        <h2 className="mb-2 text-CardHeading-sm font-semibold md:text-CardHeading title-font text-gray-800 hover:text-blue2">{item.title}</h2>
+                        <p className="flex-1 mb-1 md:text-Para text-Para-sm leading-relaxed text-gray-700">{item.para1}</p>
+                        <p className="flex-1 mb-1 md:text-Para text-Para-sm leading-relaxed text-gray-700">{item.para2}</p>
+                        <p className="flex-1 mb-1 md:text-Para text-Para-sm leading-relaxed text-gray-700">{item.para3}</p>
+                    </motion.div>
                     ))}
                     
                 </div>

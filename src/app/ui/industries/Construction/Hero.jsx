@@ -1,4 +1,7 @@
-import React from 'react';
+'use client'
+import React from 'react'
+import { fadein } from '@/components/ui/variants';
+import { motion } from 'framer-motion';
 import Construction from '/public/assets/industries/Construction/Construction3.jpg';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -18,15 +21,20 @@ const Hero = () => {
                 </svg>
                 <Image src={Construction} alt='' />
             </div>
-            <div className="text-center relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
+            <motion.div
+                variants={fadein("up", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.8 }} 
+                className="text-center relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
                 <div className="md:mb-16 py-4 lg:my-28 lg:max-w-lg lg:pr-5">
-                    <p className="inline-block md:mb-4 mb-2 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full">Transforming Construction with Innovative IT Services
+                    <p className="inline-block md:mb-4 mb-2 text-xs font-semibold tracking-wider text-blue2 uppercase rounded-full">Transforming Construction with Innovative IT Services
                     </p>
-                    <h2 className="md:mb-5 mb-2 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none leading-10">
+                    <h2 className="md:mb-5 mb-2 md:text-3xl font-bold tracking-tight text-blue950 text-2xl leading-8 md:leading-10">
                         Empowering the Construction   {' '}
                         <br className="hidden md:block" />
                         Industry with Cutting-Edge{' '}
-                        <span className="inline-block text-purple-400">
+                        <span className="inline-block text-blue2">
                             IT Solutions
                         </span>
                     </h2>
@@ -41,7 +49,7 @@ const Hero = () => {
                         </Link>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }

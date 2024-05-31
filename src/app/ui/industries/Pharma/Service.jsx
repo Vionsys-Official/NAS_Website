@@ -1,4 +1,7 @@
+'use client'
 import React from 'react'
+import { fadein } from '@/components/ui/variants';
+import { motion } from 'framer-motion';
 import Pharma3 from '/public/assets/industries/Pharma/Pharma3.jpeg'
 import Pharma2 from '/public/assets/industries/Pharma/Pharma2.jpeg'
 import Image from 'next/image'
@@ -48,17 +51,25 @@ const Service = () => {
     return (
         <section className="text-gray-800">
             <div className="max-w-xl md:p-6 p-2 py-5 mx-auto md:space-y-16 space-y-6 lg:px-8 lg:max-w-7xl">
-                <div>
-                    <h2 className="md:text-Heading font-bold tracking-tight text-center text-Heading-sm text-black">Our Services</h2>
+                <motion.div
+                    variants={fadein("up", 0.2)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.8 }}>
+                    <h2 className="md:text-Heading font-bold tracking-tight text-center text-Heading-sm text-blue950">Our Services</h2>
                     <p className="max-w-3xl mx-auto mt-4 md:text-xl text-lg text-center text-gray-800">We provide comprehensive IT solutions tailored for the pharmaceutical industry. Our services are designed to streamline operations, enhance research and development and ensure regulatory compliance. We specialize in:</p>
-                </div>
+                </motion.div>
                 <div className="grid md:gap-8 gap-4 lg:grid-cols-2 lg:items-center">
-                    <div>
+                    <motion.div
+                        variants={fadein("left", 0.2)}
+                        initial="hidden"
+                        whileInView={"show"}
+                        viewport={{ once: false, amount: 0.8 }}>
                         <div className="md:space-y-12 space-y-4">
                             {service1.map((item) => (
                                 <div key={item.id} className="flex">
                                     <div className="flex-shrink-0 md:block hidden">
-                                        <div className="flex items-center justify-center w-12 h-12 rounded-md bg-violet-400 dark:bg-violet-600 text-gray-50">
+                                        <div className="flex items-center justify-center w-12 h-12 rounded-md bg-blue950 text-gray-50">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                                             </svg>
@@ -72,18 +83,26 @@ const Service = () => {
                                 </div>
                             ))}
                         </div>
-                    </div>
-                    <div className="md:mt-10 mt-1 md:my-3 my-0 lg:mt-0">
+                    </motion.div>
+                    <motion.div
+                        variants={fadein("right", 0.2)}
+                        initial="hidden"
+                        whileInView={"show"}
+                        viewport={{ once: false, amount: 0.8 }} className="md:mt-10 mt-1 md:my-3 my-0 lg:mt-0">
                         <Image src={Pharma3} alt="" className="mx-auto" />
-                    </div>
+                    </motion.div>
                 </div>
                 <div>
                     <div className="grid md:gap-8 gap-4 lg:grid-cols-2 lg:items-center">
-                        <div className="lg:col-start-2">
+                        <motion.div
+                            variants={fadein("right", 0.2)}
+                            initial="hidden"
+                            whileInView={"show"}
+                            viewport={{ once: false, amount: 0.8 }} className="lg:col-start-2">
                             <div className="md:space-y-12 space-y-4">
                                 {service2.map((item) => (
                                     <div key={item.id} className="flex"><div className="flex-shrink-0  md:block hidden">
-                                        <div className="flex items-center justify-center w-12 h-12 rounded-md bg-violet-400 dark:bg-violet-600 text-gray-50">
+                                        <div className="flex items-center justify-center w-12 h-12 rounded-md bg-blue950 text-gray-50">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                                             </svg>
@@ -97,10 +116,14 @@ const Service = () => {
                                     </div>
                                 ))}
                             </div>
-                        </div>
-                        <div className="lg:mt-0 lg:col-start-1 lg:row-start-1 my-3">
+                        </motion.div>
+                        <motion.div
+                            variants={fadein("left", 0.2)}
+                            initial="hidden"
+                            whileInView={"show"}
+                            viewport={{ once: false, amount: 0.8 }} className="lg:mt-0 lg:col-start-1 lg:row-start-1 my-3">
                             <Image src={Pharma2} alt="" className="mx-auto" />
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>

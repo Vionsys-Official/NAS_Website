@@ -9,7 +9,7 @@ import Imag from '@/app/ui/services/crm/Imag'
 
 const page = () => {
   return (
-    <div>
+    <div id='mission'>
       <Hero/>
       <Features/>
       <Imag/>

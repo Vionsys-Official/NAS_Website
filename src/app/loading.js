@@ -2,8 +2,11 @@ import React from 'react'
 
 const loading = () => {
   return (
-    <div className='bg-white w-[100vw] h-[100vh]'>
-        <div className="flex justify-center items-center w-18 h-18 border-4 border-dashed rounded-full animate-spin dark:border-violet-950"></div>
+    <div>
+      <div class="min-h-screen dark:bg-slate-800 gap-6 flex items-center justify-center">
+        <div class="w-36 h-36 border-8 rounded-full border-[#00a0d8] animate-spin">
+        </div>
+      </div>
     </div>
   )
 }

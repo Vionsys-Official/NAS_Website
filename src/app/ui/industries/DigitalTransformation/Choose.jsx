@@ -1,6 +1,9 @@
+'use client'
 import React from 'react'
 import Digital from '/public/assets/industries/DigitalTransformation/Digital.jpg'
 import Image from 'next/image'
+import { fadein } from '@/components/ui/variants';
+import { motion } from 'framer-motion';
 
 const Choose = () => {
 
@@ -29,20 +32,35 @@ const Choose = () => {
 
     return (
         <>
-            <div className="px-4 mx-auto space-y-1 text-center mb-4">
-                <span className="text-xs font-semibold tracking-wider uppercase text-violet-400 dark:text-violet-600">NAS Infotech Pvt. Ltd.</span>
-                <h2 className="pb-3 text-Heading-sm font-bold md:text-Heading">Why Choose Us for Your Digital Transformation Journey?</h2>
-            </div>
-            <div className="relative px-4 md:py-10 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-16">
+            <motion.div
+            variants={fadein("up", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.8 }}
+            className="px-4 mx-auto space-y-1 text-center mb-4">
+                <span className="text-xs font-semibold tracking-wider uppercase text-blue2">NAS Infotech Pvt. Ltd.</span>
+                <h2 className="pb-3 text-blue950 text-Heading-sm font-bold md:text-Heading">Why Choose Us for Your Digital Transformation Journey?</h2>
+            </motion.div>
+            <div
+            className="relative px-4 md:py-10 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-16">
                 <div className="absolute inset-0">
                     <div className="absolute inset-y-0 z-0 w-full h-full bg-gray-100 lg:w-3/4" />
                 </div>
                 <div className="relative">
                     <div className="grid gap-12 row-gap-8 lg:grid-cols-2">
-                        <div className="grid md:gap-12 gap-5 row-gap-5 md:grid-cols-2">
+                        <motion.div
+                        initial={{opacity: 0, scale: 0.7}} //X:100
+                        whileInView={{opacity: 1, scale: 1}} //y:100
+                        transition={{
+                            delay: 0.2,
+                            scale: {type: "spring", stiffness: 30},
+                            opacity: {duration: 0.6},
+                            ease: "easeInOut",
+                        }} 
+                        className="grid md:gap-12 gap-5 row-gap-5 md:grid-cols-2">
                             {choose.map((item) => (
                                 <div key={item.id}>
-                                <div className="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-teal-400">
+                                <div className="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-blue6">
                                     <svg
                                         className="w-8 h-8 text-teal-900"
                                         stroke="currentColor"
@@ -65,7 +83,7 @@ const Choose = () => {
                                 </p>
                             </div>
                             ))}
-                        </div>
+                        </motion.div>
                         <div>
                             <Image
                                 className="object-cover w-full h-56 rounded shadow-lg sm:h-96"

@@ -1,4 +1,7 @@
+'use client'
 import React from 'react'
+import { fadein } from '@/components/ui/variants';
+import { motion } from 'framer-motion';
 import { MdOutlineInsertChart } from "react-icons/md";
 
 
@@ -42,22 +45,37 @@ const Services = () => {
         }
     ]
 
-  return (
-    <section className="p-6 text-gray-800">
-	<div className="mx-auto">
-		<h2 className="md:text-Heading text-Heading-sm font-bold text-center text-gray-900">Our Services</h2>
-		<div className="grid gap-6 py-8 lg:grid-cols-3">
-            {service.map((item) => (
-                <div key={item.id} className="flex flex-col md:p-8 p-2 md:space-y-4 space-y-2 bg-gray-200 rounded-bl-3xl rounded-tr-3xl">
-				<div className="flex items-center justify-center flex-shrink-0 w-12 h-12 text-xl font-bold rounded-full bg-violet-400 dark:bg-violet-600 text-gray-50"><MdOutlineInsertChart className='w-7 h-7'/></div>
-                <h1 className="text-lg font-semibold md:text-CardHeading text-CardHeading-sm">{item.title}:</h1>
-				<p className='md:text-Para text-Para-sm'>{item.para}</p>
-			</div>
-            ))}
-		</div>
-	</div>
-</section>
-  )
+    return (
+        <section className="p-6 text-gray-800">
+            <div className="mx-auto">
+                <motion.h2
+                    variants={fadein("up", 0.2)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.8 }}
+                    className="md:text-Heading text-Heading-sm font-bold text-center text-blue950">Our Services</motion.h2>
+
+                <div className="grid gap-6 py-8 lg:grid-cols-3">
+                    {service.map((item) => (
+                        <motion.div
+                        initial={{ opacity: 0, scale: 0.7 }} //X:100
+                        whileInView={{ opacity: 1, scale: 1 }} //y:100
+                        transition={{
+                          delay: 0.2,
+                          scale: { type: "spring", stiffness: 30 },
+                          opacity: { duration: 0.6 },
+                          ease: "easeInOut",
+                        }} 
+                        key={item.id} className="flex flex-col md:p-8 p-2 md:space-y-4 space-y-2 bg-gray-200 rounded-bl-3xl rounded-tr-3xl">
+                            <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 text-xl font-bold rounded-full bg-blue950 text-gray-50"><MdOutlineInsertChart className='w-7 h-7' /></div>
+                            <h1 className="text-lg text-blue2 font-semibold md:text-CardHeading text-CardHeading-sm">{item.title}:</h1>
+                            <p className='md:text-Para text-Para-sm'>{item.para}</p>
+                        </motion.div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    )
 }
 
 export default Services
