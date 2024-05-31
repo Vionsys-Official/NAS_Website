@@ -1,6 +1,6 @@
-'use client'
-import { fadein } from '@/components/ui/variants';
-import { motion } from 'framer-motion';
+"use client";
+import { fadein } from "@/components/ui/variants";
+import { motion } from "framer-motion";
 import React from "react";
 import Image from "next/image";
 const Healsec = () => {
@@ -9,13 +9,16 @@ const Healsec = () => {
       <div>
         <section className="w-full py-7 md:py-24 lg:py-3 flex justify-center">
           <div className="container space-y-12 px-4 md:px-6">
+            {/* Our Expertise */}
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <motion.h2
-                variants={fadein("down", 0.2)}
-                initial="hidden"
-                whileInView={"show"}
-                viewport={{ once: true, amount: 0.8 }}  className="text-3xl text-center font-bold tracking-tighter sm:text-5xl text-blue-900">
+                  variants={fadein("down", 0.2)}
+                  initial="hidden"
+                  whileInView={"show"}
+                  viewport={{ once: true, amount: 0.8 }}
+                  className="text-3xl text-center font-bold tracking-tighter sm:text-5xl text-blue-900"
+                >
                   Our Areas of Expertise
                 </motion.h2>
                 <motion.p
@@ -23,7 +26,8 @@ const Healsec = () => {
                   initial="hidden"
                   whileInView={"show"}
                   viewport={{ once: true, amount: 0.8 }}
-                  className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                  className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400"
+                >
                   We specialize in a wide range of services to help our clients
                   succeed. From strategy to execution, we've got you covered.
                 </motion.p>
