@@ -19,7 +19,7 @@ const Whychooseus = () => {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: true, amount: 0.8 }}  
-                className="w-full md:w-2/5 pb-4 font-sans text-MainHeading-sm md:text-MainHeading leading-none tracking-tight text-gray-900 font-semibold">
+                className="text-blue-900 w-full md:w-2/5 pb-4 font-sans text-MainHeading-sm md:text-MainHeading leading-none tracking-tight font-semibold">
                 Why Choose
                 <span className="relative inline-block">
                     <svg
@@ -54,7 +54,7 @@ const Whychooseus = () => {
                 whileInView={"show"}
                 viewport={{ once: true, amount: 0.8 }}  
                 className='w-full md:w-2/5'>
-                    At NAS Infotech, we bring E-commerce expertise and a commitment to your success. With innovative, tailored solutions and scalable support, we'll help your business grow and thrive. Trust us for transparent communication, dedicated service, and a long-term partnership focused on your success.
+                    At NAS Infotech, we offer e-commerce expertise and a dedication to your success. Through innovative, customized solutions and scalable support, we are committed to helping your business expand and flourish. Rely on us for clear communication, exceptional service, and a long-term partnership centered on your success.
                 </motion.p>
             </div>
         </div>

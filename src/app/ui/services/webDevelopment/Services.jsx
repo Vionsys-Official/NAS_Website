@@ -5,14 +5,10 @@ import { FaLaptopCode } from "react-icons/fa";
 import { FaPenToSquare } from "react-icons/fa6";
 import { FaChartLine } from "react-icons/fa";
 import { FaTools } from "react-icons/fa";
-import ScrollTrigger from "react-scroll-trigger";
-import { useState } from "react";
 import { motion } from 'framer-motion';
 import { fadein } from "@/components/ui/variants";
 
 const Services = () => {
-
-    const[motionOn, setMotionOn]= useState(false);
 
     const items=[
         {id:1,
@@ -51,7 +47,7 @@ const Services = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}
-              className="mb-6 font-sans text-MainHeading-sm md:text-MainHeading md:p-6 font-semibold leading-none tracking-tight text-gray-900 cursor-pointer">
+              className="mb-6 font-sans text-blue-900 text-MainHeading-sm md:text-MainHeading md:p-6 font-semibold leading-none tracking-tight cursor-pointer">
             <span className="relative inline-block">
                 <svg
                 viewBox="0 0 52 24"
@@ -88,9 +84,9 @@ const Services = () => {
                         initial="hidden"
                         whileInView={"show"}
                         viewport={{ once: true, amount: 0.8 }}
-                        key={feat.id} className='w-[90%] rounded-lg md:w-2/5 lg:w-1/4 h-full md:h-[27rem] lg:h-[32rem] xl:h-[26rem] flex flex-col items-center justify-start shadow-md shadow-gray-300 p-2 hover:bg-green-50 cursor-pointer'>
-                            <span className='text-MainHeading-sm md:text-MainHeading font-semibold p-4 rounded-full bg-green-300'><feat.icon/></span>
-                            <h2 className='text-CardHeading-sm md:text-CardHeading pb-2 font-semibold'>{feat.title}</h2>
+                        key={feat.id} className='w-[90%] rounded-lg md:w-2/5 lg:w-1/4 h-full md:h-[27rem] lg:h-[32rem] xl:h-[26rem] flex flex-col items-center justify-start shadow-md shadow-gray-300 p-2 hover:bg-blue-50 cursor-pointer'>
+                            <span className='text-MainHeading-sm md:text-MainHeading font-semibold p-4 rounded-full bg-green-100'><feat.icon/></span>
+                            <h2 className='text-blue-950 text-CardHeading-sm md:text-CardHeading pb-2 font-semibold'>{feat.title}</h2>
                             <p className='flex items-center justify-center'>{feat.desc}</p>
                         </motion.div>
                     );
