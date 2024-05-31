@@ -8,7 +8,7 @@ import CTA from '@/app/ui/career/CTA'
 
 function page() {
   return (
-    <div id="mission">
+    <div id="mission" className='overflow-hidden'>
       <HeroSection obj={careerData}/>
       <CTA/>
       <Culture/>

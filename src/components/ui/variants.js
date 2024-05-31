@@ -1,7 +1,7 @@
 const fadein = (direction, delay) => {
     return {
        hidden: {
-          y:direction ==='up' ? 50 : direction ==='down'? -100 : 0,
+          y:direction ==='up' ? 50 : direction ==='down'? -100 : direction === 'down2'? -20 : 0,
           x:direction ==='left' ? -50 : direction ==='right'? 50 : 0,
   
        },

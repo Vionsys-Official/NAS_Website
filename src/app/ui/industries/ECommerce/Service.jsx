@@ -1,3 +1,6 @@
+"use client"
+import { fadein } from "@/components/ui/variants";
+import { motion } from 'framer-motion';
 import React from 'react'
 import Simplify from'/public/assets/industries/Ecommerce/simplify.jpg';
 import dellight from'/public/assets/industries/Ecommerce/delight.jpg';
@@ -65,7 +68,12 @@ const Service = () => {
   return (
     <div className='flex flex-col items-center justify-center md:ml-8 lg:ml-20 py-2 md:py-16'>
         <div className='w-[80%] flex flex-col items-center justify-center text-center py-6'>
-        <h2 className="mb-6 font-sans text-MainHeading-sm md:text-MainHeading leading-none tracking-tight text-gray-900 cursor-pointer font-semibold">
+        <motion.h1
+            variants={fadein("left", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.8 }} 
+            className="mb-6 font-sans text-MainHeading-sm md:text-MainHeading leading-none tracking-tight text-gray-900 cursor-pointer font-semibold">
             <span className="relative inline-block">
                 <svg
                 viewBox="0 0 52 24"
@@ -92,15 +100,26 @@ const Service = () => {
                 <span className="relative">Here's</span>
             </span>{' '}
             how we can help
-            </h2>
-            <h2 className='text-CardHeading-sm md:text-CardHeading cursor-pointer'>Welcome to our e-commerce hub, where technology meets success. Our software solutions are designed to make running an online business simpler, smoother, and more profitable. </h2>
+            </motion.h1>
+            <motion.h2
+            variants={fadein("left", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.8 }}  
+            className='text-CardHeading-sm md:text-CardHeading cursor-pointer'>
+                Welcome to our e-commerce hub, where technology meets success. Our software solutions are designed to make running an online business simpler, smoother, and more profitable. 
+            </motion.h2>
         </div>
         <div className='w-[80%]'>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:gap-4 items-start justify-center'>
                 
                 {service.map((feat)=>{
                     return(
-                        <div key={feat.id} className='flex flex-col p-4 group cursor-pointer'>
+                        <motion.div
+                        variants={fadein("down2", 0.2)}
+                        initial="hidden"
+                        whileInView={"show"}
+                        viewport={{ once: true, amount: 0.8 }} key={feat.id} className='flex flex-col p-4 group cursor-pointer'>
                             <div className='w-full h-[10rem] overflow-hidden'>
                                 <Image className='object-cover w-full h-full rounded-xl group-hover:scale-105 ease-linear' src={feat.image} alt=''></Image>
                             </div>
@@ -109,7 +128,7 @@ const Service = () => {
                                 <h2 className='text-CardHeading-sm md:text-CardHeading font-bold'>{feat.title}</h2>
                                 <p className='text-Para-sm md:text-Para'>{feat.desc}</p>
                             </div>
-                        </div>
+                        </motion.div>
                     );
                 })}
             </div>
