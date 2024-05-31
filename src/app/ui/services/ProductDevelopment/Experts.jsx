@@ -39,7 +39,11 @@ const Experts = () => {
         </motion.div>
         <div className="flex lg:flex-row">
           <div className="flex flex-col  space-y-6 rounded-sm sm:p-8   dark:bg-violet-600 dark:text-gray-50">
-            <div className="flex space-x-2 sm:space-x-4">
+            <motion.div
+              variants={fadein("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.8 }}div className="flex space-x-2 sm:space-x-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -62,8 +66,12 @@ const Experts = () => {
                   Building native and cross-platform mobile apps.
                 </p>
               </div>
-            </div>
-            <div className="flex space-x-2 sm:space-x-4">
+            </motion.div>
+            <motion.div
+              variants={fadein("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.8 }}div className="flex space-x-2 sm:space-x-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -86,8 +94,12 @@ const Experts = () => {
                   Creating responsive and robust web applications.
                 </p>
               </div>
-            </div>
-            <div className="flex space-x-2 sm:space-x-4">
+            </motion.div>
+            <motion.div
+              variants={fadein("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.8 }}div className="flex space-x-2 sm:space-x-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -111,8 +123,12 @@ const Experts = () => {
                   solutions.
                 </p>
               </div>
-            </div>
-            <div className="flex space-x-2 sm:space-x-4">
+            </motion.div>
+            <motion.div
+              variants={fadein("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.8 }}div className="flex space-x-2 sm:space-x-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -136,8 +152,12 @@ const Experts = () => {
                   product.
                 </p>
               </div>
-            </div>
-            <div className="flex space-x-2 sm:space-x-4">
+            </motion.div>
+            <motion.div
+              variants={fadein("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.8 }}div className="flex space-x-2 sm:space-x-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -161,7 +181,7 @@ const Experts = () => {
                   Internet of Things.
                 </p>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

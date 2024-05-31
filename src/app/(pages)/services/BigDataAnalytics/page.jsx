@@ -15,7 +15,7 @@ export const metadata = {
 
 function page() {
   return (
-    <div className="overflow-x-hidden">
+    <div id="mission">
       <Hero />
       <WhatWeDo />
       <BigDataEngg />

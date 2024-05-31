@@ -6,8 +6,12 @@ import { motion } from "framer-motion";
 const WhatWeProvide = () => {
   return (
     <div className="px-4  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24  md:py-10 py-6">
-      <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-        <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+      <motion.div
+        variants={fadein("down", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.8 }} className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+        <h2 className="max-w-lg mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
           <span className="relative inline-block">
             <svg
               viewBox="0 0 52 24"
@@ -36,7 +40,7 @@ const WhatWeProvide = () => {
             </span>
           </span>{" "}
         </h2>
-      </div>
+      </motion.div>
       <div className="grid gap-5 mb-8 md:grid-cols-2 lg:grid-cols-3">
         <motion.div
           initial={{ opacity: 0, scale: 0.7 }} //X:100

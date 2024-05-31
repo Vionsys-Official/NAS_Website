@@ -1,4 +1,7 @@
-import React from 'react';
+'use client'
+import React from 'react'
+import { fadein } from '@/components/ui/variants';
+import { motion } from 'framer-motion';
 
 const Serve = () => {
 
@@ -30,7 +33,15 @@ const Serve = () => {
     ]
 
     return (
-        <div className="px-4 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-8 text-gray-800">
+        <motion.div
+        initial={{ opacity: 0, scale: 0.7 }} //X:100
+        whileInView={{ opacity: 1, scale: 1 }} //y:100
+        transition={{
+          delay: 0.2,
+          scale: { type: "spring", stiffness: 30 },
+          opacity: { duration: 0.6 },
+          ease: "easeInOut",
+        }} className="px-4 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-8 text-gray-800">
             <h2 className="mb-4 md:text-Heading text-Heading-sm font-bold leading-none text-center">Industries We Serve</h2>
             <p className="mb-6 text-base text-center text-gray-800 md:text-lg">Our IT staffing services cater to a wide range of industries, including but not limited to:</p>
             <ul className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
@@ -44,7 +55,7 @@ const Serve = () => {
                 </li>
                 ))}
             </ul>
-        </div>
+        </motion.div>
     )
 }
 

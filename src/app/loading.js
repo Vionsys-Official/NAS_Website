@@ -1,14 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-const loading = () => {
+const Loading = () => {
   return (
-    <div>
-      <div class="min-h-screen dark:bg-slate-800 gap-6 flex items-center justify-center">
-        <div class="w-36 h-36 border-8 rounded-full border-[#00a0d8] animate-spin">
-        </div>
-      </div>
+    <div className="min-h-screen dark:bg-slate-800 flex items-center justify-center">
+      <div className="w-36 h-36 border-8 border-t-[#00a0d8] border-b-transparent border-l-transparent border-r-transparent rounded-full animate-spin"></div>
     </div>
-  )
-}
+  );
+};
 
-export default loading
+export default Loading;

@@ -1,4 +1,7 @@
-import React from "react";
+'use client'
+import React from 'react'
+import { fadein } from '@/components/ui/variants';
+import { motion } from 'framer-motion';
 
 const HowWeBuild = () => {
   const sections = [
@@ -29,7 +32,15 @@ const HowWeBuild = () => {
           <div className="md:w-px w-full md:h-full" />
         </div>
         {sections.map((item) => (
-          <div
+          <motion.div
+            initial={{ opacity: 0, scale: 0.7 }} //X:100
+            whileInView={{ opacity: 1, scale: 1 }} //y:100
+            transition={{
+              delay: 0.2,
+              scale: { type: "spring", stiffness: 30 },
+              opacity: { duration: 0.6 },
+              ease: "easeInOut",
+            }}
             key={item.id}
             className="p-5 duration-300 transform bg-slate-50 border rounded-xl shadow-sm hover:-translate-y-2"
           >
@@ -42,7 +53,7 @@ const HowWeBuild = () => {
             <p className="md:text-Para text-Para-sm text-gray-800">
               {item.description}
             </p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

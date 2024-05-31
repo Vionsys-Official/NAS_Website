@@ -1,4 +1,7 @@
+'use client'
 import React from 'react'
+import { fadein } from '@/components/ui/variants';
+import { motion } from 'framer-motion';
 import DevOps from '/public/assets/services/DevOps/DevOps.jpeg'
 import Image from 'next/image'
 
@@ -49,10 +52,23 @@ const Process = () => {
 
   return (
     <div className="px-4 py-8 mx-auto w-full">
-      <div className='md:py-8 py-4 md:text-Heading text-Heading-sm font-bold text-gray-900 text-center'>
+      <motion.div
+        variants={fadein("up", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.8 }} className='md:py-8 py-4 md:text-Heading text-Heading-sm font-bold text-blue950 text-center'>
         <h1>Our Workflow</h1>
-      </div>
-      <div className="grid gap-8 row-gap-10 lg:grid-cols-2 md:px-10 px-0">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.7 }} //X:100
+        whileInView={{ opacity: 1, scale: 1 }} //y:100
+        transition={{
+          delay: 0.2,
+          scale: { type: "spring", stiffness: 30 },
+          opacity: { duration: 0.6 },
+          ease: "easeInOut",
+        }}
+        className="grid gap-8 row-gap-10 lg:grid-cols-2 md:px-10 px-0">
         <div className="md:py-6 md:pr-10">
           {process.map((item) => (
             <div key={item.key} className="flex">
@@ -127,7 +143,7 @@ const Process = () => {
             alt=""
           />
         </div>
-      </div>
+      </motion.div>
     </div>
   )
 }

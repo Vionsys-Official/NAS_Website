@@ -10,7 +10,7 @@ const WhatWeDo = () => {
     <div className=" w-full flex  flex-col ">
       <div className="w-full ">
         <motion.p
-          variants={fadein("left", 0.2)}
+          variants={fadein("up", 0.2)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.8 }}
@@ -23,7 +23,15 @@ const WhatWeDo = () => {
         <div className="md:w-1/2 w-full md:px-6 p-2 flex items-center justify-center">
           <Image src={About} alt="" className="w-full h-[80%] " />
         </div>
-        <div className="md:w-1/2 w-full flex flex-wrap flex-col md:gap-4 items-center justify-center">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.7 }} //X:100
+          whileInView={{ opacity: 1, scale: 1 }} //y:100
+          transition={{
+            delay: 0.2,
+            scale: { type: "spring", stiffness: 30 },
+            opacity: { duration: 0.6 },
+            ease: "easeInOut",
+          }} className="md:w-1/2 w-full flex flex-wrap flex-col md:gap-4 items-center justify-center">
           <div className="flex flex-col gap-4">
             <div className="flex md:flex-row p-2 flex-col md:gap-6 gap-4">
               <div className="md:w-1/2 w-full bg-gray-100 rounded shadow-lg hover:shadow-xl transition duration-300">
@@ -91,7 +99,7 @@ const WhatWeDo = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

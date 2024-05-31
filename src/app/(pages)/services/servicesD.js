@@ -59,7 +59,7 @@ export const ourServices = [
       title: "Cyber Security",
       imagesrc: "/assets/services/ChardsPhoto/cyberSequ.jpg",
       description: "We provide comprehensive cybersecurity services, protecting your data, networks, and systems from threats, ensuring confidentiality, integrity, and availability.",
-      href1: "/services/cyberSecuritySolutions",
+      href1: "/services/CyberSecurity",
 
     },
     {

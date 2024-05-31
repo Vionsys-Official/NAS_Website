@@ -1,58 +1,74 @@
-import React from 'react';
+'use client'
+import React from 'react'
+import { fadein } from '@/components/ui/variants';
+import { motion } from 'framer-motion';
 
-const Faq = ({faq}) => {
+const Faq = ({ faq }) => {
 
-   
+
     return (
         <div className="py-4">
             <div className="max-w-screen-md mx-auto px-4 md:px-6 lg:px-8 flex flex-col justify-between">
 
-                <div className="text-center">
-                    <h3 className="md:text-Heading text-Heading-sm leading-normal font-extrabold tracking-tight text-gray-900">
-                        Frequently Asked <span className="text-indigo-600">Questions</span>
+                <motion.div
+                    variants={fadein("up", 0.2)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.8 }}
+                    className="text-center">
+                    <h3 className="md:text-Heading text-Heading-sm leading-normal font-extrabold tracking-tight text-blue950">
+                        Frequently Asked <span className="text-blue2">Questions</span>
                     </h3>
-                </div>
+                </motion.div>
 
-                <div className="md:mt-14 mt-10">
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.7 }} //X:100
+                    whileInView={{ opacity: 1, scale: 1 }} //y:100
+                    transition={{
+                        delay: 0.2,
+                        scale: { type: "spring", stiffness: 30 },
+                        opacity: { duration: 0.6 },
+                        ease: "easeInOut",
+                    }} className="md:mt-14 mt-10">
                     <ul className="">
-                        {faq.map((item) =>(
+                        {faq.map((item) => (
                             <li key={item.id} className="text-left md:mb-10 mb-4">
-                            <div className="flex flex-row items-start md:mb-5 mb-2">
-                                <div
-                                    className="hidden sm:flex items-center justify-center md:p-3 md:mr-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-semibold">
-                                    <svg width="30px" fill="white" height="30px" viewBox="0 0 24 24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <g data-name="Layer 2">
-                                            <g data-name="menu-arrow">
-                                                <rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"></rect>
-                                                <path
-                                                    d="M17 9A5 5 0 0 0 7 9a1 1 0 0 0 2 0 3 3 0 1 1 3 3 1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-1.1A5 5 0 0 0 17 9z">
-                                                </path>
-                                                <circle cx="12" cy="19" r="1"></circle>
+                                <div className="flex flex-row items-start md:mb-5 mb-2">
+                                    <div
+                                        className="hidden sm:flex items-center justify-center md:p-3 md:mr-3 rounded-full bg-blue2 text-white border-4 border-white text-xl font-semibold">
+                                        <svg width="30px" fill="white" height="30px" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g data-name="Layer 2">
+                                                <g data-name="menu-arrow">
+                                                    <rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"></rect>
+                                                    <path
+                                                        d="M17 9A5 5 0 0 0 7 9a1 1 0 0 0 2 0 3 3 0 1 1 3 3 1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-1.1A5 5 0 0 0 17 9z">
+                                                    </path>
+                                                    <circle cx="12" cy="19" r="1"></circle>
+                                                </g>
                                             </g>
-                                        </g>
-                                    </svg>
+                                        </svg>
+                                    </div>
+                                    <div className="bg-gray-100 md:p-5 p-3 md:px-10 w-full flex items-center">
+                                        <h4 className="text-md leading-6 font-medium text-gray-900">{item.ques}</h4>
+                                    </div>
                                 </div>
-                                <div className="bg-gray-100 md:p-5 p-3 md:px-10 w-full flex items-center">
-                                    <h4 className="text-md leading-6 font-medium text-gray-900">{item.ques}</h4>
-                                </div>
-                            </div>
 
-                            <div className="flex flex-row items-start">
-                                <div className="bg-indigo-100 md:p-5 p-3 md:px-10 w-full flex items-center">
-                                    <p className="text-gray-700 text-sm">{item.ans}
-                                    </p>
-                                </div>
-                                <div
-                                    className="hidden sm:flex items-center justify-center p-3 ml-3 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-semibold">
-                                    <svg height="25px" fill="white" version="1.1" id="Layer_1"
-                                        xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px"
-                                        y="0px" viewBox="0 0 295.238 295.238" style={{ enableBackground: 'new 0 0 295.238 295.238' }}
-                                        xmlSpace="preserve">
-                                        <g>
+                                <div className="flex flex-row items-start">
+                                    <div className="bg-[#bfd3d9] md:p-5 p-3 md:px-10 w-full flex items-center">
+                                        <p className="text-gray-800 text-sm">{item.ans}
+                                        </p>
+                                    </div>
+                                    <div
+                                        className="hidden sm:flex items-center justify-center p-3 ml-3 rounded-full bg-blue2 text-white border-4 border-white text-xl font-semibold">
+                                        <svg height="25px" fill="white" version="1.1" id="Layer_1"
+                                            xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px"
+                                            y="0px" viewBox="0 0 295.238 295.238" style={{ enableBackground: 'new 0 0 295.238 295.238' }}
+                                            xmlSpace="preserve">
                                             <g>
                                                 <g>
-                                                    <path d="M277.462,0.09l-27.681,20.72l-27.838,64.905h-22.386l-8.79-19.048h5.743c10.505,0,19.048-8.452,19.048-18.957V28.571
+                                                    <g>
+                                                        <path d="M277.462,0.09l-27.681,20.72l-27.838,64.905h-22.386l-8.79-19.048h5.743c10.505,0,19.048-8.452,19.048-18.957V28.571
 				h9.524V0H196.51v28.571h9.524V47.71c0,5.248-4.271,9.433-9.524,9.433h-10.138L174.2,30.81l14.581-7.267L141.038,3.095
 				l-11.224,39.281c-0.305-23.371-19.386-42.29-42.829-42.29c-23.633,0-42.857,19.224-42.857,42.857
 				c0,14.281,7.233,27.676,19.048,35.595v7.176H51.643L50.9,89.619c-2.314,12.005-2.529,24.343-0.638,36.648l-32.486,57.905
@@ -70,18 +86,18 @@ const Faq = ({faq}) => {
 				v61.805h-95.238v-42.857h-47.62v-58.086l-30.862-7.043l27.876-49.7l-0.271-1.7c-1.771-10.419-1.871-21.567-0.333-31.09h3.59
 				h47.619H257.366z M245.714,85.714H232.3l23.738-55.343l10.557,5.257L245.714,85.714z M267.938,25.714l-5.267-2.633l5.267-3.943
 				V25.714z"></path>
-                                                    <path d="M96.51,123.81c-7.876,0-14.286-4.762-14.286-14.286H72.7c0,14.286,10.681,23.81,23.81,23.81
+                                                        <path d="M96.51,123.81c-7.876,0-14.286-4.762-14.286-14.286H72.7c0,14.286,10.681,23.81,23.81,23.81
 				c13.129,0,23.81-9.524,23.81-23.81h-9.524C110.795,119.048,104.386,123.81,96.51,123.81z"></path>
+                                                    </g>
                                                 </g>
                                             </g>
-                                        </g>
-                                    </svg>
+                                        </svg>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
+                            </li>
                         ))}
                     </ul>
-                </div>
+                </motion.div>
             </div>
         </div>
     );

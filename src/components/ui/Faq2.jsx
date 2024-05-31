@@ -17,7 +17,15 @@ const Faq2 = ({ faq }) => {
           Frequently Asked Questions
         </motion.h1>
       </div>
-      <ul className="max-w-3xl mx-auto my-5 divide-y shadow shadow-blue-600 rounded-xl ">
+      <motion.ul 
+      initial={{ opacity: 0, scale: 0.7 }} //X:100
+      whileInView={{ opacity: 1, scale: 1 }} //y:100
+      transition={{
+        delay: 0.2,
+        scale: { type: "spring", stiffness: 30 },
+        opacity: { duration: 0.6 },
+        ease: "easeInOut",
+      }} className="max-w-3xl mx-auto my-5 divide-y shadow shadow-blue-600 rounded-xl ">
         {faq.map((item) => (
           <li key={item.id}>
             <details className="group">
@@ -43,7 +51,7 @@ const Faq2 = ({ faq }) => {
             </details>
           </li>
         ))}
-      </ul>
+      </motion.ul>
     </div>
   );
 };

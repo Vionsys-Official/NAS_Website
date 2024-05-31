@@ -11,18 +11,24 @@ const WhatGain = () => {
   return (
     <div className="w-full py-5 ">
       <div className="w-full md:px-36 px-2 flex flex-col md:items-start items-center md:gap-8 gap-4">
-        <div className="w-full flex flex-col gap-8">
-          <h1 className="md:text-Heading text-Heading-sm w-full text-blue950 font-bold ">
-            What will you gain?
-          </h1>
-        </div>
-        <div className="md:w-[60%] w-full ">
-          <h2 className="md:text-SubHeading text-SubHeading-sm text-slate-600 font-semibold">
-            Implementing Big Data analytics within your organization offers
-            numerous benefits that enable you to enhance services and achieve
-            your business objectives.{" "}
-          </h2>
-        </div>
+        <motion.div
+        variants={fadein("down", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.8 }}>
+          <div className="w-full flex flex-col gap-8">
+            <h1 className="md:text-Heading text-Heading-sm w-full text-blue950 font-bold ">
+              What will you gain?
+            </h1>
+          </div>
+          <div className="md:w-[60%] w-full ">
+            <h2 className="md:text-SubHeading text-SubHeading-sm text-slate-600 font-semibold">
+              Implementing Big Data analytics within your organization offers
+              numerous benefits that enable you to enhance services and achieve
+              your business objectives.{" "}
+            </h2>
+          </div>
+        </motion.div>
         <motion.div
           variants={fadein("up", 0.2)}
           initial="hidden"

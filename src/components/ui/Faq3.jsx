@@ -1,15 +1,31 @@
+'use client'
 import React from 'react'
+import { fadein } from '@/components/ui/variants';
+import { motion } from 'framer-motion';
 
 const Faq3 = ({ faq }) => {
 
     return (
         <div className='md:p-8 p-2'>
-            <div className="text-center">
-                <h3 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900">
-                    Frequently Asked <span className="text-green-700">Questions</span>
+            <motion.div
+            variants={fadein("up", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.8 }} 
+            className="text-center">
+                <h3 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-blue950">
+                    Frequently Asked <span className="text-blue2">Questions</span>
                 </h3>
-            </div>
-            <div className="accordion space-y-2 md:p-5 p-1">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.7 }} //X:100
+              whileInView={{ opacity: 1, scale: 1 }} //y:100
+              transition={{
+                delay: 0.2,
+                scale: { type: "spring", stiffness: 30 },
+                opacity: { duration: 0.6 },
+                ease: "easeInOut",
+              }}  className="accordion space-y-2 md:p-5 p-1">
                 {faq.map((item) => (
                     <div key={item.id} className="card border border-gray-300 rounded-lg">
                         <input type="checkbox" id={`accordion-toggle-${item.id}`} className="hidden peer" />
@@ -29,7 +45,7 @@ const Faq3 = ({ faq }) => {
                         </div>
                     </div>
                 ))}
-            </div>
+            </motion.div>
         </div>
     )
 }
