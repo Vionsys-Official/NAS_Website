@@ -4,7 +4,7 @@ import MySec1Field from '/public/assets/industries/fieldSer/MySec1Field.jpg'
 
 const fieldSec1 = () => {
   return (
-    <section className="relative w-full h-[80vh] min-h-[500px] flex items-center justify-center">
+    <section className="relative w-full h-[60vh] md:h-[100vh] lg:h-[100vh] min-h-[500px] flex items-center justify-center">
                 <div className="absolute inset-0 bg-black">
                     <Image
                         alt="Heroic Figure"

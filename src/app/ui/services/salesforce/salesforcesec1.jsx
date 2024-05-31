@@ -26,12 +26,12 @@ const salesforcesec1 = () => {
         <div className="absolute inset-0 flex items-center justify-center bg-opacity-75 ">
           <div className="px-4 py-3 mx-auto text-center text-black">
 
-            <h1 className="text-3xl font-extrabold tracking-tight sm:text-5xl md:text-5xl font-title">
+            <h1 className="text-HeroHeading font-extrabold">
               <span className="block text-black">Elevate Your Business with Our</span>
-              <span className="block pt-2 text-blue-600">Salesforce Services </span>
+              <span className="block text-blue-600">Salesforce Services </span>
             </h1>
 
-            <p className="max-w-md mx-auto mt-3 text-lg text-gray-700 md:mt-5  md:max-w-3xl">
+            <p className="max-w-md mx-auto mt-3 text-Para text-gray-700 md:mt-5  md:max-w-3xl">
               Empower your business with our tailored Salesforce services. Streamline operations, boost customer relationships and drive growth in today's dynamic digital landscape.
               <span className='block text-gray-800  mt-5 font-semibold'>Let us be your trusted partner in harnessing the full potential of Salesforce.</span>
             </p>
