@@ -11,11 +11,11 @@ function Bankinghero() {
         className="absolute inset-0 object-cover w-full h-full"
         alt=""
       />
-      <div className="relative h-[100vh] md:h-[100vh] bg-gray-900 bg-opacity-65">
+      <div className="relative h-[100vh] md:h-[110vh] bg-gray-900 bg-opacity-65">
         <div className="px-3 md:px-10 py-25 h-full flex flex-col items-start justify-center">
-          <div className="flex flex-col items-end text-right sm:text-center">
-            <div className="w-full sm:w-3/4 md:w-1/2 border-r-0 md:border-r-8 pr-2 md:pr-10">
-              <h2 className="w-full pl-2 md:px-6 mb-6 text-2xl font-bold tracking-tight text-white sm:text-3xl md:text-MainHeading sm:leading-none">
+          <div className="flex flex-col items-end">
+            <div className=" w-full md:w-1/2 border-r-0 md:border-r-8 pr-2 md:pr-10 text-center">
+              <h2 className="w-full pl-2 md:px-6 mb-6 text-2xl font-bold tracking-tight text-white text-SubHeading-sm md:text-MainHeading sm:leading-none">
                 Enhance Your Banking Services With The Most Advanced  
                 <span className="text-blue-300"> I</span><span className='text-stone-400'>T </span>
                 Solutions Available.
