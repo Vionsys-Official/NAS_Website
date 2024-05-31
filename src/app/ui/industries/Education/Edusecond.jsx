@@ -57,15 +57,15 @@ const Edusecond = () => {
               variants={fadein("right", 0.1)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: true, amount: 0.5, delay: 8000 }}
+              viewport={{ once: true, amount: 0.5}}
               className="text-center text-2xl md:text-4xl lg:text-5xl font-bold tracking-tight text-blue-900 sm:leading-tight">
               Our Expertise in Education
             </motion.h2>
             <motion.p
-            variants={fadein("left  ", 0.1)}
+            variants={fadein("left", 0.1)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: true, amount: 0.5, delay: 8000 }}
+            viewport={{ once: true, amount: 0.5}}
               className="text-base text-gray-700  text-center md:text-lg p-4 sm:px-6 md:px-8">
               We leverage the latest pedagogical research and cutting-edge
               technology to foster an engaging and inclusive environment,
@@ -90,9 +90,14 @@ const Edusecond = () => {
             </div>
           </div>
           <div className="relative py-5">
-            <ul  className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 bg-[rgba(101,227,131,0.5)] p-8 shadow-2xl text-center">
+            <motion.ul
+            
+              className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 bg-[rgba(101,227,131,0.5)] p-8 shadow-2xl text-center">
               {features.map((item, idx) => (
-                <li
+                <motion.li
+                whileHover={{ scale: 1.1, delay: 2000 }}
+                onHoverStart={(e) => {}}
+                onHoverEnd={(e) => {}}
                   key={idx}
                   className="bg-white space-y-3 p-4 border-r-4 border-blue-900  rounded-lg"
                 >
@@ -103,9 +108,9 @@ const Edusecond = () => {
                     {item.title}
                   </h4>
                   <p>{item.desc}</p>
-                </li>
+                </motion.li>
               ))}
-            </ul>
+            </motion.ul>
           </div>
         </div>
       </section>
