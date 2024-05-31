@@ -3,7 +3,6 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Hero from '/public/assets/services/digitalMarketing/hero.jpg';
-import { fadein } from '@/components/ui/variants';
 import { motion } from 'framer-motion';
 
 const sectionOne = () => {

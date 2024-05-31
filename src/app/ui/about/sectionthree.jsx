@@ -51,7 +51,7 @@ const sectionthree = () => {
 
         {Cards.map((info , index)=>{
           return(<div key={index} className="max-w-md backdrop-blur-sm sm:mx-auto sm:text-center">
-          <div className="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-indigo-50 sm:mx-auto sm:w-16 sm:h-16">
+          <div className="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-blue-200 sm:mx-auto sm:w-16 sm:h-16">
             <info.icon className='text-2xl'/>
           </div>
           <h6 className="mb-3 text-xl font-bold leading-5">{info.heading}</h6>
