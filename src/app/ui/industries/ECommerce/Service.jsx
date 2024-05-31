@@ -55,7 +55,7 @@ const Service = () => {
             id:7,
             image:tailoured,
             title:"Tailored Just for You",
-            desc:"We understand that every business is different. That's why we offer personalized solutions that cater to your unique needs and goals."
+            desc:"We recognize that each business is unique. Therefore, we provide customized solutions tailored to your specific needs and objectives."
         },
         {
             id:8,
@@ -73,7 +73,7 @@ const Service = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }} 
-            className="mb-6 font-sans text-MainHeading-sm md:text-MainHeading leading-none tracking-tight text-gray-900 cursor-pointer font-semibold">
+            className="text-blue-900 mb-6 font-sans text-MainHeading-sm md:text-MainHeading leading-none tracking-tight cursor-pointer font-semibold">
             <span className="relative inline-block">
                 <svg
                 viewBox="0 0 52 24"
@@ -106,7 +106,7 @@ const Service = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}  
-            className='text-CardHeading-sm md:text-CardHeading cursor-pointer'>
+            className='text-blue-950 text-CardHeading-sm md:text-CardHeading cursor-pointer'>
                 Welcome to our e-commerce hub, where technology meets success. Our software solutions are designed to make running an online business simpler, smoother, and more profitable. 
             </motion.h2>
         </div>
@@ -125,7 +125,7 @@ const Service = () => {
                             </div>
                             {/* <div className='flex items-start justify-center text-CardHeading-sm md:text-CardHeading pt-1'><HiLightningBolt/></div> */}
                             <div className='flex flex-col mt-2'>
-                                <h2 className='text-CardHeading-sm md:text-CardHeading font-bold'>{feat.title}</h2>
+                                <h2 className='text-blue-950 text-CardHeading-sm md:text-CardHeading font-bold'>{feat.title}</h2>
                                 <p className='text-Para-sm md:text-Para'>{feat.desc}</p>
                             </div>
                         </motion.div>

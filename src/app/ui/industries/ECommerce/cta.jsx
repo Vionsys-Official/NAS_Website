@@ -14,7 +14,7 @@ const cta = () => {
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}  
             className=' flex flex-col items-center justify-center'>
-            <h2 className="mb-6 font-sans text-MainHeading-sm md:text-MainHeading leading-none tracking-tight text-gray-900 cursor-pointer font-semibold">
+            <h2 className="text-blue-900 mb-6 font-sans text-MainHeading-sm md:text-MainHeading leading-none tracking-tight cursor-pointer font-semibold">
             <span className="relative inline-block">
                 <svg
                 viewBox="0 0 52 24"
@@ -38,12 +38,14 @@ const cta = () => {
                     height="24"
                 />
                 </svg>
-                <span className="relative">Ready</span>
+                <span className="relative">Are</span>
             </span>{' '}
-             to Take Your E-Commerce Business to the Next Level?
+            you ready to advance your 
             </h2>
-            <p className='text-Para-sm md:text-Para cursor-pointer'>Get in touch with us today to learn more about how our software solutions can help you grow your online store.</p>
-            <Link href="#" className=''>
+            <h2 className="text-blue-900 mb-6 font-sans text-MainHeading-sm md:text-MainHeading leading-none tracking-tight cursor-pointer font-semibold">E-commerce business to new heights?</h2>
+            <p className='text-blue-950 text-Para-sm md:text-Para cursor-pointer'>Reach out to us today to find out how our software solutions</p>
+            <p className='text-blue-950 text-Para-sm md:text-Para cursor-pointer'>can enhance the growth of your online store.</p>
+            <Link href="#" className='mt-4'>
             <button className='cursor-pointer block w-full relative p-1 text-white  rounded-md bg-indigo-500  isolation-auto z-10 border-2 border-blue-300
         before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-indigo-600 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700'>Contact Us</button>
             </Link>

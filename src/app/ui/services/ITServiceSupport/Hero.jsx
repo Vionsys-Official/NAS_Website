@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import { fadein } from "@/components/ui/variants";
 import { motion } from "framer-motion";
 import React from "react";
@@ -9,34 +8,50 @@ import { BsQuestionSquareFill } from "react-icons/bs";
 
 const Hero = () => {
   return (
-    <div className="md:mb-16 mb-5 ">
-      <div className="bg-blue5">
+    <div className="md:pb-16 pb-5 bg-blue1 bg-opacity-70 rounded-b-[40%]">
+      <div className="">
         <div className="px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-          <div className="max-w-xl md:mx-auto sm:text-center lg:max-w-2xl pt-16">
-            <motion.h2
-              variants={fadein("right", 0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.8 }}
+          <motion.div  
+            initial={{ opacity: 0, scale: 1.1 }} //X:100
+              whileInView={{ opacity: 1, scale: 1 }} //y:100
+              transition={{
+                delay: 0.2,
+                scale: { type: "spring", stiffness: 30 },
+                opacity: { duration: 0.6 },
+                ease: "easeInOut",
+              }}
+              viewport={{ once: true, amount: 0.8 }}
+          className="max-w-xl md:mx-auto sm:text-center lg:max-w-2xl pt-16">
+            <h2
               className="max-w-lg mb-6 font-bold leading-none tracking-tight text-gray-900 md:text-5xl text-HMain-sm md:mx-auto "
             >
               <span className="relative inline-block">
-                <span className="relative">Welcome To IT Service Support</span>
+                <span className="relative text-blue-950 cursor-pointer">Welcome To IT Service Support</span>
               </span>{" "}
-            </motion.h2>
-            <p className="md:text-Para text-Para-sm text-gray-700 md:text-lg">
+            </h2>
+            <p className="text-blue-950 md:text-Para text-Para-sm md:text-lg cursor-pointer">
               We provide reliable IT Service Support to keep your business
               running smoothly. Our services ensure minimal downtime, quick
               issue resolution, and optimal IT performance, allowing you to
               focus on core activities and enhance productivity.
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className="relative px-4 sm:px-0">
         <div className="absolute inset-0  h-1/2" />
-        <div className="relative grid mx-auto overflow-hidden bg-white divide-y rounded shadow sm:divide-y-0 sm:divide-x sm:max-w-screen-sm sm:grid-cols-3 lg:max-w-screen-md">
-          <div className="inline-block md:p-8 p-4 text-center">
+        <motion.div 
+        initial={{ opacity: 0, scale: 1.1 }} //X:100
+        whileInView={{ opacity: 1, scale: 1 }} //y:100
+        transition={{
+          delay: 0.2,
+          scale: { type: "spring", stiffness: 30 },
+          opacity: { duration: 0.6 },
+          ease: "easeInOut",
+        }}
+        viewport={{ once: true, amount: 0.8 }}
+        className="relative grid mx-auto overflow-hidden bg-white divide-y rounded shadow sm:divide-y-0 sm:divide-x sm:max-w-screen-sm sm:grid-cols-3 lg:max-w-screen-md">
+          <div className="inline-block md:p-8 p-4 text-center hover:bg-green1 hover:bg-opacity-50 cursor-pointer">
             <div className="flex items-center justify-center  mx-auto mb-4">
               <RiCustomerServiceFill className="w-12 h-12" />
             </div>
@@ -44,7 +59,7 @@ const Hero = () => {
               Customer Support
             </p>
           </div>
-          <div className="inline-block md:p-8 p-4 text-center">
+          <div className="inline-block md:p-8 p-4 text-center hover:bg-green1 hover:bg-opacity-50 cursor-pointer">
             <div className="flex items-center justify-center  mx-auto mb-4 ">
               <CgTime className="w-12 h-12" />
             </div>
@@ -52,7 +67,7 @@ const Hero = () => {
               Support 24/7
             </p>
           </div>
-          <div className="inline-block md:p-8 p-4 text-center">
+          <div className="inline-block md:p-8 p-4 text-center hover:bg-green1 hover:bg-opacity-50 cursor-pointer">
             <div className="flex items-center justify-center mx-auto mb-4 ">
               <BsQuestionSquareFill className="w-10 h-10 " />
             </div>
@@ -60,7 +75,7 @@ const Hero = () => {
               Future Queries
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ const ApplyCard = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, amount: 0.8 }} 
-          className='text-MainHeading-sm md:text-MainHeading font-semibold py-2 md:py-6 cursor-pointer  font-sans px-6 text-center'>
+          className='text-blue-900 text-MainHeading-sm md:text-MainHeading font-semibold py-2 md:py-6 cursor-pointer  font-sans px-6 text-center'>
           Job Opportunities For You</motion.h2>
         </div>
         <div className='w-[90%] md:w-[86%] grid grid-col-1 md:grid-cols-2 xl:grid-cols-3 items-center justify-center gap-2 md:gap-6'>

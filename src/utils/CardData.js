@@ -78,7 +78,7 @@ export const CardData = [
         responsibility:[
           {id:1,desc:"Designing, implementing, and maintaining network infrastructure."},
           {id:2,desc:"Monitoring network performance."},
-          {id:3,desc:"Troubleshooting issues and providing timely resolutions to minimize downtime."},
+          {id:3,desc:"Addressing problems and delivering prompt solutions to reduce downtime."},
         ],
         Education:"BE/BTech in Computer Science or a related field.",
       },

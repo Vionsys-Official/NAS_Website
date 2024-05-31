@@ -7,14 +7,10 @@ import { PiNumberSquareFour } from "react-icons/pi";
 import { PiNumberSquareFive } from "react-icons/pi";
 import { PiNumberSquareSix } from "react-icons/pi";
 import { GoDotFill } from "react-icons/go";
-import ScrollTrigger from "react-scroll-trigger";
-import { useState } from "react";
 import { motion } from 'framer-motion';
 import { fadein } from "@/components/ui/variants";
 
 const Process = () => {
-
-    const[motionOn, setMotionOn]= useState(false);
 
     const steps=[
         {id:1,
@@ -63,7 +59,7 @@ const Process = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}
-             className="mb-6 sm:mt-6 font-sans text-MainHeading-sm md:text-MainHeading md:p-6 font-semibold leading-none tracking-tight text-gray-900 cursor-pointer">
+             className="text-blue-900 mb-6 sm:mt-6 font-sans text-MainHeading-sm md:text-MainHeading md:p-6 font-semibold leading-none tracking-tight cursor-pointer">
             <span className="relative inline-block">
                 <svg
                 viewBox="0 0 52 24"
@@ -101,11 +97,11 @@ const Process = () => {
                         whileInView={"show"}
                         viewport={{ once: true, amount: 0.8 }}
                         key={feat.id} className='flex flex-row p-2 border border-gray hover:scale-105 hover:bg-green-50 ease-out cursor-pointer'>
-                            <div className='text-CardHeading-sm md:text-CardHeading font-bold pr-4'><feat.icon/></div>
+                            <div className='text-blue-950 text-CardHeading-sm md:text-CardHeading font-bold pr-4'><feat.icon/></div>
                             <div>
-                                <h2 className='text-CardHeading-sm md:text-CardHeading font-bold'>{feat.title}</h2>
-                                <p className='flex flex-row text-Para-sm md:text-Para'><span><GoDotFill/></span>{feat.line1}</p>
-                                <p className='flex flex-row text-Para-sm md:text-Para'><span><GoDotFill/></span>{feat.line2}</p>
+                                <h2 className='text-blue-950 text-CardHeading-sm md:text-CardHeading font-bold'>{feat.title}</h2>
+                                <p className='flex flex-row text-Para-sm md:text-Para'><span className='text-blue-950'><GoDotFill/></span>{feat.line1}</p>
+                                <p className='flex flex-row text-Para-sm md:text-Para'><span className='text-blue-950'><GoDotFill/></span>{feat.line2}</p>
                             </div>
                         </motion.div>
                     );
