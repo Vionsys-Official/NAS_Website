@@ -20,7 +20,7 @@ const Hero = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.8 }}
-            className=" md:text-HeroHeading text-HMain-sm sm:p-4 font-bold text-black"
+            className=" md:text-HeroHeading text-HMain-sm sm:p-4 font-bold text-blue950"
           >
             Insurance
           </motion.p>
@@ -35,7 +35,7 @@ const Hero = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.8 }}
-            className="md:text-Heading text-Heading-sm md:w-[50%] w-full text-center font-bold text-blue-500"
+            className="md:text-Heading text-Heading-sm md:w-[50%] w-full text-center font-bold text-blue1"
           >
             Revolutionizing The Insurance Industry With Cutting-Edge Software
             Solutions

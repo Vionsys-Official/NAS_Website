@@ -6,7 +6,7 @@ import { fadein } from "@/components/ui/variants";
 import { motion } from "framer-motion";
 function Hero() {
   return (
-    <div className="relative bg-gray-900">
+    <div className="relative bg-blue2">
       <div className="absolute inset-x-0 bottom-0">
         <svg
           viewBox="0 0 224 12"

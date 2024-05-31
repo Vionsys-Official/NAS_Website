@@ -15,7 +15,7 @@ const WhyChooseUs = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.8 }}
-          className="max-w-lg mb-5  font-bold tracking-tight text-gray-900 md:text-Heading  text-Heading-sm sm:leading-none md:mb-6 group"
+          className="max-w-lg mb-5  font-bold tracking-tight text-blue950  md:text-Heading  text-Heading-sm sm:leading-none md:mb-6 group"
         >
           <span className="inline-block mb-1 sm:mb-4">
             Why Choose Us for Quality Assurance?
@@ -27,7 +27,7 @@ const WhyChooseUs = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.8 }}
-          className="text-gray-700 md:text-Para text-Para-sm md:max-w-xl"
+          className="text-gray-800 md:text-Para text-Para-sm md:max-w-xl"
         >
           Our dedicated team of QA experts thoroughly examines every detail to
           ensure top-notch quality of your software, ensuring it's not just

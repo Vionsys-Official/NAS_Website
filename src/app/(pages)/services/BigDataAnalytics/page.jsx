@@ -6,14 +6,19 @@ import WhatWeDo from "@/app/ui/services/BigDataAnalytics/WhatWeDo";
 import BigDataEngg from "@/app/ui/services/BigDataAnalytics/BigDataEngg";
 import Benefits from "@/app/ui/services/BigDataAnalytics/Benefits";
 import WhatGain from "@/app/ui/services/BigDataAnalytics/WhatGain";
+import HowWeBuild from "@/app/ui/services/BigDataAnalytics/HowWeBuild";
+import WhyUs from "@/app/ui/services/BigDataAnalytics/WhyUs";
+
 function page() {
   return (
     <div className="overflow-x-hidden">
       <Hero />
       <WhatWeDo />
       <BigDataEngg />
-      {/* <Benefits /> */}
-      {/* <WhatGain/> */}
+      <Benefits />
+      <WhatGain />
+      <HowWeBuild />
+      <WhyUs />
       <FaqBigData />
       <GetStart />
     </div>

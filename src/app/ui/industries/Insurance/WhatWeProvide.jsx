@@ -1,4 +1,7 @@
+"use client";
 import React from "react";
+import { fadein } from "@/components/ui/variants";
+import { motion } from "framer-motion";
 
 const WhatWeProvide = () => {
   return (
@@ -28,14 +31,24 @@ const WhatWeProvide = () => {
                 height="24"
               />
             </svg>
-            <span className="relative md:text-Heading text-HeroHeading-sm ">
+            <span className="relative md:text-Heading text-HeroHeading-sm text-blue950 ">
               What We Provide
             </span>
           </span>{" "}
         </h2>
       </div>
       <div className="grid gap-5 mb-8 md:grid-cols-2 lg:grid-cols-3">
-        <div className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.7 }} //X:100
+          whileInView={{ opacity: 1, scale: 1 }} //y:100
+          transition={{
+            delay: 0.2,
+            scale: { type: "spring", stiffness: 30 },
+            opacity: { duration: 0.6 },
+            ease: "easeInOut",
+          }}
+          className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2"
+        >
           <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
             <svg
               className="w-10 h-10 text-deep-purple-accent-400"
@@ -54,14 +67,24 @@ const WhatWeProvide = () => {
           <h6 className="mb-2 md:text-CardHeading text-CardHeading-sm font-semibold leading-5">
             Policy Management Systems
           </h6>
-          <p className="md:text-Para text-Para-sm text-gray-900">
+          <p className="md:text-Para text-Para-sm text-gray-800">
             Efficiently manage policy creation, modifications, renewals, and
             cancellations with our comprehensive policy management system. Our
             solution ensures accuracy, compliance, and a seamless experience for
             both administrators and customers.
           </p>
-        </div>
-        <div className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.7 }} //X:100
+          whileInView={{ opacity: 1, scale: 1 }} //y:100
+          transition={{
+            delay: 0.2,
+            scale: { type: "spring", stiffness: 30 },
+            opacity: { duration: 0.6 },
+            ease: "easeInOut",
+          }}
+          className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2"
+        >
           <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
             <svg
               className="w-10 h-10 text-deep-purple-accent-400"
@@ -80,13 +103,23 @@ const WhatWeProvide = () => {
           <h6 className="mb-2 md:text-CardHeading text-CardHeading-sm font-semibold leading-5">
             Claims Processing Software
           </h6>
-          <p className="md:text-Para text-Para-sm text-gray-900">
+          <p className="md:text-Para text-Para-sm text-gray-800">
             Accelerate and simplify the claims process with our advanced claims
             management software. Improve customer satisfaction and reduce
             processing time with our intuitive platform.
           </p>
-        </div>
-        <div className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.7 }} //X:100
+          whileInView={{ opacity: 1, scale: 1 }} //y:100
+          transition={{
+            delay: 0.2,
+            scale: { type: "spring", stiffness: 30 },
+            opacity: { duration: 0.6 },
+            ease: "easeInOut",
+          }}
+          className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2"
+        >
           <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
             <svg
               className="w-10 h-10 text-deep-purple-accent-400"
@@ -105,14 +138,24 @@ const WhatWeProvide = () => {
           <h6 className="mb-2 md:text-CardHeading text-CardHeading-sm font-semibold leading-5">
             Customer Relationship Management (CRM)
           </h6>
-          <p className="md:text-Para text-Para-sm text-gray-900">
+          <p className="md:text-Para text-Para-sm text-gray-800">
             Build stronger relationships with your clients through our CRM
             system tailored for the insurance industry. Enhance communication,
             track interactions, and personalize services to meet the unique
             needs of each customer.
           </p>
-        </div>
-        <div className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.7 }} //X:100
+          whileInView={{ opacity: 1, scale: 1 }} //y:100
+          transition={{
+            delay: 0.2,
+            scale: { type: "spring", stiffness: 30 },
+            opacity: { duration: 0.6 },
+            ease: "easeInOut",
+          }}
+          className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2"
+        >
           <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
             <svg
               className="w-10 h-10 text-deep-purple-accent-400"
@@ -131,13 +174,23 @@ const WhatWeProvide = () => {
           <h6 className="mb-2 md:text-CardHeading text-CardHeading-sm font-semibold leading-5">
             Underwriting Solutions
           </h6>
-          <p className="md:text-Para text-Para-sm text-gray-900">
+          <p className="md:text-Para text-Para-sm text-gray-800">
             Improve underwriting accuracy and efficiency with our intelligent
             underwriting tools. Make data-driven decisions and enhance risk
             assessment processes.
           </p>
-        </div>
-        <div className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.7 }} //X:100
+          whileInView={{ opacity: 1, scale: 1 }} //y:100
+          transition={{
+            delay: 0.2,
+            scale: { type: "spring", stiffness: 30 },
+            opacity: { duration: 0.6 },
+            ease: "easeInOut",
+          }}
+          className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2"
+        >
           <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
             <svg
               className="w-10 h-10 text-deep-purple-accent-400"
@@ -156,13 +209,23 @@ const WhatWeProvide = () => {
           <h6 className="mb-2 md:text-CardHeading text-CardHeading-sm font-semibold leading-5">
             Compliance and Regulatory Reporting
           </h6>
-          <p className="md:text-Para text-Para-sm text-gray-900">
+          <p className="md:text-Para text-Para-sm text-gray-800">
             Stay compliant with industry regulations and streamline your
             reporting processes. Our software ensures you meet all legal and
             regulatory requirements efficiently.
           </p>
-        </div>
-        <div className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.7 }} //X:100
+          whileInView={{ opacity: 1, scale: 1 }} //y:100
+          transition={{
+            delay: 0.2,
+            scale: { type: "spring", stiffness: 30 },
+            opacity: { duration: 0.6 },
+            ease: "easeInOut",
+          }}
+          className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2"
+        >
           <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
             <svg
               className="w-10 h-10 text-deep-purple-accent-400"
@@ -181,12 +244,12 @@ const WhatWeProvide = () => {
           <h6 className="mb-2 md:text-CardHeading text-CardHeading-sm font-semibold leading-5">
             Data Analytics and Business Intelligence
           </h6>
-          <p className="md:text-Para text-Para-sm text-gray-900">
+          <p className="md:text-Para text-Para-sm text-gray-800">
             Harness the power of data with our advanced analytics and business
             intelligence tools. Make informed decisions, identify trends, and
             gain competitive insights.
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

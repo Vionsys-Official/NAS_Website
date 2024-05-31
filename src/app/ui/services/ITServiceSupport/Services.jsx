@@ -20,7 +20,7 @@ const Services = () => {
           viewport={{ once: false, amount: 0.8 }}
           className="w-full flex items-center justify-center"
         >
-          <h1 className="md:text-Heading text-Heading-sm font-bold text-slate-700">
+          <h1 className="md:text-Heading text-Heading-sm font-bold text-blue950">
             Our Services
           </h1>
         </motion.div>
@@ -41,7 +41,7 @@ const Services = () => {
               <p className="mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
                 24/7 Help Desk Support
               </p>
-              <p className="mb-2 md:text-Para text-Para-sm text-gray-700">
+              <p className="mb-2 md:text-Para text-Para-sm text-gray-800">
                 Our 24/7 help desk offers immediate assistance for software
                 glitches, hardware malfunctions, and connectivity issues. Our
                 experienced technicians swiftly resolve problems to ensure
@@ -66,7 +66,7 @@ const Services = () => {
               <p className="mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
                 Network Management
               </p>
-              <p className="mb-2 md:text-Para text-Para-sm text-gray-700">
+              <p className="mb-2 md:text-Para text-Para-sm text-gray-800">
                 We offer comprehensive network management with real-time
                 monitoring, performance optimization, and security enhancements.
                 Our proactive approach ensures your IT infrastructure remains
@@ -90,7 +90,7 @@ const Services = () => {
               <p className="mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide">
                 IT Consulting
               </p>
-              <p className="mb-2  md:text-Para text-Para-sm text-gray-700">
+              <p className="mb-2  md:text-Para text-Para-sm text-gray-800">
                 Transform your IT strategy with our expert consulting services.
                 We provide in-depth assessments, strategic planning, and
                 technology roadmaps to align your IT initiatives with your
@@ -111,7 +111,7 @@ const Services = () => {
               <p className="mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
                 Remote Workforce Solutions
               </p>
-              <p className="mb-2 md:text-Para text-Para-sm text-gray-700">
+              <p className="mb-2 md:text-Para text-Para-sm text-gray-800">
                 Empower your remote workforce with our specialized support
                 services. We offer secure remote access solutions, advanced
                 collaboration tools, and comprehensive remote IT support. Our
@@ -131,7 +131,7 @@ const Services = () => {
                 {" "}
                 Software Support and Maintenance
               </p>
-              <p className="mb-2 md:text-Para text-Para-sm text-gray-700">
+              <p className="mb-2 md:text-Para text-Para-sm text-gray-800">
                 Keep your software applications running at peak performance with
                 our support and maintenance services. We provide regular
                 updates, patches, and performance tuning to ensure your software
@@ -149,7 +149,7 @@ const Services = () => {
               <p className="mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
                 Compliance and Regulatory Support
               </p>
-              <p className="mb-2 md:text-Para text-Para-sm text-gray-700">
+              <p className="mb-2 md:text-Para text-Para-sm text-gray-800">
                 Navigate the complexities of IT compliance with our specialized
                 support. We help you adhere to industry regulations and
                 standards, conduct compliance audits, and implement necessary

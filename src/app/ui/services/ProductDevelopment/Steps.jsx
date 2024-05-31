@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Steps = () => {
   return (
-    <section className="pt-8  dark:bg-gray-100 dark:text-gray-800">
+    <section className="pt-8  dark:bg-gray-100 ">
       <div className="container mx-auto">
         <div className="p-4 mx-auto text-center md:px-10 lg:px-32 ">
           <motion.h2
@@ -13,7 +13,7 @@ const Steps = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.8 }}
-            className="md:text-Heading font-bold leading-none text-Heading-sm "
+            className="md:text-Heading font-bold leading-none text-Heading-sm text-blue950 "
           >
             Product Development Stages
           </motion.h2>
@@ -65,7 +65,7 @@ const Steps = () => {
               <h5 className="md:text-CardHeading text-CardHeading-sm font-semibold">
                 Idea and Concept
               </h5>
-              <p className="md:text-Para text-Para-sm">
+              <p className="md:text-Para text-Para-sm text-gray-800">
                 This phase is about brainstorming and refining product ideas
                 into concrete concepts, ensuring they address market needs and
                 have potential for development.
@@ -90,7 +90,7 @@ const Steps = () => {
               <h5 className="md:text-CardHeading text-CardHeading-sm font-semibold">
                 Validation
               </h5>
-              <p className="md:text-Para text-Para-sm">
+              <p className="md:text-Para text-Para-sm  text-gray-800">
                 Testing the feasibility and potential of the product concept
                 through market research, surveys, and validation with target
                 customers.
@@ -115,7 +115,7 @@ const Steps = () => {
               <h5 className="md:text-CardHeading text-CardHeading-sm font-semibold">
                 Market Analysis
               </h5>
-              <p className="md:text-Para text-Para-sm">
+              <p className="md:text-Para text-Para-sm  text-gray-800">
                 Assessing market dynamics, competition, trends, and customer
                 preferences to refine the product concept and identify market
                 opportunities.
@@ -140,7 +140,7 @@ const Steps = () => {
               <h5 className="md:text-CardHeading text-CardHeading-sm font-semibold">
                 Prototype Iteration
               </h5>
-              <p className="md:text-Para text-Para-sm">
+              <p className="md:text-Para text-Para-sm  text-gray-800">
                 Creating prototypes of the product to test functionality,
                 usability, and gather feedback for iterative improvements.
               </p>
@@ -164,7 +164,7 @@ const Steps = () => {
               <h5 className="md:text-CardHeading text-CardHeading-sm font-semibold">
                 Deployment Planning
               </h5>
-              <p className="md:text-Para text-Para-sm">
+              <p className="md:text-Para text-Para-sm  text-gray-800">
                 Planning the production process, supply chain logistics, and
                 marketing strategy for the launch of the product.
               </p>
@@ -188,7 +188,7 @@ const Steps = () => {
               <h5 className="md:text-CardHeading text-CardHeading-sm font-semibold">
                 Launch and Scale
               </h5>
-              <p className="md:text-Para text-Para-sm">
+              <p className="md:text-Para text-Para-sm  text-gray-800">
                 Introducing the product to the market, executing marketing
                 campaigns, and scaling production and distribution to meet
                 demand while monitoring and adjusting strategies for optimal
