@@ -1,7 +1,10 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Hero from '/public/assets/services/digitalMarketing/hero.jpg';
+import { fadein } from '@/components/ui/variants';
+import { motion } from 'framer-motion';
 
 const sectionOne = () => {
   return (
@@ -13,7 +16,9 @@ const sectionOne = () => {
           alt=""
         />
         <div className="w-full absolute backdrop-blur md:backdrop-blur-none flex justify-center md:justify-end pt-10 lg:px-8 xl:px-6">
-            <div className='w-[70%] md:w-[50%]'>
+            <motion.div
+             animate={{ y: [-100, 0] }}
+             className='w-[70%] md:w-[50%]'>
           <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-blue-900 sm:text-5xl sm:leading-none md:text-center">
           Digital Marketing Services
           </h2>
@@ -28,7 +33,7 @@ const sectionOne = () => {
               Know more
             </Link>
           </div>
-          </div>
+          </motion.div>
          </div>
        </section>
   )
