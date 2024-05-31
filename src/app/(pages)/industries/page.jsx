@@ -1,11 +1,9 @@
 import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
-import HeroSection from '@/utils/heroSection/HeroSection';
-import {industriesData} from '@/utils/heroSection/data';
 import { ourIndustries } from '@/app/(pages)/industries/industriesD';
 import MainPageHeading1 from '@/app/ui/industries/mainPageHeading1';
-
+import HeroSectionMainpageI from '@/app/ui/industries/heroSectionMainpageI'
 export const metadata = {
   title: "Industries",
 };
@@ -13,10 +11,10 @@ export const metadata = {
 const page = () => {
 
   return (
-    <main id='mission'>
-      <HeroSection obj={industriesData} />
+    <main id='mission' className='overflow-x-hidden'>
+      
       {/* Hading Section*/}
-
+    <HeroSectionMainpageI/>
     <MainPageHeading1/>
 
       {/* Cards Section */}

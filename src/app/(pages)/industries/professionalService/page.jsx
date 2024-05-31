@@ -6,7 +6,6 @@ export const metadata = {
   title: "Professional Services",
 };
 
-
 const page = () => {
   return (
     <main id='mission' className='overflow-x-hidden'>

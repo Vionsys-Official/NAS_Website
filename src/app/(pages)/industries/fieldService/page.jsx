@@ -8,11 +8,10 @@ export const metadata = {
     title: "Field Service",
   };
 
-
 const fildService = () => {
 
     return (
-        <main>
+        <main  className='overflow-x-hidden'>
 
             <FieldSec1 />
 

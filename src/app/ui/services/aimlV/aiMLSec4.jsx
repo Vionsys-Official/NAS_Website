@@ -1,6 +1,8 @@
 "use client"
 import { FaCheckCircle } from "react-icons/fa";
 import React, { useState } from 'react';
+import { motion } from 'framer-motion'
+import { fadein } from '@/components/ui/variants';
 
 const industryData = {
     Fintech: [
@@ -91,29 +93,33 @@ const aiMLSec4 = () => {
     <section>
         {/* Section 4 */}
         <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
+        <motion.div
+     variants={fadein("up", 0.2)}
+     initial="hidden"
+     whileInView={"show"}
+     viewport={{ once: false, amount: 0.8 }}className="text-center">
             <h2 className="text-Heading font-extrabold tracking-tight text-gray-900">Industry-Wise AI and ML Use Cases</h2>
-            <p className="mt-4 text-SubHeading-sm leading-6 text-gray-500">
+            <p className="mb-16 m-5 text-SubHeading-sm leading-6 text-gray-500">
               We've segregated AI and ML use cases by industry to simplify your exploration. Explore the possibilities for
               your industry and get a free 2-hour consjultation to discuss tailored AI/ML development services that can
               unlock even greater potential for your business.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="mt-8 flex flex-wrap justify-center space-x-4">
-            {Object.keys(industryData).map(industry => (
-              <div
-                key={industry}
-                className={`bg-red-600 cursor-pointer text-white px-4 py-2 rounded-md text-Para-sm  text-center 
-      hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-offset-2 
-      focus:ring-red-500 ${selectedIndustry === industry ? 'border-[3px] border-black' : ''}`}
-                onClick={() => handleIndustryChange(industry)}
-                style={{ width: '150px', minWidth: '120px', marginBottom: '1rem' }}
-              >
-                {industry}
-              </div>
-            ))}
-          </div>
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+    {Object.keys(industryData).map(industry => (
+        <div
+            key={industry}
+            className={`bg-blue-900 cursor-pointer text-white px-4 py-2 rounded-md text-sm text-center 
+                hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-offset-2 
+                focus:ring-blue-900 ${selectedIndustry === industry ? 'border-[3px] border-black' : ''} w-36`}
+            onClick={() => handleIndustryChange(industry)}
+        >
+            {industry}
+        </div>
+    ))}
+</div>
+
 
 
           <div className="mt-8">

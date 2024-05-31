@@ -1,3 +1,4 @@
+
 import React from 'react'
 import AiMLSec1 from '@/app/ui/services/aimlV/aiMLSec1';
 import AiMLSec2 from '@/app/ui/services/aimlV/aiMLSec2';
@@ -11,8 +12,9 @@ export const metadata = {
 
 
 const aiAndml = () => {
+
   return (
-    <main>
+    <main className='overflow-x-hidden'>
 
      {/* Section 1 */}
       <AiMLSec1/>
