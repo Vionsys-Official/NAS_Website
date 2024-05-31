@@ -14,23 +14,23 @@ const Services = () => {
     <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-16 md:py-4 py-4 flex ">
       <div className="w-full flex flex-col md:gap-10 gap-6">
         <motion.div
-          variants={fadein("up", 0.2)}
+          variants={fadein("down2", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.8 }}
           className="w-full flex items-center justify-center"
         >
-          <h1 className="md:text-Heading text-Heading-sm font-bold text-blue950">
+          <h1 className="md:text-Heading text-Heading-sm font-bold text-blue-900 cursor-pointer">
             Our Services
           </h1>
         </motion.div>
         <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
-          <div
-            variants={fadein("up", 0.2)}
+          <motion.div
+            variants={fadein("down2", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.8 }}
-            className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm"
+            viewport={{ once: true, amount: 0.8 }}
+            className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm cursor-pointer hover:bg-slate-100"
           >
             <Image
               src={HelpDeskSupport}
@@ -38,7 +38,7 @@ const Services = () => {
               className="object-cover w-full h-64"
             />
             <div className="p-5 border border-t-0">
-              <p className="mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
+              <p className="text-blue-950 mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
                 24/7 Help Desk Support
               </p>
               <p className="mb-2 md:text-Para text-Para-sm text-gray-800">
@@ -48,13 +48,13 @@ const Services = () => {
                 continuous business operations.
               </p>
             </div>
-          </div>
-          <div
-            variants={fadein("up", 0.2)}
+          </motion.div>
+          <motion.div
+            variants={fadein("down2", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.8 }}
-            className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm"
+            viewport={{ once: true, amount: 0.8 }}
+            className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm cursor-pointer hover:bg-slate-100"
           >
             <Image
               src={networkManagement}
@@ -63,7 +63,7 @@ const Services = () => {
             />
 
             <div className="p-5 border border-t-0">
-              <p className="mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
+              <p className="text-blue-950 mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
                 Network Management
               </p>
               <p className="mb-2 md:text-Para text-Para-sm text-gray-800">
@@ -73,13 +73,13 @@ const Services = () => {
                 robust, efficient, scalable, and secure.
               </p>
             </div>
-          </div>
-          <div
-            variants={fadein("up", 0.2)}
+          </motion.div>
+          <motion.div
+            variants={fadein("down2", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.8 }}
-            className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm"
+            viewport={{ once: true, amount: 0.8 }}
+            className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm cursor-pointer hover:bg-slate-100"
           >
             <Image
               src={ITConsulting}
@@ -87,7 +87,7 @@ const Services = () => {
               className="object-cover w-full h-64"
             />
             <div className="p-5 border border-t-0">
-              <p className="mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide">
+              <p className="text-blue-950 mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide">
                 IT Consulting
               </p>
               <p className="mb-2  md:text-Para text-Para-sm text-gray-800">
@@ -97,18 +97,23 @@ const Services = () => {
                 business goals, ensuring maximum value.
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
-          <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
-            <Image
+        <motion.div
+            variants={fadein("down2", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.8 }}
+            className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm cursor-pointer hover:bg-slate-100"
+          >            <Image
               src={RemoteWorkSolutions}
               alt=""
               className="object-cover w-full h-64"
             />
 
             <div className="p-5 border border-t-0">
-              <p className="mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
+              <p className="text-blue-950 mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
                 Remote Workforce Solutions
               </p>
               <p className="mb-2 md:text-Para text-Para-sm text-gray-800">
@@ -119,15 +124,21 @@ const Services = () => {
                 seamlessly from any location.
               </p>
             </div>
-          </div>
-          <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+          </motion.div>
+          <motion.div
+            variants={fadein("down2", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.8 }}
+            className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm cursor-pointer hover:bg-slate-100"
+          >
             <Image
               src={SoftwareSupport}
               className="object-cover w-full h-64"
               alt=""
             />
             <div className="p-5 border border-t-0">
-              <p className="mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide">
+              <p className="text-blue-950 mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide">
                 {" "}
                 Software Support and Maintenance
               </p>
@@ -138,15 +149,21 @@ const Services = () => {
                 remains secure, reliable, and efficient.
               </p>
             </div>
-          </div>
-          <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
-            <Image
+          </motion.div>
+          <motion.div
+            variants={fadein("down2", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.8 }}
+            className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm cursor-pointer hover:bg-slate-100"
+          >            
+          <Image
               src={ComplianceSupport}
               alt=""
               className="object-cover w-full h-64"
             />
             <div className="p-5 border border-t-0">
-              <p className="mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
+              <p className="text-blue-950 mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
                 Compliance and Regulatory Support
               </p>
               <p className="mb-2 md:text-Para text-Para-sm text-gray-800">
@@ -156,7 +173,7 @@ const Services = () => {
                 controls to protect your business from regulatory risks.
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

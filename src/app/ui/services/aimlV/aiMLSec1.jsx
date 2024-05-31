@@ -1,27 +1,39 @@
+"use client"
 import React from 'react'
+import Image from 'next/image'
+import AIMLHeroImage from '/public/assets/services/aiML/AIMLHeroImage.jpg'
+import { motion } from 'framer-motion'
+import { fadein } from '@/components/ui/variants';
 
 const aiMLSec1 = () => {
   return (
-    <section className="relative h-screen flex flex-col items-center justify-center text-center text-white">
-    <div className="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
-      {/* <video
-        className="min-w-full min-h-full absolute object-cover"
-        src={require('/public/assets/services/aiML/My.mp4')}
-        type="video/mp4"
-        autoPlay
-        muted
-        loop
-      ></video> */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-20 z-10"></div>
-    </div>
-    <div className="video-content space-y-2 z-20 mx-auto lg:mx-0 lg:max-w-[75%]">
-  <h1 className="text-HeroHeading font-extrabold">
-    <span className="block text-gray-100">Discover the Potential of AI and Machine Learning for Your Business</span>
-  </h1>
-  <p className='block text-gray-300 mt-5 font-semibold'>We harness cutting-edge algorithms to optimize decision-making and unlock fresh opportunities. With a steadfast commitment to excellence, we serve as trusted guides in navigating the digital frontier.</p>
-</div>
 
-  </section>
+<section className="relative w-full  lg:h-[100vh] h-[60vh]  min-h-[500px] flex items-center justify-center">
+<div className="absolute inset-0 bg-black">
+    <Image
+        alt="Heroic Figure"
+        className="absolute inset-0 object-cover opacity-60  object-center"
+        layout="fill"
+        objectFit="cover"
+        src={AIMLHeroImage}
+    />
+</div>
+< motion.div
+     variants={fadein("up", 0.2)}
+     initial="hidden"
+     whileInView={"show"}
+     viewport={{ once: false, amount: 0.8 }}
+className="relative z-10 max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+    <h1 className="text-MainHeading font-bold text-gray-100 drop-shadow-lg">
+    Discover the Potential of AI and Machine Learning for Your Business
+    </h1>
+    <p className="mt-4 text-Para  text-gray-200 drop-shadow-lg">
+    We harness cutting-edge algorithms to optimize decision-making and unlock fresh opportunities. With a steadfast commitment to excellence, we serve as trusted guides in navigating the digital frontier.
+    </p>
+
+</motion.div>
+</section>
+
   )
 }
 

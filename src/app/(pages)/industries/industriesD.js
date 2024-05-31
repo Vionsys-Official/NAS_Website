@@ -57,7 +57,7 @@ export const ourIndustries = [
     {
       title: "Finance",
       imagesrc: "/assets/industries/CardsIphoto/Finance.jpg",
-      description: "Transform property management with our innovative solutions. From listings management to client portals, we empower real estate professionals for success in a competitive market.",
+      description: "Finance management with our specialized software solutions. Empowering efficiency and security, our tools deliver real-time insights for informed decision-making. Elevate your finance operations with our innovative technology.",
       href1: "/industries/Finance",
     },
     {
@@ -69,25 +69,25 @@ export const ourIndustries = [
     {
       title: "Professional Services",
       imagesrc: "/assets/industries/CardsIphoto/profesional.jpg",
-      description: "Optimize logistics with our tailored solutions. From route optimization to fleet management, we empower transportation companies for efficient and reliable operations.",
+      description: "Enhance your professional services with our comprehensive software suite, tailored for efficiency and client satisfaction. Streamline operations and elevate service quality with our innovative technology solutions.",
       href1: "/industries/professionalService",
     },
     {
       title: "IT Digital Transformation",
       imagesrc: "/assets/industries/CardsIphoto/transport.jpg",
-      description: "Optimize logistics with our tailored solutions. From route optimization to fleet management, we empower transportation companies for efficient and reliable operations.",
+      description: "Revolutionize your IT infrastructure with our cutting-edge digital transformation solutions. Seamlessly integrate new technologies to enhance agility, productivity, and competitiveness in the digital era.",
       href1: "/industries/DigitalTransformation",
     },
     {
       title: "Construction",
       imagesrc: "/assets/industries/CardsIphoto/COnstruct.jpg",
-      description: "Optimize logistics with our tailored solutions. From route optimization to fleet management, we empower transportation companies for efficient and reliable operations.",
+      description: "Modernize your construction projects with our innovative software solutions. Streamline workflows, optimize resource allocation, and ensure project success with our tailored technology.",
       href1: "/industries/Construction",
     },
     {
       title: "Field Service",
       imagesrc: "/assets/industries/CardsIphoto/Field.jpg",
-      description: "Optimize logistics with our tailored solutions. From route optimization to fleet management, we empower transportation companies for efficient and reliable operations.",
+      description: "Maximize efficiency and productivity in field service operations with our advanced software solutions. Empower your team with real-time data access, streamlined scheduling, and optimized routes for seamless service delivery.",
       href1: "/industries/fieldService",
     },
   ];

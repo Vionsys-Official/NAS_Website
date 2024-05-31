@@ -1,7 +1,10 @@
-import React from 'react'
+"use client"
+import React from 'react';
 import { MdOnlinePrediction, MdMessage, MdSmartButton } from 'react-icons/md';
 import { RiAiGenerate, RiRobot2Fill } from 'react-icons/ri';
 import { GiProtectionGlasses } from 'react-icons/gi';
+import { motion } from 'framer-motion';
+import { fadein } from '@/components/ui/variants';
 
 const mysect2 = [
     {
@@ -52,7 +55,12 @@ const aiMlSec2 = () => {
   return (
     <section>
     {/* section 2 */}
-    <div className="mx-auto py-10 flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+    <motion.div
+     variants={fadein("up", 0.2)}
+     initial="hidden"
+     whileInView={"show"}
+     viewport={{ once: false, amount: 0.8 }}
+    className="mx-auto py-10 flex max-w-[58rem] flex-col items-center space-y-4 text-center">
 
       <h2 className="font-bold text-SubHeading leading-[1.1] md:text-MainHeading">Features</h2>
 
@@ -60,7 +68,8 @@ const aiMlSec2 = () => {
         Discover the amazing features offered by us to enhance your online presence.
       </p>
 
-    </div>
+    </motion.div>
+
     <section className="py-10 md:py-7 mt-4 md:mt-0 flex items-center justify-center flex-col">
 
       <div className="w-[90%] grid items-center justify-center gap-4 md:gap-10 sm:grid-cols-2 lg:grid-cols-3">
@@ -70,7 +79,7 @@ const aiMlSec2 = () => {
             className="border-2 border-gray-400 relative hover:cursor-pointer hover:scale-105 transition-all overflow-hidden rounded-lg bg-background p-2"
           >
             <div className="flex flex-col justify-center items-center rounded-md p-1">
-              <div className='text-Heading p-2 rounded-full bg-gray-200 text-red-600'><feat.icon /></div>
+              <div className='text-Heading p-2 rounded-full bg-gray-200 text-blue-900'><feat.icon /></div>
               <div className="md:space-y-2 flex flex-col items-center justify-center w-[16rem] sm:w-full">
                 <h3 className="text-xl md:text-2xl text-blue-800 font-semibold">{feat.title}</h3>
                 <p className="text-sm md:text-md text-muted-foreground">

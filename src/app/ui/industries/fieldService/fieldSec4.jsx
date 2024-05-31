@@ -1,6 +1,10 @@
+"use client"
 import React from 'react'
 import LastSect from '/public/assets/industries/fieldSer/LastSect.jpg'
 import Image from 'next/image';
+import { motion } from 'framer-motion';
+import { fadein } from '@/components/ui/variants';
+
 
 const fieldSec4 = () => {
   return (
@@ -21,10 +25,15 @@ const fieldSec4 = () => {
                              src={LastSect} alt="" />
 
                             <div className="mt-8 lg:px-10 lg:mt-0">
-                                <h1 className="text-4xl font-semibold text-gray-800 dark:text-white lg:w-72">
+                                <motion.h1 
+                                variants={fadein("right", 0.2)}
+                                initial="hidden"
+                                whileInView="show"
+                                viewport={{ once: false, amount: 0.8 }}
+                                className="text-4xl font-semibold text-gray-800 dark:text-white lg:w-72">
 
                                     Software's to Power Your Growing Business
-                                </h1>
+                                </motion.h1>
 
                                 <p className="max-w-lg mt-6 text-gray-500 dark:text-gray-400">
                                     NAS's field service management software enables you to drive efficiency,

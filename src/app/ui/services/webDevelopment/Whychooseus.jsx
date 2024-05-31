@@ -15,32 +15,32 @@ const Whychooseus = () => {
         {
             id:1,
             icon:RiLightbulbFlashFill,
-            title:"Innovative Solutions",
-            desc:"We deliver cutting-edge solutions tailored to your unique requirements.",
+            title:"Creative Solutions",
+            desc:"We provide advanced solutions customized to fit your specific needs.",
         },
         {
             id:2,
             icon:RiUserStarLine,
-            title:"Expertise",
-            desc:"Our team comprises skilled professionals with extensive industry experience.",
+            title:"Skilled Team",
+            desc:"Our professionals bring deep industry knowledge to every project.",
         },
         {
             id:3,
             icon:FaHandshakeSimple,
-            title:"Client-Centric Approach",
-            desc:"Your satisfaction is our priority, and we strive to exceed your expectations.",
+            title:"Customer-Focused",
+            desc:"Your satisfaction is paramount, and we strive to exceed your expectations.",
         },
         {
             id:4,
             icon:HiShieldCheck,
-            title:"Reliability",
-            desc:"Count on us for reliable support and ongoing maintenance to keep your digital assets running smoothly.",
+            title:"Dependability",
+            desc:"Rely on us for consistent support and continuous maintenance to ensure your digital assets operate seamlessly.",
         },
     ]
 
   return (
     <div className='flex items-center justify-center'>
-    <div className='w-[90%] flex flex-col md:flex-row items-center justify-center py-10 md:py-14 my-4 md:my-8 bg-gradient-to-l from-green-200 to-transparent '>
+    <div className='w-[90%] flex flex-col md:flex-row items-center justify-center py-10 md:py-14 my-4 md:my-8 bg-gradient-to-l from-blue-200 to-transparent '>
         <motion.div
             variants={fadein("left", 0.2)}
             initial="hidden"
@@ -54,7 +54,7 @@ const Whychooseus = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}
-             className="mb-6 font-sans text-MainHeading-sm md:text-MainHeading md:p-6 font-semibold leading-none tracking-tight text-gray-900 cursor-pointer">
+             className="text-green-900 mb-6 font-sans text-MainHeading-sm md:text-MainHeading md:p-6 font-semibold leading-none tracking-tight cursor-pointer">
             <span className="relative inline-block">
                 <svg
                 viewBox="0 0 52 24"
@@ -92,9 +92,9 @@ const Whychooseus = () => {
                         viewport={{ once: true, amount: 0.8 }}
                         key={feat.id} className='flex flex-col items-start justify-center cursor-pointer'>
                             <div className='flex flex-row gap-2 md:gap-6 items-start justify-center py-2'>
-                                <div className='text-MainHeading-sm md:text-MainHeading'><feat.icon/></div>
+                                <div className='text-green-900 text-MainHeading-sm md:text-MainHeading'><feat.icon/></div>
                                 <div>
-                                <h2 className='text-CardHeading-sm md:text-CardHeading font-semibold'>{feat.title}</h2>
+                                <h2 className='text-green-950 text-CardHeading-sm md:text-CardHeading font-semibold'>{feat.title}</h2>
                                 <p className='text-Para-sm md:text-Para'>{feat.desc}</p>
                                 </div>
                             </div>

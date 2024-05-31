@@ -10,8 +10,8 @@ import { fadein } from "@/components/ui/variants";
 
 const Culture = () => {
     const culture=[
-        {id:1,icon:innovation,title:"Innovation", desc:"We thrive on creativity and pushing the boundaries of what's possible. You'll be encouraged to think outside the box and bring your unique ideas to the table."},
-        {id:2,icon:colaboration,title:"Collaboration", desc:" Our team-oriented environment means you'll work alongside talented professionals who are passionate about their work. We believe in the power of teamwork to achieve extraordinary results."},
+        {id:1,icon:innovation,title:"Innovation", desc:"We thrive on innovation and challenging the limits of what's achievable. You'll be motivated to think creatively and contribute your distinctive ideas."},
+        {id:2,icon:colaboration,title:"Collaboration", desc:"In our collaborative setting, you'll work with skilled professionals who are passionate about their craft. We trust in the power of teamwork to accomplish remarkable outcomes."},
         {id:3,icon:impact,title:"Impact", desc:"Your work here will have a direct impact on our clients and their businesses. We’re committed to delivering solutions that truly make a difference."},
         {id:4,icon:growth,title:"Growth", desc:"We’re dedicated to your professional and personal development. With continuous learning opportunities, you’ll grow and evolve in your career."},
     ]
@@ -32,7 +32,7 @@ const Culture = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}
-            className='text-Para-sm md:text-Para text-center font-medium p-2 md:p-4 cursor-pointer'>Our culture is built on a foundation of creativity, collaboration, and a commitment to excellence. We foster an environment where innovation thrives, teamwork is paramount, and every team member's contributions are valued. Here’s what makes our culture unique</motion.h3>
+            className='text-blue-950 text-Para-sm md:text-Para text-center font-medium p-2 md:p-4 cursor-pointer'>Our culture is built on a foundation of creativity, collaboration, and a commitment to excellence. We foster an environment where innovation thrives, teamwork is paramount, and every team member's contributions are valued. Here’s what makes our culture unique</motion.h3>
             </div>
         </div>
         <motion.div
@@ -50,7 +50,7 @@ const Culture = () => {
                         </div>
                         </span>
 
-                        <h2 className="mt-2 font-semibold text-CardHeading-sm md:text-CardHeading font-sans">
+                        <h2 className="mt-2 text-blue-950 font-semibold text-CardHeading-sm md:text-CardHeading font-sans">
                             {feat.title}
                         </h2>
                         <p className="sm:mt-1 block text-Para-sm md:text-Para font-light"> 

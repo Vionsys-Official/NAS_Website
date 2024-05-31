@@ -4,6 +4,7 @@ import Button from "@/components/ui/Button";
 const Eduthird = () => {
   return (
     <>
+      {/* CTA section/Main section */}
       <div className="flex justify-center py-5">
         <section className="py-5 shadow-xl rounded-b-2xl mb-4 w-[90vw] md:w-[80vw] bg-blue-950">
           <div className="max-w-screen-xl mx-auto px-4 md:text-center text-center md:px-8">
@@ -19,7 +20,7 @@ const Eduthird = () => {
               </p>
             </div>
             <div className="mt-4">
-              <Button/>
+              <Button />
             </div>
           </div>
         </section>

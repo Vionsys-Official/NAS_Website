@@ -4,6 +4,7 @@ import heal from "/public/assets/industries/Healthcare/heal.jpg";
 const Healfirst = () => {
   return (
     <div className="h-full w-full">
+      {/* Hero section */}
       <div className="flex justify-center flex-col md:h-[100vh] h-[50vh] w-full bg-black">
         <Image
           className="absolute object-cover w-full bg-cover md:h-[100vh] h-[50vh] md:w-screen opacity-60"

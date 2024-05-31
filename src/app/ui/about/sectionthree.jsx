@@ -1,10 +1,13 @@
+"use client"
 import React from 'react'
 import {Cards} from '@/app/ui/about/aboutdata'
+import { fadein } from '@/components/ui/variants';
+import { motion } from 'framer-motion';
 
 const sectionthree = () => {
   return (
     <section>
-     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+     <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         <div>
           <p className="inline-block px-3 py-px mb-4 text-sm font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
@@ -50,7 +53,13 @@ const sectionthree = () => {
       <div className="grid gap-8 row-gap-10 lg:grid-cols-2">
 
         {Cards.map((info , index)=>{
-          return(<div key={index} className="max-w-md backdrop-blur-sm sm:mx-auto sm:text-center">
+          return(<motion.div
+             key={index}
+             variants={fadein("up", 0.2)}
+             initial="hidden"
+             whileInView={"show"}
+             viewport={{ once: true, amount: 0.8 }}
+            className="max-w-md backdrop-blur-sm sm:mx-auto sm:text-center">
           <div className="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-blue-200 sm:mx-auto sm:w-16 sm:h-16">
             <info.icon className='text-2xl'/>
           </div>
@@ -58,7 +67,7 @@ const sectionthree = () => {
           <p className="mb-3 text-lg text-gray-900">
            {info.description}
           </p>
-        </div>)
+        </motion.div>)
         })}
        
       </div>

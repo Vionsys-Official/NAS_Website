@@ -13,6 +13,7 @@ import Link from "next/link";
 const Grid = () => {
   return (
     <>
+      {/* Main section */}
       <section className="h-full w-full">
         <div className="px-4 md:py-20 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-14">
           {/* discover our unique features */}
@@ -47,9 +48,9 @@ const Grid = () => {
               user-friendly interfaces, customizable options.
             </motion.p>
           </div>
-          {/* first row */}
+          {/* first row cards */}
           <div className="grid gap-6 row-gap-5  lg:grid-cols-3 sm:row-gap-6 sm:grid-cols-2 md:py-10">
-            {/* first */}
+            {/* first card */}
             <Link href="/" aria-label="View Item">
               <h1 className="text-center py-2 text-CardHeading border-t-2 border-blue-600 rounded-md text-blue-900 font-extrabold">
                 Client-centric approach
@@ -71,17 +72,17 @@ const Grid = () => {
                     viewport={{ once: true, amount: 0.5 }}
                     className="text-sm tracking-wide text-gray-300 "
                   >
-                    Our company prioritizes a customer-centric approach,
-                    ensuring that every solution we develop is tailored to meet
-                    the unique needs and preferences of our clients. By actively
-                    engaging with customers, gathering their feedback, and
-                    adapting to their evolving requirements, we deliver
+                    Our company emphasizes a customer-centric approach, crafting
+                    solutions specifically designed to address the distinct
+                    needs and preferences of our clients. By continuously
+                    engaging with customers, collecting their feedback, and
+                    responding to their changing demands, we provide
                     personalized, high-value technology solutions.
                   </motion.p>
                 </div>
               </div>
             </Link>
-            {/* second */}
+            {/* second card */}
             <Link href="/" aria-label="View Item">
               <h1 className="text-center py-2 text-CardHeading border-t-2 border-blue-600 rounded-md text-blue-900 font-extrabold">
                 Iterative Development
@@ -109,7 +110,7 @@ const Grid = () => {
                 </div>
               </div>
             </Link>
-            {/* third */}
+            {/* third card */}
             <Link href="/" aria-label="View Item">
               <h1 className="text-center py-2 text-CardHeading border-t-2 border-blue-600 rounded-md text-blue-900 font-extrabold">
                 Incremental Delivery
@@ -138,9 +139,9 @@ const Grid = () => {
               </div>
             </Link>
           </div>
-          {/* second row */}
+          {/* second row cards */}
           <div className="grid gap-6 row-gap-5  lg:grid-cols-3 sm:row-gap-6 sm:grid-cols-2 ">
-            {/* first */}
+            {/* first card*/}
             <Link href="/" aria-label="View Item">
               <h1 className="text-center py-2 text-CardHeading border-t-2 border-blue-600 rounded-md text-blue-900 font-extrabold">
                 Innovative Solutions
@@ -156,18 +157,18 @@ const Grid = () => {
                     Innovative Solutions
                   </p>
                   <p className="text-sm tracking-wide text-gray-300">
-                    Company is dedicated to delivering innovative solutions that
-                    drive transformation and success for our clients. By
+                    The company is devoted to providing cutting-edge solutions
+                    that drive transformation and success for our clients. By
                     leveraging the latest technologies and creative thinking, we
                     develop cutting-edge products tailored to meet unique
                     challenges and opportunities. Our commitment to innovation
                     ensures that we provide exceptional value, helping our
-                    clients stay ahead in a rapidly evolving digital landscape.
+                    clients remain ahead in a fast-changing digital environment.
                   </p>
                 </div>
               </div>
             </Link>
-            {/* second */}
+            {/* second card*/}
             <Link href="/" aria-label="View Item">
               <h1 className="text-center py-2 text-CardHeading border-t-2 border-blue-600 rounded-md text-blue-900 font-extrabold">
                 Agile Methodology
@@ -195,7 +196,7 @@ const Grid = () => {
                 </div>
               </div>
             </Link>
-            {/* third */}
+            {/* third card */}
             <Link href="/" aria-label="View Item">
               <h1 className="text-center py-2 text-CardHeading border-t-2 border-blue-600 rounded-md text-blue-900 font-extrabold">
                 Cross-functional teams

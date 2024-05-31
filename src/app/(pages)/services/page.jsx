@@ -1,26 +1,25 @@
+
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import MainPageSection1 from '@/app/ui/services/mainPageSection1';
-import HeroSection from '@/utils/heroSection/HeroSection';
-import { servicesData } from '@/utils/heroSection/data';
+import HerosectionMain from '@/app/ui/services/herosectionMain';
+
 import { ourServices } from '@/app/(pages)/services/servicesD'
 
 export const metadata = {
   title: "Services",
 };
 
-
 const Page = () => {
   return (
-    <main id='mission'>
-      <HeroSection obj={servicesData}/>
+    <main id='mission' className='overflow-x-hidden'>
+    
+    <HerosectionMain/>
       
-      {/* Heading Section */}
-      
-  <MainPageSection1/>
-      {/* cards section */}
-  <section className="p-10 bg-gray-50">
+    <MainPageSection1/>
+  {/* cards section */}
+  <section className="p-5 lg:mx-10">
   <div className="max-w-[77rem] mx-auto">
     <h1 className="text-center font-semibold text-MainHeading text-gray-900  my-6 border-b-4 border-violet-900 relative">
       Our <span className="text-orange-600">Services</span>

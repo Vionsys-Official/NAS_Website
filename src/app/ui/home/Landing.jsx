@@ -10,7 +10,8 @@ const words = ["Superior", "Enhanced", "improved", "Elevated"];
 const landing = () => {
   return (
     <>
-      <main className="">
+      <main>
+        {/* image carousel*/}
         <EmblaCarousel />
         <section className="h-full w-full">
           {/* words swapper */}
@@ -18,7 +19,7 @@ const landing = () => {
             <div className="rounded shadow-2xl sm:p-8 lg:p-6 bg-gray-100">
               <div className="flex flex-col lg:flex-row items-center lg:items-start">
                 <div className="py-5 w-screen flex px-4">
-                  <div className="md:text-MainHeading text-xl mx-auto text-black ">
+                  <div className="md:text-MainHeading md:leading-10 text-xl mx-auto text-black ">
                     Build
                     <FlipWords words={words} /> <br />
                     Business Online with Nas Infotech Pvt. Ltd.'s Expertise.
@@ -40,13 +41,13 @@ const landing = () => {
                   </span>
                 </h5>
                 <p className="md:py-4 md:px-4 md:text-lg text-Para-sm text-center backdrop-blur-sm tracking-wide">
-                  We are dedicated to transforming your IT challenges into
-                  success stories. Our expert team provides innovative and
-                  reliable IT solutions tailored to your business needs. With a
-                  strong focus on customer satisfaction, we offer unparalleled
-                  support and cutting-edge technology to help your business
-                  thrive in the digital age. Partner with us and experience the
-                  difference that expertise and commitment can make.
+                  We are committed to turning your IT challenges into success
+                  stories. Our expert team provides innovative and reliable IT
+                  solutions tailored to your business needs. With a strong focus
+                  on customer satisfaction, we offer unparalleled support and
+                  advanced technology to help your business flourish in the
+                  digital age.collaborate with us and discover the distinction.
+                  that expertise and commitment can make.
                 </p>
                 <hr className="md:border-green-300 border-2" />
               </div>

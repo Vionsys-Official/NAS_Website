@@ -1,8 +1,11 @@
+"use client"
 import React from 'react'
 import vision1 from "/public/assets/aboutUs/vision1.jpg"
 import vision2 from "/public/assets/aboutUs/vision2.jpg"
 import vision3 from "/public/assets/aboutUs/vision3.jpg"
 import Image from 'next/image'
+import { fadein } from '@/components/ui/variants';
+import { motion } from 'framer-motion';
 
 const vision = () => {
   return (
@@ -41,12 +44,17 @@ const vision = () => {
             <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-blue-900 sm:text-4xl sm:leading-none">
             Our Vision
             </h2>
-            <p className="text-base text-gray-700 md:text-lg">
+            <motion.p
+             variants={fadein("left", 0.2)}
+             initial="hidden"
+             whileInView={"show"}
+             viewport={{ once: true, amount: 0.8 }}
+             className="text-base text-gray-700 md:text-lg">
             We envision a world where businesses of all sizes can harness the power 
             of technology to achieve their full potential. Our goal is to be the trusted 
             partner for companies seeking to innovate and transform their operations
              through cutting-edge software solutions.
-            </p>
+            </motion.p>
           </div>
         </div>
 

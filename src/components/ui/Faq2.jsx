@@ -8,11 +8,11 @@ const Faq2 = ({ faq }) => {
     <div className=" w-full py-6 md:px-0 px-2">
       <div className="flex justify-center items-center">
         <motion.h1
-          variants={fadein("down", 0.1)}
+          variants={fadein("left", 0.1)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.8 }}
-          className="md:text-Heading text-Heading-sm font-bold text-black "
+          viewport={{ once: true, amount: 0.8 }}
+          className="md:text-Heading text-Heading-sm font-bold text-black cursor-pointer"
         >
           Frequently Asked Questions
         </motion.h1>
@@ -46,7 +46,12 @@ const Faq2 = ({ faq }) => {
                 <span className="md:text-lg text-base">{item.ques}</span>
               </summary>
               <article className="px-12 pb-4">
-                <p className="md:text-base text-sm">{item.ans}</p>
+                <motion.p 
+                variants={fadein("left", 0.1)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: true, amount: 0.8 }}
+                className="md:text-base text-sm">{item.ans}</motion.p>
               </article>
             </details>
           </li>

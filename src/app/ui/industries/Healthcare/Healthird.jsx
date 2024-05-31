@@ -48,11 +48,11 @@ const Healthird = () => {
                   </p>
                 </Link>
                 <p className="mb-4 text-sm text-gray-700 px-2">
-                  We offer comprehensive cloud migration, management, and
-                  optimization services to ensure seamless integration and
-                  maximum performance, Our Cloud Infrastructure Services provide
-                  scalable, secure, and efficient cloud solutions tailored to
-                  your business needs.
+                  We offer comprehensive cloud relocation, administration, and
+                  optimization administrations to guarantee consistent
+                  integration and most extreme execution, Our Cloud Foundation
+                  Administrations provide adaptable, secure, and productive
+                  cloud arrangements custom fitted to your trade needs.
                 </p>
                 <div className="flex space-x-4">
                   <div className="mr-2"></div>
@@ -104,6 +104,7 @@ const Healthird = () => {
                   alt=""
                 />
               </Link>
+              {/* Card 3 */}
               <div className="py-5">
                 <Link
                   href="/"
@@ -119,7 +120,7 @@ const Healthird = () => {
                   against evolving cyber threats, ensuring the safety and
                   integrity of your digital assets. We provide advanced security
                   assessments, robust threat detection, and rapid incident
-                  response to defend your organization
+                  response to defend your organization.
                 </p>
               </div>
             </motion.div>
@@ -191,7 +192,7 @@ const Healthird = () => {
                   Enhance clinical decision-making, optimize resource
                   allocation, and drive patient-centered care with our expert
                   analytics solutions. Partner with us to leverage the power of
-                  data and transform healthcare
+                  data and transform healthcare.
                 </p>
               </div>
             </motion.div>
@@ -248,7 +249,7 @@ const Healthird = () => {
                 </p>
               </div>
               <div className="mt-4">
-                <Button/>
+                <Button />
               </div>
             </div>
           </section>

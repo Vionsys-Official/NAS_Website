@@ -21,6 +21,7 @@ const Forms = () => {
 
   const [formData, setFormData] = useState(initialFormData);
   const [errors, setErrors] = useState({}); // State to hold validation errors
+  const [loading, setLoading] = useState(false); // State to handle loading
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -29,6 +30,7 @@ const Forms = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true); // Set loading to true when the form is submitted
 
     try {
       // Validate form data against Yup schema
@@ -43,6 +45,9 @@ const Forms = () => {
         })
         .catch((err) => {
           toast.error("Something went wrong!");
+        })
+        .finally(() => {
+          setLoading(false); // Set loading to false after form submission
         });
     } catch (validationErrors) {
       // If validation fails, set the validation errors state
@@ -52,6 +57,7 @@ const Forms = () => {
       });
       setErrors(errors);
       toast.error("Please fix the errors in the form.");
+      setLoading(false); // Set loading to false if validation fails
     }
   };
 
@@ -62,11 +68,12 @@ const Forms = () => {
         <div className="flex items-center justify-center px-4 py-10 sm:px-6 sm:py-16 lg:px-8">
           <div className="xl:mx-auto lg:w-[50vw] w-full ">
             <motion.h2
-            variants={fadein("down", 0.1)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: false, amount: 0.5 }}
-            className="text-3xl font-bold text-center leading-tight text-black sm:text-4xl py-6">
+              variants={fadein("down", 0.1)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: false, amount: 0.5 }}
+              className="text-3xl font-bold text-center leading-tight text-blue950 sm:text-4xl py-6"
+            >
               Get In Touch
             </motion.h2>
 
@@ -264,10 +271,38 @@ const Forms = () => {
               {/* button */}
               <div className="flex justify-center items-center">
                 <button
-                  className="relative px-6 py-2 text-white hover:border-white hover:border  rounded-lg bg-green-500  isolation-auto z-10
-        before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-blue-950 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-500"
+                  type="submit"
+                  className="relative px-6 py-2 text-white hover:border-white hover:border rounded-lg bg-green-500 isolation-auto z-10
+        before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full before:bg-blue-950 before:-z-10 before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-500"
+                  disabled={loading} // Disable button while loading
                 >
-                  Submit
+                  {loading ? (
+                    <div className="flex items-center">
+                      <svg
+                        className="animate-spin h-5 w-5 mr-3 text-white"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <circle
+                          className="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          strokeWidth="4"
+                        ></circle>
+                        <path
+                          className="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8v8H4z"
+                        ></path>
+                      </svg>
+                      Submitting...
+                    </div>
+                  ) : (
+                    "Submit"
+                  )}
                 </button>
               </div>
             </form>

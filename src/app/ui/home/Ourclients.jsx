@@ -36,7 +36,7 @@ const OurClients = () => {
   ];
 
   return (
-    <div className=" shadow-xl ">
+    <div className="shadow-xl">
       <h1 className="md:text-4xl text-2xl text-blue-900 font-bold text-center py-2">
         Our Clients
       </h1>

@@ -1,6 +1,6 @@
-'use client'
-import { fadein } from '@/components/ui/variants';
-import { motion } from 'framer-motion';
+"use client";
+import { fadein } from "@/components/ui/variants";
+import { motion } from "framer-motion";
 import React from "react";
 import { SiSololearn, SiZend } from "react-icons/si";
 import { FaBookBookmark } from "react-icons/fa6";
@@ -46,6 +46,7 @@ const Edusecond = () => {
   return (
     <>
       <div>
+        {/* Our expertise */}
         <div className="px-4 md:py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div className="md:w-[80vw] shadow-md bg-slate-100 sm:text-center sm:mx-auto rounded-md bg-transparent">
             <Link
@@ -57,16 +58,18 @@ const Edusecond = () => {
               variants={fadein("right", 0.1)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: true, amount: 0.5}}
-              className="text-center text-2xl md:text-4xl lg:text-5xl font-bold tracking-tight text-blue-900 sm:leading-tight">
+              viewport={{ once: true, amount: 0.5 }}
+              className="text-center text-2xl md:text-4xl lg:text-5xl font-bold tracking-tight text-blue-900 sm:leading-tight"
+            >
               Our Expertise in Education
             </motion.h2>
             <motion.p
-            variants={fadein("left", 0.1)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, amount: 0.5}}
-              className="text-base text-gray-700  text-center md:text-lg p-4 sm:px-6 md:px-8">
+              variants={fadein("left", 0.1)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.5 }}
+              className="text-base text-gray-700  text-center md:text-lg p-4 sm:px-6 md:px-8"
+            >
               We leverage the latest pedagogical research and cutting-edge
               technology to foster an engaging and inclusive environment,
               ensuring every student achieves their fullest potential. Our
@@ -81,6 +84,7 @@ const Edusecond = () => {
       </div>
 
       <section>
+        {/* Our comprehensive services section */}
         <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
           <div className="relative max-w-2xl mx-auto sm:text-center">
             <div className="relative z-10">
@@ -90,14 +94,12 @@ const Edusecond = () => {
             </div>
           </div>
           <div className="relative py-5">
-            <motion.ul
-            
-              className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 bg-[rgba(101,227,131,0.5)] p-8 shadow-2xl text-center">
+            <motion.ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 bg-[rgba(101,227,131,0.5)] p-8 shadow-2xl text-center">
               {features.map((item, idx) => (
                 <motion.li
-                whileHover={{ scale: 1.1, delay: 2000 }}
-                onHoverStart={(e) => {}}
-                onHoverEnd={(e) => {}}
+                  whileHover={{ scale: 1.1, delay: 2000 }}
+                  onHoverStart={(e) => {}}
+                  onHoverEnd={(e) => {}}
                   key={idx}
                   className="bg-white space-y-3 p-4 border-r-4 border-blue-900  rounded-lg"
                 >

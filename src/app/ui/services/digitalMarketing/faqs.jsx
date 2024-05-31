@@ -16,7 +16,7 @@ const digitalFaq = () => {
         },
         {
             id: 3,
-            question: "How do you measure the success of digital marketing campaigns?",
+            question: "How do you measure the success of digital marketing campaign?",
             ans: "We use key performance indicators (KPIs) such as website traffic, conversion rates, engagement metrics, and return on investment (ROI) to measure success."
         },
         {

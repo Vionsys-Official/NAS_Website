@@ -1,7 +1,10 @@
+"use client"
 import React from 'react'
 import MySect2I from '/public/assets/industries/fieldSer/MySect2I.jpg'
 import Image from 'next/image';
 import { FaCheck } from "react-icons/fa";
+import { motion } from 'framer-motion';
+import { fadein } from '@/components/ui/variants';
 
 
 const fieldSec2 = () => {
@@ -12,22 +15,43 @@ const fieldSec2 = () => {
                     <p className="text-gray-900 dark:text-gray-900 mb-6">Our expert team delivers comprehensive on-site services to ensure your operations run smoothly and efficiently. From routine maintenance and emergency repairs to detailed inspections and performance evaluations, we provide tailored solutions to meet your specific needs. Trust us to enhance your field operations with reliability and excellence.
                     </p>
                     <ul className="space-y-3 text-gray-900 dark:text-gray-900">
-                        <li className="flex items-start">
+                        <motion.li
+                            
+                            variants={fadein("right", 0.2)}
+                            initial="hidden"
+                            whileInView="show"
+                            viewport={{ once: false, amount: 0.8 }}
+                            className="flex items-start">
                             <FaCheck className="w-5 h-5 mr-3 text-gray-900 dark:text-gray-50" />
                             <span>Routine maintenance</span>
-                        </li>
-                        <li className="flex items-start">
+                        </motion.li>
+                        <motion.li
+                            variants={fadein("right", 0.2)}
+                            initial="hidden"
+                            whileInView="show"
+                            viewport={{ once: false, amount: 0.8 }}
+                             className="flex items-start">
                             <FaCheck className="w-5 h-5 mr-3 text-gray-900 dark:text-gray-50" />
                             <span>Emergency repair</span>
-                        </li>
-                        <li className="flex items-start">
+                        </motion.li>
+                        <motion.li
+                            
+                            variants={fadein("right", 0.2)}
+                            initial="hidden"
+                            whileInView="show"
+                            viewport={{ once: false, amount: 0.8 }} className="flex items-start">
                             <FaCheck className="w-5 h-5 mr-3 text-gray-900 dark:text-gray-50" />
                             <span>Scheduled inspections</span>
-                        </li>
-                        <li className="flex items-start">
+                        </motion.li>
+                        <motion.li
+                            variants={fadein("right", 0.2)}
+                            initial="hidden"
+                            whileInView="show"
+                            viewport={{ once: false, amount: 0.8 }}
+                            className="flex items-start">
                             <FaCheck className="w-5 h-5 mr-3 text-gray-900 dark:text-gray-50" />
                             <span>Performance evaluations</span>
-                        </li>
+                        </motion.li>
 
                     </ul>
                 </div>
