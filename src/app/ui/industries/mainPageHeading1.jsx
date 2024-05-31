@@ -1,10 +1,14 @@
+"use client"
 import React from 'react'
 import Image from 'next/image';
 import industres1 from "/public/assets/industries/CardsIphoto/industres1.jpg";
+import { fadein } from '@/components/ui/variants';
+import { motion } from 'framer-motion';
+
 const mainPageHeading1 = () => {
   return (
     <section id="industreBg" className="p-10 mx-auto">
-    <div className="mt-10 grid gap-5 row-gap-8 lg:grid-cols-2 ">
+    <div className="grid gap-5 row-gap-8 lg:grid-cols-2 ">
       <div>
         <Image
           width={600}
@@ -14,8 +18,16 @@ const mainPageHeading1 = () => {
           alt="" />
       </div>
 
-      <div className="flex flex-col justify-center">
-        <div className="max-w-xl">
+      <motion.div
+      variants={fadein("right", 0.2)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{ once: false, amount: 0.8 }}
+
+       className="flex flex-col justify-center">
+      <div 
+      
+          className="max-w-xl">
 
           <h2 className="max-w-lg mb-6 font-sans text-MainHeading font-bold text-gray-900  sm:leading-none">
             Empowering Industries with
@@ -52,7 +64,7 @@ const mainPageHeading1 = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   </section>
   )
