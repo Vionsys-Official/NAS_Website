@@ -70,7 +70,7 @@ export const ourIndustries = [
       title: "Professional Services",
       imagesrc: "/assets/industries/CardsIphoto/profesional.jpg",
       description: "Optimize logistics with our tailored solutions. From route optimization to fleet management, we empower transportation companies for efficient and reliable operations.",
-      href1: "",
+      href1: "/industries/professionalService",
     },
     {
       title: "IT Digital Transformation",

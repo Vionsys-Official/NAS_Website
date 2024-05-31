@@ -27,7 +27,7 @@ const Hero = () => {
                     </h2>
                     <h6 className="mb-6 md:text-xl font-normal tracking-tight text-white text-lg sm:leading-none">Empowering Pharma Companies with Advanced Technology and Data-Driven Insights</h6>
                     <p className="mb-6 text-base font-light tracking-wide text-gray-300 md:text-lg">
-                        We streamline operations, enhance R&D, and ensure compliance with advanced technology. From optimizing clinical trials to managing supply chains, our tailored solutions improve efficiency and accelerate time-to-market. Discover how we can transform your pharma operations.
+                        We streamline operations, enhance R&D and ensure compliance with advanced technology. From optimizing clinical trials to managing supply chains, our tailored solutions improve efficiency and accelerate time-to-market. Discover how we can transform your pharma operations.
                     </p>
                     <div>
                         <Link

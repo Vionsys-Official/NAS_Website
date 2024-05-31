@@ -1,8 +1,10 @@
 "use client";
 import Image from "next/image";
+import { fadein } from "@/components/ui/variants";
+import { motion } from "framer-motion";
+
 import Insurance from "/public/assets/industries/Insurance/Insurance.jpg";
 import React from "react";
-import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -14,8 +16,11 @@ const Hero = () => {
       <div className="relative w-full -top-16 h-full flex justify-center items-center  ">
         <div className="w-[50%] h-32  flex justify-center items-center bg-white  rounded shadow">
           <motion.p
-            animate={{ x: [100, 0] }}
-            className=" md:text-HeroHeading text-HMain-sm sm:p-4 font-bold text-black"
+            variants={fadein("left", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.8 }}
+            className=" md:text-HeroHeading text-HMain-sm sm:p-4 font-bold text-blue950"
           >
             Insurance
           </motion.p>
@@ -25,11 +30,17 @@ const Hero = () => {
       {/* section2 */}
       <div className="w-full">
         <div className="flex flex-col gap-5 justify-center items-center">
-          <h1 className="md:text-Heading text-Heading-sm w-[50%] text-center font-bold text-blue-500">
+          <motion.h1
+            variants={fadein("up", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.8 }}
+            className="md:text-Heading text-Heading-sm md:w-[50%] w-full text-center font-bold text-blue1"
+          >
             Revolutionizing The Insurance Industry With Cutting-Edge Software
             Solutions
-          </h1>
-          <p className="w-[50%] text-center md:text-Para  text-Para-sm font-normal text-gray-800">
+          </motion.h1>
+          <p className="md:w-[50%] w-[90%] text-center md:text-Para  text-Para-sm font-normal text-gray-800">
             Understanding the unique challenges and opportunities within the
             insurance industry is our specialty. Our suite of software solutions
             is designed to streamline operations, enhance customer experiences,

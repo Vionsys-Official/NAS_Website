@@ -61,7 +61,7 @@ const model = () => {
 
   return (
     <div className='flex items-center justify-center pb-2'>
-        <button onClick={showModal} className="relative px-4 py-0.5 text-white rounded-md bg-indigo-400  isolation-auto z-10 border-2 border-blue-600
+        <button onClick={showModal} className="relative w-[10rem] px-4 py-0.5 text-gray-900 rounded-xl bg-indigo-200  isolation-auto z-10 border-2 border-gray-400
         before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-indigo-500 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700">Apply</button>
         <Modal className='backdrop-blur' footer={null} open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
         <h2 className='flex items-center justify-center font-bold text-xl pb-10 pt-2'>Application form</h2>
@@ -151,7 +151,7 @@ const model = () => {
         </div>
         <div className="flex -mx-3">
           <div className="w-full px-3 mb-5">
-            <button className="block w-full max-w-xs mx-auto relative px-4 py-0.5 text-white rounded-md bg-indigo-400  isolation-auto z-10 border-2 border-blue-600
+            <button className="block w-full max-w-xs mx-auto relative px-4 py-0.5 text-white rounded-full bg-indigo-400  isolation-auto z-10 border-2 border-blue-600
         before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-indigo-500 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700" onClick={logInputValue}>Submit</button>
           </div>
         </div>                  

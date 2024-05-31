@@ -1,4 +1,7 @@
+"use client";
 import React from "react";
+import { fadein } from "@/components/ui/variants";
+import { motion } from "framer-motion";
 import CheckLogo from "/public/assets/services/CyberSecurity/check.png";
 import About from "/public/assets/services/CyberSecurity/about3.jpg";
 import Image from "next/image";
@@ -6,9 +9,15 @@ const WhatWeDo = () => {
   return (
     <div className=" w-full flex  flex-col ">
       <div className="w-full ">
-        <p className=" md:text-Heading text-Heading-sm text-black font-extrabold text-center ">
+        <motion.p
+          variants={fadein("left", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.8 }}
+          className=" md:text-Heading text-Heading-sm text-blue950 font-extrabold text-center "
+        >
           This is 24/7 Cyber Security Operation Center for your problem solution
-        </p>
+        </motion.p>
       </div>
       <div className="flex md:flex-row flex-col md:gap-0 gap-6">
         <div className="md:w-1/2 w-full md:px-6 p-2 flex items-center justify-center">
@@ -25,7 +34,7 @@ const WhatWeDo = () => {
                       Identifying Threats
                     </div>
                   </div>
-                  <p className="text-black md:text-Para text-Para-sm">
+                  <p className="text-gray-800 md:text-Para text-Para-sm">
                     Our company specializes in identifying threats by employing
                     advanced monitoring techniques and proactive security
                     measures, ensuring comprehensive protection for our clients'
@@ -41,7 +50,7 @@ const WhatWeDo = () => {
                       Security Management
                     </div>
                   </div>
-                  <p className="text-black md:text-Para text-Para-sm">
+                  <p className="text-gray-800 md:text-Para text-Para-sm">
                     Our company specializes in Security Management, offering
                     comprehensive solutions for safeguarding digital assets
                     through proactive monitoring and strategic security measures
@@ -58,7 +67,7 @@ const WhatWeDo = () => {
                       Security Services
                     </div>
                   </div>
-                  <p className="text-black md:text-Para text-Para-sm">
+                  <p className="text-gray-800 md:text-Para text-Para-sm">
                     Our company specializes in Security Management, offering
                     comprehensive solutions for safeguarding digital assets
                     through proactive monitoring and strategic security measures
@@ -73,7 +82,7 @@ const WhatWeDo = () => {
                       Industry Certified
                     </div>
                   </div>
-                  <p className="text-black md:text-Para text-Para-sm">
+                  <p className="text-gray-800 md:text-Para text-Para-sm">
                     Our company specializes in Security Management, offering
                     comprehensive solutions for safeguarding digital assets
                     through proactive monitoring and strategic security measures

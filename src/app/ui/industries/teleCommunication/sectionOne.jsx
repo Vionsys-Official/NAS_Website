@@ -1,7 +1,10 @@
+"use client"
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import Hero from '/public/assets/industries/teleCommunication/telehero.jpg';
+import { motion } from 'framer-motion';
+
 
 const sectionOne = () => {
   return (
@@ -14,7 +17,9 @@ const sectionOne = () => {
       <div className="relative h-[70vh] md:h-[100vh] bg-gray-900 bg-opacity-65">
         <div className="px-3 md:px-10 py-16 h-full flex flex-col items-start justify-center">
           <div className="flex flex-col items-start">
-            <div className="w-full border-l-8 border-emerald-400">
+            <motion.div
+             animate={{ y: [-100, 0] }}
+             className="w-full border-l-8 border-emerald-400">
               <h2 className="w-full pl-2 md:px-6 mb-6 font-sans text-2xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
               Telecommunication Solutions by 
               <span className="text-green-500"> N</span><span className='text-stone-400'>AS </span> 
@@ -36,7 +41,7 @@ const sectionOne = () => {
                   <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
                 </svg>
               </Link>
-            </div>
+            </motion.div>
             
           </div>
         </div>

@@ -52,10 +52,10 @@ const ChooseUs = () => {
               />
             </svg>
           </div>
-          <div className="max-w-xl mb-6">
-            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+          <div className="max-w-xl md:mb-6">
+            <h2 className="max-w-lg md:mb-6 mb-1 md:text-Heading text-Heading-sm font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
             Choosing Us: 
-              <br className="hidden md:block" />
+              <br className="hidden md:block"/>
               What You Gain
             </h2>
             <p className="text-base text-gray-700 md:text-lg">
@@ -68,18 +68,24 @@ const ChooseUs = () => {
             <Image
               className="object-cover mb-6 rounded shadow-lg h-28 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"
               src={RealEstate}
+              width={"1000"}
+              height={"1000"}
               alt=""
             />
-            <img
+            <Image
               className="object-cover w-20 h-20 rounded shadow-lg sm:h-32 xl:h-40 sm:w-32 xl:w-40"
               src={RealEstate2}
+              width={"1000"}
+              height={"1000"}
               alt=""
             />
           </div>
           <div className="px-3">
-            <img
+            <Image
               className="object-cover w-40 h-40 rounded shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80"
               src={RealEstate3}
+              width={"1000"}
+              height={"1000"}
               alt=""
             />
           </div>

@@ -57,8 +57,8 @@ export default function EmblaCarousel() {
           </div>
           <div className="absolute flex flex-col justify-center h-full md:pt-52 pt-10 md:pl-16 space-y-4 z-10 px-2">
             <h2 className="md:text-6xl text-3xl font-extrabold uppercase tracking-tighter text-stone-400">
-              Technology That
-              <br /> <span className="text-green-500">Drives Success</span>
+            <span className="text-green-500"> Technology </span>That
+              <br /> Drives Success
             </h2>
             <p className="md:text-3xl text-lg font-thin text-white">
               Empowering Businesses with Advanced IT Solutions

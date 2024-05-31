@@ -1,4 +1,7 @@
+"use client";
 import React from "react";
+import { fadein } from "@/components/ui/variants";
+import { motion } from "framer-motion";
 import Expertise from "/public/assets/services/TestingandQA/expertise.jpg";
 import CustomizedSolutions from "/public/assets/services/TestingandQA/customizedsolutions.jpg";
 
@@ -7,13 +10,25 @@ const WhyChooseUs = () => {
   return (
     <div className="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
       <div className="flex flex-col mb-6 lg:justify-between lg:flex-row md:mb-8">
-        <h2 className="max-w-lg mb-5  font-bold tracking-tight text-gray-900 md:text-Heading  text-Heading-sm sm:leading-none md:mb-6 group">
+        <motion.h2
+          variants={fadein("left", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.8 }}
+          className="max-w-lg mb-5  font-bold tracking-tight text-blue950  md:text-Heading  text-Heading-sm sm:leading-none md:mb-6 group"
+        >
           <span className="inline-block mb-1 sm:mb-4">
             Why Choose Us for Quality Assurance?
           </span>
           <div className="h-1 ml-auto duration-300 origin-left transform bg-deep-purple-accent-400 scale-x-30 group-hover:scale-x-100" />
-        </h2>
-        <p className="text-gray-700 md:text-Para text-Para-sm md:max-w-xl">
+        </motion.h2>
+        <motion.p
+          variants={fadein("right", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.8 }}
+          className="text-gray-800 md:text-Para text-Para-sm md:max-w-xl"
+        >
           Our dedicated team of QA experts thoroughly examines every detail to
           ensure top-notch quality of your software, ensuring it's not just
           error-free, but also optimized for performance, security, and user
@@ -21,7 +36,7 @@ const WhyChooseUs = () => {
           guarantee that your software will not only meet your expectations but
           also elevate your business to new heights of success in today's
           competitive landscape.
-        </p>
+        </motion.p>
       </div>
       <div className="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2">
         <a href="/" aria-label="View Item">

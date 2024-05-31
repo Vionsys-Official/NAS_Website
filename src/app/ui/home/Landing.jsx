@@ -1,9 +1,9 @@
-import Image from "next/image";
-import Link from "next/link";
+'use client'
 import React from "react";
 import { FlipWords } from "@/components/ui/flip-words";
 import EmblaCarousel from "@/components/ui/carousal";
-
+import variants from "@/components/ui/variants";
+import { motion } from "framer-motion";
 const words = ["Superior", "Enhanced", "improved", "Elevated"];
 const landing = () => {
   return (
@@ -14,7 +14,7 @@ const landing = () => {
           {/* words swapper */}
           <div className="flex justify-center items-center h-full w-screen">
             <div className=" md:h-[20vh] w-screen flex px-4">
-              <div className="md:text-4xl text-xl mx-auto py-4 md:font-thin text-black ">
+              <div className="md:text-MainHeading text-xl mx-auto py-4 md:font-thin text-black ">
                 Build
                 <FlipWords words={words} /> <br />
                 Business Online with Nas Infotech Pvt. Ltd.'s Expertise.
@@ -23,10 +23,10 @@ const landing = () => {
           </div>
           {/* legacy of innovation */}
           <div className="px-4 py-6 mx-auto max-w-full lg:w-[90vw] md:px-24 lg:px-4">
-            <div className="rounded shadow-2xl sm:p-8 lg:p-16 bg-white">
+            <div className="rounded shadow-2xl sm:p-8 lg:p-10 bg-white">
               <div className="flex flex-col lg:flex-row items-center lg:items-start">
                 <div className="lg:w-[30vw] w-full lg:mb-0 mb-6 lg:pr-8 text-center lg:text-left">
-                  <h2 className="md:py-10 text-blue-900 font-sans text-3xl font-bold tracking-normal sm:text-4xl sm:leading-none">
+                  <h2 className="md:py-10 text-blue-900 font-sans md:text-MainHeading text-MainHeading-sm  font-bold tracking-normal sm:text-4xl sm:leading-none">
                     Explore our legacy of
                     <br className="hidden md:block" />
                     innovation{" "}
@@ -36,7 +36,7 @@ const landing = () => {
                   </h2>
                 </div>
                 <div className="lg:w-2/3 w-full px-4 lg:px-0">
-                  <p className="text-black text-lg md:text-xl tracking-wide leading-relaxed">
+                  <p className="md:text-xl text-Para-sm tracking-wide ">
                     We are dedicated to transforming your IT challenges into
                     success stories. Our expert team provides innovative and
                     reliable IT solutions tailored to your business needs. With

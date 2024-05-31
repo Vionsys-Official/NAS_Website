@@ -7,43 +7,43 @@ import { GrUserExpert } from "react-icons/gr";
 const Choose = () => {
     return (
         <section className="text-gray-800">
-            <div className="container mx-auto flex flex-col p-6">
-                <h2 className="py-4 text-3xl font-bold text-center">Why Partner with Us?</h2>
+            <div className="container mx-auto flex flex-col md:p-6 p-2">
+                <h2 className="py-4 md:text-Heading text-Heading-sm font-bold text-center">Why Partner with Us?</h2>
                 <div className="divide-y divide-gray-700 dark:divide-gray-300">
-                    <div className="grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0">
+                    <div className="grid justify-center grid-cols-4 md:p-8 p-2 mx-auto space-y-3 lg:space-y-0">
                         <div className="flex items-center justify-center lg:col-span-1 col-span-full">
                             <GrUserExpert className="w-16 h-16" />
                         </div>
                         <div className="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
-                            <span className="text-xl font-bold md:text-2xl">Industry Expertise:</span>
-                            <span className="mt-4 text-gray-700">Our team understands the unique needs of the construction industry, providing solutions that are not only innovative but also practical and effective.</span>
+                            <span className="font-bold md:text-CardHeading text-CardHeading-sm">Industry Expertise:</span>
+                            <span className="md:mt-4 mt-2 text-gray-800">Our team understands the unique needs of the construction industry, providing solutions that are not only innovative but also practical and effective.</span>
                         </div>
                     </div>
-                    <div className="grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0">
+                    <div className="grid justify-center grid-cols-4 md:p-8 p-2 mx-auto space-y-3 lg:space-y-0">
                         <div className="flex items-center justify-center lg:col-span-1 col-span-full">
                             <HiOutlineLightBulb className="w-16 h-16" />
                         </div>
                         <div className="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
-                            <span className="text-xl font-bold md:text-2xl">Customized Solutions:</span>
-                            <span className="mt-4 text-gray-700">We tailor our IT services to fit your specific project requirements and business objectives, ensuring you get the most value from our technology.</span>
+                            <span className="font-bold md:text-CardHeading text-CardHeading-sm">Customized Solutions:</span>
+                            <span className="md:mt-4 mt-2 text-gray-800">We tailor our IT services to fit your specific project requirements and business objectives ensuring you get the most value from our technology.</span>
                         </div>
                     </div>
-                    <div className="grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0">
+                    <div className="grid justify-center grid-cols-4 md:p-8 p-2 mx-auto space-y-3 lg:space-y-0">
                         <div className="flex items-center justify-center lg:col-span-1 col-span-full">
                             <AiOutlineSolution className="w-16 h-16" />
                         </div>
                         <div className="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
-                            <span className="text-xl font-bold md:text-2xl">Proven Track Record:</span>
-                            <span className="mt-4 text-gray-700">With a history of successful projects and satisfied clients, we are a trusted partner for construction companies looking to leverage technology for growth and efficiency.</span>
+                            <span className="font-bold md:text-CardHeading text-CardHeading-sm">Proven Track Record:</span>
+                            <span className="md:mt-4 mt-2 text-gray-800">With a history of successful projects and satisfied clients, we are a trusted partner for construction companies looking to leverage technology for growth and efficiency.</span>
                         </div>
                     </div>
-                    <div className="grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0">
+                    <div className="grid justify-center grid-cols-4 md:p-8 p-2 mx-auto space-y-3 lg:space-y-0">
                         <div className="flex items-center justify-center lg:col-span-1 col-span-full">
                             <CgTime className="w-16 h-16" />
                         </div>
                         <div className="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
-                            <span className="text-xl font-bold md:text-2xl">24/7 Support:</span>
-                            <span className="mt-4 text-gray-700">Our dedicated support team is always available to assist you, ensuring that your systems run smoothly and any issues are promptly resolved.</span>
+                            <span className="font-bold md:text-CardHeading text-CardHeading-sm">24/7 Support:</span>
+                            <span className="md:mt-4 mt-2 text-gray-800">Our dedicated support team is always available to assist you ensuring that your systems run smoothly and any issues are promptly resolved.</span>
                         </div>
                     </div>
                 </div>

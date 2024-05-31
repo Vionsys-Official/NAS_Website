@@ -1,4 +1,7 @@
+"use client";
 import React from "react";
+import { fadein } from "@/components/ui/variants";
+import { motion } from "framer-motion";
 import HelpDeskSupport from "/public/assets/services/ITServiceSupport/helpdesksupport.jpg";
 import networkManagement from "/public/assets/services/ITServiceSupport/NetworkManagement.jpg";
 import ITConsulting from "/public/assets/services/ITServiceSupport/ITConsulting.jpg";
@@ -8,15 +11,27 @@ import SoftwareSupport from "/public/assets/services/ITServiceSupport/SoftwareSu
 import Image from "next/image";
 const Services = () => {
   return (
-    <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-4 py-4 flex ">
-      <div className="w-full flex flex-col gap-10">
-        <div className="w-full flex items-center justify-center">
-          <h1 className="md:text-Heading text-Heading-sm font-bold text-slate-700">
+    <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-16 md:py-4 py-4 flex ">
+      <div className="w-full flex flex-col md:gap-10 gap-6">
+        <motion.div
+          variants={fadein("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.8 }}
+          className="w-full flex items-center justify-center"
+        >
+          <h1 className="md:text-Heading text-Heading-sm font-bold text-blue950">
             Our Services
           </h1>
-        </div>
+        </motion.div>
         <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
-          <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+          <div
+            variants={fadein("up", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.8 }}
+            className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm"
+          >
             <Image
               src={HelpDeskSupport}
               alt=""
@@ -26,7 +41,7 @@ const Services = () => {
               <p className="mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
                 24/7 Help Desk Support
               </p>
-              <p className="mb-2 md:text-Para text-Para-sm text-gray-700">
+              <p className="mb-2 md:text-Para text-Para-sm text-gray-800">
                 Our 24/7 help desk offers immediate assistance for software
                 glitches, hardware malfunctions, and connectivity issues. Our
                 experienced technicians swiftly resolve problems to ensure
@@ -34,7 +49,13 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+          <div
+            variants={fadein("up", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.8 }}
+            className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm"
+          >
             <Image
               src={networkManagement}
               alt=""
@@ -45,7 +66,7 @@ const Services = () => {
               <p className="mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
                 Network Management
               </p>
-              <p className="mb-2 md:text-Para text-Para-sm text-gray-700">
+              <p className="mb-2 md:text-Para text-Para-sm text-gray-800">
                 We offer comprehensive network management with real-time
                 monitoring, performance optimization, and security enhancements.
                 Our proactive approach ensures your IT infrastructure remains
@@ -53,7 +74,13 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+          <div
+            variants={fadein("up", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.8 }}
+            className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm"
+          >
             <Image
               src={ITConsulting}
               alt=""
@@ -63,7 +90,7 @@ const Services = () => {
               <p className="mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide">
                 IT Consulting
               </p>
-              <p className="mb-2  md:text-Para text-Para-sm text-gray-700">
+              <p className="mb-2  md:text-Para text-Para-sm text-gray-800">
                 Transform your IT strategy with our expert consulting services.
                 We provide in-depth assessments, strategic planning, and
                 technology roadmaps to align your IT initiatives with your
@@ -84,7 +111,7 @@ const Services = () => {
               <p className="mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
                 Remote Workforce Solutions
               </p>
-              <p className="mb-2 md:text-Para text-Para-sm text-gray-700">
+              <p className="mb-2 md:text-Para text-Para-sm text-gray-800">
                 Empower your remote workforce with our specialized support
                 services. We offer secure remote access solutions, advanced
                 collaboration tools, and comprehensive remote IT support. Our
@@ -104,7 +131,7 @@ const Services = () => {
                 {" "}
                 Software Support and Maintenance
               </p>
-              <p className="mb-2 md:text-Para text-Para-sm text-gray-700">
+              <p className="mb-2 md:text-Para text-Para-sm text-gray-800">
                 Keep your software applications running at peak performance with
                 our support and maintenance services. We provide regular
                 updates, patches, and performance tuning to ensure your software
@@ -122,7 +149,7 @@ const Services = () => {
               <p className="mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
                 Compliance and Regulatory Support
               </p>
-              <p className="mb-2 md:text-Para text-Para-sm text-gray-700">
+              <p className="mb-2 md:text-Para text-Para-sm text-gray-800">
                 Navigate the complexities of IT compliance with our specialized
                 support. We help you adhere to industry regulations and
                 standards, conduct compliance audits, and implement necessary

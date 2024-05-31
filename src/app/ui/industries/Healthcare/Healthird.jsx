@@ -1,3 +1,6 @@
+'use client'
+import { fadein } from '@/components/ui/variants';
+import { motion } from 'framer-motion';
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
@@ -19,7 +22,11 @@ const Healthird = () => {
         {/* first row cards */}
         <div className="px-4 py-9 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-5">
           <div className="grid gap-6 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
-            <div className="overflow-hidden transition-shadow duration-300 bg-blue-200 rounded text-center">
+            <motion.div
+            whileHover={{ scale: 1.1}}
+            onHoverStart={e => {}}
+            onHoverEnd={e => {}}
+              className="overflow-hidden transition-shadow duration-300 bg-blue-200 rounded text-center">
               <Link href="/" aria-label="Article">
                 <Image
                   src={heal1}
@@ -49,8 +56,11 @@ const Healthird = () => {
                   <div className="mr-2"></div>
                 </div>
               </div>
-            </div>
-            <div className="overflow-hidden transition-shadow duration-300 bg-blue-200 rounded text-center">
+            </motion.div>
+            <motion.div
+            whileHover={{ scale: 1.1 }}
+            onHoverStart={e => {}}
+            onHoverEnd={e => {}}  className="overflow-hidden transition-shadow duration-300 bg-blue-200 rounded text-center">
               <Link href="/" aria-label="Article">
                 <Image
                   src={heal2}
@@ -76,8 +86,12 @@ const Healthird = () => {
                   delivery and ensure a healthier, more connected future.
                 </p>
               </div>
-            </div>
-            <div className="overflow-hidden transition-shadow duration-300 bg-blue-200 rounded text-center">
+            </motion.div>
+            <motion.div
+            whileHover={{ scale: 1.1 }}
+            onHoverStart={e => {}}
+            onHoverEnd={e => {}}
+              className="overflow-hidden transition-shadow duration-300 bg-blue-200 rounded text-center">
               <Link href="/" aria-label="Article">
                 <Image
                   src={heal3}
@@ -103,13 +117,17 @@ const Healthird = () => {
                   response to defend your organization
                 </p>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
         {/* second row cards */}
         <div className="px-4 md:py-7 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-5">
-          <div className="grid gap-5 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
-            <div className="overflow-hidden transition-shadow duration-300 bg-blue-200 rounded text-center">
+          <div className="grid gap-6 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
+            <motion.div
+            whileHover={{ scale: 1.1 }}
+            onHoverStart={e => {}}
+            onHoverEnd={e => {}}
+              className="overflow-hidden transition-shadow duration-300 bg-blue-200 rounded text-center">
               <Link href="/" aria-label="Article">
                 <Image
                   src={heal4}
@@ -138,8 +156,12 @@ const Healthird = () => {
                   <div className="mr-2"></div>
                 </div>
               </div>
-            </div>
-            <div className="overflow-hidden transition-shadow duration-300 bg-blue-200 rounded text-center">
+            </motion.div>
+            <motion.div
+            whileHover={{ scale: 1.1 }}
+            onHoverStart={e => {}}
+            onHoverEnd={e => {}}
+              className="overflow-hidden transition-shadow duration-300 bg-blue-200 rounded text-center">
               <Link href="/" aria-label="Article">
                 <Image
                   src={heal5}
@@ -165,8 +187,12 @@ const Healthird = () => {
                   data and transform healthcare
                 </p>
               </div>
-            </div>
-            <div className="overflow-hidden transition-shadow duration-300 bg-blue-200 rounded text-center">
+            </motion.div>
+            <motion.div
+            whileHover={{ scale: 1.1 }}
+            onHoverStart={e => {}}
+            onHoverEnd={e => {}}
+              className="overflow-hidden transition-shadow duration-300 bg-blue-200 rounded text-center">
               <Link href="/" aria-label="Article">
                 <Image
                   src={heal6}
@@ -193,7 +219,7 @@ const Healthird = () => {
                   healthcare systems.
                 </p>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
         {/* cta section */}
