@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { BiSolidPhoneCall } from "react-icons/bi";
+import Image from "next/image";
+import Logo from "@/../public/assets/Logo.png"
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -23,13 +25,13 @@ const Navbar = () => {
     <nav
       className={`py-2 px-6 fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
         isScrolled
-          ? "bg-white shadow-lg text-black"
-          : "bg-black bg-opacity-40 text-white"
+          ? "bg-white shadow-lg text-blue1"
+          : "bg-transparent text-white "
       }`}
     >
       <div className="flex items-center justify-between gap-8">
         <Link className="flex items-center gap-2" href="/">
-          <span className="text-xl font-bold">NAS Logo</span>
+          <Image src={Logo} height={1000} width={1000} className="h-12 w-36 " alt="Logo not found" />
         </Link>
 
         <div className="hidden md:flex items-center gap-10 p-2">
@@ -79,7 +81,7 @@ const NavLink = ({ href, isScrolled, pathname, children }) => (
   <Link href={href}>
     <div
       className={`text-base font-light hover:scale-[115%] hover:ease-in ease-out duration-75 hover:duration-75 ${
-        isScrolled ? "text-black" : "text-white"
+        isScrolled ? "text-blue1" : "text-white"
       } ${pathname === href ? "font-extrabold" : ""}`}
     >
       {children}

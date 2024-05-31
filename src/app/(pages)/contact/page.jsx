@@ -1,24 +1,46 @@
+"use client";
 import React from "react";
-import { contactData } from "@/utils/heroSection/data";
-import HeroSection from "@/utils/heroSection/HeroSection";
+import contactHero from "@/../public/assets/contact/Hero.jpg"
 import Image from "next/image";
-import Header  from "@/../public/assets/contact/Header.jpg";
+import Header from "@/../public/assets/contact/Header.jpg";
 import { FaMobileAlt } from "react-icons/fa";
 import { ImLocation2 } from "react-icons/im";
 import { MdOutlineEmail } from "react-icons/md";
-
+import { fadein } from "@/components/ui/variants";
+import { motion } from "framer-motion";
 import Forms from "./Forms";
-
-export const metadata = {
-  title: "Contact Us",
-};
 
 function page() {
   return (
-    <main id="mission">
+    <main id="mission" className="overflow-x-hidden">
       {/* Hero Section */}
       <section>
-        <HeroSection obj={contactData} />
+        <div className="mb-16 lg:h-[100vh] relative">
+          <div className="relative h-[50vh] md:h-[70vh] lg:h-[90vh] bg-black">
+            <Image
+              src={contactHero}
+              alt="Contact Hero"
+              layout="fill"
+              objectFit="cover"
+              quality={100}
+              className="absolute inset-0 z-0 opacity-65"
+            />
+            <h1 className="absolute inset-x-0 top-1/2 text-center text-white text-6xl font-bold tracking-wide z-10">
+          Contact Us
+        </h1>
+          </div>
+          <div
+            id="MService"
+            className="relative flex flex-col md:flex-row justify-center lg:w-[40vw] md:w-[40vw] w-[90vw] md:-top-10 -top-0 mx-auto overflow-hidden bg-white divide-y md:divide-y-0 md:divide-x rounded shadow"
+          >
+            <div className=" flex-1 p-8 text-center border-b md:border-b-0 ">
+              <h1 className="tracking-tighter font-bold md:text-MainHeading text-slate-600 uppercase">
+                We are here to help you
+              </h1>
+            </div>
+            
+          </div>
+        </div>
       </section>
 
       {/* First Section */}
@@ -27,13 +49,25 @@ function page() {
           <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-6">
             <div className="grid items-center grid-cols-1 gap-y-6 md:grid-cols-2 md:gap-x-20">
               <div className="">
-                <h1 className="mb-4 text-2xl text-center font-extrabold text-gray-600 md:text-3xl lg:text-4xl">
+                <motion.h1
+                  variants={fadein("left", 0.1)}
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: false, amount: 0.5 }}
+                  className="mb-4 text-2xl text-center font-extrabold text-gray-600 md:text-3xl lg:text-4xl"
+                >
                   <span className="text-transparent md:text-5xl lg:text-5xl text-3xl block bg-clip-text bg-gradient-to-r to-emerald-600 from-green-500">
                     NAS Infotech
                   </span>{" "}
                   Pvt.Ltd.
-                </h1>
-                <blockquote className="text-lg text-center font-normal text-gray-500 lg:text-lg dark:text-gray-400">
+                </motion.h1>
+                <motion.blockquote
+                  variants={fadein("right", 0.1)}
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: false, amount: 0.5 }}
+                  className="text-lg text-center font-normal text-gray-500 lg:text-lg dark:text-gray-400"
+                >
                   <svg
                     className="w-8 h-8 text-gray-400 dark:text-green-500"
                     aria-hidden="true"
@@ -44,13 +78,13 @@ function page() {
                     <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
                   </svg>
                   <p className="first-letter:text-2xl text-Para">
-                    At NAS Infotech Pvt.Ltd, we value your inquiries and feedback.
-                    Whether you need support, have questions about our services,
-                    or want to start a project, our team is here to help. We are
-                    committed to providing exceptional service and ensuring a
-                    seamless experience.
+                    At NAS Infotech Pvt.Ltd, we value your inquiries and
+                    feedback. Whether you need support, have questions about our
+                    services, or want to start a project, our team is here to
+                    help. We are committed to providing exceptional service and
+                    ensuring a seamless experience.
                   </p>
-                </blockquote>
+                </motion.blockquote>
               </div>
 
               <div className="relative pl-20 pr-6 sm:pl-6 md:px-0">
@@ -96,7 +130,7 @@ function page() {
 
       {/* Forms Section */}
       <section className="py-2">
-        <Forms/>
+        <Forms />
       </section>
 
       {/* Third Section */}
@@ -106,7 +140,7 @@ function page() {
             <div className="p-8 border-b sm:border-r">
               <div className="max-w-md text-center">
                 <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full sm:w-16 sm:h-16">
-                  <ImLocation2 className="text-black text-3xl"/>
+                  <ImLocation2 className="text-black text-3xl" />
                 </div>
                 <h6 className="mb-2 font-semibold leading-5">Address</h6>
                 <p className="mb-3 text-sm text-gray-900">
@@ -118,7 +152,7 @@ function page() {
             <div className="p-8 border-b lg:border-r">
               <div className="max-w-md text-center">
                 <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full sm:w-16 sm:h-16">
-                  <FaMobileAlt className="text-3xl text-black"/>
+                  <FaMobileAlt className="text-3xl text-black" />
                 </div>
                 <h6 className="mb-2 font-semibold leading-5">Phone</h6>
                 <p className=" text-sm text-gray-900">+(91) 9172 077273</p>
@@ -128,7 +162,7 @@ function page() {
             <div className="p-8 border-b sm:border-r lg:border-r-0">
               <div className="max-w-md text-center">
                 <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full sm:w-16 sm:h-16">
-                  < MdOutlineEmail className="text-black text-3xl font-bold"/>
+                  <MdOutlineEmail className="text-black text-3xl font-bold" />
                 </div>
                 <h6 className="mb-2 font-semibold leading-5">Email</h6>
                 <p className="mb-3 text-sm text-gray-900">hr@nasinfotech.com</p>
@@ -142,13 +176,25 @@ function page() {
       <section>
         <div className="px-4 py-2 flex items-center mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div className="max-w-screen-sm sm:text-center sm:mx-auto">
-            <h2 className="mb-4 font-sans text-Heading font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+            <motion.h2
+              variants={fadein("right", 0.1)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: false, amount: 0.5 }}
+              className="mb-4 font-sans text-Heading font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none"
+            >
               Navigate to Us with Ease
-            </h2>
-            <p className="text-base text-gray-700 md:text-SubHeading sm:px-4">
+            </motion.h2>
+            <motion.p
+              variants={fadein("left", 0.1)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: false, amount: 0.5 }}
+              className="text-base text-gray-700 md:text-SubHeading sm:px-4"
+            >
               Use our interactive map to effortlessly find your way to our
               location. We’re just a few clicks away!
-            </p>
+            </motion.p>
             <hr className="w-full my-8 border-green-400" />
           </div>
         </div>
