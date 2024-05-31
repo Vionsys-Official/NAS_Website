@@ -28,7 +28,7 @@ const ApplyCard = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, amount: 0.8 }}
-              key={feat.id} className='bg-opacity-70 overflow-hidden flex flex-col items-center justify-center shadow-lg shadow-gray-400 bg-slate-50 group border border-gray-800 rounded-xl hover:border-2 hover:border-gray-300 cursor-pointer transition-all hover:scale-[101%] ease-out'>
+              key={feat.id} className='bg-opacity-70 overflow-hidden flex flex-col items-center justify-center shadow-lg shadow-gray-400 bg-slate-50 hover:bg-slate-100 group border border-gray-800 rounded-xl cursor-pointer'>
                 <h2 
                   className='flex justify-center items-center text-blue-950 rounded-xl tracking-wide text-CardHeading-sm md:text-CardHeading font-extrabold md:py-4 h-[3rem] xl:h-full text-center group-hover:scale-105 ease-linear'>
                 {feat?.title}</h2>
