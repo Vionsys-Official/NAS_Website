@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React, { useEffect, useState, useRef } from "react";
 
@@ -70,7 +70,9 @@ export const InfiniteMovingCards = ({
     >
       <ul
         ref={scrollerRef}
-        className={`flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap ${start ? "animate-scroll" : ""} ${pauseOnHover ? "hover:[animation-play-state:paused]" : ""}`}
+        className={`flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap ${
+          start ? "animate-scroll" : ""
+        } ${pauseOnHover ? "hover:[animation-play-state:paused]" : ""}`}
       >
         {items.map((item) => (
           <li

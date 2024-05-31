@@ -94,6 +94,7 @@ const SocialProofCounter = () => {
             }}
             className="lg:col-span-1 md:col-span-2 flex justify-center items-center"
           >
+            {/* Heading */}
             <div className="md:w-72 w-full md:h-48 h-20 bg-golden4 flex justify-center items-center rounded-md">
               <h3
                 className="text-MainHeading font-bold text-blue-900 rounded-xl bg-white shadow-md
