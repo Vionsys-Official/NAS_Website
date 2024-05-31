@@ -1,4 +1,7 @@
+'use client'
 import React from 'react'
+import { fadein } from '@/components/ui/variants';
+import { motion } from 'framer-motion';
 import RealEstate from '/public/assets/industries/RealEstate/RealEstate.jpg'
 import RealEstate2 from '/public/assets/industries/RealEstate/RealEstate2.jpg'
 import RealEstate3 from '/public/assets/industries/RealEstate/RealEstate3.jpg'
@@ -6,7 +9,11 @@ import Image from 'next/image'
 
 const ChooseUs = () => {
   return (
-    <div className="px-4 pb-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+    <motion.div
+    variants={fadein("up", 0.2)}
+    initial="hidden"
+    whileInView={"show"}
+    viewport={{ once: false, amount: 0.8 }} className="px-4 pb-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       <div className="grid gap-10 lg:grid-cols-2">
         <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
           <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-accent-400">
@@ -53,7 +60,7 @@ const ChooseUs = () => {
             </svg>
           </div>
           <div className="max-w-xl md:mb-6">
-            <h2 className="max-w-lg md:mb-6 mb-1 md:text-Heading text-Heading-sm font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+            <h2 className="max-w-lg md:mb-6 mb-1 md:text-Heading text-Heading-sm font-bold tracking-tight text-blue950 sm:text-4xl sm:leading-none">
             Choosing Us: 
               <br className="hidden md:block"/>
               What You Gain
@@ -91,7 +98,7 @@ const ChooseUs = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

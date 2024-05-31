@@ -1,9 +1,13 @@
-import Link from 'next/link'
+'use client'
 import React from 'react'
+import { fadein } from '@/components/ui/variants';
+import { motion } from 'framer-motion';
+import Link from 'next/link'
+import Button from '@/components/ui/Button';
 
 const Hero = () => {
     return (
-        <div className="relative bg-teal-600">
+        <div className="relative bg-blue2">
             <div className="absolute inset-x-0 bottom-0">
                 <svg
                     viewBox="0 0 224 12"
@@ -14,7 +18,12 @@ const Hero = () => {
                     <path d="M0,0 C48.8902582,6.27314026 86.2235915,9.40971039 112,9.40971039 C137.776408,9.40971039 175.109742,6.27314026 224,0 L224,12.0441132 L0,12.0441132 L0,0 Z" />
                 </svg>
             </div>
-            <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-24">
+            <motion.div
+                variants={fadein("down", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.8 }}
+                className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-24">
                 <div className="relative max-w-3xl sm:mx-auto sm:max-w-2xl md:max-w-3xl sm:text-center">
                     <h2 className="mb-6 md:text-4xl font-bold tracking-tight text-white text-2xl sm:leading-none">
                         Innovative IT Solutions
@@ -31,14 +40,13 @@ const Hero = () => {
                     </p>
                     <div>
                         <Link
-                            href="/"
-                            className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-purple-400 hover:bg-purple-500 focus:shadow-outline"
+                            href="/contact"
                         >
-                            Contact Us
+                            <Button />
                         </Link>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }
