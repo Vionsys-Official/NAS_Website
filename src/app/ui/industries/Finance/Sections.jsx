@@ -1,7 +1,10 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import Content1 from "@/../public/assets/industries/Finance/Content1.jpg";
 import { Button } from "@/components/ui/Button";
+import { fadein } from '@/components/ui/variants';
+import { motion } from "framer-motion";
 
 const Sections = () => {
   return (
@@ -12,7 +15,12 @@ const Sections = () => {
           <div className="relative">
             <div className="grid gap-12 row-gap-8 lg:grid-cols-2">
               <div className="grid gap-12 row-gap-5 md:grid-cols-2">
-                <div className="relative">
+                <motion.div
+                variants={fadein("left", 0.1)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                className="relative">
                   <h6 className="mb-2 font-semibold md:text-SubHeading text-SubHeading-sm">
                     Software Solutions & CRM Systems
                   </h6>
@@ -21,8 +29,14 @@ const Sections = () => {
                     and objectives, ensuring scalability, flexibility, and
                     seamless integration with existing systems.
                   </p>
-                </div>
-                <div>
+                </motion.div>
+
+                <motion.div 
+                variants={fadein("right", 0.1)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                >
                   <h6 className="mb-2 font-semibold md:text-SubHeading text-SubHeading-sm">
                     Data Analytics and Business Intelligence
                   </h6>
@@ -31,8 +45,14 @@ const Sections = () => {
                     enable stakeholders to gain actionable insights from complex
                     datasets, facilitating data-driven decision-making.
                   </p>
-                </div>
-                <div>
+                </motion.div>
+
+                <motion.div
+                variants={fadein("left", 0.1)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                >
                   <h6 className="mb-2 font-semibold md:text-SubHeading text-SubHeading-sm">
                     Cybersecurity Solutions
                   </h6>
@@ -42,8 +62,14 @@ const Sections = () => {
                     neutralize cyber threats before they escalate into breaches
                     or attacks.
                   </p>
-                </div>
-                <div>
+                </motion.div>
+
+                <motion.div
+                variants={fadein("right", 0.1)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                >
                   <h6 className="mb-2 font-semibold md:text-SubHeading text-SubHeading-sm">
                     Cloud Computing & e-Banking
                   </h6>
@@ -53,7 +79,7 @@ const Sections = () => {
                     implementing cloud-native solutions to improve agility and
                     cost-efficiency.
                   </p>
-                </div>
+                </motion.div>
               </div>
               <div>
                 <Image
@@ -73,19 +99,34 @@ const Sections = () => {
       <section>
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div className="max-w-xl  mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-            <h2 className="max-w-lg mb-6 font-sans text-Heading-sm font-bold leading-none tracking-tight text-gray-900 md:text-Heading md:mx-auto">
+            <motion.h2 
+            variants={fadein("down", 0.1)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.5 }}
+            className="max-w-lg mb-6 font-sans text-Heading-sm font-bold leading-none tracking-tight text-gray-900 md:text-Heading md:mx-auto">
               How we can help you?
-            </h2>
-            <p className=" text-gray-700 md:text-SubHeading text-SubHeading-sm">
+            </motion.h2>
+            <motion.p
+            variants={fadein("up", 0.1)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.5 }}
+            className=" text-gray-700 md:text-SubHeading text-SubHeading-sm">
               We can assist you in optimizing operations, enhancing security,
               improving compliance, and delivering superior customer
               experiences.
-            </p>
+            </motion.p>
           </div>
           <div className="grid max-w-screen-lg mx-auto space-y-6 lg:grid-cols-2 lg:space-y-0 lg:divide-x">
             <div className="space-y-6 sm:px-16">
               <div className="flex flex-col max-w-md sm:flex-row">
-                <div className="hover:bg-violet-950 hover:text-white p-2 hover:cursor-pointer">
+                <motion.div 
+                variants={fadein("left", 0.1)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false, amount: 0.5 }}
+                className="hover:bg-violet-950 hover:text-white p-2 hover:cursor-pointer">
                   <h6 className="mb-3 text-SubHeading-sm md:text-SubHeading font-semibold">
                     Training and Education
                   </h6>
@@ -94,10 +135,15 @@ const Sections = () => {
                     professionals on the latest technologies and best practices
                     in financial technology.
                   </p>
-                </div>
+                </motion.div>
               </div>
               <div className="flex flex-col max-w-md sm:flex-row">
-                <div className="hover:bg-violet-950 hover:text-white p-2 hover:cursor-pointer">
+                <motion.div
+                variants={fadein("left", 0.1)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false, amount: 0.5 }}
+                className="hover:bg-violet-950 hover:text-white p-2 hover:cursor-pointer">
                   <h6 className="mb-3 text-SubHeading-sm md:text-SubHeading font-semibold">
                     Artificial Intelligence and Machine Learning
                   </h6>
@@ -106,10 +152,15 @@ const Sections = () => {
                     support, enabling clients to access financial information
                     and assistance 24/7.
                   </p>
-                </div>
+                </motion.div>
               </div>
               <div className="flex flex-col max-w-md sm:flex-row">
-                <div className="hover:bg-violet-950 hover:text-white p-2 hover:cursor-pointer">
+                <motion.div 
+                variants={fadein("left", 0.1)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false, amount: 0.5 }}
+                className="hover:bg-violet-950 hover:text-white p-2 hover:cursor-pointer">
                   <h6 className="mb-3 text-SubHeading-sm md:text-SubHeading font-semibold">
                     Customer Experience Enhancement
                   </h6>
@@ -118,12 +169,17 @@ const Sections = () => {
                     with intuitive user interfaces for seamless customer
                     interactions.
                   </p>
-                </div>
+                </motion.div>
               </div>
             </div>
             <div className="space-y-6 sm:px-16">
               <div className="flex flex-col max-w-md sm:flex-row">
-                <div className="hover:bg-violet-950 hover:text-white p-2 hover:cursor-pointer">
+                <motion.div 
+                variants={fadein("right", 0.1)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false, amount: 0.5 }}
+                className="hover:bg-violet-950 hover:text-white p-2 hover:cursor-pointer">
                   <h6 className="mb-3 text-SubHeading-sm md:text-SubHeading font-semibold">
                     Blockchain Technology
                   </h6>
@@ -131,10 +187,15 @@ const Sections = () => {
                     Implement blockchain technology for enhancing the security
                     and efficiency of cross-border payments and remittances.
                   </p>
-                </div>
+                </motion.div>
               </div>
               <div className="flex flex-col max-w-md sm:flex-row">
-                <div className="hover:bg-violet-950 hover:text-white p-2 hover:cursor-pointer">
+                <motion.div 
+                variants={fadein("right", 0.1)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false, amount: 0.5 }}
+                className="hover:bg-violet-950 hover:text-white p-2 hover:cursor-pointer">
                   <h6 className="mb-3 text-SubHeading-sm md:text-SubHeading font-semibold">
                     Customer Software Development
                   </h6>
@@ -142,10 +203,15 @@ const Sections = () => {
                     Build custom investment management platforms for portfolio
                     analysis, risk assessment, and performance tracking.
                   </p>
-                </div>
+                </motion.div>
               </div>
               <div className="flex flex-col max-w-md sm:flex-row">
-                <div className="hover:bg-violet-950 hover:text-white p-2 hover:cursor-pointer">
+                <motion.div 
+                variants={fadein("right", 0.1)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false, amount: 0.5 }}
+                className="hover:bg-violet-950 hover:text-white p-2 hover:cursor-pointer">
                   <h6 className="mb-3 text-SubHeading-sm md:text-SubHeading font-semibold">
                     Robotic Process Automation (RPA)
                   </h6>
@@ -154,7 +220,7 @@ const Sections = () => {
                     costs by deploying bots for data entry, validation, and
                     reconciliation tasks.
                   </p>
-                </div>
+                </motion.div>
               </div>
             </div>
           </div>
@@ -165,13 +231,23 @@ const Sections = () => {
       <section className="max-w-full pt-4 pb-8 px-10 flex justify-center">
         <div className="bg-violet-950 text-white md:w-[70%] flex flex-col  justify-between py-4 px-8">
           <div>
-            <h2 className="font-bold text-Heading-sm md:text-Heading py-2 text-center">
+            <motion.h2 
+            variants={fadein("left", 0.1)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.5 }}
+            className="font-bold text-Heading-sm md:text-Heading py-2 text-center">
               Discover what we can do for you.
-            </h2>
-            <p className="py-3 text-Para-sm md:text-Para text-center">
+            </motion.h2>
+            <motion.p 
+            variants={fadein("right", 0.1)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.5 }}
+            className="py-3 text-Para-sm md:text-Para text-center">
               Contact us today to discuss how we can help you to achieve your
               business goals.
-            </p>
+            </motion.p>
           </div>
           <div className="flex items-center justify-center">
             <Button />
