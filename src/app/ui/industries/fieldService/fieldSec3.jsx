@@ -41,31 +41,31 @@ const industryData = {
 
 // Industry Paragraphs
 const industryParagraphs = {
-    Telecommunications: [
+    Telecommunications: (
         <p className="text-lg leading-6 text-gray-500">
             In the realm of service provision, the backbone rests upon skilled field technicians who undertake critical tasks such as network installations, upgrades, and maintenance, ensuring seamless connectivity and optimal performance.
         </p>
-    ],
-    Construction: [
+    ),
+    Construction: (
         <p className="text-lg leading-6 text-gray-500">
             Construction companies leverage field service software to streamline project management, ensure equipment maintenance, and conduct thorough on-site inspections, optimizing efficiency and enhancing project outcomes.
         </p>
-    ],
-    Healthcare: [
+    ),
+    Healthcare: (
         <p className="text-lg leading-6 text-gray-500">
             Field service software plays a pivotal role in the maintenance of medical equipment, coordination of home healthcare services, and management of emergency response teams, providing efficient scheduling and robust tracking capabilities.
         </p>
-    ],
-    Manufacturing: [
+    ),
+    Manufacturing: (
         <p className="text-lg leading-6 text-gray-500">
             In the manufacturing sector, field service is indispensable for the installation, maintenance, and repair of equipment, along with conducting rigorous quality inspections, ensuring operational excellence and product reliability
         </p>
-    ],
-    Utilities: [
+    ),
+    Utilities: (
         <p className="text-lg leading-6 text-gray-500">
             Electrical, water, and gas services require field technicians for installation, maintenance, and repair tasks.
         </p>
-    ],
+    ),
 
 
 };
