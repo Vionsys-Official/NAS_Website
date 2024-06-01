@@ -13,7 +13,7 @@ const WhatWeDo = () => {
           variants={fadein("up", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.8 }}
           className=" md:text-Heading text-Heading-sm text-blue950 font-extrabold text-center "
         >
           This is 24/7 Cyber Security Operation Center for your problem solution

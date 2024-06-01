@@ -12,7 +12,7 @@ const Steps = () => {
             variants={fadein("up", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.8 }}
+            viewport={{ once: true, amount: 0.8 }}
             className="md:text-Heading font-bold leading-none text-Heading-sm text-blue950 "
           >
             Product Development Stages
@@ -23,7 +23,7 @@ const Steps = () => {
             variants={fadein("left", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.8 }}
+            viewport={{ once: true, amount: 0.8 }}
             className="flex justify-center px-4 col-span-fullx md:col-span-1 md:flex-col  md:justify-start md:items-start"
           >
             <button className="p-2 border-b-2 md:border-l-2 md:border-b-0 md:py-3 dark:border-gray-700 dark:text-gray-600">
@@ -50,7 +50,7 @@ const Steps = () => {
               variants={fadein("up", 0.2)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.8 }} className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
+              viewport={{ once: true, amount: 0.8 }} className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -79,7 +79,7 @@ const Steps = () => {
               variants={fadein("up", 0.2)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.8 }} className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
+              viewport={{ once: true, amount: 0.8 }} className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -108,7 +108,7 @@ const Steps = () => {
               variants={fadein("up", 0.2)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.8 }} className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
+              viewport={{ once: true, amount: 0.8 }} className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -137,7 +137,7 @@ const Steps = () => {
               variants={fadein("up", 0.2)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.8 }} className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
+              viewport={{ once: true, amount: 0.8 }} className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -165,7 +165,7 @@ const Steps = () => {
               variants={fadein("up", 0.2)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.8 }} className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
+              viewport={{ once: true, amount: 0.8 }} className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -193,7 +193,7 @@ const Steps = () => {
               variants={fadein("up", 0.2)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.8 }} className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
+              viewport={{ once: true, amount: 0.8 }} className="flex flex-col items-center justify-center space-y-3 md:justify-start md:items-start">
               <svg
                 fill="none"
                 stroke="currentColor"

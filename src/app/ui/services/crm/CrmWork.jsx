@@ -56,7 +56,7 @@ const CrmWork = () => {
         variants={fadein("up", 0.2)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.8 }} className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+        viewport={{ once: true, amount: 0.8 }} className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         <div>
           <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-blue2 uppercase rounded-full bg-teal-accent-400">
             NAS Infotech Pvt. Ltd.

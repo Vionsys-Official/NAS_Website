@@ -14,7 +14,7 @@ export const metadata = {
 
 const page = () => {
   return (
-    <div id='mission'>
+    <div id='mission' className='overflow-x-hidden'>
       <Hero/>
       <Features/>
       <Imag/>

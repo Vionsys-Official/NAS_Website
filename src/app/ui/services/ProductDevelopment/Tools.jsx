@@ -10,7 +10,7 @@ const Tools = () => {
           variants={fadein("left", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.8 }}
           className="max-w-lg  font-sans md:text-Heading text-Heading-sm font-bold leading-none tracking-tight text-blue950  md:mx-auto"
         >
           Product Development Tools

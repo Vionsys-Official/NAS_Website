@@ -17,13 +17,13 @@ const Benefit = () => {
             variants={fadein("up", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.8 }} className="md:text-Heading text-Heading-sm font-bold py-4 text-center text-blue950">Benefits of Partnering with Us</motion.h1>
+            viewport={{ once: true, amount: 0.8 }} className="md:text-Heading text-Heading-sm font-bold py-4 text-center text-blue950">Benefits of Partnering with Us</motion.h1>
             <div className='flex md:flex-row flex-col md:justify-evenly gap-4 md:py-0 px-2'>
                 <motion.div
                     variants={fadein("up", 0.2)}
                     initial="hidden"
                     whileInView={"show"}
-                    viewport={{ once: false, amount: 0.8 }} className="max-w-xs bg-white border rounded-lg shadowborder-gray-700">
+                    viewport={{ once: true, amount: 0.8 }} className="max-w-xs bg-white border rounded-lg shadowborder-gray-700">
                     <Image className="rounded-t-lg" src={Expertise} alt="" width={'400'} height={"400"} />
                     <div className="p-3">
                         <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 md:text-CardHeading text-CardHeading-sm hover:text-blue2">Expertise</h5>
@@ -35,7 +35,7 @@ const Benefit = () => {
                     variants={fadein("up", 0.2)}
                     initial="hidden"
                     whileInView={"show"}
-                    viewport={{ once: false, amount: 0.8 }} className="max-w-xs bg-white border-2 rounded-lg shadowborder-gray-700">
+                    viewport={{ once: true, amount: 0.8 }} className="max-w-xs bg-white border-2 rounded-lg shadowborder-gray-700">
                     <Image className="rounded-t-lg" src={Customization} alt="" width={'400'} height={"400"} />
                     <div className="p-3">
                         <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 md:text-CardHeading text-CardHeading-sm hover:text-blue2">Customization</h5>
@@ -47,7 +47,7 @@ const Benefit = () => {
                     variants={fadein("up", 0.2)}
                     initial="hidden"
                     whileInView={"show"}
-                    viewport={{ once: false, amount: 0.8 }} className="max-w-xs bg-white border rounded-lg shadowborder-gray-700">
+                    viewport={{ once: true, amount: 0.8 }} className="max-w-xs bg-white border rounded-lg shadowborder-gray-700">
                     <Image className="rounded-t-lg" src={Result} alt="" width={'400'} height={"400"} />
                     <div className="p-3">
                         <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 md:text-CardHeading text-CardHeading-sm hover:text-blue2">Quality Assurance</h5>
@@ -59,7 +59,7 @@ const Benefit = () => {
                     variants={fadein("up", 0.2)}
                     initial="hidden"
                     whileInView={"show"}
-                    viewport={{ once: false, amount: 0.8 }} className="max-w-xs bg-white border rounded-lg shadowborder-gray-700">
+                    viewport={{ once: true, amount: 0.8 }} className="max-w-xs bg-white border rounded-lg shadowborder-gray-700">
                     <Image className="rounded-t-lg" src={Innovation} alt="" width={'400'} height={"400"} />
                     <div className="p-3">
                         <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 md:text-CardHeading text-CardHeading-sm hover:text-blue2">Innovation</h5>
