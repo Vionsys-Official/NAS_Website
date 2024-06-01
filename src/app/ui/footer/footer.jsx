@@ -70,7 +70,7 @@ const Footer = () => {
         Email: hr@nasinfotech.com
         </p>
         <p className="text-sm">
-        Office No: 503, 06th Floor, Stellar Spaces, Opposite Zensar Company, Kharadi, Pune - 411014
+        Office No: 505, 06th Floor, Stellar Spaces, Opposite Zensar Company, Kharadi, Pune - 411014
         </p>
         
       </div>

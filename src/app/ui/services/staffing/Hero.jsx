@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { motion } from 'framer-motion';
-import ITStaffing from '/public/assets/services/ItStaffing/ItStaffing.jpg';
+import ITStaffing from '/public/assets/services/ItStaffing/ITStaffing.jpg';
 import Image from 'next/image';
 import Button2 from '@/components/ui/Button2';
 
