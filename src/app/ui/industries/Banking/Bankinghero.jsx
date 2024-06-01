@@ -21,7 +21,7 @@ function Bankinghero() {
                 Solutions Available.
               </h2>
               <p className="w-full pl-2 text-pretty md:px-6 mb-4 text-base text-blue-200 md:text-lg text-justify">
-                Information Technology (IT) offers a multitude of benefits to banks, fundamentally transforming their operational processes, enhancing customer service delivery, and enabling them to meet the evolving demands of the financial landscape.
+                Information Technology (IT) offers a multitude of benefits to banks, fundamentally transforming their operational processes, enhancing customer service delivery and enabling them to meet the evolving demands of the financial landscape.
               </p>
             </div>
             <div className="mb-10 text-center md:mb-16 lg:mb-20 mt-5 md:pr-64">

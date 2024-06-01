@@ -8,12 +8,12 @@ function Bankingchoose() {
   return (
     <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8  sm:py-10">
     <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 sm:py-2">
-      <h2 className="max-w-lg mb-6 font-sans sm:text-MainHeading md:text-MainHeading font-bold leading-none tracking-tight text-blue950 sm:text-4xl md:mx-auto">
+      <h2 className="max-w-lg mb-6 font-sans sm:text-MainHeading md:text-MainHeading font-bold leading-none tracking-tight text-blue900 sm:text-4xl md:mx-auto">
         <span className="relative inline-block">
           <svg
             viewBox="0 0 52 24"
             fill="currentColor"
-            className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
+            className="absolute top-0 left-0 z-0 hidden w-32 mt-8 ml-20 text-blue900 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
           >
             <defs>
               <pattern
@@ -36,7 +36,7 @@ function Bankingchoose() {
         </span>{' '}
         Choose Us?
       </h2>
-      <p className="text-base text-gray-700 md:text-Para sm:text-Para-sm">
+      <p className="text-base text-blue900 md:text-Para text-Para-sm">
         Our major priority is your satisfaction.
       </p>
     </div>
@@ -61,14 +61,14 @@ function Bankingchoose() {
             </div>
           </div>
           <motion.div
-           variants={fadein("right", 0.2)}
+           variants={fadein("left", 0.2)}
            initial="hidden"
            whileInView={"show"}
-           viewport={{ once: false, amount: 0.8 }}>
-            <h6 className="mb-3 text-xl font-bold leading-5 sm:text-CardHeading-sm md:text-CardHeading">
+           viewport={{ once: true, amount: 0.8 }}>
+            <h6 className="mb-3 font-bold leading-5 text-CardHeading-sm md:text-CardHeading">
             Expertise and Experience
             </h6>
-            <p className=" text-md:text-Para sm:text-Para-smgray-900 ">
+            <p className=" md:text-Para text-Para-sm text-blue900 ">
             The company should have extensive experience in the financial and banking sectors, understanding the unique challenges and requirements of these industries.
 
             </p>
@@ -93,16 +93,16 @@ function Bankingchoose() {
             </div>
           </div>
           <motion.div
-           variants={fadein("right", 0.2)}
+           variants={fadein("left", 0.2)}
            initial="hidden"
            whileInView={"show"}
-           viewport={{ once: false, amount: 0.8 }}
+           viewport={{ once: true, amount: 0.8 }}
           >
-            <h6 className="mb-3 text-xl font-bold leading-5 sm:text-CardHeading-sm md:text-CardHeading">
+            <h6 className="mb-3 font-bold leading-5 text-CardHeading-sm md:text-CardHeading">
             Innovative Solutions
             </h6>
-            <p className="md:text-Para sm:text-Para-sm text-gray-900">
-            The ability to leverage the latest technological advancements, such as AI, blockchain, and cloud computing, to provide innovative and future-proof solutions.
+            <p className="md:text-Para text-Para-sm text-blue900">
+            The ability to leverage the latest technological advancements, such as AI, blockchain and cloud computing, to provide innovative and future-proof solutions.
             </p>
           </motion.div>
         </div>
@@ -125,14 +125,14 @@ function Bankingchoose() {
             </div>
           </div>
           <motion.div
-           variants={fadein("right", 0.2)}
+           variants={fadein("left", 0.2)}
            initial="hidden"
            whileInView={"show"}
-           viewport={{ once: false, amount: 0.8 }}>
-            <h6 className="mb-3 text-xl font-bold leading-5 sm:text-CardHeading-sm md:text-CardHeading">
+           viewport={{ once: true, amount: 0.8 }}>
+            <h6 className="mb-3 text-xl font-bold leading-5 text-CardHeading-sm md:text-CardHeading">
             Customer-Centric Focus
             </h6>
-            <p className="md:text-Para sm:text-Para-sm text-gray-900">
+            <p className="md:text-Para text-Para-sm text-blue900">
             Offering dedicated, responsive customer support to address issues and provide assistance promptly.
             </p>
           </motion.div>
@@ -158,25 +158,25 @@ function Bankingchoose() {
             </div>
           </div>
           <motion.div
-           variants={fadein("right", 0.2)}
+           variants={fadein("left", 0.2)}
            initial="hidden"
            whileInView={"show"}
-           viewport={{ once: false, amount: 0.8 }}>
-            <h6 className="mb-3 text-xl font-bold leading-5 sm:text-CardHeading-sm md:text-CardHeading">
+           viewport={{ once: true, amount: 0.8 }}>
+            <h6 className="mb-3 font-bold leading-5 text-CardHeading-sm md:text-CardHeading">
             Reliability and Trustworthiness
             </h6>
-            <p className="md:text-Para sm:text-Para-sm text-gray-900">
+            <p className="md:text-Para text-Para-sm text-blue900">
             Consistently delivering high-quality services and maintaining reliable system performance.
-            Clear and honest communication regarding project timelines, costs, and potential challenges.
+            Clear and honest communication regarding project timelines, costs and potential challenges.
 
             </p>
           </motion.div>
         </div>
         <motion.div
-        variants={fadein("right", 0.2)}
+        variants={fadein("left", 0.2)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.8 }}
+        viewport={{ once: true, amount: 0.8 }}
          className="flex flex-col max-w-md sm:flex-row">
           <div className="mb-4 mr-4">
             <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
@@ -196,14 +196,14 @@ function Bankingchoose() {
             </div>
           </div>
           <motion.div
-           variants={fadein("right", 0.2)}
+           variants={fadein("left", 0.2)}
            initial="hidden"
            whileInView={"show"}
-           viewport={{ once: false, amount: 0.8 }}>
-            <h6 className="mb-3 text-xl font-bold leading-5 sm:text-CardHeading-sm md:text-CardHeading">
+           viewport={{ once: true, amount: 0.8 }}>
+            <h6 className="mb-3 font-bold leading-5 text-CardHeading-sm md:text-CardHeading">
             Cost-Effective Solutions
             </h6>
-            <p className=" text-gray-900 md:text-Para sm:text-Para-sm">
+            <p className=" text-blue900 md:text-Para text-Para-sm">
             Delivering high-quality services and solutions that provide excellent value for your investment. Implementing efficient processes that reduce costs and enhance operational efficiency.
             </p>
           </motion.div>
@@ -212,7 +212,7 @@ function Bankingchoose() {
           <div className="mb-4 mr-4">
             <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
               <svg
-                className="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10"
+                className="md:w-8 md:h-8 text-deep-purple-accent-400 w-10 h-10"
                 stroke="currentColor"
                 viewBox="0 0 52 52"
               >
@@ -227,14 +227,14 @@ function Bankingchoose() {
             </div>
           </div>
           <motion.div
-           variants={fadein("right", 0.2)}
+           variants={fadein("left", 0.2)}
            initial="hidden"
            whileInView={"show"}
-           viewport={{ once: false, amount: 0.8 }}>
-            <h6 className="mb-3 text-xl font-bold leading-5 sm:text-CardHeading-sm md:text-CardHeading">
+           viewport={{ once: true, amount: 0.8 }}>
+            <h6 className="mb-3 font-bold leading-5 text-CardHeading-sm md:text-CardHeading">
             Commitment to Continuous Improvement
             </h6>
-            <p className=" text-gray-900 md:text-Para sm:text-Para-sm">
+            <p className=" text-blue900 md:text-Para text-Para-sm">
             Keeping up with technological advancements and industry trends to ensure that solutions remain relevant and effective.
             </p>
           </motion.div>

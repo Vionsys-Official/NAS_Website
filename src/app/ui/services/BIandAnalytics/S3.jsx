@@ -21,13 +21,13 @@ function S3() {
                      initial="hidden"
                      whileInView={"show"}
                      viewport={{ once: false, amount: 0.8 }}
-                    className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-4xl text-blue-500 ">Features</motion.h2>
+                    className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-4xl text-blue900 ">Features</motion.h2>
                     <motion.p
                      variants={fadein("left", 0.2)}
                      initial="hidden"
                      whileInView={"show"}
                      viewport={{ once: false, amount: 0.8 }}
-                    className="max-w-[85%] md:text-Para text-blue-800 sm:text-Para-sm leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+                    className="max-w-[85%] md:text-Para text-blue900 text-Para-sm leading-normal text-muted-foreground sm:text-lg sm:leading-7">
                     Business Intelligence (BI) and Analytics encompass a range of features designed to help organizations make data-driven decisions. Here are the key features typically found in BI and Analytics platforms:
                     </motion.p>
                 </div>
@@ -45,7 +45,7 @@ function S3() {
                     viewport={{ once: false, amount: 0.8 }}
                      className="space-y-2">
                         <h3 className="font-bold">Data Integration</h3>
-                        <p className="md:text-Para sm:text-Para-sm text-muted-foreground">Tools to extract data from various sources, transform and load .</p>
+                        <p className="md:text-Para text-Para-sm text-muted-foreground">Tools to extract data from various sources, transform and load .</p>
                     </motion.div>
                 </div>
             </div>
@@ -61,7 +61,7 @@ function S3() {
                         initial="hidden"
                         whileInView={"show"}
                         viewport={{ once: false, amount: 0.8 }}
-                        className="md:text-Para sm:text-Para-sm">Tools to ensure the accuracy, completeness, and consistency of data.</motion.p>
+                        className="md:text-Para text-Para-sm">Tools to ensure the accuracy, completeness and consistency of data.</motion.p>
                     </div>
                 </div>
             </div>
@@ -77,7 +77,7 @@ function S3() {
                         initial="hidden"
                         whileInView={"show"}
                         viewport={{ once: false, amount: 0.8 }}
-                        className="md:text-Para sm:text-Para-sm text-muted-foreground">Structuring databases in a way that supports efficient querying and analysis.</motion.p>
+                        className="md:text-Para text-Para-sm text-muted-foreground">Structuring databases in a way that supports efficient querying and analysis.</motion.p>
                     </div>
                 </div>
             </div>
@@ -93,7 +93,7 @@ function S3() {
                         initial="hidden"
                         whileInView={"show"}
                         viewport={{ once: false, amount: 0.8 }}
-                         className="md:text-Para sm:text-Para-sm text-muted-foreground"> Interactive displays of key metrics and KPIs.</motion.p>
+                         className="md:text-Para text-Para-sm text-muted-foreground"> Interactive displays of key metrics and KPIs.</motion.p>
                     </div>
                 </div>
             </div>
@@ -109,7 +109,7 @@ function S3() {
                         initial="hidden"
                         whileInView={"show"}
                         viewport={{ once: false, amount: 0.8 }}
-                        className="md:text-Para sm:text-Para-sm text-muted-foreground"> Using statistical algorithms and machine learning to predict future outcomes.</motion.p>
+                        className="md:text-Para text-Para-sm text-muted-foreground"> Using statistical algorithms and machine learning to predict future outcomes.</motion.p>
                     </div>
                 </div>
             </div>
@@ -125,7 +125,7 @@ function S3() {
                         initial="hidden"
                         whileInView={"show"}
                         viewport={{ once: false, amount: 0.8 }}
-                        className="md:text-Para sm:text-Para-sm text-muted-foreground">Ensuring that only authorized users can access sensitive data.
+                        className="md:text-Para text-Para-sm text-muted-foreground">Ensuring that only authorized users can access sensitive data.
 </motion.p>
                     </div>
                 </div>
