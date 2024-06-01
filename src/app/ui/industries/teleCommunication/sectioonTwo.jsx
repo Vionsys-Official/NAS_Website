@@ -1,9 +1,9 @@
 "use client"
 import Image from 'next/image'
 import React from 'react'
-import Hero1 from '/public/assets/industries/teleCommunication/sec2.jpg';
-import Hero2 from '/public/assets/industries/teleCommunication/sec21.jpg';
-import Hero3 from '/public/assets/industries/teleCommunication/sec22.jpg';
+import Hero1 from '/public/assets/industries/telecommunication/sec2.jpg';
+import Hero2 from '/public/assets/industries/telecommunication/sec21.jpg';
+import Hero3 from '/public/assets/industries/telecommunication/sec22.jpg';
 import { Service } from './data';
 import { motion } from 'framer-motion';
 import { fadein } from '@/components/ui/variants';

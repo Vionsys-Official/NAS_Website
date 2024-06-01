@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import Hero from '/public/assets/industries/teleCommunication/telehero.jpg';
+import Hero from '/public/assets/industries/telecommunication/telehero.jpg';
 import { motion } from 'framer-motion';
 
 
