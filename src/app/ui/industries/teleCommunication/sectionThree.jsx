@@ -7,9 +7,9 @@ import { fadein } from '@/components/ui/variants';
 
 const sectionThree = () => {
   return (
-    <section>
+    <section className='flex items-center justify-center'>
 
-     <div className="px-4 pb-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-16 lg:px-8 ">
+     <div className=" pb-5 mx-auto w-[76%] sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-16 lg:px-8 ">
         <h2 className='text-blue-900 font-bold md:text-MainHeading text-MainHeading-sm pb-8'>Why Choose Us ?</h2>
       <motion.div
         variants={fadein("up", 0.2)}

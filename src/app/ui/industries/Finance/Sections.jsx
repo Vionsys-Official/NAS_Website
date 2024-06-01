@@ -103,7 +103,7 @@ const Sections = () => {
             variants={fadein("down", 0.1)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             className="max-w-lg mb-6 font-sans text-Heading-sm font-bold leading-none tracking-tight text-gray-900 md:text-Heading md:mx-auto">
               How we can help you?
             </motion.h2>
@@ -111,7 +111,7 @@ const Sections = () => {
             variants={fadein("up", 0.1)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             className=" text-gray-700 md:text-SubHeading text-SubHeading-sm">
               We can assist you in optimizing operations, enhancing security,
               improving compliance, and delivering superior customer
@@ -125,7 +125,7 @@ const Sections = () => {
                 variants={fadein("left", 0.1)}
                 initial="hidden"
                 whileInView="show"
-                viewport={{ once: false, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.5 }}
                 className="hover:bg-violet-950 hover:text-white p-2 hover:cursor-pointer">
                   <h6 className="mb-3 text-SubHeading-sm md:text-SubHeading font-semibold">
                     Training and Education
@@ -142,7 +142,7 @@ const Sections = () => {
                 variants={fadein("left", 0.1)}
                 initial="hidden"
                 whileInView="show"
-                viewport={{ once: false, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.5 }}
                 className="hover:bg-violet-950 hover:text-white p-2 hover:cursor-pointer">
                   <h6 className="mb-3 text-SubHeading-sm md:text-SubHeading font-semibold">
                     Artificial Intelligence and Machine Learning
@@ -159,7 +159,7 @@ const Sections = () => {
                 variants={fadein("left", 0.1)}
                 initial="hidden"
                 whileInView="show"
-                viewport={{ once: false, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.5 }}
                 className="hover:bg-violet-950 hover:text-white p-2 hover:cursor-pointer">
                   <h6 className="mb-3 text-SubHeading-sm md:text-SubHeading font-semibold">
                     Customer Experience Enhancement
@@ -178,7 +178,7 @@ const Sections = () => {
                 variants={fadein("right", 0.1)}
                 initial="hidden"
                 whileInView="show"
-                viewport={{ once: false, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.5 }}
                 className="hover:bg-violet-950 hover:text-white p-2 hover:cursor-pointer">
                   <h6 className="mb-3 text-SubHeading-sm md:text-SubHeading font-semibold">
                     Blockchain Technology
@@ -194,7 +194,7 @@ const Sections = () => {
                 variants={fadein("right", 0.1)}
                 initial="hidden"
                 whileInView="show"
-                viewport={{ once: false, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.5 }}
                 className="hover:bg-violet-950 hover:text-white p-2 hover:cursor-pointer">
                   <h6 className="mb-3 text-SubHeading-sm md:text-SubHeading font-semibold">
                     Customer Software Development
@@ -210,7 +210,7 @@ const Sections = () => {
                 variants={fadein("right", 0.1)}
                 initial="hidden"
                 whileInView="show"
-                viewport={{ once: false, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.5 }}
                 className="hover:bg-violet-950 hover:text-white p-2 hover:cursor-pointer">
                   <h6 className="mb-3 text-SubHeading-sm md:text-SubHeading font-semibold">
                     Robotic Process Automation (RPA)

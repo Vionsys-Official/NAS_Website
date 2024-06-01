@@ -14,7 +14,7 @@ const cta = () => {
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}  
             className=' flex flex-col items-center justify-center'>
-            <h2 className="text-blue-900 mb-6 font-sans text-MainHeading-sm md:text-MainHeading leading-none tracking-tight cursor-pointer font-semibold">
+            <h2 className="text-blue-900 mb-6 text-MainHeading-sm md:text-MainHeading leading-none tracking-tight cursor-pointer font-semibold">
             <span className="relative inline-block">
                 <svg
                 viewBox="0 0 52 24"

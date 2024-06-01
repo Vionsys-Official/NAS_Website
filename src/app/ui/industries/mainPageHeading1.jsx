@@ -22,7 +22,7 @@ const mainPageHeading1 = () => {
       variants={fadein("right", 0.2)}
       initial="hidden"
       whileInView={"show"}
-      viewport={{ once: false, amount: 0.8 }}
+      viewport={{ once: true, amount: 0.8 }}
 
        className="flex flex-col justify-center">
       <div 

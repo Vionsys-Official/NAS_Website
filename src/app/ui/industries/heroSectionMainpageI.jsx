@@ -21,7 +21,7 @@ const heroSectionMainpageI = () => {
                 variants={fadein("up", 0.2)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.8 }}
+                viewport={{ once: true, amount: 0.8 }}
                      className="relative z-10 max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
                     <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-green-300 drop-shadow-lg">
                      Transforming Industries with Technology

@@ -16,10 +16,10 @@ const Hero = () => {
       <div className="relative w-full -top-16 h-full flex justify-center items-center  ">
         <div className="w-[50%] h-32  flex justify-center items-center bg-white  rounded shadow">
           <motion.p
-            variants={fadein("up", 0.2)}
+            variants={fadein("down", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.8 }}
+            viewport={{ once: true, amount: 0.8 }}
             className=" md:text-HeroHeading text-HMain-sm sm:p-4 font-bold text-blue950"
           >
             Insurance
@@ -31,10 +31,10 @@ const Hero = () => {
       <div className="w-full">
         <div className="flex flex-col gap-5 justify-center items-center">
           <motion.h1
-            variants={fadein("up", 0.2)}
+            variants={fadein("down2", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.8 }}
+            viewport={{ once: true, amount: 0.8 }}
             className="md:text-Heading text-Heading-sm md:w-[50%] w-full text-center font-bold text-blue1"
           >
             Revolutionizing The Insurance Industry With Cutting-Edge Software

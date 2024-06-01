@@ -17,7 +17,7 @@ const ImgManu = () => {
             variants={fadein("down", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.8 }} className='inset-0 absolute flex flex-col justify-center items-center'>
+            viewport={{ once: true, amount: 0.8 }} className='inset-0 absolute flex flex-col justify-center items-center'>
             <p className='text-white md:text-4xl text-xl p-2 font-semibold md:py-32 md:leading-10 leading-none'>Driving Efficiency and Innovation in Manufacturing</p>
           </motion.div>
         </div>

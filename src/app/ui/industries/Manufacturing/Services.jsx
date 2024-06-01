@@ -47,12 +47,12 @@ const Services = () => {
 
     return (
         <section className="p-6 text-gray-800">
-            <div className="mx-auto">
+            <div className="mx-auto max-w-[90%]">
                 <motion.h2
                     variants={fadein("up", 0.2)}
                     initial="hidden"
                     whileInView={"show"}
-                    viewport={{ once: false, amount: 0.8 }}
+                    viewport={{ once: true, amount: 0.8 }}
                     className="md:text-Heading text-Heading-sm font-bold text-center text-blue950">Our Services</motion.h2>
 
                 <div className="grid gap-6 py-8 lg:grid-cols-3">
@@ -66,6 +66,7 @@ const Services = () => {
                           opacity: { duration: 0.6 },
                           ease: "easeInOut",
                         }} 
+                        viewport={{ once: true, amount: 0.8 }}
                         key={item.id} className="flex flex-col md:p-8 p-2 md:space-y-4 space-y-2 bg-gray-200 rounded-bl-3xl rounded-tr-3xl">
                             <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 text-xl font-bold rounded-full bg-blue950 text-gray-50"><MdOutlineInsertChart className='w-7 h-7' /></div>
                             <h1 className="text-lg text-blue2 font-semibold md:text-CardHeading text-CardHeading-sm">{item.title}:</h1>
