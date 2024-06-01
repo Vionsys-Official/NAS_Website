@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Content1 from "@/../public/assets/industries/Finance/Content1.jpg";
-import { Button } from "@/components/ui/Button";
+import Button from "@/components/ui/Button";
 import { fadein } from '@/components/ui/variants';
 import { motion } from "framer-motion";
 
