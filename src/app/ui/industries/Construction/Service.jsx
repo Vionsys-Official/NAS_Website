@@ -60,17 +60,15 @@ const Service = () => {
     return (
         <>
             <section className="m-4 md:m-8 text-gray-800">
-                <motion.div
-                initial={{ opacity: 0, y: -100 }} //X:100
-                whileInView={{ opacity: 1, y: 0 }} //y:100
-                transition={{
-                    delay: 0.4,
-                    scale: { type: "spring", stiffness: 30 },
-                    opacity: { duration: 0.6 },
-                    ease: "easeInOut",
-                }}  className="mx-auto my-6 space-y-1 text-center">
-                    <h2 className="text-Heading-sm font-bold md:text-Heading text-blue950">Our IT Solutions for Construction</h2>
-                </motion.div>
+                <div className="mx-auto my-6 space-y-1 text-center">
+                    <motion.h2 
+                     variants={fadein("down", 0.2)}
+                     initial="hidden"
+                     whileInView={"show"}
+                     viewport={{ once: true, amount: 0.8 }}
+                     className="text-Heading-sm font-bold md:text-Heading text-blue950">Our IT Solutions for Construction
+                    </motion.h2>
+                </div>
                 <div className="grid justify-center gap-4 mx-auto lg:grid-cols-2 xl:grid-cols-4">
                     {service.map((item) => (
                         <motion.div

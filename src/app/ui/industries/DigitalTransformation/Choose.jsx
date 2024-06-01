@@ -36,7 +36,7 @@ const Choose = () => {
             variants={fadein("up", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.8 }}
+            viewport={{ once: true, amount: 0.8 }}
             className="px-4 mx-auto space-y-1 text-center mb-4">
                 <span className="text-xs font-semibold tracking-wider uppercase text-blue2">NAS Infotech Pvt. Ltd.</span>
                 <h2 className="pb-3 text-blue950 text-Heading-sm font-bold md:text-Heading">Why Choose Us for Your Digital Transformation Journey?</h2>
@@ -44,7 +44,7 @@ const Choose = () => {
             <div
             className="relative px-4 md:py-10 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-16">
                 <div className="absolute inset-0">
-                    <div className="absolute inset-y-0 z-0 w-full h-full bg-gray-100 lg:w-3/4" />
+                    <div className="absolute inset-y-0 z-0 w-full h-full rounded-r-3xl bg-slate-500 backdrop-blur-sm bg-opacity-10 lg:w-3/4" />
                 </div>
                 <div className="relative">
                     <div className="grid gap-12 row-gap-8 lg:grid-cols-2">

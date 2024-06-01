@@ -58,7 +58,7 @@ const fieldSec2 = () => {
 
                 <div className="flex-1 w-full md:max-w-[500px] shadow-xl rounded-xl overflow-hidden">
             
-                <Image width={500}  height={500} src={MySect2I}/>
+                <Image width={500}  height={500} src={MySect2I} alt=''/>
         
                 </div>
             </section>

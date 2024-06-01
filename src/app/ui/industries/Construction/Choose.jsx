@@ -15,7 +15,7 @@ const Choose = () => {
                 variants={fadein("up", 0.2)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.8 }} 
+                viewport={{ once: true, amount: 0.8 }} 
                 className="py-4 md:text-Heading text-Heading-sm font-bold text-center text-blue950">Why Partner with Us?</motion.h2>
                 <div className="divide-y divide-gray-700 dark:divide-gray-300">
                     <motion.div

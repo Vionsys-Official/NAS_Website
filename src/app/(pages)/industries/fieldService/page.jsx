@@ -11,7 +11,7 @@ export const metadata = {
 const fildService = () => {
 
     return (
-        <main  className='overflow-x-hidden'>
+        <main  className='overflow-hidden'>
 
             <FieldSec1 />
 
