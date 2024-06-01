@@ -44,7 +44,7 @@ const Benefits = () => {
             variants={fadein("up", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.8 }}
+            viewport={{ once: true, amount: 0.8 }}
             className="max-w-xl mb-5 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
                 <h2 className="max-w-lg mb-6 md:text-Heading text-Heading-sm font-bold leading-none tracking-tight text-blue950 sm:text-4xl md:mx-auto">
                     Benefits of Our IT Solutions
@@ -62,6 +62,7 @@ const Benefits = () => {
                     opacity: { duration: 0.6 },
                     ease: "easeInOut",
                 }}
+                viewport={{ once: true, amount: 0.8 }}
                 className="grid md:gap-8 gap-4 row-gap-5 mb-8 md:row-gap-8 lg:grid-cols-3 sm:grid-cols-2">
                 {benefit.map((item) => (
                     <div key={item.id} className="duration-300 transform bg-white border-l-4 shadow-sm border-blue950 hover:-translate-y-2">

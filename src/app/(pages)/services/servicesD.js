@@ -46,7 +46,7 @@ export const ourServices = [
       title: "Web Site Development",
       imagesrc: "/assets/services/ChardsPhoto/webdev.jpg",
       description: "Craft captivating online experiences tailored to your brand with our expert website development services. From sleek designs to seamless functionality, we bring your digital vision to life with precision and creativity.",
-      href1: "/services/webDevelopment",
+      href1: "/services/WebDevelopment",
     },
     {
       title: "Digital Marketing",

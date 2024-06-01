@@ -18,7 +18,7 @@ const LifeATNAS = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true, amount: 0.8 }}
-         className='text-blue-900 text-center text-MainHeading-sm md:text-MainHeading font-semibold pt-6 cursor-pointer font-sans'>Life at NAS Infotech</motion.h1>
+         className='text-blue-900 text-center text-MainHeading-sm md:text-MainHeading font-semibold cursor-pointer font-sans'>Life at NAS Infotech</motion.h1>
         <motion.p 
         variants={fadein("left", 0.2)}
         initial="hidden"

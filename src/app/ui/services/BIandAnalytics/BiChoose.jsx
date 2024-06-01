@@ -1,7 +1,7 @@
-"use client"
-import React from 'react'
-import { motion } from 'framer-motion';
-import { fadein } from '@/components/ui/variants';
+"use client";
+import React from "react";
+import { motion } from "framer-motion";
+import { fadein } from "@/components/ui/variants";
 
 function BiChoose() {
   return (
@@ -90,4 +90,4 @@ function BiChoose() {
   )
 }
 
-export default BiChoose
+export default BiChoose;

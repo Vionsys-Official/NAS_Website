@@ -15,13 +15,13 @@ const Solutions = () => {
             variants={fadein("up", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.8 }} className="mb-6 md:text-Heading text-Heading-sm font-bold leading-none text-center text-blue950">Our IT Staffing Solutions</motion.h2>
+            viewport={{ once: true, amount: 0.8 }} className="mb-6 md:text-Heading text-Heading-sm font-bold leading-none text-center text-blue950">Our IT Staffing Solutions</motion.h2>
             <div className="mx-auto space-y-6">
                 <motion.div
                     variants={fadein("up", 0.2)}
                     initial="hidden"
                     whileInView={"show"}
-                    viewport={{ once: false, amount: 0.8 }} className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
+                    viewport={{ once: true, amount: 0.8 }} className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
                     <Image src={Staffing1} alt="" width={"570"} height={"600"} className="dark:bg-gray-500 aspect-video" />
                     <div className="flex flex-col justify-center flex-1 md:p-6 p-2 bg-slate-100">
                         <h3 className="md:text-SubHeading text-SubHeading-sm font-bold hover:text-blue2">Contract Staffing</h3>
@@ -36,7 +36,7 @@ const Solutions = () => {
                     variants={fadein("up", 0.2)}
                     initial="hidden"
                     whileInView={"show"}
-                    viewport={{ once: false, amount: 0.8 }} className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
+                    viewport={{ once: true, amount: 0.8 }} className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
                     <Image src={Staffing2} alt="" width={"570"} height={"600"} className="h-80 dark:bg-gray-500 aspect-video" />
                     <div className="flex flex-col justify-center flex-1 md:p-6 p-2 bg-slate-100">
                         <h3 className="md:text-SubHeading text-SubHeading-sm font-bold hover:text-blue2">Contract-to-Hire Staffing</h3>
@@ -51,7 +51,7 @@ const Solutions = () => {
                     variants={fadein("up", 0.2)}
                     initial="hidden"
                     whileInView={"show"}
-                    viewport={{ once: false, amount: 0.8 }} className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
+                    viewport={{ once: true, amount: 0.8 }} className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
                     <Image src={Staffing3} alt="" width={"570"} height={"600"} className="h-80 dark:bg-gray-500 aspect-video" />
                     <div className="flex flex-col justify-center flex-1 md:p-6 p-2 bg-slate-100">
                         <h3 className="md:text-SubHeading text-SubHeading-sm font-bold hover:text-blue2">Direct Hire Staffing</h3>
@@ -66,7 +66,7 @@ const Solutions = () => {
                     variants={fadein("up", 0.2)}
                     initial="hidden"
                     whileInView={"show"}
-                    viewport={{ once: false, amount: 0.8 }} className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
+                    viewport={{ once: true, amount: 0.8 }} className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
                     <Image src={Staffing4} alt="" width={"570"} height={"600"} className="h-80 dark:bg-gray-500 aspect-video" />
                     <div className="flex flex-col justify-center flex-1 md:p-6 p-2 bg-slate-100">
                         <h3 className="md:text-SubHeading text-SubHeading-sm font-bold hover:text-blue2">Managed Services</h3>

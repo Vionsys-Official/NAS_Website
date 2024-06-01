@@ -17,7 +17,7 @@ const ChooseUs = () => {
               variants={fadein("up", 0.2)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.8 }} className="max-w-xl md:pr-10 mx-auto md:mb-10 mb-5 md:w-1/4">
+              viewport={{ once: true, amount: 0.8 }} className="max-w-xl md:pr-10 mx-auto md:mb-10 mb-5 md:w-1/4">
         <h5 className="md:text-Heading text-Heading-sm font-bold text-center text-blue950">
           Why Choose NAS?
         </h5> 
@@ -28,7 +28,7 @@ const ChooseUs = () => {
               variants={fadein("up", 0.2)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.8 }} className="flex flex-col items-center p-4 border-2 border-slate-500 rounded-lg">
+              viewport={{ once: true, amount: 0.8 }} className="flex flex-col items-center p-4 border-2 border-slate-500 rounded-lg">
                 <Image className='w-32 h-32 rounded-full' src={Expertise} alt=''/>
                 <h1 className="mx-auto md:mt-6 mt-1 font-bold md:text-CardHeading text-CardHeading-sm hover:text-blue2">Expertise</h1>
                 <p className="mx-auto mt-4 text-center md:text-base text-sm">Our team of CRM experts has extensive experience in implementing & managing solutions across various industries.</p>
@@ -38,7 +38,7 @@ const ChooseUs = () => {
               variants={fadein("up", 0.2)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.8 }} className="flex flex-col items-center p-4 border-2 border-slate-500 rounded-lg">
+              viewport={{ once: true, amount: 0.8 }} className="flex flex-col items-center p-4 border-2 border-slate-500 rounded-lg">
                 <Image className='w-32 h-32 rounded-full' src={Customization} alt=''/>
                 <h1 className="mx-auto md:mt-6 mt-1 font-bold md:text-CardHeading text-CardHeading-sm hover:text-blue2">Customization</h1>
                 <p className="mx-auto mt-4 text-center md:text-base text-sm">We tailor our CRM solutions to fit your specific business requirements, ensuring maximum efficiency and effectiveness.</p>
@@ -49,7 +49,7 @@ const ChooseUs = () => {
               variants={fadein("up", 0.2)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.8 }} className="flex flex-col items-center p-4 border-2 border-slate-500 rounded-lg">
+              viewport={{ once: true, amount: 0.8 }} className="flex flex-col items-center p-4 border-2 border-slate-500 rounded-lg">
                 <Image className='w-32 h-32 rounded-full' src={Support} alt=''/>
                 <h1 className="mx-auto md:mt-6 mt-1 font-bold md:text-CardHeading text-CardHeading-sm hover:text-blue2">Support</h1>
                 <p className="mx-auto mt-4 text-center md:text-base text-sm">We provide dedicated support and training to ensure your team can leverage the CRM system to its full potential.</p>
@@ -60,7 +60,7 @@ const ChooseUs = () => {
               variants={fadein("up", 0.2)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.8 }} className="flex flex-col items-center p-4 border-2 border-slate-500 rounded-lg">
+              viewport={{ once: true, amount: 0.8 }} className="flex flex-col items-center p-4 border-2 border-slate-500 rounded-lg">
                 <Image className='w-32 h-32 rounded-full' src={Result} alt=''/>
                 <h1 className="mx-auto md:mt-6 mt-1 font-bold md:text-CardHeading text-CardHeading-sm hover:text-blue2">Proven Results</h1>
                 <p className="mx-auto mt-4 text-center md:text-base text-sm">Our clients have significantly improved customer engagement, sales and growth through our CRM solutions.</p>

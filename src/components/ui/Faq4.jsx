@@ -12,7 +12,7 @@ const Faq4 = ({obj}) => {
             variants={fadein("left", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: true, amount: 0.8 }} className="mb-6 text-blue-900 font-sans text-MainHeading-sm md:text-MainHeading md:p-6 font-semibold leading-none tracking-tight cursor-pointer">
+            viewport={{ once: true, amount: 0.8 }} className="mb-6 text-blue-900 text-MainHeading-sm md:text-MainHeading md:p-6 font-semibold leading-none tracking-tight cursor-pointer">
             <span className="relative inline-block">
                 <svg
                 viewBox="0 0 52 24"
@@ -47,18 +47,18 @@ const Faq4 = ({obj}) => {
                         initial="hidden"
                         whileInView={"show"}
                         viewport={{ once: true, amount: 0.8 }} key={feat.id} className='hover:bg-blue-50 rounded-xl'>
-                        <details className=" group px-2 md:px-6 rounded-xl border-y border-blue-400" close>
+                        <details className=" group px-2 md:px-6 rounded-xl border-y border-blue-400" close="true">
                             <summary
                                 className="flex cursor-pointer list-none items-center justify-between py-2 text-Para-sm md:text-Para font-semibold">
                                 {feat.question}
                                 <div className='hover:font-bold hover:scale-110'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                        stroke="currentColor" class="block h-5 w-5 group-open:hidden">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
+                                        stroke="currentColor" className="block h-5 w-5 group-open:hidden">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                                     </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                        stroke="currentColor" class="hidden h-5 w-5 group-open:block">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
+                                        stroke="currentColor" className="hidden h-5 w-5 group-open:block">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 12h-15" />
                                     </svg>
                                 </div>
                             </summary>

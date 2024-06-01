@@ -33,7 +33,7 @@ const ChooseUs = () => {
                 variants={fadein("up", 0.2)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.8 }} className="mx-auto space-y-2 text-center mb-8">
+                viewport={{ once: true, amount: 0.8 }} className="mx-auto space-y-2 text-center mb-8">
                 <h2 className="md:text-Heading text-Heading-sm font-bold text-blue950">Why Choose Our IT Staffing Services?</h2>
                 <p className="text-gray-800 text-para">Our IT staffing services provide efficient, flexible and cost-effective solutions for accessing top-tier IT talent, ensuring prompt fulfillment of project needs.</p>
             </motion.div>
@@ -41,7 +41,7 @@ const ChooseUs = () => {
                 variants={fadein("up", 0.2)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.8 }} className="mx-auto grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                viewport={{ once: true, amount: 0.8 }} className="mx-auto grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-4">
                 {choose.map((item) => (
                     <div key={item.id} className="flex flex-col items-center md:p-6 p-2">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-8 h-8 text-blue2">

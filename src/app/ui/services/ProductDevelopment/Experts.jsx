@@ -13,7 +13,7 @@ const Experts = () => {
           variants={fadein("up", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.8 }}
           className="md:text-Heading text-Heading-sm font-bold text-gray-700 "
         >
           Our Expertise
@@ -43,7 +43,7 @@ const Experts = () => {
               variants={fadein("up", 0.2)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.8 }}div className="flex space-x-2 sm:space-x-4">
+              viewport={{ once: true, amount: 0.8 }}div className="flex space-x-2 sm:space-x-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -71,7 +71,7 @@ const Experts = () => {
               variants={fadein("up", 0.2)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.8 }}div className="flex space-x-2 sm:space-x-4">
+              viewport={{ once: true, amount: 0.8 }}div className="flex space-x-2 sm:space-x-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -99,7 +99,7 @@ const Experts = () => {
               variants={fadein("up", 0.2)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.8 }}div className="flex space-x-2 sm:space-x-4">
+              viewport={{ once: true, amount: 0.8 }}div className="flex space-x-2 sm:space-x-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -128,7 +128,7 @@ const Experts = () => {
               variants={fadein("up", 0.2)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.8 }}div className="flex space-x-2 sm:space-x-4">
+              viewport={{ once: true , amount: 0.8 }}div className="flex space-x-2 sm:space-x-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -157,7 +157,7 @@ const Experts = () => {
               variants={fadein("up", 0.2)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.8 }}div className="flex space-x-2 sm:space-x-4">
+              viewport={{ once: true, amount: 0.8 }}div className="flex space-x-2 sm:space-x-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

@@ -19,7 +19,7 @@ const Whychooseus = () => {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: true, amount: 0.8 }}  
-                className="text-blue-900 w-full md:w-2/5 pb-4 font-sans text-MainHeading-sm md:text-MainHeading leading-none tracking-tight font-semibold">
+                className="text-blue-900 w-full md:w-2/5 pb-4 text-MainHeading-sm md:text-MainHeading leading-none tracking-tight font-semibold">
                 Why Choose
                 <span className="relative inline-block">
                     <svg

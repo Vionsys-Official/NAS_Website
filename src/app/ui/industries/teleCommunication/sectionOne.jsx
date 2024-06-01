@@ -14,7 +14,7 @@ const sectionOne = () => {
         className="absolute inset-0 object-cover w-full h-full"
         alt=""
       />
-      <div className="relative h-[80vh] md:h-[100vh] bg-gray-900 bg-opacity-65">
+      <div className="relative h-[80vh] md:h-[60vh] bg-gray-900 bg-opacity-65">
         <div className="px-1 md:px-10 py-16 h-full flex flex-col items-start justify-center">
           <div className="flex flex-col items-start">
             <motion.div

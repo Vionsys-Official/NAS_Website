@@ -11,7 +11,7 @@ const Faq3 = ({ faq }) => {
             variants={fadein("up", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.8 }} 
+            viewport={{ once: true, amount: 0.8 }} 
             className="text-center">
                 <h3 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-blue950">
                     Frequently Asked <span className="text-blue2">Questions</span>

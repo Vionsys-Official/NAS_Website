@@ -16,7 +16,7 @@ function Cards() {
             variants={fadein("left", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.8 }}
+            viewport={{ once: true, amount: 0.8 }}
             className="md:text-HMain text-HMain-sm font-bold text-blue950"
           >
             Big Data & Analytics Development Services
@@ -25,7 +25,7 @@ function Cards() {
             variants={fadein("right", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.8 }}
+            viewport={{ once: true, amount: 0.8 }}
             className="md:text-lg  text-Para-sm"
           >
             We offer comprehensive big data consulting services designed to

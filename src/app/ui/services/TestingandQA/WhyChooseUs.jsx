@@ -17,7 +17,7 @@ const WhyChooseUs = () => {
           variants={fadein("left", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.8 }}
           className="max-w-lg mb-5  font-bold tracking-tight text-blue950  md:text-Heading  text-Heading-sm sm:leading-none md:mb-6 group"
         >
           <span className="inline-block mb-1 sm:mb-4">
@@ -29,8 +29,8 @@ const WhyChooseUs = () => {
           variants={fadein("right", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.8 }}
-          className="text-gray-800 md:text-Para text-Para-sm md:max-w-xl"
+          viewport={{ once: true, amount: 0.8 }}
+          className="text-gray-800 md:text-Para text-center text-Para-sm md:max-w-xl"
         >
           Our dedicated team of QA experts thoroughly examines every detail to
           ensure top-notch quality of your software, ensuring it's not just
@@ -41,7 +41,7 @@ const WhyChooseUs = () => {
           competitive landscape.
         </motion.p>
       </div>
-      <div className="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2">
+      <div className="grid gap-6 row-gap-5 md:mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2">
         <Link href="/" aria-label="View Item">
           <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
             <Image

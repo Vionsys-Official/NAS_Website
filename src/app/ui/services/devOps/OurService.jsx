@@ -34,7 +34,7 @@ const OurService = () => {
         whileInView={"show"}
         viewport={{ once: false, amount: 0.8 }}
         className="max-w-xl mb-2 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-        <h2 className="max-w-lg mb-4 text-3xl font-bold leading-none tracking-tight text-blue950 sm:text-4xl md:mx-auto">
+        <h2 className="max-w-lg mb-4 text-center text-3xl font-bold leading-none tracking-tight text-blue950 sm:text-4xl md:mx-auto">
           <span className="relative inline-block">
             Our DevOps Services
           </span>
@@ -49,8 +49,8 @@ const OurService = () => {
             viewport={{ once: false, amount: 0.8 }}
             key={item.id} className="duration-300 transform bg-white border-l-4 border-blue5 hover:-translate-y-6">
             <div className="h-full md:p-5 p-2 border border-l-0 rounded-r shadow-sm">
-              <h6 className="mb-2 font-semibold">{item.title}</h6>
-              <p className="text-sm text-gray-900">
+              <h6 className="mb-2 font-semibold text-center">{item.title}</h6>
+              <p className="text-sm text-gray-900  text-center">
                 {item.para}
               </p>
             </div>

@@ -11,7 +11,7 @@ const OurApproach = () => {
           variants={fadein("up", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.8 }}
           className="md:text-Heading text-Heading-sm font-bold text-blue950"
         >
           Our Approach
@@ -20,7 +20,7 @@ const OurApproach = () => {
           variants={fadein("up", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.8 }}
           className="md:text-Para text-Para-sm md:w-1/3 w-full text-center"
         >
           We implement a robust QA strategy designed to identify and mitigate
@@ -35,14 +35,16 @@ const OurApproach = () => {
           scale: { type: "spring", stiffness: 30 },
           opacity: { duration: 0.6 },
           ease: "easeInOut",
-        }} className="px-4 py-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 md:py-12">
-        <div className="grid row-gap-8 sm:row-gap-0 grid-cols-2 md:grid-cols-3">
+        }}
+        className="px-4 py-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 md:py-12"
+      >
+        <div className="grid gap-8 sm:row-gap- grid-cols-2 md:grid-cols-3">
           <div className="md:p-8 p-2 border-b sm:border-r">
             <div className="max-w-md text-center">
               <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-blue4 sm:w-16 sm:h-16">
                 <h1 className="font-bold text-xl ">1</h1>
               </div>
-              <h6 className="mb-2  md:text-CardHeading text-CardHeading-sm font-semibold leading-5">
+              <h6 className="mb-2  md:text-CardHeading text-md font-semibold leading-5">
                 Detailed Requirements Analysis
               </h6>
               <p className="mb-3 md:text-Para text-Para-sm text-gray-800">
@@ -56,7 +58,7 @@ const OurApproach = () => {
               <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-blue4 sm:w-16 sm:h-16">
                 <h1 className="font-bold text-xl">2</h1>
               </div>
-              <h6 className="mb-2 md:text-CardHeading text-CardHeading-sm font-semibold leading-5">
+              <h6 className="mb-2 md:text-CardHeading text-md font-semibold leading-5">
                 Strategic Test Planning
               </h6>
               <p className="mb-3 md:text-Para text-Para-sm text-gray-800">
@@ -70,7 +72,7 @@ const OurApproach = () => {
               <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-blue4 sm:w-16 sm:h-16">
                 <h1 className="font-bold text-xl">3</h1>
               </div>
-              <h6 className="mb-2 md:text-CardHeading text-CardHeading-sm font-semibold leading-5">
+              <h6 className="mb-2 md:text-CardHeading text-md font-semibold leading-5">
                 Thorough Test Case Development
               </h6>
               <p className="mb-3 md:text-Para text-Para-sm text-gray-800">
@@ -84,7 +86,7 @@ const OurApproach = () => {
               <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-blue4 sm:w-16 sm:h-16">
                 <h1 className="font-bold text-xl">4</h1>
               </div>
-              <h6 className="mb-2 md:text-CardHeading text-CardHeading-sm font-semibold leading-5">
+              <h6 className="mb-2 md:text-CardHeading text-md font-semibold leading-5">
                 Efficient Defect Management{" "}
               </h6>
               <p className="mb-3 md:text-Para text-Para-sm text-gray-800">
@@ -98,7 +100,7 @@ const OurApproach = () => {
               <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-blue4 vsm:w-16 sm:h-16">
                 <h1 className="font-bold text-xl">5</h1>
               </div>
-              <h6 className="mb-2 md:text-CardHeading text-CardHeading-sm font-semibold leading-5">
+              <h6 className="mb-2 md:text-CardHeading text-md font-semibold leading-5">
                 Comprehensive Regression Testing{" "}
               </h6>
               <p className="mb-3 md:text-Para text-Para-sm text-gray-800">
@@ -112,7 +114,7 @@ const OurApproach = () => {
               <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-blue4 sm:w-16 sm:h-16">
                 <h1 className="font-bold text-xl">6</h1>
               </div>
-              <h6 className="mb-2 md:text-CardHeading text-CardHeading-sm font-semibold leading-5">
+              <h6 className="mb-2 md:text-CardHeading text-md font-semibold leading-5">
                 User Acceptance Testing(UAT){" "}
               </h6>
               <p className="mb-3 md:text-Para text-Para-sm text-gray-800">

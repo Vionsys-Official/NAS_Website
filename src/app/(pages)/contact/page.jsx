@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import contactHero from "@/../public/assets/contact/Hero.jpg"
+import contactHero from "@/../public/assets/contact/Hero.jpg";
 import Image from "next/image";
 import Header from "@/../public/assets/contact/Header.jpg";
 import { FaMobileAlt } from "react-icons/fa";
@@ -25,9 +25,9 @@ function page() {
               quality={100}
               className="absolute inset-0 z-0 opacity-65"
             />
-            <h1 className="absolute inset-x-0 top-1/2 text-center text-white text-6xl font-bold tracking-wide z-10">
-          Contact Us
-        </h1>
+            <h1 className="absolute inset-x-0 top-1/2 text-center text-white text-HeroHeading font-bold tracking-wide z-10">
+              Innovate the Future with Us
+            </h1>
           </div>
           <div
             id="MService"
@@ -38,7 +38,6 @@ function page() {
                 We are here to help you
               </h1>
             </div>
-            
           </div>
         </div>
       </section>
@@ -49,25 +48,13 @@ function page() {
           <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-6">
             <div className="grid items-center grid-cols-1 gap-y-6 md:grid-cols-2 md:gap-x-20">
               <div className="">
-                <motion.h1
-                  variants={fadein("left", 0.1)}
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: false, amount: 0.5 }}
-                  className="mb-4 text-2xl text-center font-extrabold text-gray-600 md:text-3xl lg:text-4xl"
-                >
+                <h1 className="mb-4 text-2xl text-center font-extrabold text-gray-600 md:text-3xl lg:text-4xl">
                   <span className="text-transparent md:text-5xl lg:text-5xl text-3xl block bg-clip-text bg-gradient-to-r to-emerald-600 from-green-500">
                     NAS Infotech
                   </span>{" "}
                   Pvt.Ltd.
-                </motion.h1>
-                <motion.blockquote
-                  variants={fadein("right", 0.1)}
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: false, amount: 0.5 }}
-                  className="text-lg text-center font-normal text-gray-500 lg:text-lg dark:text-gray-400"
-                >
+                </h1>
+                <blockquote className="text-lg text-center font-normal text-gray-500 lg:text-lg dark:text-gray-400">
                   <svg
                     className="w-8 h-8 text-gray-400 dark:text-green-500"
                     aria-hidden="true"
@@ -84,7 +71,7 @@ function page() {
                     help. We are committed to providing exceptional service and
                     ensuring a seamless experience.
                   </p>
-                </motion.blockquote>
+                </blockquote>
               </div>
 
               <div className="relative pl-20 pr-6 sm:pl-6 md:px-0">

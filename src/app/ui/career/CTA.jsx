@@ -3,8 +3,7 @@ import React from 'react'
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { fadein } from "@/components/ui/variants";
-
-const CTA = () => {
+export default function CTASection() {
   return (
     <div className='flex items-center justify-center'>
         <motion.div
@@ -26,5 +25,3 @@ const CTA = () => {
     </div>
   );
 };
-
-export default CTA;

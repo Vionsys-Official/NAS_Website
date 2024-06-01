@@ -5,8 +5,8 @@ import Image from "next/image";
 import { ContactSchema } from "../../../schema/ContactUsSchema"; // Importing the Yup schema
 import axios from "axios";
 import { Toaster, toast } from "react-hot-toast"; // Importing Toaster and toast
-import { fadein } from '@/components/ui/variants';
-import { motion } from 'framer-motion';
+import { fadein } from "@/components/ui/variants";
+import { motion } from "framer-motion";
 
 const Forms = () => {
   const initialFormData = {
@@ -67,15 +67,9 @@ const Forms = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2">
         <div className="flex items-center justify-center px-4 py-10 sm:px-6 sm:py-16 lg:px-8">
           <div className="xl:mx-auto lg:w-[50vw] w-full ">
-            <motion.h2
-              variants={fadein("down", 0.1)}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: false, amount: 0.5 }}
-              className="text-3xl font-bold text-center leading-tight text-blue950 sm:text-4xl py-6"
-            >
+            <h2 className="text-3xl font-bold text-center leading-tight text-blue950 sm:text-4xl py-6">
               Get In Touch
-            </motion.h2>
+            </h2>
 
             <form className="max-w-[90%] mx-auto" onSubmit={handleSubmit}>
               {/* FirstName, LastName, Email, Contact No */}

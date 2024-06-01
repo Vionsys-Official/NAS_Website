@@ -7,14 +7,14 @@ const Faq = ({ faq }) => {
 
 
     return (
-        <div className="py-4">
+        <div className="py-8">
             <div className="max-w-screen-md mx-auto px-4 md:px-6 lg:px-8 flex flex-col justify-between">
 
                 <motion.div
-                    variants={fadein("up", 0.2)}
+                    variants={fadein("right", 0.2)}
                     initial="hidden"
                     whileInView={"show"}
-                    viewport={{ once: false, amount: 0.8 }}
+                    viewport={{ once: true, amount: 0.8 }}
                     className="text-center">
                     <h3 className="md:text-Heading text-Heading-sm leading-normal font-extrabold tracking-tight text-blue950">
                         Frequently Asked <span className="text-blue2">Questions</span>
