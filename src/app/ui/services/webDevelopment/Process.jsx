@@ -59,7 +59,7 @@ const Process = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}
-             className="text-blue-900 mb-6 sm:mt-6 font-sans text-MainHeading-sm md:text-MainHeading md:p-6 font-semibold leading-none tracking-tight cursor-pointer">
+             className="text-blue-900 mb-6 sm:mt-6 text-MainHeading-sm md:text-MainHeading md:p-6 font-semibold leading-none tracking-tight cursor-pointer">
             <span className="relative inline-block">
                 <svg
                 viewBox="0 0 52 24"

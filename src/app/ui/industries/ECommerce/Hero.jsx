@@ -18,7 +18,7 @@ const Hero = () => {
             variants={fadein("left", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: true, amount: 0.8 }}  className='sm:mt-14 md:mt-0 flex flex-col font-sans w-full sm:w-2/5 md:w-3/5 lg:w-2/5 p-8 md:pl-14 lg:pl-24 xl:pl-52 tracking-tighter lg:tracking-wide text-MainHeading-sm md:text-MainHeading'>
+            viewport={{ once: true, amount: 0.8 }}  className='sm:mt-14 md:mt-0 flex flex-col w-full sm:w-2/5 md:w-3/5 lg:w-2/5 p-8 md:pl-14 lg:pl-24 xl:pl-52 tracking-tighter lg:tracking-wide text-MainHeading-sm md:text-MainHeading'>
                 <span className='text-blue-400 font-bold '>Transform  </span> 
                 Your
                 <span className='text-green-600 font-bold text-HeroHeading-sm md:text-HeroHeading'> E-Commerce Experience </span>

@@ -47,7 +47,7 @@ const Services = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}
-              className="mb-6 font-sans text-blue-900 text-MainHeading-sm md:text-MainHeading md:p-6 font-semibold leading-none tracking-tight cursor-pointer">
+              className="mb-6 text-blue-900 text-MainHeading-sm md:text-MainHeading md:p-6 font-semibold leading-none tracking-tight cursor-pointer">
             <span className="relative inline-block">
                 <svg
                 viewBox="0 0 52 24"
