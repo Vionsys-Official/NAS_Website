@@ -2,7 +2,6 @@ import Faq2 from "@/components/ui/Faq2";
 import React from "react";
 
 const FaqTesting = () => {
-  
   const faq = [
     {
       id: 1,
@@ -32,7 +31,7 @@ const FaqTesting = () => {
   ];
 
   return (
-    <div>
+    <div className="overflow-y-hidden">
       <Faq2 faq={faq} />
     </div>
   );

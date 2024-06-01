@@ -21,7 +21,7 @@ function Hero() {
             variants={fadein("left", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.8 }}
+            viewport={{ once: true, amount: 0.8 }}
             className="mb-6 font-bold tracking-tight text-white md:text-5xl text-HMain-sm sm:leading-none"
           >
             <br className="hidden md:block" />{" "}
@@ -34,7 +34,7 @@ function Hero() {
             variants={fadein("right", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.8 }}
+            viewport={{ once: true, amount: 0.8 }}
             className="mb-6 md:text-xl text-Para-sm font-thin tracking-wide text-gray-300 "
           >
             We transform software testing and quality assurance through a

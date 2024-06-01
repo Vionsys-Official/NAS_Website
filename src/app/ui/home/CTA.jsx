@@ -6,7 +6,7 @@ import Button from "@/components/ui/Button";
 const CTA = () => {
   return (
     <div>
-      <section className="w-full py-8 md:py-24 lg:py-10">
+      <section className="w-full md:py-24 lg:py-10">
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
           {/* Ḥead and Para */}
           <div className="space-y-3">

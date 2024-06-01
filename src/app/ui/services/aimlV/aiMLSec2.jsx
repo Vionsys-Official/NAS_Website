@@ -56,11 +56,11 @@ const aiMlSec2 = () => {
     <section>
     {/* section 2 */}
     <motion.div
-     variants={fadein("up", 0.2)}
+     variants={fadein("up", 0.1)}
      initial="hidden"
      whileInView={"show"}
-     viewport={{ once: false, amount: 0.8 }}
-    className="mx-auto py-10 flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+     viewport={{ once: true, amount: 0.5 }}
+    className="mx-auto md:py-10 py-5 flex max-w-[58rem] flex-col items-center space-y-4 text-center">
 
       <h2 className="font-bold text-SubHeading leading-[1.1] md:text-MainHeading">Features</h2>
 
@@ -82,7 +82,7 @@ const aiMlSec2 = () => {
               <div className='text-Heading p-2 rounded-full bg-gray-200 text-blue-900'><feat.icon /></div>
               <div className="md:space-y-2 flex flex-col items-center justify-center w-[16rem] sm:w-full">
                 <h3 className="text-xl md:text-2xl text-blue-800 font-semibold">{feat.title}</h3>
-                <p className="text-sm md:text-md text-muted-foreground">
+                <p className="text-sm md:text-md text-center p-2 text-muted-foreground">
                   {feat.description}
                 </p>
               </div>

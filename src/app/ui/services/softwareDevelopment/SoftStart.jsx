@@ -3,7 +3,7 @@ import React from 'react'
 
 const SoftStart = () => {
   return (
-    <div><GetStart/></div>
+    <div className='flex justify-center items-center text-center h-auto'><GetStart/></div>
   )
 }
 
