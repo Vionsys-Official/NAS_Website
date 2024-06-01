@@ -5,7 +5,7 @@ function BiHero() {
   return (
     <section className="overflow-x-hidden">
       <div className="relative w-full ">
-        <Image src={Hero3} className="w-full h-[100vh] object-cover  " />
+        <Image src={Hero3} alt="" className="w-full h-[100vh] object-cover  " />
 
         <div className="absolute w-full inset-y-0 flex flex-col justify-center bg-gray-800 bg-opacity-50 items-center p-4 md:pl-20 md:pr-20 sm:pl-20 sm:pr-20 ">
           <div>
@@ -16,7 +16,7 @@ function BiHero() {
               <p className="md:text-SubHeading text-SubHeading-sm text-white pt-2 pb-4 md:w-full ">
                 Unlock innovation with our customized Product Development
                 Solutions. Stay ahead in competitive markets with comprehensive
-                services, state-of-the-art tools, and expert guidance.
+                services, state-of-the-art tools and expert guidance.
               </p>
             </span>
           </div>
