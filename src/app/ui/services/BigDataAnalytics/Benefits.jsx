@@ -33,7 +33,7 @@ const Benefits = () => {
             variants={fadein("up", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.8 }} className="w-full pl-6 flex flex-col gap-4 py-6">
+            viewport={{ once: true, amount: 0.8 }} className="w-full pl-6 flex flex-col gap-4 py-6">
             <div className="flex flex-row gap-2">
               <h1 className="pt-1">
                 <GoDotFill className="w-4 h-4" />

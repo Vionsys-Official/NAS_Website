@@ -15,7 +15,7 @@ const WhatGain = () => {
         variants={fadein("down", 0.2)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.8 }}>
+        viewport={{ once: true, amount: 0.8 }}>
           <div className="w-full flex flex-col gap-8">
             <h1 className="md:text-Heading text-Heading-sm w-full text-blue950 font-bold ">
               What will you gain?
@@ -33,7 +33,7 @@ const WhatGain = () => {
           variants={fadein("up", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.8 }}
           className="w-full flex flex-col md:gap-8 gap-4"
         >
           <div className="flex md:flex-row flex-col md:gap-0 gap-3 ">

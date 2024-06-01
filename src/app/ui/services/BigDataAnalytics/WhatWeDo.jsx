@@ -11,7 +11,7 @@ const WhatWeDo = () => {
       variants={fadein("down", 0.2)}
       initial="hidden"
       whileInView={"show"}
-      viewport={{ once: false, amount: 0.8 }}>
+      viewport={{ once: true, amount: 0.8 }}>
         <div className="flex flex-col w-full text-center justify-center py-4">
           <h1 className="md:text-Heading text-Heading-sm text-blue950  font-bold ">
             What Do We Do?
@@ -53,7 +53,7 @@ const WhatWeDo = () => {
             variants={fadein("up", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.8 }}
+            viewport={{ once: true, amount: 0.8 }}
             className="flex flex-col md:py-6 py-4  "
           >
             <div className="flex md:flex-row flex-col md:gap-0 gap-2">

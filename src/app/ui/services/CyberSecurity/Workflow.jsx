@@ -67,7 +67,7 @@ const Workflow = () => {
         variants={fadein("up", 0.1)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.8 }} className="max-w-xl mb-10 md:mx-auto flex flex-col justify-center items-center text-center lg:max-w-2xl md:mb-6">
+        viewport={{ once: true, amount: 0.8 }} className="max-w-xl mb-10 md:mx-auto flex flex-col justify-center items-center text-center lg:max-w-2xl md:mb-6">
         <h2
           className="flex max-w-lg mb-6 font-sans md:text-Heading text-Heading-sm font-bold leading-none tracking-tight text-blue950 "
         >
@@ -82,14 +82,14 @@ const Workflow = () => {
       </motion.div>
       <div className="relative grid gap-8 row-gap-5 mb-8 md:row-gap-8 md:grid-cols-4 sm:grid-cols-2 py-4 px-6">
         <div className="absolute inset-0 flex items-center justify-center sm:hidden lg:flex">
-          <div className="w-px h-full bg-gray-300 lg:w-full lg:h-px" />
+          
         </div>
         {sections.map((item) => (
           <motion.div
             variants={fadein("up", 0.1)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.8 }}
+            viewport={{ once: true, amount: 0.8 }}
             key={item.id}
             className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2"
           >

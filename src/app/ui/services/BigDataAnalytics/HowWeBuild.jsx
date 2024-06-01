@@ -1,6 +1,5 @@
 'use client'
 import React from 'react'
-import { fadein } from '@/components/ui/variants';
 import { motion } from 'framer-motion';
 
 const HowWeBuild = () => {

@@ -15,7 +15,7 @@ const Choose = () => {
                 variants={fadein("up", 0.2)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.8 }} className="flex flex-col mb-4 lg:justify-between lg:flex-row md:mb-6">
+                viewport={{ once: true, amount: 0.8 }} className="flex flex-col mb-4 lg:justify-between lg:flex-row md:mb-6">
                 <h2 className="max-w-lg mb-5 md:text-Heading text-Heading-sm font-bold tracking-tight text-blue950 sm:text-4xl sm:leading-none md:mb-6 group">
                     <span className="inline-block mb-1 sm:mb-4">
                         Why to Choose NAS
@@ -30,7 +30,7 @@ const Choose = () => {
                 variants={fadein("up", 0.2)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.8 }} className="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2">
+                viewport={{ once: true, amount: 0.8 }} className="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2">
                 <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
                     <Image src={Expert} alt='' className='object-cover w-full h-56 md:h-64 xl:h-80' />
                     <div className="absolute inset-0 flex flex-col items-center justify-center px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
