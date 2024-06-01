@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import Image from "next/image";
-import Logo from "@/../public/assets/Logo.png"
+import Logo from "@/../public/assets/Logo.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,12 +26,18 @@ const Navbar = () => {
       className={`py-2 px-6 fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
         isScrolled
           ? "bg-white shadow-lg text-blue1"
-          : "bg-transparent text-white "
+          : "bg-black bg-opacity-45 text-white"
       }`}
     >
       <div className="flex items-center justify-between gap-8">
-        <Link className="flex items-center gap-2" href="/">
-          <Image src={Logo} height={1000} width={1000} className="h-12 w-36 " alt="Logo not found" />
+        <Link href="/" className="flex items-center gap-2">
+          <Image
+            src={Logo}
+            height={1000}
+            width={1000}
+            className="h-12 w-36"
+            alt="Logo not found"
+          />
         </Link>
 
         <div className="hidden md:flex items-center gap-10 p-2">
@@ -56,11 +62,12 @@ const Navbar = () => {
           </NavLink>
         </div>
 
-        <div className="hidden md:block"> {/* Hide for mobile view */}
-          <Link href="/contact" isScrolled={isScrolled} pathname={pathname}>
+        <div className="hidden md:block">
+          <Link href="/contact">
             <button className="cursor-pointer font-semibold relative z-10 border overflow-hidden border-green-500 group px-3 rounded-xl py-2">
               <span className="relative z-10 hidden text-green-500 group-hover:text-white text-sm duration-500 md:flex md:items-center">
-                Contact us <BiSolidPhoneCall className="ml-1 text-green-500 text-lg font-semibold group-hover:text-white" />
+                Contact us{" "}
+                <BiSolidPhoneCall className="ml-1 text-green-500 text-lg font-semibold group-hover:text-white" />
               </span>
               <span className="absolute w-full h-full bg-green-500 -left-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:left-0 duration-500"></span>
               <span className="absolute w-full h-full bg-green-500 -right-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:right-0 duration-500"></span>
@@ -77,17 +84,17 @@ const Navbar = () => {
 };
 
 // NavLink Component for links with hover and selected state
-const NavLink = ({ href, isScrolled, pathname, children }) => (
-  <Link href={href}>
-    <div
-      className={`text-base font-light hover:scale-[115%] hover:ease-in ease-out duration-75 hover:duration-75 ${
-        isScrolled ? "text-blue1" : "text-white"
-      } ${pathname === href ? "font-extrabold" : ""}`}
-    >
-      {children}
-    </div>
-  </Link>
-);
+const NavLink = ({ href, isScrolled, pathname, children }) => {
+  const className = `text-base font-light hover:scale-[115%] hover:ease-in ease-out duration-75 hover:duration-75 ${
+    isScrolled ? "text-blue1" : "text-white"
+  } ${pathname === href ? "font-extrabold" : ""}`;
+
+  return (
+    <Link href={href}>
+      <div className={className}>{children}</div>
+    </Link>
+  );
+};
 
 // Mobile View
 const MobileMenu = ({ isScrolled, pathname }) => {
@@ -182,17 +189,18 @@ const MobileMenu = ({ isScrolled, pathname }) => {
   );
 };
 
-const MobileNavLink = ({ href, isScrolled, pathname, onClick, children }) => (
-  <Link href={href}>
-    <div
-      className={`text-base font-medium hover:underline underline-offset-4 ${
-        isScrolled ? "text-black" : "text-white"
-      } ${pathname === href ? "font-extrabold" : ""}`}
-      onClick={onClick}
-    >
-      {children}
-    </div>
-  </Link>
-);
+const MobileNavLink = ({ href, isScrolled, pathname, onClick, children }) => {
+  const className = `text-base font-medium hover:underline underline-offset-4 ${
+    isScrolled ? "text-black" : "text-white"
+  } ${pathname === href ? "font-extrabold" : ""}`;
+
+  return (
+    <Link href={href}>
+      <div className={className} onClick={onClick}>
+        {children}
+      </div>
+    </Link>
+  );
+};
 
 export default Navbar;
