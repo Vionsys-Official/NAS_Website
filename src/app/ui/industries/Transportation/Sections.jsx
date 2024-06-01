@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Button } from "@/components/ui/Button";
+import Button from "@/components/ui/Button";
 import { fadein } from "@/components/ui/variants";
 import { motion } from "framer-motion";
 
@@ -465,3 +465,4 @@ function TruckIcon(props) {
     </svg>
   );
 }
+
