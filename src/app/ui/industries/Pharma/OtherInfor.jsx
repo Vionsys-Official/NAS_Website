@@ -10,14 +10,15 @@ import Image from 'next/image'
 const OtherInfor = () => {
     return (
         <div className='py-10'>
-            <motion.div
-                variants={fadein("down", 0.2)}
-                initial="hidden"
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.8 }}
-                className='py-5'>
-                <h2 className="max-w-6xl mx-auto text-center md:text-Heading text-Heading-sm font-bold tracking-tight text-blue950 text-2xl sm:leading-none">Integrated Solutions for Technological Innovation, Regulatory Compliance and Customization in Pharmaceuticals.</h2>
-            </motion.div>
+            <div className='py-5'>
+                <motion.h2
+                 variants={fadein("up", 0.2)}
+                 initial="hidden"
+                 whileInView={"show"}
+                 viewport={{ once: true, amount: 0.8 }}
+                 className="max-w-6xl mx-auto text-center md:text-Heading text-Heading-sm font-bold tracking-tight text-blue950 text-2xl sm:leading-none">Integrated Solutions for Technological Innovation, Regulatory Compliance and Customization in Pharmaceuticals.
+                 </motion.h2>
+            </div>
             <motion.div
                 initial={{ opacity: 0, scale: 0.7 }} //X:100
                 whileInView={{ opacity: 1, scale: 1 }} //y:100

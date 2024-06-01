@@ -2,7 +2,6 @@
 import React from 'react'
 import { fadein } from '@/components/ui/variants';
 import { motion } from 'framer-motion';
-import Link from 'next/link'
 import Button from '@/components/ui/Button';
 
 const Hero = () => {
@@ -22,7 +21,7 @@ const Hero = () => {
                 variants={fadein("down", 0.2)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.8 }}
+                viewport={{ once: true, amount: 0.8 }}
                 className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-24">
                 <div className="relative max-w-3xl sm:mx-auto sm:max-w-2xl md:max-w-3xl sm:text-center">
                     <h2 className="mb-6 md:text-4xl font-bold tracking-tight text-white text-2xl sm:leading-none">
@@ -39,11 +38,9 @@ const Hero = () => {
                         We streamline operations, enhance R&D and ensure compliance with advanced technology. From optimizing clinical trials to managing supply chains, our tailored solutions improve efficiency and accelerate time-to-market. Discover how we can transform your pharma operations.
                     </p>
                     <div>
-                        <Link
-                            href="/contact"
-                        >
+                        
                             <Button />
-                        </Link>
+                       
                     </div>
                 </div>
             </motion.div>

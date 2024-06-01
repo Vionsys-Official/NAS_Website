@@ -57,12 +57,12 @@ const Service = () => {
     ]
 
     return (
-        <div className="px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div className="px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20">
             <motion.div
                 variants={fadein("up", 0.2)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.8 }}
+                viewport={{ once: true, amount: 0.8 }}
                 className="max-w-xl mb-4 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
                 <h2 className="max-w-lg md:mb-6 mb-3 text-center font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
                     <span className="relative inline-block">
@@ -95,7 +95,7 @@ const Service = () => {
                     Our services are designed to enhance efficiency, improve customer experiences, and drive business growth for real estate professionals. Here’s how we can help you elevate your real estate business:
                 </p>
             </motion.div>
-            <div className="grid max-w-sm gap-5 mb-8 lg:grid-cols-3 sm:mx-auto lg:max-w-full">
+            <div className="grid w-full gap-5 mb-8 lg:grid-cols-3 sm:mx-auto lg:max-w-full">
                 {service.map((item) => (
                     <motion.div
                     initial={{ opacity: 0, scale: 0.7 }} //X:100
@@ -105,7 +105,7 @@ const Service = () => {
                       scale: { type: "spring", stiffness: 30 },
                       opacity: { duration: 0.6 },
                       ease: "easeInOut",
-                    }} key={item.id} className="md:p-5 p-1 text-center border-2 rounded-2xl">
+                    }} key={item.id} className="md:p-5 p-1 text-center border-gray-400 border-2 rounded-2xl">
                         <h1 className="inline-block max-w-xs mx-auto mb-3 md:text-CardHeading text-CardHeading-sm font-extrabold leading-7 transition-colors duration-200 text-blue2 hover:text-blue950">
                             {item.title}
                         </h1>

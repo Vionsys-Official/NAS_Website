@@ -55,7 +55,7 @@ const Service = () => {
                     variants={fadein("up", 0.2)}
                     initial="hidden"
                     whileInView={"show"}
-                    viewport={{ once: false, amount: 0.8 }}>
+                    viewport={{ once: true, amount: 0.8 }}>
                     <h2 className="md:text-Heading font-bold tracking-tight text-center text-Heading-sm text-blue950">Our Services</h2>
                     <p className="max-w-3xl mx-auto mt-4 md:text-xl text-lg text-center text-gray-800">We provide comprehensive IT solutions tailored for the pharmaceutical industry. Our services are designed to streamline operations, enhance research and development and ensure regulatory compliance. We specialize in:</p>
                 </motion.div>
@@ -64,7 +64,7 @@ const Service = () => {
                         variants={fadein("left", 0.2)}
                         initial="hidden"
                         whileInView={"show"}
-                        viewport={{ once: false, amount: 0.8 }}>
+                        viewport={{ once: true, amount: 0.8 }}>
                         <div className="md:space-y-12 space-y-4">
                             {service1.map((item) => (
                                 <div key={item.id} className="flex">
@@ -88,7 +88,7 @@ const Service = () => {
                         variants={fadein("right", 0.2)}
                         initial="hidden"
                         whileInView={"show"}
-                        viewport={{ once: false, amount: 0.8 }} className="md:mt-10 mt-1 md:my-3 my-0 lg:mt-0">
+                        viewport={{ once: true, amount: 0.8 }} className="md:mt-10 mt-1 md:my-3 my-0 lg:mt-0">
                         <Image src={Pharma3} alt="" className="mx-auto" />
                     </motion.div>
                 </div>
@@ -98,7 +98,7 @@ const Service = () => {
                             variants={fadein("right", 0.2)}
                             initial="hidden"
                             whileInView={"show"}
-                            viewport={{ once: false, amount: 0.8 }} className="lg:col-start-2">
+                            viewport={{ once: true, amount: 0.8 }} className="lg:col-start-2">
                             <div className="md:space-y-12 space-y-4">
                                 {service2.map((item) => (
                                     <div key={item.id} className="flex"><div className="flex-shrink-0  md:block hidden">
@@ -121,7 +121,7 @@ const Service = () => {
                             variants={fadein("left", 0.2)}
                             initial="hidden"
                             whileInView={"show"}
-                            viewport={{ once: false, amount: 0.8 }} className="lg:mt-0 lg:col-start-1 lg:row-start-1 my-3">
+                            viewport={{ once: true, amount: 0.8 }} className="lg:mt-0 lg:col-start-1 lg:row-start-1 my-3">
                             <Image src={Pharma2} alt="" className="mx-auto" />
                         </motion.div>
                     </div>
