@@ -1,4 +1,7 @@
+"use client";
 import React from "react";
+import { fadein } from "@/components/ui/variants";
+import { motion } from "framer-motion";
 import section2Image from "/public/assets/services/salesforce/section2Image.jpg";
 import Image from "next/image";
 
@@ -6,7 +9,13 @@ const salesforcesec2 = () => {
   return (
     <section>
       <div className="max-w-screen-xl mx-auto md:py-5 px-2">
-        <div className="mx-auto flex max-w-[58rem] py-2 flex-col items-center space-y-4 text-center">
+        <motion.div
+          variants={fadein("down", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.8 }}
+          className="mx-auto flex max-w-[58rem] py-2 flex-col items-center space-y-4 text-center"
+        >
           <h2 className=" text-MainHeading font-extrabold">
             <span className="text-black relative stroke-current">
               Features
@@ -27,7 +36,7 @@ const salesforcesec2 = () => {
             Explore the incredible offerings provided by us to enrich your
             online visibility.
           </p>
-        </div>
+        </motion.div>
 
         <div className="flex flex-col md:flex-row md:p-10 p-2 py-2">
           <div className="mr-0 md:mr-8 md:my-20 md:mb-0 py-4">
@@ -40,7 +49,17 @@ const salesforcesec2 = () => {
             />
           </div>
 
-          <div className="flex-1 flex flex-col sm:flex-row flex-wrap -mb-4 -mx-2">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.7 }} //X:100
+            whileInView={{ opacity: 1, scale: 1 }} //y:100
+            transition={{
+              delay: 0.2,
+              scale: { type: "spring", stiffness: 30 },
+              opacity: { duration: 0.6 },
+              ease: "easeInOut",
+            }}
+            className="flex-1 flex flex-col sm:flex-row flex-wrap -mb-4 -mx-2"
+          >
             <div className="w-full sm:w-1/2 mb-4 px-2 py-1">
               <div className="flex gap-4 items-start">
                 <span className="text-blue-600 bg-violet-500/10 p-3 rounded-full">
@@ -238,7 +257,7 @@ const salesforcesec2 = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
