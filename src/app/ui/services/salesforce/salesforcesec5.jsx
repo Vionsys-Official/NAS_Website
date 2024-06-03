@@ -1,4 +1,7 @@
+"use client";
 import React from "react";
+import { fadein } from "@/components/ui/variants";
+import { motion } from "framer-motion";
 import { RiQuestionnaireFill } from "react-icons/ri";
 
 const salesforcesec5 = () => {
@@ -8,12 +11,27 @@ const salesforcesec5 = () => {
         id="faq"
         className="mx-auto max-w-2xl divide-y divide-gray-900/10 lg:max-w-7xl p-4 md:p-8 dark:bg-gray-800"
       >
-        <h2 className="md:mt-2 font-header text-Heading font-bold tracking-tight text-gray-900 text-center dark:text-white">
-          Frequently asked questions ?
-        </h2>
+        <motion.div
+          variants={fadein("down", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.8 }}
+        >
+          <h2 className="md:mt-2 font-header text-Heading font-bold tracking-tight text-gray-900 text-center dark:text-white">
+            Frequently asked questions ?
+          </h2>
+        </motion.div>
         <div className="w-full h-[3px] bg-blue-500 mt-3"></div>
 
-        <dl className="md:mt-10 mt-2 space-y-8 divide-y divide-gray-900/10">
+        <motion.div
+            initial={{ opacity: 0, scale: 0.7 }} //X:100
+            whileInView={{ opacity: 1, scale: 1 }} //y:100
+            transition={{
+              delay: 0.2,
+              scale: { type: "spring", stiffness: 30 },
+              opacity: { duration: 0.6 },
+              ease: "easeInOut"
+            }} className="md:mt-10 mt-2 space-y-8 divide-y divide-gray-900/10">
           <div className="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
             <dt className="text-Para font-semibold leading-7 text-gray-900 lg:col-span-3 dark:text-gray-300 flex items-start">
               <RiQuestionnaireFill className="mr-2 mt-[5px] w-6 h-6 flex-shrink-0" />
@@ -78,7 +96,7 @@ const salesforcesec5 = () => {
               </p>
             </dd>
           </div>
-        </dl>
+        </motion.div>
       </div>
     </section>
   );
