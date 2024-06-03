@@ -1,20 +1,29 @@
+"use client";
 import React from "react";
+import { fadein } from "@/components/ui/variants";
+import { motion } from "framer-motion";
 import { FaCloud } from "react-icons/fa6";
 
 const salesforcesec4 = () => {
   return (
     <section>
-      <div className="md:py-12 bg-white">
+      <div className="md:py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="lg:text-center">
+          <motion.div
+            variants={fadein("down", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.8 }}
+            className="lg:text-center"
+          >
             <p className="font-heading mt-2  text-Heading leading-8 font-medium tracking-tight text-gray-900 sm:text-4xl">
               Transform Your Business with Salesforce Cloud
             </p>
-          </div>
+          </motion.div>
 
           <div className="md:mt-16 mt-4">
             <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-              <div className="relative duration-300  transform bg-white  hover:-translate-y-2 cursor-pointer">
+              <div className="relative duration-300  transform  hover:-translate-y-2 cursor-pointer">
                 <dt>
                   <FaCloud className="absolute top-0 left-0 mt-1 ml-1 text-2xl text-blue-600" />
                   <p className="font-heading ml-16 text-center text-SubHeading leading-6 font-bold text-gray-700">
@@ -30,7 +39,7 @@ const salesforcesec4 = () => {
                 </dd>
               </div>
 
-              <div className="relative duration-300 transform bg-white hover:-translate-y-2 cursor-pointer">
+              <div className="relative duration-300 transform hover:-translate-y-2 cursor-pointer">
                 <dt>
                   <FaCloud className="absolute top-0 left-0 mt-1 ml-1 text-2xl text-blue-600" />
                   <p className="font-heading ml-16 text-center text-SubHeading leading-6 font-bold text-gray-700">
@@ -46,7 +55,7 @@ const salesforcesec4 = () => {
                   efforts.
                 </dd>
               </div>
-              <div className="relative duration-300 transform bg-white hover:-translate-y-2 cursor-pointer">
+              <div className="relative duration-300 transform hover:-translate-y-2 cursor-pointer">
                 <dt>
                   <FaCloud className="absolute top-0 left-0 mt-1 ml-1 text-2xl text-blue-600" />
                   <p className="font-heading ml-16 text-SubHeading text-center leading-6 font-bold text-gray-700">
@@ -61,7 +70,7 @@ const salesforcesec4 = () => {
                   Salesforce with low-code development tools.
                 </dd>
               </div>
-              <div className="relative duration-300 transform bg-white hover:-translate-y-2 cursor-pointer">
+              <div className="relative duration-300 transform hover:-translate-y-2 cursor-pointer">
                 <dt>
                   <FaCloud className="absolute top-0 left-0 mt-1 ml-1 text-2xl text-blue-600" />
                   <p className="font-heading ml-16 text-SubHeading text-center leading-6 font-bold text-gray-700">

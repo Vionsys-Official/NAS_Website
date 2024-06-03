@@ -1,4 +1,7 @@
+"use client";
 import React from "react";
+import { fadein } from "@/components/ui/variants";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import slAewave from "/public/assets/services/salesforce/slaewave.png";
 import sect1TadyImage from "/public/assets/services/salesforce/sect1TadyImage.png";
@@ -16,9 +19,15 @@ const salesforcesec1 = () => {
             objectFit="cover"
           />
         </div>
-        <div className="relative z-10 md:h-[80vh] flex gap-5 flex-col md:flex-row flex- justify-evenly items-center ">
+        <motion.div
+          variants={fadein("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.8 }}
+          className="relative z-10 md:h-[80vh] flex gap-5 flex-col md:flex-row flex- justify-evenly items-center "
+        >
           <div className="inset-0 flex  bg-opacity-75">
-            <div className=" py-3 mx-auto text-center mt-10 text-black bg-white bg-opacity-80 rounded-md max-w-2xl">
+            <div className=" py-3 mx-auto text-center mt-10 text-black bg-opacity-80 rounded-md max-w-2xl">
               <h1 className="text-2xl md:text-4xl font-extrabold">
                 <span className="block text-black">
                   Elevate Your Business with Our
@@ -48,7 +57,7 @@ const salesforcesec1 = () => {
             width={280}
             height={280}
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );
