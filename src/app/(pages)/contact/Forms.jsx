@@ -5,8 +5,6 @@ import Image from "next/image";
 import { ContactSchema } from "../../../schema/ContactUsSchema"; // Importing the Yup schema
 import axios from "axios";
 import { Toaster, toast } from "react-hot-toast"; // Importing Toaster and toast
-import { fadein } from "@/components/ui/variants";
-import { motion } from "framer-motion";
 
 const Forms = () => {
   const initialFormData = {
@@ -38,7 +36,7 @@ const Forms = () => {
 
       // If validation succeeds, proceed with form submission
       axios
-        .post(`${process.env.DOMIAN}/api/sendEmail`, formData)
+        .post(`${process.env.DOMAIN}/api/sendEmail`, formData)
         .then((res) => {
           toast.success("Form submitted successfully!");
           setFormData(initialFormData); // Reset form data
