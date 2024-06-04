@@ -60,7 +60,7 @@ const JobModal = ({ isModalOpen, setisModalOpen }) => {
   };
 
   const onSubmit = async (values) => {
-    console.log("Job Application Details:", values);
+
     try {
       setIsPending(true);
       await axios.post("/api/sendCareerEmail", values, {
