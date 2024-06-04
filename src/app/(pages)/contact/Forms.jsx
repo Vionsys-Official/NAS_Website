@@ -38,7 +38,7 @@ const Forms = () => {
 
       // If validation succeeds, proceed with form submission
       axios
-        .post("/api/sendEmail", formData)
+        .post(`${process.env.DOMIAN}/api/sendEmail`, formData)
         .then((res) => {
           toast.success("Form submitted successfully!");
           setFormData(initialFormData); // Reset form data
