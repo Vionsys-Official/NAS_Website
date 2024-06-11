@@ -40,8 +40,8 @@ function Hero() {
             We transform software testing and quality assurance through a
             customized approach that blends cutting-edge innovation with deep
             expertise. Driven by a commitment to excellence, we rigorously
-            evaluate, enhance, and perfect your software to ensure unmatched
-            robustness, security, and performance. Rely on us to take your
+            evaluate, enhance and perfect your software to ensure unmatched
+            robustness, security and performance. Rely on us to take your
             software to new levels of dependability and user satisfaction,
             equipping your business for success in the fast-paced digital world.
           </motion.p>

@@ -48,10 +48,10 @@ const Healthird = () => {
                   </p>
                 </Link>
                 <p className="mb-4 text-sm text-gray-700 px-2">
-                  We offer comprehensive cloud relocation, administration, and
+                  We offer comprehensive cloud relocation, administration and
                   optimization administrations to guarantee consistent
                   integration and most extreme execution, Our Cloud Foundation
-                  Administrations provide adaptable, secure, and productive
+                  Administrations provide adaptable, secure and productive
                   cloud arrangements custom fitted to your trade needs.
                 </p>
                 <div className="flex space-x-4">
@@ -84,7 +84,7 @@ const Healthird = () => {
                   </p>
                 </Link>
                 <p className="mb-4 text-sm text-gray-700 px-2">
-                  Enhance patient engagement, reduce healthcare costs, and
+                  Enhance patient engagement, reduce healthcare costs and
                   improve access to care with our state-of-the-art telemedicine
                   technologies. Partner with us to transform your healthcare
                   delivery and ensure a healthier, more connected future.
@@ -117,9 +117,9 @@ const Healthird = () => {
                 </Link>
                 <p className="mb-4 text-sm text-gray-700 px-2">
                   Our Cybersecurity Solutions offer comprehensive protection
-                  against evolving cyber threats, ensuring the safety and
+                  against evolving cyber threats ensuring the safety and
                   integrity of your digital assets. We provide advanced security
-                  assessments, robust threat detection, and rapid incident
+                  assessments, robust threat detection and rapid incident
                   response to defend your organization.
                 </p>
               </div>
@@ -154,9 +154,9 @@ const Healthird = () => {
                   </p>
                 </Link>
                 <p className="mb-4 text-sm text-gray-700 px-2">
-                  We offer end-to-end data solutions, including data
-                  integration, storage, processing, and advanced analytics.
-                  Enhance your business intelligence, optimize operations, and
+                  We offer end-to-end data solutions including data
+                  integration, storage, processing and advanced analytics.
+                  Enhance your business intelligence, optimize operations and
                   drive growth with our tailored data strategies.
                 </p>
                 <div className="flex space-x-4">
@@ -190,7 +190,7 @@ const Healthird = () => {
                 </Link>
                 <p className="mb-4 text-sm text-gray-700 px-2">
                   Enhance clinical decision-making, optimize resource
-                  allocation, and drive patient-centered care with our expert
+                  allocation and drive patient-centered care with our expert
                   analytics solutions. Partner with us to leverage the power of
                   data and transform healthcare.
                 </p>
@@ -223,8 +223,8 @@ const Healthird = () => {
                 <p className="mb-4 text-sm text-gray-700 px-2">
                   Our Medical Imaging Solutions offer cutting-edge technology to
                   improve diagnostic accuracy and patient care. We provide
-                  comprehensive imaging services, including advanced imaging
-                  software, cloud storage, and integration with existing
+                  comprehensive imaging services including advanced imaging
+                  software, cloud storage and integration with existing
                   healthcare systems.
                 </p>
               </div>

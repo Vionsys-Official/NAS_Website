@@ -67,7 +67,7 @@ function page() {
                   <p className="first-letter:text-2xl text-Para">
                     At NAS Infotech Pvt.Ltd, we value your inquiries and
                     feedback. Whether you need support, have questions about our
-                    services, or want to start a project, our team is here to
+                    services or want to start a project, our team is here to
                     help. We are committed to providing exceptional service and
                     ensuring a seamless experience.
                   </p>

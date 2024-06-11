@@ -15,7 +15,7 @@ export const Cards=[
     },
     {
         heading:"Innovation",
-        description:"We stay ahead of the curve, bringing you the latest technologies and methodologies to keep you competitive."
+        description:"We stay ahead of the curve bringing you the latest technologies and methodologies to keep you competitive."
     },
     {
         heading:"Customer Focus",

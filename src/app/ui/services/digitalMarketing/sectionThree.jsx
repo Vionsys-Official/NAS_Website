@@ -83,8 +83,8 @@ const sectionThree = () => {
                         <p
                             className="w-full mb-8 text-base font-medium leading-relaxed sm:text-md sm:leading-relaxed text-gray-900">
                                At NAS Infotech Pvt Ltd, we offer comprehensive PPC advertising services designed to maximize your return on investment (ROI) 
-                               and drive meaningful results for your business. Our PPC experts are skilled in creating, managing, and optimizing campaigns across
-                                various platforms, including Google Ads, Bing Ads, Facebook Ads, Instagram Ads, LinkedIn Ads, and more.
+                               and drive meaningful results for your business. Our PPC experts are skilled in creating, managing and optimizing campaigns across
+                                various platforms, including Google Ads, Bing Ads, Facebook Ads, Instagram Ads, LinkedIn Ads and more.
                         </p>
                         <div className='flex justify-evenly items-center flex-wrap gap-5 text-black'>
                             <div className='p-4 px-6 flex flex-col gap-4 border border-black rounded-xl'>

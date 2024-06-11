@@ -73,9 +73,9 @@ const WhatWeProvide = () => {
             Policy Management Systems
           </h6>
           <p className="md:text-Para text-Para-sm text-gray-800">
-            Efficiently manage policy creation, modifications, renewals, and
+            Efficiently manage policy creation, modifications, renewals and
             cancellations with our comprehensive policy management system. Our
-            solution ensures accuracy, compliance, and a seamless experience for
+            solution ensures accuracy, compliance and a seamless experience for
             both administrators and customers.
           </p>
         </motion.div>
@@ -148,7 +148,7 @@ const WhatWeProvide = () => {
           <p className="md:text-Para text-Para-sm text-gray-800">
             Build stronger relationships with your clients through our CRM
             system tailored for the insurance industry. Enhance communication,
-            track interactions, and personalize services to meet the unique
+            track interactions and personalize services to meet the unique
             needs of each customer.
           </p>
         </motion.div>
@@ -256,7 +256,7 @@ const WhatWeProvide = () => {
           </h6>
           <p className="md:text-Para text-Para-sm text-gray-800">
             Harness the power of data with our advanced analytics and business
-            intelligence tools. Make informed decisions, identify trends, and
+            intelligence tools. Make informed decisions, identify trends and
             gain competitive insights.
           </p>
         </motion.div>

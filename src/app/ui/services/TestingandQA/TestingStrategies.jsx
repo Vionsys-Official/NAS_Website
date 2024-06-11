@@ -101,7 +101,7 @@ const TestingStrategies = () => {
             </svg>
           </div>
           <span className=" md:text-Para text-Para-sm text-gray-800">
-            Defect Tracking: Efficiently log, track, and resolve software
+            Defect Tracking: Efficiently log, track and resolve software
             defects.
           </span>
         </div>

@@ -30,7 +30,7 @@ const sectioonTwo = () => {
            Communication with Cutting-Edge Technology
         </h2>
         <p className="text-base text-gray-700 md:text-lg">
-        Our expertise in IT solutions is tailored to elevate your business operations, ensuring seamless communication, enhanced customer experiences, and robust network management. Discover how we can transform your telecommunication services and help you stay ahead in a rapidly evolving industry.
+        Our expertise in IT solutions is tailored to elevate your business operations ensuring seamless communication, enhanced customer experiences and robust network management. Discover how we can transform your telecommunication services and help you stay ahead in a rapidly evolving industry.
         </p>
       </motion.div>
 

@@ -28,7 +28,7 @@ const Whychooseus = () => {
             id:3,
             icon:FaHandshakeSimple,
             title:"Customer-Focused",
-            desc:"Your satisfaction is paramount, and we strive to exceed your expectations.",
+            desc:"Your satisfaction is paramount and we strive to exceed your expectations.",
         },
         {
             id:4,

@@ -44,7 +44,7 @@ const Hero = () => {
             Understanding the unique challenges and opportunities within the
             insurance industry is our specialty. Our suite of software solutions
             is designed to streamline operations, enhance customer experiences,
-            and drive innovation. Whether you're an insurer, broker, or agent,
+            and drive innovation. Whether you're an insurer, broker or agent,
             our technology empowers you to stay ahead in a rapidly evolving
             market.
           </p>

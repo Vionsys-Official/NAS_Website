@@ -27,19 +27,19 @@ export const ourServices = [
     {
       title: "Software Testing and Quality Assurance",
       imagesrc: "/assets/services/ChardsPhoto/testing.jpg",
-      description: "We guarantee flawless software performance with our rigorous testing and quality assurance services, ensuring a seamless launch for your product.",
+      description: "We guarantee flawless software performance with our rigorous testing and quality assurance services ensuring a seamless launch for your product.",
       href1: "/services/TestingandQA",
     },
     {
       title: "Devops",
       imagesrc: "/assets/services/ChardsPhoto/devops1.jpg",
-      description: "Streamline your development and operations with our DevOps expertise. We optimize workflows, automate processes, and ensure seamless collaboration for faster, more efficient software delivery.",
+      description: "Streamline your development and operations with our DevOps expertise. We optimize workflows, automate processes and ensure seamless collaboration for faster, more efficient software delivery.",
       href1: "/services/devOps",
     },
     {
       title: "Cloud Computing",
       imagesrc: "/assets/services/ChardsPhoto/cloudcomputing.jpg",
-      description: "Unlock the power of scalable, flexible infrastructure with our cloud computing solutions. Seamlessly transition to the cloud for enhanced reliability, security, and efficiency in your operations.",
+      description: "Unlock the power of scalable, flexible infrastructure with our cloud computing solutions. Seamlessly transition to the cloud for enhanced reliability, security and efficiency in your operations.",
       href1: "/services/cloudComputing",
     },
     {
@@ -58,7 +58,7 @@ export const ourServices = [
     {
       title: "Cyber Security",
       imagesrc: "/assets/services/ChardsPhoto/cyberSequ.jpg",
-      description: "We provide comprehensive cybersecurity services, protecting your data, networks, and systems from threats, ensuring confidentiality, integrity, and availability.",
+      description: "We provide comprehensive cybersecurity services, protecting your data, networks and systems from threats, ensuring confidentiality, integrity and availability.",
       href1: "/services/CyberSecurity",
 
     },

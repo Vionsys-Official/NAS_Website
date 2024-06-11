@@ -24,7 +24,7 @@ const mainPageSection1 = () => {
             </h1>
             <p className="mt-5 text-gray-700 sm:mt-5  sm:max-w-xl sm:mx-auto md:mt-5 text-Para font-medium lg:mx-0">
            
-            Unlock your business's potential with our tailored software solutions. Experience innovation, reliability, and excellence with NAS Infotech. Let us bring your ideas to life and propel your success forward. Contact us today to discover how we can transform your software experience.
+            Unlock your business's potential with our tailored software solutions. Experience innovation, reliability and excellence with NAS Infotech. Let us bring your ideas to life and propel your success forward. Contact us today to discover how we can transform your software experience.
             </p> 
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <Button />

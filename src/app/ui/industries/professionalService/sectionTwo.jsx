@@ -138,7 +138,7 @@ const sectionTwo = () => {
 <div className='pb-10'>
 <div className="flex justify-center p-5 items-center shadow-xl bg-gray-200 bg-opacity-10 backdrop-blur  pb-10">
        <p className='w-[80%] text-xl font-bold'>
-       At NAS Infotech Pvt Ltd, we are dedicated to providing top-tier professional services that empower your business to achieve its full potential. Contact us today to learn more about how our expertise can help you navigate complex challenges, drive innovation, and achieve sustainable growth. Let us be your trusted partner in success.
+       At NAS Infotech Pvt Ltd, we are dedicated to providing top-tier professional services that empower your business to achieve its full potential. Contact us today to learn more about how our expertise can help you navigate complex challenges, drive innovation and achieve sustainable growth. Let us be your trusted partner in success.
        </p>
     </div>
 

@@ -8,7 +8,7 @@ function Bankingchoose() {
   return (
     <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8  sm:py-10">
     <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 sm:py-2">
-      <h2 className="max-w-lg mb-6 font-sans sm:text-MainHeading md:text-MainHeading font-bold leading-none tracking-tight text-blue900 sm:text-4xl md:mx-auto">
+      <h2 className="max-w-lg mb-6 md:text-MainHeading font-bold leading-none tracking-tight text-blue900 text-MainHeading-sm md:mx-auto">
         <span className="relative inline-block">
           <svg
             viewBox="0 0 52 24"
@@ -69,7 +69,7 @@ function Bankingchoose() {
             Expertise and Experience
             </h6>
             <p className=" md:text-Para text-Para-sm text-blue900 ">
-            The company should have extensive experience in the financial and banking sectors, understanding the unique challenges and requirements of these industries.
+            The company should have extensive experience in the financial and banking sectors understanding the unique challenges and requirements of these industries.
 
             </p>
           </motion.div>
@@ -78,7 +78,7 @@ function Bankingchoose() {
           <div className="mb-4 mr-4">
             <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
               <svg
-                className="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10"
+                className="w-8 h-8 sm:w-10 sm:h-10"
                 stroke="currentColor"
                 viewBox="0 0 52 52"
               >
@@ -102,7 +102,7 @@ function Bankingchoose() {
             Innovative Solutions
             </h6>
             <p className="md:text-Para text-Para-sm text-blue900">
-            The ability to leverage the latest technological advancements, such as AI, blockchain and cloud computing, to provide innovative and future-proof solutions.
+            The ability to leverage the latest technological advancements such as AI, blockchain and cloud computing to provide innovative and future-proof solutions.
             </p>
           </motion.div>
         </div>

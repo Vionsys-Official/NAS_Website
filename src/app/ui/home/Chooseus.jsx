@@ -76,10 +76,10 @@ const Chooseus = () => {
             >
               <span className="font-bold  text-blue-950">Select us</span> for
               your IT needs, as we offer cutting-edge solutions, a team of
-              highly skilled experts, dependable support, and a commitment to
+              highly skilled experts, dependable support and a commitment to
               customer satisfaction to drive your business to success, We offer
               innovative IT solutions, employ a team of highly skilled experts,
-              deliver dependable support, and prioritize customer satisfaction
+              deliver dependable support and prioritize customer satisfaction
               to help your business excel.
             </motion.p>
           </div>
