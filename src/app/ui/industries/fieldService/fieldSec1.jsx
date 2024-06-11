@@ -22,7 +22,7 @@ const fieldSec1 = () => {
                         Optimize field service for seamless productivity.
                     </h1>
                     <p className="mt-4 text-lg sm:text-xl lg:text-2xl font-light text-white drop-shadow-lg">
-                        Achieve a holistic digital transformation by streamlining service workflows, eradicating silos, and fine-tuning orchestration among disparate systems through our Field Service Management Software.
+                        Achieve a holistic digital transformation by streamlining service workflows, eradicating silos and fine-tuning orchestration among disparate systems through our Field Service Management Software.
                     </p>
 
                 </motion.div>

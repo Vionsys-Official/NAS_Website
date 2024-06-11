@@ -32,7 +32,7 @@ const Hero = () => {
             <p className="text-blue-950 md:text-Para text-Para-sm md:text-lg cursor-pointer">
               We provide reliable IT Service Support to keep your business
               running smoothly. Our services ensure minimal downtime, quick
-              issue resolution, and optimal IT performance, allowing you to
+              issue resolution and optimal IT performance allowing you to
               focus on core activities and enhance productivity.
             </p>
           </motion.div>

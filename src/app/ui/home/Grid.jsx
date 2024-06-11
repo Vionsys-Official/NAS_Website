@@ -42,7 +42,7 @@ const Grid = () => {
             >
               Explore the innovative features that set us apart. Our advanced IT
               solutions are designed to optimize your operations and enhance
-              productivity. With cutting-edge technology, seamless integration,
+              productivity. With cutting-edge technology, seamless integration
               and robust security measures, our features ensure your business
               stays ahead in a competitive market. Discover how our
               user-friendly interfaces, customizable options.
@@ -75,7 +75,7 @@ const Grid = () => {
                     Our company emphasizes a customer-centric approach, crafting
                     solutions specifically designed to address the distinct
                     needs and preferences of our clients. By continuously
-                    engaging with customers, collecting their feedback, and
+                    engaging with customers, collecting their feedback and
                     responding to their changing demands, we provide
                     personalized, high-value technology solutions.
                   </motion.p>
@@ -101,10 +101,10 @@ const Grid = () => {
                     We excel in iterative development, breaking projects into
                     manageable iterations to deliver frequent, high-quality
                     updates. This approach allows us to adapt quickly to
-                    feedback, refine our solutions continuously, and ensure that
+                    feedback, refine our solutions continuously and ensure that
                     the final product perfectly aligns with our clients'
                     needs.By embracing iterative development, we foster agility,
-                    innovation, and a commitment to delivering exceptional value
+                    innovation and a commitment to delivering exceptional value
                     every step of the way.
                   </p>
                 </div>
@@ -185,9 +185,9 @@ const Grid = () => {
                   </p>
                   <p className="text-sm tracking-wide text-gray-300">
                     Our company thrives on Agile methodology, ensuring
-                    flexibility, collaboration, and rapid delivery of
+                    flexibility, collaboration and rapid delivery of
                     high-quality solutions. By embracing iterative cycles,
-                    frequent feedback, and adaptive planning, we continuously
+                    frequent feedback and adaptive planning, we continuously
                     refine our processes and products to meet our clients'
                     evolving needs. This commitment to Agile principles empowers
                     us to deliver exceptional value efficiently and effectively,
@@ -214,7 +214,7 @@ const Grid = () => {
                   <p className="text-sm tracking-wide text-gray-300">
                     We are bringing together diverse expertise to foster
                     collaboration and innovation. By integrating developers,
-                    designers, testers, and business analysts, we ensure a
+                    designers, testers and business analysts, we ensure a
                     holistic approach to problem-solving and solution
                     development. This synergy of skills and perspectives allows
                     us to deliver comprehensive, high-quality products that meet

@@ -36,7 +36,7 @@ const salesforcesec1 = () => {
               </h1>
               <p className="mt-3 text-sm md:text-base text-gray-700 md:mt-5">
                 Empower your business with our tailored Salesforce services.
-                Streamline operations, boost customer relationships, and drive
+                Streamline operations, boost customer relationships and drive
                 growth in today's dynamic digital landscape.
                 <span className="block text-gray-800 mt-5 font-semibold">
                   Let us be your trusted partner in harnessing the full

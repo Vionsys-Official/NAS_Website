@@ -38,7 +38,7 @@ const fieldSec4 = () => {
                                 <p className="max-w-lg mt-6 text-gray-500 dark:text-gray-400">
                                     NAS's field service management software enables you to drive efficiency,
                                     streamline your processes and optimize your entire service management experience.
-                                    Seamlessly integrate your ERPs & accounting systems, provide a great user experience,
+                                    Seamlessly integrate your ERPs & accounting systems, provide a great user experience
                                     and unlock the productivity your company needs to grow.
                                 </p>
 

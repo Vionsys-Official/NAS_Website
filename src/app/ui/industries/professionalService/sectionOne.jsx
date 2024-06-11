@@ -27,7 +27,7 @@ const sectionOne = () => {
         Empowering Businesses with Comprehensive Professional Services
         </h2>
         <p className="pr-5 mb-5 text-base text-gray-100 md:text-lg">
-        At NAS Infotech Pvt Ltd, we understand that the dynamic nature of the modern business environment demands specialized expertise and strategic support. Our professional services are designed to provide your business with the tools, insights, and capabilities needed to thrive. We offer a wide range of services tailored to address the unique challenges and opportunities faced by businesses across various industries.
+        At NAS Infotech Pvt Ltd, we understand that the dynamic nature of the modern business environment demands specialized expertise and strategic support. Our professional services are designed to provide your business with the tools, insights and capabilities needed to thrive. We offer a wide range of services tailored to address the unique challenges and opportunities faced by businesses across various industries.
         </p>
         <div className="flex items-center">
          <Button/>

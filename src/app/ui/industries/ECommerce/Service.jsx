@@ -19,19 +19,19 @@ const Service = () => {
             id:1,
             image:Simplify,
             title:"Simplify Your Operations",
-            desc:"We take the hassle out of managing your online store. Our software automates tasks like inventory management and order processing, so you can focus on growing your business."
+            desc:"We take the hassle out of managing your online store. Our software automates tasks like inventory management and order processing so you can focus on growing your business."
         },
         {
             id:2,
             image:dellight,
             title:"Delight Your Customers",
-            desc:"Happy customers are loyal customers. Our user-friendly platforms make shopping a breeze, leading to more sales and repeat business."
+            desc:"Happy customers are loyal customers. Our user-friendly platforms make shopping a breeze leading to more sales and repeat business."
         },
         {
             id:3,
             image:audience,
             title:"Understand Your Audience",
-            desc:"Knowledge is power. Our analytics tools give you insights into your customers' behavior, helping you tailor your marketing efforts and boost your sales."
+            desc:"Knowledge is power. Our analytics tools give you insights into your customers' behavior helping you tailor your marketing efforts and boost your sales."
         },
         {
             id:4,
@@ -49,7 +49,7 @@ const Service = () => {
             id:6,
             image:integrated,
             title:"Seamlessly Integrated",
-            desc:"No need to start from scratch. Our software seamlessly integrates with popular e-commerce platforms, making implementation a breeze."
+            desc:"No need to start from scratch. Our software seamlessly integrates with popular e-commerce platforms making implementation a breeze."
         },
         {
             id:7,
@@ -61,7 +61,7 @@ const Service = () => {
             id:8,
             image:clock,
             title:"Support Around the Clock",
-            desc:"Your business doesn't sleep, and neither do we. Our dedicated support team is here 24/7 to help you with any issues or questions you may have."
+            desc:"Your business doesn't sleep and neither do we. Our dedicated support team is here 24/7 to help you with any issues or questions you may have."
         },
     ]
 
@@ -107,7 +107,7 @@ const Service = () => {
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}  
             className='text-blue-950 text-CardHeading-sm md:text-CardHeading cursor-pointer'>
-                Welcome to our e-commerce hub, where technology meets success. Our software solutions are designed to make running an online business simpler, smoother, and more profitable. 
+                Welcome to our e-commerce hub, where technology meets success. Our software solutions are designed to make running an online business simpler, smoother and more profitable. 
             </motion.h2>
         </div>
         <div className='w-[80%]'>

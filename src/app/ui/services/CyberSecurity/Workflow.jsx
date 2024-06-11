@@ -9,13 +9,13 @@ const Workflow = () => {
       id: 1,
       title: "Identify Assets",
       description:
-        "Catalog all critical hardware, software, data, and personnel.",
+        "Catalog all critical hardware, software, data and personnel.",
     },
     {
       id: 2,
       title: "Identify Threats",
       description:
-        "Recognize potential threats like malware, phishing, and insider attacks.",
+        "Recognize potential threats like malware, phishing and insider attacks.",
     },
     {
       id: 3,
@@ -37,7 +37,7 @@ const Workflow = () => {
       id: 6,
       title: "Establish Security Policies",
       description:
-        "Define rules for acceptable use, access controls, and data protection.",
+        "Define rules for acceptable use, access controls and data protection.",
     },
     {
       id: 7,
@@ -57,7 +57,7 @@ const Workflow = () => {
     {
       id: 10,
       title: "Ensure Regulatory Compliance",
-      description: "Meet relevant laws, regulations, and standards.",
+      description: "Meet relevant laws, regulations and standards.",
     },
   ];
 

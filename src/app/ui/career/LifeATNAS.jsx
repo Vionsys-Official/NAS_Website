@@ -24,7 +24,7 @@ const LifeATNAS = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true, amount: 0.8 }}
-        className='text-blue-950 text-center text-Para-sm md:text-Para font-medium p-4 md:p-6 cursor-pointer'>At NAS Infotech, we believe that work should be more than just a job – it should be a place where you can thrive, grow, and enjoy every day. Here’s a glimpse into what life is like at our company:</motion.p>
+        className='text-blue-950 text-center text-Para-sm md:text-Para font-medium p-4 md:p-6 cursor-pointer'>At NAS Infotech, we believe that work should be more than just a job – it should be a place where you can thrive, grow and enjoy every day. Here’s a glimpse into what life is like at our company:</motion.p>
         <section className=' flex flex-col gap-2'>
           <div className='flex flex-wrap group overflow-hidden bg-opacity-40 bg-blue4 h-full md:h-[26vh] items-center justify-center cursor-pointer hover:shadow-xl shadow-gray-300'>
             <div className='w-full md:w-1/3 h-[26vh] overflow-hidden'>
@@ -49,7 +49,7 @@ const LifeATNAS = () => {
             viewport={{ once: true, amount: 0.8 }}
             className='flex flex-col justify-center w-full md:w-2/3 md:h-[26vh] p-4 lg:p-10'>
               <h3 className='text-blue-950 text-CardHeading-sm md:text-CardHeading font-semibold font-sans'>Fun & Engaging</h3>
-              <p className='text-Para-sm md:text-Para'>we prioritize fun and engagement through regular team-building activities, social events, and hackathons. Whether it’s a casual Friday get-together, a themed office party, or an offsite retreat, we make sure there’s always something to look forward to.</p>
+              <p className='text-Para-sm md:text-Para'>we prioritize fun and engagement through regular team-building activities, social events and hackathons. Whether it’s a casual Friday get-together, a themed office party or an offsite retreat, we make sure there’s always something to look forward to.</p>
             </motion.div>
             <div className='w-full md:w-1/3 h-[26vh] overflow-hidden'>
             <Image className='w-full h-full object-cover group-hover:scale-105 ease-out' src={fun} alt="inclusion" width={1000} height={1000}></Image>
@@ -67,7 +67,7 @@ const LifeATNAS = () => {
             viewport={{ once: true, amount: 0.8 }}
             className='flex flex-col justify-center w-full md:w-2/3 md:h-[26vh] p-4 lg:p-10'>
               <h3 className='text-blue-950 text-CardHeading-sm md:text-CardHeading font-semibold font-sans'>Professional Development</h3>
-              <p className='text-Para-sm md:text-Para'>We are committed to the continuous growth and development of our team members.we offer numerous opportunities to enhance your skills and advance your career. </p>
+              <p className='text-Para-sm md:text-Para'>We are committed to the continuous growth and development of our team members. We offer numerous opportunities to enhance your skills and advance your career. </p>
             </motion.div>
           </div>
 

@@ -32,7 +32,7 @@ const salesforcesec3 = () => {
               </h1>
               <p className="mt-4 text-gray-600 text-center dark:text-gray-300">
                 Experience seamless Salesforce integration and expert support
-                from our dedicated team, ensuring your business thrives with
+                from our dedicated team ensuring your business thrives with
                 streamlined implementation and strategic consulting services.
               </p>
             </motion.div>

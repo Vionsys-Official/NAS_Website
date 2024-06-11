@@ -71,8 +71,7 @@ const aiMlSec2 = () => {
     </motion.div>
 
     <section className="py-10 md:py-7 mt-4 md:mt-0 flex items-center justify-center flex-col">
-
-      <div className="w-[90%] grid items-center justify-center gap-4 md:gap-10 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="md:w-[90%] w-full grid items-center justify-center gap-4 md:gap-10 sm:grid-cols-2 lg:grid-cols-3 p-2">
         {mysect2.map((feat) => (
           <div
             key={feat.id}

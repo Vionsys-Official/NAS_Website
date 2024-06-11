@@ -16,7 +16,7 @@ const FaqCyber = () => {
     {
       id: 3,
       ques: "What steps do you take to ensure the security of remote workers?",
-      ans: "We offer specialized solutions for securing remote work environments, including VPNs, multi-factor authentication (MFA), endpoint security, and secure cloud access. These measures help protect remote workers from cyber threats and ensure secure access to organizational resources.",
+      ans: "We offer specialized solutions for securing remote work environments including VPNs, multi-factor authentication (MFA), endpoint security and secure cloud access. These measures help protect remote workers from cyber threats and ensure secure access to organizational resources.",
     },
     {
       id: 4,
@@ -26,7 +26,7 @@ const FaqCyber = () => {
     {
       id: 5,
       ques: "What is Zero Trust Architecture and do you implement it?",
-      ans: "Zero Trust Architecture is a security model that assumes no user or device, whether inside or outside the network, should be trusted by default. We implement Zero Trust principles by continuously verifying the identity and integrity of users and devices, ensuring secure access to resources.",
+      ans: "Zero Trust Architecture is a security model that assumes no user or device, whether inside or outside the network, should be trusted by default. We implement Zero Trust principles by continuously verifying the identity and integrity of users and devices ensuring secure access to resources.",
     },
   ];
 

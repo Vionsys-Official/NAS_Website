@@ -118,7 +118,7 @@ const salesforcesec2 = () => {
                   <p className="mt-1 text-center text-gray-500">
                     {" "}
                     The integration of AI and ML into Salesforce can empower
-                    users with predictive analytics and automation capabilities,
+                    users with predictive analytics and automation capabilities
                     enabling more informed decision-making and personalized
                     interactions
                   </p>
@@ -185,7 +185,7 @@ const salesforcesec2 = () => {
                     {" "}
                     data privacy regulations becoming more stringent, companies
                     must prioritize security and compliance
-                    strategies.Salesforce users need to ensure that they adhere
+                    strategies. Salesforce users need to ensure that they adhere
                     to regulations.
                   </p>
                 </div>

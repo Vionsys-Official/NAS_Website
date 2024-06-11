@@ -18,7 +18,7 @@ const OurService = () => {
     }, {
       id: 3,
       title: "Monitoring and Logging",
-      para: "Gain insights into your application's performance and health with robust monitoring and logging solutions, ensuring proactive issue resolution and optimization."
+      para: "Gain insights into your application's performance and health with robust monitoring and logging solutions ensuring proactive issue resolution and optimization."
     }, {
       id: 4,
       title: "Security Automation",

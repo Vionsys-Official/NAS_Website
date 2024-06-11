@@ -39,7 +39,7 @@ const Benefits = () => {
                 <GoDotFill className="w-4 h-4" />
               </h1>
               <p className="md:text-base text-sm text-gray-800 ">
-                Companies that strive to broaden their customer’s list , thus,
+                Companies that strive to broaden their customer’s list, thus,
                 so they can produce precisely targeted products.
               </p>
             </div>
@@ -49,7 +49,7 @@ const Benefits = () => {
               </h1>
               <p className="md:text-base text-sm  text-gray-800">
                 Healthcare and financial companies that require solutions to
-                prevent potential business risks, thoroughly analyze the
+                prevent potential business risks thoroughly analyze the
                 behavior of their customers and investigate their operational
                 activities.
               </p>
@@ -78,7 +78,7 @@ const Benefits = () => {
               </h1>
               <p className="md:text-base text-sm text-gray-800 ">
                 Manufacturing and logistics use Big Data to streamline supply
-                chains, predict maintenance, and optimize production.
+                chains, predict maintenance and optimize production.
               </p>
             </div>
           </motion.div>

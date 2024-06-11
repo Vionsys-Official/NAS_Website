@@ -18,7 +18,7 @@ const Benefit = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }} className="md:text-Heading text-Heading-sm font-bold py-4 text-center text-blue950">Benefits of Partnering with Us</motion.h1>
-            <div className='flex md:flex-row flex-col md:justify-evenly gap-4 md:py-0 px-2'>
+            <div className='flex md:flex-row flex-col items-center md:justify-evenly gap-4 md:py-0 px-2'>
                 <motion.div
                     variants={fadein("up", 0.2)}
                     initial="hidden"

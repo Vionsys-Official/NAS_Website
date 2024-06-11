@@ -17,7 +17,7 @@ const Process = () => {
       title: "Solution Design",
       para: "2",
       description:
-        "Oue experts design a detailed blueprint and architecture for the proposed solution, ensuring it meets all your needs.",
+        "Oue experts design a detailed blueprint and architecture for the proposed solution ensuring it meets all your needs.",
     },
     {
       id: 3,

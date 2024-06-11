@@ -43,7 +43,7 @@ function BiChoose() {
                 viewport={{ once: true, amount: 0.8 }}
                className="relative p-4 my-6 text-gray-800  bg-blue-300 rounded-xl col-start-6 col-end-10 mr-auto">
                    <h3 className="text-lg font-semibold lg:text-xl">Tailored Solutions</h3>
-                   <p className="mt-2 md:text-Para text-Para-sm leading-6">Enjoy customized Business solutions designed to meet the specific needs of your business, ensuring optimal performance and efficiency.</p>
+                   <p className="mt-2 md:text-Para text-Para-sm leading-6">Enjoy customized Business solutions designed to meet the specific needs of your business ensuring optimal performance and efficiency.</p>
                </motion.div>
            </div>
    
@@ -55,7 +55,7 @@ function BiChoose() {
                viewport={{ once: true, amount: 0.8 }}
                    className="relative p-4 my-6 md:my-0 text-gray-800  bg-blue-300 border-green-500 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
                    <h3 className="text-lg font-semibold lg:text-xl">24/7 Support</h3>
-                   <p className="mt-2 md:text-Para text-Para-sm leading-6">Rest assured with our dedicated support team available round the clock to assist you whenever you need it, ensuring minimal downtime and maximum productivity.</p>
+                   <p className="mt-2 md:text-Para text-Para-sm leading-6">Rest assured with our dedicated support team available round the clock to assist you whenever you need it ensuring minimal downtime and maximum productivity.</p>
                  </motion.div>
                <div className="relative col-start-5 col-end-6 mr-7 md:mx-auto">
                    <div className="flex items-center justify-center w-6 h-full">

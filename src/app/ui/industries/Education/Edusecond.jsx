@@ -14,7 +14,7 @@ const features = [
   {
     icon: <FaBookBookmark />,
     title: "Learning Management System",
-    desc: "Our Learning Management System (LMS) is designed to revolutionize the educational experience. With an intuitive interface, it streamlines course creation, content delivery, and student assessment. ",
+    desc: "Our Learning Management System (LMS) is designed to revolutionize the educational experience. With an intuitive interface, it streamlines course creation, content delivery and student assessment. ",
   },
   {
     icon: <SiSololearn />,
@@ -39,7 +39,7 @@ const features = [
   {
     icon: <SiIota />,
     title: "IOT Solutions",
-    desc: " We enhance the efficiency and effectiveness of educational institutions. Our solutions include smart classrooms, automated attendance systems, and energy management, all designed to create a seamless and interactive learning experience.",
+    desc: " We enhance the efficiency and effectiveness of educational institutions. Our solutions include smart classrooms, automated attendance systems and energy management, all designed to create a seamless and interactive learning experience.",
   },
 ];
 const Edusecond = () => {
@@ -71,9 +71,9 @@ const Edusecond = () => {
               className="text-base text-gray-700  text-center md:text-lg p-4 sm:px-6 md:px-8"
             >
               We leverage the latest pedagogical research and cutting-edge
-              technology to foster an engaging and inclusive environment,
+              technology to foster an engaging and inclusive environment
               ensuring every student achieves their fullest potential. Our
-              expertise spans a wide range of educational services, from
+              expertise spans a wide range of educational services from
               personalized tutoring and professional development to
               comprehensive academic programs, all designed to inspire a
               lifelong love of learning.

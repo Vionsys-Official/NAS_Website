@@ -20,7 +20,7 @@ const Hero = () => {
                 In the fast-paced world of transportation and logistics,
                 efficiency and accuracy are paramount. Our cutting-edge IT
                 solutions streamline operations, enhance supply chain
-                visibility, and improve delivery accuracy.
+                visibility and improve delivery accuracy.
               </p>
             </div>
           </div>

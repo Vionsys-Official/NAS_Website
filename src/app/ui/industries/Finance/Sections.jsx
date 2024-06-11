@@ -26,7 +26,7 @@ const Sections = () => {
                   </h6>
                   <p className=" text-gray-900 md:text-para text-Para-sm">
                     Tailoring software solutions to meet specific business needs
-                    and objectives, ensuring scalability, flexibility, and
+                    and objectives ensuring scalability, flexibility and
                     seamless integration with existing systems.
                   </p>
                 </motion.div>
@@ -43,7 +43,7 @@ const Sections = () => {
                   <p className=" text-gray-900 md:text-para text-Para-sm">
                     Creating interactive data visualizations and dashboards that
                     enable stakeholders to gain actionable insights from complex
-                    datasets, facilitating data-driven decision-making.
+                    datasets facilitating data-driven decision-making.
                   </p>
                 </motion.div>
 
@@ -58,7 +58,7 @@ const Sections = () => {
                   </h6>
                   <p className=" text-gray-900 md:text-para text-Para-sm">
                     Providing rapid incident response services and proactive
-                    threat hunting capabilities to identify, mitigate, and
+                    threat hunting capabilities to identify, mitigate and
                     neutralize cyber threats before they escalate into breaches
                     or attacks.
                   </p>
@@ -75,7 +75,7 @@ const Sections = () => {
                   </h6>
                   <p className=" text-gray-900 md:text-para text-Para-sm">
                     Assisting businesses in migrating their applications and
-                    workloads to the cloud, optimizing cloud infrastructure, and
+                    workloads to the cloud optimizing cloud infrastructure and
                     implementing cloud-native solutions to improve agility and
                     cost-efficiency.
                   </p>
@@ -113,8 +113,8 @@ const Sections = () => {
             whileInView="show"
             viewport={{ once: true, amount: 0.5 }}
             className=" text-gray-700 md:text-SubHeading text-SubHeading-sm">
-              We can assist you in optimizing operations, enhancing security,
-              improving compliance, and delivering superior customer
+              We can assist you in optimizing operations enhancing security,
+              improving compliance and delivering superior customer
               experiences.
             </motion.p>
           </div>
@@ -149,7 +149,7 @@ const Sections = () => {
                   </h6>
                   <p className="text-Para-sm md:text-Para hover:text-white">
                     Develop AI-powered chatbots for customer service and
-                    support, enabling clients to access financial information
+                    support enabling clients to access financial information
                     and assistance 24/7.
                   </p>
                 </motion.div>
@@ -201,7 +201,7 @@ const Sections = () => {
                   </h6>
                   <p className="text-Para-sm md:text-Para hover:text-white">
                     Build custom investment management platforms for portfolio
-                    analysis, risk assessment, and performance tracking.
+                    analysis, risk assessment and performance tracking.
                   </p>
                 </motion.div>
               </div>
@@ -217,7 +217,7 @@ const Sections = () => {
                   </h6>
                   <p className="text-Para-sm md:text-Para hover:text-white">
                     Streamline back-office operations and reduce operational
-                    costs by deploying bots for data entry, validation, and
+                    costs by deploying bots for data entry, validation and
                     reconciliation tasks.
                   </p>
                 </motion.div>
