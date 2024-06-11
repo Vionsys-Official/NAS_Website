@@ -43,7 +43,7 @@ const Services = () => {
               </p>
               <p className="mb-2 md:text-Para text-Para-sm text-gray-800">
                 Our 24/7 help desk offers immediate assistance for software
-                glitches, hardware malfunctions, and connectivity issues. Our
+                glitches, hardware malfunctions and connectivity issues. Our
                 experienced technicians swiftly resolve problems to ensure
                 continuous business operations.
               </p>
@@ -68,9 +68,9 @@ const Services = () => {
               </p>
               <p className="mb-2 md:text-Para text-Para-sm text-gray-800">
                 We offer comprehensive network management with real-time
-                monitoring, performance optimization, and security enhancements.
+                monitoring, performance optimization and security enhancements.
                 Our proactive approach ensures your IT infrastructure remains
-                robust, efficient, scalable, and secure.
+                robust, efficient, scalable and secure.
               </p>
             </div>
           </motion.div>
@@ -92,9 +92,9 @@ const Services = () => {
               </p>
               <p className="mb-2  md:text-Para text-Para-sm text-gray-800">
                 Transform your IT strategy with our expert consulting services.
-                We provide in-depth assessments, strategic planning, and
+                We provide in-depth assessments, strategic planning and
                 technology roadmaps to align your IT initiatives with your
-                business goals, ensuring maximum value.
+                business goals ensuring maximum value.
               </p>
             </div>
           </motion.div>
@@ -119,8 +119,8 @@ const Services = () => {
               <p className="mb-2 md:text-Para text-Para-sm text-gray-800">
                 Empower your remote workforce with our specialized support
                 services. We offer secure remote access solutions, advanced
-                collaboration tools, and comprehensive remote IT support. Our
-                services ensure your team can work efficiently, securely, and
+                collaboration tools and comprehensive remote IT support. Our
+                services ensure your team can work efficiently, securely and
                 seamlessly from any location.
               </p>
             </div>
@@ -145,8 +145,8 @@ const Services = () => {
               <p className="mb-2 md:text-Para text-Para-sm text-gray-800">
                 Keep your software applications running at peak performance with
                 our support and maintenance services. We provide regular
-                updates, patches, and performance tuning to ensure your software
-                remains secure, reliable, and efficient.
+                updates, patches and performance tuning to ensure your software
+                remains secure, reliable and efficient.
               </p>
             </div>
           </motion.div>
@@ -169,7 +169,7 @@ const Services = () => {
               <p className="mb-2 md:text-Para text-Para-sm text-gray-800">
                 Navigate the complexities of IT compliance with our specialized
                 support. We help you adhere to industry regulations and
-                standards, conduct compliance audits, and implement necessary
+                standards, conduct compliance audits and implement necessary
                 controls to protect your business from regulatory risks.
               </p>
             </div>

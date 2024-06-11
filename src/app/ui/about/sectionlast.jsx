@@ -3,8 +3,8 @@ import Button from '@/components/ui/Button';
 
 const sectionlast = () => {
   return (
-    <section className='max-w-full pt-4 pb-8 px-10 flex justify-center'>
-       <div className='bg-blue950 text-white md:w-[90%] flex flex-col md:flex-row justify-between py-4 px-8'>
+    <section className='max-w-full pt-4 pb-8 md:px-10 px-2 flex justify-center'>
+       <div className='bg-blue950 text-white w-[90%] flex flex-col md:flex-row justify-between py-4 md:px-8 px-3'>
           <div>
             <h2 className='font-bold text-xl py-2'>
             Explore how our expertise can benefit you.

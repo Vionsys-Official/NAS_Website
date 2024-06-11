@@ -32,7 +32,7 @@ const Culture = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}
-            className='text-blue-950 text-Para-sm md:text-Para text-center font-medium p-2 md:p-4 cursor-pointer'>Our culture is built on a foundation of creativity, collaboration, and a commitment to excellence. We foster an environment where innovation thrives, teamwork is paramount, and every team member's contributions are valued. Here’s what makes our culture unique</motion.h3>
+            className='text-blue-950 text-Para-sm md:text-Para text-center font-medium p-2 md:p-4 cursor-pointer'>Our culture is built on a foundation of creativity, collaboration and a commitment to excellence. We foster an environment where innovation thrives, teamwork is paramount and every team member's contributions are valued. Here’s what makes our culture unique</motion.h3>
             </div>
         </div>
         <motion.div

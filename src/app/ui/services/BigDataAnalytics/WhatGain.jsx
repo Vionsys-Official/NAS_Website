@@ -79,7 +79,7 @@ const WhatGain = () => {
               <div className="md:w-[70%] w-full">
                 <p className="md:text-Para text-Para-sm  text-gray-800 pl-2">
                   Data science helps decrease the surplus of information, while
-                  Big Data analysis lets you have structured data, which reduces
+                  Big Data analysis lets you have structured data which reduces
                   risks caused by human error.
                 </p>
               </div>
@@ -94,7 +94,7 @@ const WhatGain = () => {
               </div>
               <div className="md:w-[70%] w-full">
                 <p className="md:text-Para text-Para-sm text-gray-800 pl-2">
-                  Big Data is the best way to handle large-scale information,
+                  Big Data is the best way to handle large-scale information
                   especially if you have various types of data including
                   structured, semi-structured or scattered data.
                 </p>

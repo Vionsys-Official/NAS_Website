@@ -58,7 +58,7 @@ const sectiontwo = () => {
           <p className="mb-6 px-2 text-base text-gray-900 md:text-lg">
           We specialize in delivering innovative technology solutions, 
               including Software Development, Cloud Computing, Big Data Analytics, 
-              AI, and more. Our expert team is committed to providing tailored services 
+              AI and more. Our expert team is committed to providing tailored services 
               that drive efficiency and growth for your business. With a client-centric 
               approach, we ensure your success in the digital age.
           </p>

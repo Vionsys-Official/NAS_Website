@@ -70,7 +70,7 @@ const WhatWeDo = () => {
                   <FaDiamond className="w-6 h-6 pt-2 text-blue3" />
                 </h1>
                 <p className="md:text-Para text-Para-sm text-gray-800 ">
-                  Distributed , relational and analytical database development
+                  Distributed, relational and analytical database development
                 </p>
               </div>
               <div className="flex flex-row-2 gap-3">
@@ -78,7 +78,7 @@ const WhatWeDo = () => {
                   <FaDiamond className="w-6 h-6 pt-2 text-blue3" />
                 </h1>
                 <p className="md:text-Para text-Para-sm text-gray-800">
-                  Work scheduling , reporting and dashboard development
+                  Work scheduling, reporting and dashboard development
                 </p>
               </div>
             </div>

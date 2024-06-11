@@ -40,7 +40,7 @@ const Sections = () => {
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Fleet Management</h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Optimize fleet operations, track vehicle performance, and
+                  Optimize fleet operations, track vehicle performance and
                   improve driver safety with advanced fleet management
                   technologies.
                 </p>
@@ -54,7 +54,7 @@ const Sections = () => {
                   Logistics Optimization
                 </h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Streamline supply chain operations, reduce costs, and improve
+                  Streamline supply chain operations, reduce costs and improve
                   delivery times with advanced logistics optimization tools.
                 </p>
               </div>

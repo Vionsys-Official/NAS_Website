@@ -63,7 +63,7 @@ const OurApproach = () => {
               </h6>
               <p className="mb-3 md:text-Para text-Para-sm text-gray-800">
                 Developing detailed plans that outline the scope, objectives,
-                resources, and schedule for testing activities.
+                resources and schedule for testing activities.
               </p>
             </div>
           </div>

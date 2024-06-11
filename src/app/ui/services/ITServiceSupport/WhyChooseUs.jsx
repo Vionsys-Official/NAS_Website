@@ -194,7 +194,7 @@ const WhyChooseUs = () => {
                       </h4>
                       <p className="mt-2 md:text-Para text-Para-sm dark:text-gray-800">
                         We cultivate a culture of exceptional service, going the
-                        extra mile to provide prompt, courteous, and proactive
+                        extra mile to provide prompt, courteous and proactive
                         support that consistently exceeds expectations.
                       </p>
                     </div>
@@ -273,7 +273,7 @@ const WhyChooseUs = () => {
                     </h4>
                     <p className="mt-2 md:text-Para text-Para-sm text-gray-800">
                       We deliver unparalleled value by combining expertise with
-                      efficiency, ensuring you receive the most cost-effective
+                      efficiency ensuring you receive the most cost-effective
                       solutions that maximize your return on investment.
                     </p>
                   </div>

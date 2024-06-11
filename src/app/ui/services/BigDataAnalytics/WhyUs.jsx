@@ -50,7 +50,7 @@ const WhyUs = () => {
                     User-Friendly Delivery
                   </h1>
                   <p className="md:text-Para text-Para-sm text-gray-800">
-                    Our UX/UI experts visualize data in an understandable and appealing way, enabling you to make well-informed decisions.
+                    Our UX/UI experts visualize data in an understandable and appealing way enabling you to make well-informed decisions.
                   </p>
                 </div>
               </div>

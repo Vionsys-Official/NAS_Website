@@ -33,7 +33,7 @@ function Hero() {
                 Explore a full suite of advanced Cyber Security Solutions
                 designed specifically to meet your unique requirements. Our
                 comprehensive services strengthen your defenses and provide
-                robust protection, ensuring your organization remains secure
+                robust protection ensuring your organization remains secure
                 against a constantly evolving landscape of cyber threats.
                 Safeguard your critical assets and maintain peace of mind with
                 our state-of-the-art security measures and proactive threat

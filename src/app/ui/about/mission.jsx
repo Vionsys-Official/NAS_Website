@@ -73,8 +73,8 @@ const mission = () => {
              whileInView={"show"}
              viewport={{ once: true, amount: 0.8 }}
              className="text-base text-gray-700 md:text-lg">
-            Our mission is to empower businesses with robust, scalable, 
-            and secure IT solutions that enhance efficiency, foster innovation, 
+            Our mission is to empower businesses with robust, scalable 
+            and secure IT solutions that enhance efficiency, foster innovation 
             and drive growth. We are committed to delivering excellence through our
              comprehensive range of services, tailored to meet the unique needs of each client.
             </motion.p>

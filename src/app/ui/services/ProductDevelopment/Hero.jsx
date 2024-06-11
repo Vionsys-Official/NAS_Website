@@ -21,7 +21,7 @@ function Hero() {
           >
             Unlock innovation with our customized Product Development
             Solutions. Stay ahead in competitive markets with comprehensive
-            services, state-of-the-art tools, and expert guidance.
+            services, state-of-the-art tools and expert guidance.
           </motion.p>
         </div>
       </div>

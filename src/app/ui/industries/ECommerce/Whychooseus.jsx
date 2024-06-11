@@ -54,7 +54,7 @@ const Whychooseus = () => {
                 whileInView={"show"}
                 viewport={{ once: true, amount: 0.8 }}  
                 className='w-full md:w-2/5'>
-                    At NAS Infotech, we offer e-commerce expertise and a dedication to your success. Through innovative, customized solutions and scalable support, we are committed to helping your business expand and flourish. Rely on us for clear communication, exceptional service, and a long-term partnership centered on your success.
+                    At NAS Infotech, we offer e-commerce expertise and a dedication to your success. Through innovative, customized solutions and scalable support, we are committed to helping your business expand and flourish. Rely on us for clear communication, exceptional service and a long-term partnership centered on your success.
                 </motion.p>
             </div>
         </div>
