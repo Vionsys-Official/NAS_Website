@@ -12,9 +12,9 @@ const Healfirst = () => {
           alt="healthcare img"
         />
         <div className=" relative flex justify-center text-center">
-          <h1 className="text-gray-200 font-extrabold uppercase text-3xl md:text-5xl bg-gradient-to-l from-slate-50 to-green-500 bg-clip-text text-transparent">
+          <h1 className="text-white font-bold text-3xl md:text-5xl bg-gradient-to-l from-slate-50 to-green-500 bg-clip-text text-transparent">
             Leading the Future of
-            <br /> <span className="text-white">Healthcare</span>
+            <br /> <span className="text--white">Healthcare</span>
             <br /> with Strategic IT Partnerships
           </h1>
         </div>

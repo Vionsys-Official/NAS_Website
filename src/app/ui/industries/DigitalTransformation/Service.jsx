@@ -40,21 +40,21 @@ const Service = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true, amount: 0.8 }} className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-        <h2 className="max-w-lg mb-6 md:text-Heading text-Heading-sm text-center font-bold leading-none tracking-tight text-blue950 sm:text-4xl md:mx-auto">
+        <h2 className="max-w-lg mb-6 md:text-Heading text-Heading-sm text-center font-bold leading-none tracking-tight text-blue2 sm:text-4xl md:mx-auto">
           Our Digital Transformation Services
         </h2>
       </motion.div>
       <div className="grid md:gap-8 gap-4 row-gap-8 lg:grid-cols-3">
         {service.map((item) => (
           <motion.div
-          initial={{ opacity: 0, scale: 0.7 }} //X:100
-          whileInView={{ opacity: 1, scale: 1 }} //y:100
-          transition={{
-            delay: 0.2,
-            scale: { type: "spring", stiffness: 30 },
-            opacity: { duration: 0.6 },
-            ease: "easeInOut",
-          }} key={item.id} className="sm:text-center md:p-3 p-2 rounded-xl border-2 border-blue1">
+            initial={{ opacity: 0, scale: 0.7 }} //X:100
+            whileInView={{ opacity: 1, scale: 1 }} //y:100
+            transition={{
+              delay: 0.2,
+              scale: { type: "spring", stiffness: 30 },
+              opacity: { duration: 0.6 },
+              ease: "easeInOut",
+            }} key={item.id} className="sm:text-center md:p-3 p-2 rounded-xl border-2 border-blue1">
             <h6 className="mb-4 md:text-CardHeading text-CardHeading-sm font-semibold leading-5">{item.title}</h6>
             <p className="max-w-md md:text-Para text-Para-sm text-gray-900 sm:mx-auto">
               {item.para}

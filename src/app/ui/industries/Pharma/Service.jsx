@@ -56,8 +56,8 @@ const Service = () => {
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{ once: true, amount: 0.8 }}>
-                    <h2 className="md:text-Heading font-bold tracking-tight text-center text-Heading-sm text-blue950">Our Services</h2>
-                    <p className="max-w-3xl mx-auto mt-4 md:text-xl text-lg text-center text-gray-800">We provide comprehensive IT solutions tailored for the pharmaceutical industry. Our services are designed to streamline operations, enhance research and development and ensure regulatory compliance. We specialize in:</p>
+                    <h2 className="md:text-Heading font-bold tracking-tight text-center text-Heading-sm text-blue2">Our Services</h2>
+                    <p className="max-w-3xl mx-auto mt-4 md:text-lg text-Para-sm font-semibold text-center text-slate-600">We provide comprehensive IT solutions tailored for the pharmaceutical industry. Our services are designed to streamline operations, enhance research and development and ensure regulatory compliance. We specialize in:</p>
                 </motion.div>
                 <div className="grid md:gap-8 gap-4 lg:grid-cols-2 lg:items-center">
                     <motion.div

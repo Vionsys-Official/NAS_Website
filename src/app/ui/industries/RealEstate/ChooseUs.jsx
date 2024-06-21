@@ -11,12 +11,12 @@ const ChooseUs = () => {
   return (
     <div className="px-4 py-8 overflow-x-hidden mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       <div className="grid gap-10 lg:grid-cols-2">
-        <motion.div 
-         variants={fadein("right", 0.2)}
-         initial="hidden"
-         whileInView={"show"}
-         viewport={{ once: true, amount: 0.8 }}
-         className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
+        <motion.div
+          variants={fadein("right", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.8 }}
+          className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
           <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-accent-400">
             <svg className="text-teal-900 w-7 h-7" viewBox="0 0 24 24">
               <polyline
@@ -61,13 +61,13 @@ const ChooseUs = () => {
             </svg>
           </div>
           <div className="max-w-xl md:mb-6">
-            <h2 className="max-w-lg md:mb-6 mb-1 md:text-Heading text-Heading-sm font-bold tracking-tight text-blue950 sm:text-4xl sm:leading-none">
-            Choosing Us: 
-              <br className="hidden md:block"/>
+            <h2 className="max-w-lg md:mb-6 mb-1 md:text-Heading text-Heading-sm font-bold tracking-tight text-blue2 sm:text-4xl sm:leading-none">
+              Choosing Us:
+              <br className="hidden md:block" />
               What You Gain
             </h2>
             <p className="text-base text-gray-700 md:text-lg">
-            We understand the unique challenges of the real estate industry. Our team of experienced IT professionals is dedicated to providing solutions that are not only innovative but also practical and tailored to your specific needs. Partner with us to transform your real estate business and stay ahead in a competitive market.
+              We understand the unique challenges of the real estate industry. Our team of experienced IT professionals is dedicated to providing solutions that are not only innovative but also practical and tailored to your specific needs. Partner with us to transform your real estate business and stay ahead in a competitive market.
             </p>
           </div>
         </motion.div>
