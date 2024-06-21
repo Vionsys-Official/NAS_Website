@@ -18,9 +18,9 @@ const WhyChooseUs = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, amount: 0.8 }}
-          className="max-w-lg mb-5  font-bold tracking-tight text-blue950  md:text-Heading  text-Heading-sm sm:leading-none md:mb-6 group"
+          className="max-w-lg mb-5 tracking-tight text-blue2  md:text-Heading font-extrabold text-Heading-sm sm:leading-none md:mb-6 group"
         >
-          <span className="inline-block mb-1 sm:mb-4">
+          <span className="inline-block mb-1 sm:mb-4 text-center">
             Why Choose Us for Quality Assurance?
           </span>
           <div className="h-1 ml-auto duration-300 origin-left transform bg-deep-purple-accent-400 scale-x-30 group-hover:scale-x-100" />
@@ -33,11 +33,11 @@ const WhyChooseUs = () => {
           className="text-gray-800 md:text-Para text-center text-Para-sm md:max-w-xl"
         >
           Our dedicated team of QA experts thoroughly examines every detail to
-          ensure top-notch quality of your software ensuring it's not just
+          ensure top-notch quality of your software ensuring it&apos;s not just
           error-free but also optimized for performance, security and user
           experience. With a focus on continuous improvement and innovation, we
           guarantee that your software will not only meet your expectations but
-          also elevate your business to new heights of success in today's
+          also elevate your business to new heights of success in today&apos;s
           competitive landscape.
         </motion.p>
       </div>
@@ -99,7 +99,7 @@ const WhyChooseUs = () => {
                 We understand that every project is unique, which is why we
                 tailor our testing and QA strategies to fit your specific needs
                 and goals. Whether you require manual or automated testing,
-                regression testing or specialized security testing, we'll craft
+                regression testing or specialized security testing, we&apos;ll craft
                 a solution that meets your requirements and exceeds your
                 expectations.
               </p>

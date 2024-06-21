@@ -34,7 +34,7 @@ const OurService = () => {
         whileInView={"show"}
         viewport={{ once: false, amount: 0.8 }}
         className="max-w-xl mb-2 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-        <h2 className="max-w-lg mb-4 text-center text-3xl font-bold leading-none tracking-tight text-blue950 sm:text-4xl md:mx-auto">
+        <h2 className="max-w-lg mb-4 text-center md:text-Heading text-Heading-sm font-extrabold leading-none tracking-tight text-blue2 md:mx-auto">
           <span className="relative inline-block">
             Our DevOps Services
           </span>

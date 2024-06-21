@@ -16,8 +16,8 @@ const Faq = ({ faq }) => {
                     whileInView={"show"}
                     viewport={{ once: true, amount: 0.8 }}
                     className="text-center">
-                    <h3 className="md:text-Heading text-Heading-sm leading-normal font-extrabold tracking-tight text-blue950">
-                        Frequently Asked <span className="text-blue2">Questions</span>
+                    <h3 className="md:text-Heading text-Heading-sm leading-normal font-extrabold tracking-tight text-blue2">
+                        Frequently Asked Questions
                     </h3>
                 </motion.div>
 
@@ -35,7 +35,7 @@ const Faq = ({ faq }) => {
                             <li key={item.id} className="text-left md:mb-10 mb-4">
                                 <div className="flex flex-row items-start md:mb-5 mb-2">
                                     <div
-                                        className="hidden sm:flex items-center justify-center md:p-3 md:mr-3 rounded-full bg-blue2 text-white border-4 border-white text-xl font-semibold">
+                                        className="hidden sm:flex items-center justify-center md:p-3 md:mr-3 rounded-full bg-blue5 text-white border-4 border-white text-xl font-semibold">
                                         <svg width="30px" fill="white" height="30px" viewBox="0 0 24 24"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <g data-name="Layer 2">
@@ -55,12 +55,12 @@ const Faq = ({ faq }) => {
                                 </div>
 
                                 <div className="flex flex-row items-start">
-                                    <div className="bg-[#bfd3d9] md:p-5 p-3 md:px-10 w-full flex items-center">
+                                    <div className="bg-[#d6e8ee] md:p-5 p-3 md:px-10 w-full flex items-center">
                                         <p className="text-gray-800 text-sm">{item.ans}
                                         </p>
                                     </div>
                                     <div
-                                        className="hidden sm:flex items-center justify-center p-3 ml-3 rounded-full bg-blue2 text-white border-4 border-white text-xl font-semibold">
+                                        className="hidden sm:flex items-center justify-center p-3 ml-3 rounded-full bg-blue5 text-white border-4 border-white text-xl font-semibold">
                                         <svg height="25px" fill="white" version="1.1" id="Layer_1"
                                             xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px"
                                             y="0px" viewBox="0 0 295.238 295.238" style={{ enableBackground: 'new 0 0 295.238 295.238' }}

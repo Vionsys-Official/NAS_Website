@@ -12,7 +12,7 @@ const Faq2 = ({ faq }) => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, amount: 0.8 }}
-          className="md:text-Heading text-Heading-sm font-bold text-black cursor-pointer"
+          className="md:text-Heading text-Heading-sm text-center font-extrabold text-blue2 cursor-pointer"
         >
           Frequently Asked Questions
         </motion.h1>

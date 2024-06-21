@@ -13,7 +13,7 @@ export const metadata = {
 
 const page = () => {
   return (
-    <div id='mission'>
+    <div className='overflow-hidden'>
         <Hero/>
         <Process/>
         <Services/>

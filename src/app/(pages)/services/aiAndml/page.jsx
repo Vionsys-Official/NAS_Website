@@ -14,7 +14,7 @@ export const metadata = {
 const aiAndml = () => {
 
   return (
-    <main className='overflow-x-hidden' id='mission'>
+    <main className='overflow-x-hidden'>
 
      {/* Section 1 */}
       <AiMLSec1/>

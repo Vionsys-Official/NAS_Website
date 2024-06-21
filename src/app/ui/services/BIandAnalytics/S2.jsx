@@ -8,8 +8,8 @@ function s2() {
   return (
   <section2>
     <div className=' text-center md:mt-10 mt-5'>
-                    <h6 className='text-3xl font-bold mt-3 text-blue900'>Business Intelligence TOOLS</h6>
-                <p className='mb-10 text-xl mt-3 text-blue900'>Below mentioned are few and many more to learn!!!</p></div>
+                    <h6 className='md:text-Heading text-Heading-sm font-extrabold mt-3 text-blue2'>Business Intelligence TOOLS</h6>
+                <p className='mb-10 text-lg font-semibold text-slate-600'>Below mentioned are few and many more to learn!!!</p></div>
                 <div className='flex mb-5 sm:p-4 flex-col md:flex-row p-2 items-center' >
                 
                 <Image

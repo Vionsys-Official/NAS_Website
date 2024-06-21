@@ -12,7 +12,6 @@ const page = () => {
 
   return (
     <main className='overflow-x-hidden'>
-
       {/* Hading Section*/}
       <HeroSectionMainpageI />
       <MainPageHeading1 />

@@ -59,7 +59,7 @@ const Process = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}
-             className="text-blue-900 mb-6 sm:mt-6 text-MainHeading-sm md:text-MainHeading md:p-6 font-semibold leading-none tracking-tight cursor-pointer">
+             className="text-blue2 mb-6 sm:mt-6 text-MainHeading-sm md:text-MainHeading md:p-6 font-extrabold leading-none tracking-tight cursor-pointer">
             <span className="relative inline-block">
                 <svg
                 viewBox="0 0 52 24"
@@ -99,9 +99,9 @@ const Process = () => {
                         key={feat.id} className='flex flex-row p-2 border border-gray hover:scale-105 hover:bg-green-50 ease-out cursor-pointer'>
                             <div className='text-blue-950 text-CardHeading-sm md:text-CardHeading font-bold pr-4'><feat.icon/></div>
                             <div>
-                                <h2 className='text-blue-950 text-CardHeading-sm md:text-CardHeading font-bold'>{feat.title}</h2>
-                                <p className='flex flex-row text-Para-sm md:text-Para'><span className='text-blue-950'><GoDotFill/></span>{feat.line1}</p>
-                                <p className='flex flex-row text-Para-sm md:text-Para'><span className='text-blue-950'><GoDotFill/></span>{feat.line2}</p>
+                                <h2 className='text-slate-700 text-CardHeading-sm md:text-CardHeading font-bold'>{feat.title}</h2>
+                                <p className='flex flex-row text-Para-sm md:text-Para'><span className='text-slate-700'><GoDotFill/></span>{feat.line1}</p>
+                                <p className='flex flex-row text-Para-sm md:text-Para'><span className='text-slate-700'><GoDotFill/></span>{feat.line2}</p>
                             </div>
                         </motion.div>
                     );

@@ -14,7 +14,7 @@ export const metadata = {
 
 const page = () => {
   return (
-    <div id="mission" className="h-full overflow-x-hidden ">
+    <div className="h-full overflow-x-hidden ">
       <section1 className="">
         <div>
           <BiHero />
