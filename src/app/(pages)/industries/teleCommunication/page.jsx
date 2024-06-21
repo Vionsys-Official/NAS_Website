@@ -10,15 +10,15 @@ export const metadata = {
 
 const page = () => {
   return (
-    <main id='mission' className=''>
+    <main className=''>
 
-     <SectionOne/>
-     
-     <SectioonTwo/>
+      <SectionOne />
 
-     <SectionThree/> 
+      <SectioonTwo />
 
-     <Sectionlast/>
+      <SectionThree />
+
+      <Sectionlast />
 
     </main>
   )

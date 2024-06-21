@@ -12,10 +12,9 @@ const page = () => {
 
   return (
     <main className='overflow-x-hidden'>
-      
       {/* Hading Section*/}
-    <HeroSectionMainpageI/>
-    <MainPageHeading1/>
+      <HeroSectionMainpageI />
+      <MainPageHeading1 />
 
       {/* Cards Section */}
       <section className='p-5 '>

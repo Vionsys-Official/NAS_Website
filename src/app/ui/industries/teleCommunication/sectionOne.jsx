@@ -21,10 +21,7 @@ const sectionOne = () => {
               className="w-full border-l-8 border-emerald-400"
             >
               <h2 className="w-full pl-2 md:px-6 mb-6 font-sans text-2xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
-                Telecommunication Solutions by
-                <span className="text-green-500"> N</span>
-                <span className="text-stone-400">AS </span>
-                Infotech Pvt Ltd
+                Telecommunication Solutions by NAS Infotech Pvt Ltd
               </h2>
               <p className="w-full pl-2 md:px-6 mb-4 text-base text-gray-200 md:text-lg">
                 In the fast-paced world of telecommunications, staying ahead of

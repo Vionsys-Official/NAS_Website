@@ -10,11 +10,11 @@ export const metadata = {
 
 const page = () => {
   return (
-    <div id="mission" className='overflow-hidden font-light'>
-        <Hero/>
-        <Service/>
-        <Whychooseus/>
-        <Cta/>
+    <div className='overflow-hidden font-light'>
+      <Hero />
+      <Service />
+      <Whychooseus />
+      <Cta />
     </div>
   )
 }

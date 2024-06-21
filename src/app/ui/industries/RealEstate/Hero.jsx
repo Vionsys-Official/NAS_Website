@@ -38,7 +38,7 @@ const Hero = () => {
                 Revolutionize Your Real Estate   <br className="hidden md:block" />
                 Business with Cutting-Edge IT Solutions
               </h2>
-              <p className="max-w-xl mb-4 text-base text-gray-200 md:text-lg">
+              <p className="max-w-xl mb-4 text-base font-semibold text-gray-200 md:text-lg">
                 Enhancing Efficiency, Elevating Customer Experience and Driving Growth
               </p>
             </motion.div>
@@ -54,8 +54,8 @@ const Hero = () => {
               className="w-full max-w-xl xl:px-8 xl:w-5/12">
               <div className="bg-white rounded shadow-2xl p-2 md:p-10">
                 <div className="max-w-xl md:mx-auto sm:text-center lg:max-w-2xl">
-                  <h1 className='md:text-Heading text-Heading-sm font-bold tracking-tight text-blue950 sm:text-4xl sm:leading-none leading-10 text-center'>Real Estate</h1>
-                  <p className="text-base text-gray-700 md:text-Para md:py-4 py-2 md:text-justify">We empower real estate professionals with innovative IT solutions tailored to the unique demands of the industry. From advanced property management systems and immersive virtual tours to robust customer relationship management and comprehensive cybersecurity, our services are designed to streamline operations, enhance client interactions and boost business growth.  </p>
+                  <h1 className='md:text-Heading text-Heading-sm font-bold tracking-tight text-blue2 sm:text-4xl sm:leading-none leading-10 text-center'>Real Estate</h1>
+                  <p className="text-base text-slate-600 md:text-Para md:py-4 py-2 md:text-justify">We empower real estate professionals with innovative IT solutions tailored to the unique demands of the industry. From advanced property management systems and immersive virtual tours to robust customer relationship management and comprehensive cybersecurity, our services are designed to streamline operations, enhance client interactions and boost business growth.  </p>
                   <p className="text-base text-gray-700 md:text-Para md:py-4 py-2 md:text-justify">Partner with us to transform your real estate business and stay ahead in a competitive market.</p>
                   <div className='flex flex-col items-center justify-center'><Button /></div>
                 </div>
