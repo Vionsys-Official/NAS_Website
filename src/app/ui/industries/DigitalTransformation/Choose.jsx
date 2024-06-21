@@ -33,55 +33,55 @@ const Choose = () => {
     return (
         <>
             <motion.div
-            variants={fadein("up", 0.2)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: true, amount: 0.8 }}
-            className="px-4 mx-auto space-y-1 text-center mb-4">
-                <span className="text-xs font-semibold tracking-wider uppercase text-blue2">NAS Infotech Pvt. Ltd.</span>
-                <h2 className="pb-3 text-blue950 text-Heading-sm font-bold md:text-Heading">Why Choose Us for Your Digital Transformation Journey?</h2>
+                variants={fadein("up", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: true, amount: 0.8 }}
+                className="px-4 mx-auto space-y-1 text-center mb-4">
+                <span className="text-xs font-semibold tracking-wider uppercase text-slate-600">NAS Infotech Pvt. Ltd.</span>
+                <h2 className="pb-3 text-blue2 text-Heading-sm font-bold md:text-Heading">Why Choose Us for Your Digital Transformation Journey?</h2>
             </motion.div>
             <div
-            className="relative px-4 md:py-10 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-16">
+                className="relative px-4 md:py-10 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-16">
                 <div className="absolute inset-0">
                     <div className="absolute inset-y-0 z-0 w-full h-full rounded-r-3xl bg-slate-500 backdrop-blur-sm bg-opacity-10 lg:w-3/4" />
                 </div>
                 <div className="relative">
                     <div className="grid gap-12 row-gap-8 lg:grid-cols-2">
                         <motion.div
-                        initial={{opacity: 0, scale: 0.7}} //X:100
-                        whileInView={{opacity: 1, scale: 1}} //y:100
-                        transition={{
-                            delay: 0.2,
-                            scale: {type: "spring", stiffness: 30},
-                            opacity: {duration: 0.6},
-                            ease: "easeInOut",
-                        }} 
-                        className="grid md:gap-12 gap-5 row-gap-5 md:grid-cols-2">
+                            initial={{ opacity: 0, scale: 0.7 }} //X:100
+                            whileInView={{ opacity: 1, scale: 1 }} //y:100
+                            transition={{
+                                delay: 0.2,
+                                scale: { type: "spring", stiffness: 30 },
+                                opacity: { duration: 0.6 },
+                                ease: "easeInOut",
+                            }}
+                            className="grid md:gap-12 gap-5 row-gap-5 md:grid-cols-2">
                             {choose.map((item) => (
                                 <div key={item.id}>
-                                <div className="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-blue6">
-                                    <svg
-                                        className="w-8 h-8 text-teal-900"
-                                        stroke="currentColor"
-                                        viewBox="0 0 52 52"
-                                    >
-                                        <polygon
-                                            strokeWidth="3"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            fill="none"
-                                            points="29 13 14 29 25 29 23 39 38 23 27 23"
-                                        />
-                                    </svg>
+                                    <div className="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-blue6">
+                                        <svg
+                                            className="w-8 h-8 text-teal-900"
+                                            stroke="currentColor"
+                                            viewBox="0 0 52 52"
+                                        >
+                                            <polygon
+                                                strokeWidth="3"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                fill="none"
+                                                points="29 13 14 29 25 29 23 39 38 23 27 23"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <h6 className="mb-2 font-semibold text-lg leading-5">
+                                        {item.title}
+                                    </h6>
+                                    <p className="text-base text-gray-900">
+                                        {item.para}
+                                    </p>
                                 </div>
-                                <h6 className="mb-2 font-semibold text-lg leading-5">
-                                {item.title}
-                                </h6>
-                                <p className="text-base text-gray-900">
-                                {item.para}
-                                </p>
-                            </div>
                             ))}
                         </motion.div>
                         <div>

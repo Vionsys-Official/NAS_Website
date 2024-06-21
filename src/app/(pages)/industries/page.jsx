@@ -11,11 +11,11 @@ export const metadata = {
 const page = () => {
 
   return (
-    <main id='mission' className='overflow-x-hidden'>
-      
+    <main className='overflow-x-hidden'>
+
       {/* Hading Section*/}
-    <HeroSectionMainpageI/>
-    <MainPageHeading1/>
+      <HeroSectionMainpageI />
+      <MainPageHeading1 />
 
       {/* Cards Section */}
       <section className='p-5 '>
