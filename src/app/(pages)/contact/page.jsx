@@ -12,7 +12,7 @@ import Forms from "./Forms";
 
 function page() {
   return (
-    <main id="mission" className="overflow-x-hidden">
+    <main className="overflow-x-hidden">
       {/* Hero Section */}
       <section>
         <div className="mb-16 lg:h-[100vh] relative">

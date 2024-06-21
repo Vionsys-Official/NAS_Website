@@ -17,7 +17,7 @@ const salesforcesec5 = () => {
           whileInView={"show"}
           viewport={{ once: true, amount: 0.8 }}
         >
-          <h2 className="md:mt-2 font-header text-Heading font-bold tracking-tight text-gray-900 text-center dark:text-white">
+          <h2 className="md:mt-2 font-header text-Heading font-extrabold tracking-tight text-blue2 text-center dark:text-white">
             Frequently asked questions ?
           </h2>
         </motion.div>
@@ -72,7 +72,7 @@ const salesforcesec5 = () => {
             <dd className="mt-4 lg:col-span-9 lg:mt-0">
               <p className="text-Para md:leading-7 text-center px-2 text-gray-600 dark:text-gray-400">
                 Yes, we offer Salesforce customization services to tailor the
-                platform to your specific business requirements. Whether it's
+                platform to your specific business requirements. Whether it&apos;s
                 creating custom fields, workflows, reports or dashboards, we
                 ensure that Salesforce aligns perfectly with your processes and
                 objectives.

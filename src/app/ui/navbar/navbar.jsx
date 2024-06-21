@@ -23,11 +23,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`py-2 px-6 fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
-        isScrolled
-          ? "bg-white shadow-lg text-blue1"
-          : "bg-black bg-opacity-45 text-white"
-      }`}
+      className="py-2 px-6 fixed top-0 left-0 right-0 z-50 transition-colors duration-300 bg-white text-blue1 shadow-lg"
     >
       <div className="flex items-center justify-between gap-8">
         <Link href="/" className="flex items-center gap-2">
@@ -85,9 +81,7 @@ const Navbar = () => {
 
 // NavLink Component for links with hover and selected state
 const NavLink = ({ href, isScrolled, pathname, children }) => {
-  const className = `text-base font-light hover:scale-[115%] hover:ease-in ease-out duration-75 hover:duration-75 ${
-    isScrolled ? "text-blue1" : "text-white"
-  } ${pathname === href ? "font-extrabold" : ""}`;
+  const className = "text-base font-light hover:scale-[115%] hover:ease-in ease-out duration-75 hover:duration-75 text-blue1"
 
   return (
     <Link href={href}>

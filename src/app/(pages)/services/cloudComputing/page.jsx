@@ -13,7 +13,7 @@ export const metadata = {
 
 const page = () => {
   return (
-    <div id='mission'>
+    <div>
         <Hero/>
         <OurService/>
         <Industries/>

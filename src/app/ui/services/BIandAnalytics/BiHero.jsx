@@ -5,7 +5,7 @@ function BiHero() {
   return (
     <section className="overflow-x-hidden">
       <div className="relative w-full ">
-        <Image src={Hero3} alt="" className="w-full h-[100vh] object-cover  " />
+        <Image src={Hero3} alt="" className="w-full md:h-[100vh] object-cover h-[60vh]" />
 
         <div className="absolute w-full inset-y-0 flex flex-col justify-center bg-gray-800 bg-opacity-50 items-center p-4 md:pl-20 md:pr-20 sm:pl-20 sm:pr-20 ">
           <div>

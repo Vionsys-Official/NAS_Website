@@ -11,7 +11,7 @@ export const metadata = {
 const page = () => {
 
   return (
-    <main id='mission' className='overflow-x-hidden'>
+    <main className='overflow-x-hidden'>
       
       {/* Hading Section*/}
     <HeroSectionMainpageI/>
