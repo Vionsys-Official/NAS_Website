@@ -42,10 +42,10 @@ const Footer = () => {
       </div>
 
       <div className='md:w-fit w-full'>
-        <h2 className="text-lg font-semibold mb-4">Services</h2>
-        <ul className="text-sm space-y-2">
-          {ourServices.map((data,index)=>(
-            <li><Link key={index} href={data.href1}>{data.title}</Link></li>
+        <h2 className="text-lg font-semibold mb-4 text-center">Services</h2>
+        <ul className="text-sm grid grid-cols-2">
+          {ourServices.map((item)=>(
+            <li><Link key={item.id} href={item.href1} className='mb-10'>{item.title}</Link></li>
           ))}
           
           {/* <li><Link href={"/services/TestingandQA"}>Testing and Quality Analysis</Link></li>

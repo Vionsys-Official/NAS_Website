@@ -1,55 +1,71 @@
 "use client"
 import React from 'react'
 import LastSect from '/public/assets/industries/fieldSer/LastSect.jpg'
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { fadein } from '@/components/ui/variants';
+import { Divide } from 'lucide-react';
+import Image from 'next/image';
 
 
 const fieldSec4 = () => {
-  return (
-    <section className="bg-white dark:bg-gray-900">
-                {/* Section 5 */}
-                <div className="relative flex">
-                    <div className="min-h-screen lg:w-1/3"></div>
-                    <div id="MService" className="hidden w-3/4 min-h-screen dark:bg-gray-800 lg:block"></div> {/* ----- */}
+    return (
+       <div className='w-full flex flex-col gap-6 md:px-10 px-4 py-8'>
+        {/* flex1 */}
+        <div className='w-full flex justify-center items-center'>
+         <motion.p
+         variants={fadein("left", 0.1)}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: false, amount: 0.8 }}
+                         className='text-Heading-sm md:text-Heading  font-extrabold text-blue2 capitalize  dark:text-white'>
+          Field Service Management Software
+         </motion.p>
+        </div>
+        <div className=' w-full flex md:flex-row flex-col md:gap-14 gap-4'>
+         {/* left side */}
+         <div className='md:w-1/2 w-full'>
+         <Image className='w-full md:h-[55vh] rounded-lg'
+            src={LastSect}
+            alt=""/>
+         </div>
+         <div 
+         
+                        className='md:w-1/2 w-full flex flex-col gap-5 md:py-10 py-5'>
+             <div className='md:w-[90%] w-full '>
+                <motion.p
+                variants={fadein("right", 0.2)}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: false, amount: 0.8 }}
+                         className='md:text-SubHeading text-SubHeading-sm font-bold text-slate-700'>        
+                Software's to Power Your Growing Business
+                </motion.p>
+             </div>
+             <div className='md:w-[90%] w-full flex justify-center items-center '>
+             <motion.p variants={fadein("right", 0.2)}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: false, amount: 0.8 }}
+                         className='w-full md:text-lg text-Para-sm font-semibold text-slate-600'>
+             NAS's field service management software enables you to drive efficiency,
+                                streamline your processes and optimize your entire service management experience.
+                                Seamlessly integrate your ERPs & accounting systems, provide a great user experience
+                                and unlock the productivity your company needs to grow.
 
-                    <div
-                        className="container flex flex-col justify-center w-full min-h-[50px] px-6 py-10 mx-auto lg:absolute lg:inset-x-0">
-                        <h1 className="text-4xl font-semibold text-gray-800  capitalize lg:text-3xl dark:text-white">
-                            Field <span className="text-blue-500">Service</span> <br />Management Software
-                        </h1>
+             </motion.p>
 
-                        <div className="mt-5 lg:mt-10 lg:flex lg:items-center">
-                            <Image height={500} width={500} className="object-cover object-center mb-12 w-full lg:w-[32rem] rounded-lg h-96"
-                             src={LastSect} alt="" />
+             </div>
 
-                            <div className="mt-8 lg:px-10 lg:mt-0">
-                                <motion.h1 
-                                variants={fadein("right", 0.2)}
-                                initial="hidden"
-                                whileInView="show"
-                                viewport={{ once: false, amount: 0.8 }}
-                                className="text-4xl font-semibold text-gray-800 dark:text-white lg:w-72">
-
-                                    Software's to Power Your Growing Business
-                                </motion.h1>
-
-                                <p className="max-w-lg mt-6 text-gray-500 dark:text-gray-400">
-                                    NAS's field service management software enables you to drive efficiency,
-                                    streamline your processes and optimize your entire service management experience.
-                                    Seamlessly integrate your ERPs & accounting systems, provide a great user experience
-                                    and unlock the productivity your company needs to grow.
-                                </p>
+         </div>
+        </div>
+       </div>
+   
 
 
-                            </div>
-                        </div>
 
-                    </div>
-                </div>
-            </section>
-  )
+
+
+    )
 }
 
 export default fieldSec4

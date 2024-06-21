@@ -36,11 +36,7 @@ const Needs = () => {
         className="max-w-xl mb-7 md:mx-auto sm:text-center lg:max-w-2xl md:mb-10"
       >
         <div>
-          <p className="inline-block px-3 mb-4 text-xs font-semibold tracking-wider text-blue2 uppercase rounded-full bg-teal-accent-400">
-            Discover DevOps
-          </p>
-        </div>
-        <h2 className="max-w-lg md:mb-6 mb-3 text-center md:text-Heading text-Heading-sm font-bold leading-none tracking-tight text-blue950 md:mx-auto">
+          <p className="inline-block px-3 mb-4 text-center md:text-Heading text-Heading-sm font-extrabold leading-none tracking-tight text-blue2 md:mx-auto">
           <span className="relative inline-block">
             <svg
               viewBox="0 0 52 24"
@@ -64,14 +60,17 @@ const Needs = () => {
                 height="24"
               />
             </svg>
-            <span className="relative">Unlock growth</span>
-          </span>{" "}
-          with our tailored solutions and support.
+            <span className="relative">Discover DevOps</span>
+          </span>
+          </p>
+        </div>
+        <h2 className="max-w-lg md:mb-6 mb-3 text-center md:text-SubHeading text-SubHeading-sm font-semibold leading-none tracking-tight text-slate-600 md:mx-auto">
+          Unlock growth with our tailored solutions and support.
         </h2>
         <p className="text-base text-center text-gray-800 md:text-lg">
           DevOps integrates development and operations teams to enhance
           collaboration, automate processes and accelerate software delivery,
-          essential for staying competitive in today's fast-paced market. It
+          essential for staying competitive in today is fast-paced market. It
           enables your business to:
         </p>
       </motion.div>

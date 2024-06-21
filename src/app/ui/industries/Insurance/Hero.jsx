@@ -20,7 +20,7 @@ const Hero = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}
-            className=" md:text-HeroHeading text-HMain-sm sm:p-4 font-bold text-blue950"
+            className=" md:text-HeroHeading text-HMain-sm sm:p-4 font-bold text-blue2"
           >
             Insurance
           </motion.p>
@@ -35,12 +35,12 @@ const Hero = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}
-            className="md:text-Heading text-Heading-sm md:w-[50%] w-full text-center font-bold text-blue1"
+            className="md:text-Heading text-Heading-sm md:w-[50%] w-full text-center font-bold text-blue2"
           >
             Revolutionizing The Insurance Industry With Cutting-Edge Software
             Solutions
           </motion.h1>
-          <p className="md:w-[50%] w-[90%] text-center md:text-Para  text-Para-sm font-normal text-gray-800">
+          <p className="md:w-[50%] w-[90%] text-center md:text-lg  text-Para-sm font-semibold text-slate-600">
             Understanding the unique challenges and opportunities within the
             insurance industry is our specialty. Our suite of software solutions
             is designed to streamline operations, enhance customer experiences,

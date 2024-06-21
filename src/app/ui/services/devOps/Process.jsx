@@ -56,7 +56,7 @@ const Process = () => {
         variants={fadein("up", 0.2)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: true, amount: 0.8 }} className='md:py-8 py-4 md:text-Heading text-Heading-sm font-bold text-blue950 text-center'>
+        viewport={{ once: true, amount: 0.8 }} className='md:py-8 py-4 md:text-Heading text-Heading-sm font-extrabold text-blue2 text-center'>
         <h1>Our Workflow</h1>
       </motion.div>
       <motion.div

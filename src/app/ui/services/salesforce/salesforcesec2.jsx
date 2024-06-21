@@ -5,34 +5,62 @@ import { motion } from "framer-motion";
 import section2Image from "/public/assets/services/salesforce/section2Image.jpg";
 import Image from "next/image";
 
+const salesforce = [
+  {
+    id: 1,
+    title: "Customer Experience",
+    description:
+      "In an increasingly competitive landscape, prioritizing customer experience can be a key differentiator for businesses. Salesforce's tools for understanding",
+  },
+  {
+    id: 2,
+    title: "Integrating, Emerging Technologies",
+    description:
+      "Integrating with emerging technologies like blockchain, IoT and AR can unlock new opportunities for innovation, perfection and differentiation",
+  },
+  {
+    id: 3,
+    title: "Data Privacy and Security",
+    description:
+      "data privacy regulations becoming more stringent, companies must prioritize security and compliance strategies. Salesforce users need to ensure that they adhere to regulations.",
+  },
+  {
+    id: 4,
+    title: "AI integration",
+    description:
+      "The integration of AI and ML into Salesforce can empower users with predictive analytics and automation capabilities enabling informed decision-making and personalized interactions",
+  },
+  {
+    id: 5,
+    title: "Customization and Flexibility",
+    description:
+      "Salesforce's customization capabilities enable companies to tailor the platform to their needs and workflows. Investing in customizations and integrations",
+  },
+  {
+    id: 6,
+    title: "Continued Growth",
+    description:
+      "IAs cloud-based solutions become more ubiquitous and companies increasingly adopt CRM systems, Salesforce is poised to maintain its growth trajectory",
+  },
+]
+
 const salesforcesec2 = () => {
   return (
     <section>
       <div className="max-w-screen-xl mx-auto md:py-5 px-2">
         <motion.div
-          variants={fadein("down", 0.2)}
+          variants={fadein("up", 0.2)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, amount: 0.8 }}
-          className="mx-auto flex max-w-[58rem] py-2 flex-col items-center space-y-4 text-center"
+          className="mx-auto flex max-w-[58rem] py-2 flex-col items-center space-y-2 text-center"
         >
-          <h2 className=" text-MainHeading font-extrabold">
-            <span className="text-black relative stroke-current">
+          <h2 className="mb-6 md:text-MainHeading text-MainHeading-sm font-extrabold leading-none tracking-tight text-blue2">
+            <span className="text-blue2 relative">
               Features
-              <svg
-                className="absolute -bottom-0.5 text-blue-600 w-full max-h-1.5"
-                viewBox="0 0 55 5"
-                xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="none"
-              >
-                <path
-                  d="M0.652466 4.00002C15.8925 2.66668 48.0351 0.400018 54.6853 2.00002"
-                  strokeWidth="2"
-                ></path>
-              </svg>
             </span>
           </h2>
-          <p className="max-w-[85%] leading-normal text-SubHeading-sm sm:leading-7">
+          <p className="max-w-[85%] leading-normal text-lg text-slate-600 font-semibold sm:leading-7">
             Explore the incredible offerings provided by us to enrich your
             online visibility.
           </p>
@@ -60,9 +88,10 @@ const salesforcesec2 = () => {
             }}
             className="flex-1 flex flex-col sm:flex-row flex-wrap -mb-4 -mx-2"
           >
-            <div className="w-full sm:w-1/2 mb-4 px-2 py-1">
+            {salesforce.map((item) => (
+              <div key={item.id} className="w-full sm:w-1/2 mb-4 px-2 py-1">
               <div className="flex gap-4 items-start">
-                <span className="text-blue-600 bg-violet-500/10 p-3 rounded-full">
+                <span className="text-blue-600 bg-violet-500/10 p-3 rounded-full md:block hidden">
                   <svg
                     width="15"
                     height="15"
@@ -81,18 +110,17 @@ const salesforcesec2 = () => {
                 </span>
                 <div>
                   <h3 className="font-semibold text-SubHeading-sm text-center">
-                    Customer Experience
+                  {item.title}
                   </h3>
                   <p className="mt-1 text-gray-500 text-center">
-                    In an increasingly competitive landscape, prioritizing
-                    customer experience can be a key differentiator for
-                    businesses. Salesforce's tools for understanding and
-                    engaging
+                  {item.description}
                   </p>
                 </div>
               </div>
-            </div>
-            <div className="w-full sm:w-1/2 mb-4 px-2 py-1 ">
+             </div>
+            ))}
+            
+            {/*<div className="w-full sm:w-1/2 mb-4 px-2 py-1 ">
               <div className="flex gap-4 items-start">
                 <span className="text-blue-600 bg-violet-500/10 p-3 rounded-full">
                   <svg
@@ -256,7 +284,7 @@ const salesforcesec2 = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </div>

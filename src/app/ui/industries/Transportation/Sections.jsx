@@ -8,7 +8,7 @@ const Sections = () => {
   return (
     <>
       {/* Section 1 */}
-      <section className="w-full py-12 md:py-8 lg:py-12">
+      <section className="w-full py-8 md:py-8 lg:py-8">
         <div className="container px-4 md:px-6">
           <div className="space-y-6">
             <div className="space-y-2 text-center">
@@ -17,7 +17,7 @@ const Sections = () => {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.5 }}
-                className="text-Heading-sm  font-bold tracking-tighter md:text-Heading"
+                className="text-Heading-sm text-blue2 font-bold tracking-tighter md:text-Heading"
               >
                 How we can Help?
               </motion.h2>
@@ -26,7 +26,8 @@ const Sections = () => {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.5 }}
-                className="mx-auto max-w-[700px] text-gray-500 text-SubHeading-sm md:text-SubHeading"
+                className="mx-auto max-w-[700px] text-slate-600 text-Para-sm md:text-lg font-semibold
+                "
               >
                 Explore how transportation technologies are transforming the IT
                 industry, from fleet management and logistics optimization to
@@ -95,7 +96,7 @@ const Sections = () => {
           {/* Heading */}
           <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
             <div>
-              <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
+              <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-slate-600 uppercase rounded-full bg-teal-accent-400">
                 Just do it
               </p>
             </div>
@@ -104,7 +105,7 @@ const Sections = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.5 }}
-              className="max-w-lg mb-6 font-sans text-Heading-sm font-bold text-gray-900 md:text-Heading md:mx-auto"
+              className="max-w-lg mb-6 text-Heading-sm font-bold text-blue2 md:text-Heading md:mx-auto"
             >
               <span className="relative inline-block">
                 <svg
@@ -138,7 +139,7 @@ const Sections = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.5 }}
-              className="text-SubHeading-sm text-gray-700 md:text-SubHeading"
+              className="text-Para-sm text-slate-600 font-semibold md:text-lg"
             >
               Technology plays a pivotal role in addressing the challenges faced
               by the logistics sector, driving transformation through innovative
@@ -356,12 +357,12 @@ const Sections = () => {
 
       {/* Last Section */}
       <section className="max-w-full pt-4 pb-8 px-10 flex justify-center">
-        <div className="bg-violet-950 text-white md:w-[70%] flex flex-col  justify-between py-4 px-8">
+        <div className="bg-gray-200  md:w-[70%] flex flex-col  justify-between py-4 px-8">
           <div>
-            <h2 className="font-bold text-Heading-sm py-2 md:text-Heading text-center">
+            <h2 className="font-bold text-blue2 text-Heading-sm py-2 md:text-Heading text-center">
               Discover what we can do for you.
             </h2>
-            <p className="py-3 text-Para-sm md:text-Para text-center">
+            <p className="py-3 text-Para-sm md:text-Para text-slate-600 text-center">
               Contact us today to discuss how we can help you to achieve your
               business goals.
             </p>

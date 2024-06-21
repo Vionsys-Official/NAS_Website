@@ -15,9 +15,9 @@ function Bankinghero() {
         <div className="px-3 md:px-10 py-25 h-full flex flex-col items-start justify-center">
           <div className="flex flex-col items-end">
             <div className=" w-full md:w-1/2 border-r-0 md:border-r-8 pr-2 md:pr-10 text-center">
-              <h2 className="w-full pl-2 pt-12 md:px-6 mb-6 font-bold tracking-tight text-blue-200 text-2xl md:text-MainHeading sm:leading-none">
-                Enhance Your Banking Services With The Most Advanced  
-                <span className="text-green-500"> I</span><span className='text-green-500'>T </span>
+              <h2 className="w-full pl-2 pt-12 md:px-6 mb-6 font-bold tracking-tight text-blue-200 text-HMain-sm md:text-HMain sm:leading-none">
+                Enhance Your Banking Services With The Most Advanced
+                <span className="text-blue-200"> I</span><span className='text-blue-200'>T </span>
                 Solutions Available.
               </h2>
               <p className="w-full pl-2 text-pretty md:px-6 mb-4 text-base text-blue-200 md:text-lg text-justify">

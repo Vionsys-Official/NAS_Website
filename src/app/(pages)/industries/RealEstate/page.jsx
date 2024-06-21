@@ -9,10 +9,10 @@ export const metadata = {
 
 const page = () => {
   return (
-    <div id='mission'>
-        <Hero/>
-        <Service/>
-        <ChooseUs/>
+    <div>
+      <Hero />
+      <Service />
+      <ChooseUs />
     </div>
   )
 }

@@ -13,21 +13,21 @@ import { fadein } from '@/components/ui/variants';
 
 function S3() {
   return (
-    <section3 id="features" className="container mx-auto px-4 py-8 md:py-12 lg:py-20 ">
-               <div className="mx-auto mb-10 flex max-w-full flex-col items-center space-y-4 text-center  ">
+    <section3 id="features" className="mx-auto md:px-4 py-8 md:py-12 lg:py-20 ">
+               <div className="mx-auto md:mb-10 flex max-w-full flex-col items-center space-y-4 text-center">
                 
                     <motion.h2 
                      variants={fadein("left", 0.2)}
                      initial="hidden"
                      whileInView={"show"}
                      viewport={{ once: false, amount: 0.8 }}
-                    className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-4xl text-blue900 ">Features</motion.h2>
+                    className="leading-[1.1] md:text-MainHeading text-MainHeading-sm font-extrabold tracking-tight text-blue2">Features</motion.h2>
                     <motion.p
                      variants={fadein("left", 0.2)}
                      initial="hidden"
                      whileInView={"show"}
                      viewport={{ once: false, amount: 0.8 }}
-                    className="max-w-[85%] md:text-Para text-blue900 text-Para-sm leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+                    className="max-w-[85%] font-semibold text-lg text-slate-600 leading-normal text-muted-foreground sm:text-lg sm:leading-7">
                     Business Intelligence (BI) and Analytics encompass a range of features designed to help organizations make data-driven decisions. Here are the key features typically found in BI and Analytics platforms:
                     </motion.p>
                 </div>

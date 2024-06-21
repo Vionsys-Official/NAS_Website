@@ -25,12 +25,12 @@ const Hero = () => {
                 variants={fadein("down", 0.2)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: true, amount: 0.8 }} 
+                viewport={{ once: true, amount: 0.8 }}
                 className="text-center relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
                 <div className="md:mb-16 py-4 lg:my-28 lg:max-w-lg lg:pr-5">
-                    <p className="inline-block md:mb-4 mb-2 text-xs font-semibold tracking-wider text-blue2 uppercase rounded-full">Transforming Construction with Innovative IT Services
+                    <p className="inline-block md:mb-4 mb-2 text-xs font-semibold tracking-wider text-slate-600 uppercase rounded-full">Transforming Construction with Innovative IT Services
                     </p>
-                    <h2 className="md:mb-5 mb-2 md:text-3xl font-bold tracking-tight text-blue950 text-2xl leading-8 md:leading-10">
+                    <h2 className="md:mb-5 mb-2 md:text-3xl font-bold tracking-tight text-blue2 text-2xl leading-8 md:leading-10">
                         Empowering the Construction   {' '}
                         <br className="hidden md:block" />
                         Industry with Cutting-Edge{' '}
@@ -38,13 +38,13 @@ const Hero = () => {
                             IT Solutions
                         </span>
                     </h2>
-                    <p className="md:pr-5 md:mb-5 mb-3 text-base text-gray-700 md:text-lg">
+                    <p className="md:pr-5 md:mb-5 mb-3 text-Para-sm font-semibold text-slate-600 md:text-lg">
                         In today’s fast-paced world, the construction industry faces challenges like project management complexities and ensuring projects are completed on time and within budget. As a leading IT company, we provide tailored technology solutions to drive efficiency, enhance collaboration and optimize operations.
                     </p>
                     <div className="flex items-center flex-col justify-center">
-                       
-                           <Button/>
-                        
+
+                        <Button />
+
                     </div>
                 </div>
             </motion.div>

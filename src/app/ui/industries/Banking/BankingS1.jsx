@@ -3,19 +3,14 @@ import React from "react";
 import h1 from "/public/assets/industries/Banking/h1.jpg";
 import Image from "next/image";
 import dataanalytics from "/public/assets/industries/Banking/DataAnalytics.jpg";
-import cyber from "/public/assets/industries/Banking/cybersec.jpg";
+import cyber from "/public/assets/industries/Banking/cybersec2.jpg";
 import custexp from "/public/assets/industries/Banking/customerexp.jpg";
 
 function BankingS1() {
   return (
-    <div className="px-4 py-8 mx-auto max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
-      <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 sm:h-[20vh]">
-        <div className="flex flex-col items-center">
-          <p className="inline-block px-5 py-px mb-4 text-MainHeading-sm md:text-MainHeading font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-            Services
-          </p>
-        </div>
-        <h2 className="max-w-lg mb-6 md:text-MainHeading sm:text-MainHeading-sm font-bold leading-none tracking-tight text-blue950 md:mx-auto">
+    <div className="px-4 py-8 mx-auto max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10 ">
+      <div className="max-w-xl md:mx-auto sm:text-center lg:max-w-2xl sm:h-[20vh]">
+        <h2 className="max-w-lg mb-6 md:text-MainHeading sm:text-MainHeading-sm font-bold leading-none tracking-tight text-blue2 md:mx-auto">
           <span className="relative inline-block">
             <svg
               viewBox="0 0 52 24"
@@ -43,7 +38,7 @@ function BankingS1() {
           </span>{" "}
           Do We Offer?
         </h2>
-        <p className="text-base text-green-700 md:text-Para sm:text-Para-sm">
+        <p className="md:text-lg  text-Para-sm font-semibold text-slate-600">
           Below mentioned are few services offered by us!!
         </p>
       </div>

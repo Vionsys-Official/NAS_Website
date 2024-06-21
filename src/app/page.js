@@ -16,7 +16,7 @@ const CTA = dynamic(() => import("./ui/home/CTA.jsx")
 
 export default function Home() {
   return (
-    <main id="mission" className="overflow-x-hidden">
+    <main className="overflow-x-hidden">
       <Landing />
       <Socialproof/>
       <Grid />

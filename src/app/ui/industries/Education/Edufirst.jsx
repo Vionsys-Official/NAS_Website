@@ -17,11 +17,11 @@ const Edufirst = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.5, delay: 8000 }}
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tighter bg-gradient-to-l from-green-400 to-blue-900 bg-clip-text text-transparent"
+              className=" text-HMain-sm md:text-5xl font-bold tracking-tighter text-blue2 "
             >
               Elevate Your Learning Experience
             </motion.h1>
-            <p className="max-w-[600px] mx-auto text-center text-gray-600 rounded-md bg-blue-200 dark:text-gray-400 md:p-5">
+            <p className="max-w-[600px] mx-auto text-center md:text-lg text-Para-sm font-semibold text-slate-600 rounded-md bg-gray-200 dark:text-gray-400 md:p-5 p-2">
               Our education service provider offers a comprehensive suite of
               programs and resources to help you achieve your academic and
               professional goals.
