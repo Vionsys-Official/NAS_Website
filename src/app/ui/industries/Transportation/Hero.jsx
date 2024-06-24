@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="max-w-xl mx-auto lg:max-w-screen-xl">
           <div className="mb-16 lg:max-w-lg lg:mb-0">
             <div className="max-w-xl mb-6 overflow-x-hidden ">
-              <h2 className="max-w-lg mb-6 flex flex-col items-center justify-center gap-1 md:flex-row font-sans text-3xl font-bold tracking-tight text-blue2 sm:text-4xl sm:leading-none">
+              <h2 className="max-w-lg mb-6 flex flex-col items-center justify-center gap-1 md:flex-row md:text-HMain text-HMain-sm font-bold tracking-tight text-blue2 sm:leading-none">
                 Logistics And{" "}
                 <span className=" p-2 rounded-xl text-blue2 ">
                   Transportation

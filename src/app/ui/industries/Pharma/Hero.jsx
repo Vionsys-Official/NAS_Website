@@ -25,7 +25,7 @@ const Hero = () => {
                 className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-24">
                 <div className="relative max-w-3xl sm:mx-auto sm:max-w-2xl md:max-w-3xl sm:text-center">
                     <h2 className="mb-6 md:text-4xl font-bold tracking-tight text-white text-2xl sm:leading-none">
-                        Innovative IT Solutions
+                        Innovative IT Solutions {' '}
                         <br className="hidden md:block" />
                         for the Pharmaceutical{' '}
                         <span className="relative inline-block">

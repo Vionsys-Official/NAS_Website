@@ -66,7 +66,7 @@ const Service = () => {
                      initial="hidden"
                      whileInView={"show"}
                      viewport={{ once: true, amount: 0.8 }}
-                     className="text-Heading-sm font-bold md:text-Heading text-blue2">Our IT Solutions for Construction
+                     className="text-Heading-sm font-extrabold md:text-Heading text-blue2">Our IT Solutions for Construction
                     </motion.h2>
                 </div>
                 <div className="grid justify-center gap-4 mx-auto lg:grid-cols-2 xl:grid-cols-4">

@@ -19,16 +19,16 @@ const sectioonTwo = () => {
           viewport={{ once: true, amount: 0.8 }}
           className="max-w-full bg-gray-100 p-5 shadow-xl rounded-xl mb-10 md:mx-auto sm:text-center md:mb-12">
           <div>
-            <p className="inline-block w-full px-3 mb-4 text-md font-semibold tracking-wider text-slate-600 uppercase rounded-full bg-teal-accent-400">
+            <p className="inline-block w-full px-3 mb-4 md:text-Heading text-Heading-sm font-extrabold tracking-wider text-blue2 rounded-full bg-teal-accent-400">
               Our Services
             </p>
           </div>
-          <h2 className="max-w-2xl mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-blue2 sm:text-4xl md:mx-auto">
+          {/* <h2 className="max-w-2xl mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-blue2 sm:text-4xl md:mx-auto">
 
             <span className="relative">Revolutionizing </span>
 
             Communication with Cutting-Edge Technology
-          </h2>
+          </h2> */}
           <p className="text-Para-sm text-slate-600 md:text-lg font-semibold">
             Our expertise in IT solutions is tailored to elevate your business operations ensuring seamless communication, enhanced customer experiences and robust network management. Discover how we can transform your telecommunication services and help you stay ahead in a rapidly evolving industry.
           </p>
@@ -74,10 +74,10 @@ const sectioonTwo = () => {
                 </div>
               </div>
               <div className='p-2 md:p-0'>
-                <h6 className="py-3 font-semibold text-Heading text-black">
+                <h6 className="py-3 font-semibold md:text-SubHeading text-SubHeading-sm text-black">
                   {data.heading}
                 </h6>
-                <p className="text-SubHeading-sm mb-2 text-gray-900">
+                <p className="md:text-lg text-Para-sm mb-2 text-slate-600 font-semibold">
                   {data.description}
                 </p>
                 <motion.p

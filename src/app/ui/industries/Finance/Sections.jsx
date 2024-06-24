@@ -11,7 +11,7 @@ const Sections = () => {
     <>
       {/* Section 1 */}
       <section>
-        <div className="relative px-4 py-14 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+        <div className="relative px-4 md:py-10 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div className="relative">
             <div className="grid gap-12 row-gap-8 lg:grid-cols-2">
               <div className="grid gap-12 row-gap-5 md:grid-cols-2">
@@ -21,7 +21,7 @@ const Sections = () => {
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
                   className="relative">
-                  <h6 className="mb-2 font-semibold md:text-SubHeading text-SubHeading-sm">
+                  <h6 className="md:mb-2 font-semibold md:text-CardHeading text-CardHeading-sm">
                     Software Solutions & CRM Systems
                   </h6>
                   <p className=" text-gray-900 md:text-para text-Para-sm">
@@ -37,7 +37,7 @@ const Sections = () => {
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
                 >
-                  <h6 className="mb-2 font-semibold md:text-SubHeading text-SubHeading-sm">
+                  <h6 className="md:mb-2 font-semibold md:text-CardHeading text-CardHeading-sm">
                     Data Analytics and Business Intelligence
                   </h6>
                   <p className=" text-gray-900 md:text-para text-Para-sm">
@@ -53,7 +53,7 @@ const Sections = () => {
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
                 >
-                  <h6 className="mb-2 font-semibold md:text-SubHeading text-SubHeading-sm">
+                  <h6 className="md:mb-2 font-semibold md:text-CardHeading text-CardHeading-sm">
                     Cybersecurity Solutions
                   </h6>
                   <p className=" text-gray-900 md:text-para text-Para-sm">
@@ -70,7 +70,7 @@ const Sections = () => {
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
                 >
-                  <h6 className="mb-2 font-semibold md:text-SubHeading text-SubHeading-sm">
+                  <h6 className="md:mb-2 font-semibold md:text-CardHeading text-CardHeading-sm">
                     Cloud Computing & e-Banking
                   </h6>
                   <p className=" text-gray-900 md:text-para text-Para-sm">
@@ -97,14 +97,14 @@ const Sections = () => {
 
       {/* Section 2 */}
       <section>
-        <div className="px-4 md:py-6 py-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+        <div className="px-4 md:py-10 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div className="max-w-xl  mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
             <motion.h2
               variants={fadein("down", 0.1)}
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.5 }}
-              className="max-w-lg mb-6 font-sans text-MainHeading-sm font-bold leading-none tracking-tight text-blue2 md:text-MainHeading md:mx-auto">
+              className="max-w-lg mb-6 text-Heading-sm font-extrabold leading-none tracking-tight text-blue2 md:text-Heading md:mx-auto">
               How We Can Help You?
             </motion.h2>
             <motion.p
@@ -127,7 +127,7 @@ const Sections = () => {
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
                   className="hover:bg-violet-950 hover:text-white p-2 hover:cursor-pointer">
-                  <h6 className="mb-3 text-SubHeading-sm md:text-SubHeading font-semibold">
+                  <h6 className="mb-3 text-CardHeading-sm md:text-CardHeading font-semibold">
                     Training and Education
                   </h6>
                   <p className="text-Para-sm md:text-Para hover:text-white">
@@ -144,7 +144,7 @@ const Sections = () => {
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
                   className="hover:bg-violet-950 hover:text-white p-2 hover:cursor-pointer">
-                  <h6 className="mb-3 text-SubHeading-sm md:text-SubHeading font-semibold">
+                  <h6 className="mb-3 text-CardHeading-sm md:text-CardHeading font-semibold">
                     Artificial Intelligence and Machine Learning
                   </h6>
                   <p className="text-Para-sm md:text-Para hover:text-white">
@@ -161,7 +161,7 @@ const Sections = () => {
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
                   className="hover:bg-violet-950 hover:text-white p-2 hover:cursor-pointer">
-                  <h6 className="mb-3 text-SubHeading-sm md:text-SubHeading font-semibold">
+                  <h6 className="mb-3 text-CardHeading-sm md:text-CardHeading font-semibold">
                     Customer Experience Enhancement
                   </h6>
                   <p className="text-Para-sm md:text-Para hover:text-white">
@@ -180,7 +180,7 @@ const Sections = () => {
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
                   className="hover:bg-violet-950 hover:text-white p-2 hover:cursor-pointer">
-                  <h6 className="mb-3 text-SubHeading-sm md:text-SubHeading font-semibold">
+                  <h6 className="mb-3 text-CardHeading-sm md:text-CardHeading font-semibold">
                     Blockchain Technology
                   </h6>
                   <p className="text-Para-sm md:text-Para hover:text-white">
@@ -196,7 +196,7 @@ const Sections = () => {
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
                   className="hover:bg-violet-950 hover:text-white p-2 hover:cursor-pointer">
-                  <h6 className="mb-3 text-SubHeading-sm md:text-SubHeading font-semibold">
+                  <h6 className="mb-3 text-CardHeading-sm md:text-CardHeading font-semibold">
                     Customer Software Development
                   </h6>
                   <p className="text-Para-sm md:text-Para hover:text-white">
@@ -212,7 +212,7 @@ const Sections = () => {
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
                   className="hover:bg-violet-950 hover:text-white p-2 hover:cursor-pointer">
-                  <h6 className="mb-3 text-SubHeading-sm md:text-SubHeading font-semibold">
+                  <h6 className="mb-3 text-CardHeading-sm md:text-CardHeading font-semibold">
                     Robotic Process Automation (RPA)
                   </h6>
                   <p className="text-Para-sm md:text-Para hover:text-white">
@@ -237,7 +237,7 @@ const Sections = () => {
               whileInView="show"
               viewport={{ once: false, amount: 0.5 }}
               className="font-bold text-Heading-sm md:text-Heading py-2 text-blue2 text-center">
-              Discover what we can do for you.
+              Discover What We Can Do For You.
             </motion.h2>
             <motion.p
               variants={fadein("right", 0.1)}

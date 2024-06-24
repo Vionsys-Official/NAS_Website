@@ -18,7 +18,7 @@ const sectionOne = () => {
           <div className="flex flex-col items-start">
             <motion.div
               animate={{ y: [-100, 0] }}
-              className="w-full border-l-8 border-emerald-400"
+              className="w-full border-l-8 border-blue4"
             >
               <h2 className="w-full pl-2 md:px-6 mb-6 font-sans text-2xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
                 Telecommunication Solutions by NAS Infotech Pvt Ltd
@@ -35,7 +35,8 @@ const sectionOne = () => {
               </p>
               <Link
                 href={"#data"}
-                className="inline-flex pl-2 md:px-6 items-center font-semibold tracking-wider transition-colors duration-200 text-emerald-400 hover:text-emerald-700"
+                className="inline-flex pl-2 md:px-6 items-center font-semibold tracking-wider transition-colors duration-200 text-blue6 hover:text-blue4
+                "
               >
                 Know more
                 <svg
