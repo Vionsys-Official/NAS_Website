@@ -126,7 +126,7 @@ const Sections = () => {
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
-                  className="hover:bg-violet-950 hover:text-white p-2 hover:cursor-pointer">
+                  className="hover:bg-violet-950 hover:text-white p-2 ">
                   <h6 className="mb-3 text-CardHeading-sm md:text-CardHeading font-semibold">
                     Training and Education
                   </h6>
@@ -143,7 +143,7 @@ const Sections = () => {
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
-                  className="hover:bg-violet-950 hover:text-white p-2 hover:cursor-pointer">
+                  className="hover:bg-violet-950 hover:text-white p-2 ">
                   <h6 className="mb-3 text-CardHeading-sm md:text-CardHeading font-semibold">
                     Artificial Intelligence and Machine Learning
                   </h6>
@@ -160,7 +160,7 @@ const Sections = () => {
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
-                  className="hover:bg-violet-950 hover:text-white p-2 hover:cursor-pointer">
+                  className="hover:bg-violet-950 hover:text-white p-2">
                   <h6 className="mb-3 text-CardHeading-sm md:text-CardHeading font-semibold">
                     Customer Experience Enhancement
                   </h6>
@@ -179,7 +179,7 @@ const Sections = () => {
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
-                  className="hover:bg-violet-950 hover:text-white p-2 hover:cursor-pointer">
+                  className="hover:bg-violet-950 hover:text-white p-2 ">
                   <h6 className="mb-3 text-CardHeading-sm md:text-CardHeading font-semibold">
                     Blockchain Technology
                   </h6>
@@ -195,7 +195,7 @@ const Sections = () => {
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
-                  className="hover:bg-violet-950 hover:text-white p-2 hover:cursor-pointer">
+                  className="hover:bg-violet-950 hover:text-white p-2 ">
                   <h6 className="mb-3 text-CardHeading-sm md:text-CardHeading font-semibold">
                     Customer Software Development
                   </h6>
@@ -211,7 +211,7 @@ const Sections = () => {
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
-                  className="hover:bg-violet-950 hover:text-white p-2 hover:cursor-pointer">
+                  className="hover:bg-violet-950 hover:text-white p-2 ">
                   <h6 className="mb-3 text-CardHeading-sm md:text-CardHeading font-semibold">
                     Robotic Process Automation (RPA)
                   </h6>

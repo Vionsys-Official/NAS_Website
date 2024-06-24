@@ -107,7 +107,7 @@ const fieldSec3 = () => {
                         {Object.keys(industryData).map(industry => (
                             <li key={industry}>
                                 <div
-                                    className={`p-4 w-fit cursor-pointer border-b-2 border-transparent rounded-t-lg ${selectedIndustry === industry ? 'text-blue-700 border-blue-700' : ''}`}
+                                    className={`p-4 w-fit  border-b-2 border-transparent rounded-t-lg ${selectedIndustry === industry ? 'text-blue-700 border-blue-700' : ''}`}
                                     onClick={() => handleIndustryChange(industry)}
                                 >
                                     {industry}

@@ -9,17 +9,17 @@ const Whychooseus = () => {
   return (
     <div>
         <div className='relative flex flex-col items-start justify-center md:h-[50vh] lg:h-[60vh] overflow-hidden'>
-            <div className='w-full md:w-3/5 cursor-pointer'>
+            <div className='w-full md:w-3/5 '>
                 <Image className='object-cover h-full w-full' src={EcomWCU} alt=''></Image>
             </div>
             <div className='absolute inset-0 hidden md:flex items-center justify-center w-2/5 bg-white h-[60vh] -rotate-45 translate-x-[110%] rounded-full'></div>
-            <div className='md:absolute inset-0 flex flex-col items-end justify-center p-4 md:p-0 sm:pt-12 md:pt-0 md:-translate-x-14 lg:-translate-x-20 cursor-pointer'>
+            <div className='md:absolute inset-0 flex flex-col items-end justify-center p-4 md:p-0 sm:pt-12 md:pt-0 md:-translate-x-14 lg:-translate-x-20 '>
                 <motion.h1
                 variants={fadein("right", 0.2)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: true, amount: 0.8 }}  
-                className="text-blue-900 w-full md:w-2/5 pb-4 text-MainHeading-sm md:text-MainHeading leading-none tracking-tight font-semibold">
+                className="text-blue2 w-full md:w-2/5 pb-4 text-Heading-sm md:text-Heading leading-none tracking-tight font-extrabold">
                 Why Choose
                 <span className="relative inline-block">
                     <svg
@@ -53,7 +53,7 @@ const Whychooseus = () => {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: true, amount: 0.8 }}  
-                className='w-full md:w-2/5'>
+                className='w-full md:w-2/5 text-slate-600 md:text-lg text-Para-sm font-semibold'>
                     At NAS Infotech, we offer e-commerce expertise and a dedication to your success. Through innovative, customized solutions and scalable support, we are committed to helping your business expand and flourish. Rely on us for clear communication, exceptional service and a long-term partnership centered on your success.
                 </motion.p>
             </div>
