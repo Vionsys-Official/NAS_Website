@@ -43,7 +43,7 @@ const Healthird = () => {
                   aria-label="Article"
                   className="inline-block mb-3 text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
                 >
-                  <p className="md:text-CardHeading text-CardHeading-sm font-bold md:leading-5 text-center">
+                  <p className="md:text-CardHeading text-CardHeading-sm font-semibold md:leading-5 text-center">
                     Cloud Infrastructure Services
                   </p>
                 </Link>
@@ -79,7 +79,7 @@ const Healthird = () => {
                   aria-label="Article"
                   className="inline-block mb-3 text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
                 >
-                  <p className="md:text-CardHeading text-CardHeading-sm font-bold md:leading-5">
+                  <p className="md:text-CardHeading text-CardHeading-sm font-semibold md:leading-5">
                     Telemedicine Solutions
                   </p>
                 </Link>
@@ -111,7 +111,7 @@ const Healthird = () => {
                   aria-label="Article"
                   className="inline-block mb-3 text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
                 >
-                  <p className="md:text-CardHeading text-CardHeading-sm font-bold md:leading-5">
+                  <p className="md:text-CardHeading text-CardHeading-sm font-semibold md:leading-5">
                     Cybersecurity Solutions
                   </p>
                 </Link>
@@ -149,7 +149,7 @@ const Healthird = () => {
                   aria-label="Article"
                   className="inline-block mb-3 text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
                 >
-                  <p className="md:text-CardHeading text-CardHeading-sm font-bold md:leading-5 text-center">
+                  <p className="md:text-CardHeading text-CardHeading-sm font-semibold md:leading-5 text-center">
                     Data management analytics
                   </p>
                 </Link>
@@ -184,7 +184,7 @@ const Healthird = () => {
                   aria-label="Article"
                   className="inline-block mb-3 text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
                 >
-                  <p className="md:text-CardHeading text-CardHeading-sm font-bold md:leading-5">
+                  <p className="md:text-CardHeading text-CardHeading-sm font-semibold md:leading-5">
                     Healthcare Analytics
                   </p>
                 </Link>
@@ -216,7 +216,7 @@ const Healthird = () => {
                   aria-label="Article"
                   className="inline-block mb-3 text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
                 >
-                  <p className="md:text-CardHeading text-CardHeading-sm font-bold md:leading-5">
+                  <p className="md:text-CardHeading text-CardHeading-sm font-semibold md:leading-5">
                     Medical Imaging solutions
                   </p>
                 </Link>
@@ -237,9 +237,9 @@ const Healthird = () => {
             <div className="max-w-screen-xl mx-auto px-4 md:text-center text-center md:px-8">
               <div className="max-w-xl space-y-3 md:mx-auto">
                 <p className="text-blue2 md:text-Heading text-Heading-sm font-extrabold ">
-                  Build the future with us
+                  Build the Future With Us
                 </p>
-                <p className="text-slate-600 md:text-lg text-Para-sm font-semibold">
+                <p className="text-slate-600 md:text-lg  text-Para-sm ">
                   At NAS Infotech, we are dedicated to pioneering innovative
                   solutions that transform Healtcare and empower the next
                   generation.

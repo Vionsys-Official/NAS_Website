@@ -7,8 +7,8 @@ const WhyChooseUs = () => {
   return (
     <div className="flex items-center justify-center my-10">
       <div className="flex flex-col gap-4 text-center overflow-x-hidden w-[80%]">
-        <h6 className="md:text-HMain text-HMain-sm font-bold text-blue2">
-          Why choose us ???
+        <h6 className="md:text-Heading text-Heading-sm font-extrabold text-blue2">
+          Why Choose Us ???
         </h6>
 
         <div className="flex flex-col grid-cols-9 p-2 mx-auto md:grid">

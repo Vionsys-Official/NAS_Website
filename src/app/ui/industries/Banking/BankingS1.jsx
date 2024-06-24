@@ -10,7 +10,7 @@ function BankingS1() {
   return (
     <div className="px-4 py-8 mx-auto max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10 ">
       <div className="max-w-xl md:mx-auto sm:text-center lg:max-w-2xl sm:h-[20vh]">
-        <h2 className="max-w-lg mb-6 md:text-MainHeading sm:text-MainHeading-sm font-bold leading-none tracking-tight text-blue2 md:mx-auto">
+        <h2 className="max-w-lg mb-6 md:text-Heading sm:text-Heading-sm font-extrabold leading-none tracking-tight text-blue2 md:mx-auto">
           <span className="relative inline-block">
             <svg
               viewBox="0 0 52 24"

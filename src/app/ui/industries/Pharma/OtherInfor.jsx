@@ -16,7 +16,7 @@ const OtherInfor = () => {
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{ once: true, amount: 0.8 }}
-                    className="max-w-6xl mx-auto text-center md:text-Heading text-Heading-sm font-bold tracking-tight text-blue2 text-2xl sm:leading-none">Integrated Solutions for Technological Innovation, Regulatory Compliance and Customization in Pharmaceuticals.
+                    className="max-w-6xl mx-auto text-center md:text-Heading text-Heading-sm font-extrabold tracking-tight text-blue2 sm:leading-none">Integrated Solutions for Technological Innovation, Regulatory Compliance and Customization in Pharmaceuticals.
                 </motion.h2>
             </div>
             <motion.div

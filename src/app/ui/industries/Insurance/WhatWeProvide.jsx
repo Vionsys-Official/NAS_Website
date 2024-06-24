@@ -35,7 +35,7 @@ const WhatWeProvide = () => {
                 height="24"
               />
             </svg>
-            <span className="relative md:text-Heading text-Heading-sm text-blue2 ">
+            <span className="relative md:text-Heading text-Heading-sm text-blue2 font-extrabold">
               What We Provide
             </span>
           </span>{" "}

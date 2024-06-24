@@ -53,7 +53,7 @@ const Services = () => {
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{ once: true, amount: 0.8 }}
-                    className="md:text-Heading text-Heading-sm font-bold text-center text-blue2">Our Services</motion.h2>
+                    className="md:text-Heading text-Heading-sm font-extrabold text-center text-blue2">Our Services</motion.h2>
 
                 <div className="grid gap-6 py-8 lg:grid-cols-3">
                     {service.map((item) => (

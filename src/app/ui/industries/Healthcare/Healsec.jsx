@@ -40,7 +40,7 @@ const Healsec = () => {
                   <RocketIcon className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="text-lg font-bold">Product Strategy</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
+                <p className="text-base text-gray-500 dark:text-gray-400">
                   We help you define your product vision and roadmap to drive
                   growth.
                 </p>
@@ -50,7 +50,7 @@ const Healsec = () => {
                   <InfoIcon className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="text-lg font-bold">Data Analytics</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
+                <p className="text-base text-gray-500 dark:text-gray-400">
                   Our data experts help you make informed decisions with
                   actionable insights.
                 </p>
@@ -60,7 +60,7 @@ const Healsec = () => {
                   <CloudIcon className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="text-lg font-bold">Cloud Solutions</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
+                <p className="text-base text-gray-500 dark:text-gray-400">
                   We architect and deploy scalable cloud infrastructure to power
                   your business.
                 </p>
@@ -70,7 +70,7 @@ const Healsec = () => {
                   <MegaphoneIcon className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="text-lg font-bold">Digital Marketing</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
+                <p className="text-base text-gray-500 dark:text-gray-400">
                   Our marketing experts help you reach and engage your target
                   audience.
                 </p>
