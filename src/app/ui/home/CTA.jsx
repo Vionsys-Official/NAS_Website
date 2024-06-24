@@ -6,7 +6,7 @@ import Button from "@/components/ui/Button";
 const CTA = () => {
   return (
     <div>
-      <section className="w-full md:py-24 lg:py-10">
+      <section className="w-full md:py-6 py-2 overflow-hidden">
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
           {/* Ḥead and Para */}
           <div className="space-y-3">
@@ -15,7 +15,7 @@ const CTA = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.5 }}
-              className="text-3xl font-bold tracking-tighter md:text-MainHeading text-blue-900"
+              className="font-extrabold text-start md:text-center capitalize md:text-MainHeading text-MainHeading-sm text-blue2"
             >
               Experience the innovation and efficiency firsthand. Contact us now
               to embark on your journey to excellence.
@@ -25,7 +25,7 @@ const CTA = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.5 }}
-              className="mx-auto max-w-[600px] text-Para"
+              className="mx-auto max-w-[600px] text-Para text-start md:text-center"
             >
               Empower your team to prioritize feature delivery over
               infrastructure management with our automated solutions. Streamline
