@@ -16,7 +16,14 @@ const sectionOne = () => {
         />
         <div className="w-full absolute backdrop-blur md:backdrop-blur-none flex justify-center md:justify-end pt-10 lg:px-20 xl:px-6 px-0">
             <motion.div
-             animate={{ y: [-100, 0] }}
+             initial={{ opacity: 0, y: -100 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             transition={{
+               delay: 0.2,
+               y: { type: "spring", stiffness: 30 },
+               opacity: { duration: 0.6 },
+               ease: "easeInOut",
+             }}
              className='w-full md:w-[50%] md:px-0 px-3'>
           <h2 className="mb-5 font-extrabold tracking-tight text-blue2 md:text-MainHeading text-MainHeading-sm sm:leading-none md:text-center">
           Digital Marketing Services

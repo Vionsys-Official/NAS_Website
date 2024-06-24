@@ -60,13 +60,13 @@ const Navbar = () => {
 
         <div className="hidden md:block">
           <Link href="/contact">
-            <button className="font-semibold relative z-10 border overflow-hidden border-green-500 group px-3 rounded-xl py-2">
-              <span className="relative z-10 hidden text-green-500 group-hover:text-white text-sm duration-500 md:flex md:items-center">
+            <button className="font-semibold relative z-10 border overflow-hidden border-green1 group px-3 rounded-xl py-2">
+              <span className="relative z-10 hidden text-green1 group-hover:text-white text-sm duration-500 md:flex md:items-center">
                 Contact us{" "}
-                <BiSolidPhoneCall className="ml-1 text-green-500 text-lg font-semibold group-hover:text-white" />
+                <BiSolidPhoneCall className="ml-1 text-green1 text-lg font-semibold group-hover:text-white" />
               </span>
-              <span className="absolute w-full h-full bg-green-500 -left-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:left-0 duration-500"></span>
-              <span className="absolute w-full h-full bg-green-500 -right-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:right-0 duration-500"></span>
+              <span className="absolute w-full h-full bg-green1 -left-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:left-0 duration-500"></span>
+              <span className="absolute w-full h-full bg-green1 -right-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:right-0 duration-500"></span>
             </button>
           </Link>
         </div>

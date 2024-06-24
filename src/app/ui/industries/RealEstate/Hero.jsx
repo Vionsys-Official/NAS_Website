@@ -4,7 +4,6 @@ import { fadein } from '@/components/ui/variants';
 import { motion } from 'framer-motion';
 import Button from '@/components/ui/Button';
 import Estate from '/public/assets/industries/RealEstate/Estate.jpg'
-import Link from 'next/link';
 import Image from 'next/image';
 
 const Hero = () => {

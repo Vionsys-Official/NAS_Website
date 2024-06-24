@@ -14,14 +14,14 @@ const page = () => {
       <HeroSectionMainpageI />
 
       {/* Cards Section */}
-      <section className="p-5 ">
+      <section className="md:p-5 p-1">
         <div className="max-w-[77rem] mx-auto">
           <h1 className="text-center font-semibold md:text-MainHeading text-MainHeading-sm text-gray-900  my-3 border-b-4 border-green1 relative">
             <p className="text-blue2 font-extrabold">Industries</p>
           </h1>
         </div>
 
-        <div className="mx-auto p-5 mt-10">
+        <div className="mx-auto md:p-5 p-1 mt-10">
           <div className="flex flex-wrap gap-10">
             {ourIndustries.map((industres, index) => (
               <Link
