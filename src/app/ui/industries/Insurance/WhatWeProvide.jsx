@@ -35,7 +35,7 @@ const WhatWeProvide = () => {
                 height="24"
               />
             </svg>
-            <span className="relative md:text-Heading text-HeroHeading-sm text-blue2 ">
+            <span className="relative md:text-Heading text-Heading-sm text-blue2 ">
               What We Provide
             </span>
           </span>{" "}
@@ -69,7 +69,7 @@ const WhatWeProvide = () => {
               />
             </svg>
           </div>
-          <h6 className="mb-2 md:text-CardHeading text-CardHeading-sm font-semibold leading-5">
+          <h6 className="mb-2 md:text-lg text-base font-semibold leading-5">
             Policy Management Systems
           </h6>
           <p className="md:text-Para text-Para-sm text-gray-800">
@@ -106,7 +106,7 @@ const WhatWeProvide = () => {
               />
             </svg>
           </div>
-          <h6 className="mb-2 md:text-CardHeading text-CardHeading-sm font-semibold leading-5">
+          <h6 className="mb-2 md:text-lg text-base font-semibold leading-5">
             Claims Processing Software
           </h6>
           <p className="md:text-Para text-Para-sm text-gray-800">
@@ -142,7 +142,7 @@ const WhatWeProvide = () => {
               />
             </svg>
           </div>
-          <h6 className="mb-2 md:text-CardHeading text-CardHeading-sm font-semibold leading-5">
+          <h6 className="mb-2 md:text-lg text-base font-semibold leading-5">
             Customer Relationship Management (CRM)
           </h6>
           <p className="md:text-Para text-Para-sm text-gray-800">
@@ -179,7 +179,7 @@ const WhatWeProvide = () => {
               />
             </svg>
           </div>
-          <h6 className="mb-2 md:text-CardHeading text-CardHeading-sm font-semibold leading-5">
+          <h6 className="mb-2 md:text-lg text-base font-semibold leading-5">
             Underwriting Solutions
           </h6>
           <p className="md:text-Para text-Para-sm text-gray-800">
@@ -215,7 +215,7 @@ const WhatWeProvide = () => {
               />
             </svg>
           </div>
-          <h6 className="mb-2 md:text-CardHeading text-CardHeading-sm font-semibold leading-5">
+          <h6 className="mb-2 md:text-lg text-base font-semibold leading-5">
             Compliance and Regulatory Reporting
           </h6>
           <p className="md:text-Para text-Para-sm text-gray-800">
@@ -251,7 +251,7 @@ const WhatWeProvide = () => {
               />
             </svg>
           </div>
-          <h6 className="mb-2 md:text-CardHeading text-CardHeading-sm font-semibold leading-5">
+          <h6 className="mb-2 md:text-lg text-base font-semibold leading-5">
             Data Analytics and Business Intelligence
           </h6>
           <p className="md:text-Para text-Para-sm text-gray-800">

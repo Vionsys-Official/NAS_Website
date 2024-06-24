@@ -61,12 +61,12 @@ const ChooseUs = () => {
             </svg>
           </div>
           <div className="max-w-xl md:mb-6">
-            <h2 className="max-w-lg md:mb-6 mb-1 md:text-Heading text-Heading-sm font-bold tracking-tight text-blue2 sm:text-4xl sm:leading-none">
+            <h2 className="max-w-lg md:mb-6 mb-1 md:text-Heading text-Heading-sm font-extrabold tracking-tight text-blue2 sm:text-4xl sm:leading-none">
               Choosing Us:
               <br className="hidden md:block" />
               What You Gain
             </h2>
-            <p className="text-base text-gray-700 md:text-lg">
+            <p className="text-base text-slate-600 md:text-lg">
               We understand the unique challenges of the real estate industry. Our team of experienced IT professionals is dedicated to providing solutions that are not only innovative but also practical and tailored to your specific needs. Partner with us to transform your real estate business and stay ahead in a competitive market.
             </p>
           </div>

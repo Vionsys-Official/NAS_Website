@@ -8,7 +8,7 @@ const sectionThree = () => {
   return (
     <section className="flex items-center justify-center">
       <div className=" pb-5 mx-auto md:w-[76%] w-full p-1 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-16 px-4 lg:px-8 ">
-        <h2 className="text-blue2 font-bold md:text-MainHeading text-MainHeading-sm pb-8">
+        <h2 className="text-blue2 font-extrabold md:text-Heading text-Heading-sm pb-8">
           Why Choose Us ?
         </h2>
         <div className="grid gap-8 row-gap-5 lg:grid-cols-3">

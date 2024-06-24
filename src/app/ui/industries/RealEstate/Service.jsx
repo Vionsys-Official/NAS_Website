@@ -88,7 +88,7 @@ const Service = () => {
                                 height="24"
                             />
                         </svg>
-                        <span className="relative md:text-Heading text-Heading-sm text-blue2">Services Provided</span>
+                        <span className="relative md:text-Heading text-Heading-sm font-extrabold text-blue2">Services Provided</span>
                     </span>
                 </h2>
                 <p className="text-Para-sm text-slate-600 font-semibold md:text-lg">

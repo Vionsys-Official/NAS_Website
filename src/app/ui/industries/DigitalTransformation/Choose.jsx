@@ -37,8 +37,8 @@ const Choose = () => {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: true, amount: 0.8 }}
-                className="px-4 mx-auto space-y-1 text-center mb-4">
-                <span className="text-xs font-semibold tracking-wider uppercase text-slate-600">NAS Infotech Pvt. Ltd.</span>
+                className="px-4 mx-auto pt-8 text-center mb-4">
+                
                 <h2 className="pb-3 text-blue2 text-Heading-sm font-bold md:text-Heading">Why Choose Us for Your Digital Transformation Journey?</h2>
             </motion.div>
             <div

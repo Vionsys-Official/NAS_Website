@@ -28,12 +28,10 @@ const Hero = () => {
                 viewport={{ once: true, amount: 0.8 }}
                 className="text-center relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
                 <div className="md:mb-16 py-4 lg:my-28 lg:max-w-lg lg:pr-5">
-                    <p className="inline-block md:mb-4 mb-2 text-xs font-semibold tracking-wider text-slate-600 uppercase rounded-full">Transforming Construction with Innovative IT Services
-                    </p>
-                    <h2 className="md:mb-5 mb-2 md:text-3xl font-bold tracking-tight text-blue2 text-2xl leading-8 md:leading-10">
+                    <h2 className="md:mb-5 mb-2 md:text-HMain text-HMain-sm font-bold tracking-tight text-blue2  leading-8 md:leading-10">
                         Empowering the Construction   {' '}
                         <br className="hidden md:block" />
-                        Industry with Cutting-Edge{' '}
+                        Industry With Cutting-Edge{' '}
                         <span className="inline-block text-blue2">
                             IT Solutions
                         </span>

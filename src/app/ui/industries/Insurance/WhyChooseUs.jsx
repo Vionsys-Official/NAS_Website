@@ -20,7 +20,7 @@ const WhyChooseUs = () => {
               viewport={{ once: true, amount: 0.8 }}
               className="my-2 md:my-0 relative p-4 text-gray-800 bg-blue7 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto"
             >
-              <h3 className="md:text-HSub text-HSub-sm font-semibold lg:text-xl">
+              <h3 className="md:text-CardHeading text-CardHeading-sm font-semibold lg:text-xl">
                 Industry Expertise
               </h3>
               <p className="mt-2 md:text-Para text-Para-sm leading-6">
@@ -50,7 +50,7 @@ const WhyChooseUs = () => {
               viewport={{ once: true, amount: 0.8 }}
               className="my-2 md:my-0 relative p-4 text-gray-800  bg-blue7 rounded-xl col-start-6 col-end-10 mr-auto"
             >
-              <h3 className="my-2 md:my-0 md:text-HSub text-HSub-sm font-semibold lg:text-xl">
+              <h3 className="my-2 md:my-0 md:text-CardHeading text-CardHeading-sm font-semibold lg:text-xl">
                 Innovative Technology
               </h3>
               <p className="mt-2 md:text-Para text-Para-sm leading-6">
@@ -68,7 +68,7 @@ const WhyChooseUs = () => {
               viewport={{ once: true, amount: 0.8 }}
               className="relative p-4 text-gray-800  bg-blue7 border-red-500 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto"
             >
-              <h3 className="md:text-HSub text-HSub-sm font-semibold lg:text-xl">
+              <h3 className="md:text-CardHeading text-CardHeading-sm font-semibold lg:text-xl">
                 Customer-Centric Approach
               </h3>
               <p className="mt-2 md:text-Para text-Para-sm leading-6">
@@ -98,7 +98,7 @@ const WhyChooseUs = () => {
               viewport={{ once: true, amount: 0.8 }}
               className="my-2 md:my-0 relative p-4 text-gray-800  bg-blue7 rounded-xl col-start-6 col-end-10 mr-auto"
             >
-              <h3 className="md:text-HSub text-HSub-sm font-semibold lg:text-xl">
+              <h3 className="md:text-CardHeading text-CardHeading-sm font-semibold lg:text-xl">
                 Exceptional Support
               </h3>
               <p className="mt-2 md:text-Para text-Para-sm leading-6">

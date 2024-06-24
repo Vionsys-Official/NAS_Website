@@ -17,9 +17,9 @@ const Sections = () => {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.5 }}
-                className="text-Heading-sm text-blue2 font-bold tracking-tighter md:text-Heading"
+                className="text-Heading-sm text-blue2 font-extrabold tracking-tighter md:text-Heading"
               >
-                How we can Help?
+                How We Can Help?
               </motion.h2>
               <motion.p
                 variants={fadein("left", 0.1)}
@@ -95,17 +95,12 @@ const Sections = () => {
         <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           {/* Heading */}
           <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-            <div>
-              <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-slate-600 uppercase rounded-full bg-teal-accent-400">
-                Just do it
-              </p>
-            </div>
             <motion.h2
               variants={fadein("right", 0.1)}
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.5 }}
-              className="max-w-lg mb-6 text-Heading-sm font-bold text-blue2 md:text-Heading md:mx-auto"
+              className="max-w-lg mb-6 text-Heading-sm font-extrabold text-blue2 md:text-Heading md:mx-auto"
             >
               <span className="relative inline-block">
                 <svg
@@ -360,9 +355,9 @@ const Sections = () => {
         <div className="bg-gray-200  md:w-[70%] flex flex-col  justify-between py-4 px-8">
           <div>
             <h2 className="font-bold text-blue2 text-Heading-sm py-2 md:text-Heading text-center">
-              Discover what we can do for you.
+              Discover What We Can Do For You.
             </h2>
-            <p className="py-3 text-Para-sm md:text-Para text-slate-600 text-center">
+            <p className="py-3 text-Para-sm md:text-Para font-semibold text-slate-600 text-center">
               Contact us today to discuss how we can help you to achieve your
               business goals.
             </p>
