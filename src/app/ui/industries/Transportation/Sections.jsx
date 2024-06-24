@@ -35,7 +35,16 @@ const Sections = () => {
               </motion.p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="rounded-lg bg-white p-6 shadow-lg dark:bg-gray-950">
+              <motion.div 
+              initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+              delay: 0.2,
+              scale: { type: "spring", stiffness: 30 },
+              opacity: { duration: 0.6 },
+              ease: "easeInOut"
+            }}
+            className="rounded-lg bg-white p-6 shadow-lg dark:bg-gray-950">
                 <div className="flex items-center justify-center mb-4">
                   <TruckIcon className="h-8 w-8 text-gray-500 dark:text-gray-400" />
                 </div>
@@ -45,9 +54,18 @@ const Sections = () => {
                   improve driver safety with advanced fleet management
                   technologies.
                 </p>
-              </div>
+              </motion.div>
 
-              <div className="rounded-lg bg-white p-6 shadow-lg dark:bg-gray-950">
+              <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+              delay: 0.2,
+              scale: { type: "zoomIn", stiffness: 30 },
+              opacity: { duration: 0.6 },
+              ease: "easeInOut"
+            }}
+             className="rounded-lg bg-white p-6 shadow-lg dark:bg-gray-950 ">
                 <div className="flex items-center justify-center mb-4">
                   <ShipIcon className="h-8 w-8 text-gray-500 dark:text-gray-400" />
                 </div>
@@ -58,9 +76,18 @@ const Sections = () => {
                   Streamline supply chain operations, reduce costs and improve
                   delivery times with advanced logistics optimization tools.
                 </p>
-              </div>
+              </motion.div>
 
-              <div className="rounded-lg bg-white p-6 shadow-lg dark:bg-gray-950">
+              <motion.div 
+              initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+              delay: 0.2,
+              scale: { type: "spring", stiffness: 30 },
+              opacity: { duration: 0.6 },
+              ease: "easeInOut"
+            }}
+            className="rounded-lg bg-white p-6 shadow-lg dark:bg-gray-950">
                 <div className="flex items-center justify-center mb-4">
                   <CarIcon className="h-8 w-8 text-gray-500 dark:text-gray-400" />
                 </div>
@@ -71,9 +98,18 @@ const Sections = () => {
                   Explore the latest advancements in autonomous vehicle
                   technology and its potential impact on the IT industry.
                 </p>
-              </div>
+              </motion.div>
 
-              <div className="rounded-lg bg-white p-6 shadow-lg dark:bg-gray-950">
+              <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+              delay: 0.2,
+              scale: { type: "spring", stiffness: 30 },
+              opacity: { duration: 0.6 },
+              ease: "easeInOut"
+            }}
+               className="rounded-lg bg-white p-6 shadow-lg dark:bg-gray-950">
                 <div className="flex items-center justify-center mb-4">
                   <MapIcon className="h-8 w-8 text-gray-500 dark:text-gray-400" />
                 </div>
@@ -84,7 +120,7 @@ const Sections = () => {
                   Leverage real-time data and AI-powered algorithms to optimize
                   transportation routes and improve delivery efficiency.
                 </p>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>

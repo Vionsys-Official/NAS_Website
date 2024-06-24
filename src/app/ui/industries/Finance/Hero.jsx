@@ -1,5 +1,7 @@
+"use client"
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import FinanceHero from "@/../public/assets/industries/Finance/FinanceHero.jpg";
 
 const Hero = () => {
@@ -14,25 +16,61 @@ const Hero = () => {
           quality={100}
           className="absolute inset-0 z-0 opacity-95"
         />
-        <h1 className="absolute inset-x-0 top-1/2 text-center text-white text-6xl font-bold tracking-wide z-10">
+        <motion.h1
+        initial={{ opacity: 0, scale: 0.7 }} //X:100
+                        whileInView={{ opacity: 1, scale: 1 }} //y:100
+                        transition={{
+                            delay: 0.2,
+                            scale: { type: "spring", stiffness: 30 },
+                            opacity: { duration: 0.6 },
+                            ease: "easeInOut",
+                        }}
+         className="absolute inset-x-0 top-1/2 text-center text-white text-6xl font-bold tracking-wide z-10">
           Finance
-        </h1>
+        </motion.h1>
       </div>
       <div id="mission2" className="relative flex flex-col md:flex-row justify-center lg:w-[60vw] md:w-[80vw] w-[90vw] md:-top-10 -top-0 mx-auto overflow-hidden bg-white divide-y md:divide-y-0 md:divide-x rounded shadow">
         <div className="flex-1 md:p-8 p-4 text-center border-b md:border-b-0 " >
-          <p className="font-bold tracking-wide text-blue2">
+          <motion.p
+          initial={{ opacity: 0, scale: 0.7 }} //X:100
+                        whileInView={{ opacity: 1, scale: 1 }} //y:100
+                        transition={{
+                            delay: 0.2,
+                            scale: { type: "spring", stiffness: 30 },
+                            opacity: { duration: 0.6 },
+                            ease: "easeInOut",
+                        }}
+          className="font-bold tracking-wide text-blue2">
             Strategic Partnerships
-          </p>
+          </motion.p>
         </div>
         <div className="flex-1 md:p-8 p-4 text-center border-b md:border-b-0 ">
-          <p className="font-bold tracking-wide text-slate-600">
+          <motion.p
+          initial={{ opacity: 0, scale: 0.7 }} //X:100
+                        whileInView={{ opacity: 1, scale: 1 }} //y:100
+                        transition={{
+                            delay: 0.2,
+                            scale: { type: "spring", stiffness: 30 },
+                            opacity: { duration: 0.6 },
+                            ease: "easeInOut",
+                        }}
+           className="font-bold tracking-wide text-slate-600">
             Financial Planning and Analysis
-          </p>
+          </motion.p>
         </div>
         <div className="flex-1 md:p-8 p-4 text-center">
-          <p className="font-bold tracking-wide text-slate-600">
+          <motion.p 
+          initial={{ opacity: 0, scale: 0.7 }} //X:100
+                        whileInView={{ opacity: 1, scale: 1 }} //y:100
+                        transition={{
+                            delay: 0.2,
+                            scale: { type: "spring", stiffness: 30 },
+                            opacity: { duration: 0.6 },
+                            ease: "easeInOut",
+                        }}
+          className="font-bold tracking-wide text-slate-600">
             Investment in Technology
-          </p>
+          </motion.p>
         </div>
       </div>
     </div>
