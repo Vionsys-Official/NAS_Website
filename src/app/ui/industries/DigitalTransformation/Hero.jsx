@@ -1,5 +1,7 @@
+"use client"
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import heal from "/public/assets/industries/DigitalTransformation/DigitalTrans.jpg";
 const Healfirst = () => {
   return (
@@ -11,7 +13,16 @@ const Healfirst = () => {
           src={heal}
           alt="healthcare img"
         />
-        <div className=" absolute inste-0 right-0 md:w-[50%] w-full flex flex-col gap-4 md:px-10 px-4">
+        <motion.div 
+        initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              delay: 0.2,
+              x: { type: "spring", stiffness: 30 },
+              opacity: { duration: 0.6 },
+              ease: "easeInOut"
+            }}
+        className=" absolute inste-0 right-0 md:w-[50%] w-full flex flex-col gap-4 md:px-10 px-4">
           <h1 className="text-black font-bold text-HMain-sm md:text-HMain">
           Welcome to Our IT
             <br /> <span className="text--white"> Digital Transformation Services </span>   
@@ -19,7 +30,7 @@ const Healfirst = () => {
           <p className="md:text-HSub text-HSub-sm font-semibold">
         We drive innovation and help businesses thrive digitally. Our IT transformation services empower organizations to harness technology, optimize operations and deliver exceptional customer value.
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

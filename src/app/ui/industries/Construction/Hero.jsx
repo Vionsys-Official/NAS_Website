@@ -22,10 +22,14 @@ const Hero = () => {
                 <Image src={Construction} alt='' className='h-full' />
             </div>
             <motion.div
-                variants={fadein("down", 0.2)}
-                initial="hidden"
-                whileInView={"show"}
-                viewport={{ once: true, amount: 0.8 }}
+                initial={{ opacity: 0, scale: 0.7 }} //X:100
+                        whileInView={{ opacity: 1, scale: 1 }} //y:100
+                        transition={{
+                            delay: 0.2,
+                            scale: { type: "spring", stiffness: 30 },
+                            opacity: { duration: 0.6 },
+                            ease: "easeInOut",
+                        }}
                 className="text-center relative flex flex-col justify-center w-full md:h-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 md:max-w-screen-xl">
                 <div className="md:mb-16 py-4 lg:my-28 lg:max-w-lg lg:pr-5">
                     <h2 className="md:mb-5 mb-2 md:text-HMain text-HMain-sm font-bold tracking-tight text-blue2  leading-8 md:leading-10">
