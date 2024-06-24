@@ -69,7 +69,7 @@ const Footer = () => {
 
         <div className="md:w-60 w-full">
           <h2 className="text-lg font-semibold mb-4">Contact Info</h2>
-          <p className="text-sm mb-4">Phone - +91 70586 06885</p>
+          <p className="text-sm mb-4">Phone: +91 70586 06885</p>
           <p className="text-sm mb-4">Email: hr@nasinfotech.com</p>
           <p className="text-sm">
             Office No: 505, 06th Floor, Stellar Spaces, Opposite Zensar Company,
