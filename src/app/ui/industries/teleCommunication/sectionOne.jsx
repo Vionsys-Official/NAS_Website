@@ -20,7 +20,7 @@ const sectionOne = () => {
               animate={{ y: [-100, 0] }}
               className="w-full border-l-8 border-blue4"
             >
-              <h2 className="w-full pl-2 md:px-6 mb-6 font-sans text-2xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
+              <h2 className="w-full pl-2 md:px-6 mb-6 text-2xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
                 Telecommunication Solutions by NAS Infotech Pvt Ltd
               </h2>
               <p className="w-full pl-2 md:px-6 mb-4 text-base text-gray-200 md:text-lg">

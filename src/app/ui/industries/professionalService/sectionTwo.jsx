@@ -20,22 +20,22 @@ const sectionTwo = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}
-            className='w-full md:w-fit p-4 text-blue2 shadow-xl'>
+            className='w-full md:w-fit p-4 text-blue2 font-extrabold shadow-xl'>
             Our Professional Services</motion.h2>
 
         </div>
 
-        <div className="flex flex-wrap items-center bg-rose-900 bg-opacity-20 backdrop-blur rounded-3xl mt-5 md:mt-10">
-          <div className="w-full md:w-3/5 lg:w-1/2 ">
-            <Image src={Sec1} alt="" className="inline-block rounded-3xl shadow-lg border border-merino-400" />
+        <div className="flex flex-wrap items-center bg-opacity-20 backdrop-blur rounded-3xl mt-5 md:mt-10">
+          <div className="w-full  md:w-3/5 lg:w-1/2 ">
+            <Image src={Sec1} alt=""  width={600} height={400} className="inline-block  rounded-3xl shadow-lg border border-merino-400" />
           </div>
           <div className="w-full p-4 md:w-2/5 lg:w-1/2 text-left">
 
             <h3
-              className="font-bold md:text-SubHeading text-SubHeading-sm">
+              className="font-bold text-blue2 md:text-Heading text-Heading-sm">
               IT Consulting and Strategy
             </h3>
-            <ul className="sm:text-lg mt-6 px-4 list-disc">
+            <ul className="md:text-lg text-Para-sm text-slate-600 font-semibold mt-6 px-4 list-disc">
               <motion.li
                 variants={fadein("right", 0.2)}
                 initial="hidden"
@@ -58,15 +58,15 @@ const sectionTwo = () => {
           </div>
         </div>
 
-        <div className="flex flex-wrap items-center bg-emerald-500 bg-opacity-20 backdrop-blur rounded-3xl mt-5 md:mt-10">
+        <div className="flex flex-wrap items-center bg-opacity-20 backdrop-blur rounded-3xl mt-5 md:mt-10">
           <div className="w-full md:w-3/5 lg:w-1/2 ">
-            <Image src={Sec2} alt="" className="inline-block shadow-lg rounded-3xl border border-merino-400" />
+            <Image src={Sec2} alt=""  width={600} height={400} className="inline-block shadow-lg rounded-3xl border border-merino-400" />
           </div>
           <div className="w-full p-4 md:w-2/5 lg:w-1/2 md:order-first text-left ">
-            <h3 className="font-bold md:text-SubHeading text-SubHeading-sm">
+            <h3 className="font-bold md:text-Heading text-Heading-sm text-blue2">
               Project Management
             </h3>
-            <ul className="sm:text-lg mt-6 px-4 list-disc">
+            <ul className="md:text-lg text-Para-sm text-slate-600 font-semibold mt-6 px-4 list-disc">
               <motion.li variants={fadein("right", 0.2)}
                 initial="hidden"
                 whileInView={"show"}
@@ -83,15 +83,15 @@ const sectionTwo = () => {
           </div>
         </div>
 
-        <div className="flex flex-wrap items-center bg-rose-900 bg-opacity-20 backdrop-blur rounded-3xl  mt-5 md:mt-10">
+        <div className="flex flex-wrap items-center  bg-opacity-20 backdrop-blur rounded-3xl  mt-5 md:mt-10">
           <div className="w-full md:w-3/5 lg:w-1/2 ">
-            <Image src={Sec3} alt="" className="inline-block rounded-3xl shadow-lg border border-merino-400" />
+            <Image src={Sec3} alt=""   width={600} height={400} className="inline-block rounded-3xl shadow-lg border border-merino-400" />
           </div>
           <div className="w-full p-4 md:w-2/5 lg:w-1/2 text-left">
-            <h3 className="font-bold md:text-SubHeading text-SubHeading-sm">
+            <h3 className="font-bold md:text-Heading text-Heading-sm  text-blue2">
               Business Process Optimization
             </h3>
-            <ul className="sm:text-lg mt-6 px-4 list-disc">
+            <ul className="md:text-lg text-Para-sm text-slate-600 font-semibold mt-6 px-4 list-disc">
               <motion.li variants={fadein("right", 0.2)}
                 initial="hidden"
                 whileInView={"show"}
@@ -108,15 +108,15 @@ const sectionTwo = () => {
           </div>
         </div>
 
-        <div className="flex flex-wrap items-center bg-emerald-500 bg-opacity-20 backdrop-blur rounded-3xl  mt-5 md:mt-10">
+        <div className="flex flex-wrap items-center bg-opacity-20 backdrop-blur rounded-3xl  mt-5 md:mt-10">
           <div className="w-full md:w-3/5 lg:w-1/2 ">
-            <Image src={Sec4} alt="" className="inline-block shadow-lg border rounded-3xl border-merino-400" />
+            <Image src={Sec4} alt="" width={600} height={400} className="inline-block w-[500] h-[300] shadow-lg border rounded-3xl border-merino-400" />
           </div>
           <div className="w-full p-4 md:w-2/5 lg:w-1/2 md:order-first text-left">
-            <h3 className="font-bold md:text-SubHeading text-SubHeading-sm">
+            <h3 className="font-bold text-blue2 md:text-Heading text-Heading-sm">
               Data Analytics and Business Intelligence
             </h3>
-            <ul className="sm:text-lg mt-6 px-4 list-disc">
+            <ul className="md:text-lg text-Para-sm text-slate-600 font-semibold mt-6 px-4 list-disc">
               <motion.li variants={fadein("right", 0.2)}
                 initial="hidden"
                 whileInView={"show"}
@@ -137,7 +137,7 @@ const sectionTwo = () => {
 
       <div className='pb-10'>
         <div className="flex justify-center p-5 items-center shadow-xl bg-gray-200 bg-opacity-10 backdrop-blur  pb-10">
-          <p className='w-[80%] md:text-xl text-lg text-slate-600 font-bold'>
+          <p className='w-[80%] md:text-xl text-lg text-slate-600 font-semibold'>
             At NAS Infotech Pvt Ltd, we are dedicated to providing top-tier professional services that empower your business to achieve its full potential. Contact us today to learn more about how our expertise can help you navigate complex challenges, drive innovation and achieve sustainable growth. Let us be your trusted partner in success.
           </p>
         </div>

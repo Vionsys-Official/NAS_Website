@@ -23,12 +23,6 @@ const sectioonTwo = () => {
               Our Services
             </p>
           </div>
-          {/* <h2 className="max-w-2xl mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-blue2 sm:text-4xl md:mx-auto">
-
-            <span className="relative">Revolutionizing </span>
-
-            Communication with Cutting-Edge Technology
-          </h2> */}
           <p className="text-Para-sm text-slate-600 md:text-lg font-semibold">
             Our expertise in IT solutions is tailored to elevate your business operations ensuring seamless communication, enhanced customer experiences and robust network management. Discover how we can transform your telecommunication services and help you stay ahead in a rapidly evolving industry.
           </p>

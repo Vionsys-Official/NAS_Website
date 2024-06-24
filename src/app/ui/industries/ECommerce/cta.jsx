@@ -2,6 +2,7 @@
 import { fadein } from "@/components/ui/variants";
 import { motion } from 'framer-motion';
 import React from 'react'
+import Button from '@/components/ui/Button';
 import Link from 'next/link';
 
 const cta = () => {
@@ -14,7 +15,7 @@ const cta = () => {
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}  
             className=' flex flex-col items-center justify-center'>
-            <h2 className="text-blue-900 mb-6 text-MainHeading-sm md:text-MainHeading leading-none tracking-tight cursor-pointer font-semibold">
+            <h2 className="text-blue2 mb-6 text-Heading-sm md:text-Heading leading-none tracking-tight  font-extrabold">
             <span className="relative inline-block">
                 <svg
                 viewBox="0 0 52 24"
@@ -40,15 +41,15 @@ const cta = () => {
                 </svg>
                 <span className="relative">Are</span>
             </span>{' '}
-            you ready to advance your 
+            You Ready to Advance Your 
             </h2>
-            <h2 className="text-blue-900 mb-6 font-sans text-MainHeading-sm md:text-MainHeading leading-none tracking-tight cursor-pointer font-semibold">E-commerce business to new heights?</h2>
-            <p className='text-blue-950 text-Para-sm md:text-Para cursor-pointer'>Reach out to us today to find out how our software solutions</p>
-            <p className='text-blue-950 text-Para-sm md:text-Para cursor-pointer'>can enhance the growth of your online store.</p>
-            <Link href="#" className='mt-4'>
-            <button className='cursor-pointer block w-full relative p-1 text-white  rounded-md bg-indigo-500  isolation-auto z-10 border-2 border-blue-300
-        before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-indigo-600 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700'>Contact Us</button>
-            </Link>
+            <h2 className="text-blue2 mb-6 text-Heading-sm md:text-Heading leading-none tracking-tight font-semibold">E-commerce business to new heights?</h2>
+            <p className='text-slate-600 text-Para-sm md:text-lg font-semibold '>Reach out to us today to find out how our software solutions</p>
+            <p className='text-slate-600 text-Para-sm md:text-lg font-semibold '>can enhance the growth of your online store.</p>
+            <div className="flex items-center flex-col justify-center p-2">
+                        <Button />
+            </div>
+           
         </motion.div>
     </div>
     </div>

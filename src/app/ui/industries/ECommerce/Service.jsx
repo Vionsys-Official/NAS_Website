@@ -73,7 +73,7 @@ const Service = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }} 
-            className="text-blue-900 mb-6 text-MainHeading-sm md:text-MainHeading leading-none tracking-tight cursor-pointer font-semibold">
+            className="text-blue2 mb-6 text-Heading-sm md:text-Heading leading-none tracking-tight  font-extrabold">
             <span className="relative inline-block">
                 <svg
                 viewBox="0 0 52 24"
@@ -99,14 +99,14 @@ const Service = () => {
                 </svg>
                 <span className="relative">Here's</span>
             </span>{' '}
-            how we can help
+            How We Can Help
             </motion.h1>
             <motion.h2
             variants={fadein("left", 0.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}  
-            className='text-blue-950 text-CardHeading-sm md:text-CardHeading cursor-pointer'>
+            className='text-slate-600 text-Para-sm md:text-lg font-semibold '>
                 Welcome to our e-commerce hub, where technology meets success. Our software solutions are designed to make running an online business simpler, smoother and more profitable. 
             </motion.h2>
         </div>
@@ -119,13 +119,13 @@ const Service = () => {
                         variants={fadein("down2", 0.2)}
                         initial="hidden"
                         whileInView={"show"}
-                        viewport={{ once: true, amount: 0.8 }} key={feat.id} className='flex flex-col p-4 group cursor-pointer'>
+                        viewport={{ once: true, amount: 0.8 }} key={feat.id} className='flex flex-col p-4 group '>
                             <div className='w-full h-[10rem] overflow-hidden'>
                                 <Image className='object-cover w-full h-full rounded-xl group-hover:scale-105 ease-linear' src={feat.image} alt=''></Image>
                             </div>
                             {/* <div className='flex items-start justify-center text-CardHeading-sm md:text-CardHeading pt-1'><HiLightningBolt/></div> */}
                             <div className='flex flex-col mt-2'>
-                                <h2 className='text-blue-950 text-CardHeading-sm md:text-CardHeading font-bold'>{feat.title}</h2>
+                                <h2 className='text-slate-600 text-CardHeading-sm md:text-CardHeading font-bold'>{feat.title}</h2>
                                 <p className='text-Para-sm md:text-Para'>{feat.desc}</p>
                             </div>
                         </motion.div>
