@@ -1,5 +1,4 @@
 "use client";
-import { fadein } from "@/components/ui/variants";
 import { motion } from "framer-motion";
 import React from "react";
 import Button from "@/components/ui/Button";
