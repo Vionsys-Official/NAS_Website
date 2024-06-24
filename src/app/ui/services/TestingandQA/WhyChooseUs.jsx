@@ -20,7 +20,7 @@ const WhyChooseUs = () => {
           viewport={{ once: true, amount: 0.8 }}
           className="max-w-lg mb-5 tracking-tight text-blue2  md:text-Heading font-extrabold text-Heading-sm sm:leading-none md:mb-6 group"
         >
-          <span className="inline-block mb-1 sm:mb-4 text-center">
+          <span className="inline-block mb-1 sm:mb-4 text-center capitalize">
             Why Choose Us for Quality Assurance?
           </span>
           <div className="h-1 ml-auto duration-300 origin-left transform bg-deep-purple-accent-400 scale-x-30 group-hover:scale-x-100" />

@@ -14,7 +14,7 @@ const Experts = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, amount: 0.8 }}
-          className="md:text-Heading text-Heading-sm font-bold text-gray-700 "
+          className="md:text-Heading text-Heading-sm font-extrabold text-blue2 "
         >
           Our Expertise
         </motion.h1>

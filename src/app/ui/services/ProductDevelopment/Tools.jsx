@@ -11,7 +11,7 @@ const Tools = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, amount: 0.8 }}
-          className="max-w-lg  font-sans md:text-Heading text-Heading-sm font-bold leading-none tracking-tight text-blue950  md:mx-auto"
+          className="max-w-lg md:text-Heading text-Heading-sm font-extrabold leading-none tracking-tight text-blue2  md:mx-auto"
         >
           Product Development Tools
         </motion.h2>

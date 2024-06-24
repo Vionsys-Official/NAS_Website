@@ -60,7 +60,7 @@ const ChooseUs = () => {
         viewport={{ once: true, amount: 0.8 }}
         className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12"
       >
-        <h2 className="max-w-lg mb-6 md:text-Heading text-Heading-sm font-extrabold leading-none tracking-tight text-blue2 md:mx-auto">
+        <h2 className="max-w-lg mb-6 md:text-Heading text-Heading-sm font-extrabold leading-none tracking-tight text-blue2 md:mx-auto capitalize">
           <span className="relative inline-block">
             <svg
               viewBox="0 0 52 24"

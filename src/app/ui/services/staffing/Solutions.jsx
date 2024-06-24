@@ -15,7 +15,7 @@ const Solutions = () => {
             variants={fadein("up", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: true, amount: 0.8 }} className="mb-6 md:text-Heading text-Heading-sm font-bold leading-none text-center text-blue950">Our IT Staffing Solutions</motion.h2>
+            viewport={{ once: true, amount: 0.8 }} className="mb-6 md:text-Heading text-Heading-sm font-extrabold leading-none text-center text-blue2">Our IT Staffing Solutions</motion.h2>
             <div className="mx-auto space-y-6">
                 <motion.div
                     variants={fadein("up", 0.2)}
@@ -41,7 +41,7 @@ const Solutions = () => {
                     <div className="flex flex-col justify-center flex-1 md:p-6 p-2 bg-slate-100">
                         <h3 className="md:text-SubHeading text-SubHeading-sm font-bold hover:text-blue2">Contract-to-Hire Staffing</h3>
                         <ul>
-                            <li className="md:my-6 my-2 md:text-Para text-Para-sm text-gray-800">Evaluate Before Committing: This model allows businesses to evaluate a candidate's performance and cultural fit before making a permanent hiring decision.</li>
+                            <li className="md:my-6 my-2 md:text-Para text-Para-sm text-gray-800">Evaluate Before Committing: This model allows businesses to evaluate a candidate&apos;s performance and cultural fit before making a permanent hiring decision.</li>
                             <li className="md:my-6 my-2 md:text-Para text-Para-sm text-gray-800">Seamless Transition: Facilitates a smooth transition from contract to full-time employment if the candidate meets your expectations.</li>
                         </ul>
                     </div>
@@ -57,7 +57,7 @@ const Solutions = () => {
                         <h3 className="md:text-SubHeading text-SubHeading-sm font-bold hover:text-blue2">Direct Hire Staffing</h3>
                         <ul>
                             <li className="md:my-6 my-2 md:text-Para text-Para-sm text-gray-800">Permanent Placement: For organizations seeking to fill full-time positions, direct hire services ensure you get top-tier talent tailored to your long-term business objectives.</li>
-                            <li className="md:my-6 my-2 md:text-Para text-Para-sm text-gray-800">Comprehensive Vetting: Rigorous screening and vetting processes to ensure candidates are well-qualified and align with your company's culture and values.</li>
+                            <li className="md:my-6 my-2 md:text-Para text-Para-sm text-gray-800">Comprehensive Vetting: Rigorous screening and vetting processes to ensure candidates are well-qualified and align with your company&apos;s culture and values.</li>
                         </ul>
                     </div>
                 </motion.div>

@@ -56,13 +56,8 @@ const CrmWork = () => {
         variants={fadein("up", 0.2)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: true, amount: 0.8 }} className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-        <div>
-          <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-blue2 uppercase rounded-full bg-teal-accent-400">
-            NAS Infotech Pvt. Ltd.
-          </p>
-        </div>
-        <h2 className="max-w-lg md:mb-6 mb-3 md:text-Heading text-Heading-sm font-bold leading-none tracking-tight text-blue950 md:mx-auto">
+        viewport={{ once: true, amount: 0.8 }} className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 pt-5">
+        <h2 className="max-w-lg md:mb-6 mb-3 md:text-Heading text-Heading-sm font-extrabold leading-none tracking-tight text-blue2 md:mx-auto">
           <span className="relative inline-block">
             <svg
               viewBox="0 0 52 24"
@@ -90,7 +85,7 @@ const CrmWork = () => {
           </span>{' '}
           Our CRM Solutions Work
         </h2>
-        <p className="md:text-Para text-Para-sm text-gray-800 md:text-lg">
+        <p className="text-lg text-slate-600 font-semibold md:text-lg">
           Implementing a CRM system with us is a straightforward and seamless process designed to optimize your customer relationship management and drive business growth. Here’s how it works:
         </p>
       </motion.div>

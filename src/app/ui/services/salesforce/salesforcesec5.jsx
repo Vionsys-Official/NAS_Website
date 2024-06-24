@@ -17,7 +17,7 @@ const salesforcesec5 = () => {
           whileInView={"show"}
           viewport={{ once: true, amount: 0.8 }}
         >
-          <h2 className="md:mt-2 font-header text-Heading font-extrabold tracking-tight text-blue2 text-center dark:text-white">
+          <h2 className="md:mt-2 font-header text-Heading font-extrabold tracking-tight text-blue2 text-center dark:text-white capitalize">
             Frequently asked questions ?
           </h2>
         </motion.div>

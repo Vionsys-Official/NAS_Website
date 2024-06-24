@@ -18,7 +18,7 @@ const Hero = () => {
             opacity: { duration: 0.6 },
             ease: "easeInOut",
           }} className="absolute inset-y-0 right-0 md:w-1/2 w-full flex flex-col justify-center items-center">
-          <h1 className='text-white md:text-Heading text-Heading-sm font-bold mb-6 text-center'>Welcome to NAS Cloud Computing Services</h1>
+          <h1 className='text-white md:text-Heading text-Heading-sm font-bold mb-6 text-center capitalize'>Welcome to NAS Cloud Computing Services</h1>
           <h3 className='text-white md:text-SubHeading text-SubHeading-sm font-semibold mb-6 text-center'>Empowering Your Business with Cutting-Edge Cloud Computing</h3>
           <p className='text-white md:text-Para text-Para-sm md:text-justify text-center md:p-1 md:px-5 p-2'>we offer state-of-the-art cloud computing solutions designed to elevate your business. Our secure, scalable and reliable services help you innovate, reduce costs and improve efficiency. From startups to enterprises, we tailor our offerings to meet your unique needs. Discover the future of computing with NAS.</p>
         </motion.div>

@@ -17,7 +17,7 @@ const WhyUs = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.8 }}
-              className="w-full md:text-Heading text-Heading-sm font-bold text-blue2"
+              className="w-full md:text-Heading text-Heading-sm font-extrabold text-blue2"
             >
               Why Us?
             </motion.div>

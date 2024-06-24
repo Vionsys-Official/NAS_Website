@@ -118,7 +118,7 @@ const aiMLSec4 = () => {
           viewport={{ once: true, amount: 0.8 }}
           className="text-center"
         >
-          <h2 className="font-extrabold text-Heading-sm leading-[1.1] md:text-Heading px-2 tracking-tight text-blue2 mb-2">
+          <h2 className="font-extrabold text-Heading-sm leading-[1.1] md:text-Heading px-2 tracking-tight text-blue2 mb-2 capitalize">
             Industry-Wise AI and ML Use Cases
           </h2>
           <p className="text-SubHeading-sm md:text-center px-3 text-justify leading-6 text-slate-600 font-semibold">

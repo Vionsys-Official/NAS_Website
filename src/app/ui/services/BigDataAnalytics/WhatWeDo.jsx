@@ -13,14 +13,14 @@ const WhatWeDo = () => {
       whileInView={"show"}
       viewport={{ once: true, amount: 0.8 }}>
         <div className="flex flex-col w-full text-center justify-center py-4">
-          <h1 className="md:text-Heading text-Heading-sm text-blue950  font-bold ">
+          <h1 className="md:text-Heading text-Heading-sm text-blue2 font-extrabold ">
             What Do We Do?
           </h1>
         </div>
         <div className=" flex text-center justify-center ">
           <div className="flex flex-col gap-4 text-center justify-center md:w-2/3 w-full md:px-0 px-2">
-            <p className="md:text-SubHeading text-SubHeading-sm font-semibold   ">
-              In today’s digital world, data is rapidly growing. Big Data
+            <p className="text-lg text-slate-600 font-bold">
+              In today&apos;s digital world, data is rapidly growing. Big Data
               Analytics is changing business practices and technology, which in
               turn impacts the way companies do business.
             </p>
@@ -43,7 +43,7 @@ const WhatWeDo = () => {
           <div className="md:w-1/3 w-full">
             <h1
               className="md:text-SubHeading text-SubHeading-sm
-             font-semibold md:text-start text-center  pt-4"
+             font-semibold md:text-start text-center text-slate-700 pt-4"
             >
               When collaborating with companies, we utilize best practices to
               effectively organize and consolidate scattered data:

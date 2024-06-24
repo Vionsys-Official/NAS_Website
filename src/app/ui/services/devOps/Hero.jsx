@@ -32,7 +32,7 @@ const Hero = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, amount: 0.8 }} className="w-full max-w-xl md:mb-12 mb-6 xl:mb-0 xl:pr-16 xl:w-7/12">
-              <h2 className="max-w-lg mb-6 md:text-HMain text-HMain-sm font-bold tracking-tight text-white sm:leading-none">
+              <h2 className="max-w-lg mb-6 md:text-HMain text-HMain-sm font-bold tracking-tight text-white sm:leading-none capitalize">
               Welcome to NAS DevOps Services: <br className="hidden md:block" />
               
               </h2>

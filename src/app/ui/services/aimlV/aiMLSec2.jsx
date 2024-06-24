@@ -80,7 +80,7 @@ const aiMlSec2 = () => {
             <div className="flex flex-col justify-center items-center rounded-md p-1">
               <div className='text-Heading p-2 rounded-full bg-gray-200 text-green1'><feat.icon /></div>
               <div className="md:space-y-2 flex flex-col items-center justify-center w-[16rem] sm:w-full">
-                <h3 className="text-xl md:text-2xl text-blue5 font-semibold">{feat.title}</h3>
+                <h3 className="text-xl md:text-2xl text-slate-800 font-semibold">{feat.title}</h3>
                 <p className="text-sm md:text-md text-center p-2 text-muted-foreground">
                   {feat.description}
                 </p>

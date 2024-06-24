@@ -18,7 +18,7 @@ const ChooseUs = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, amount: 0.8 }} className="max-w-xl md:pr-10 mx-auto md:mb-10 mb-5 md:w-1/4">
-        <h5 className="md:text-Heading text-Heading-sm font-bold text-center text-blue950">
+        <h5 className="md:text-Heading text-Heading-sm font-extrabold text-center text-blue2">
           Why Choose NAS?
         </h5> 
       </motion.div>

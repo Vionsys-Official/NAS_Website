@@ -20,7 +20,7 @@ const Services = () => {
           viewport={{ once: true, amount: 0.8 }}
           className="w-full flex items-center justify-center"
         >
-          <h1 className="md:text-Heading text-Heading-sm font-bold text-blue-900 cursor-pointer">
+          <h1 className="md:text-Heading text-Heading-sm font-extrabold text-blue2">
             Our Services
           </h1>
         </motion.div>
@@ -30,7 +30,7 @@ const Services = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}
-            className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm cursor-pointer hover:bg-slate-100"
+            className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm hover:bg-slate-100"
           >
             <Image
               src={HelpDeskSupport}
@@ -38,7 +38,7 @@ const Services = () => {
               className="object-cover w-full h-64"
             />
             <div className="p-5 border border-t-0">
-              <p className="text-blue-950 mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
+              <p className="text-blackmb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
                 24/7 Help Desk Support
               </p>
               <p className="mb-2 md:text-Para text-Para-sm text-gray-800">
@@ -54,7 +54,7 @@ const Services = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}
-            className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm cursor-pointer hover:bg-slate-100"
+            className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm hover:bg-slate-100"
           >
             <Image
               src={networkManagement}
@@ -63,7 +63,7 @@ const Services = () => {
             />
 
             <div className="p-5 border border-t-0">
-              <p className="text-blue-950 mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
+              <p className="text-blackmb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
                 Network Management
               </p>
               <p className="mb-2 md:text-Para text-Para-sm text-gray-800">
@@ -79,7 +79,7 @@ const Services = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}
-            className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm cursor-pointer hover:bg-slate-100"
+            className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm hover:bg-slate-100"
           >
             <Image
               src={ITConsulting}
@@ -87,7 +87,7 @@ const Services = () => {
               className="object-cover w-full h-64"
             />
             <div className="p-5 border border-t-0">
-              <p className="text-blue-950 mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide">
+              <p className="text-blackmb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide">
                 IT Consulting
               </p>
               <p className="mb-2  md:text-Para text-Para-sm text-gray-800">
@@ -105,7 +105,7 @@ const Services = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}
-            className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm cursor-pointer hover:bg-slate-100"
+            className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm hover:bg-slate-100"
           >            <Image
               src={RemoteWorkSolutions}
               alt=""
@@ -113,7 +113,7 @@ const Services = () => {
             />
 
             <div className="p-5 border border-t-0">
-              <p className="text-blue-950 mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
+              <p className="text-blackmb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
                 Remote Workforce Solutions
               </p>
               <p className="mb-2 md:text-Para text-Para-sm text-gray-800">
@@ -130,7 +130,7 @@ const Services = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}
-            className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm cursor-pointer hover:bg-slate-100"
+            className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm hover:bg-slate-100"
           >
             <Image
               src={SoftwareSupport}
@@ -138,7 +138,7 @@ const Services = () => {
               alt=""
             />
             <div className="p-5 border border-t-0">
-              <p className="text-blue-950 mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide">
+              <p className="text-blackmb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide">
                 {" "}
                 Software Support and Maintenance
               </p>
@@ -155,7 +155,7 @@ const Services = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}
-            className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm cursor-pointer hover:bg-slate-100"
+            className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm hover:bg-slate-100"
           >            
           <Image
               src={ComplianceSupport}
@@ -163,7 +163,7 @@ const Services = () => {
               className="object-cover w-full h-64"
             />
             <div className="p-5 border border-t-0">
-              <p className="text-blue-950 mb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
+              <p className="text-blackmb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
                 Compliance and Regulatory Support
               </p>
               <p className="mb-2 md:text-Para text-Para-sm text-gray-800">

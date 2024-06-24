@@ -9,8 +9,8 @@ import Image from "next/image";
 const salesforcesec1 = () => {
   return (
     <section className="relative h-full w-full md:pt-14 pt-10 px-2">
-      <div className="md:h-[91vh]">
-        <div className="absolute inset-0">
+      <div className="md:h-[91vh] bg-black">
+        <div className="absolute inset-0 opacity-45">
           <Image
             src={slAewave}
             alt="Background"
@@ -28,15 +28,15 @@ const salesforcesec1 = () => {
           <div className="inset-0 flex">
             <div className="py-3 mx-auto text-center mt-10 text-black rounded-md max-w-2xl">
               <h1 className="text-HMain-sm md:text-HMain font-extrabold">
-                <span className="block text-white">
+                <span className="block text-white capitalize">
                   Elevate Your Business with Our Salesforce Services
                 </span>
               </h1>
-              <p className="mt-3 text-CardHeading-sm md:text-CardHeading text-slate-900 font-semibold md:mt-5">
+              <p className="mt-3 text-CardHeading-sm md:text-CardHeading text-white font-semibold md:mt-5">
                 Empower your business with our tailored Salesforce services.
                 Streamline operations, boost customer relationships and drive
                 growth in today&apos;s dynamic digital landscape.
-                <span className="block text-gray-800 mt-5 font-semibold">
+                <span className="block text-white mt-5 font-semibold">
                   Let us be your trusted partner in harnessing the full
                   potential of Salesforce.
                 </span>

@@ -14,7 +14,7 @@ const GetStart2 = () => {
         viewport={{ once: true, amount: 0.8 }}
         className="max-w-xl md:mx-auto text-center lg:max-w-3xl md:py-8 p-3"
       >
-        <h1 className="md:text-Heading text-Heading-sm font-bold tracking-tight text-blue2 sm:text-4xl sm:leading-none leading-10 text-center">
+        <h1 className="md:text-Heading text-Heading-sm font-extrabold tracking-tight text-blue2 sm:text-4xl sm:leading-none leading-10 text-center">
           Begin Your Transformation Today!
         </h1>
         <p className="text-slate-600 font-semibold text-lg py-4 text-center py-4">
