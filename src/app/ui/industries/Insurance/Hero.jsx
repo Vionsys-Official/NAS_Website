@@ -37,14 +37,14 @@ const Hero = () => {
             viewport={{ once: true, amount: 0.8 }}
             className="md:text-Heading text-Heading-sm md:w-[50%] w-full text-center font-bold text-blue2"
           >
-            Revolutionizing The Insurance Industry With Cutting-Edge Software
+            Revolutionizing the Insurance Industry With Cutting-Edge Software
             Solutions
           </motion.h1>
           <p className="md:w-[50%] w-[90%] text-center md:text-lg  text-Para-sm text-slate-600">
             Understanding the unique challenges and opportunities within the
             insurance industry is our specialty. Our suite of software solutions
             is designed to streamline operations, enhance customer experiences,
-            and drive innovation. Whether you're an insurer, broker or agent,
+            and drive innovation. Whether you&apos;re an insurer, broker or agent,
             our technology empowers you to stay ahead in a rapidly evolving
             market.
           </p>

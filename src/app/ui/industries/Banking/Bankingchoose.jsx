@@ -42,7 +42,17 @@ function Bankingchoose() {
       </div>
       <div className="grid max-w-screen-lg mx-auto space-y-6 lg:grid-cols-2 lg:space-y-0 lg:divide-x">
         <div className="space-y-6 sm:px-16">
-          <div className="flex flex-col max-w-md sm:flex-row">
+
+          <motion.div
+           initial={{ opacity: 0, x: -100 }}
+           whileInView={{ opacity: 1, x: 0 }}
+           transition={{
+             delay: 0.2,
+             x: { type: "spring", stiffness: 30 },
+             opacity: { duration: 0.6 },
+             ease: "easeInOut"
+           }}
+           className="flex flex-col max-w-md sm:flex-row">
             <div className="mb-4 mr-4">
               <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
                 <svg
@@ -60,11 +70,7 @@ function Bankingchoose() {
                 </svg>
               </div>
             </div>
-            <motion.div
-              variants={fadein("left", 0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: true, amount: 0.8 }}>
+            <div>
               <h6 className="mb-3 font-bold leading-5  md:text-lg text-base">
                 Expertise and Experience
               </h6>
@@ -72,9 +78,19 @@ function Bankingchoose() {
                 The company should have extensive experience in the financial and banking sectors understanding the unique challenges and requirements of these industries.
 
               </p>
-            </motion.div>
-          </div>
-          <div className="flex flex-col max-w-md sm:flex-row">
+            </div>
+          </motion.div>
+
+          <motion.div
+           initial={{ opacity: 0, x: -100 }}
+           whileInView={{ opacity: 1, x: 0 }}
+           transition={{
+             delay: 0.2,
+             x: { type: "spring", stiffness: 30 },
+             opacity: { duration: 0.6 },
+             ease: "easeInOut"
+           }}
+           className="flex flex-col max-w-md sm:flex-row">
             <div className="mb-4 mr-4">
               <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
                 <svg
@@ -92,21 +108,26 @@ function Bankingchoose() {
                 </svg>
               </div>
             </div>
-            <motion.div
-              variants={fadein("left", 0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: true, amount: 0.8 }}
-            >
+            <div >
               <h6 className="mb-3 font-bold leading-5 md:text-lg text-base">
                 Innovative Solutions
               </h6>
               <p className="md:text-Para text-Para-sm text-blue900">
                 The ability to leverage the latest technological advancements such as AI, blockchain and cloud computing to provide innovative and future-proof solutions.
               </p>
-            </motion.div>
-          </div>
-          <div className="flex flex-col max-w-md sm:flex-row">
+            </div>
+          </motion.div>
+
+          <motion.div
+           initial={{ opacity: 0, x: -100 }}
+           whileInView={{ opacity: 1, x: 0 }}
+           transition={{
+             delay: 0.2,
+             x: { type: "spring", stiffness: 30 },
+             opacity: { duration: 0.6 },
+             ease: "easeInOut"
+           }}
+           className="flex flex-col max-w-md sm:flex-row">
             <div className="mb-4 mr-4">
               <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
                 <svg
@@ -124,22 +145,28 @@ function Bankingchoose() {
                 </svg>
               </div>
             </div>
-            <motion.div
-              variants={fadein("left", 0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: true, amount: 0.8 }}>
+            <div>
               <h6 className="mb-3  font-bold leading-5 md:text-lg text-base">
                 Customer-Centric Focus
               </h6>
               <p className="md:text-Para text-Para-sm text-blue900">
                 Offering dedicated, responsive customer support to address issues and provide assistance promptly.
               </p>
-            </motion.div>
-          </div>
+            </div>
+          </motion.div>
         </div>
+
         <div className="space-y-6 sm:px-16">
-          <div className="flex flex-col max-w-md sm:flex-row">
+          <motion.div  
+           initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              delay: 0.2,
+              x: { type: "spring", stiffness: 30 },
+              opacity: { duration: 0.6 },
+              ease: "easeInOut"
+            }}
+          className="flex flex-col max-w-md sm:flex-row">
             <div className="mb-4 mr-4">
               <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
                 <svg
@@ -157,11 +184,7 @@ function Bankingchoose() {
                 </svg>
               </div>
             </div>
-            <motion.div
-              variants={fadein("left", 0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: true, amount: 0.8 }}>
+            <div>
               <h6 className="mb-3 font-bold leading-5 md:text-lg text-base">
                 Reliability and Trustworthiness
               </h6>
@@ -170,13 +193,18 @@ function Bankingchoose() {
                 Clear and honest communication regarding project timelines, costs and potential challenges.
 
               </p>
-            </motion.div>
-          </div>
+            </div>
+          </motion.div>
+
           <motion.div
-            variants={fadein("left", 0.2)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: true, amount: 0.8 }}
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              delay: 0.2,
+              x: { type: "spring", stiffness: 30 },
+              opacity: { duration: 0.6 },
+              ease: "easeInOut"
+            }}
             className="flex flex-col max-w-md sm:flex-row">
             <div className="mb-4 mr-4">
               <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
@@ -195,20 +223,26 @@ function Bankingchoose() {
                 </svg>
               </div>
             </div>
-            <motion.div
-              variants={fadein("left", 0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: true, amount: 0.8 }}>
+            <div>
               <h6 className="mb-3 font-bold leading-5 md:text-lg text-base">
                 Cost-Effective Solutions
               </h6>
               <p className=" text-blue900 md:text-Para text-Para-sm">
                 Delivering high-quality services and solutions that provide excellent value for your investment. Implementing efficient processes that reduce costs and enhance operational efficiency.
               </p>
-            </motion.div>
+            </div>
           </motion.div>
-          <div className="flex flex-col max-w-md sm:flex-row">
+
+          <motion.div 
+           initial={{ opacity: 0, x: -100 }}
+           whileInView={{ opacity: 1, x: 0 }}
+           transition={{
+             delay: 0.2,
+             x: { type: "spring", stiffness: 30 },
+             opacity: { duration: 0.6 },
+             ease: "easeInOut"
+           }}
+           className="flex flex-col max-w-md sm:flex-row">
             <div className="mb-4 mr-4">
               <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
                 <svg
@@ -226,19 +260,16 @@ function Bankingchoose() {
                 </svg>
               </div>
             </div>
-            <motion.div
-              variants={fadein("left", 0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: true, amount: 0.8 }}>
+            <div>
               <h6 className="mb-3 font-bold leading-5 md:text-lg text-base">
                 Commitment to Continuous Improvement
               </h6>
               <p className=" text-blue900 md:text-Para text-Para-sm">
                 Keeping up with technological advancements and industry trends to ensure that solutions remain relevant and effective.
               </p>
-            </motion.div>
-          </div>
+            </div>
+          </motion.div>
+
         </div>
       </div>
     </div>
