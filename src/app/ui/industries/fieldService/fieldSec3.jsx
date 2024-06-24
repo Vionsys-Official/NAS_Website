@@ -42,27 +42,27 @@ const industryData = {
 // Industry Paragraphs
 const industryParagraphs = {
     Telecommunications: (
-        <p className="text-lg leading-6 text-gray-500">
+        <p className="md:text-lg text-Para-sm  leading-6 text-slate-600 ">
             In the realm of service provision, the backbone rests upon skilled field technicians who undertake critical tasks such as network installations, upgrades and maintenance ensuring seamless connectivity and optimal performance.
         </p>
     ),
     Construction: (
-        <p className="text-lg leading-6 text-gray-500">
+        <p className="md:text-lg text-Para-sm  leading-6 text-slate-600">
             Construction companies leverage field service software to streamline project management, ensure equipment maintenance and conduct thorough on-site inspections optimizing efficiency and enhancing project outcomes.
         </p>
     ),
     Healthcare: (
-        <p className="text-lg leading-6 text-gray-500">
+        <p className="md:text-lg text-Para-sm  leading-6 text-slate-600">
             Field service software plays a pivotal role in the maintenance of medical equipment, coordination of home healthcare services and management of emergency response teams providing efficient scheduling and robust tracking capabilities.
         </p>
     ),
     Manufacturing: (
-        <p className="text-lg leading-6 text-gray-500">
+        <p className="md:text-lg text-Para-sm  leading-6 text-slate-600">
             In the manufacturing sector, field service is indispensable for the installation, maintenance and repair of equipment along with conducting rigorous quality inspections ensuring operational excellence and product reliability
         </p>
     ),
     Utilities: (
-        <p className="text-lg leading-6 text-gray-500">
+        <p className="md:text-lg text-Para-sm leading-6 text-slate-600">
             Electrical, water and gas services require field technicians for installation, maintenance and repair tasks.
         </p>
     ),
@@ -79,7 +79,7 @@ const fieldSec3 = () => {
     return (
         <section>
             {/* Section 4 */}
-            <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto md:py-8 py-10 px-4 sm:px-6 lg:px-8">
                 <motion.div
                     variants={fadein("up", 0.2)}
                     initial="hidden"
@@ -87,15 +87,15 @@ const fieldSec3 = () => {
                     viewport={{ once: false, amount: 0.8 }}
                     className="text-center"
                 >
-                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-tight text-gray-900">
-                        Industry-Wise <span className="text-blue-500 mx-1 font-extrabold text-4xl relative inline-block stroke-current">
+                    <h2 className="text-Heading-sm md:text-Heading font-extrabold tracking-tight text-blue2">
+                        Industry-Wise <span className="text-blue2 text-Heading-sm md:text-Heading mx-1 font-extrabold  relative inline-block stroke-current">
                             Field Service
                             <svg className="absolute -bottom-0.5 w-full max-h-1.5" viewBox="0 0 55 5" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
                                 <path d="M0.652466 4.00002C15.8925 2.66668 48.0351 0.400018 54.6853 2.00002" ></path>
                             </svg>
                         </span> Use Cases
                     </h2>
-                    <p className="pb-12 pt-5 text-base md:text-lg leading-6 text-gray-500">
+                    <p className="pb-12 pt-5 text-base md:text-lg font-semibold leading-6 text-slate-600">
                         We've segregated AI and ML use cases by industry to simplify your exploration. Explore the possibilities for
                         your industry and get a free 2-hour consultation to discuss tailored AI/ML development services that can
                         unlock even greater potential for your business.
@@ -103,20 +103,20 @@ const fieldSec3 = () => {
                 </motion.div>
 
                 <div className="text-Para flex items-center justify-center font-semibold text-gray-500 border-y border-gray-400">
-            <ul className="flex flex-col w-fit md:flex-row justify-center gap-4">
-                {Object.keys(industryData).map(industry => (
-                    <li key={industry}>
-                        <div
-                            className={`p-4 w-fit cursor-pointer border-b-2 border-transparent rounded-t-lg ${selectedIndustry === industry ? 'text-blue-700 border-blue-700' : ''}`}
-                            onClick={() => handleIndustryChange(industry)}
-                        >
-                            {industry}
-                        </div>
-                    </li>
-                ))}
-            </ul>
-        </div>
-                
+                    <ul className="flex flex-col w-fit md:flex-row justify-center gap-4">
+                        {Object.keys(industryData).map(industry => (
+                            <li key={industry}>
+                                <div
+                                    className={`p-4 w-fit  border-b-2 border-transparent rounded-t-lg ${selectedIndustry === industry ? 'text-blue-700 border-blue-700' : ''}`}
+                                    onClick={() => handleIndustryChange(industry)}
+                                >
+                                    {industry}
+                                </div>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+
 
                 <div className="mt-8">
                     {selectedIndustry && (

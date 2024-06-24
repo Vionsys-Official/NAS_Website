@@ -10,20 +10,20 @@ export const metadata = {
 function page() {
   return (
     <div className="overflow-x-hidden"
-    id='mission'>
+    >
       <section>
-        <Bankinghero/>
+        <Bankinghero />
       </section>
 
       <section2>
-        <BankingS1/>
+        <BankingS1 />
       </section2>
 
       <section3>
-        <Bankingchoose/>
+        <Bankingchoose />
       </section3>
 
-      
+
     </div>
   )
 }

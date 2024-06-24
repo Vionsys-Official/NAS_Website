@@ -14,7 +14,7 @@ const WhatWeDo = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, amount: 0.8 }}
-          className=" md:text-Heading text-Heading-sm text-blue950 font-extrabold text-center "
+          className=" md:text-Heading text-Heading-sm text-blue2 font-extrabold text-center capitalize"
         >
           This is 24/7 Cyber Security Operation Center for your problem solution
         </motion.p>
@@ -45,7 +45,7 @@ const WhatWeDo = () => {
                   <p className="text-gray-800 md:text-Para text-Para-sm">
                     Our company specializes in identifying threats by employing
                     advanced monitoring techniques and proactive security
-                    measures ensuring comprehensive protection for our clients'
+                    measures ensuring comprehensive protection for our clients
                     digital assets
                   </p>
                 </div>

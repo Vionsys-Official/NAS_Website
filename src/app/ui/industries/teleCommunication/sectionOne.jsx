@@ -17,14 +17,18 @@ const sectionOne = () => {
         <div className="px-1 md:px-10 py-16 h-full flex flex-col items-start justify-center">
           <div className="flex flex-col items-start">
             <motion.div
-              animate={{ y: [-100, 0] }}
-              className="w-full border-l-8 border-emerald-400"
+                initial={{ opacity: 0, y: -100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  delay: 0.2,
+                  y: { type: "spring", stiffness: 30 },
+                  opacity: { duration: 0.6 },
+                  ease: "easeInOut"
+                }}
+              className="w-full border-l-8 border-blue4"
             >
-              <h2 className="w-full pl-2 md:px-6 mb-6 font-sans text-2xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
-                Telecommunication Solutions by
-                <span className="text-green-500"> N</span>
-                <span className="text-stone-400">AS </span>
-                Infotech Pvt Ltd
+              <h2 className="w-full pl-2 md:px-6 mb-6 text-2xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
+                Telecommunication Solutions by NAS Infotech Pvt Ltd
               </h2>
               <p className="w-full pl-2 md:px-6 mb-4 text-base text-gray-200 md:text-lg">
                 In the fast-paced world of telecommunications, staying ahead of
@@ -38,7 +42,8 @@ const sectionOne = () => {
               </p>
               <Link
                 href={"#data"}
-                className="inline-flex pl-2 md:px-6 items-center font-semibold tracking-wider transition-colors duration-200 text-emerald-400 hover:text-emerald-700"
+                className="inline-flex pl-2 md:px-6 items-center font-semibold tracking-wider transition-colors duration-200 text-blue6 hover:text-blue4
+                "
               >
                 Know more
                 <svg

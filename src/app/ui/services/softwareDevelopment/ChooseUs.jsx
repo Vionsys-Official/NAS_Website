@@ -8,7 +8,7 @@ const ChooseUs = () => {
     {
       id: 1,
       title: "Expertise and Experience",
-      para: "Our seasoned developers and IT professionals bring extensive industry knowledge, having successfully delivered numerous software solutions across various sectors.",
+      para: "Our developers bring industry knowledge having successfully delivered software solutions across various sectors.",
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ const ChooseUs = () => {
     {
       id: 3,
       title: "Cutting-Edge Technologies",
-      para: "We leverage the latest technologies like AI, machine learning, blockchain and cloud computing to build innovative and efficient solutions.",
+      para: "We leverage the latest technologies like AI, machine learning and cloud computing to build innovative and efficient solutions.",
     },
     {
       id: 4,
@@ -60,7 +60,7 @@ const ChooseUs = () => {
         viewport={{ once: true, amount: 0.8 }}
         className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12"
       >
-        <h2 className="max-w-lg mb-6 md:text-Heading text-Heading-sm font-bold leading-none tracking-tight text-blue950 sm:text-4xl md:mx-auto">
+        <h2 className="max-w-lg mb-6 md:text-Heading text-Heading-sm font-extrabold leading-none tracking-tight text-blue2 md:mx-auto capitalize">
           <span className="relative inline-block">
             <svg
               viewBox="0 0 52 24"
@@ -88,7 +88,7 @@ const ChooseUs = () => {
           </span>{" "}
           Choose Us for Your Software Development Needs?
         </h2>
-        <p className="text-para-sm text-center md:text-para">
+        <p className="text-lg font-semibold text-slate-600">
           We understand that choosing the right partner for software development
           is crucial to your business success. Here are compelling reasons:
         </p>
@@ -106,30 +106,13 @@ const ChooseUs = () => {
               ease: "easeInOut",
             }}
             key={item.id}
-            className="flex flex-col items-center sm:flex-row"
+            className="flex flex-col shadow-lg items-center sm:flex-row border border-slate-500 rounded-lg px-2 py-1 transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
           >
-            <div className="sm:mr-4">
-              <div className="flex items-center justify-center w-10 h-10 md:mb-4 mb-2 rounded-full bg-indigo-50">
-                <svg
-                  className="w-8 h-8 text-blue950"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </div>
-            </div>
             <div>
               <h6 className="mb-2 md:text-lg text-base text-center font-semibold leading-5">
                 {item.title}
               </h6>
-              <p className="mb-3 text-center md:text-base text-sm text-gray-900">
+              <p className="mb-3 md:text-base text-sm text-gray-900 text-center">
                 {item.para}
               </p>
             </div>

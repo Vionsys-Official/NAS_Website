@@ -46,10 +46,10 @@ const features = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.8 }} className="max-w-xl md:pr-10 mx-auto mb-10 md:w-1/4 w-full">
-          <h5 className="md:mb-6 mb-2 md:text-Heading text-Heading-sm font-extrabold text-blue950">
+          <h5 className="md:mb-6 mb-2 md:text-Heading text-Heading-sm font-extrabold text-blue2 capitalize">
             Key Features of Our CRM Services
           </h5>
-          <p className="md:mb-6 mb-2 text-black md:text-CardHeading text-CardHeading-sm">
+          <p className="md:mb-6 mb-2 text-slate-600 font-semibold md:text-CardHeading text-CardHeading-sm">
             Our CRM services are expertly designed to enhance customer satisfaction, streamline operations and drive growth. With a comprehensive suite of tailored features, our platform meets diverse business needs across industries.
           </p>
         </motion.div>

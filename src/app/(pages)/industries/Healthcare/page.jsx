@@ -9,10 +9,10 @@ export const metadata = {
 
 const page = () => {
   return (
-      <div id='mission'>
-          <Healfirst />
-          <Healsec />
-          <Healthird/>
+    <div className='overflow-hidden'>
+      <Healfirst />
+      <Healsec />
+      <Healthird />
     </div>
   )
 }

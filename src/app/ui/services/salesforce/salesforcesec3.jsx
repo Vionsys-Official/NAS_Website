@@ -14,11 +14,11 @@ const salesforcesec3 = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true, amount: 0.8 }}
-        className=" text-center font-heading  bg-blue-100 text-blue-800 px-4 py-2 rounded-lg md:w-64 md:mx-auto text-SubHeading-sm font-semibold tracking-widest uppercase title-font"
+        className="text-center md:mb-6 mb-3 md:text-Heading text-Heading-sm font-extrabold leading-none tracking-tight text-blue2"
       >
-        Why choose us?
+        Why Choose Us?
       </motion.div>
-      <div className="flex flex-col px-6 py-5 mx-auto space-y-6 items-center lg:h-[25rem] lg:py-7 lg:flex-row">
+      <div className="flex flex-col px-6 md:py-5 mx-auto items-center lg:h-[20rem] lg:flex-row">
         <div className="w-full lg:w-1/2 flex flex-col items-center">
           <div className="lg:max-w-lg">
             <motion.div
@@ -27,7 +27,7 @@ const salesforcesec3 = () => {
               whileInView={"show"}
               viewport={{ once: true, amount: 0.8 }}
             >
-              <h1 className="text-Heading font-semibold tracking-wide text-gray-800 dark:text-white text-center ">
+              <h1 className="md:text-SubHeading text-SubHeading-sm font-semibold tracking-wide text-gray-800 dark:text-white text-center">
                 Comprehensive Services for Your Salesforce Needs
               </h1>
               <p className="mt-4 text-gray-600 text-center dark:text-gray-300">
@@ -65,7 +65,7 @@ const salesforcesec3 = () => {
             </motion.div>
           </div>
         </div>
-        <div className="flex items-center justify-center w-full md:h-96 lg:w-1/2">
+        <div className="flex items-center justify-center w-full lg:w-1/2">
           <Image
             className="object-cover rounded-md shadow-lg"
             width={500}

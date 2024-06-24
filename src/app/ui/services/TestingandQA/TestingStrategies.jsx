@@ -11,10 +11,10 @@ const TestingStrategies = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, amount: 0.8 }}
-          className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto"
+          className="max-w-lg mb-6 font-bold leading-none tracking-tight text-center text-gray-900 md:mx-auto"
         >
           <span className="relative inline-block">
-            <span className="relative md:text-Heading text-Heading-sm text-blue950">
+            <span className="relative md:text-Heading text-Heading-sm text-blue2 font-extrabold capitalize">
               Testing and Quality Assurance Strategies
             </span>
           </span>{" "}
@@ -142,7 +142,7 @@ const TestingStrategies = () => {
             </svg>
           </div>
           <span className=" md:text-Para text-Para-sm text-gray-800">
-            Regression Testing: Re-run tests to ensure new changes don't affect
+            Regression Testing: Re-run tests to ensure new changes don&apos;t affect
             existing functionality.
           </span>
         </div>

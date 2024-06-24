@@ -1,46 +1,51 @@
-"use client"
-import { fadein } from "@/components/ui/variants";
-import { motion } from 'framer-motion';
+'use client'
 import React from 'react'
-import Ecom from'/public/assets/industries/Ecommerce/Ecom.jpg';
+import { fadein } from '@/components/ui/variants';
+import { motion } from 'framer-motion';
+import commerce from '/public/assets/industries/Ecommerce/E-commerce.jpg';
 import Image from 'next/image';
+import Link from 'next/link';
+import Button from '@/components/ui/Button';
 
 const Hero = () => {
-  return (
-    <>
-    <div className='relative group hidden sm:flex items-center justify-end sm:h-[70vh] md:h-[100vh] overflow-hidden'>
-        <div className='w-1/3 bg-gradient-to-r from-transparent via-white to-white h-[90vh] md:h-[150vh] -rotate-6 md:-rotate-12 translate-x-6 md:translate-x-20 opacity-100'></div>
-        <div className='w-3/5'>
-            <Image className='object-cover h-[70vh] md:h-[100vh] w-full' src={Ecom} alt=''></Image>
-        </div>
-        <div className='sm:absolute inset-0 flex items-center justify-start cursor-pointer'>
-            <motion.h1
-            variants={fadein("left", 0.2)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: true, amount: 0.8 }}  className='sm:mt-14 md:mt-0 flex flex-col w-full sm:w-2/5 md:w-3/5 lg:w-2/5 p-8 md:pl-14 lg:pl-24 xl:pl-52 tracking-tighter lg:tracking-wide text-MainHeading-sm md:text-MainHeading'>
-                <span className='text-blue-400 font-bold '>Transform  </span> 
-                Your
-                <span className='text-green-600 font-bold text-HeroHeading-sm md:text-HeroHeading'> E-Commerce Experience </span>
-                 with Our Cutting-Edge Software Solutions
-            </motion.h1>
-        </div>
-    </div>
-    <div className='flex sm:hidden flex-col mt-14'>
-        <div className='sm:absolute inset-0 flex items-center justify-start'>
-            <h1 className='sm:mt-14 md:mt-0 flex flex-col font-sans w-full sm:w-2/5 md:w-3/5 lg:w-2/5 p-4 md:pl-14 lg:pl-24 xl:pl-52 tracking-tighter lg:tracking-wide text-MainHeading-sm md:text-MainHeading'>
-                <span className='text-blue-400 font-bold '>Transform  </span> 
-                Your
-                <span className='text-green-600 font-bold text-HeroHeading-sm md:text-HeroHeading'> E-Commerce Experience </span>
-                 with Our Cutting-Edge Software Solutions
-            </h1>
-        </div>
-        <div className='w-full sm:w-3/5'>
-            <Image className='object-cover sm:h-[70vh] md:h-[100vh] w-full' src={Ecom} alt=''></Image>
-        </div>
-    </div>
-    </>
-  );
-};
+    return (
+        <div className="relative md:h-[90vh] flex flex-col-reverse md:pt-16 pt-12 lg:pt-0 lg:flex-col lg:pb-0">
+            <div className="inset-y-0 top-0 right-0 z-0 w-full max-w-2xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
+                <svg
+                    className="absolute left-0 hidden h-[90vh] text-white transform -translate-x-1/2 lg:block"
+                    viewBox="0 0 100 100"
+                    fill="currentColor"
+                    preserveAspectRatio="none slice"
+                >
+                    <path d="M50 0H100L50 100H0L50 0Z" />
+                </svg>
+                <Image src={commerce} alt='' className='h-full' />
+            </div>
+            <motion.div
+                variants={fadein("down", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: true, amount: 0.8 }}
+                className="text-center relative flex flex-col items-start justify-center  w-full md:h-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
+                <div className="md:mb-16 py-4 lg:my-28 lg:max-w-lg lg:pr-5">
+                    <h2 className="md:mb-5 mb-2 md:text-HMain text-HMain-sm font-bold tracking-tight text-blue2  leading-8 md:leading-10">
+                        Transform Your  {' '}
+                        <br className="hidden md:block" />
+                        E-Commerce  Experience{' '}
+                        <span className="inline-block text-blue2">
+                        with Our Cutting-Edge Software Solutions
+                        </span>
+                    </h2>
 
-export default Hero;
+                    <div className="flex items-center flex-col justify-center">
+
+                        <Button />
+
+                    </div>
+                </div>
+            </motion.div>
+        </div>
+    )
+}
+
+export default Hero

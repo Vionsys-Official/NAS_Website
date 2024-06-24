@@ -31,7 +31,7 @@ const Hero = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, amount: 0.8 }} className="w-full max-w-xl md:mb-12 mb-6 xl:mb-0 xl:pr-16 xl:w-7/12">
-              <h2 className="max-w-lg mb-6 md:text-HMain text-HMain-sm font-bold tracking-tight text-white sm:leading-none">
+              <h2 className="max-w-lg mb-6 md:text-HMain text-HMain-sm font-bold tracking-tight text-white sm:leading-none capitalize">
                 Comprehensive CRM Services <br className="hidden md:block" />
                 for Your Business
               </h2>
@@ -50,7 +50,7 @@ const Hero = () => {
               }} className="w-full max-w-xl xl:px-8 xl:w-5/12">
               <div className="bg-white rounded shadow-2xl md:p-10 p-2">
                 <div className="max-w-xl md:mx-auto sm:text-center lg:max-w-2xl">
-                  <h1 className='md:text-HMain text-HMain-sm font-bold tracking-tight text-blue950 sm:text-4xl sm:leading-none leading-10 text-center'>CRM</h1>
+                  <h1 className='md:text-HMain text-HMain-sm font-bold tracking-tight text-blue2 sm:text-4xl sm:leading-none leading-10 text-center'>CRM</h1>
                   <p className="text-base text-gray-800 md:text-lg md:py-4 py-2 md:text-justify text-start">CRM (Customer Relationship Management) is a technology for managing all your company’s relationships and interactions with current and potential customers. </p>
                   <p className="text-base text-gray-800 md:text-lg md:py-4 py-2 md:text-justify text-start">The goal is simple: to improve business relationships to grow your business. A CRM system helps companies stay connected to customers, streamline processes and improve profitability.</p>
                   <div className='flex flex-col justify-center items-center'>

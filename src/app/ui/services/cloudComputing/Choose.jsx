@@ -16,14 +16,14 @@ const Choose = () => {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: true, amount: 0.8 }} className="flex flex-col mb-4 lg:justify-between lg:flex-row md:mb-6">
-                <h2 className="max-w-lg mb-5 md:text-Heading text-Heading-sm font-bold tracking-tight text-blue950 sm:text-4xl sm:leading-none md:mb-6 group">
-                    <span className="inline-block mb-1 sm:mb-4">
+                <h2 className="max-w-lg mb-5 md:text-Heading text-Heading-sm font-extrabold tracking-tight text-blue2 sm:text-4xl sm:leading-none md:mb-6 group">
+                    <span className="inline-block mb-1 sm:mb-4 capitalize">
                         Why to Choose NAS
                     </span>
                     <div className="h-1 ml-auto duration-300 origin-left transform bg-deep-purple-accent-400 scale-x-30 group-hover:scale-x-100" />
                 </h2>
                 <p className="text-gray-800 md:text-lg text-base lg:max-w-xl">
-                    We pride ourselves on delivering exceptional cloud computing services tailored to your business needs. With a focus on expertise, support, innovation and proven success, here's why you should choose us:
+                    We pride ourselves on delivering exceptional cloud computing services tailored to your business needs. With a focus on expertise, support, innovation and proven success, here&apos;s why you should choose us:
                 </p>
             </motion.div>
             <motion.div

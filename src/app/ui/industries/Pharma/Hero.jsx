@@ -3,48 +3,66 @@ import React from 'react'
 import { fadein } from '@/components/ui/variants';
 import { motion } from 'framer-motion';
 import Button from '@/components/ui/Button';
+import Image from 'next/image';
+import Pharma2 from '/public/assets/industries/Pharma/Pharma2.jpeg'
 
 const Hero = () => {
     return (
-        <div className="relative bg-blue2">
-            <div className="absolute inset-x-0 bottom-0">
-                <svg
-                    viewBox="0 0 224 12"
-                    fill="currentColor"
-                    className="w-full -mb-1 text-white"
-                    preserveAspectRatio="none"
-                >
-                    <path d="M0,0 C48.8902582,6.27314026 86.2235915,9.40971039 112,9.40971039 C137.776408,9.40971039 175.109742,6.27314026 224,0 L224,12.0441132 L0,12.0441132 L0,0 Z" />
-                </svg>
-            </div>
+    <div className="relative bg-black">
+      <div className=''>
+        <Image
+          src={Pharma2}
+          className="absolute inset-0 object-cover w-full h-full opacity-40"
+          alt=""
+        />
+      </div>
+      <div className="relative">
+        <svg
+          className="absolute inset-x-0 bottom-0 text-white"
+          viewBox="0 0 1160 162"
+        >
+          <path
+            fill="currentColor"
+            d="M-164 13L-104 39.7C-44 66 76 120 196 141C316 162 436 152 556 119.7C676 88 796 34 916 13C1036 -8 1156 2 1216 7.7L1276 13V162.5H1216C1156 162.5 1036 162.5 916 162.5C796 162.5 676 162.5 556 162.5C436 162.5 316 162.5 196 162.5C76 162.5 -44 162.5 -104 162.5H-164V13Z"
+          />
+        </svg>
+        <div className="relative px-4 py-16 mx-auto overflow-hidden sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+          <div className="flex flex-col items-center justify-between xl:flex-row">
             <motion.div
-                variants={fadein("down", 0.2)}
-                initial="hidden"
-                whileInView={"show"}
-                viewport={{ once: true, amount: 0.8 }}
-                className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-24">
-                <div className="relative max-w-3xl sm:mx-auto sm:max-w-2xl md:max-w-3xl sm:text-center">
-                    <h2 className="mb-6 md:text-4xl font-bold tracking-tight text-white text-2xl sm:leading-none">
-                        Innovative IT Solutions
-                        <br className="hidden md:block" />
-                        for the Pharmaceutical{' '}
-                        <span className="relative inline-block">
-                            Industry{' '}
-                            <div className="w-full h-3 -mt-3 bg-deep-purple-accent-400" />
-                        </span>
-                    </h2>
-                    <h6 className="mb-6 md:text-xl font-normal tracking-tight text-white text-lg sm:leading-none">Empowering Pharma Companies with Advanced Technology and Data-Driven Insights</h6>
-                    <p className="mb-6 text-base font-light tracking-wide text-gray-300 md:text-lg">
-                        We streamline operations, enhance R&D and ensure compliance with advanced technology. From optimizing clinical trials to managing supply chains, our tailored solutions improve efficiency and accelerate time-to-market. Discover how we can transform your pharma operations.
-                    </p>
-                    <div>
-                        
-                            <Button />
-                       
-                    </div>
-                </div>
+              variants={fadein("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.8 }} className="w-full max-w-xl md:mb-12 mb-6 xl:mb-0 xl:pr-16 xl:w-7/12">
+              <h2 className="max-w-xl md:mb-6 mb-2 md:text-HMain text-HMain-sm font-bold tracking-tight text-white">
+              Innovative IT Solutions for the Pharmaceutical Industry
+              </h2>
+              <p className="max-w-xl mb-4 text-HSub-sm font-semibold text-gray-200 md:text-HSub">
+              Empowering Pharma Companies with Advanced Technology and Data-Driven Insights
+              </p>
             </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.7 }} //X:100
+              whileInView={{ opacity: 1, scale: 1 }} //y:100
+              transition={{
+                delay: 0.2,
+                scale: { type: "spring", stiffness: 30 },
+                opacity: { duration: 0.6 },
+                ease: "easeInOut",
+              }}
+              className="w-full max-w-xl xl:px-8 xl:w-5/12">
+              <div className="bg-white rounded shadow-2xl p-2 md:p-10">
+                <div className="max-w-xl md:mx-auto sm:text-center lg:max-w-2xl">
+                  <h1 className='md:text-Heading text-Heading-sm font-extrabold tracking-tight text-blue2 sm:text-4xl sm:leading-none leading-10 text-center'>Pharma Advanced Technology</h1>
+                  <p className="text-base text-slate-600 md:text-Para md:py-4 py-2 md:text-justify"> We streamline operations, enhance R&D and ensure compliance with advanced technology. From optimizing clinical trials to managing supply chains, our tailored solutions improve efficiency and accelerate time-to-market. Discover how we can transform your pharma operations.  </p>
+                  
+                  <div className='flex flex-col items-center justify-center'><Button /></div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
         </div>
+      </div>
+    </div>
     )
 }
 

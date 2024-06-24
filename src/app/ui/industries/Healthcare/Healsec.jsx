@@ -8,25 +8,33 @@ const Healsec = () => {
     <>
       <div>
         <section className="w-full py-7 md:py-24 lg:py-3 flex justify-center">
-          <div className="container space-y-12 px-4 md:px-6">
+          <div className="container space-y-10 px-4 md:px-6">
             {/* Our Expertise */}
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <motion.h2
-                  variants={fadein("down", 0.2)}
-                  initial="hidden"
-                  whileInView={"show"}
-                  viewport={{ once: true, amount: 0.8 }}
-                  className="text-3xl text-center font-bold tracking-tighter sm:text-5xl text-blue-900"
+                   initial={{ opacity: 0, y: 100 }}
+                   whileInView={{ opacity: 1, y: 0 }}
+                   transition={{
+                     delay: 0.2,
+                     y: { type: "spring", stiffness: 30 },
+                     opacity: { duration: 0.6 },
+                     ease: "easeInOut"
+                   }}
+                  className="md:text-Heading text-Heading-sm text-center font-extrabold tracking-tighter  text-blue2"
                 >
                   Our Areas of Expertise
                 </motion.h2>
                 <motion.p
-                  variants={fadein("up", 0.2)}
-                  initial="hidden"
-                  whileInView={"show"}
-                  viewport={{ once: true, amount: 0.8 }}
-                  className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400"
+                   initial={{ opacity: 0, y: 100 }}
+                   whileInView={{ opacity: 1, y: 0 }}
+                   transition={{
+                     delay: 0.2,
+                     y: { type: "spring", stiffness: 30 },
+                     opacity: { duration: 0.6 },
+                     ease: "easeInOut"
+                   }}
+                  className="max-w-[900px] text-slate-600 md:text-lg text-Para-sm  font-semibold"
                 >
                   We specialize in a wide range of services to help our clients
                   succeed. From strategy to execution, we've got you covered.
@@ -34,13 +42,22 @@ const Healsec = () => {
               </div>
             </div>
             {/* cards area */}
-            <div className="mx-auto border-b-2 shadow-xl backdrop-blur-3xl  rounded grid max-w-6xl grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:p-5">
+            <motion.div
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                delay: 0.2,
+                y: { type: "spring", stiffness: 30 },
+                opacity: { duration: 0.6 },
+                ease: "easeInOut"
+              }} 
+             className="mx-auto border-b-2 shadow-xl backdrop-blur-3xl  rounded grid max-w-6xl grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:p-5">
               <div className="grid gap-4 border-r-2 p-2 border-green-400">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-100 dark:bg-gray-800">
                   <RocketIcon className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="text-lg font-bold">Product Strategy</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
+                <p className="text-base text-gray-500 dark:text-gray-400">
                   We help you define your product vision and roadmap to drive
                   growth.
                 </p>
@@ -50,7 +67,7 @@ const Healsec = () => {
                   <InfoIcon className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="text-lg font-bold">Data Analytics</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
+                <p className="text-base text-gray-500 dark:text-gray-400">
                   Our data experts help you make informed decisions with
                   actionable insights.
                 </p>
@@ -60,7 +77,7 @@ const Healsec = () => {
                   <CloudIcon className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="text-lg font-bold">Cloud Solutions</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
+                <p className="text-base text-gray-500 dark:text-gray-400">
                   We architect and deploy scalable cloud infrastructure to power
                   your business.
                 </p>
@@ -70,12 +87,12 @@ const Healsec = () => {
                   <MegaphoneIcon className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="text-lg font-bold">Digital Marketing</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
+                <p className="text-base text-gray-500 dark:text-gray-400">
                   Our marketing experts help you reach and engage your target
                   audience.
                 </p>
               </div>
-            </div>
+            </motion.div>
           </div>
         </section>
       </div>

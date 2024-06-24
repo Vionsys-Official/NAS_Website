@@ -1,6 +1,8 @@
+"use client"
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import TransportHero from "@/../public/assets/industries/Transportation/Hero.jpeg";
 
 const Hero = () => {
@@ -9,20 +11,29 @@ const Hero = () => {
       <div className="relative px-4 pt-16 mx-auto lg:py-32 md:px-8 xl:px-20 sm:max-w-xl md:max-w-full">
         <div className="max-w-xl mx-auto lg:max-w-screen-xl">
           <div className="mb-16 lg:max-w-lg lg:mb-0">
-            <div className="max-w-xl mb-6 overflow-x-hidden ">
-              <h2 className="max-w-lg mb-6 flex flex-col items-center justify-center gap-1 md:flex-row font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+            <motion.div 
+            initial={{ opacity: 0, x: -100 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    transition={{
+        delay: 0.2,
+        x: { type: "spring", stiffness: 30 },
+        opacity: { duration: 0.6 },
+        ease: "easeInOut"
+    }}
+    className="max-w-xl mb-6 overflow-x-hidden ">
+              <h2 className="max-w-lg mb-6 flex flex-col items-center justify-center gap-1 md:flex-row md:text-HMain text-HMain-sm font-bold tracking-tight text-blue2 sm:leading-none">
                 Logistics And{" "}
-                <span className=" p-2 bg-green-500 rounded-xl text-white ">
+                <span className=" p-2 rounded-xl text-blue2 ">
                   Transportation
                 </span>
               </h2>
-              <p className="text-base text-gray-700 md:text-lg">
+              <p className="text-Para-sm text-slate-600 font-semibold md:text-lg">
                 In the fast-paced world of transportation and logistics,
                 efficiency and accuracy are paramount. Our cutting-edge IT
                 solutions streamline operations, enhance supply chain
                 visibility and improve delivery accuracy.
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
 

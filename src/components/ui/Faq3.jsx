@@ -13,8 +13,8 @@ const Faq3 = ({ faq }) => {
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }} 
             className="text-center">
-                <h3 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-blue950">
-                    Frequently Asked <span className="text-blue2">Questions</span>
+                <h3 className="md:text-Heading text-Heading-sm leading-normal font-extrabold tracking-tight text-blue2 py-2">
+                    Frequently Asked Questions
                 </h3>
             </motion.div>
             <motion.div
@@ -25,7 +25,7 @@ const Faq3 = ({ faq }) => {
                 scale: { type: "spring", stiffness: 30 },
                 opacity: { duration: 0.6 },
                 ease: "easeInOut",
-              }}  className="accordion space-y-2 md:p-5 p-1">
+              }}  className="accordion space-y-2 md:px-5 md:py-1 p-1">
                 {faq.map((item) => (
                     <div key={item.id} className="card border border-gray-300 rounded-lg">
                         <input type="checkbox" id={`accordion-toggle-${item.id}`} className="hidden peer" />

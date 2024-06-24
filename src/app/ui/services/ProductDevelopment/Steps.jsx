@@ -13,7 +13,7 @@ const Steps = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}
-            className="md:text-Heading font-bold leading-none text-Heading-sm text-blue950 "
+            className="md:text-Heading font-extrabold leading-none text-Heading-sm text-blue2"
           >
             Product Development Stages
           </motion.h2>

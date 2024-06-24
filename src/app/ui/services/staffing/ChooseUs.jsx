@@ -34,8 +34,8 @@ const ChooseUs = () => {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: true, amount: 0.8 }} className="mx-auto space-y-2 text-center mb-8">
-                <h2 className="md:text-Heading text-Heading-sm font-bold text-blue950">Why Choose Our IT Staffing Services?</h2>
-                <p className="text-gray-800 text-para">Our IT staffing services provide efficient, flexible and cost-effective solutions for accessing top-tier IT talent ensuring prompt fulfillment of project needs.</p>
+                <h2 className="md:text-Heading text-Heading-sm font-extrabold text-blue2">Why Choose Our IT Staffing Services?</h2>
+                <p className="text-lg text-slate-600 font-semibold">Our IT staffing services provide efficient, flexible and cost-effective solutions for accessing top-tier IT talent ensuring prompt fulfillment of project needs.</p>
             </motion.div>
             <motion.div
                 variants={fadein("up", 0.2)}

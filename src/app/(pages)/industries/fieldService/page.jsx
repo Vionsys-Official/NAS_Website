@@ -6,12 +6,12 @@ import FieldSec1 from '@/app/ui/industries/fieldService/fieldSec1';
 
 export const metadata = {
     title: "Field Service",
-  };
+};
 
 const fildService = () => {
 
     return (
-        <main id='mission' className='overflow-hidden'>
+        <main className='overflow-hidden'>
 
             <FieldSec1 />
 

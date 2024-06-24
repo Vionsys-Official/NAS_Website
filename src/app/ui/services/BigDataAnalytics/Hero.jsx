@@ -9,15 +9,15 @@ import Image from "next/image";
 function Cards() {
   return (
     <section className="bg-white w-full">
-      <div className="flex md:flex-row flex-col w-full pt-8">
+      <div className="flex md:flex-row flex-col w-full pt-16">
         {/* section1 */}
-        <div className="md:w-[50%] w-full flex flex-col gap-6 md:pt-40 pt-6 px-6 ">
+        <div className="md:w-[50%] w-full flex flex-col gap-6 md:pt-40 pt-6 md:px-6 ">
           <motion.h1
             variants={fadein("left", 0.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}
-            className="md:text-HMain text-HMain-sm font-bold text-blue950"
+            className="md:text-HMain text-HMain-sm font-extrabold text-blue2 md:text-start text-center"
           >
             Big Data & Analytics Development Services
           </motion.h1>
@@ -26,7 +26,7 @@ function Cards() {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}
-            className="md:text-lg  text-Para-sm"
+            className="md:text-lg text-Para-sm text-slate-700 font-semibold"
           >
             We offer comprehensive big data consulting services designed to
             transform vast amounts of scattered information into structured,

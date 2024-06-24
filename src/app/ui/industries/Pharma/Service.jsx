@@ -56,8 +56,8 @@ const Service = () => {
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{ once: true, amount: 0.8 }}>
-                    <h2 className="md:text-Heading font-bold tracking-tight text-center text-Heading-sm text-blue950">Our Services</h2>
-                    <p className="max-w-3xl mx-auto mt-4 md:text-xl text-lg text-center text-gray-800">We provide comprehensive IT solutions tailored for the pharmaceutical industry. Our services are designed to streamline operations, enhance research and development and ensure regulatory compliance. We specialize in:</p>
+                    <h2 className="md:text-Heading font-bold tracking-tight text-center text-Heading-sm text-blue2">Our Services</h2>
+                    <p className="max-w-3xl mx-auto mt-4 md:text-lg text-Para-sm font-semibold text-center text-slate-600">We provide comprehensive IT solutions tailored for the pharmaceutical industry. Our services are designed to streamline operations, enhance research and development and ensure regulatory compliance. We specialize in:</p>
                 </motion.div>
                 <div className="grid md:gap-8 gap-4 lg:grid-cols-2 lg:items-center">
                     <motion.div
@@ -69,14 +69,14 @@ const Service = () => {
                             {service1.map((item) => (
                                 <div key={item.id} className="flex">
                                     <div className="flex-shrink-0 md:block hidden">
-                                        <div className="flex items-center justify-center w-12 h-12 rounded-md bg-blue950 text-gray-50">
+                                        <div className="flex items-center justify-center w-12 h-12 rounded-md bg-blue5 text-gray-50">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                                             </svg>
                                         </div>
                                     </div>
                                     <div className="md:ml-4 md:p-0 p-2">
-                                        <h4 className="md:text-CardHeading text-CardHeading-sm font-semibold leading-6 text-black">{item.title}</h4>
+                                        <h4 className="md:text-lg text-base font-semibold leading-6 text-black">{item.title}</h4>
                                         <p className="mt-2 md:text-Para text-Para-sm text-gray-800">{item.para1}</p>
                                         <p className="mt-2 md:text-Para text-Para-sm text-gray-800">{item.para2}</p>
                                     </div>
@@ -102,14 +102,14 @@ const Service = () => {
                             <div className="md:space-y-12 space-y-4">
                                 {service2.map((item) => (
                                     <div key={item.id} className="flex"><div className="flex-shrink-0  md:block hidden">
-                                        <div className="flex items-center justify-center w-12 h-12 rounded-md bg-blue950 text-gray-50">
+                                        <div className="flex items-center justify-center w-12 h-12 rounded-md bg-blue5 text-gray-50">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                                             </svg>
                                         </div>
                                     </div>
                                         <div className="md:ml-4 md:p-0 p-2">
-                                            <h4 className="md:text-CardHeading text-CardHeading-sm font-semibold leading-6 text-black">{item.title}</h4>
+                                            <h4 className="md:text-lg text-base font-semibold leading-6 text-black">{item.title}</h4>
                                             <p className="mt-2 md:text-Para text-Para-sm text-gray-800">{item.para1}</p>
                                             <p className="mt-2 md:text-Para text-Para-sm text-gray-800">{item.para2}</p>
                                         </div>

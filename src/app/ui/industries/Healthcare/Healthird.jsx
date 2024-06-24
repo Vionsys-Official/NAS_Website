@@ -16,7 +16,7 @@ const Healthird = () => {
     <>
       <div>
         <div className="flex justify-center items-center py-5">
-          <h1 className="text-3xl text-center font-extrabold text-blue-900">
+          <h1 className="md:text-Heading text-Heading-sm text-center font-extrabold text-blue2">
             Solutions We Provide
           </h1>
         </div>
@@ -24,9 +24,14 @@ const Healthird = () => {
         <div className="px-4 py-9 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-5">
           <div className="grid gap-6 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
             <motion.div
-              whileHover={{ scale:1.04, delay: 2000 }}
-              onHoverStart={(e) => {}}
-              onHoverEnd={(e) => {}}
+               initial={{ opacity: 0, y: 100 }}
+               whileInView={{ opacity: 1, y: 0 }}
+               transition={{
+                 delay: 0.2,
+                 y: { type: "spring", stiffness: 30 },
+                 opacity: { duration: 0.6 },
+                 ease: "easeInOut"
+               }}
               className="overflow-hidden transition-shadow duration-300 bg-blue-200 rounded text-center"
             >
               <Link href="/" aria-label="Article">
@@ -43,7 +48,7 @@ const Healthird = () => {
                   aria-label="Article"
                   className="inline-block mb-3 text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
                 >
-                  <p className="text-2xl font-bold md:leading-5 text-center">
+                  <p className="md:text-CardHeading text-CardHeading-sm font-semibold md:leading-5 text-center">
                     Cloud Infrastructure Services
                   </p>
                 </Link>
@@ -60,9 +65,14 @@ const Healthird = () => {
               </div>
             </motion.div>
             <motion.div
-              whileHover={{ scale: 1.04 }}
-              onHoverStart={(e) => {}}
-              onHoverEnd={(e) => {}}
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  delay: 0.2,
+                  y: { type: "spring", stiffness: 30 },
+                  opacity: { duration: 0.6 },
+                  ease: "easeInOut"
+                }}
               className="overflow-hidden transition-shadow duration-300 bg-blue-200 rounded text-center"
             >
               <Link href="/" aria-label="Article">
@@ -79,7 +89,7 @@ const Healthird = () => {
                   aria-label="Article"
                   className="inline-block mb-3 text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
                 >
-                  <p className="text-2xl font-bold md:leading-5">
+                  <p className="md:text-CardHeading text-CardHeading-sm font-semibold md:leading-5">
                     Telemedicine Solutions
                   </p>
                 </Link>
@@ -92,9 +102,14 @@ const Healthird = () => {
               </div>
             </motion.div>
             <motion.div
-              whileHover={{ scale: 1.04 }}
-              onHoverStart={(e) => {}}
-              onHoverEnd={(e) => {}}
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  delay: 0.2,
+                  y: { type: "spring", stiffness: 30 },
+                  opacity: { duration: 0.6 },
+                  ease: "easeInOut"
+                }}
               className="overflow-hidden transition-shadow duration-300 bg-blue-200 rounded text-center"
             >
               <Link href="/" aria-label="Article">
@@ -111,7 +126,7 @@ const Healthird = () => {
                   aria-label="Article"
                   className="inline-block mb-3 text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
                 >
-                  <p className="text-2xl font-bold md:leading-5">
+                  <p className="md:text-CardHeading text-CardHeading-sm font-semibold md:leading-5">
                     Cybersecurity Solutions
                   </p>
                 </Link>
@@ -130,9 +145,14 @@ const Healthird = () => {
         <div className="px-4 md:py-7 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-5">
           <div className="grid gap-6 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
             <motion.div
-              whileHover={{ scale: 1.04 }}
-              onHoverStart={(e) => {}}
-              onHoverEnd={(e) => {}}
+               initial={{ opacity: 0, y: 100 }}
+               whileInView={{ opacity: 1, y: 0 }}
+               transition={{
+                 delay: 0.2,
+                 y: { type: "spring", stiffness: 30 },
+                 opacity: { duration: 0.6 },
+                 ease: "easeInOut"
+               }}
               className="overflow-hidden transition-shadow duration-300 bg-blue-200 rounded text-center"
             >
               <Link href="/" aria-label="Article">
@@ -149,7 +169,7 @@ const Healthird = () => {
                   aria-label="Article"
                   className="inline-block mb-3 text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
                 >
-                  <p className="text-2xl font-bold md:leading-5 text-center">
+                  <p className="md:text-CardHeading text-CardHeading-sm font-semibold md:leading-5 text-center">
                     Data management analytics
                   </p>
                 </Link>
@@ -165,9 +185,14 @@ const Healthird = () => {
               </div>
             </motion.div>
             <motion.div
-              whileHover={{ scale: 1.04 }}
-              onHoverStart={(e) => {}}
-              onHoverEnd={(e) => {}}
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  delay: 0.2,
+                  y: { type: "spring", stiffness: 30 },
+                  opacity: { duration: 0.6 },
+                  ease: "easeInOut"
+                }}
               className="overflow-hidden transition-shadow duration-300 bg-blue-200 rounded text-center"
             >
               <Link href="/" aria-label="Article">
@@ -184,7 +209,7 @@ const Healthird = () => {
                   aria-label="Article"
                   className="inline-block mb-3 text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
                 >
-                  <p className="text-2xl font-bold md:leading-5">
+                  <p className="md:text-CardHeading text-CardHeading-sm font-semibold md:leading-5">
                     Healthcare Analytics
                   </p>
                 </Link>
@@ -197,9 +222,14 @@ const Healthird = () => {
               </div>
             </motion.div>
             <motion.div
-              whileHover={{ scale: 1.04 }}
-              onHoverStart={(e) => {}}
-              onHoverEnd={(e) => {}}
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  delay: 0.2,
+                  y: { type: "spring", stiffness: 30 },
+                  opacity: { duration: 0.6 },
+                  ease: "easeInOut"
+                }}
               className="overflow-hidden transition-shadow duration-300 bg-blue-200 rounded text-center"
             >
               <Link href="/" aria-label="Article">
@@ -216,7 +246,7 @@ const Healthird = () => {
                   aria-label="Article"
                   className="inline-block mb-3 text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
                 >
-                  <p className="text-2xl font-bold md:leading-5">
+                  <p className="md:text-CardHeading text-CardHeading-sm font-semibold md:leading-5">
                     Medical Imaging solutions
                   </p>
                 </Link>
@@ -233,16 +263,13 @@ const Healthird = () => {
         </div>
         {/* cta section */}
         <div className="flex justify-center py-5">
-          <section className="py-5 shadow-xl rounded-b-2xl mb-4 w-[80vw] bg-blue-950">
+          <section className="py-5 shadow-xl rounded-b-2xl mb-4 w-[80vw] bg-gray-200">
             <div className="max-w-screen-xl mx-auto px-4 md:text-center text-center md:px-8">
               <div className="max-w-xl space-y-3 md:mx-auto">
-                <h3 className="text-white font-semibold">
-                  Healthcare services
-                </h3>
-                <p className="text-white text-3xl font-bold sm:text-4xl">
-                  Build the future with us
+                <p className="text-blue2 md:text-Heading text-Heading-sm font-extrabold ">
+                  Build the Future With Us
                 </p>
-                <p className="text-gray-200">
+                <p className="text-slate-600 md:text-lg  text-Para-sm ">
                   At NAS Infotech, we are dedicated to pioneering innovative
                   solutions that transform Healtcare and empower the next
                   generation.

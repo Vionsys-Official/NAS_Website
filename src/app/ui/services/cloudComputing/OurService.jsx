@@ -75,10 +75,9 @@ const OurService = () => {
                 variants={fadein("up", 0.2)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: true, amount: 0.8 }} className="md:p-4 p-1 mx-auto my-6 space-y-1 text-center">
-                <span className="text-xs font-semibold tracking-wider uppercase text-blue2">NAS Infotech Pvt. Ltd.</span>
-                <h2 className="pb-3 text-Heading-sm font-bold md:text-Heading text-blue950">Our Cloud Computing Services</h2>
-                <p>We transform your business operations with cutting-edge cloud computing solutions. Our comprehensive cloud services are designed to meet the diverse needs of modern enterprises, enhancing flexibility, scalability and efficiency.</p>
+                viewport={{ once: true, amount: 0.8 }} className="md:p-4 mx-auto my-6 space-y-1 text-center">
+                <h2 className="pb-3 text-Heading-sm font-extrabold md:text-Heading text-blue2">Our Cloud Computing Services</h2>
+                <p className='text-lg font-semibold text-slate-600'>We transform your business operations with cutting-edge cloud computing solutions. Our comprehensive cloud services are designed to meet the diverse needs of modern enterprises, enhancing flexibility, scalability and efficiency.</p>
             </motion.div>
             <div className="container grid justify-center gap-4 mx-auto lg:grid-cols-2 xl:grid-cols-3">
                 {service.map((item) => (

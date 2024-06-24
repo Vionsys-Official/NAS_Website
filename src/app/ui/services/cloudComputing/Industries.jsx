@@ -14,8 +14,8 @@ const Industries = () => {
 				opacity: { duration: 0.6 },
 				ease: "easeInOut",
 			}} className="px-4 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-12 dark:bg-gray-100 dark:text-gray-800">
-			<h2 className="md:mb-6 mb-3 md:text-Heading text-Heading-sm font-bold leading-none text-center text-blue950">Industries We Serve</h2>
-			<p className='md:mb-8 mb-4 md:px-24 text-center md:text-lg text-base'>We specialize in crafting customized cloud solutions to suit the distinctive demands of diverse industries ensuring optimal efficiency and effectiveness.</p>
+			<h2 className="md:mb-6 mb-3 md:text-Heading text-Heading-sm font-extrabold leading-none text-center text-blue2">Industries We Serve</h2>
+			<p className='md:mb-8 mb-4 md:px-24 text-center text-lg font-semibold text-slate-600'>We specialize in crafting customized cloud solutions to suit the distinctive demands of diverse industries ensuring optimal efficiency and effectiveness.</p>
 			<ul className="grid gap-3 md:grid-cols-2 lg:grid-cols-4">
 				<li className="flex items-center space-x-2">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-5 h-5 fill-current text-blue2">
