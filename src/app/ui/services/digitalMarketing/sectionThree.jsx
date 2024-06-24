@@ -1,5 +1,8 @@
+'use client'
+
 import React from "react";
 import Image from "next/image";
+import { motion } from 'framer-motion';
 import Png from "/public/assets/services/digitalMarketing/browser.gif";
 import Traffic from "/public/assets/services/digitalMarketing/traffic.gif";
 import Laptop from "/public/assets/services/digitalMarketing/laptop.gif";
@@ -19,23 +22,34 @@ const sectionThree = () => {
             <div className="w-full px-4">
               <div className="text-center lg:text-left ">
                 <div className="mb-10 lg:mb-0 ">
-                  <h1 className="mt-0 mb-3 text-Heading-sm font-extrabold leading-tight sm:leading-tight md:text-Heading md:leading-tight text-blue2 ">
-                    Search Engine Optimization (SEO)
-                  </h1>
-                  <p className="w-full mb-8 text-base font-semibold leading-relaxed sm:text-md sm:leading-relaxed text-slate-600">
-                    We optimize your website to secure higher rankings on search
-                    engine results pages. Through comprehensive keywords
-                    research, on-page optimization and strategic link-building,
-                    we propel your brand to the forefront of search engine
-                    algorithms. Our dedicated team of experts is committed to
-                    delivering the tangible results, driving targeted traffic
-                    and maximizing your ROI. With our tailored approach and
-                    continuous refinement, we ensure that your online presence
-                    remains competitive and adaptable in the ever-evolving
-                    landscapes of search engine optimization. Trust us to
-                    navigate the complexities of SEO and unlock the full
-                    potential of your digital marketing efforts.
-                  </p>
+                  <motion.div
+                  initial={{ opacity: 0, y: -100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{
+                    delay: 0.2,
+                    y: { type: "spring", stiffness: 30 },
+                    opacity: { duration: 0.6 },
+                    ease: "easeInOut"
+                  }}>
+                    <h1 className="mt-0 mb-3 text-Heading-sm font-extrabold leading-tight sm:leading-tight md:text-Heading md:leading-tight text-blue2 ">
+                      Search Engine Optimization (SEO)
+                    </h1>
+                    <p className="w-full mb-8 text-base font-semibold leading-relaxed sm:text-md sm:leading-relaxed text-slate-600">
+                      We optimize your website to secure higher rankings on
+                      search engine results pages. Through comprehensive
+                      keywords research, on-page optimization and strategic
+                      link-building, we propel your brand to the forefront of
+                      search engine algorithms. Our dedicated team of experts is
+                      committed to delivering the tangible results, driving
+                      targeted traffic and maximizing your ROI. With our
+                      tailored approach and continuous refinement, we ensure
+                      that your online presence remains competitive and
+                      adaptable in the ever-evolving landscapes of search engine
+                      optimization. Trust us to navigate the complexities of SEO
+                      and unlock the full potential of your digital marketing
+                      efforts.
+                    </p>
+                  </motion.div>
                   <div className="flex justify-evenly items-center flex-wrap gap-5 text-slate-900">
                     <div className="p-4 px-6 flex flex-col gap-4 border border-blue2 rounded-xl">
                       <div className="flex justify-center">
@@ -84,6 +98,15 @@ const sectionThree = () => {
             <div className="w-full md:px-4">
               <div className="text-center lg:text-left ">
                 <div className="mb-10 lg:mb-0 ">
+                <motion.div
+                  initial={{ opacity: 0, y: -100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{
+                    delay: 0.2,
+                    y: { type: "spring", stiffness: 30 },
+                    opacity: { duration: 0.6 },
+                    ease: "easeInOut"
+                  }}>
                   <h1 className="mt-0 mb-3 text-Heading-sm font-extrabold leading-tight md:text-Heading sm:leading-tight md:leading-tight text-blue2 ">
                     Pay-Per-Click Advertising (PPC)
                   </h1>
@@ -96,6 +119,7 @@ const sectionThree = () => {
                     Google Ads, Bing Ads, Facebook Ads, Instagram Ads, LinkedIn
                     Ads and more.
                   </p>
+                  </motion.div>
                   <div className="flex justify-evenly items-center flex-wrap gap-5 text-black">
                     <div className="md:p-4 p-2 md:px-6 flex flex-col gap-4 border border-black rounded-xl">
                       <div className="flex justify-center">
@@ -144,6 +168,15 @@ const sectionThree = () => {
             <div className="w-full md:px-4">
               <div className="text-center lg:text-left ">
                 <div className="mb-10 lg:mb-0 ">
+                <motion.div
+                  initial={{ opacity: 0, y: -100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{
+                    delay: 0.2,
+                    y: { type: "spring", stiffness: 30 },
+                    opacity: { duration: 0.6 },
+                    ease: "easeInOut"
+                  }}>
                   <h1 className="mt-0 mb-3 md:text-Heading text-Heading-sm font-bold leading-tight sm:text-4xl sm:leading-tight md:leading-tight text-white ">
                     Content Marketing
                   </h1>
@@ -157,6 +190,7 @@ const sectionThree = () => {
                     audience and elevate your brand&apos;s presence in the
                     digital landscape.
                   </p>
+                  </motion.div>
                   <div className="flex justify-evenly items-center flex-wrap gap-5 text-white">
                     <div className="p-4 px-6 flex flex-col gap-4 border rounded-xl">
                       <div className="flex justify-center">
