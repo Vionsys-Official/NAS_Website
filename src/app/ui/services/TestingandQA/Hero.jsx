@@ -9,7 +9,7 @@ function Hero() {
   return (
     <section>
     <div className="relative bg-black">
-        <Image src={Cloud} alt='' className="inset-0 object-cover w-full md:h-full h-[70vh] md:opacity-85 opacity-30" />
+        <Image src={Cloud} alt='' className="inset-0 object-cover w-full md:h-full h-[60vh] md:opacity-85 opacity-30" />
         <motion.div
           initial={{ opacity: 0, scale: 0.7 }} //X:100
           whileInView={{ opacity: 1, scale: 1 }} //y:100
@@ -20,7 +20,7 @@ function Hero() {
             ease: "easeInOut",
           }} className="absolute inset-y-0 left-0 md:w-1/2 w-full flex flex-col justify-center items-center">
           <h1 className='text-white md:text-HMain text-HMain-sm font-extrabold mb-3 text-center capitalize'>Testing and Quality Assurance</h1>
-          <p className='text-white md:text-CardHeading text-CardHeading-sm text-center md:p-1 p-2'>We transform software testing and quality assurance through a
+          <p className='text-white md:text-CardHeading text-Para-sm text-center md:p-1 p-2'>We transform software testing and quality assurance through a
             customized approach that blends cutting-edge innovation with deep
             expertise. Driven by a commitment to excellence, we rigorously
             evaluate, enhance and perfect your software to ensure unmatched

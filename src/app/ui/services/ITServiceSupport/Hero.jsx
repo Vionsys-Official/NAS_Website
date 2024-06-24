@@ -10,11 +10,11 @@ import Service from "/public/assets/services/ITServiceSupport/Service1.jpg";
 const Hero = () => {
   return (
     <div className="md:pb-16 pb-5">
-      <div className="relative">
-        <Image src={Service} alt='' className="w-full h-[100vh]"/>
+      <div className="relative bg-black">
+        <Image src={Service} alt='' className="w-full md:h-[100vh] h-[90vh] md:opacity-100 opacity-35"/>
       </div>
       <div className="absolute inset-0 left-0 flex flex-col justify-center items-start">
-        <div className="px-4 py-6 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+        <div className="px-4 md:py-6 py-2 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <motion.div  
             initial={{ opacity: 0, scale: 1.1 }} //X:100
               whileInView={{ opacity: 1, scale: 1 }} //y:100
@@ -25,15 +25,15 @@ const Hero = () => {
                 ease: "easeInOut",
               }}
               viewport={{ once: true, amount: 0.8 }}
-          className="max-w-2xl md:mx-auto sm:text-center lg:max-w-2xl pt-16">
+          className="max-w-2xl md:mx-auto sm:text-center lg:max-w-2xl md:pt-16">
             <h2
               className="max-w-2xl mb-6 font-extrabold leading-none tracking-tight md:text-5xl text-HMain-sm md:mx-auto "
             >
               <span className="relative inline-block">
-                <span className="text-black font-extrabold">Welcome To IT Service Support</span>
+                <span className="md:text-black text-white font-extrabold">Welcome To IT Service Support</span>
               </span>{" "}
             </h2>
-            <p className="text-slate-800 font-bold md:text-Para text-Para-sm md:text-lg">
+            <p className="md:text-slate-800 text-white font-bold md:text-Para text-Para-sm md:text-lg">
               We provide reliable IT Service Support to keep your business
               running smoothly. Our services ensure minimal downtime, quick
               issue resolution and optimal IT performance allowing you to

@@ -7,7 +7,7 @@ function BiChoose() {
   return (
     <section4>
     <div className='text-center md:mt-10 overflow-x-hidden'>
-                       <h6 className='leading-[1.1] md:text-MainHeading text-MainHeading-sm font-extrabold tracking-tight text-blue2 capitalize'>Why choose us ???</h6>
+                       <h6 className='leading-[1.1] md:text-Heading text-Heading-sm font-extrabold tracking-tight text-blue2 capitalize'>Why choose us ???</h6>
                
        <div className="flex flex-col grid-cols-9 p-2 mx-auto md:grid">
            <div className="flex md:contents flex-row-reverse">

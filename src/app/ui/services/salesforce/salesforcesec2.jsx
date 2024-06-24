@@ -55,12 +55,12 @@ const salesforcesec2 = () => {
           viewport={{ once: true, amount: 0.8 }}
           className="mx-auto flex max-w-[58rem] py-2 flex-col items-center space-y-2 text-center"
         >
-          <h2 className="mb-6 md:text-MainHeading text-MainHeading-sm font-extrabold leading-none tracking-tight text-blue2">
+          <h2 className="mb-6 md:text-Heading md:mt-0 mt-3 text-Heading-sm font-extrabold leading-none tracking-tight text-blue2">
             <span className="text-blue2 relative">
               Features
             </span>
           </h2>
-          <p className="max-w-[85%] leading-normal text-lg text-slate-600 font-semibold sm:leading-7">
+          <p className="md:max-w-[85%] w-full leading-normal text-lg text-slate-600 font-semibold sm:leading-7">
             Explore the incredible offerings provided by us to enrich your
             online visibility.
           </p>

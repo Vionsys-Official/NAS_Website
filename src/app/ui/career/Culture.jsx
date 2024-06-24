@@ -26,13 +26,13 @@ const Culture = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}
-             className='text-blue-900 text-MainHeading-sm md:text-MainHeading font-semibold cursor-pointer font-sans'>Our Culture</motion.h2>
+             className='text-blue-900 text-MainHeading-sm md:text-MainHeading font-semibold'>Our Culture</motion.h2>
             <motion.h3 
             variants={fadein("left", 0.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}
-            className='text-blue-950 text-Para-sm md:text-Para text-center font-medium p-2 md:p-4 cursor-pointer'>Our culture is built on a foundation of creativity, collaboration and a commitment to excellence. We foster an environment where innovation thrives, teamwork is paramount and every team member's contributions are valued. Here’s what makes our culture unique</motion.h3>
+            className='text-blue-950 text-Para-sm md:text-Para text-center font-medium p-2 md:p-4'>Our culture is built on a foundation of creativity, collaboration and a commitment to excellence. We foster an environment where innovation thrives, teamwork is paramount and every team member&apos;s contributions are valued. Here&apos;s what makes our culture unique</motion.h3>
             </div>
         </div>
         <motion.div
@@ -43,14 +43,14 @@ const Culture = () => {
         className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-2 md:py-6">
             {culture.map((feat)=>{
                 return(
-                    <div key={feat.id} className="block bg-white rounded-xl border shadow-lg shadow-gray-400 border-gray-300 p-4 cursor-pointer">
+                    <div key={feat.id} className="block bg-white rounded-xl border shadow-lg shadow-gray-400 border-gray-300 p-4">
                         <span className="inline-block rounded-lg">
                         <div className="inline-flex align-middle justify-center items-center select-none">
                             <Image src={feat.icon} alt="icon" height={100} width={100}></Image>
                         </div>
                         </span>
 
-                        <h2 className="mt-2 text-blue-950 font-semibold text-CardHeading-sm md:text-CardHeading font-sans">
+                        <h2 className="mt-2 text-blue-950 font-semibold text-CardHeading-sm md:text-CardHeading">
                             {feat.title}
                         </h2>
                         <p className="sm:mt-1 block text-Para-sm md:text-Para font-light"> 

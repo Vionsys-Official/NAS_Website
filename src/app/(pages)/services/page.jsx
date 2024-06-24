@@ -17,19 +17,19 @@ const Page = () => {
     <HerosectionMain/>
       
   {/* cards section */}
-  <section className="p-5 lg:mx-10">
+  <section className="p-3 lg:mx-10">
   <div className="max-w-[77rem] mx-auto">
-    <h1 className="text-center font-semibold text-MainHeading text-gray-900  my-6 border-b-4 border-green1 relative">
+    <h1 className="text-center font-semibold md:text-MainHeading text-MainHeading-sm text-gray-900  my-3 border-b-4 border-green1 relative">
       <p className='text-blue2 font-extrabold'>Our Services</p>
     </h1>
   </div>
 
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-5">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:p-5 p-1">
     {ourServices.map((service, index) => (
       <Link 
         key={index} 
         href={service.href1} 
-        className="group bg-white shadow-lg border-gray-300 hover:bg-gray-100 rounded-md p-4 backdrop-blur-sm border hover:shadow-lg transition overflow-hidden flex flex-col justify-between no-underline"
+        className="group bg-white shadow-lg border-gray-300 hover:bg-gray-100 rounded-md md:p-4 p-2 backdrop-blur-sm border hover:shadow-lg transition overflow-hidden flex flex-col justify-between no-underline"
       >
         <Image
           width={500}

@@ -6,7 +6,7 @@ import Button from "./Button";
 
 const GetStart2 = () => {
   return (
-    <div className="flex flex-col justify-center items-center py-4">
+    <div className="flex flex-col justify-center items-center py-4 overflow-hidden">
       <motion.div
         variants={fadein("right", 0.2)}
         initial="hidden"

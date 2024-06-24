@@ -21,13 +21,13 @@ function S3() {
                      initial="hidden"
                      whileInView={"show"}
                      viewport={{ once: false, amount: 0.8 }}
-                    className="leading-[1.1] md:text-MainHeading text-MainHeading-sm font-extrabold tracking-tight text-blue2">Features</motion.h2>
+                    className="leading-[1.1] md:text-Heading text-Heading-sm font-extrabold tracking-tight text-blue2">Features</motion.h2>
                     <motion.p
                      variants={fadein("left", 0.2)}
                      initial="hidden"
                      whileInView={"show"}
                      viewport={{ once: false, amount: 0.8 }}
-                    className="max-w-[85%] font-semibold text-lg text-slate-600 leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+                    className="md:max-w-[85%] w-full px-2 font-semibold text-lg text-slate-600 leading-normal text-muted-foreground sm:text-lg sm:leading-7">
                     Business Intelligence (BI) and Analytics encompass a range of features designed to help organizations make data-driven decisions. Here are the key features typically found in BI and Analytics platforms:
                     </motion.p>
                 </div>

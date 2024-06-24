@@ -133,7 +133,7 @@ const aiMLSec4 = () => {
           {Object.keys(industryData).map((industry) => (
             <div
               key={industry}
-              className={`bg-blue5 cursor-pointer text-white px-4 py-2 text-justify text-sm md:text-center 
+              className={`bg-blue5 text-white px-4 py-2 text-justify text-sm md:text-center 
                 hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-offset-2 
                 focus:ring-blue-900 ${
                   selectedIndustry === industry

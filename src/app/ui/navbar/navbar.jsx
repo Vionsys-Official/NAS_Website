@@ -60,7 +60,7 @@ const Navbar = () => {
 
         <div className="hidden md:block">
           <Link href="/contact">
-            <button className="cursor-pointer font-semibold relative z-10 border overflow-hidden border-green-500 group px-3 rounded-xl py-2">
+            <button className="font-semibold relative z-10 border overflow-hidden border-green-500 group px-3 rounded-xl py-2">
               <span className="relative z-10 hidden text-green-500 group-hover:text-white text-sm duration-500 md:flex md:items-center">
                 Contact us{" "}
                 <BiSolidPhoneCall className="ml-1 text-green-500 text-lg font-semibold group-hover:text-white" />

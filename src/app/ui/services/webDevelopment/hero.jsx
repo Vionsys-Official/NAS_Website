@@ -10,7 +10,7 @@ const Hero = () => {
 
   return (
     <div>
-        <div className='flex flex-wrap group md:gap-20 h-full md:h-[100vh] items-center justify-end cursor-pointer'>
+        <div className='flex flex-wrap group md:gap-20 h-full md:h-[100vh] items-center justify-end'>
             <div className='flex md:hidden w-full md:w-2/5 h-[50vh] '>
             <Image className='w-full h-full object-cover md:rounded-full md:rotate-45 group-hover:scale-105' src={webd} alt="web" width={1000} height={1000}></Image>
             </div>

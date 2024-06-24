@@ -42,14 +42,13 @@ const WhyChooseUs = () => {
         </motion.p>
       </div>
       <div className="grid gap-6 row-gap-5 md:mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2">
-        <Link href="/" aria-label="View Item">
           <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
             <Image
               src={Expertise}
-              className="object-cover w-full h-56 md:h-64 xl:h-80"
+              className="object-cover w-full h-72 md:h-64 xl:h-80"
               alt=""
             />
-            <div className="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+            <div className="absolute inset-0 md:px-6 px-2 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
               <p className="mb-4 md:text-CardHeading text-CardHeading-sm font-semibold text-gray-100">
                 Expertise
               </p>
@@ -62,15 +61,13 @@ const WhyChooseUs = () => {
               </p>
             </div>
           </div>
-        </Link>
-        <Link href="/" aria-label="View Item">
           <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
             <Image
-              className="object-cover w-full h-56 md:h-64 xl:h-80"
+              className="object-cover w-full h-72 md:h-64 xl:h-80"
               src={Approach}
               alt=""
             />
-            <div className="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+            <div className="absolute inset-0 md:px-6 px-2 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
               <p className="mb-4 text-lg font-bold text-gray-100">
                 Comprehensive Approach
               </p>
@@ -83,15 +80,13 @@ const WhyChooseUs = () => {
               </p>
             </div>
           </div>
-        </Link>
-        <Link href="/" aria-label="View Item">
           <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
             <Image
-              className="object-cover w-full h-56 md:h-64 xl:h-80"
+              className="object-cover w-full h-72 md:h-64 xl:h-80"
               src={CustomizedSolutions}
               alt=""
             />
-            <div className="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+            <div className="absolute inset-0 md:px-6 px-2 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
               <p className="mb-4 text-lg font-bold text-gray-100">
                 Customized Solutions
               </p>
@@ -105,29 +100,26 @@ const WhyChooseUs = () => {
               </p>
             </div>
           </div>
-        </Link>
-        <Link href="/" aria-label="View Item">
           <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
             <Image
-              className="object-cover w-full h-56 md:h-64 xl:h-80"
+              className="object-cover w-full h-72 md:h-64 xl:h-80"
               src={Quality}
               alt=""
             />
-            <div className="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+            <div className="absolute inset-0 md:px-6 px-2 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
               <p className="mb-4 text-lg font-bold text-gray-100">
                 Commitment to Quality
               </p>
               <p className="text-sm tracking-wide text-gray-300">
                 Quality is at the core of everything we do. We are dedicated to
-                delivering software that not only meets but exceeds industry
+                delivering software that meets & exceeds industry
                 standards for reliability, stability and performance. With our
                 rigorous testing processes and unwavering commitment to
-                excellence, you can trust us to ensure the highest levels of
+                excellence, we ensure the highest levels of
                 quality for your software products.
               </p>
             </div>
           </div>
-        </Link>
       </div>
     </div>
   );

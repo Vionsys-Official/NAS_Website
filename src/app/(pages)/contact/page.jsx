@@ -168,7 +168,7 @@ function page() {
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0.5 }}
-              className="mb-4 font-sans text-Heading font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none"
+              className="mb-4 text-Heading font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none"
             >
               Navigate to Us with Ease
             </motion.h2>

@@ -23,7 +23,7 @@ const ApplyCard = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}
-            className="text-blue-900 text-MainHeading-sm md:text-MainHeading font-semibold py-2 md:py-6 cursor-pointer font-sans px-6 text-center"
+            className="text-blue-900 text-MainHeading-sm md:text-MainHeading font-semibold py-2 md:py-6 px-6 text-center"
           >
             Job Opportunities For You
           </motion.h2>
@@ -37,7 +37,7 @@ const ApplyCard = () => {
                 whileInView={"show"}
                 viewport={{ once: true, amount: 0.8 }}
                 key={feat.id}
-                className="bg-opacity-70 overflow-hidden flex flex-col items-center shadow-lg shadow-gray-400 bg-slate-50 hover:bg-slate-100 group border border-gray-800 rounded-xl cursor-pointer py-2"
+                className="bg-opacity-70 overflow-hidden flex flex-col items-center shadow-lg shadow-gray-400 bg-slate-50 hover:bg-slate-100 group border border-gray-800 rounded-xl py-2"
               >
                 <h2 className="flex items-center text-blue950 hover:text-blue2  rounded-xl tracking-wide text-CardHeading-sm md:text-CardHeading font-extrabold md:py-2 h-[3rem] xl:h-full text-center group-hover:scale-105 ease-linear">
                   {feat?.title}

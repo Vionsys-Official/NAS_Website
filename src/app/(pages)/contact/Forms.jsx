@@ -305,7 +305,7 @@ const Forms = () => {
             src={Form}
             height={3000}
             width={3000}
-            className="max-w-full object-cover lg:max-w-lg lg:h-[90vh] lg:w-[30vw] transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
+            className="max-w-full object-cover lg:max-w-lg lg:h-[90vh] lg:w-[30vw] transition-all duration-300 rounded-lg filter grayscale hover:grayscale-0"
             alt="Image not found"
           />
         </div>
