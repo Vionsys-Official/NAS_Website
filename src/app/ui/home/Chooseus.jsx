@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import ChooseUs from "./images/chooseus1.jpg";
 const Chooseus = () => {
   return (
-    <section id="chooseus">
+    <section id="chooseus" className="overflow-hidden">
       <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
         <div className="flex flex-col max-w-screen-lg overflow-hidden  rounded shadow-sm lg:flex-row sm:mx-auto">
           {/* Image section */}
@@ -26,9 +26,9 @@ const Chooseus = () => {
             </svg>
           </div>
           {/* Content section */}
-          <div className=" md:h-[70vh] h-auto flex flex-col justify-center  bg-white lg:p-16 lg:pl-10 lg:w-[50vw]">
+          <div className="md:h-[70vh] h-auto flex flex-col justify-center bg-white lg:p-16 lg:pl-10 lg:w-[50vw]">
             <div>
-              <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
+              <p className="capitalize pt-4 md:text-MainHeading text-MainHeading-sm font-extrabold text-blue2">
                 Why Choose Us
               </p>
             </div>
@@ -63,7 +63,7 @@ const Chooseus = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.5 }}
-              className="mb-3 text-MainHeading text-center text-blue-900 font-extrabold  sm:text-4xl"
+              className="mb-3 md:text-SubHeading text-SubHeading-sm font-bold text-start"
             >
               What sets us apart?
             </motion.h5>
@@ -72,9 +72,9 @@ const Chooseus = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.5 }}
-              className="mb-5 text-Para text-black font-medium p-2 text-center h-auto"
+              className="mb-5 md:text-Para text-Para-sm text-black font-medium p-2 text-start h-auto"
             >
-              <span className="font-bold  text-blue-950">Select us</span> for
+              <span className="font-bold">Select us</span> for
               your IT needs, as we offer cutting-edge solutions, a team of
               highly skilled experts, dependable support and a commitment to
               customer satisfaction to drive your business to success, We offer

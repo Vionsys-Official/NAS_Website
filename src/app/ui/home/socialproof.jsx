@@ -76,12 +76,12 @@ const SocialProofCounter = () => {
   }, []);
 
   return (
-    <div className="md:backdrop-blur-sm shadow-md">
+    <div className="md:backdrop-blur-sm shadow-md overflow-hidden">
       <section
-        className="w-full md:px-16 px-4 pt-5 flex justify-center items-center backdrop-blur-sm"
+        className="w-full md:px-16 px-4 pt-5 flex justify-center items-center backdrop-blur-sm bg-slate-200"
         ref={sectionRef}
       >
-        <div className="w-full grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 justify-center items-center">
+        <div className="w-full grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-6 gap-2 justify-center items-center">
           {/* first section */}
           <motion.div
             initial={{ scale: 1.3, opacity: 0 }}
@@ -97,8 +97,8 @@ const SocialProofCounter = () => {
             {/* Heading */}
             <div className="md:w-72 w-full md:h-48 h-20 bg-golden4 flex justify-center items-center rounded-md">
               <h3
-                className="text-MainHeading font-bold text-blue-900 rounded-xl bg-white shadow-md
-              py-4 uppercase md:px-8"
+                className="md:text-MainHeading text-MainHeading-sm text-blue2 font-extrabold rounded-xl bg-white shadow-lg
+              py-4 uppercase md:px-8 w-full md:w-auto text-center"
               >
                 Highlights
               </h3>
@@ -119,13 +119,13 @@ const SocialProofCounter = () => {
                     ease: "easeInOut",
                   }}
                   key={item.id}
-                  className="relative bg-white flex flex-col gap-4 justify-center items-center border py-4 rounded-xl shadow-xl shadow-gray2 overflow-hidden group cursor-pointer md:w-52 lg:w-60 w-full h-48 align-content-center"
+                  className="relative bg-white flex flex-col gap-4 justify-center items-center border py-4 rounded-xl shadow-2xl shadow-gray2 overflow-hidden group cursor-pointer md:w-52 lg:w-60 w-full h-48 align-content-center"
                 >
-                  <div className="relative z-10 bg-golden3 text-blue-950 p-3 rounded-full transition-all duration-500 group-hover:text-white">
+                  <div className="relative z-10 bg-golden3 text-blue2 rounded-full transition-all duration-500 group-hover:text-black">
                     {item.icon}
                   </div>
-                  <div className="relative z-10 flex flex-col justify-center items-center">
-                    <h5 className="text-2xl font-extrabold transition-all duration-500 group-hover:text-white text-blue-950">
+                  <div className="relative z-10 flex flex-col justify-center items-center gap-1">
+                    <h5 className="text-3xl font-extrabold transition-all duration-500 group-hover:text-black text-black">
                       {isVisible ? (
                         <CountUp
                           end={item.count}
@@ -137,11 +137,11 @@ const SocialProofCounter = () => {
                       )}
                       {item.id === 4 ? "%" : "+"}
                     </h5>
-                    <p className="text-subHeading font-semibold transition-all duration-500 group-hover:text-white text-blue-950 text-center">
+                    <p className="text-subHeading font-semibold transition-all duration-500 group-hover:text-black text-black text-center">
                       {item.heading}
                     </p>
                   </div>
-                  <div className="absolute inset-0 bg-green-400 transition-transform duration-500 transform translate-y-full group-hover:translate-y-0"></div>
+                  <div className="absolute inset-0 bg-green2 transition-transform duration-500 transform translate-y-full group-hover:translate-y-0"></div>
                 </motion.div>
               ))}
             </div>

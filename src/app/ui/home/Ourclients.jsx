@@ -20,7 +20,7 @@ const OurClients = () => {
     if (sliderWrapperRef.current) {
       setWidth(
         sliderWrapperRef.current.scrollWidth -
-          sliderWrapperRef.current.offsetWidth
+        sliderWrapperRef.current.offsetWidth
       );
     }
   }, []);
@@ -36,11 +36,11 @@ const OurClients = () => {
   ];
 
   return (
-    <div className="shadow-xl">
-      <h1 className="md:text-4xl text-2xl text-blue-900 font-bold text-center py-2">
+    <div className="shadow-xl overflow-hidden">
+      <h1 className="md:text-MainHeading text-MainHeading-sm font-extrabold text-blue2 text-center py-2 capitalize">
         Our Clients
       </h1>
-      <section className="backdrop-blur-md w-[100vw] overflow-x-hidden flex justify-center items-center px-6 py-5 bg-[rgba(101,227,131,0.5)]">
+      <section className="backdrop-blur-md w-[100vw] overflow-x-hidden flex justify-center items-center px-6 py-5 bg-[#45aec5]">
         <motion.div
           ref={sliderWrapperRef}
           className="w-[100%] cursor-grab overflow-hidden"
