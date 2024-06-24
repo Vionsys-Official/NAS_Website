@@ -18,14 +18,14 @@ const Benefits = () => {
           opacity: { duration: 0.6 },
           ease: "easeInOut",
         }}
-        className="md:w-[50%] w-full h-[40%] p-5"
+        className="md:w-[50%] w-full h-[40%] md:p-5 p-2"
       >
         <Image src={DataScience} alt="" className="w-full h-[80%]" />
       </motion.div>
       <div className="md:w-[50%] w-full">
-        <div className="w-full p-5">
+        <div className="w-full md:p-5 p-1">
           <div className="flex flex-col justify-center items-center">
-            <h1 className="md:text-Heading text-Heading-sm font-extrabold text-blue2 capitalize">
+            <h1 className="md:text-Heading text-Heading-sm font-extrabold text-center text-blue2 capitalize">
               Who benefits from implementing Big Data?
             </h1>
             <motion.div
@@ -33,7 +33,7 @@ const Benefits = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, amount: 0.8 }}
-              className="w-full flex flex-col gap-4 py-6 p-8"
+              className="w-full flex flex-col gap-4 py-6 md:p-8 p-1"
             >
               <div className="flex flex-row gap-2">
                 <h1 className="pt-1">

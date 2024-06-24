@@ -9,7 +9,7 @@ const Imag = () => {
   return (
     <div>
       <div className='relative'>
-        <Image src={CrmImage} alt='' className='w-full md:h-[80vh] h-[50vh] object-cover' />
+        <Image src={CrmImage} alt='' className='w-full md:h-[80vh] h-[30vh] object-cover' />
         <motion.div
           variants={fadein("down", 0.2)}
           initial="hidden"

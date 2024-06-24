@@ -35,9 +35,9 @@ const Services = () => {
             <Image
               src={HelpDeskSupport}
               alt=""
-              className="object-cover w-full h-64"
+              className="object-cover w-full md:h-64 h-52"
             />
-            <div className="p-5 border border-t-0">
+            <div className="md:p-5 p-2 border border-t-0">
               <p className="text-blackmb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
                 24/7 Help Desk Support
               </p>
@@ -59,10 +59,10 @@ const Services = () => {
             <Image
               src={networkManagement}
               alt=""
-              className="object-cover w-full h-64"
+              className="object-cover w-full md:h-64 h-52"
             />
 
-            <div className="p-5 border border-t-0">
+            <div className="md:p-5 p-2 border border-t-0">
               <p className="text-blackmb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
                 Network Management
               </p>
@@ -84,9 +84,9 @@ const Services = () => {
             <Image
               src={ITConsulting}
               alt=""
-              className="object-cover w-full h-64"
+              className="object-cover w-full md:h-64 h-52"
             />
-            <div className="p-5 border border-t-0">
+            <div className="md:p-5 p-2 border border-t-0">
               <p className="text-blackmb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide">
                 IT Consulting
               </p>
@@ -109,10 +109,10 @@ const Services = () => {
           >            <Image
               src={RemoteWorkSolutions}
               alt=""
-              className="object-cover w-full h-64"
+              className="object-cover w-full md:h-64 h-52"
             />
 
-            <div className="p-5 border border-t-0">
+            <div className="md:p-5 p-2 border border-t-0">
               <p className="text-blackmb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
                 Remote Workforce Solutions
               </p>
@@ -134,10 +134,10 @@ const Services = () => {
           >
             <Image
               src={SoftwareSupport}
-              className="object-cover w-full h-64"
+              className="object-cover w-full md:h-64 h-52"
               alt=""
             />
-            <div className="p-5 border border-t-0">
+            <div className="md:p-5 p-2 border border-t-0">
               <p className="text-blackmb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide">
                 {" "}
                 Software Support and Maintenance
@@ -160,9 +160,9 @@ const Services = () => {
           <Image
               src={ComplianceSupport}
               alt=""
-              className="object-cover w-full h-64"
+              className="object-cover w-full md:md:h-64 h-52"
             />
-            <div className="p-5 border border-t-0">
+            <div className="md:p-5 p-2 border border-t-0">
               <p className="text-blackmb-3 md:text-CardHeading text-CardHeading-sm font-semibold tracking-wide ">
                 Compliance and Regulatory Support
               </p>

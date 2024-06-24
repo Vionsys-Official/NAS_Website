@@ -16,7 +16,7 @@ const WhyChooseUs = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}
-            className="md:text-Heading text-Heading-sm font-extrabold tracking-tight text-center text-blue2 cursor-pointer"
+            className="md:text-Heading text-Heading-sm font-extrabold tracking-tight text-center text-blue2"
           >
             Why Choose Us?
           </motion.h2>
@@ -29,7 +29,7 @@ const WhyChooseUs = () => {
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{ once: true, amount: 0.8 }} 
-                    className="flex cursor-pointer">
+                    className="flex">
               `  <div className="flex-shrink-0 md:block hidden">
                   <div className="flex items-center justify-center w-12 h-12 rounded-md">
                     <svg
@@ -65,7 +65,7 @@ const WhyChooseUs = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, amount: 0.8 }} 
-              className="flex cursor-pointer">
+              className="flex">
                 <div className="flex-shrink-0 md:block hidden">
                   <div 
                     className="flex items-center justify-center w-12 h-12 rounded-md"
@@ -102,7 +102,7 @@ const WhyChooseUs = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, amount: 0.8 }} 
-              className="flex cursor-pointer">
+              className="flex">
                 <div className="flex-shrink-0 md:block hidden">
                   <div
                     className="flex items-center justify-center w-12 h-12 rounded-md"
@@ -148,7 +148,7 @@ const WhyChooseUs = () => {
             }}
             aria-hidden="true"
             viewport={{ once: true, amount: 0.8 }}
-            className="mt-10 lg:mt-0 cursor-pointer"
+            className="mt-10 lg:mt-0"
           >
             <Image
               src={WhyChooseus}
@@ -166,7 +166,7 @@ const WhyChooseUs = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, amount: 0.8 }} 
-              className="flex cursor-pointer">
+              className="flex">
                   <div className="flex-shrink-0 md:block hidden">
                     <div
                       className="flex items-center justify-center w-12 h-12 rounded-md"
@@ -205,7 +205,7 @@ const WhyChooseUs = () => {
                   initial="hidden"
                   whileInView={"show"}
                   viewport={{ once: true, amount: 0.8 }} 
-                  className="flex cursor-pointer">
+                  className="flex">
                   <div className="flex-shrink-0 md:block hidden">
                     <div
                       className="flex items-center justify-center w-12 h-12 rounded-md"
@@ -244,7 +244,7 @@ const WhyChooseUs = () => {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: true, amount: 0.8 }} 
-                className="flex cursor-pointer">
+                className="flex">
                   <div className="flex-shrink-0 md:block hidden">
                     <div
                       className="flex items-center justify-center w-12 h-12 rounded-md"
@@ -290,7 +290,7 @@ const WhyChooseUs = () => {
                 ease: "easeInOut",
               }}
               viewport={{ once: true, amount: 0.8 }}
-              className="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1 cursor-pointer"
+              className="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1"
             >
               <Image
                 src={WhyChooseus2}

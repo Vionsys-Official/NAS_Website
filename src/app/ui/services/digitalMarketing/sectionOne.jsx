@@ -14,14 +14,14 @@ const sectionOne = () => {
           src={Hero}
           alt=""
         />
-        <div className="w-full absolute backdrop-blur md:backdrop-blur-none flex justify-center md:justify-end pt-10 lg:px-20 xl:px-6">
+        <div className="w-full absolute backdrop-blur md:backdrop-blur-none flex justify-center md:justify-end pt-10 lg:px-20 xl:px-6 px-0">
             <motion.div
              animate={{ y: [-100, 0] }}
-             className='w-[70%] md:w-[50%]'>
+             className='w-full md:w-[50%] md:px-0 px-3'>
           <h2 className="mb-5 font-extrabold tracking-tight text-blue2 md:text-MainHeading text-MainHeading-sm sm:leading-none md:text-center">
           Digital Marketing Services
           </h2>
-          <p className="mb-5 text-lg font-semibold text-slate-600 md:text-xl md:text-center px-12">
+          <p className="mb-5 text-lg font-semibold text-slate-600 md:text-xl md:text-center md:px-12 px-1">
           Boost your online presence with our strategic solutions. From SEO to social media, we optimize your digital strategy for maximum impact and growth.
           </p>
           <div className="text-center">

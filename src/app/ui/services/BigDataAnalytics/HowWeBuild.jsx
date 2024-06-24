@@ -21,7 +21,7 @@ const HowWeBuild = () => {
   ];
   return (
     <div className="w-full ">
-      <div className="flex justify-center items-center px-10 md:py-10 py-4">
+      <div className="flex justify-center items-center md:px-10 px-2 md:py-10 py-4">
         <h1 className="md:text-Heading text-Heading-sm font-extrabold text-blue2 capitalize">
           How we build a Big Data Strategy for your business:
         </h1>

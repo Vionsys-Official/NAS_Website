@@ -12,7 +12,7 @@ const Faq4 = ({obj}) => {
             variants={fadein("left", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: true, amount: 0.8 }} className="mb-6 text-blue2 text-MainHeading-sm md:text-MainHeading md:p-6 font-extrabold leading-none tracking-tight cursor-pointer">
+            viewport={{ once: true, amount: 0.8 }} className="mb-6 text-blue2 text-Heading-sm md:text-Heading-sm text-center md:p-6 font-extrabold leading-none tracking-tight">
             <span className="relative inline-block">
                 <svg
                 viewBox="0 0 52 24"

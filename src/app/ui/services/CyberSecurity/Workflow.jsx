@@ -62,12 +62,12 @@ const Workflow = () => {
   ];
 
   return (
-    <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
+    <div className="px-2 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
       <motion.div
         variants={fadein("up", 0.1)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: true, amount: 0.8 }} className="max-w-xl mb-10 md:mx-auto flex flex-col justify-center items-center text-center lg:max-w-3xl md:mb-6">
+        viewport={{ once: true, amount: 0.8 }} className="max-w-xl mb-4  md:mx-auto flex flex-col justify-center items-center text-center lg:max-w-3xl md:mb-6">
         <h2
           className="flex max-w-xl mb-6 md:text-Heading text-Heading-sm font-extrabold leading-none tracking-tight text-blue2 capitalize"
         >
@@ -80,7 +80,7 @@ const Workflow = () => {
           evolving threats
         </p>
       </motion.div>
-      <div className="relative grid gap-8 row-gap-5 mb-8 md:row-gap-8 md:grid-cols-4 sm:grid-cols-2 py-4 px-6">
+      <div className="relative grid md:gap-8 gap-4 row-gap-5 mb-8 md:row-gap-8 md:grid-cols-4 sm:grid-cols-2 py-4 md:px-6">
         <div className="absolute inset-0 flex items-center justify-center sm:hidden lg:flex">
           
         </div>
@@ -91,7 +91,7 @@ const Workflow = () => {
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}
             key={item.id}
-            className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2"
+            className="md:p-5 p-1 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2"
           >
             <div className="flex items-center justify-between mb-2">
               <p className="md:text-CardHeading text-CardHeading-sm font-bold leading-5">

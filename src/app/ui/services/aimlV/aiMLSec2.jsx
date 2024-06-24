@@ -75,7 +75,7 @@ const aiMlSec2 = () => {
         {mysect2.map((feat) => (
           <div
             key={feat.id}
-            className="border-2 border-gray-400 relative hover:cursor-pointer hover:scale-105 transition-all overflow-hidden rounded-lg bg-background p-2"
+            className="border-2 border-gray-400 relative hover:scale-105 transition-all overflow-hidden rounded-lg bg-background p-2"
           >
             <div className="flex flex-col justify-center items-center rounded-md p-1">
               <div className='text-Heading p-2 rounded-full bg-gray-200 text-green1'><feat.icon /></div>

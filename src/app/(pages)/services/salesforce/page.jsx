@@ -12,7 +12,7 @@ export const metadata = {
 
 const Salesforce = () => {
   return (
-    <main>
+    <main className='overflow-hidden'>
       
       <SalesForceSec1/>
     

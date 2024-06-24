@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <div>
       <div className="relative bg-black">
-        <Image src={Cloud} alt='' className="inset-0 object-cover w-full md:h-full h-[80vh] opacity-85" />
+        <Image src={Cloud} alt='' className="inset-0 object-cover w-full md:h-full h-[70vh] md:opacity-85 opacity-55" />
         <motion.div
           initial={{ opacity: 0, scale: 0.7 }} //X:100
           whileInView={{ opacity: 1, scale: 1 }} //y:100

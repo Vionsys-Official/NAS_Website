@@ -23,10 +23,10 @@ const salesforcesec4 = () => {
 
           <div className="md:mt-16 mt-4">
             <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-              <div className="relative duration-300  transform  hover:-translate-y-2 cursor-pointer">
+              <div className="relative duration-300  transform  hover:-translate-y-2">
                 <dt>
                   <FaCloud className="absolute top-0 left-0 mt-1 ml-1 text-2xl text-blue-600" />
-                  <p className="ml-16 text-center text-SubHeading leading-6 font-bold text-gray-700">
+                  <p className="ml-16 md:text-center text-start md:text-SubHeading text-xl leading-6 font-bold text-gray-700">
                     Sales Cloud
                   </p>
                 </dt>
@@ -39,10 +39,10 @@ const salesforcesec4 = () => {
                 </dd>
               </div>
 
-              <div className="relative duration-300 transform hover:-translate-y-2 cursor-pointer">
+              <div className="relative duration-300 transform hover:-translate-y-2">
                 <dt>
                   <FaCloud className="absolute top-0 left-0 mt-1 ml-1 text-2xl text-blue-600" />
-                  <p className="ml-16 text-center text-SubHeading leading-6 font-bold text-gray-700">
+                  <p className="ml-16 md:text-center text-start md:text-SubHeading text-xl leading-6 font-bold text-gray-700">
                     Marketing Cloud
                   </p>
                 </dt>
@@ -55,10 +55,10 @@ const salesforcesec4 = () => {
                   efforts.
                 </dd>
               </div>
-              <div className="relative duration-300 transform hover:-translate-y-2 cursor-pointer">
+              <div className="relative duration-300 transform hover:-translate-y-2">
                 <dt>
                   <FaCloud className="absolute top-0 left-0 mt-1 ml-1 text-2xl text-blue-600" />
-                  <p className="ml-16 text-SubHeading text-center leading-6 font-bold text-gray-700">
+                  <p className="ml-16 md:text-center text-start md:text-SubHeading text-xl leading-6 font-bold text-gray-700">
                     Platform and App Cloud
                   </p>
                 </dt>
@@ -70,10 +70,10 @@ const salesforcesec4 = () => {
                   Salesforce with low-code development tools.
                 </dd>
               </div>
-              <div className="relative duration-300 transform hover:-translate-y-2 cursor-pointer">
+              <div className="relative duration-300 transform hover:-translate-y-2">
                 <dt>
                   <FaCloud className="absolute top-0 left-0 mt-1 ml-1 text-2xl text-blue-600" />
-                  <p className="ml-16 text-SubHeading text-center leading-6 font-bold text-gray-700">
+                  <p className="ml-16 md:text-center text-start md:text-SubHeading text-xl leading-6 font-bold text-gray-700">
                     Service Cloud
                   </p>
                 </dt>

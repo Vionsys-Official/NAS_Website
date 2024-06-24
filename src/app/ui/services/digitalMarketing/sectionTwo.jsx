@@ -4,14 +4,14 @@ import Image from 'next/image';
 
 const sectionTwo = () => {
   return (
-    <main className="px-4 py-10 w-full lg:px-8 bg-white">
+    <main className="px-2 py-10 w-full lg:px-8 bg-white">
       <div className="grid gap-10 lg:grid-cols-2 text-center">
         <div className="flex flex-col justify-center items-center">
           
-          <h5 className="mb-4 md:text-MainHeading text-MainHeading-sm font-extrabold text-blue2 leading-none capitalize">
+          <h5 className="mb-4 md:text-Heading text-Heading-sm font-extrabold text-blue2 leading-none capitalize">
           Boost Your Online Presence with NAS Infotech Pvt Ltd
           </h5>
-          <p className="mb-6 px-2 text-slate-600 font-semibold text-lg">
+          <p className="mb-6 md:px-2 text-slate-600 font-semibold text-lg">
           At NAS Infotech Pvt Ltd, we specialize in delivering top-notch 
           digital marketing services designed to elevate your brand&apos;s online presence. 
           Our expert team leverages the latest strategies and technologies to ensure your 

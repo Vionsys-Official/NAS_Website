@@ -54,7 +54,7 @@ const Whychooseus = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}
-             className="text-blue2 mb-6 font-sans text-MainHeading-sm md:text-MainHeading md:p-6 font-extrabold leading-none tracking-tight cursor-pointer">
+             className="text-blue2 mb-6 text-Heading-sm md:text-Heading md:p-6 font-extrabold leading-none tracking-tight">
             <span className="relative inline-block">
                 <svg
                 viewBox="0 0 52 24"
@@ -90,7 +90,7 @@ const Whychooseus = () => {
                         initial="hidden"
                         whileInView={"show"}
                         viewport={{ once: true, amount: 0.8 }}
-                        key={feat.id} className='flex flex-col items-start justify-center cursor-pointer'>
+                        key={feat.id} className='flex flex-col items-start justify-center'>
                             <div className='flex flex-row gap-2 md:gap-6 items-start justify-center py-2'>
                                 <div className='text-blue2 text-MainHeading-sm md:text-MainHeading'><feat.icon/></div>
                                 <div>
