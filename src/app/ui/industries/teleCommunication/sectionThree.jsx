@@ -11,17 +11,17 @@ const sectionThree = () => {
         <h2 className="text-blue2 font-extrabold md:text-Heading text-Heading-sm pb-8">
           Why Choose Us ?
         </h2>
-        <div className="grid gap-8 row-gap-5 lg:grid-cols-3">
+        <motion.div initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.2,
+              y: { type: "spring", stiffness: 30 },
+              opacity: { duration: 0.6 },
+              ease: "easeInOut"
+            }} className="grid gap-8 row-gap-5 lg:grid-cols-3">
           {Cards.map((data, index) => (
-            <motion.div
-              initial={{ opacity: 0, scale: 0.7 }} //X:100
-              whileInView={{ opacity: 1, scale: 1 }} //y:100
-              transition={{
-                delay: 0.2,
-                scale: { type: "spring", stiffness: 30 },
-                opacity: { duration: 0.6 },
-                ease: "easeInOut",
-              }}
+            <div
+              
               key={index}
               className="relative p-px overflow-hidden transition duration-300 transform border rounded-xl shadow-sm hover:scale-105 group hover:shadow-xl"
             >
@@ -50,9 +50,9 @@ const sectionThree = () => {
                   {data.description}
                 </p>
               </div>
-            </motion.div>
+            </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

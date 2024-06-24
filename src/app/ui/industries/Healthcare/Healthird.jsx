@@ -24,9 +24,14 @@ const Healthird = () => {
         <div className="px-4 py-9 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-5">
           <div className="grid gap-6 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
             <motion.div
-              whileHover={{ scale: 1.04, delay: 2000 }}
-              onHoverStart={(e) => { }}
-              onHoverEnd={(e) => { }}
+               initial={{ opacity: 0, y: 100 }}
+               whileInView={{ opacity: 1, y: 0 }}
+               transition={{
+                 delay: 0.2,
+                 y: { type: "spring", stiffness: 30 },
+                 opacity: { duration: 0.6 },
+                 ease: "easeInOut"
+               }}
               className="overflow-hidden transition-shadow duration-300 bg-blue-200 rounded text-center"
             >
               <Link href="/" aria-label="Article">
@@ -60,9 +65,14 @@ const Healthird = () => {
               </div>
             </motion.div>
             <motion.div
-              whileHover={{ scale: 1.04 }}
-              onHoverStart={(e) => { }}
-              onHoverEnd={(e) => { }}
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  delay: 0.2,
+                  y: { type: "spring", stiffness: 30 },
+                  opacity: { duration: 0.6 },
+                  ease: "easeInOut"
+                }}
               className="overflow-hidden transition-shadow duration-300 bg-blue-200 rounded text-center"
             >
               <Link href="/" aria-label="Article">
@@ -92,9 +102,14 @@ const Healthird = () => {
               </div>
             </motion.div>
             <motion.div
-              whileHover={{ scale: 1.04 }}
-              onHoverStart={(e) => { }}
-              onHoverEnd={(e) => { }}
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  delay: 0.2,
+                  y: { type: "spring", stiffness: 30 },
+                  opacity: { duration: 0.6 },
+                  ease: "easeInOut"
+                }}
               className="overflow-hidden transition-shadow duration-300 bg-blue-200 rounded text-center"
             >
               <Link href="/" aria-label="Article">
@@ -130,9 +145,14 @@ const Healthird = () => {
         <div className="px-4 md:py-7 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-5">
           <div className="grid gap-6 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
             <motion.div
-              whileHover={{ scale: 1.04 }}
-              onHoverStart={(e) => { }}
-              onHoverEnd={(e) => { }}
+               initial={{ opacity: 0, y: 100 }}
+               whileInView={{ opacity: 1, y: 0 }}
+               transition={{
+                 delay: 0.2,
+                 y: { type: "spring", stiffness: 30 },
+                 opacity: { duration: 0.6 },
+                 ease: "easeInOut"
+               }}
               className="overflow-hidden transition-shadow duration-300 bg-blue-200 rounded text-center"
             >
               <Link href="/" aria-label="Article">
@@ -165,9 +185,14 @@ const Healthird = () => {
               </div>
             </motion.div>
             <motion.div
-              whileHover={{ scale: 1.04 }}
-              onHoverStart={(e) => { }}
-              onHoverEnd={(e) => { }}
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  delay: 0.2,
+                  y: { type: "spring", stiffness: 30 },
+                  opacity: { duration: 0.6 },
+                  ease: "easeInOut"
+                }}
               className="overflow-hidden transition-shadow duration-300 bg-blue-200 rounded text-center"
             >
               <Link href="/" aria-label="Article">
@@ -197,9 +222,14 @@ const Healthird = () => {
               </div>
             </motion.div>
             <motion.div
-              whileHover={{ scale: 1.04 }}
-              onHoverStart={(e) => { }}
-              onHoverEnd={(e) => { }}
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  delay: 0.2,
+                  y: { type: "spring", stiffness: 30 },
+                  opacity: { duration: 0.6 },
+                  ease: "easeInOut"
+                }}
               className="overflow-hidden transition-shadow duration-300 bg-blue-200 rounded text-center"
             >
               <Link href="/" aria-label="Article">

@@ -5,12 +5,22 @@ import Image from "next/image";
 import dataanalytics from "/public/assets/industries/Banking/DataAnalytics.jpg";
 import cyber from "/public/assets/industries/Banking/cybersec2.jpg";
 import custexp from "/public/assets/industries/Banking/customerexp.jpg";
+import { motion } from "framer-motion";
 
 function BankingS1() {
   return (
     <div className="px-4 py-8 mx-auto max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10 ">
       <div className="max-w-xl md:mx-auto sm:text-center lg:max-w-2xl sm:h-[20vh]">
-        <h2 className="max-w-lg mb-6 md:text-Heading sm:text-Heading-sm font-extrabold leading-none tracking-tight text-blue2 md:mx-auto">
+        <motion.h2 
+           initial={{ opacity: 0, y: 100 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           transition={{
+             delay: 0.2,
+             y: { type: "spring", stiffness: 30 },
+             opacity: { duration: 0.6 },
+             ease: "easeInOut"
+           }} 
+         className="max-w-lg mb-6 md:text-Heading sm:text-Heading-sm font-extrabold leading-none tracking-tight text-blue2 md:mx-auto">
           <span className="relative inline-block">
             <svg
               viewBox="0 0 52 24"
@@ -37,13 +47,31 @@ function BankingS1() {
             <span className="relative">What</span>
           </span>{" "}
           Do We Offer?
-        </h2>
-        <p className="md:text-lg  text-Para-sm font-semibold text-slate-600">
+        </motion.h2>
+        <motion.p
+           initial={{ opacity: 0, y: 100 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           transition={{
+             delay: 0.2,
+             y: { type: "spring", stiffness: 30 },
+             opacity: { duration: 0.6 },
+             ease: "easeInOut"
+           }} 
+         className="md:text-lg  text-Para-sm font-semibold text-slate-600">
           Below mentioned are few services offered by us!!
-        </p>
+        </motion.p>
       </div>
 
-      <div className="grid gap-5 row-gap-5 mb-8 lg:grid-cols-4 sm:grid-cols-2">
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.2,
+          y: { type: "spring", stiffness: 30 },
+          opacity: { duration: 0.6 },
+          ease: "easeInOut"
+        }}
+       className="grid gap-5 row-gap-5 mb-8 lg:grid-cols-4 sm:grid-cols-2">
         <div className="flex flex-col h-full bg-blue950">
           <Image src={h1} className="object-cover w-full h-48 " alt="" />
           <div className="flex-grow border border-t-0 rounded-b">
@@ -105,7 +133,7 @@ function BankingS1() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
