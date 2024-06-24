@@ -27,11 +27,20 @@ const Chooseus = () => {
           </div>
           {/* Content section */}
           <div className="md:h-[70vh] h-auto flex flex-col justify-center bg-white lg:p-16 lg:pl-10 lg:w-[50vw]">
-            <div>
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                delay: 0.2,
+                x: { type: "spring", stiffness: 30 },
+                opacity: { duration: 0.5 },
+                ease: "easeInOut"
+              }}
+            >
               <p className="capitalize pt-4 md:text-MainHeading text-MainHeading-sm font-extrabold text-blue2">
                 Why Choose Us
               </p>
-            </div>
+            </motion.div>
             {/* SVG dots */}
             <span className="relative inline-block">
               <svg
@@ -59,19 +68,27 @@ const Chooseus = () => {
             </span>
             {/* heading and para */}
             <motion.h5
-              variants={fadein("left", 0.1)}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.5 }}
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                delay: 0.2,
+                x: { type: "spring", stiffness: 30 },
+                opacity: { duration: 0.6 },
+                ease: "easeInOut",
+              }}
               className="mb-3 md:text-SubHeading text-SubHeading-sm font-bold text-start"
             >
               What sets us apart?
             </motion.h5>
             <motion.p
-              variants={fadein("right", 0.1)}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.5 }}
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                delay: 0.2,
+                x: { type: "spring", stiffness: 30 },
+                opacity: { duration: 0.6 },
+                ease: "easeInOut",
+              }}
               className="mb-5 md:text-Para text-Para-sm text-black font-medium p-2 text-start h-auto"
             >
               <span className="font-bold">Select us</span> for

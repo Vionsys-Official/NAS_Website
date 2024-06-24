@@ -119,7 +119,7 @@ const SocialProofCounter = () => {
                     ease: "easeInOut",
                   }}
                   key={item.id}
-                  className="relative bg-white flex flex-col gap-4 justify-center items-center border py-4 rounded-xl shadow-2xl shadow-gray2 overflow-hidden group cursor-pointer md:w-52 lg:w-60 w-full h-48 align-content-center"
+                  className="relative bg-white flex flex-col gap-4 justify-center items-center border py-4 rounded-xl shadow-2xl shadow-gray2 overflow-hidden group md:w-52 lg:w-60 w-full h-48 align-content-center"
                 >
                   <div className="relative z-10 bg-golden3 text-blue2 rounded-full transition-all duration-500 group-hover:text-black">
                     {item.icon}

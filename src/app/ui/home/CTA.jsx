@@ -11,20 +11,28 @@ const CTA = () => {
           {/* Ḥead and Para */}
           <div className="space-y-3">
             <motion.h2
-              variants={fadein("left", 0.1)}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.5 }}
+              initial={{ opacity: 0, scale: 1.3 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                delay: 0.2,
+                scale: { type: "spring", stiffness: 30 },
+                opacity: { duration: 0.6 },
+                ease: "easeInOut",
+              }}
               className="font-extrabold text-start md:text-center capitalize md:text-MainHeading text-MainHeading-sm text-blue2"
             >
               Experience the innovation and efficiency firsthand. Contact us now
               to embark on your journey to excellence.
             </motion.h2>
             <motion.p
-              variants={fadein("right", 0.1)}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.5 }}
+              initial={{ opacity: 0, scale: 0.6 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                delay: 0.2,
+                scale: { type: "spring", stiffness: 30 },
+                opacity: { duration: 0.6 },
+                ease: "easeInOut",
+              }}
               className="mx-auto max-w-[600px] text-Para text-start md:text-center"
             >
               Empower your team to prioritize feature delivery over
@@ -33,9 +41,18 @@ const CTA = () => {
             </motion.p>
           </div>
           {/* Button */}
-          <div className="mx-auto w-full max-w-sm py-5">
+          <motion.div
+            initial={{ opacity: 0, scale: 1.3 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+              delay: 0.2,
+              scale: { type: "spring", stiffness: 30 },
+              opacity: { duration: 0.5 },
+              ease: "easeInOut"
+            }}
+            className="mx-auto w-full max-w-sm py-5">
             <Button />
-          </div>
+          </motion.div>
         </div>
       </section>{" "}
     </div>
