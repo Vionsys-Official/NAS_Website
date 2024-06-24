@@ -8,7 +8,7 @@ const herosectionMain = () => {
   return (
     <>
     {/* Hero Section */}
-    <section className="relative w-full h-[60vh]  min-h-[500px] flex items-center justify-center">
+    <section className="relative w-full h-[50vh] flex items-center justify-center">
                 <div className="absolute inset-0 bg-black">
                     <Image
                         alt="Heroic Figure"

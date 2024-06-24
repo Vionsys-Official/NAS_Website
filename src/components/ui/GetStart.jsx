@@ -14,7 +14,7 @@ const GetStart = () => {
         viewport={{ once: true, amount: 0.8 }}
         className="max-w-2xl md:mx-auto sm:text-center lg:max-w-3xl py-4 md:px-0 px-2"
       >
-        <h1 className="md:text-Heading text-Heading-sm font-extrabold tracking-tight text-blue2 sm:leading-none leading-10 text-center">
+        <h1 className="md:text-Heading text-Heading-sm font-extrabold tracking-tight text-blue2 sm:leading-none leading-10 text-center capitalize">
           Ready to Get Started?
         </h1>
         <p className="text-slate-600 font-semibold text-lg py-4 text-center">

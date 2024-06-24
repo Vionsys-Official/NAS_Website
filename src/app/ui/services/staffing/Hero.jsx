@@ -19,11 +19,11 @@ const Hero = () => {
               }} className="order-2 flex flex-col items-start w-full max-w-xl px-4 mx-auto lg:px-8 lg:max-w-screen-xl">
         <div className="md:mb-16 md:py-0 py-3 mb-4 lg:my-40 lg:max-w-lg lg:pr-5">
           <div className="max-w-xl mb-6">
-            <h2 className="max-w-lg md:mb-6 mb-2 md:text-MainHeading text-MainHeading-sm font-bold tracking-tight text-blue950 sm:text-4xl sm:leading-none">
+            <h2 className="max-w-lg md:mb-6 mb-2 md:text-HMain text-HMain-sm font-extrabold tracking-tight text-blue2 sm:text-4xl sm:leading-none">
               IT Staffing
             </h2>
-            <p className="text-gray-800 md:text-lg text-base md:py-4">
-            In today's rapidly evolving technological landscape, finding the right talent is crucial for business success. Our IT staffing services are designed to bridge the gap between skilled professionals and organizations in need of top-tier talent.
+            <p className="text-slate-600 font-semibold mb-4 md:text-CardHeading text-CardHeading-sm md:py-4">
+            In today&apos;s rapidly evolving technological landscape, finding the right talent is crucial for business success. Our IT staffing services are designed to bridge the gap between skilled professionals and organizations in need of top-tier talent.
             </p>
             <div>
               <Button2/>

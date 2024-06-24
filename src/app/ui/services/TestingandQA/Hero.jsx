@@ -19,7 +19,7 @@ function Hero() {
             opacity: { duration: 0.6 },
             ease: "easeInOut",
           }} className="absolute inset-y-0 left-0 md:w-1/2 w-full flex flex-col justify-center items-center">
-          <h1 className='text-white md:text-HMain text-HMain-sm font-extrabold mb-3 text-center'>Testing and Quality Assurance</h1>
+          <h1 className='text-white md:text-HMain text-HMain-sm font-extrabold mb-3 text-center capitalize'>Testing and Quality Assurance</h1>
           <p className='text-white md:text-CardHeading text-CardHeading-sm text-center md:p-1 p-2'>We transform software testing and quality assurance through a
             customized approach that blends cutting-edge innovation with deep
             expertise. Driven by a commitment to excellence, we rigorously

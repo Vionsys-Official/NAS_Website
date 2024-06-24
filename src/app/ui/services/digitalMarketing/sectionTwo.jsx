@@ -8,14 +8,12 @@ const sectionTwo = () => {
       <div className="grid gap-10 lg:grid-cols-2 text-center">
         <div className="flex flex-col justify-center items-center">
           
-          <h5 className="mb-4 text-4xl font-extrabold text-blue-900 leading-none">
-          Boost Your Online Presence with 
-          <span className="text-green-500"> N</span><span className='text-stone-400'>AS </span> 
-          Infotech Pvt Ltd
+          <h5 className="mb-4 md:text-MainHeading text-MainHeading-sm font-extrabold text-blue2 leading-none capitalize">
+          Boost Your Online Presence with NAS Infotech Pvt Ltd
           </h5>
-          <p className="mb-6 px-2 text-gray-900 text-lg">
+          <p className="mb-6 px-2 text-slate-600 font-semibold text-lg">
           At NAS Infotech Pvt Ltd, we specialize in delivering top-notch 
-          digital marketing services designed to elevate your brand's online presence. 
+          digital marketing services designed to elevate your brand&apos;s online presence. 
           Our expert team leverages the latest strategies and technologies to ensure your 
           business stands out in the competitive digital landscapes.
           </p>

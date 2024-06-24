@@ -7,10 +7,10 @@ function BiHero() {
       <div className="relative w-full ">
         <Image src={Hero3} alt="" className="w-full md:h-[100vh] object-cover h-[60vh]" />
 
-        <div className="absolute w-full inset-y-0 flex flex-col justify-center bg-gray-800 bg-opacity-50 items-center p-4 md:pl-20 md:pr-20 sm:pl-20 sm:pr-20 ">
+        <div className="absolute w-full inset-y-0 flex flex-col justify-center bg-gray-800 bg-opacity-60 items-center p-4 md:pl-20 md:pr-20 sm:pl-20 sm:pr-20 ">
           <div>
             <span>
-              <h1 className="text-white md:text-HeroHeading text-HeroHeading-sm font-extrabold py-4 s:w-72 ">
+              <h1 className="text-white md:text-HeroHeading text-HeroHeading-sm font-extrabold py-4 s:w-72 capitalize">
                 Business Intelligence and Analytics{" "}
               </h1>
               <p className="md:text-SubHeading text-SubHeading-sm text-white pt-2 pb-4 md:w-full ">

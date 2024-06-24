@@ -13,14 +13,14 @@ const Workflow = () => {
     },
     {
       id: 2,
-      title: "Identify Threats",
-      description:
-        "Recognize potential threats like malware, phishing and insider attacks.",
+      title: "Assess Vulnerabilities",
+      description: "Identify weaknesses that could be exploited by threats.",
     },
     {
       id: 3,
-      title: "Assess Vulnerabilities",
-      description: "Identify weaknesses that could be exploited by threats.",
+      title: "Identify Threats",
+      description:
+        "Recognize potential threats like malware, phishing and insider attacks.",
     },
     {
       id: 4,
@@ -30,34 +30,34 @@ const Workflow = () => {
     },
     {
       id: 5,
-      title: "Develop Risk Mitigation Strategies",
-      description: "Create plans to reduce identified risks.",
-    },
-    {
-      id: 6,
-      title: "Establish Security Policies",
-      description:
-        "Define rules for acceptable use, access controls and data protection.",
-    },
-    {
-      id: 7,
       title: "Implement Continuous Monitoring",
       description: "Monitor systems in real-time for security events.",
     },
     {
-      id: 8,
+      id: 6,
+      title: "Develop Risk Mitigation Strategies",
+      description: "Create plans to reduce identified risks.",
+    },
+    {
+      id: 7,
       title: "Prepare an Incident Response Team",
       description: "Establish a team to respond to security incidents.",
     },
     {
-      id: 9,
-      title: "Recover Systems and Data",
+      id: 8,
+      title: "Recover Systems & Data",
       description: "Restore affected systems and data to normal operations.",
     },
     {
-      id: 10,
+      id: 9,
       title: "Ensure Regulatory Compliance",
       description: "Meet relevant laws, regulations and standards.",
+    },
+    {
+      id: 10,
+      title: "Establish Security Policies",
+      description:
+        "Define rules for acceptable use, access controls and data protection.",
     },
   ];
 
@@ -67,14 +67,14 @@ const Workflow = () => {
         variants={fadein("up", 0.1)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: true, amount: 0.8 }} className="max-w-xl mb-10 md:mx-auto flex flex-col justify-center items-center text-center lg:max-w-2xl md:mb-6">
+        viewport={{ once: true, amount: 0.8 }} className="max-w-xl mb-10 md:mx-auto flex flex-col justify-center items-center text-center lg:max-w-3xl md:mb-6">
         <h2
-          className="flex max-w-lg mb-6 font-sans md:text-Heading text-Heading-sm font-bold leading-none tracking-tight text-blue950 "
+          className="flex max-w-xl mb-6 md:text-Heading text-Heading-sm font-extrabold leading-none tracking-tight text-blue2 capitalize"
         >
           <span className="relative inline-block"></span> Workflow of Cyber
           Security
         </h2>
-        <p className=" text-gray-800 md:text-Para text-Para-sm">
+        <p className=" text-slate-600 text-lg font-semibold">
           Discover comprehensive Cyber Security Solutions tailored to your
           needs, fortifying your defenses and shielding your organization from
           evolving threats

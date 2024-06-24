@@ -23,7 +23,7 @@ const Hero = () => {
               whileInView={"show"}
               viewport={{ once: true, amount: 0.8 }}
               className='md:absolute md:inset-0 flex flex-col justify-center md:pr-2'>
-                <h3 className='text-blue2 text-HMain-sm md:text-HMain-sm lg:text-HMain font-extrabold py-2 md:py-4'>Build Your Online Presence with Our High-Quality Web Development Services</h3>
+                <h3 className='text-blue2 text-HMain-sm md:text-HMain-sm lg:text-HMain font-extrabold py-2 md:py-4 capitalize'>Build Your Online Presence with Our High-Quality Web Development Services</h3>
                 <p className='text-gray-900 text-HSub-sm md:text-HSub font-medium md:pr-6 lg:pr-0'>Unlock the full potential of your business with tailored solutions that enhance user experience, drive engagement and boost your digital footprint.</p>
               </motion.div>
             </div>

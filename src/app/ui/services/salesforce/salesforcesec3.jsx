@@ -27,7 +27,7 @@ const salesforcesec3 = () => {
               whileInView={"show"}
               viewport={{ once: true, amount: 0.8 }}
             >
-              <h1 className="md:text-SubHeading text-SubHeading-sm font-semibold tracking-wide text-gray-800 dark:text-white text-center ">
+              <h1 className="md:text-SubHeading text-SubHeading-sm font-semibold tracking-wide text-gray-800 dark:text-white text-center">
                 Comprehensive Services for Your Salesforce Needs
               </h1>
               <p className="mt-4 text-gray-600 text-center dark:text-gray-300">

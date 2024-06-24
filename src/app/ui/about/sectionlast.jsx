@@ -6,7 +6,7 @@ const sectionlast = () => {
     <section className='max-w-full pt-4 pb-8 md:px-10 px-2 flex justify-center'>
       <div className='bg-gray-300 w-[90%] flex flex-col md:flex-row justify-between py-4 md:px-8 px-3'>
         <div>
-          <h2 className='font-bold text-blue2 text-xl py-2'>
+          <h2 className='font-bold text-blue2 text-xl py-2 capitalize'>
             Explore how our expertise can benefit you.
           </h2>
           <p className='py-3 md:text-lg text-Para-sm text-slate-600 font-semibold'>

@@ -32,7 +32,7 @@ const Hero = () => {
         className="relative flex flex-col items-start h-[90vh] w-full max-w-3xl px-2 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl"
       >
         <div className="md:mb-16 md:py-4 py-2 lg:py-32 lg:max-w-xl md:h-[90vh] h-[55vh] flex flex-col md:justify-center justify-end">
-          <h2 className=" lg:px-5 mb-5 md:text-HMain text-HMain-sm text-center font-bold tracking-tight text-blue2 sm:text-4xl sm:leading-none leading-10">
+          <h2 className=" lg:px-5 mb-5 md:text-HMain text-HMain-sm text-center font-bold tracking-tight text-blue2 sm:text-4xl sm:leading-none leading-10 capitalize">
           Welcome to
             NAS Software <br className="hidden md:block" />
             Development Solutions

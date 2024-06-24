@@ -16,7 +16,7 @@ const salesforcesec4 = () => {
             viewport={{ once: true, amount: 0.8 }}
             className="lg:text-center"
           >
-            <p className="md:font-Heading mt-2 md:text-Heading text-Heading-sm leading-8 font-extrabold tracking-tight text-blue2">
+            <p className="md:font-Heading mt-2 md:text-Heading text-Heading-sm leading-8 font-extrabold tracking-tight text-blue2 capitalize">
               Transform Your Business with Salesforce Cloud
             </p>
           </motion.div>

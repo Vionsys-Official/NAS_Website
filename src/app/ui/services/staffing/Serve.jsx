@@ -41,8 +41,8 @@ const Serve = () => {
           opacity: { duration: 0.6 },
           ease: "easeInOut",
         }} className="px-4 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-8 text-gray-800">
-            <h2 className="mb-4 md:text-Heading text-Heading-sm font-bold leading-none text-center">Industries We Serve</h2>
-            <p className="mb-6 text-base text-center text-gray-800 md:text-lg">Our IT staffing services cater to a wide range of industries, including but not limited to:</p>
+            <h2 className="mb-4 md:text-Heading text-Heading-sm text-blue2 font-extrabold leading-none text-center">Industries We Serve</h2>
+            <p className="mb-6 text-center text-lg text-slate-600 font-semibold">Our IT staffing services cater to a wide range of industries including but not limited to:</p>
             <ul className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
                 {serve.map((item) => (
                     <li key={item.id} className="flex items-center space-x-2">

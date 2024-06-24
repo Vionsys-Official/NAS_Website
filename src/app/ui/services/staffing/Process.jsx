@@ -38,8 +38,8 @@ const Process = () => {
                         whileInView={"show"}
                         viewport={{ once: true, amount: 0.8 }} className="col-span-12 sm:col-span-3">
                         <div className="text-center sm:text-left md:mb-14 mb-6 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-blue5">
-                            <h3 className="md:text-Heading text-Heading-sm mb-4 font-bold text-blue950">Our Process</h3>
-                            <span className="md:text-Para text-Para-sm font-bold tracking-wider text-gray-800">We understand the importance of a streamlined process in delivering exceptional IT staffing solutions. From initial consultation to final placement, our process is designed to ensure efficiency, transparency and client satisfaction every step of the way.</span>
+                            <h3 className="md:text-Heading text-Heading-sm mb-4 font-extrabold text-blue2">Our Process</h3>
+                            <span className="tracking-wider text-lg text-slate-600 font-semibold">We understand the importance of a streamlined process in delivering exceptional IT staffing solutions. From initial consultation to final placement, our process is designed to ensure efficiency, transparency and client satisfaction every step of the way.</span>
                         </div>
                     </motion.div>
                     <div className="relative col-span-12 md:px-4 space-y-6 sm:col-span-9">

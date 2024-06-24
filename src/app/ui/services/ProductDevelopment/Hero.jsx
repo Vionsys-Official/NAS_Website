@@ -8,7 +8,7 @@ import ProductImage from "/public/assets/services/ProductDevelopment/Productdevo
 function Hero() {
   return (
     <section className="overflow-x-hidden">
-      <div className="relative w-full h-[60vh] md:h-[90vh]">
+      <div className="relative w-full h-[60vh] md:h-[100vh]">
         <Image src={ProductImage} className="w-full h-full object-cover" alt=""/>
  
         <div className="absolute  inset-0 p-4 rounded-xl md:inset-y-0 md:right-20 flex md:justify-end items-center w-full">
@@ -17,7 +17,7 @@ function Hero() {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}
-            className="text-white text-SubHeading w-full  px-4 md:px-4 py-4 md:py-2 md:w-[50vw]  bg-black bg-opacity-50 md:bg-black md:bg-opacity-50"
+            className="text-white text-SubHeading font-medium w-full px-4 py-4 md:py-2 md:w-[50vw] bg-black bg-opacity-50"
           >
             Unlock innovation with our customized Product Development
             Solutions. Stay ahead in competitive markets with comprehensive
