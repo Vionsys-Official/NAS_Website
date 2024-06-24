@@ -40,12 +40,28 @@ const vision = () => {
 
             </span>
             <div className="max-w-xl mb-6">
-              <h2 className="max-w-lg mb-6 md:text-MainHeading text-MainHeading-sm font-extrabold capitalize text-blue2">
+              <motion.h2
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{
+                  delay: 0.2,
+                  x: { type: "spring", stiffness: 30 },
+                  opacity: { duration: 0.5 },
+                  ease: "easeInOut"
+                }}
+                className="max-w-lg mb-6 md:text-MainHeading text-MainHeading-sm font-extrabold capitalize text-blue2">
                 Our Vision
-              </h2>
+              </motion.h2>
               <motion.p
-
-                className="text-base text-gray-700 md:text-lg">
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{
+                  delay: 0.2,
+                  x: { type: "spring", stiffness: 30 },
+                  opacity: { duration: 0.5 },
+                  ease: "easeInOut"
+                }}
+                className="md:text-Para text-Para-sm">
                 We envision a world where businesses of all sizes can harness the power
                 of technology to achieve their full potential. Our goal is to be the trusted
                 partner for companies seeking to innovate and transform their operations
@@ -56,24 +72,55 @@ const vision = () => {
 
           <div className="flex items-center justify-center -mx-4 lg:pl-8">
             <div className="flex flex-col items-end px-3">
-              <Image
-                className="object-cover mb-6 rounded shadow-lg h-28 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"
-                src={vision3}
-                alt=""
-              />
-              <Image
-                className="object-cover w-20 h-20 rounded shadow-lg sm:h-32 xl:h-40 sm:w-32 xl:w-40"
-                src={vision2}
-                alt=""
-              />
+              <motion.div
+                initial={{ opacity: 0, scale: 0.7 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{
+                  delay: 0.2,
+                  x: { type: "spring", stiffness: 30 },
+                  opacity: { duration: 0.5 },
+                  ease: "easeInOut"
+                }}
+              >
+                <Image
+                  className="object-cover mb-6 rounded shadow-lg h-28 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"
+                  src={vision3}
+                  alt=""
+                />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.7 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{
+                  delay: 0.2,
+                  x: { type: "spring", stiffness: 30 },
+                  opacity: { duration: 0.5 },
+                  ease: "easeInOut"
+                }}
+              >
+                <Image
+                  className="object-cover w-20 h-20 rounded shadow-lg sm:h-32 xl:h-40 sm:w-32 xl:w-40"
+                  src={vision2}
+                  alt=""
+                />
+              </motion.div>
             </div>
-            <div className="px-3">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.7 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                delay: 0.2,
+                x: { type: "spring", stiffness: 30 },
+                opacity: { duration: 0.5 },
+                ease: "easeInOut"
+              }}
+              className="px-3">
               <Image
                 className="object-cover w-40 h-40 rounded shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80"
                 src={vision1}
                 alt=""
               />
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

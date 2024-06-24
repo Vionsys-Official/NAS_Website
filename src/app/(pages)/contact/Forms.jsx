@@ -5,7 +5,7 @@ import Image from "next/image";
 import { ContactSchema } from "../../../schema/ContactUsSchema"; // Importing the Yup schema
 import axios from "axios";
 import { Toaster, toast } from "react-hot-toast"; // Importing Toaster and toast
-
+import { motion } from "framer-motion";
 const Forms = () => {
   const initialFormData = {
     fname: "",
@@ -65,11 +65,29 @@ const Forms = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2">
         <div className="flex items-center justify-center px-4 py-10 sm:px-6 sm:py-16 lg:px-8">
           <div className="xl:mx-auto lg:w-[50vw] w-full ">
-            <h2 className="text-3xl font-bold text-center leading-tight text-blue950 sm:text-4xl py-6">
+            <motion.h2
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                delay: 0.2,
+                x: { type: "spring", stiffness: 30 },
+                opacity: { duration: 0.6 },
+                ease: "easeInOut"
+              }}
+              className="md:text-MainHeading text-MainHeading-sm font-extrabold text-blue2 text-center leading-tight py-6">
               Get In Touch
-            </h2>
+            </motion.h2>
 
-            <form className="max-w-[90%] mx-auto" onSubmit={handleSubmit}>
+            <motion.form
+              initial={{ opacity: 0, scale: 0.6 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                delay: 0.2,
+                scale: { type: "spring", stiffness: 30 },
+                opacity: { duration: 0.5 },
+                ease: "easeInOut"
+              }}
+              className="max-w-[90%] mx-auto" onSubmit={handleSubmit}>
               {/* FirstName, LastName, Email, Contact No */}
               <div className="grid md:grid-cols-2 md:gap-6">
                 {/* First Name */}
@@ -80,9 +98,8 @@ const Forms = () => {
                     id="floating_first_name"
                     value={formData.fname}
                     onChange={handleChange}
-                    className={`block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer ${
-                      errors.fname ? "border-red-500" : "" // Add red border for validation error
-                    }`}
+                    className={`block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer ${errors.fname ? "border-red-500" : "" // Add red border for validation error
+                      }`}
                     placeholder=" "
                     required
                   />
@@ -105,9 +122,8 @@ const Forms = () => {
                     id="floating_last_name"
                     value={formData.lname}
                     onChange={handleChange}
-                    className={`block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer ${
-                      errors.lname ? "border-red-500" : "" // Add red border for validation error
-                    }`}
+                    className={`block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer ${errors.lname ? "border-red-500" : "" // Add red border for validation error
+                      }`}
                     placeholder=" "
                     required
                   />
@@ -131,9 +147,8 @@ const Forms = () => {
                     id="floating_phone"
                     value={formData.number}
                     onChange={handleChange}
-                    className={`block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer ${
-                      errors.number ? "border-red-500" : "" // Add red border for validation error
-                    }`}
+                    className={`block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer ${errors.number ? "border-red-500" : "" // Add red border for validation error
+                      }`}
                     placeholder=" "
                     required
                   />
@@ -157,9 +172,8 @@ const Forms = () => {
                     id="floating_email"
                     value={formData.email}
                     onChange={handleChange}
-                    className={`block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer ${
-                      errors.email ? "border-red-500" : "" // Add red border for validation error
-                    }`}
+                    className={`block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer ${errors.email ? "border-red-500" : "" // Add red border for validation error
+                      }`}
                     placeholder=" "
                     required
                   />
@@ -186,9 +200,8 @@ const Forms = () => {
                     id="floating_subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    className={`block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer ${
-                      errors.subject ? "border-red-500" : "" // Add red border for validation error
-                    }`}
+                    className={`block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer ${errors.subject ? "border-red-500" : "" // Add red border for validation error
+                      }`}
                     placeholder=""
                     required
                   />
@@ -245,9 +258,8 @@ const Forms = () => {
                     value={formData.message}
                     onChange={handleChange}
                     rows="4"
-                    className={`block p-2.5 w-full text-sm dark:border-gray-600 text-gray-900 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500 ${
-                      errors.message ? "border-red-500" : "" // Add red border for validation error
-                    }`}
+                    className={`block p-2.5 w-full text-sm dark:border-gray-600 text-gray-900 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500 ${errors.message ? "border-red-500" : "" // Add red border for validation error
+                      }`}
                     placeholder="Leave a comment..."
                     required
                   ></textarea>
@@ -297,10 +309,19 @@ const Forms = () => {
                   )}
                 </button>
               </div>
-            </form>
+            </motion.form>
           </div>
         </div>
-        <div className="h-full w-full flex justify-center object-cover bg-cover items-center overflow-x-hidden">
+        <motion.div
+          initial={{ opacity: 0, scale: 1.3 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{
+            delay: 0.2,
+            x: { type: "spring", stiffness: 30 },
+            opacity: { duration: 0.5 },
+            ease: "easeInOut"
+          }}
+          className="h-full w-full flex justify-center object-cover bg-cover items-center overflow-x-hidden">
           <Image
             src={Form}
             height={3000}
@@ -308,7 +329,7 @@ const Forms = () => {
             className="max-w-full object-cover lg:max-w-lg lg:h-[90vh] lg:w-[30vw] transition-all duration-300 rounded-lg filter grayscale hover:grayscale-0"
             alt="Image not found"
           />
-        </div>
+        </motion.div>
       </div>
     </>
   );
