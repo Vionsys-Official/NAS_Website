@@ -65,7 +65,7 @@ const Benefits = () => {
                 viewport={{ once: true, amount: 0.8 }}
                 className="grid md:gap-8 gap-4 row-gap-5 mb-8 md:row-gap-8 lg:grid-cols-3 sm:grid-cols-2">
                 {benefit.map((item) => (
-                    <div key={item.id} className="duration-300 transform bg-white border-l-4 shadow-sm border-blue950 hover:-translate-y-2">
+                    <div key={item.id} className="duration-300 transform bg-white border-l-4 shadow-sm border-blue2 hover:-translate-y-2">
                         <div className="h-full md:p-5 p-2 border border-l-0 rounded-r">
                             <h6 className="mb-2 font-semibold leading-5 text-black">{item.title}</h6>
                             <p className="text-sm text-gray-800">{item.para}</p>

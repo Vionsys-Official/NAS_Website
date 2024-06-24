@@ -12,7 +12,7 @@ const Eduthird = () => {
               <p className="text-blue2 md:text-Heading text-Heading-sm font-bold">
                 Build the future with us
               </p>
-              <p className="text-slate-600 md:text-lg text-Para-sm font-semibold">
+              <p className="text-slate-600 md:text-lg text-Para-sm">
                 At NAS Infotech, we are dedicated to pioneering innovative
                 solutions that transform learning and empower the next
                 generation.

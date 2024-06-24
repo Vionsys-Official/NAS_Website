@@ -8,7 +8,7 @@ function Bankingchoose() {
   return (
     <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8  sm:py-10">
       <div className="max-w-xl mb-5 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 sm:py-2">
-        <h2 className="max-w-lg mb-6 md:text-MainHeading font-bold leading-none tracking-tight text-blue2 text-MainHeading-sm md:mx-auto">
+        <h2 className="max-w-lg mb-6 md:text-Heading font-extrabold leading-none tracking-tight text-blue2 text-Heading-sm md:mx-auto">
           <span className="relative inline-block">
             <svg
               viewBox="0 0 52 24"
@@ -129,7 +129,7 @@ function Bankingchoose() {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, amount: 0.8 }}>
-              <h6 className="mb-3 text-xl font-bold leading-5 md:text-lg text-base">
+              <h6 className="mb-3  font-bold leading-5 md:text-lg text-base">
                 Customer-Centric Focus
               </h6>
               <p className="md:text-Para text-Para-sm text-blue900">

@@ -40,7 +40,7 @@ const Service = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true, amount: 0.8 }} className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-        <h2 className="max-w-lg mb-6 md:text-Heading text-Heading-sm text-center font-bold leading-none tracking-tight text-blue2 sm:text-4xl md:mx-auto">
+        <h2 className="max-w-lg mb-6 md:text-Heading text-Heading-sm text-center font-extrabold leading-none tracking-tight text-blue2 sm:text-4xl md:mx-auto">
           Our Digital Transformation Services
         </h2>
       </motion.div>

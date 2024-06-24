@@ -39,7 +39,7 @@ const Choose = () => {
                 viewport={{ once: true, amount: 0.8 }}
                 className="px-4 mx-auto pt-8 text-center mb-4">
                 
-                <h2 className="pb-3 text-blue2 text-Heading-sm font-bold md:text-Heading">Why Choose Us for Your Digital Transformation Journey?</h2>
+                <h2 className="pb-3 text-blue2 text-Heading-sm font-extrabold md:text-Heading">Why Choose Us for Your Digital Transformation Journey?</h2>
             </motion.div>
             <div
                 className="relative px-4 md:py-10 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-16">

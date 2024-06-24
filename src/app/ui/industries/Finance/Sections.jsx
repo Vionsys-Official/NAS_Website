@@ -236,7 +236,7 @@ const Sections = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0.5 }}
-              className="font-bold text-Heading-sm md:text-Heading py-2 text-blue2 text-center">
+              className="font-extrabold text-Heading-sm md:text-Heading py-2  text-blue2 text-center">
               Discover What We Can Do For You.
             </motion.h2>
             <motion.p
