@@ -12,12 +12,12 @@ const OtherInfor = () => {
         <div className='py-10'>
             <div className='py-5'>
                 <motion.h2
-                 variants={fadein("up", 0.2)}
-                 initial="hidden"
-                 whileInView={"show"}
-                 viewport={{ once: true, amount: 0.8 }}
-                 className="max-w-6xl mx-auto text-center md:text-Heading text-Heading-sm font-bold tracking-tight text-blue950 text-2xl sm:leading-none">Integrated Solutions for Technological Innovation, Regulatory Compliance and Customization in Pharmaceuticals.
-                 </motion.h2>
+                    variants={fadein("up", 0.2)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: true, amount: 0.8 }}
+                    className="max-w-6xl mx-auto text-center md:text-Heading text-Heading-sm font-extrabold tracking-tight text-blue2 sm:leading-none">Integrated Solutions for Technological Innovation, Regulatory Compliance and Customization in Pharmaceuticals.
+                </motion.h2>
             </div>
             <motion.div
                 initial={{ opacity: 0, scale: 0.7 }} //X:100

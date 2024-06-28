@@ -28,7 +28,7 @@ const Whychooseus = () => {
             id:3,
             icon:FaHandshakeSimple,
             title:"Customer-Focused",
-            desc:"Your satisfaction is paramount, and we strive to exceed your expectations.",
+            desc:"Your satisfaction is paramount and we strive to exceed your expectations.",
         },
         {
             id:4,
@@ -40,7 +40,7 @@ const Whychooseus = () => {
 
   return (
     <div className='flex items-center justify-center'>
-    <div className='w-[90%] flex flex-col md:flex-row items-center justify-center py-10 md:py-14 my-4 md:my-8 bg-gradient-to-l from-blue-200 to-transparent '>
+    <div className='w-[90%] flex flex-col md:flex-row items-center justify-center py-10 md:py-14 my-4 md:my-8 bg-gradient-to-l from-blue-50 to-transparent '>
         <motion.div
             variants={fadein("left", 0.2)}
             initial="hidden"
@@ -54,7 +54,7 @@ const Whychooseus = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}
-             className="text-green-900 mb-6 font-sans text-MainHeading-sm md:text-MainHeading md:p-6 font-semibold leading-none tracking-tight cursor-pointer">
+             className="text-blue2 mb-6 text-Heading-sm md:text-Heading md:p-6 font-extrabold leading-none tracking-tight">
             <span className="relative inline-block">
                 <svg
                 viewBox="0 0 52 24"
@@ -90,11 +90,11 @@ const Whychooseus = () => {
                         initial="hidden"
                         whileInView={"show"}
                         viewport={{ once: true, amount: 0.8 }}
-                        key={feat.id} className='flex flex-col items-start justify-center cursor-pointer'>
+                        key={feat.id} className='flex flex-col items-start justify-center'>
                             <div className='flex flex-row gap-2 md:gap-6 items-start justify-center py-2'>
-                                <div className='text-green-900 text-MainHeading-sm md:text-MainHeading'><feat.icon/></div>
+                                <div className='text-blue2 text-MainHeading-sm md:text-MainHeading'><feat.icon/></div>
                                 <div>
-                                <h2 className='text-green-950 text-CardHeading-sm md:text-CardHeading font-semibold'>{feat.title}</h2>
+                                <h2 className='text-black text-CardHeading-sm md:text-CardHeading font-semibold'>{feat.title}</h2>
                                 <p className='text-Para-sm md:text-Para'>{feat.desc}</p>
                                 </div>
                             </div>

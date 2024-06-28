@@ -36,7 +36,7 @@ const serve = [
 const Services = () => {
   return (
     <section className="py-6">
-      <div className="px-6 mx-auto">
+      <div className="md:px-6 px-2 mx-auto">
         <div className="lg:flex lg:items-center">
           <motion.div
             variants={fadein("up", 0.2)}
@@ -46,14 +46,14 @@ const Services = () => {
             className="w-full space-y-6 lg:w-1/2 "
           >
             <div>
-              <h1 className="md:text-Heading text-Heading-sm font-bold text-blue950 capitalize">
+              <h1 className="md:text-Heading text-Heading-sm font-extrabold text-blue2 capitalize">
                 Our Software Development Services
               </h1>
 
               <div className="">
-                <span className="inline-block w-40 h-1 rounded-full bg-blue-500"></span>
-                <span className="inline-block w-3 h-1 ml-1 rounded-full bg-blue-500"></span>
-                <span className="inline-block w-1 h-1 ml-1 rounded-full bg-blue-500"></span>
+                <span className="inline-block w-40 h-1 rounded-full bg-blue5"></span>
+                <span className="inline-block w-3 h-1 ml-1 rounded-full bg-blue5"></span>
+                <span className="inline-block w-1 h-1 ml-1 rounded-full bg-blue5"></span>
               </div>
             </div>
 

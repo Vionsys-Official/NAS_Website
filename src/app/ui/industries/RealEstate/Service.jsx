@@ -88,24 +88,24 @@ const Service = () => {
                                 height="24"
                             />
                         </svg>
-                        <span className="relative md:text-Heading text-Heading-sm text-blue950">Services Provided</span>
+                        <span className="relative md:text-Heading text-Heading-sm font-extrabold text-blue2">Services Provided</span>
                     </span>
                 </h2>
-                <p className="text-base text-gray-700 md:text-lg">
+                <p className="text-Para-sm text-slate-600 font-semibold md:text-lg">
                     Our services are designed to enhance efficiency, improve customer experiences, and drive business growth for real estate professionals. Here’s how we can help you elevate your real estate business:
                 </p>
             </motion.div>
             <div className="grid w-full gap-5 mb-8 lg:grid-cols-3 sm:mx-auto lg:max-w-full">
                 {service.map((item) => (
                     <motion.div
-                    initial={{ opacity: 0, scale: 0.7 }} //X:100
-                    whileInView={{ opacity: 1, scale: 1 }} //y:100
-                    transition={{
-                      delay: 0.2,
-                      scale: { type: "spring", stiffness: 30 },
-                      opacity: { duration: 0.6 },
-                      ease: "easeInOut",
-                    }} key={item.id} className="md:p-5 p-1 text-center border-gray-400 border-2 rounded-2xl">
+                        initial={{ opacity: 0, scale: 0.7 }} //X:100
+                        whileInView={{ opacity: 1, scale: 1 }} //y:100
+                        transition={{
+                            delay: 0.2,
+                            scale: { type: "spring", stiffness: 30 },
+                            opacity: { duration: 0.6 },
+                            ease: "easeInOut",
+                        }} key={item.id} className="md:p-5 p-1 text-center border-gray-400 border-2 rounded-2xl">
                         <h1 className="inline-block max-w-xs mx-auto mb-3 md:text-CardHeading text-CardHeading-sm font-extrabold leading-7 transition-colors duration-200 text-blue2 hover:text-blue950">
                             {item.title}
                         </h1>

@@ -3,10 +3,10 @@ import Image from 'next/image'
 import React from 'react'
 import { fadein } from '@/components/ui/variants';
 import { motion } from 'framer-motion';
-import Customization from '/public/assets/services/ItStaffing/Customization.jpg'
-import Expertise from '/public/assets/services/ItStaffing/Expertise.jpg'
-import Innovation from '/public/assets/services/ItStaffing/Innovation.jpg'
-import Result from '/public/assets/services/ItStaffing/Result.jpeg'
+import Customization from '/public/assets/services/Crm/Customization.jpg'
+import Expertise from '/public/assets/services/Crm/Expertise.jpg'
+import Innovation from '/public/assets/services/ItStaffing/Innovation.jpeg'
+import Result from '/public/assets/services/Crm/Result.jpeg'
 
 
 const Benefit = () => {
@@ -17,8 +17,8 @@ const Benefit = () => {
             variants={fadein("up", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: true, amount: 0.8 }} className="md:text-Heading text-Heading-sm font-bold py-4 text-center text-blue950">Benefits of Partnering with Us</motion.h1>
-            <div className='flex md:flex-row flex-col md:justify-evenly gap-4 md:py-0 px-2'>
+            viewport={{ once: true, amount: 0.8 }} className="md:text-Heading text-Heading-sm font-extrabold py-4 text-center text-blue2 capitalize">Benefits of Partnering with Us</motion.h1>
+            <div className='flex md:flex-row flex-col items-center md:justify-evenly gap-4 md:py-0 px-2'>
                 <motion.div
                     variants={fadein("up", 0.2)}
                     initial="hidden"

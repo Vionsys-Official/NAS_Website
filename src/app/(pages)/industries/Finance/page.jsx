@@ -9,9 +9,9 @@ export const metadata = {
 
 const page = () => {
   return (
-    <main id='mission' className='overflow-x-hidden'>
-      <Hero/>
-      <Sections/>
+    <main className='overflow-x-hidden'>
+      <Hero />
+      <Sections />
     </main>
   )
 }

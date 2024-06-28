@@ -9,14 +9,14 @@ import Image from "next/image";
 const WhyChooseUs = () => {
   return (
     <section className="dark:bg-gray-100 dark:text-gray-800">
-      <div className="container max-w-xl p-6 py-6 mx-auto space-y-10 lg:px-8 lg:max-w-7xl">
+      <div className="max-w-xl p-6 py-6 mx-auto space-y-10 lg:px-8 lg:max-w-7xl">
         <div>
           <motion.h2
             variants={fadein("left", 0.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}
-            className="md:text-Heading text-Heading-sm font-bold tracking-tight text-center sm:text-5xl text-blue-900 cursor-pointer"
+            className="md:text-Heading text-Heading-sm font-extrabold tracking-tight text-center text-blue2"
           >
             Why Choose Us?
           </motion.h2>
@@ -29,9 +29,9 @@ const WhyChooseUs = () => {
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{ once: true, amount: 0.8 }} 
-                    className="flex cursor-pointer">
+                    className="flex">
               `  <div className="flex-shrink-0 md:block hidden">
-                  <div className="text-blue-950 flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-600 dark:text-gray-50">
+                  <div className="flex items-center justify-center w-12 h-12 rounded-md">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -49,14 +49,14 @@ const WhyChooseUs = () => {
                   </div>
                 </div>
                 <div>
-                  <h4 className="text-blue-950 md:text-CardHeading text-CardHeading-sm font-semibold leading-6 dark:text-gray-900">
+                  <h4 className="md:text-CardHeading text-CardHeading-sm font-semibold leading-6 text-gray-900">
                     Innovative Solutions
                   </h4>
                   <p className="mt-2 md:text-Para text-Para-sm text-gray-800">
-                    We're not just followers: we're innovators. We embrace
+                    We&apos;re not just followers; we&apos;re innovators. We embrace
                     cutting-edge technologies and develop creative solutions
                     tailored to your business needs to ensure you stay ahead of
-                    change in today's ever-evolving digital landscape.
+                    change in today&apos;s ever-evolving digital landscape.
                   </p>
                 </div>
               </motion.div>
@@ -65,10 +65,10 @@ const WhyChooseUs = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, amount: 0.8 }} 
-              className="flex cursor-pointer">
+              className="flex">
                 <div className="flex-shrink-0 md:block hidden">
                   <div 
-                    className="text-blue-950 flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-600 dark:text-gray-50"
+                    className="flex items-center justify-center w-12 h-12 rounded-md"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +87,7 @@ const WhyChooseUs = () => {
                   </div>
                 </div>
                 <div>
-                  <h4 className="text-blue-950 md:text-CardHeading text-CardHeading-sm font-semibold leading-6 dark:text-gray-900">
+                  <h4 className="md:text-CardHeading text-CardHeading-sm font-semibold leading-6 text-gray-900">
                     Personalized Approach
                   </h4>
                   <p className="mt-2 md:text-Para text-Para-smtext-gray-800">
@@ -102,10 +102,10 @@ const WhyChooseUs = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, amount: 0.8 }} 
-              className="flex cursor-pointer">
+              className="flex">
                 <div className="flex-shrink-0 md:block hidden">
                   <div
-                    className="text-blue-950 flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-600 dark:text-gray-50"
+                    className="flex items-center justify-center w-12 h-12 rounded-md"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -124,11 +124,11 @@ const WhyChooseUs = () => {
                   </div>
                 </div>
                 <div>
-                  <h4 className="text-blue-950 md:text-CardHeading text-CardHeading-sm font-semibold leading-6 dark:text-gray-900">
+                  <h4 className="md:text-CardHeading text-CardHeading-sm font-semibold leading-6 text-gray-900">
                     Continuous Evolution
                   </h4>
                   <p className="mt-2 md:text-Para text-Para-sm text-gray-800">
-                    We're dedicated to perpetual growth and advancement. Through
+                    We&apos;re dedicated to perpetual growth and advancement. Through
                     ongoing education and adaptation to industry trends, we
                     ensuring your solutions are always at the forefront of
                     innovation.
@@ -148,7 +148,7 @@ const WhyChooseUs = () => {
             }}
             aria-hidden="true"
             viewport={{ once: true, amount: 0.8 }}
-            className="mt-10 lg:mt-0 cursor-pointer"
+            className="mt-10 lg:mt-0"
           >
             <Image
               src={WhyChooseus}
@@ -166,10 +166,10 @@ const WhyChooseUs = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, amount: 0.8 }} 
-              className="flex cursor-pointer">
+              className="flex">
                   <div className="flex-shrink-0 md:block hidden">
                     <div
-                      className="text-blue-950 flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-600 dark:text-gray-50"
+                      className="flex items-center justify-center w-12 h-12 rounded-md"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -189,12 +189,12 @@ const WhyChooseUs = () => {
                   </div>
                   <div className="md:ml-4">
                     <div>
-                      <h4 className="text-blue-950 md:text-CardHeading text-CardHeading-sm font-semibold leading-6 dark:text-gray-900">
+                      <h4 className="md:text-CardHeading text-CardHeading-sm font-semibold leading-6 text-gray-900">
                         Culture of Excellence
                       </h4>
                       <p className="mt-2 md:text-Para text-Para-sm dark:text-gray-800">
                         We cultivate a culture of exceptional service, going the
-                        extra mile to provide prompt, courteous, and proactive
+                        extra mile to provide prompt, courteous and proactive
                         support that consistently exceeds expectations.
                       </p>
                     </div>
@@ -205,10 +205,10 @@ const WhyChooseUs = () => {
                   initial="hidden"
                   whileInView={"show"}
                   viewport={{ once: true, amount: 0.8 }} 
-                  className="flex cursor-pointer">
+                  className="flex">
                   <div className="flex-shrink-0 md:block hidden">
                     <div
-                      className="text-blue-950 flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-600 dark:text-gray-50"
+                      className="flex items-center justify-center w-12 h-12 rounded-md"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -229,11 +229,13 @@ const WhyChooseUs = () => {
                   <div
                     className="md:ml-4"
                   >
-                    <h4 className="text-blue-950 md:text-CardHeading text-CardHeading-sm font-semibold leading-6 dark:text-gray-900">
+                    <h4 className="md:text-CardHeading text-CardHeading-sm font-semibold leading-6 text-gray-900">
                       Collaborative Partnership
                     </h4>
                     <p className="mt-2 md:text-Para text-Para-smtext-gray-800">
-                      We don't just serve clients: we form partnerships. We work
+
+                      We don&apos;t just serve clients; we form partnerships. We work
+
                       closely with you, leveraging our expertise to empower your
                       success and achieve mutual growth and prosperity.
                     </p>
@@ -244,10 +246,10 @@ const WhyChooseUs = () => {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: true, amount: 0.8 }} 
-                className="flex cursor-pointer">
+                className="flex">
                   <div className="flex-shrink-0 md:block hidden">
                     <div
-                      className="text-blue-950 flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-600 dark:text-gray-50"
+                      className="flex items-center justify-center w-12 h-12 rounded-md"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -268,12 +270,12 @@ const WhyChooseUs = () => {
                   <div
                     className="md:ml-4"
                   >
-                    <h4 className="text-blue-950 md:text-CardHeading text-CardHeading-sm font-semibold leading-6 dark:text-gray-900">
+                    <h4 className="md:text-CardHeading text-CardHeading-sm font-semibold leading-6 text-gray-900">
                       Commitment to Value
                     </h4>
                     <p className="mt-2 md:text-Para text-Para-sm text-gray-800">
                       We deliver unparalleled value by combining expertise with
-                      efficiency, ensuring you receive the most cost-effective
+                      efficiency ensuring you receive the most cost-effective
                       solutions that maximize your return on investment.
                     </p>
                   </div>
@@ -290,7 +292,7 @@ const WhyChooseUs = () => {
                 ease: "easeInOut",
               }}
               viewport={{ once: true, amount: 0.8 }}
-              className="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1 cursor-pointer"
+              className="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1"
             >
               <Image
                 src={WhyChooseus2}

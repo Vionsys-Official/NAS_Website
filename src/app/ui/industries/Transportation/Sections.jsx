@@ -8,7 +8,7 @@ const Sections = () => {
   return (
     <>
       {/* Section 1 */}
-      <section className="w-full py-12 md:py-8 lg:py-12">
+      <section className="w-full py-8 md:py-8 lg:py-8">
         <div className="container px-4 md:px-6">
           <div className="space-y-6">
             <div className="space-y-2 text-center">
@@ -17,16 +17,17 @@ const Sections = () => {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.5 }}
-                className="text-Heading-sm  font-bold tracking-tighter md:text-Heading"
+                className="text-Heading-sm text-blue2 font-extrabold tracking-tighter md:text-Heading"
               >
-                How we can Help?
+                How We Can Help?
               </motion.h2>
               <motion.p
                 variants={fadein("left", 0.1)}
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.5 }}
-                className="mx-auto max-w-[700px] text-gray-500 text-SubHeading-sm md:text-SubHeading"
+                className="mx-auto max-w-[700px] text-slate-600 text-Para-sm md:text-lg font-semibold
+                "
               >
                 Explore how transportation technologies are transforming the IT
                 industry, from fleet management and logistics optimization to
@@ -34,19 +35,37 @@ const Sections = () => {
               </motion.p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="rounded-lg bg-white p-6 shadow-lg dark:bg-gray-950">
+              <motion.div 
+              initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+              delay: 0.2,
+              scale: { type: "spring", stiffness: 30 },
+              opacity: { duration: 0.6 },
+              ease: "easeInOut"
+            }}
+            className="rounded-lg bg-white p-6 shadow-lg dark:bg-gray-950">
                 <div className="flex items-center justify-center mb-4">
                   <TruckIcon className="h-8 w-8 text-gray-500 dark:text-gray-400" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Fleet Management</h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Optimize fleet operations, track vehicle performance, and
+                  Optimize fleet operations, track vehicle performance and
                   improve driver safety with advanced fleet management
                   technologies.
                 </p>
-              </div>
+              </motion.div>
 
-              <div className="rounded-lg bg-white p-6 shadow-lg dark:bg-gray-950">
+              <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+              delay: 0.2,
+              scale: { type: "zoomIn", stiffness: 30 },
+              opacity: { duration: 0.6 },
+              ease: "easeInOut"
+            }}
+             className="rounded-lg bg-white p-6 shadow-lg dark:bg-gray-950 ">
                 <div className="flex items-center justify-center mb-4">
                   <ShipIcon className="h-8 w-8 text-gray-500 dark:text-gray-400" />
                 </div>
@@ -54,12 +73,21 @@ const Sections = () => {
                   Logistics Optimization
                 </h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Streamline supply chain operations, reduce costs, and improve
+                  Streamline supply chain operations, reduce costs and improve
                   delivery times with advanced logistics optimization tools.
                 </p>
-              </div>
+              </motion.div>
 
-              <div className="rounded-lg bg-white p-6 shadow-lg dark:bg-gray-950">
+              <motion.div 
+              initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+              delay: 0.2,
+              scale: { type: "spring", stiffness: 30 },
+              opacity: { duration: 0.6 },
+              ease: "easeInOut"
+            }}
+            className="rounded-lg bg-white p-6 shadow-lg dark:bg-gray-950">
                 <div className="flex items-center justify-center mb-4">
                   <CarIcon className="h-8 w-8 text-gray-500 dark:text-gray-400" />
                 </div>
@@ -70,9 +98,18 @@ const Sections = () => {
                   Explore the latest advancements in autonomous vehicle
                   technology and its potential impact on the IT industry.
                 </p>
-              </div>
+              </motion.div>
 
-              <div className="rounded-lg bg-white p-6 shadow-lg dark:bg-gray-950">
+              <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+              delay: 0.2,
+              scale: { type: "spring", stiffness: 30 },
+              opacity: { duration: 0.6 },
+              ease: "easeInOut"
+            }}
+               className="rounded-lg bg-white p-6 shadow-lg dark:bg-gray-950">
                 <div className="flex items-center justify-center mb-4">
                   <MapIcon className="h-8 w-8 text-gray-500 dark:text-gray-400" />
                 </div>
@@ -83,7 +120,7 @@ const Sections = () => {
                   Leverage real-time data and AI-powered algorithms to optimize
                   transportation routes and improve delivery efficiency.
                 </p>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
@@ -94,17 +131,12 @@ const Sections = () => {
         <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           {/* Heading */}
           <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-            <div>
-              <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-                Just do it
-              </p>
-            </div>
             <motion.h2
               variants={fadein("right", 0.1)}
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.5 }}
-              className="max-w-lg mb-6 font-sans text-Heading-sm font-bold text-gray-900 md:text-Heading md:mx-auto"
+              className="max-w-lg mb-6 text-Heading-sm font-extrabold text-blue2 md:text-Heading md:mx-auto"
             >
               <span className="relative inline-block">
                 <svg
@@ -138,7 +170,7 @@ const Sections = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.5 }}
-              className="text-SubHeading-sm text-gray-700 md:text-SubHeading"
+              className="text-Para-sm text-slate-600 font-semibold md:text-lg"
             >
               Technology plays a pivotal role in addressing the challenges faced
               by the logistics sector, driving transformation through innovative
@@ -356,12 +388,12 @@ const Sections = () => {
 
       {/* Last Section */}
       <section className="max-w-full pt-4 pb-8 px-10 flex justify-center">
-        <div className="bg-violet-950 text-white md:w-[70%] flex flex-col  justify-between py-4 px-8">
+        <div className="bg-gray-200  md:w-[70%] flex flex-col  justify-between py-4 px-8">
           <div>
-            <h2 className="font-bold text-Heading-sm py-2 md:text-Heading text-center">
-              Discover what we can do for you.
+            <h2 className="font-bold text-blue2 text-Heading-sm py-2 md:text-Heading text-center">
+              Discover What We Can Do For You.
             </h2>
-            <p className="py-3 text-Para-sm md:text-Para text-center">
+            <p className="py-3 text-Para-sm md:text-Para font-semibold text-slate-600 text-center">
               Contact us today to discuss how we can help you to achieve your
               business goals.
             </p>

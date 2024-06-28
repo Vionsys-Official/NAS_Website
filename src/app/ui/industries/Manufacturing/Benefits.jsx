@@ -40,16 +40,16 @@ const Benefits = () => {
 
     return (
         <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 py-6">
-            <motion.div 
-            variants={fadein("up", 0.2)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: true, amount: 0.8 }}
-            className="max-w-xl mb-5 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-                <h2 className="max-w-lg mb-6 md:text-Heading text-Heading-sm font-bold leading-none tracking-tight text-blue950 sm:text-4xl md:mx-auto">
+            <motion.div
+                variants={fadein("up", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: true, amount: 0.8 }}
+                className="max-w-xl mb-5 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+                <h2 className="max-w-lg mb-6 md:text-Heading text-Heading-sm font-bold leading-none tracking-tight text-blue2 sm:text-4xl md:mx-auto">
                     Benefits of Our IT Solutions
                 </h2>
-                <p className="text-base text-gray-700 md:text-lg">
+                <p className="text-Para-sm font-semibold text-slate-600 md:text-lg">
                     Discover the key advantages of our innovative IT solutions, designed to boost efficiency, enhance decision-making and improve overall productivity in your manufacturing processes.
                 </p>
             </motion.div>
@@ -65,9 +65,9 @@ const Benefits = () => {
                 viewport={{ once: true, amount: 0.8 }}
                 className="grid md:gap-8 gap-4 row-gap-5 mb-8 md:row-gap-8 lg:grid-cols-3 sm:grid-cols-2">
                 {benefit.map((item) => (
-                    <div key={item.id} className="duration-300 transform bg-white border-l-4 shadow-sm border-blue950 hover:-translate-y-2">
+                    <div key={item.id} className="duration-300 transform bg-white border-l-4 shadow-sm border-blue2 hover:-translate-y-2">
                         <div className="h-full md:p-5 p-2 border border-l-0 rounded-r">
-                            <h6 className="mb-2 font-semibold leading-5 text-blue2">{item.title}</h6>
+                            <h6 className="mb-2 font-semibold leading-5 text-black">{item.title}</h6>
                             <p className="text-sm text-gray-800">{item.para}</p>
                         </div>
                     </div>

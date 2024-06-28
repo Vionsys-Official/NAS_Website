@@ -12,7 +12,7 @@ const Faq2 = ({ faq }) => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, amount: 0.8 }}
-          className="md:text-Heading text-Heading-sm font-bold text-black cursor-pointer"
+          className="md:text-Heading text-Heading-sm text-center font-extrabold text-blue2 cursor-pointer"
         >
           Frequently Asked Questions
         </motion.h1>
@@ -29,7 +29,7 @@ const Faq2 = ({ faq }) => {
         {faq.map((item) => (
           <li key={item.id}>
             <details className="group">
-              <summary className="flex items-center gap-3 px-4 py-3 font-medium marker:content-none hover:cursor-pointer">
+              <summary className="flex items-center gap-3 md:px-4 px-1 py-3 font-medium marker:content-none">
                 <svg
                   className="w-5 h-5 text-gray-500 transition group-open:rotate-90"
                   xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@ const Faq2 = ({ faq }) => {
                 </svg>
                 <span className="md:text-lg text-base">{item.ques}</span>
               </summary>
-              <article className="px-12 pb-4">
+              <article className="md:px-12 px-3 pb-4">
                 <motion.p 
                 variants={fadein("left", 0.1)}
                 initial="hidden"

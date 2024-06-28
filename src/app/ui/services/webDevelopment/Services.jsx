@@ -14,27 +14,27 @@ const Services = () => {
         {id:1,
             icon:FaCode,
             title:"Website Design and Development",
-            desc:"We provide comprehensive website design and development services, creating custom, responsive designs that meet your business needs. Our expertise includes implementing content management systems as well as developing seamless e-commerce solutions. We ensure your website is visually appealing, functional, and optimized for performance.",
+            desc:"We provide comprehensive website design and development services, creating custom, responsive designs that meet your business needs. Our expertise includes implementing content management systems as well as developing seamless e-commerce solutions. We ensure your website is visually appealing, functional and optimized for performance.",
         },
         {id:2,
             icon:FaLaptopCode,
             title:"Web Application Development",
-            desc:"We specialize in web application development, delivering custom web apps tailored to your specific business needs. Our services include creating Progressive Web Apps (PWAs), developing robust APIs, and building dynamic Single Page Applications (SPAs). We ensure our web applications are user-friendly, feature-rich, and provide seamless performance across all devices.",
+            desc:"We specialize in web application development, delivering custom web apps tailored to your specific business needs. Our services include creating Progressive Web Apps (PWAs), developing robust APIs and building dynamic Single Page Applications (SPAs). We ensure our web applications are user-friendly, feature-rich and provide seamless performance across all devices.",
         },
         {id:3,
             icon:FaPenToSquare,
             title:"UX/UI Design",
-            desc:"We offer expert UX/UI design services, focusing on optimizing user experience and creating intuitive user interfaces. Our team specializes in crafting visually appealing designs, developing prototypes, and wireframing to ensure seamless navigation and enhanced user engagement, ultimately delivering a compelling and effective digital experience for your audience.",
+            desc:"We offer expert UX/UI design services, focusing on optimizing user experience and creating intuitive user interfaces. Our team specializes in crafting visually appealing designs, developing prototypes and wireframing to ensure seamless navigation and enhanced user engagement, ultimately delivering a compelling and effective digital experience for your audience.",
         },
         {id:4,
             icon:FaChartLine,
             title:"SEO and Digital Marketing",
-            desc:"We provide comprehensive SEO and digital marketing services to boost your online visibility and drive traffic. Our offerings include search engine optimization, content strategy development, social media integration, and detailed analytics and reporting. We aim to enhance your online presence, engage your target audience, and improve your overall digital performance.",
+            desc:"We provide comprehensive SEO and digital marketing services to boost your online visibility and drive traffic. Our offerings include search engine optimization, content strategy development, social media integration and detailed analytics and reporting. We aim to enhance your online presence, engage your target audience and improve your overall digital performance.",
         },
         {id:5,
             icon:FaTools,
             title:"Maintenance and Support",
-            desc:"We offer reliable website maintenance and support services to ensure your site runs smoothly and securely. Our services include regular updates, routine backups, technical support, and security enhancements. We are dedicated to keeping your website optimized and protected, allowing you to focus on your core business activities.",
+            desc:"We offer reliable website maintenance and support services to ensure your site runs smoothly and securely. Our services include regular updates, routine backups, technical support and security enhancements. We are dedicated to keeping your website optimized and protected allowing you to focus on your core business activities.",
         },
 
     ]
@@ -47,7 +47,7 @@ const Services = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.8 }}
-              className="mb-6 text-blue-900 text-MainHeading-sm md:text-MainHeading md:p-6 font-semibold leading-none tracking-tight cursor-pointer">
+              className="mb-6 text-blue2 text-Heading-sm md:text-Heading md:p-6 font-extrabold leading-none tracking-tight">
             <span className="relative inline-block">
                 <svg
                 viewBox="0 0 52 24"
@@ -84,9 +84,9 @@ const Services = () => {
                         initial="hidden"
                         whileInView={"show"}
                         viewport={{ once: true, amount: 0.8 }}
-                        key={feat.id} className='w-[90%] rounded-lg md:w-2/5 lg:w-1/4 h-full md:h-[27rem] lg:h-[32rem] xl:h-[26rem] flex flex-col items-center justify-start shadow-md shadow-gray-300 p-2 hover:bg-blue-50 cursor-pointer'>
+                        key={feat.id} className='w-[90%] rounded-lg md:w-2/5 lg:w-1/4 h-full md:h-[27rem] lg:h-[32rem] xl:h-[26rem] flex flex-col items-center justify-start shadow-md shadow-gray-300 p-2 hover:bg-[#c4e4ee]'>
                             <span className='text-MainHeading-sm md:text-MainHeading font-semibold p-4 rounded-full bg-green-100'><feat.icon/></span>
-                            <h2 className='text-blue-950 text-CardHeading-sm md:text-CardHeading pb-2 font-semibold'>{feat.title}</h2>
+                            <h2 className='text-slate-800 text-CardHeading-sm md:text-CardHeading pb-2 font-semibold'>{feat.title}</h2>
                             <p className='flex items-center justify-center'>{feat.desc}</p>
                         </motion.div>
                     );

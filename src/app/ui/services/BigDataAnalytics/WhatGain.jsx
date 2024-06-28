@@ -17,12 +17,12 @@ const WhatGain = () => {
         whileInView={"show"}
         viewport={{ once: true, amount: 0.8 }}>
           <div className="w-full flex flex-col gap-8">
-            <h1 className="md:text-Heading text-Heading-sm w-full text-blue950 font-bold ">
+            <h1 className="md:text-Heading text-Heading-sm w-full text-blue2 font-extrabold capitalize">
               What will you gain?
             </h1>
           </div>
           <div className="md:w-[60%] w-full ">
-            <h2 className="md:text-SubHeading text-SubHeading-sm text-slate-600 font-semibold">
+            <h2 className="md:text-CardHeading text-CardHeading-sm text-slate-600 font-semibold">
               Implementing Big Data analytics within your organization offers
               numerous benefits that enable you to enhance services and achieve
               your business objectives.{" "}
@@ -79,14 +79,14 @@ const WhatGain = () => {
               <div className="md:w-[70%] w-full">
                 <p className="md:text-Para text-Para-sm  text-gray-800 pl-2">
                   Data science helps decrease the surplus of information, while
-                  Big Data analysis lets you have structured data, which reduces
+                  Big Data analysis lets you have structured data which reduces
                   risks caused by human error.
                 </p>
               </div>
             </div>
             <div className="md:w-[50%]  md:px-0 px-2 flex flex-col">
               <div className="md:w-[90%]  w-full flex gap-2">
-                <Image src={BestWay} alt="" className="w-5 h-5" />
+                <Image src={BestWay} alt="" className="w-5 h-5 bg-black text-black" />
 
                 <h1 className="md:text-SubHeading text-SubHeading-sm font-semibold ">
                   The best way to handle large-scale information{" "}
@@ -94,7 +94,7 @@ const WhatGain = () => {
               </div>
               <div className="md:w-[70%] w-full">
                 <p className="md:text-Para text-Para-sm text-gray-800 pl-2">
-                  Big Data is the best way to handle large-scale information,
+                  Big Data is the best way to handle large-scale information
                   especially if you have various types of data including
                   structured, semi-structured or scattered data.
                 </p>

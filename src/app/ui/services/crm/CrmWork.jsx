@@ -16,13 +16,13 @@ const CrmWork = () => {
       id: 2,
       num: "2",
       title: "Customization and Configuration",
-      para: "Based on the consultation, we tailor a CRM solution to your goals, configuring the system to match requirements such as data fields, permissions etc.",
+      para: "Based on the consultation, we tailor a CRM solution to your goals configuring the system to match requirements such as data fields, permissions etc.",
     },
     {
       id: 3,
       num: "3",
       title: "Data Migration and Integration",
-      para: "We assist in migrating your customer data securely, ensuring accuracy through field mapping and rigorous testing for data integrity.",
+      para: "We assist in migrating your customer data securely ensuring accuracy through field mapping and rigorous testing for data integrity.",
     },
     {
       id: 4,
@@ -34,19 +34,19 @@ const CrmWork = () => {
       id: 5,
       num: "5",
       title: "Implementation and Deployment",
-      para: "After completing customization, migration and training, we roll out the CRM system across your organization, ensuring a smooth deployment process.",
+      para: "After completing customization, migration and training, we roll out the CRM system across your organization ensuring a smooth deployment process.",
     },
     {
       id: 6,
       num: "6",
       title: "Ongoing Support and Maintenance",
-      para: "We offer continuous support and maintenance services, addressing issues and providing guidance as your business evolves.",
+      para: "We offer continuous support and maintenance services addressing issues and providing guidance as your business evolves.",
     },
     {
       id: 7,
       num: "7",
       title: "Optimization and Continuous Improvement",
-      para: "We collaborate with your team to optimize the CRM system based on feedback and evolving business needs, driving maximum value.",
+      para: "We collaborate with your team to optimize the CRM system based on feedback and evolving business needs driving maximum value.",
     },
   ]
 
@@ -56,13 +56,8 @@ const CrmWork = () => {
         variants={fadein("up", 0.2)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: true, amount: 0.8 }} className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-        <div>
-          <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-blue2 uppercase rounded-full bg-teal-accent-400">
-            NAS Infotech Pvt. Ltd.
-          </p>
-        </div>
-        <h2 className="max-w-lg md:mb-6 mb-3 md:text-Heading text-Heading-sm font-bold leading-none tracking-tight text-blue950 md:mx-auto">
+        viewport={{ once: true, amount: 0.8 }} className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 pt-5">
+        <h2 className="max-w-lg md:mb-6 mb-3 md:text-Heading text-Heading-sm font-extrabold leading-none tracking-tight text-blue2 md:mx-auto">
           <span className="relative inline-block">
             <svg
               viewBox="0 0 52 24"
@@ -90,7 +85,7 @@ const CrmWork = () => {
           </span>{' '}
           Our CRM Solutions Work
         </h2>
-        <p className="md:text-Para text-Para-sm text-gray-800 md:text-lg">
+        <p className="text-lg text-slate-600 font-semibold md:text-lg">
           Implementing a CRM system with us is a straightforward and seamless process designed to optimize your customer relationship management and drive business growth. Here’s how it works:
         </p>
       </motion.div>
@@ -133,7 +128,7 @@ const CrmWork = () => {
             <p className="text-lg font-bold leading-5">Performance Monitoring and Reporting</p>
           </div>
           <p className="text-sm text-gray-900">
-            We implement robust analytics tools to monitor CRM performance and track key metrics, enabling data-driven decision-making.
+            We implement robust analytics tools to monitor CRM performance and track key metrics enabling data-driven decision-making.
           </p>
           <p className="absolute top-0 right-0 flex items-center justify-center w-8 h-8 -mt-4 -mr-4 font-bold rounded-full bg-blue2 sm:-mt-5 sm:-mr-5 sm:w-10 sm:h-10">
             <svg

@@ -13,7 +13,7 @@ export const metadata = {
 
 function page() {
   return (
-    <main id='mission' className='overflow-x-hidden'>
+    <main className='overflow-x-hidden'>
 
     <HeroSection/>
 

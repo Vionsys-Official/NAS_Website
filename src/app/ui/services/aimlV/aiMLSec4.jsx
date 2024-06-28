@@ -110,7 +110,7 @@ const aiMLSec4 = () => {
   return (
     <section>
       {/* Section 4 */}
-      <div className="max-w-7xl mx-auto md:py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto md:py-10 px-0 md:px-6 lg:px-8">
         <motion.div
           variants={fadein("up", 0.2)}
           initial="hidden"
@@ -118,11 +118,11 @@ const aiMLSec4 = () => {
           viewport={{ once: true, amount: 0.8 }}
           className="text-center"
         >
-          <h2 className="text-Heading font-extrabold tracking-tight text-gray-900">
+          <h2 className="font-extrabold text-Heading-sm leading-[1.1] md:text-Heading px-2 tracking-tight text-blue2 mb-2 capitalize">
             Industry-Wise AI and ML Use Cases
           </h2>
-          <p className=" text-SubHeading-sm text-center leading-6 text-gray-500">
-            We've segregated AI and ML use cases by industry to simplify your
+          <p className="text-SubHeading-sm md:text-center px-3 text-justify leading-6 text-slate-600 font-semibold">
+            We&apos;ve segregated AI and ML use cases by industry to simplify your
             exploration. Explore the possibilities for your industry and get a
             free 2-hour consultation to discuss tailored AI/ML development
             services that can unlock even greater potential for your business.
@@ -133,11 +133,11 @@ const aiMLSec4 = () => {
           {Object.keys(industryData).map((industry) => (
             <div
               key={industry}
-              className={`bg-blue-900 cursor-pointer text-white px-4 py-2 rounded-md text-sm text-center 
+              className={`bg-blue5 text-white px-4 py-2 text-justify text-sm md:text-center 
                 hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-offset-2 
                 focus:ring-blue-900 ${
                   selectedIndustry === industry
-                    ? "border-[3px] border-black"
+                    ? "border"
                     : ""
                 } w-36`}
               onClick={() => handleIndustryChange(industry)}
@@ -153,7 +153,7 @@ const aiMLSec4 = () => {
               {industryParagraphs[selectedIndustry]}
               <ul className="mt-8 space-y-4">
                 {industryData[selectedIndustry].map((item, index) => (
-                  <li key={`${selectedIndustry}-${index}`} className="flex items-start">
+                  <li key={`${selectedIndustry}-${index}`} className="flex items-start px-3">
                     <FaCheckCircle  className="flex-shrink-0 h-6 w-6 text-green-500 " />
                     <span className="ml-3 text-SubHeading-sm leading-6 text-gray-900">
                       {item}

@@ -24,10 +24,10 @@ const aiMLSec1 = () => {
         viewport={{ once: false, amount: 0.8 }}
         className="relative z-10 max-w-4xl px-4 sm:px-6 lg:px-8 text-center"
       >
-        <h1 className="md:text-5xl text-2xl  font-extrabold text-gray-100 drop-shadow-lg">
+        <h1 className="md:text-HMain text-HMain-sm font-extrabold text-gray-100 drop-shadow-lg capitalize">
           Discover the Potential of AI and Machine Learning for Your Business
         </h1>
-        <p className="mt-4 text-Para text-center text-gray-200 drop-shadow-lg">
+        <p className="mt-4 md:text-CardHeading text-CardHeading-sm text-center text-gray-200 drop-shadow-lg">
           We harness cutting-edge algorithms to optimize decision-making and
           unlock fresh opportunities. With a steadfast commitment to excellence,
           we serve as trusted guides in navigating the digital frontier.

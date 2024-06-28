@@ -17,7 +17,7 @@ const salesforcesec5 = () => {
           whileInView={"show"}
           viewport={{ once: true, amount: 0.8 }}
         >
-          <h2 className="md:mt-2 font-header text-Heading font-bold tracking-tight text-gray-900 text-center dark:text-white">
+          <h2 className="md:mt-2 font-header md:text-Heading text-Heading-sm font-extrabold tracking-tight text-blue2 text-center dark:text-white capitalize">
             Frequently asked questions ?
           </h2>
         </motion.div>
@@ -41,7 +41,7 @@ const salesforcesec5 = () => {
               <p className="text-Para md:leading-7 text-center px-2 text-gray-600 dark:text-gray-400">
                 As a Salesforce service provider, we offer a wide range of
                 services including Salesforce integration, support,
-                implementation, consulting, and customization tailored to meet
+                implementation, consulting and customization tailored to meet
                 your specific business needs.
               </p>
             </dd>
@@ -57,7 +57,7 @@ const salesforcesec5 = () => {
             <dd className="mt-4 lg:col-span-9 lg:mt-0">
               <p className="text-Para md:leading-7 text-center px-2 text-gray-600 dark:text-gray-400">
                 Our Salesforce support services encompass troubleshooting, issue
-                resolution, user training, system maintenance, and ongoing
+                resolution, user training, system maintenance and ongoing
                 technical assistance to ensure that your Salesforce platform
                 operates smoothly and efficiently.
               </p>
@@ -72,8 +72,8 @@ const salesforcesec5 = () => {
             <dd className="mt-4 lg:col-span-9 lg:mt-0">
               <p className="text-Para md:leading-7 text-center px-2 text-gray-600 dark:text-gray-400">
                 Yes, we offer Salesforce customization services to tailor the
-                platform to your specific business requirements. Whether it's
-                creating custom fields, workflows, reports, or dashboards, we
+                platform to your specific business requirements. Whether it&apos;s
+                creating custom fields, workflows, reports or dashboards, we
                 ensure that Salesforce aligns perfectly with your processes and
                 objectives.
               </p>
@@ -91,7 +91,7 @@ const salesforcesec5 = () => {
               <p className="text-Para md:leading-7 text-center px-2 text-gray-600 dark:text-gray-400">
                 Our Salesforce consulting services involve working closely with
                 your organization to understand your goals and challenges,
-                providing strategic guidance, best practices, and expert advice
+                providing strategic guidance, best practices and expert advice
                 to optimize your Salesforce usage and drive business growth.
               </p>
             </dd>

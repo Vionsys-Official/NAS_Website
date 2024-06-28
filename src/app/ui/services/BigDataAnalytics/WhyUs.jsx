@@ -17,7 +17,7 @@ const WhyUs = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.8 }}
-              className="w-full md:text-Heading text-Heading-sm font-bold text-blue2"
+              className="w-full md:text-Heading text-Heading-sm font-extrabold text-blue2"
             >
               Why Us?
             </motion.div>
@@ -50,7 +50,7 @@ const WhyUs = () => {
                     User-Friendly Delivery
                   </h1>
                   <p className="md:text-Para text-Para-sm text-gray-800">
-                    Our UX/UI experts visualize data in an understandable and appealing way, enabling you to make well-informed decisions.
+                    Our UX/UI experts visualize data in an understandable and appealing way enabling you to make well-informed decisions.
                   </p>
                 </div>
               </div>

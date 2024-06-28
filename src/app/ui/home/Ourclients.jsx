@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import { Card } from "antd";
-import { motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
 import Image from "next/image";
 
 import ClientImage1 from "./images/client-1.png";
@@ -20,7 +20,7 @@ const OurClients = () => {
     if (sliderWrapperRef.current) {
       setWidth(
         sliderWrapperRef.current.scrollWidth -
-          sliderWrapperRef.current.offsetWidth
+        sliderWrapperRef.current.offsetWidth
       );
     }
   }, []);
@@ -36,14 +36,23 @@ const OurClients = () => {
   ];
 
   return (
-    <div className="shadow-xl">
-      <h1 className="md:text-4xl text-2xl text-blue-900 font-bold text-center py-2">
+    <div className="shadow-xl overflow-hidden">
+      <motion.h1
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{
+          delay: 0.2,
+          x: { type: "spring", stiffness: 30 },
+          opacity: { duration: 0.5 },
+          ease: "easeInOut"
+        }}
+        className="md:text-MainHeading text-MainHeading-sm font-extrabold text-blue2 text-center py-2 capitalize">
         Our Clients
-      </h1>
-      <section className="backdrop-blur-md w-[100vw] overflow-x-hidden flex justify-center items-center px-6 py-5 bg-[rgba(101,227,131,0.5)]">
+      </motion.h1>
+      <section className="backdrop-blur-md w-[100vw] flex justify-center items-center px-6 py-5 bg-[#45aec5]">
         <motion.div
           ref={sliderWrapperRef}
-          className="w-[100%] cursor-grab overflow-hidden"
+          className="w-[100%] cursor-grab"
           initial={{ x: width }}
           animate={{ x: 0 }}
           transition={{ duration: Infinity, repeat: Infinity, ease: "linear" }}
@@ -51,21 +60,32 @@ const OurClients = () => {
           <motion.div
             drag="x"
             dragConstraints={{ right: 0, left: -width }}
-            className="flex items-center gap-4"
+            className="flex items-center gap-6"
           >
             {clients.map((client) => (
-              <Card
-                key={client.id}
-                data-aos="zoom-in"
-                className="min-w-40 md:min-w-60 h-40 flex justify-center items-center bg-[rgba(255,255,255,0.5)]"
+              <motion.div
+                initial={{ opacity: 0, scale: 0.6 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{
+                  delay: 0.2,
+                  scale: { type: "spring", stiffness: 30 },
+                  opacity: { duration: 0.5 },
+                  ease: "easeInOut"
+                }}
               >
-                <Image
-                  src={client.logo}
-                  className="pointer-events-none"
-                  priority
-                  alt={`Client ${client.id}`}
-                />
-              </Card>
+                <Card
+                  key={client.id}
+                  data-aos="zoom-in"
+                  className="min-w-40 md:min-w-60 h-40 flex justify-center items-center bg-[rgba(255,255,255,0.5)]"
+                >
+                  <Image
+                    src={client.logo}
+                    className="pointer-events-none"
+                    priority
+                    alt={`Client ${client.id}`}
+                  />
+                </Card>
+              </motion.div>
             ))}
           </motion.div>
         </motion.div>

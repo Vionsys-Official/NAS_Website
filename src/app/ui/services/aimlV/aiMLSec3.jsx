@@ -3,34 +3,33 @@ import React from 'react'
 import Image from 'next/image';
 import MyRobo from '/public/assets/services/aiML/MyRobo.jpg'
 import { motion } from 'framer-motion';
-import { fadein } from '@/components/ui/variants';
 
 const aiMlSec3 = () => {
   return (
     <section>
         {/* section 3 */}
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap py-6">
           <motion.div
              
-            className="w-full sm:w-8/12 md:mb-10">
-            <div className="container mx-auto h-full sm:p-10">
-              <nav className="flex px-4 justify-center text-center items-center">
-                <div className="md:text-MainHeading text-MainHeading-sm font-bold">
-                  Intelligence<span className="text-blue-900">.</span>
+            className="w-full md:w-6/12 md:mb-10 md:px-6">
+            <div className="mx-auto h-full">
+              <nav className="flex md:px-4 px-1 flex-col justify-center items-start">
+                <div className="font-extrabold text-Heading-sm text-blue2 md:text-Heading items-start">
+                  Intelligence...
                 </div>
 
               </nav>
-              <header className="container px-4 lg:flex md:mt-10 items-center h-full lg:mt-0">
+              <header className="lg:flex md:mt-10 items-center lg:mt-0">
                 <div className="w-full">
-                  <h1 className="text-MainHeading-sm lg:text-MainHeading text-center font-bold">Discover cutting-edge   <span className="text-blue-900">AI & ML</span> innovations for your space</h1>
-                  <div className="w-20 h-2 bg-blue-900 my-4"></div>
-                  <p className="md:text-SubHeading text-SubHeading-sm text-center py-5">Whether you're exploring predictive analytics, natural language processing, or computer vision, our platform equips you with the tools and insights necessary to thrive in this swiftly evolving domain. Embark on this journey with us as we harness the potential of AI and ML to shape the future.</p>
+                  <h1 className="font-extrabold text-Heading-sm text-blue2 md:text-Heading text-center capitalize">Discover cutting-edge AI & ML innovations for your space</h1>
+                  <div className="w-20 h-2 bg-black my-4 px-4"></div>
+                  <p className="md:text-SubHeading text-SubHeading-sm text-center text-slate-600 font-semibold py-5">Whether you&apos;re exploring predictive analytics, natural language processing or computer vision, our platform equips you with the tools and insights necessary to thrive in this swiftly evolving domain. Embark on this journey with us as we harness the potential of AI and ML to shape the future.</p>
 
                 </div>
               </header>
             </div>
           </motion.div>
-          <Image width={500} height={500} src={MyRobo} alt="Leafs" className="w-full h-48 object-cover sm:h-screen sm:w-4/12 px-2 rounded-2xl" />
+          <Image width={500} height={500} src={MyRobo} alt="Leafs" className="w-full md:h-[60vh] h-[40vh] object-cover sm:w-6/12 px-2 rounded-2xl" />
         </div>
       </section>
   )
