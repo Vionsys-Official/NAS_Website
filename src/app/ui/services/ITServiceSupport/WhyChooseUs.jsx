@@ -53,7 +53,7 @@ const WhyChooseUs = () => {
                     Innovative Solutions
                   </h4>
                   <p className="mt-2 md:text-Para text-Para-sm text-gray-800">
-                    We're not just followers; we're innovators. We embrace
+                    We're not just followers: we're innovators. We embrace
                     cutting-edge technologies and develop creative solutions
                     tailored to your business needs to ensure you stay ahead of
                     change in today's ever-evolving digital landscape.
@@ -233,7 +233,7 @@ const WhyChooseUs = () => {
                       Collaborative Partnership
                     </h4>
                     <p className="mt-2 md:text-Para text-Para-smtext-gray-800">
-                      We don't just serve clients; we form partnerships. We work
+                      We don't just serve clients: we form partnerships. We work
                       closely with you, leveraging our expertise to empower your
                       success and achieve mutual growth and prosperity.
                     </p>

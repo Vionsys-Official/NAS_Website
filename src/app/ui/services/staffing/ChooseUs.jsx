@@ -24,7 +24,7 @@ const ChooseUs = () => {
         {
             id: 4,
             title: "Speed",
-            para: "Recruitment is sped up through pre-screening, cutting down hiring time and launching your projects faster.",
+            para: "Recruitment is speed up through pre-screening, cutting down hiring time and launching your projects faster.",
         },
     ]
     return (

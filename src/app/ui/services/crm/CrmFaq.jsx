@@ -17,7 +17,7 @@ const CrmFaq = () => {
       {
         id: 3,
         ques: "What integration options does your CRM offer?",
-        ans: "Integration with existing IT infrastructure and third-party applications (e.g., email clients, project management tools, accounting software) is essential for seamless data flow and operational efficiency. Inquiring about integration capabilities ensures compatibility with the company's ecosystem."
+        ans: "Integration with existing IT infrastructure and third-party applications (e.g, email clients, project management tools, accounting software) is essential for seamless data flow and operational efficiency. Inquiring about integration capabilities ensures compatibility with the company's ecosystem."
       },
       {
         id: 4,
