@@ -72,7 +72,7 @@ const Footer = () => {
           <p className="text-sm mb-4">Phone: +91 70586 06885</p>
           <p className="text-sm mb-4">Email: hr@nasinfotech.com</p>
           <p className="text-sm">
-            Office No: 505, 06th Floor, Stellar Spaces, Opposite Zensar Company,
+            Office No: 503, 06th Floor, Stellar Spaces, Opposite Zensar Company,
             Kharadi, Pune - 411014
           </p>
         </div>
