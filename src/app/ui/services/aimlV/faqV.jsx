@@ -19,7 +19,7 @@ const FaqAIV = () => {
         },
         {
             id: 4,
-            ques: " Vansh How do you handle data security and confidentiality?",
+            ques: "How do you handle data security and confidentiality?",
             ans: "We implement encryption, secure coding practices and regular security audits. Our team follows industry standards like GDPR and HIPAA and we sign NDAs with clients to protect sensitive information."
         },
         {
