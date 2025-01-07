@@ -7,7 +7,7 @@ export async function POST(request) {
     // Setup email data
     const mailOptions = {
       from: process.env.GMAIL_USER,
-      to: "ssbankar18@gmail.com",
+      to: "hr@nasinfotech.com",
       subject: 'NAS Website Contact Form',
       html: `
         <h3>You have a new contact query from NAS website!!!</h3>
