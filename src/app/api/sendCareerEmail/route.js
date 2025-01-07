@@ -6,7 +6,7 @@ export async function POST(req) {
         const { name, email, number, position, experience, attachments } = await req.json();
         const mailOptions = {
             from: process.env.GMAIL_USER,
-            to: "Asmitadhole@vionsys.com", // Assuming this is the correct email address
+            to: "hr@nasinfotech.com", // Assuming this is the correct email address
             subject: 'New Job Application Submission - NAS Infotech Pvt. Ltd.',
             html: `
            <h2 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 10px;">Job Application for the Position of ${position} </h2>

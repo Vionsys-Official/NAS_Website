@@ -217,8 +217,7 @@ function page() {
                   <FaMobileAlt className="text-3xl text-black" />
                 </div>
                 <h6 className="mb-2 font-bold md:text-CardHeading text-CardHeading-sm leading-5">Phone</h6>
-                <p className=" mb-1 md:text-Para text-Para-sm">+(91) 9172 077273</p>
-                <p className="mb-2 md:text-Para text-Para-sm">+(91) 8766 613742</p>
+                <p className=" mb-1 md:text-Para text-Para-sm">+(91) 9022844929</p>
               </div>
             </motion.div>
 
