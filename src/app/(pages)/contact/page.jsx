@@ -30,9 +30,10 @@ function page() {
                 delay: 0.2,
                 scale: { type: "spring", stiffness: 30 },
                 opacity: { duration: 0.5 },
-                ease: "easeInOut"
+                ease: "easeInOut",
               }}
-              className="absolute inset-x-0 top-1/2 md:text-MainHeading text-MainHeading-sm font-extrabold text-center tracking-wider capitalize text-white">
+              className="absolute inset-x-0 top-1/2 md:text-MainHeading text-MainHeading-sm font-extrabold text-center tracking-wider capitalize text-white"
+            >
               Innovate the Future with Us
             </motion.h1>
           </div>
@@ -43,7 +44,7 @@ function page() {
               delay: 0.2,
               scale: { type: "spring", stiffness: 30 },
               opacity: { duration: 0.5 },
-              ease: "easeInOut"
+              ease: "easeInOut",
             }}
             id="MService"
             className="relative flex flex-col md:flex-row justify-center lg:w-[40vw] md:w-[40vw] w-[90vw] md:-top-10 top-4 mx-auto overflow-hidden bg-white divide-y md:divide-y-0 md:divide-x rounded shadow shadow-gray-800"
@@ -70,9 +71,10 @@ function page() {
                     delay: 0.2,
                     x: { type: "spring", stiffness: 30 },
                     opacity: { duration: 0.5 },
-                    ease: "easeInOut"
+                    ease: "easeInOut",
                   }}
-                  className="mb-4 md:text-MainHeading text-MainHeading-sm  text-start font-extrabold text-blue2">
+                  className="mb-4 md:text-MainHeading text-MainHeading-sm  text-start font-extrabold text-blue2"
+                >
                   <span className="md:text-MainHeading text-MainHeading-sm font-extrabold text-blue2 ">
                     NAS Infotech
                   </span>{" "}
@@ -95,9 +97,10 @@ function page() {
                       delay: 0.2,
                       x: { type: "spring", stiffness: 30 },
                       opacity: { duration: 0.5 },
-                      ease: "easeInOut"
+                      ease: "easeInOut",
                     }}
-                    className="first-letter:text-2xl md:text-Para text-Para-sm text-start">
+                    className="first-letter:text-2xl md:text-Para text-Para-sm text-start"
+                  >
                     At NAS Infotech Pvt.Ltd, we value your inquiries and
                     feedback. Whether you need support, have questions about our
                     services or want to start a project, our team is here to
@@ -116,7 +119,7 @@ function page() {
                       delay: 0.2,
                       scale: { type: "spring", stiffness: 30 },
                       opacity: { duration: 0.5 },
-                      ease: "easeInOut"
+                      ease: "easeInOut",
                     }}
                   >
                     <Image
@@ -145,9 +148,10 @@ function page() {
                       delay: 0.2,
                       scale: { type: "spring", stiffness: 30 },
                       opacity: { duration: 0.5 },
-                      ease: "easeInOut"
+                      ease: "easeInOut",
                     }}
-                    className="absolute -bottom-10 -left-16">
+                    className="absolute -bottom-10 -left-16"
+                  >
                     <div className="bg-yellow-300">
                       <div className="px-8 py-10">
                         <span className="block text-4xl font-bold text-black lg:text-5xl">
@@ -179,7 +183,6 @@ function page() {
       <section>
         <div className="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pb-12 ">
           <div className="grid row-gap-8 sm:row-gap-0 sm:grid-cols-2 lg:grid-cols-3">
-
             <motion.div
               initial={{ opacity: 0, scale: 0.6 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -187,17 +190,20 @@ function page() {
                 delay: 0.2,
                 scale: { type: "spring", stiffness: 30 },
                 opacity: { duration: 0.5 },
-                ease: "easeInOut"
+                ease: "easeInOut",
               }}
-              className="p-8 border-b sm:border-r">
+              className="p-8 border-b sm:border-r"
+            >
               <div className="max-w-md text-center">
                 <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full sm:w-16 sm:h-16">
                   <ImLocation2 className="text-black text-3xl" />
                 </div>
-                <h6 className="mb-2 font-bold md:text-CardHeading text-CardHeading-sm leading-5">Address</h6>
+                <h6 className="mb-2 font-bold md:text-CardHeading text-CardHeading-sm leading-5">
+                  Address
+                </h6>
                 <p className="mb-3 md:text-Para text-Para-sm">
-                  Office No: 503, 06th Floor, Stellar Spaces, Opposite Zensar
-                  Company, Kharadi, Pune - 411014
+                  06th Floor, Stellar Spaces 505, opposite Zensar Company,
+                  Rakshak Nagar, Kharadi, Pune, Maharashtra 411014
                 </p>
               </div>
             </motion.div>
@@ -209,15 +215,20 @@ function page() {
                 delay: 0.2,
                 scale: { type: "spring", stiffness: 30 },
                 opacity: { duration: 0.5 },
-                ease: "easeInOut"
+                ease: "easeInOut",
               }}
-              className="p-8 border-b lg:border-r">
+              className="p-8 border-b lg:border-r"
+            >
               <div className="max-w-md text-center">
                 <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full sm:w-16 sm:h-16">
                   <FaMobileAlt className="text-3xl text-black" />
                 </div>
-                <h6 className="mb-2 font-bold md:text-CardHeading text-CardHeading-sm leading-5">Phone</h6>
-                <p className=" mb-1 md:text-Para text-Para-sm">+(91) 9022844929</p>
+                <h6 className="mb-2 font-bold md:text-CardHeading text-CardHeading-sm leading-5">
+                  Phone
+                </h6>
+                <p className=" mb-1 md:text-Para text-Para-sm">
+                  +(91) 9022844929
+                </p>
               </div>
             </motion.div>
 
@@ -228,18 +239,22 @@ function page() {
                 delay: 0.2,
                 scale: { type: "spring", stiffness: 30 },
                 opacity: { duration: 0.5 },
-                ease: "easeInOut"
+                ease: "easeInOut",
               }}
-              className="p-8 border-b sm:border-r lg:border-r-0">
+              className="p-8 border-b sm:border-r lg:border-r-0"
+            >
               <div className="max-w-md text-center">
                 <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full sm:w-16 sm:h-16">
                   <MdOutlineEmail className="text-black text-3xl font-bold" />
                 </div>
-                <h6 className="mb-2 font-bold md:text-CardHeading text-CardHeading-sm leading-5">Email</h6>
-                <p className="mb-3 md:text-Para text-Para-sm">hr@nasinfotech.com</p>
+                <h6 className="mb-2 font-bold md:text-CardHeading text-CardHeading-sm leading-5">
+                  Email
+                </h6>
+                <p className="mb-3 md:text-Para text-Para-sm">
+                  hr@nasinfotech.com
+                </p>
               </div>
             </motion.div>
-
           </div>
         </div>
       </section>
@@ -255,7 +270,7 @@ function page() {
                 delay: 0.2,
                 x: { type: "spring", stiffness: 30 },
                 opacity: { duration: 0.5 },
-                ease: "easeInOut"
+                ease: "easeInOut",
               }}
               className="mb-4 md:text-MainHeading text-MainHeading-sm font-extrabold text-blue2 tracking-tight sm:leading-none"
             >
@@ -268,7 +283,7 @@ function page() {
                 delay: 0.2,
                 y: { type: "spring", stiffness: 30 },
                 opacity: { duration: 0.5 },
-                ease: "easeInOut"
+                ease: "easeInOut",
               }}
               className="md:text-SubHeading text-SubHeading-sm font-bold sm:px-4"
             >
