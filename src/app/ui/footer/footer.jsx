@@ -72,8 +72,8 @@ const Footer = () => {
           <p className="text-sm mb-4">Phone: +91 9022844929</p>
           <p className="text-sm mb-4">Email: hr@nasinfotech.com</p>
           <p className="text-sm">
-            Office No: 503, 06th Floor, Stellar Spaces, Opposite Zensar Company,
-            Kharadi, Pune - 411014
+            Address: 06th Floor, Stellar Spaces 505, opposite Zensar Company,
+            Rakshak Nagar, Kharadi, Pune, Maharashtra 411014
           </p>
         </div>
 
@@ -89,7 +89,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <hr className=""/>
+      <hr className="" />
       <div className="text-sm h-10 relative px-4 pt-10 py-4 z-20 flex items-center justify-center">
         Copyright &copy; 2024 NAS INFOTECH PRIVATE LIMITED. All rights reserved.
       </div>
